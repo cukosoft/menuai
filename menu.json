@@ -1,0 +1,254 @@
+{
+    "restaurant": {
+        "name": "Lezzet Durağı",
+        "description": "Antalya'nın En İyi Kebapçısı",
+        "isOpen": true
+    },
+    "categories": [
+        {
+            "id": "kebaplar",
+            "name": "Kebaplar",
+            "emoji": "🍖"
+        },
+        {
+            "id": "pideler",
+            "name": "Pideler",
+            "emoji": "🫓"
+        },
+        {
+            "id": "lahmacunlar",
+            "name": "Lahmacunlar",
+            "emoji": "🌯"
+        },
+        {
+            "id": "mezeler",
+            "name": "Mezeler",
+            "emoji": "🥗"
+        },
+        {
+            "id": "icecekler",
+            "name": "İçecekler",
+            "emoji": "🥤"
+        },
+        {
+            "id": "tatlilar",
+            "name": "Tatlılar",
+            "emoji": "🍰"
+        }
+    ],
+    "items": [
+        {
+            "id": 1,
+            "name": "Adana Kebap",
+            "description": "Acılı kıyma kebabı, yanında pilav ve közlenmiş domates",
+            "price": 450,
+            "category": "kebaplar",
+            "emoji": "🌶️",
+            "popular": true
+        },
+        {
+            "id": 2,
+            "name": "Urfa Kebap",
+            "description": "Acısız kıyma kebabı, özel baharatlarla",
+            "price": 420,
+            "category": "kebaplar",
+            "emoji": "🍢"
+        },
+        {
+            "id": 3,
+            "name": "Karışık Izgara",
+            "description": "Kuzu pirzola, tavuk kanat, köfte ve şiş",
+            "price": 650,
+            "category": "kebaplar",
+            "emoji": "🥩",
+            "popular": true
+        },
+        {
+            "id": 4,
+            "name": "Tavuk Şiş",
+            "description": "Marine edilmiş tavuk göğsü şiş",
+            "price": 320,
+            "category": "kebaplar",
+            "emoji": "🍗"
+        },
+        {
+            "id": 5,
+            "name": "Kuzu Şiş",
+            "description": "Özel marine edilmiş kuzu eti şiş",
+            "price": 480,
+            "category": "kebaplar",
+            "emoji": "🐑"
+        },
+        {
+            "id": 6,
+            "name": "Beyti Sarma",
+            "description": "Adana kebap, lavaş ve yoğurt ile",
+            "price": 520,
+            "category": "kebaplar",
+            "emoji": "🌯"
+        },
+        {
+            "id": 7,
+            "name": "Kıymalı Pide",
+            "description": "Kaşarlı kıymalı pide, fırın sıcağı",
+            "price": 280,
+            "category": "pideler",
+            "emoji": "🫓",
+            "popular": true
+        },
+        {
+            "id": 8,
+            "name": "Kuşbaşılı Pide",
+            "description": "Dana kuşbaşı ile hazırlanan pide",
+            "price": 350,
+            "category": "pideler",
+            "emoji": "🥧"
+        },
+        {
+            "id": 9,
+            "name": "Kaşarlı Pide",
+            "description": "Bol kaşar peynirli pide",
+            "price": 220,
+            "category": "pideler",
+            "emoji": "🧀"
+        },
+        {
+            "id": 10,
+            "name": "Karışık Pide",
+            "description": "Sucuk, kaşar, sosis, mantar",
+            "price": 320,
+            "category": "pideler",
+            "emoji": "🍕"
+        },
+        {
+            "id": 11,
+            "name": "Lahmacun",
+            "description": "İnce hamur, özel baharat karışımı",
+            "price": 85,
+            "category": "lahmacunlar",
+            "emoji": "🌯",
+            "popular": true
+        },
+        {
+            "id": 12,
+            "name": "Kaşarlı Lahmacun",
+            "description": "Lahmacun üzerine eritilmiş kaşar",
+            "price": 110,
+            "category": "lahmacunlar",
+            "emoji": "🧀"
+        },
+        {
+            "id": 13,
+            "name": "Humus",
+            "description": "Tahin soslu nohut püresi",
+            "price": 80,
+            "category": "mezeler",
+            "emoji": "🥣"
+        },
+        {
+            "id": 14,
+            "name": "Babaganuş",
+            "description": "Közlenmiş patlıcan ezmesi",
+            "price": 75,
+            "category": "mezeler",
+            "emoji": "🍆"
+        },
+        {
+            "id": 15,
+            "name": "Acılı Ezme",
+            "description": "Taze domates ve biber ezmesi",
+            "price": 65,
+            "category": "mezeler",
+            "emoji": "🌶️"
+        },
+        {
+            "id": 16,
+            "name": "Cacık",
+            "description": "Yoğurt, salatalık ve nane",
+            "price": 55,
+            "category": "mezeler",
+            "emoji": "🥒"
+        },
+        {
+            "id": 17,
+            "name": "Meze Tabağı",
+            "description": "4 çeşit meze bir arada",
+            "price": 180,
+            "category": "mezeler",
+            "emoji": "🍽️"
+        },
+        {
+            "id": 18,
+            "name": "Ayran",
+            "description": "Taze köy ayranı",
+            "price": 30,
+            "category": "icecekler",
+            "emoji": "🥛"
+        },
+        {
+            "id": 19,
+            "name": "Şalgam",
+            "description": "Acılı veya acısız şalgam suyu",
+            "price": 35,
+            "category": "icecekler",
+            "emoji": "🍷"
+        },
+        {
+            "id": 20,
+            "name": "Kola",
+            "description": "Coca-Cola 330ml",
+            "price": 40,
+            "category": "icecekler",
+            "emoji": "🥤"
+        },
+        {
+            "id": 21,
+            "name": "Limonata",
+            "description": "Ev yapımı taze limonata",
+            "price": 45,
+            "category": "icecekler",
+            "emoji": "🍋"
+        },
+        {
+            "id": 22,
+            "name": "Künefe",
+            "description": "Sıcak servis, dondurma ile",
+            "price": 150,
+            "category": "tatlilar",
+            "emoji": "🧁",
+            "popular": true
+        },
+        {
+            "id": 23,
+            "name": "Kadayıf",
+            "description": "Tel kadayıf, kaymak ile servis",
+            "price": 130,
+            "category": "tatlilar",
+            "emoji": "🍯"
+        },
+        {
+            "id": 24,
+            "name": "Sütlaç",
+            "description": "Fırında pişirilmiş sütlaç",
+            "price": 75,
+            "category": "tatlilar",
+            "emoji": "🍮"
+        },
+        {
+            "id": 25,
+            "name": "Baklava",
+            "description": "Antep fıstıklı baklava (4 dilim)",
+            "price": 180,
+            "category": "tatlilar",
+            "emoji": "🥮"
+        },
+        {
+            "id": 26,
+            "name": "Kemalpaşa",
+            "description": "Sıcak şerbetli tatlı",
+            "price": 90,
+            "category": "tatlilar",
+            "emoji": "🍩"
+        }
+    ]
+}

@@ -1,0 +1,652 @@
+  }
+});
+
+console.log('[MenüAi] Smart Overlay v2.1 with Autocomplete loaded ✨');
+  }) ();
+</script >
+< !--End MenüAi Smart Overlay-- >
+  `;
+
+// ═══════════════════════════════════════════════════════════════════════════
+// SMART SWITCHER - Analyzes target and decides the mode
+// ═══════════════════════════════════════════════════════════════════════════
+
+async function analyzeTarget(targetUrl) {
+  const result = {
+    mode: 'iframe', // Default to iframe (fastest)
+    blocked: false,
+    isPdf: false,
+    error: null,
+    headers: {}
+  };
+
+  try {
+    const parsedUrl = new URL(targetUrl);
+
+    // Check if URL points to a PDF
+    if (targetUrl.toLowerCase().endsWith('.pdf')) {
+      result.mode = 'viewer';
+      result.isPdf = true;
+      return result;
+    }
+
+    // Make HEAD request to analyze headers
+    const response = await axios.head(targetUrl, {
+      timeout: 5000,
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+      },
+      maxRedirects: 5,
+      validateStatus: () => true
+    });
+
+    result.headers = response.headers;
+
+    // Check Content-Type for PDF
+    const contentType = response.headers['content-type'] || '';
+    if (contentType.includes('application/pdf')) {
+      result.mode = 'viewer';
+      result.isPdf = true;
+      return result;
+    }
+
+    // Check X-Frame-Options
+    const xFrameOptions = response.headers['x-frame-options'] || '';
+    if (xFrameOptions.toLowerCase().includes('deny') ||
+      xFrameOptions.toLowerCase().includes('sameorigin')) {
+      result.blocked = true;
+      result.mode = 'proxy';
+      console.log('[Smart Switcher] X-Frame-Options detected:', xFrameOptions);
+    }
+
+    // Check Content-Security-Policy frame-ancestors
+    const csp = response.headers['content-security-policy'] || '';
+    if (csp.includes('frame-ancestors')) {
+      // Check if it allows embedding
+      if (!csp.includes("frame-ancestors *") && !csp.includes("frame-ancestors 'self'")) {
+        result.blocked = true;
+        result.mode = 'proxy';
+        console.log('[Smart Switcher] CSP frame-ancestors detected');
+      }
+    }
+
+  } catch (error) {
+    console.error('[Smart Switcher] Analysis error:', error.message);
+    // Default to proxy on error (safer)
+    result.mode = 'proxy';
+    result.error = error.message;
+  }
+
+  console.log(`[Smart Switcher]Decision: ${ result.mode.toUpperCase() } mode`);
+  return result;
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// MODE A: IFRAME RENDERER
+// ═══════════════════════════════════════════════════════════════════════════
+
+function renderIframeMode(targetUrl, res) {
+  const html = `
+  < !DOCTYPE html >
+    <html lang="tr">
+      <head>
+        <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>MenüAi | Menü</title>
+            <style>
+              * {margin: 0; padding: 0; box-sizing: border-box; }
+              html, body {height: 100%; overflow: hidden; }
+              .iframe-container {
+                position: fixed;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 90px;
+              background: #0a0a0a;
+        }
+              iframe {
+                width: 100%;
+              height: 100%;
+              border: none;
+        }
+            </style>
+          </head>
+          <body>
+            <div class="iframe-container">
+              <iframe src="${targetUrl}" allowfullscreen></iframe>
+            </div>
+            ${SMART_OVERLAY}
+            <script>
+              document.getElementById('menuaiModeBadge').textContent = '⚡ IFRAME';
+              document.getElementById('menuaiModeBadge').style.background = 'rgba(16, 185, 129, 0.15)';
+              document.getElementById('menuaiModeBadge').style.borderColor = 'rgba(16, 185, 129, 0.3)';
+              document.getElementById('menuaiModeBadge').style.color = '#10B981';
+            </script>
+          </body>
+        </html>`;
+
+        res.set('Content-Type', 'text/html; charset=utf-8');
+        res.send(html);
+}
+
+        // ═══════════════════════════════════════════════════════════════════════════
+        // MODE B: PROXY RENDERER
+        // ═══════════════════════════════════════════════════════════════════════════
+
+        async function renderProxyMode(targetUrl, res) {
+  try {
+    const parsedUrl = new URL(targetUrl);
+
+        // Fetch the target page
+        const response = await axios.get(targetUrl, {
+          responseType: 'arraybuffer',
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        'Accept-Language': 'tr-TR,tr;q=0.9,en;q=0.8',
+        'Accept-Encoding': 'gzip, deflate, br'
+      },
+        maxRedirects: 5,
+      validateStatus: () => true
+    });
+
+        const contentType = response.headers['content-type'] || '';
+        const contentEncoding = response.headers['content-encoding'] || '';
+
+        // Non-HTML content - pass through
+        if (!contentType.includes('text/html')) {
+          res.set('Content-Type', contentType);
+        return res.send(response.data);
+    }
+
+        // Decompress if needed
+        let htmlBuffer = response.data;
+        if (contentEncoding === 'gzip') {
+          htmlBuffer = zlib.gunzipSync(response.data);
+    } else if (contentEncoding === 'br') {
+          htmlBuffer = zlib.brotliDecompressSync(response.data);
+    } else if (contentEncoding === 'deflate') {
+          htmlBuffer = zlib.inflateSync(response.data);
+    }
+
+        let html = htmlBuffer.toString('utf-8');
+
+        // Parse and modify HTML
+        const $ = cheerio.load(html);
+
+        // Remove blocking headers from meta tags
+        $('meta[http-equiv="X-Frame-Options"]').remove();
+        $('meta[http-equiv="Content-Security-Policy"]').remove();
+
+        // Add base tag for relative URLs
+        const baseUrl = parsedUrl.origin;
+        if (!$('base').length) {
+          $('head').prepend(`<base href="${baseUrl}/">`);
+    }
+
+    // Rewrite relative URLs to absolute
+    $('script[src]').each((i, el) => {
+      const src = $(el).attr('src');
+        if (src && !src.startsWith('http') && !src.startsWith('//') && !src.startsWith('data:')) {
+          $(el).attr('src', new URL(src, baseUrl + '/').href);
+      }
+    });
+
+    $('link[href]').each((i, el) => {
+      const href = $(el).attr('href');
+        if (href && !href.startsWith('http') && !href.startsWith('//') && !href.startsWith('data:')) {
+          $(el).attr('href', new URL(href, baseUrl + '/').href);
+      }
+    });
+
+    $('img[src]').each((i, el) => {
+      const src = $(el).attr('src');
+        if (src && !src.startsWith('http') && !src.startsWith('//') && !src.startsWith('data:')) {
+          $(el).attr('src', new URL(src, baseUrl + '/').href);
+      }
+    });
+
+        // Inject Smart Overlay + mode badge
+        const modeBadgeScript = `
+        <script>
+          document.getElementById('menuaiModeBadge').textContent = '🔓 PROXY';
+          document.getElementById('menuaiModeBadge').style.background = 'rgba(239, 68, 68, 0.15)';
+          document.getElementById('menuaiModeBadge').style.borderColor = 'rgba(239, 68, 68, 0.3)';
+          document.getElementById('menuaiModeBadge').style.color = '#EF4444';
+        </script>`;
+
+        $('body').append(SMART_OVERLAY + modeBadgeScript);
+
+        const modifiedHtml = $.html();
+
+        res.set('Content-Type', 'text/html; charset=utf-8');
+        res.send(modifiedHtml);
+
+  } catch (error) {
+          console.error('[Proxy Mode] Error:', error.message);
+        res.status(500).send(`
+        <html>
+          <body style="background:#0a0a0a;color:#fff;font-family:sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;">
+            <div style="text-align:center;">
+              <h1>❌ Proxy Hatası</h1>
+              <p>${error.message}</p>
+              <a href="/" style="color:#00C2FF;">Ana Sayfaya Dön</a>
+            </div>
+          </body>
+        </html>
+        `);
+  }
+}
+
+        // ═══════════════════════════════════════════════════════════════════════════
+        // MODE C: PDF VIEWER RENDERER
+        // ═══════════════════════════════════════════════════════════════════════════
+
+        function renderViewerMode(pdfUrl, res) {
+  const html = `
+        <!DOCTYPE html>
+        <html lang="tr">
+          <head>
+            <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>MenüAi | PDF Menü</title>
+                <style>
+                  * {margin: 0; padding: 0; box-sizing: border-box; }
+                  html, body {height: 100%; background: #0a0a0a; }
+                  .pdf-container {
+                    position: fixed;
+                  top: 0;
+                  left: 0;
+                  right: 0;
+                  bottom: 90px;
+                  background: #1a1a1a;
+        }
+                  .pdf-container embed,
+                  .pdf-container iframe {
+                    width: 100%;
+                  height: 100%;
+                  border: none;
+        }
+                  .pdf-fallback {
+                    display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  height: 100%;
+                  color: #fff;
+                  text-align: center;
+                  padding: 20px;
+        }
+                  .pdf-fallback h2 {margin - bottom: 10px; }
+                  .pdf-fallback a {
+                    color: #00C2FF;
+                  margin-top: 15px;
+                  padding: 12px 24px;
+                  border: 1px solid #00C2FF;
+                  border-radius: 8px;
+                  text-decoration: none;
+        }
+                </style>
+              </head>
+              <body>
+                <div class="pdf-container">
+                  <embed src="${pdfUrl}" type="application/pdf">
+                    <noscript>
+                      <div class="pdf-fallback">
+                        <h2>📄 PDF Menü</h2>
+                        <p>Tarayıcınız PDF görüntüleyemiyor.</p>
+                        <a href="${pdfUrl}" target="_blank">PDF'i İndir</a>
+                      </div>
+                    </noscript>
+                </div>
+                ${SMART_OVERLAY}
+                <script>
+                  document.getElementById('menuaiModeBadge').textContent = '📄 PDF';
+                  document.getElementById('menuaiModeBadge').style.background = 'rgba(139, 92, 246, 0.15)';
+                  document.getElementById('menuaiModeBadge').style.borderColor = 'rgba(139, 92, 246, 0.3)';
+                  document.getElementById('menuaiModeBadge').style.color = '#8B5CF6';
+                </script>
+              </body>
+            </html>`;
+
+            res.set('Content-Type', 'text/html; charset=utf-8');
+            res.send(html);
+}
+
+            // ═══════════════════════════════════════════════════════════════════════════
+            // ROUTES
+            // ═══════════════════════════════════════════════════════════════════════════
+
+            // Serve static files
+            app.use('/public', express.static(path.join(__dirname, 'public')));
+
+// Landing page
+app.get('/', (req, res) => {
+              res.send(`
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MenüAi Ultimate Core</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+            font-family: 'Inter', sans-serif;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            text-align: center;
+            padding: 40px;
+            max-width: 550px;
+        }
+        .logo {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+            background: linear-gradient(90deg, #00C2FF, #00E5FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .subtitle {
+            color: rgba(255,255,255,0.6);
+            margin-bottom: 30px;
+        }
+        .input-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        input {
+            flex: 1;
+            padding: 16px 20px;
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 14px;
+            background: rgba(255,255,255,0.08);
+            color: #fff;
+            font-size: 15px;
+            outline: none;
+        }
+        input:focus { border-color: #00C2FF; }
+        input::placeholder { color: rgba(255,255,255,0.4); }
+        button {
+            padding: 16px 28px;
+            border: none;
+            border-radius: 14px;
+            background: linear-gradient(135deg, #00C2FF, #0090CC);
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        button:hover { transform: scale(1.05); }
+        .modes {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+        .mode-card {
+            padding: 15px 20px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            text-align: left;
+            width: 150px;
+        }
+        .mode-card h4 {
+            font-size: 13px;
+            margin-bottom: 4px;
+        }
+        .mode-card p {
+            font-size: 11px;
+            color: rgba(255,255,255,0.5);
+        }
+        .mode-card.iframe h4 { color: #10B981; }
+        .mode-card.proxy h4 { color: #EF4444; }
+        .mode-card.pdf h4 { color: #8B5CF6; }
+        .demo { margin-top: 20px; font-size: 14px; color: rgba(255,255,255,0.5); }
+        .demo a { color: #00C2FF; text-decoration: none; }
+        .upload-section {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .upload-btn {
+            background: linear-gradient(135deg, #8B5CF6, #7C3AED);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🍽️</div>
+        <h1>MenüAi Ultimate Core</h1>
+        <p class="subtitle">Her türlü menüyü tek arayüzde aç</p>
+        
+        <div class="input-group">
+            <input type="url" id="urlInput" placeholder="Menü URL'si girin...">
+            <button onclick="openMenu()">Aç</button>
+        </div>
+        
+        <p class="demo">Demo: <a href="/view?target=https://mps27.mobresposmenu.com.tr/?id=MP422">Pote Menüsü</a></p>
+        
+        <div class="modes">
+            <div class="mode-card iframe">
+                <h4>⚡ IFRAME</h4>
+                <p>Hızlı mod, SPA siteler</p>
+            </div>
+            <div class="mode-card proxy">
+                <h4>🔓 PROXY</h4>
+                <p>Korumalı siteleri aç</p>
+            </div>
+            <div class="mode-card pdf">
+                <h4>📄 VIEWER</h4>
+                <p>PDF menüleri göster</p>
+            </div>
+        </div>
+        
+        <div class="upload-section">
+            <form action="/upload" method="POST" enctype="multipart/form-data" style="display:flex;gap:10px;">
+                <input type="file" name="pdf" accept=".pdf" required style="flex:1;">
+                <button type="submit" class="upload-btn">PDF Yükle</button>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        function openMenu() {
+            const url = document.getElementById('urlInput').value.trim();
+            if (url) {
+                window.location.href = '/view?target=' + encodeURIComponent(url);
+            }
+        }
+        document.getElementById('urlInput').addEventListener('keypress', e => {
+            if (e.key === 'Enter') openMenu();
+        });
+    </script>
+</body>
+</html>
+    `);
+});
+
+// ═══════════════════════════════════════════════════════════════════════════
+// THE GATEKEEPER: /view Endpoint
+// ═══════════════════════════════════════════════════════════════════════════
+
+app.get('/view', async (req, res) => {
+  const targetUrl = req.query.target;
+            const uploadId = req.query.id;
+            const forceMode = req.query.mode; // Optional: force iframe/proxy/viewer
+
+            // Handle uploaded file
+            if (uploadId) {
+    const filePath = path.join(UPLOADS_DIR, uploadId);
+            if (fs.existsSync(filePath)) {
+      return renderViewerMode(`/public/uploads/${uploadId}`, res);
+    } else {
+      return res.status(404).send('Dosya bulunamadı');
+    }
+  }
+
+            // Handle URL target
+            if (!targetUrl) {
+    return res.redirect('/');
+  }
+
+            try {
+              // Validate URL
+              new URL(targetUrl);
+  } catch (e) {
+    return res.status(400).send('Geçersiz URL');
+  }
+
+            // Force mode if specified
+            if (forceMode === 'iframe') {
+              console.log('[View] Forced IFRAME mode');
+            return renderIframeMode(targetUrl, res);
+  } else if (forceMode === 'proxy') {
+              console.log('[View] Forced PROXY mode');
+            return renderProxyMode(targetUrl, res);
+  } else if (forceMode === 'viewer') {
+              console.log('[View] Forced VIEWER mode');
+            return renderViewerMode(targetUrl, res);
+  }
+
+            // Smart Switcher - Analyze and decide
+            const analysis = await analyzeTarget(targetUrl);
+
+            switch (analysis.mode) {
+    case 'iframe':
+            return renderIframeMode(targetUrl, res);
+            case 'proxy':
+            return renderProxyMode(targetUrl, res);
+            case 'viewer':
+            return renderViewerMode(targetUrl, res);
+            default:
+            return renderIframeMode(targetUrl, res);
+  }
+});
+
+// ═══════════════════════════════════════════════════════════════════════════
+// MENU API - Returns menu items for autocomplete
+// ═══════════════════════════════════════════════════════════════════════════
+
+app.get('/api/menu/items', (req, res) => {
+  try {
+    // Try to load parsed menu from file
+    const menuPath = path.join(__dirname, 'parsed_menu.json');
+
+            if (fs.existsSync(menuPath)) {
+      const menuData = JSON.parse(fs.readFileSync(menuPath, 'utf8'));
+
+            // Flatten categories into a single items array
+            const items = [];
+            if (menuData.categories) {
+              menuData.categories.forEach(category => {
+                if (category.items) {
+                  category.items.forEach(item => {
+                    items.push({
+                      name: item.name,
+                      price: item.price,
+                      category: category.name,
+                      description: item.description || ''
+                    });
+                  });
+                }
+              });
+      }
+
+            console.log(`[Menu API] Returning ${items.length} items from parsed_menu.json`);
+            return res.json({success: true, items, source: 'parsed_menu.json' });
+    }
+
+            // Fallback: Return empty if no menu file exists
+            console.log('[Menu API] No parsed_menu.json found');
+            return res.json({success: false, items: [], source: null });
+
+  } catch (error) {
+              console.error('[Menu API] Error:', error.message);
+            return res.json({success: false, items: [], error: error.message });
+  }
+});
+
+// ═══════════════════════════════════════════════════════════════════════════
+// UPLOAD ENDPOINT
+// ═══════════════════════════════════════════════════════════════════════════
+
+app.post('/upload', upload.single('pdf'), (req, res) => {
+  if (!req.file) {
+    return res.status(400).send('Dosya yüklenemedi');
+  }
+
+            const fileId = req.file.filename;
+            console.log('[Upload] File saved:', fileId);
+
+            res.redirect(`/view?id=${fileId}`);
+});
+
+// ═══════════════════════════════════════════════════════════════════════════
+// PROXY PASS-THROUGH FOR API CALLS (Wildcard Route)
+// ═══════════════════════════════════════════════════════════════════════════
+
+app.get('/api-tunnel', async (req, res) => {
+  const apiUrl = req.query.url;
+
+            if (!apiUrl) {
+    return res.status(400).json({error: 'Missing URL parameter' });
+  }
+
+            try {
+    const response = await axios.get(apiUrl, {
+              headers: {
+              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+      },
+      validateStatus: () => true
+    });
+
+            res.set('Content-Type', response.headers['content-type'] || 'application/json');
+            res.send(response.data);
+  } catch (error) {
+              res.status(500).json({ error: error.message });
+  }
+});
+
+// ═══════════════════════════════════════════════════════════════════════════
+// START SERVER
+// ═══════════════════════════════════════════════════════════════════════════
+
+app.listen(PORT, () => {
+              console.log(`
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                                                                           ║
+║   🍽️  MenüAi Ultimate Core v2.0                                           ║
+║                                                                           ║
+║   Server:  http://localhost:${PORT}                                          ║
+║                                                                           ║
+║   Endpoints:                                                              ║
+║   • GET /view?target=URL      → Smart Switcher (Auto mode)               ║
+║   • GET /view?target=URL&mode=iframe  → Force Iframe                     ║
+║   • GET /view?target=URL&mode=proxy   → Force Proxy                      ║
+║   • GET /view?id=FILE_ID      → View uploaded PDF                        ║
+║   • POST /upload              → Upload PDF file                          ║
+║   • GET /api-tunnel?url=API   → API pass-through                         ║
+║                                                                           ║
+║   Modes:                                                                  ║
+║   ⚡ IFRAME  - Fast loading for SPA/React sites                          ║
+║   🔓 PROXY   - Bypasses X-Frame-Options restrictions                     ║
+║   📄 VIEWER  - PDF menu display                                          ║
+║                                                                           ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+    `);
+});

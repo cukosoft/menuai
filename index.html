@@ -1,0 +1,489 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0A0A0A">
+    <meta name="description" content="MenüAi - Akıllı Restoran Menüsü">
+
+    <title>MenüAi | Dijital Menü</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Supabase CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Magic Mirror Neon Frame -->
+    <div class="neon-border neon-top"></div>
+    <div class="neon-border neon-bottom"></div>
+    <div class="neon-border neon-left"></div>
+    <div class="neon-border neon-right"></div>
+
+    <!-- Search Bar Overlay -->
+    <div class="search-bar" id="searchBar">
+        <div class="search-container">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="M21 21l-4.35-4.35"></path>
+            </svg>
+            <input type="text" id="searchInput" class="search-input" placeholder="Menüde ara...">
+        </div>
+        <div class="search-results" id="searchResults"></div>
+    </div>
+
+    <!-- Menu Wrapper Container -->
+    <div class="menu-wrapper" id="menuWrapper">
+        <!-- iframe for external menu -->
+        <iframe id="menuFrame" class="menu-frame" src="" frameborder="0" allowfullscreen></iframe>
+
+        <!-- Setup prompt (when no menu URL) -->
+        <div class="setup-prompt" id="setupPrompt">
+            <div class="setup-icon">🍽️</div>
+            <h2>Menü URL'si Girin</h2>
+            <p>Restoranınızın mevcut menü linkini yapıştırın</p>
+            <input type="url" id="menuUrlInput" class="url-input" placeholder="https://example.com/menu">
+            <button class="setup-btn" id="loadMenuBtn" onclick="handleLoadClick()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16 3 21 3 21 8"></polyline>
+                    <line x1="4" y1="20" x2="21" y2="3"></line>
+                    <polyline points="21 16 21 21 16 21"></polyline>
+                    <line x1="15" y1="15" x2="21" y2="21"></line>
+                    <line x1="4" y1="4" x2="9" y2="9"></line>
+                </svg>
+                <span>Menüyü Yükle</span>
+            </button>
+            <p class="demo-hint">Demo: <a href="#" id="demoLink">Örnek menüyü dene</a></p>
+        </div>
+    </div>
+
+    <!-- Cart Sheet (Bottom Sheet) -->
+    <div class="cart-sheet" id="cartSheet">
+        <div class="cart-header">
+            <h3>Sepetim</h3>
+            <button class="close-btn" onclick="toggleCartSheet()">×</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="empty-cart">Sepetiniz boş</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total-row">
+                <span>Toplam:</span>
+                <span class="cart-total" id="cartTotal">₺0.00</span>
+            </div>
+            <button class="confirm-order-btn" onclick="confirmOrder()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>Siparişi Onayla</span>
+            </button>
+        </div>
+    </div>
+    <div class="cart-overlay" onclick="toggleCartSheet()"></div>
+
+    <!-- Glassmorphism Bottom Bar -->
+    <nav class="glass-bar">
+        <button class="bar-btn waiter" id="waiterBtn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
+                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
+                <line x1="6" y1="1" x2="6" y2="4" />
+                <line x1="10" y1="1" x2="10" y2="4" />
+                <line x1="14" y1="1" x2="14" y2="4" />
+            </svg>
+            <span>Garson Çağır</span>
+        </button>
+        <button class="bar-btn primary" id="orderBtn">
+            <div class="btn-glow"></div>
+            <span class="cart-badge" id="cartBadge">0</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="9" cy="21" r="1" />
+                <circle cx="20" cy="21" r="1" />
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+            </svg>
+            <span>Sipariş Ver</span>
+        </button>
+        <button class="bar-btn bill" id="billBtn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="M7 15h0M2 9.5h20" />
+            </svg>
+            <span>Hesap İste</span>
+        </button>
+    </nav>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <span class="toast-icon">✓</span>
+        <span class="toast-message" id="toastMessage">Bildirim</span>
+    </div>
+
+    <script src="app.js"></script>
+
+    <!-- Complete Ordering System - Self-Contained IIFE -->
+    <script>
+        (function () {
+            'use strict';
+
+            // ===========================================
+            // MenüAi Complete Ordering System v2
+            // Wrapped in IIFE to avoid conflicts with app.js
+            // ===========================================
+
+            const SUPABASE_URL = 'https://dqlpklkqyqvlkesuoktz.supabase.co';
+            const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRxbHBrbGtxeXF2bGtlc3Vva3R6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDA2NzkyOTgsImV4cCI6MjA1NjI3NTI5OH0.wHFrGivR_zKIdjB-o7Hn6VnK8U-wA9_y1oJ_gHk8GgA';
+
+            let db = null;  // Supabase client
+            const cart = [];
+            const tableNumber = new URLSearchParams(window.location.search).get('table') || 1;
+            let restaurantId = null;
+
+            // Initialize Supabase
+            function initSupabase() {
+                if (window.supabase && !db) {
+                    db = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+                    console.log('✓ Inline Supabase ready');
+                    loadDemoRestaurant();
+                }
+            }
+
+            // Load demo restaurant
+            async function loadDemoRestaurant() {
+                if (!db) return;
+                try {
+                    const { data } = await db.from('restaurants').select('*').eq('slug', 'pote').single();
+                    if (data) {
+                        restaurantId = data.id;
+                        console.log('Restaurant ID:', restaurantId);
+                    }
+                } catch (e) {
+                    console.log('Demo restaurant not found (expected in dev)');
+                }
+            }
+
+            // Toast notification
+            function showToast(message) {
+                const toast = document.getElementById('toast');
+                const toastMsg = document.getElementById('toastMessage');
+                if (toast && toastMsg) {
+                    toastMsg.textContent = message;
+                    toast.classList.add('show');
+                    setTimeout(() => toast.classList.remove('show'), 3000);
+                }
+            }
+
+            // Menu URL Loading
+            function handleLoadClick() {
+                const input = document.getElementById('menuUrlInput');
+                const url = input?.value?.trim() || '';
+
+                if (!url) {
+                    showToast('Lütfen geçerli bir URL girin!');
+                    return;
+                }
+
+                try { new URL(url); } catch (e) {
+                    showToast('Geçersiz URL formatı!');
+                    return;
+                }
+
+                const menuFrame = document.getElementById('menuFrame');
+                const setupPrompt = document.getElementById('setupPrompt');
+
+                if (menuFrame && setupPrompt) {
+                    menuFrame.src = url;
+                    menuFrame.classList.add('active');
+                    menuFrame.style.display = 'block';
+                    setupPrompt.classList.add('hidden');
+                    setupPrompt.style.display = 'none';
+                    showToast('✓ Menü yükleniyor...');
+                }
+            }
+
+            // Export to window for onclick handlers
+            window.handleLoadClick = handleLoadClick;
+
+            // ===========================================
+            // Cart System
+            // ===========================================
+            function updateCartBadge() {
+                const badge = document.getElementById('cartBadge');
+                const total = cart.reduce((sum, item) => sum + item.quantity, 0);
+                if (badge) {
+                    badge.textContent = total;
+                    badge.style.display = total > 0 ? 'flex' : 'none';
+                }
+            }
+
+            function addToCart(item) {
+                const existing = cart.find(i => i.id === item.id);
+                if (existing) {
+                    existing.quantity++;
+                } else {
+                    cart.push({ ...item, quantity: 1 });
+                }
+                updateCartBadge();
+                showToast(`✓ ${item.name} sepete eklendi`);
+            }
+
+            // ===========================================
+            // Order System
+            // ===========================================
+            async function submitOrder() {
+                if (cart.length === 0) {
+                    showToast('Sepetiniz boş!');
+                    return;
+                }
+
+                if (!db || !restaurantId) {
+                    showToast('Demo mod - sipariş simüle edildi!');
+                    cart.length = 0;
+                    updateCartBadge();
+                    closeOrderModal();
+                    return;
+                }
+
+                const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+
+                const { data: order, error } = await db
+                    .from('orders')
+                    .insert([{
+                        restaurant_id: restaurantId,
+                        table_number: parseInt(tableNumber),
+                        total: total,
+                        status: 'pending'
+                    }])
+                    .select()
+                    .single();
+
+                if (error) {
+                    console.error('Order error:', error);
+                    showToast('Sipariş gönderilemedi!');
+                    return;
+                }
+
+                const orderItems = cart.map(item => ({
+                    order_id: order.id,
+                    menu_item_id: item.id,
+                    quantity: item.quantity,
+                    unit_price: item.price
+                }));
+
+                await db.from('order_items').insert(orderItems);
+
+                cart.length = 0;
+                updateCartBadge();
+                closeOrderModal();
+                showToast('✓ Siparişiniz gönderildi! #' + order.id.slice(0, 4));
+            }
+
+            // Export to window
+            window.submitOrder = submitOrder;
+
+            // ===========================================
+            // Notification System
+            // ===========================================
+            async function callWaiter() {
+                showToast('🙋 Garson çağrıldı!');
+
+                if (db && restaurantId) {
+                    await db.from('notifications').insert([{
+                        restaurant_id: restaurantId,
+                        table_number: parseInt(tableNumber),
+                        type: 'waiter',
+                        status: 'pending'
+                    }]);
+                }
+            }
+
+            async function requestBill() {
+                showToast('💳 Hesap istendi!');
+
+                if (db && restaurantId) {
+                    await db.from('notifications').insert([{
+                        restaurant_id: restaurantId,
+                        table_number: parseInt(tableNumber),
+                        type: 'bill',
+                        status: 'pending'
+                    }]);
+                }
+            }
+
+            // ===========================================
+            // Order Modal
+            // ===========================================
+            function openOrderModal() {
+                let modal = document.getElementById('orderModal');
+                if (!modal) {
+                    modal = document.createElement('div');
+                    modal.id = 'orderModal';
+                    modal.className = 'order-modal';
+                    modal.innerHTML = `
+                    <div class="order-modal-content">
+                        <div class="order-header">
+                            <h3>🛒 Sipariş</h3>
+                            <button class="close-btn" onclick="closeOrderModal()">×</button>
+                        </div>
+                        <div class="order-items" id="orderItems"></div>
+                        <div class="order-footer">
+                            <div class="order-total">Toplam: <span id="orderTotal">₺0</span></div>
+                            <button class="confirm-btn" onclick="submitOrder()">Siparişi Gönder</button>
+                        </div>
+                    </div>
+                `;
+                    document.body.appendChild(modal);
+
+                    // Add modal styles
+                    if (!document.getElementById('orderModalStyles')) {
+                        const style = document.createElement('style');
+                        style.id = 'orderModalStyles';
+                        style.textContent = `
+                        .order-modal {
+                            position: fixed;
+                            inset: 0;
+                            background: rgba(0,0,0,0.8);
+                            display: flex;
+                            align-items: flex-end;
+                            justify-content: center;
+                            z-index: 2000;
+                        }
+                        .order-modal-content {
+                            background: #1a1a1a;
+                            width: 100%;
+                            max-width: 500px;
+                            max-height: 70vh;
+                            border-radius: 20px 20px 0 0;
+                            padding: 20px;
+                        }
+                        .order-header {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin-bottom: 16px;
+                        }
+                        .order-header h3 { color: #fff; margin: 0; }
+                        .close-btn {
+                            background: none;
+                            border: none;
+                            color: #888;
+                            font-size: 24px;
+                            cursor: pointer;
+                        }
+                        .order-items {
+                            max-height: 40vh;
+                            overflow-y: auto;
+                        }
+                        .order-item {
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 12px 0;
+                            border-bottom: 1px solid #333;
+                            color: #fff;
+                        }
+                        .order-footer {
+                            margin-top: 16px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                        }
+                        .order-total { color: #fff; font-size: 18px; font-weight: 600; }
+                        .confirm-btn {
+                            background: linear-gradient(135deg, #00D47B, #00B86B);
+                            border: none;
+                            color: #fff;
+                            padding: 12px 24px;
+                            border-radius: 12px;
+                            font-weight: 600;
+                            cursor: pointer;
+                        }
+                        .empty-cart { color: #888; text-align: center; padding: 40px; }
+                    `;
+                        document.head.appendChild(style);
+                    }
+                }
+
+                modal.style.display = 'flex';
+                updateOrderModal();
+            }
+
+            function closeOrderModal() {
+                const modal = document.getElementById('orderModal');
+                if (modal) modal.style.display = 'none';
+            }
+
+            // Export to window for onclick handlers
+            window.openOrderModal = openOrderModal;
+            window.closeOrderModal = closeOrderModal;
+
+            function updateOrderModal() {
+                const items = document.getElementById('orderItems');
+                const total = document.getElementById('orderTotal');
+                if (!items || !total) return;
+
+                if (cart.length === 0) {
+                    items.innerHTML = '<div class="empty-cart">Sepetiniz boş. Menüden ürün ekleyin.</div>';
+                    total.textContent = '₺0';
+                    return;
+                }
+
+                items.innerHTML = cart.map(item => `
+                <div class="order-item">
+                    <span>${item.name} x${item.quantity}</span>
+                    <span>₺${(item.price * item.quantity).toFixed(2)}</span>
+                </div>
+            `).join('');
+
+                const totalAmount = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+                total.textContent = '₺' + totalAmount.toFixed(2);
+            }
+
+            // ===========================================
+            // Initialization
+            // ===========================================
+            function initOrderingSystem() {
+                initSupabase();
+
+                // Demo link - redirect to /view
+                const demoLink = document.getElementById('demoLink');
+                if (demoLink) {
+                    demoLink.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        window.location.href = '/view?target=https://mps27.mobresposmenu.com.tr/?id=MP422';
+                    });
+                }
+
+                // Bottom bar buttons
+                const waiterBtn = document.getElementById('waiterBtn');
+                const orderBtn = document.getElementById('orderBtn');
+                const billBtn = document.getElementById('billBtn');
+
+                if (waiterBtn) waiterBtn.addEventListener('click', callWaiter);
+                if (orderBtn) orderBtn.addEventListener('click', openOrderModal);
+                if (billBtn) billBtn.addEventListener('click', requestBill);
+
+                console.log('✓ Ordering system v2 ready');
+            }
+
+            // Run initialization
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initOrderingSystem);
+            } else {
+                initOrderingSystem();
+            }
+        })();
+    </script>
+</body>
+
+
+</html>

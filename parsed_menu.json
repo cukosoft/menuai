@@ -1,0 +1,53 @@
+{
+    "source": "Gemini Vision AI",
+    "parsed_at": "2026-02-06",
+    "menu_url": "https://mps27.mobresposmenu.com.tr/?id=MP422",
+    "restaurant": "Pote",
+    "categories": [
+        {
+            "name": "CORBALAR",
+            "items": [
+                {
+                    "name": "Kremalı Mantar Çorbası",
+                    "price": 250,
+                    "description": "Krema ve Mantar"
+                },
+                {
+                    "name": "Domates Çorbası",
+                    "price": 250,
+                    "description": "Domates sosu ve mozzarella"
+                }
+            ]
+        },
+        {
+            "name": "ARA SICAKLAR",
+            "items": [
+                {
+                    "name": "Parmesan Truf Patates",
+                    "price": 290,
+                    "description": "Patates, Truf Sos, Parmesan"
+                },
+                {
+                    "name": "Cheddar Peynirli Patates",
+                    "price": 280,
+                    "description": "Patates, Cheddar Peyniri"
+                }
+            ]
+        },
+        {
+            "name": "NACHOS",
+            "items": [
+                {
+                    "name": "Nachos Tavuklu",
+                    "price": 390,
+                    "description": "Tortilla Cipsi, Tavuk"
+                },
+                {
+                    "name": "Nachos Peynirli",
+                    "price": 350,
+                    "description": "Tortilla Cipsi, Karışık Peynir"
+                }
+            ]
+        }
+    ]
+}
