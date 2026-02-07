@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0A0A0A">
+    <title>MenüAi Admin | Menü Yükleme</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-primary: #0A0A0A;
+            --bg-secondary: #141414;
+            --bg-card: #1a1a1a;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --accent-green: #00D47B;
+            --accent-blue: #00B4D8;
+            --accent-purple: #8B5CF6;
+            --border-color: #333;
+            --glass-bg: rgba(255, 255, 255, 0.05);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px 0;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        /* Card */
+        .card {
+            background: var(--bg-card);
+            border-radius: 20px;
+            padding: 32px;
+            margin-bottom: 24px;
+            border: 1px solid var(--border-color);
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .card-title .icon {
+            font-size: 1.5rem;
+        }
+
+        /* Form */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .form-input {
+            width: 100%;
+            background: var(--bg-secondary);
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            padding: 16px 20px;
+            font-size: 1rem;
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--accent-green);
+            box-shadow: 0 0 0 4px rgba(0, 212, 123, 0.15);
+        }
+
+        .form-input::placeholder {
+            color: #555;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+            color: white;
+            width: 100%;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 212, 123, 0.3);
+        }
+
+        .btn-primary:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .btn svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Progress */
+        .progress-container {
+            display: none;
+            margin-top: 24px;
+        }
+
+        .progress-container.active {
+            display: block;
+        }
+
+        .progress-bar {
+            height: 6px;
+            background: var(--bg-secondary);
+            border-radius: 3px;
+            overflow: hidden;
+            margin-bottom: 12px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent-green), var(--accent-blue));
+            border-radius: 3px;
+            transition: width 0.5s ease;
+            animation: progress-pulse 1.5s ease-in-out infinite;
+        }
+
+        @keyframes progress-pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.7;
+            }
+        }
+
+        .progress-text {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        /* Result */
+        .result-container {
+            display: none;
+            margin-top: 24px;
+        }
+
+        .result-container.active {
+            display: block;
+        }
+
+        .result-success {
+            background: rgba(0, 212, 123, 0.1);
+            border: 1px solid rgba(0, 212, 123, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .result-error {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .result-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .result-key {
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            padding: 12px 16px;
+            font-family: 'Courier New', monospace;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--accent-green);
+            margin: 12px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .copy-btn {
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+
+        .copy-btn:hover {
+            background: var(--bg-card);
+            color: var(--text-primary);
+        }
+
+        .result-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .stat-item {
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-blue);
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+
+        /* Restaurant List */
+        .restaurant-list {
+            margin-top: 16px;
+        }
+
+        .restaurant-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px;
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            margin-bottom: 12px;
+            border: 1px solid var(--border-color);
+            transition: all 0.2s ease;
+        }
+
+        .restaurant-item:hover {
+            border-color: var(--accent-green);
+        }
+
+        .restaurant-info h4 {
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .restaurant-info .key {
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+            color: var(--accent-green);
+        }
+
+        .restaurant-info .date {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+
+        .restaurant-actions {
+            display: flex;
+            gap: 8px;
+        }
+
+        .action-btn {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            padding: 8px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.2s ease;
+        }
+
+        .action-btn:hover {
+            border-color: var(--accent-green);
+            color: var(--text-primary);
+        }
+
+        .empty-list {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-secondary);
+        }
+
+        /* Loading spinner */
+        .spinner {
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-top-color: white;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Toast */
+        .toast {
+            position: fixed;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 14px 24px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .toast.show {
+            transform: translateX(-50%) translateY(0);
+            opacity: 1;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.8rem;
+            }
+
+            .card {
+                padding: 20px;
+            }
+
+            .result-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🍽️ MenüAi Admin</h1>
+            <p>Restoran menülerinizi akıllıca dijitalleştirin</p>
+        </div>
+
+        <!-- Upload Card -->
+        <div class="card">
+            <h2 class="card-title">
+                <span class="icon">📤</span>
+                Yeni Menü Yükle
+            </h2>
+
+            <div class="form-group">
+                <label class="form-label">Menü Linki</label>
+                <input type="url" id="menuUrl" class="form-input"
+                    placeholder="https://example.com/menu veya https://mobresposmenu.com.tr/?id=...">
+            </div>
+
+            <button class="btn btn-primary" id="parseBtn" onclick="parseMenu()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                    <polyline points="17 8 12 3 7 8" />
+                    <line x1="12" y1="3" x2="12" y2="15" />
+                </svg>
+                <span>Menüyü Parse Et ve Kaydet</span>
+            </button>
+
+            <!-- Progress -->
+            <div class="progress-container" id="progressContainer">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+                </div>
+                <p class="progress-text" id="progressText">Menü analiz ediliyor...</p>
+            </div>
+
+            <!-- Result -->
+            <div class="result-container" id="resultContainer"></div>
+        </div>
+
+        <!-- Restaurants List -->
+        <div class="card">
+            <h2 class="card-title">
+                <span class="icon">📋</span>
+                Kayıtlı Restoranlar
+            </h2>
+            <div class="restaurant-list" id="restaurantList">
+                <div class="empty-list">Yükleniyor...</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast">
+        <span id="toastMessage"></span>
+    </div>
+
+    <script>
+        // Toast notification
+        function showToast(message, duration = 3000) {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toastMessage');
+            toastMsg.textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), duration);
+        }
+
+        // Copy to clipboard
+        function copyKey(key) {
+            navigator.clipboard.writeText(key).then(() => {
+                showToast('✓ Kopyalandı: ' + key);
+            });
+        }
+
+        // Load restaurants
+        async function loadRestaurants() {
+            const list = document.getElementById('restaurantList');
+
+            try {
+                const response = await fetch('/api/restaurants');
+                const data = await response.json();
+
+                if (!data.success || !data.restaurants || data.restaurants.length === 0) {
+                    list.innerHTML = '<div class="empty-list">Henüz kayıtlı restoran yok</div>';
+                    return;
+                }
+
+                list.innerHTML = data.restaurants.map(r => `
+                    <div class="restaurant-item">
+                        <div class="restaurant-info">
+                            <h4>${r.name}</h4>
+                            <div class="key">${r.restaurant_key}</div>
+                            <div class="date">${new Date(r.created_at).toLocaleDateString('tr-TR')}</div>
+                        </div>
+                        <div class="restaurant-actions">
+                            <button class="action-btn" onclick="copyKey('${r.restaurant_key}')">
+                                📋 Kopyala
+                            </button>
+                            <button class="action-btn" onclick="viewMenu('${encodeURIComponent(r.menu_url || '')}')">
+                                👁️ Görüntüle
+                            </button>
+                        </div>
+                    </div>
+                `).join('');
+            } catch (error) {
+                list.innerHTML = '<div class="empty-list">Yüklenirken hata oluştu</div>';
+                console.error('Load error:', error);
+            }
+        }
+
+        // View menu - MenüAi overlay ile görüntüle
+        function viewMenu(encodedUrl) {
+            const url = decodeURIComponent(encodedUrl);
+            if (!url) {
+                showToast('❌ Menü URL\'si bulunamadı');
+                return;
+            }
+            window.open(`/view?target=${encodeURIComponent(url)}`, '_blank');
+        }
+
+        // Parse menu
+        async function parseMenu() {
+            const urlInput = document.getElementById('menuUrl');
+            const url = urlInput.value.trim();
+
+            if (!url) {
+                showToast('❌ Lütfen bir menü linki girin');
+                return;
+            }
+
+            try {
+                new URL(url);
+            } catch (e) {
+                showToast('❌ Geçersiz URL formatı');
+                return;
+            }
+
+            const btn = document.getElementById('parseBtn');
+            const progress = document.getElementById('progressContainer');
+            const progressFill = document.getElementById('progressFill');
+            const progressText = document.getElementById('progressText');
+            const result = document.getElementById('resultContainer');
+
+            // Start loading
+            btn.disabled = true;
+            btn.innerHTML = '<div class="spinner"></div><span>İşleniyor...</span>';
+            progress.classList.add('active');
+            result.classList.remove('active');
+
+            // Simulate progress
+            let currentProgress = 0;
+            const progressSteps = [
+                { p: 10, t: 'Sayfa açılıyor...' },
+                { p: 25, t: 'Menü yapısı analiz ediliyor...' },
+                { p: 50, t: 'Kategoriler taranıyor...' },
+                { p: 70, t: 'Ürünler çıkarılıyor...' },
+                { p: 85, t: 'Gemini AI ile doğrulanıyor...' },
+                { p: 95, t: 'Veritabanına kaydediliyor...' }
+            ];
+
+            let stepIndex = 0;
+            const progressInterval = setInterval(() => {
+                if (stepIndex < progressSteps.length) {
+                    currentProgress = progressSteps[stepIndex].p;
+                    progressFill.style.width = currentProgress + '%';
+                    progressText.textContent = progressSteps[stepIndex].t;
+                    stepIndex++;
+                }
+            }, 3000);
+
+            try {
+                const response = await fetch('/api/menu/parse', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ url })
+                });
+
+                clearInterval(progressInterval);
+                progressFill.style.width = '100%';
+                progressText.textContent = 'Tamamlandı!';
+
+                const data = await response.json();
+
+                if (data.success && data.restaurantKey) {
+                    const menuViewUrl = `/view?target=${encodeURIComponent(url)}`;
+                    result.innerHTML = `
+                        <div class="result-success">
+                            <div class="result-title">✅ Menü Başarıyla Kaydedildi!</div>
+                            <p>Restoranınızın benzersiz anahtarı:</p>
+                            <div class="result-key">
+                                <span>${data.restaurantKey}</span>
+                                <button class="copy-btn" onclick="copyKey('${data.restaurantKey}')">
+                                    📋
+                                </button>
+                            </div>
+                            <div class="result-stats">
+                                <div class="stat-item">
+                                    <div class="stat-value">${data.database?.stats?.categoriesCreated || 0}</div>
+                                    <div class="stat-label">Kategori</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-value">${data.database?.stats?.itemsCreated || 0}</div>
+                                    <div class="stat-label">Ürün</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-value">${data.data?.totalItems || 0}</div>
+                                    <div class="stat-label">Toplam</div>
+                                </div>
+                            </div>
+                            <a href="${menuViewUrl}" target="_blank" class="view-menu-btn" style="
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                gap: 10px;
+                                margin-top: 20px;
+                                padding: 14px 24px;
+                                background: linear-gradient(135deg, #8B5CF6, #00B4D8);
+                                color: white;
+                                text-decoration: none;
+                                border-radius: 12px;
+                                font-weight: 600;
+                                transition: all 0.3s ease;
+                            ">
+                                👁️ Akıllı Menüyü Görüntüle
+                            </a>
+                        </div>
+                    `;
+                    result.classList.add('active');
+                    showToast('✅ ' + data.message);
+
+                    // Refresh restaurant list
+                    loadRestaurants();
+                    urlInput.value = '';
+                } else {
+                    result.innerHTML = `
+                        <div class="result-error">
+                            <div class="result-title">❌ Hata Oluştu</div>
+                            <p>${data.error || 'Menü parse edilemedi'}</p>
+                        </div>
+                    `;
+                    result.classList.add('active');
+                    showToast('❌ İşlem başarısız');
+                }
+            } catch (error) {
+                clearInterval(progressInterval);
+                result.innerHTML = `
+                    <div class="result-error">
+                        <div class="result-title">❌ Bağlantı Hatası</div>
+                        <p>${error.message}</p>
+                    </div>
+                `;
+                result.classList.add('active');
+                showToast('❌ Sunucu hatası');
+            }
+
+            // Reset button
+            btn.disabled = false;
+            btn.innerHTML = `
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                    <polyline points="17 8 12 3 7 8"/>
+                    <line x1="12" y1="3" x2="12" y2="15"/>
+                </svg>
+                <span>Menüyü Parse Et ve Kaydet</span>
+            `;
+
+            // Hide progress after delay
+            setTimeout(() => {
+                progress.classList.remove('active');
+            }, 2000);
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', loadRestaurants);
+
+        // Enter key to submit
+        document.getElementById('menuUrl').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') parseMenu();
+        });
+    </script>
+</body>
+
+</html>

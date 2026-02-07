@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Environment
+.env
+.env.local
+
+# Screenshots (temporary)
+screenshots/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Backup files
+*_backup.js
+*_corrupted*.js
+temp_*.txt
+
+# Debug files
+debug_*.png
+debug_*.json
+debug_*.html
+extract_log.txt

@@ -1,59 +1,143 @@
-<!-- MenüAi Smart Overlay v4.1 - Clean Build -->
+<!-- MenüAi Smart Overlay v6.0 - Ultra Ghost + Magic Mirror -->
+
+<!-- Sihirli Ayna Neon Çerçeve -->
+<div class="menuai-neon menuai-neon-top"></div>
+<div class="menuai-neon menuai-neon-bottom"></div>
+<div class="menuai-neon menuai-neon-left"></div>
+<div class="menuai-neon menuai-neon-right"></div>
+
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
-
-  :root {
-    --menuai-bg: rgba(8, 8, 12, 0.95);
-    --menuai-glass: rgba(255, 255, 255, 0.04);
-    --menuai-border: rgba(255, 255, 255, 0.1);
-    --menuai-accent: #6366f1;
-    --menuai-accent2: #8b5cf6;
-    --menuai-success: #22c55e;
-    --menuai-warning: #f59e0b;
-    --menuai-text: #f8fafc;
-    --menuai-muted: rgba(248, 250, 252, 0.5);
-  }
-
-  .menuai-overlay *,
-  .menuai-overlay *::before,
-  .menuai-overlay *::after {
-    box-sizing: border-box !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
-  .menuai-overlay {
+  /* ========================================= */
+  /* SİHİRLİ AYNA — Neon Elektrik Çerçeve v2   */
+  /* Kalın + Güçlü Glow + İçe Yayılım          */
+  /* ========================================= */
+  .menuai-neon {
     position: fixed !important;
-    bottom: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    z-index: 999999 !important;
-    font-family: 'Plus Jakarta Sans', -apple-system, sans-serif !important;
+    z-index: 999998 !important;
+    pointer-events: none !important;
   }
 
-  .menuai-container {
-    background: var(--menuai-bg) !important;
-    backdrop-filter: blur(60px) saturate(200%) !important;
-    -webkit-backdrop-filter: blur(60px) saturate(200%) !important;
-    border-radius: 28px 28px 0 0 !important;
-    box-shadow: 0 -20px 80px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
-    overflow: hidden !important;
-    position: relative !important;
-  }
-
-  .menuai-container::before {
-    content: '' !important;
-    position: absolute !important;
+  .menuai-neon-top {
     top: 0 !important;
     left: 0 !important;
     right: 0 !important;
-    height: 2px !important;
-    background: linear-gradient(90deg, #6366f1, #8b5cf6, #d946ef, #f43f5e, #22c55e, #6366f1) !important;
+    height: 6px !important;
+    background: linear-gradient(90deg, #1A5AFF, #2244DD, #3366FF, #2244DD, #1A5AFF) !important;
     background-size: 200% 100% !important;
-    animation: menuai-aurora 4s linear infinite !important;
+    box-shadow:
+      0 0 10px #1A5AFF,
+      0 0 25px #2244DD,
+      0 0 50px #1A5AFF,
+      0 0 100px rgba(26, 90, 255, 0.5),
+      0 4px 140px rgba(26, 90, 255, 0.3) !important;
+    animation: menuaiGlow 4s ease-in-out infinite !important;
   }
 
-  @keyframes menuai-aurora {
+  .menuai-neon-bottom {
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 6px !important;
+    background: linear-gradient(90deg, #1A5AFF, #2244DD, #3366FF, #2244DD, #1A5AFF) !important;
+    background-size: 200% 100% !important;
+    box-shadow:
+      0 0 10px #1A5AFF,
+      0 0 25px #2244DD,
+      0 0 50px #1A5AFF,
+      0 0 100px rgba(26, 90, 255, 0.5),
+      0 -4px 140px rgba(26, 90, 255, 0.3) !important;
+    animation: menuaiGlow 4s ease-in-out infinite !important;
+  }
+
+  .menuai-neon-left {
+    left: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    width: 6px !important;
+    background: linear-gradient(180deg, #1A5AFF, #2244DD, #3366FF, #2244DD, #1A5AFF) !important;
+    background-size: 100% 200% !important;
+    box-shadow:
+      0 0 10px #1A5AFF,
+      0 0 25px #2244DD,
+      0 0 50px #1A5AFF,
+      0 0 100px rgba(26, 90, 255, 0.5),
+      4px 0 140px rgba(26, 90, 255, 0.3) !important;
+    animation: menuaiGlow 4s ease-in-out infinite !important;
+  }
+
+  .menuai-neon-right {
+    right: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    width: 6px !important;
+    background: linear-gradient(180deg, #1A5AFF, #2244DD, #3366FF, #2244DD, #1A5AFF) !important;
+    background-size: 100% 200% !important;
+    box-shadow:
+      0 0 10px #1A5AFF,
+      0 0 25px #2244DD,
+      0 0 50px #1A5AFF,
+      0 0 100px rgba(26, 90, 255, 0.5),
+      -4px 0 140px rgba(26, 90, 255, 0.3) !important;
+    animation: menuaiGlow 4s ease-in-out infinite !important;
+  }
+
+  /* İç parıltı katmanı — tarayıcının içine yayılım */
+  .menuai-neon-top::after,
+  .menuai-neon-bottom::after,
+  .menuai-neon-left::after,
+  .menuai-neon-right::after {
+    content: '' !important;
+    position: absolute !important;
+    pointer-events: none !important;
+  }
+
+  .menuai-neon-top::after {
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 80px !important;
+    background: linear-gradient(to bottom, rgba(26, 90, 255, 0.2), transparent) !important;
+  }
+
+  .menuai-neon-bottom::after {
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 80px !important;
+    background: linear-gradient(to top, rgba(26, 90, 255, 0.2), transparent) !important;
+  }
+
+  .menuai-neon-left::after {
+    left: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    width: 80px !important;
+    background: linear-gradient(to right, rgba(26, 90, 255, 0.18), transparent) !important;
+  }
+
+  .menuai-neon-right::after {
+    right: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    width: 80px !important;
+    background: linear-gradient(to left, rgba(26, 90, 255, 0.18), transparent) !important;
+  }
+
+  @keyframes menuaiGlow {
+
+    0%,
+    100% {
+      opacity: 0.8;
+      filter: brightness(1);
+    }
+
+    50% {
+      opacity: 1;
+      filter: brightness(1.6);
+    }
+  }
+
+  @keyframes menuaiFlow {
     0% {
       background-position: 0% 50%;
     }
@@ -63,425 +147,787 @@
     }
   }
 
-  .menuai-header {
-    padding: 18px 20px !important;
+  @keyframes menuaiFlowV {
+    0% {
+      background-position: 50% 0%;
+    }
+
+    100% {
+      background-position: 50% 200%;
+    }
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+  /* Reset sadece overlay scope */
+  .menuai-overlay *,
+  .menuai-overlay *::before,
+  .menuai-overlay *::after {
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: 'Inter', -apple-system, sans-serif !important;
+  }
+
+  /* ========================================= */
+  /* GHOST WRAPPER — Tamamen görünmez konteyner */
+  /* ========================================= */
+  .menuai-overlay {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 99999999 !important;
+    pointer-events: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  /* ========================================= */
+  /* ALT BAR — 3 buton yatay, ortalanmış       */
+  /* ========================================= */
+  .menuai-bar {
+    pointer-events: auto !important;
     display: flex !important;
     align-items: center !important;
-    justify-content: space-between !important;
-    cursor: pointer !important;
-    transition: background 0.2s !important;
+    gap: 6px !important;
+    padding: 6px !important;
+    margin-bottom: 16px !important;
+    background: rgba(0, 0, 0, 0.35) !important;
+    backdrop-filter: blur(20px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+    border-radius: 20px !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25),
+      0 0 0 1px rgba(255, 255, 255, 0.05) inset !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
   }
 
-  .menuai-header:hover {
-    background: var(--menuai-glass) !important;
+  .menuai-bar:hover {
+    background: rgba(0, 0, 0, 0.5) !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35),
+      0 0 0 1px rgba(255, 255, 255, 0.08) inset !important;
   }
 
-  .menuai-brand {
-    display: flex !important;
-    align-items: center !important;
-    gap: 12px !important;
-  }
-
-  .menuai-logo {
-    width: 42px !important;
-    height: 42px !important;
-    background: linear-gradient(135deg, var(--menuai-accent), var(--menuai-accent2)) !important;
+  /* ========================================= */
+  /* BUTONLAR                                   */
+  /* ========================================= */
+  .menuai-btn {
+    pointer-events: auto !important;
+    width: 44px !important;
+    height: 44px !important;
     border-radius: 14px !important;
+    background: transparent !important;
+    border: none !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    font-size: 20px !important;
-    box-shadow: 0 4px 20px rgba(99, 102, 241, 0.4) !important;
-    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s !important;
+    cursor: pointer !important;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    position: relative !important;
+    -webkit-tap-highlight-color: transparent !important;
   }
 
-  .menuai-logo:hover {
-    transform: scale(1.08) rotate(5deg) !important;
-    box-shadow: 0 6px 28px rgba(99, 102, 241, 0.6) !important;
+  .menuai-btn:hover {
+    background: rgba(255, 255, 255, 0.08) !important;
+    transform: scale(1.05) !important;
   }
 
-  .menuai-title {
-    color: var(--menuai-text) !important;
-    font-size: 15px !important;
-    font-weight: 600 !important;
+  .menuai-btn:active {
+    transform: scale(0.92) !important;
   }
 
-  .menuai-subtitle {
-    color: var(--menuai-muted) !important;
-    font-size: 12px !important;
+  /* Tıklama ripple efekti */
+  .menuai-btn.pulse::after {
+    content: '' !important;
+    position: absolute !important;
+    inset: 0 !important;
+    border-radius: 14px !important;
+    animation: menuaiPulse 0.6s ease-out forwards !important;
   }
 
-  .menuai-stats {
+  @keyframes menuaiPulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+    }
+
+    100% {
+      box-shadow: 0 0 0 12px rgba(255, 255, 255, 0);
+    }
+  }
+
+  .menuai-btn svg {
+    width: 20px !important;
+    height: 20px !important;
+    stroke-width: 1.8 !important;
+    transition: all 0.2s ease !important;
+  }
+
+  /* Renk aksan — hover'da parlat */
+  .menuai-btn-waiter svg {
+    color: #fbbf24 !important;
+  }
+
+  .menuai-btn-waiter:hover svg {
+    filter: drop-shadow(0 0 6px rgba(251, 191, 36, 0.5)) !important;
+  }
+
+  .menuai-btn-cart svg {
+    color: #4ade80 !important;
+  }
+
+  .menuai-btn-cart:hover svg {
+    filter: drop-shadow(0 0 6px rgba(74, 222, 128, 0.5)) !important;
+  }
+
+  .menuai-btn-bill svg {
+    color: #818cf8 !important;
+  }
+
+  .menuai-btn-bill:hover svg {
+    filter: drop-shadow(0 0 6px rgba(129, 140, 248, 0.5)) !important;
+  }
+
+  /* Ayırıcı çizgi */
+  .menuai-sep {
+    width: 1px !important;
+    height: 20px !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+
+  /* ========================================= */
+  /* SEPET BADGE                                */
+  /* ========================================= */
+  .menuai-badge {
+    position: absolute !important;
+    top: 2px !important;
+    right: 2px !important;
+    background: #ef4444 !important;
+    color: white !important;
+    font-size: 9px !important;
+    font-weight: 700 !important;
+    min-width: 16px !important;
+    height: 16px !important;
+    border-radius: 8px !important;
     display: flex !important;
     align-items: center !important;
-    gap: 14px !important;
+    justify-content: center !important;
+    border: 2px solid rgba(0, 0, 0, 0.5) !important;
+    transform: scale(0) !important;
+    transition: transform 0.2s cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   }
 
-  .menuai-count-pill {
-    background: linear-gradient(135deg, var(--menuai-accent), var(--menuai-accent2)) !important;
-    padding: 5px 12px !important;
-    border-radius: 100px !important;
-    color: white !important;
+  .menuai-badge.show {
+    transform: scale(1) !important;
+  }
+
+  /* ========================================= */
+  /* SİPARİŞ PANELİ — Frosted Glass Design     */
+  /* ========================================= */
+  .menuai-card {
+    pointer-events: auto !important;
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    max-height: 85vh !important;
+    background: rgba(255, 255, 255, 0.48) !important;
+    backdrop-filter: blur(24px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.35) !important;
+    border-bottom: none !important;
+    border-radius: 24px 24px 0 0 !important;
+    box-shadow: 0 -8px 60px rgba(0, 0, 0, 0.12), 0 -2px 10px rgba(0, 0, 0, 0.06) !important;
+    overflow: hidden !important;
+    z-index: 9999999 !important;
+    transform: translateY(100%) !important;
+    visibility: hidden !important;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  }
+
+  .menuai-card.visible {
+    transform: translateY(0) !important;
+    visibility: visible !important;
+  }
+
+  /* Sipariş paneli backdrop */
+  .menuai-panel-backdrop {
+    position: fixed !important;
+    inset: 0 !important;
+    background: rgba(0, 0, 0, 0.25) !important;
+    z-index: 9999998 !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    transition: opacity 0.35s !important;
+  }
+
+  .menuai-panel-backdrop.visible {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+
+  /* Panel drag handle */
+  .menuai-card::before {
+    content: '' !important;
+    display: block !important;
+    width: 36px !important;
+    height: 4px !important;
+    background: rgba(0, 0, 0, 0.12) !important;
+    border-radius: 4px !important;
+    margin: 10px auto 0 !important;
+  }
+
+  /* Card Header */
+  .menuai-card-head {
+    padding: 10px 16px 12px !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+
+  .menuai-card-title {
+    color: #1a1a2e !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.02em !important;
+  }
+
+  .menuai-card-close {
+    background: rgba(0, 0, 0, 0.05) !important;
+    border: none !important;
+    color: rgba(0, 0, 0, 0.4) !important;
+    cursor: pointer !important;
+    font-size: 14px !important;
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.15s !important;
+  }
+
+  .menuai-card-close:hover {
+    background: rgba(0, 0, 0, 0.1) !important;
+    color: #1a1a2e !important;
+  }
+
+  /* Panel Tab Sistemi */
+  .menuai-panel-tabs {
+    display: flex !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06) !important;
+    padding: 0 16px !important;
+    gap: 4px !important;
+  }
+
+  .menuai-panel-tab {
+    flex: 1 !important;
+    padding: 10px 0 !important;
+    text-align: center !important;
     font-size: 13px !important;
     font-weight: 600 !important;
+    color: rgba(0, 0, 0, 0.35) !important;
+    cursor: pointer !important;
+    border-bottom: 2.5px solid transparent !important;
+    transition: all 0.2s !important;
+    background: none !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
   }
 
-  .menuai-total {
-    color: var(--menuai-success) !important;
+  .menuai-panel-tab.active {
+    color: #e85d3a !important;
+    border-bottom-color: #e85d3a !important;
+  }
+
+  /* Arama çubuğu */
+  .menuai-panel-search {
+    padding: 10px 14px !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04) !important;
+  }
+
+  .menuai-panel-search-input {
+    width: 100% !important;
+    background: rgba(0, 0, 0, 0.04) !important;
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+    padding: 11px 14px 11px 38px !important;
+    border-radius: 12px !important;
+    color: #1a1a2e !important;
+    font-size: 14px !important;
+    font-family: 'Inter', -apple-system, sans-serif !important;
+    outline: none !important;
+    transition: all 0.2s !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+  }
+
+  .menuai-panel-search-input:focus {
+    border-color: rgba(232, 93, 58, 0.4) !important;
+    background: rgba(255, 255, 255, 0.6) !important;
+    box-shadow: 0 0 0 3px rgba(232, 93, 58, 0.08) !important;
+  }
+
+  .menuai-panel-search-input::placeholder {
+    color: rgba(0, 0, 0, 0.3) !important;
+  }
+
+  .menuai-panel-search-box {
+    position: relative !important;
+  }
+
+  .menuai-panel-search-icon {
+    position: absolute !important;
+    left: 12px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    color: rgba(0, 0, 0, 0.3) !important;
+    pointer-events: none !important;
+  }
+
+  /* Menü listesi */
+  .menuai-menu-list {
+    max-height: 55vh !important;
+    overflow-y: auto !important;
+    padding: 6px 14px !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  .menuai-menu-list::-webkit-scrollbar {
+    width: 3px !important;
+  }
+
+  .menuai-menu-list::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.1) !important;
+    border-radius: 3px !important;
+  }
+
+  .menuai-menu-cat {
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.08em !important;
+    color: rgba(0, 0, 0, 0.35) !important;
+    padding: 14px 0 6px !important;
+    margin-top: 4px !important;
+  }
+
+  .menuai-menu-cat:first-child {
+    margin-top: 0 !important;
+  }
+
+  .menuai-menu-row {
+    display: flex !important;
+    align-items: center !important;
+    padding: 11px 10px !important;
+    border-radius: 12px !important;
+    margin-bottom: 2px !important;
+    transition: background 0.15s !important;
+  }
+
+  .menuai-menu-row:hover {
+    background: rgba(0, 0, 0, 0.03) !important;
+  }
+
+  .menuai-menu-row-info {
+    flex: 1 !important;
+    min-width: 0 !important;
+  }
+
+  .menuai-menu-row-name {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: #1a1a2e !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  .menuai-menu-row-desc {
+    font-size: 11px !important;
+    color: rgba(0, 0, 0, 0.4) !important;
+    margin-top: 2px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  .menuai-menu-row-price {
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    color: #e85d3a !important;
+    margin: 0 10px !important;
+    white-space: nowrap !important;
+  }
+
+  .menuai-menu-add-btn {
+    width: 34px !important;
+    height: 34px !important;
+    border-radius: 10px !important;
+    border: none !important;
+    background: linear-gradient(135deg, #e85d3a, #f0784a) !important;
+    color: #fff !important;
     font-size: 18px !important;
     font-weight: 700 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    flex-shrink: 0 !important;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    -webkit-tap-highlight-color: transparent !important;
+    box-shadow: 0 2px 8px rgba(232, 93, 58, 0.3) !important;
   }
 
-  .menuai-chevron {
-    color: var(--menuai-muted) !important;
-    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+  .menuai-menu-add-btn:active {
+    transform: scale(0.88) !important;
   }
 
-  .menuai-chevron.expanded {
-    transform: rotate(180deg) !important;
+  /* Eklendi animasyonu — buton yeşile dönüp ✓ gösterir */
+  .menuai-menu-add-btn.added {
+    background: linear-gradient(135deg, #22c55e, #16a34a) !important;
+    transform: scale(1.15) !important;
+    box-shadow: 0 4px 16px rgba(34, 197, 94, 0.4) !important;
+  }
+
+  /* Sepet tab pulse animasyonu */
+  @keyframes menuai-tab-pulse {
+    0% {
+      transform: scale(1);
+    }
+
+    40% {
+      transform: scale(1.12);
+      color: #e85d3a;
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .menuai-panel-tab.tab-pulse {
+    animation: menuai-tab-pulse 0.5s ease !important;
+  }
+
+  /* Badge bounce */
+  @keyframes menuai-badge-bounce {
+    0% {
+      transform: scale(1);
+    }
+
+    30% {
+      transform: scale(1.4);
+    }
+
+    60% {
+      transform: scale(0.9);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .menuai-badge.bounce {
+    animation: menuai-badge-bounce 0.4s ease !important;
+  }
+
+  /* Satır highlight animasyonu */
+  @keyframes menuai-row-flash {
+    0% {
+      background: rgba(232, 93, 58, 0.15);
+    }
+
+    100% {
+      background: transparent;
+    }
+  }
+
+  .menuai-menu-row.flash {
+    animation: menuai-row-flash 0.6s ease !important;
+  }
+
+  /* ========================================= */
+  /* SEPET İÇERİĞİ — Premium Cart Design       */
+  /* ========================================= */
+
+  /* Sepet toplam özet barı */
+  .menuai-cart-summary {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 12px 14px !important;
+    background: rgba(0, 0, 0, 0.04) !important;
+    border-radius: 12px !important;
+    margin: 8px 10px !important;
+  }
+
+  .menuai-cart-summary-label {
+    font-size: 13px !important;
+    color: rgba(0, 0, 0, 0.5) !important;
+    font-weight: 500 !important;
+  }
+
+  .menuai-cart-summary-total {
+    font-size: 18px !important;
+    font-weight: 800 !important;
+    color: #e85d3a !important;
+    letter-spacing: -0.02em !important;
   }
 
   .menuai-items {
-    max-height: 0 !important;
+    max-height: 250px !important;
     overflow-y: auto !important;
-    transition: max-height 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
-    background: rgba(0, 0, 0, 0.2) !important;
+    padding: 4px 10px !important;
   }
 
-  .menuai-items.expanded {
-    max-height: 40vh !important;
-    padding: 10px 0 !important;
+  .menuai-items::-webkit-scrollbar {
+    width: 3px !important;
+  }
+
+  .menuai-items::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.1) !important;
+    border-radius: 3px !important;
   }
 
   .menuai-item {
     display: flex !important;
     align-items: center !important;
-    padding: 14px 20px !important;
-    gap: 14px !important;
-    border-bottom: 1px solid var(--menuai-border) !important;
-    transition: background 0.2s, transform 0.2s !important;
-    animation: menuai-itemFadeIn 0.3s ease-out !important;
+    padding: 12px 10px !important;
+    border-radius: 14px !important;
+    margin-bottom: 4px !important;
+    transition: all 0.2s !important;
+    background: rgba(255, 255, 255, 0.5) !important;
+    border: 1px solid rgba(0, 0, 0, 0.04) !important;
   }
 
   .menuai-item:hover {
-    background: var(--menuai-glass) !important;
+    background: rgba(255, 255, 255, 0.7) !important;
   }
 
-  .menuai-item:last-child {
-    border-bottom: none !important;
-  }
-
-  @keyframes menuai-itemFadeIn {
-    from {
+  /* Yeni eklenen ürün animasyonu */
+  @keyframes menuai-item-slide-in {
+    0% {
       opacity: 0;
-      transform: translateX(-10px);
+      transform: translateY(-10px) scale(0.95);
     }
 
-    to {
+    100% {
       opacity: 1;
-      transform: translateX(0);
+      transform: translateY(0) scale(1);
     }
+  }
+
+  .menuai-item.new-item {
+    animation: menuai-item-slide-in 0.3s ease !important;
   }
 
   .menuai-item-info {
     flex: 1 !important;
-    min-width: 0 !important;
   }
 
   .menuai-item-name {
-    color: var(--menuai-text) !important;
+    color: #1a1a2e !important;
     font-size: 14px !important;
-    font-weight: 600 !important;
+    font-weight: 500 !important;
   }
 
   .menuai-item-price {
-    color: var(--menuai-muted) !important;
-    font-size: 12px !important;
+    color: rgba(0, 0, 0, 0.45) !important;
+    font-size: 11px !important;
+    margin-top: 2px !important;
   }
 
-  .menuai-item-controls {
+  .menuai-item-qty {
     display: flex !important;
     align-items: center !important;
     gap: 8px !important;
-    background: var(--menuai-glass) !important;
-    border-radius: 10px !important;
-    padding: 4px !important;
-    border: 1px solid var(--menuai-border) !important;
   }
 
   .menuai-qty-btn {
-    width: 30px !important;
-    height: 30px !important;
-    border-radius: 8px !important;
+    width: 26px !important;
+    height: 26px !important;
+    background: rgba(0, 0, 0, 0.06) !important;
     border: none !important;
-    background: transparent !important;
-    color: var(--menuai-text) !important;
-    font-size: 16px !important;
+    border-radius: 8px !important;
+    color: #1a1a2e !important;
+    font-size: 14px !important;
     cursor: pointer !important;
-    transition: all 0.2s !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: background 0.15s !important;
   }
 
   .menuai-qty-btn:hover {
-    background: var(--menuai-accent) !important;
+    background: rgba(0, 0, 0, 0.1) !important;
   }
 
-  .menuai-qty-btn.minus:hover {
-    background: #ef4444 !important;
-  }
-
-  .menuai-qty {
-    color: var(--menuai-text) !important;
-    font-size: 14px !important;
-    font-weight: 600 !important;
-    min-width: 22px !important;
-    text-align: center !important;
-  }
-
-  .menuai-item-subtotal {
-    color: var(--menuai-success) !important;
-    font-size: 14px !important;
+  .menuai-qty-num {
+    color: #1a1a2e !important;
+    font-size: 13px !important;
     font-weight: 700 !important;
-    min-width: 65px !important;
-    text-align: right !important;
+    min-width: 14px !important;
+    text-align: center !important;
   }
 
   .menuai-empty {
-    padding: 28px !important;
+    padding: 28px 0 !important;
     text-align: center !important;
-    color: var(--menuai-muted) !important;
-    font-size: 14px !important;
+    color: rgba(0, 0, 0, 0.3) !important;
+    font-size: 13px !important;
   }
 
-  .menuai-empty-icon {
-    font-size: 36px !important;
-    margin-bottom: 10px !important;
-    opacity: 0.5 !important;
+  /* Arama */
+  .menuai-search-wrap {
+    padding: 8px 14px 12px !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.04) !important;
   }
 
-  .menuai-actions {
-    padding: 14px 18px 26px !important;
-    display: flex !important;
-    gap: 10px !important;
-    background: linear-gradient(to top, rgba(8, 8, 12, 1), transparent) !important;
-  }
-
-  .menuai-search-container {
+  .menuai-search-box {
     position: relative !important;
-    flex: 1 !important;
   }
 
-  .menuai-search {
+  .menuai-search-input {
     width: 100% !important;
-    padding: 14px 18px 14px 44px !important;
-    background: var(--menuai-glass) !important;
-    border: 1px solid var(--menuai-border) !important;
-    border-radius: 14px !important;
-    color: var(--menuai-text) !important;
-    font-size: 14px !important;
+    background: rgba(0, 0, 0, 0.04) !important;
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+    padding: 10px 12px 10px 34px !important;
+    border-radius: 12px !important;
+    color: #1a1a2e !important;
+    font-size: 13px !important;
     outline: none !important;
     transition: all 0.2s !important;
   }
 
-  .menuai-search::placeholder {
-    color: var(--menuai-muted) !important;
+  .menuai-search-input:focus {
+    border-color: rgba(232, 93, 58, 0.4) !important;
+    box-shadow: 0 0 0 3px rgba(232, 93, 58, 0.08) !important;
   }
 
-  .menuai-search:focus {
-    border-color: var(--menuai-accent) !important;
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15) !important;
+  .menuai-search-input::placeholder {
+    color: rgba(0, 0, 0, 0.3) !important;
   }
 
   .menuai-search-icon {
     position: absolute !important;
-    left: 16px !important;
+    left: 11px !important;
     top: 50% !important;
     transform: translateY(-50%) !important;
-    color: var(--menuai-muted) !important;
+    color: rgba(0, 0, 0, 0.3) !important;
     pointer-events: none !important;
   }
 
-  .menuai-autocomplete {
-    position: absolute !important;
-    bottom: calc(100% + 6px) !important;
-    left: 0 !important;
-    right: 0 !important;
-    max-height: 260px !important;
+  /* Autocomplete */
+  .menuai-ac {
+    max-height: 140px !important;
     overflow-y: auto !important;
-    background: rgba(15, 15, 20, 0.98) !important;
-    border: 1px solid var(--menuai-border) !important;
-    border-radius: 14px !important;
-    display: none !important;
-    z-index: 999999 !important;
+    background: rgba(255, 255, 255, 0.85) !important;
     backdrop-filter: blur(20px) !important;
+    border-radius: 12px !important;
+    margin-top: 6px !important;
+    border: 1px solid rgba(0, 0, 0, 0.06) !important;
+    display: none !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08) !important;
   }
 
-  .menuai-autocomplete.active {
+  .menuai-ac.active {
     display: block !important;
-    animation: menuai-slideUp 0.2s ease-out !important;
   }
 
-  @keyframes menuai-slideUp {
-    from {
-      opacity: 0;
-      transform: translateY(8px);
-    }
-
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  .menuai-ac-item {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-    padding: 14px 18px !important;
+  .menuai-ac-row {
+    padding: 10px 14px !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04) !important;
     cursor: pointer !important;
-    border-bottom: 1px solid var(--menuai-border) !important;
-    transition: background 0.15s !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    transition: background 0.1s !important;
   }
 
-  .menuai-ac-item:last-child {
+  .menuai-ac-row:hover {
+    background: rgba(0, 0, 0, 0.04) !important;
+  }
+
+  .menuai-ac-row:last-child {
     border-bottom: none !important;
   }
 
-  .menuai-ac-item:hover,
-  .menuai-ac-item.selected {
-    background: rgba(99, 102, 241, 0.1) !important;
-  }
-
-  .menuai-ac-item .name {
-    color: var(--menuai-text) !important;
-    font-size: 14px !important;
-    font-weight: 500 !important;
-  }
-
-  .menuai-ac-item .name mark {
-    background: transparent !important;
-    color: var(--menuai-accent) !important;
-    font-weight: 700 !important;
-  }
-
-  .menuai-ac-item .price {
-    color: var(--menuai-success) !important;
+  .menuai-ac-name {
+    color: #1a1a2e !important;
     font-size: 13px !important;
+  }
+
+  .menuai-ac-price {
+    color: #e85d3a !important;
+    font-size: 12px !important;
     font-weight: 600 !important;
   }
 
-  .menuai-ac-item .add-btn {
-    width: 28px !important;
-    height: 28px !important;
-    background: linear-gradient(135deg, var(--menuai-accent), var(--menuai-accent2)) !important;
-    border-radius: 8px !important;
-    color: white !important;
-    font-size: 16px !important;
+  /* Sipariş butonu */
+  .menuai-submit {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    margin-left: 10px !important;
-    transition: transform 0.2s, box-shadow 0.2s !important;
-  }
-
-  .menuai-ac-item:hover .add-btn {
-    transform: scale(1.15) !important;
-    box-shadow: 0 4px 16px rgba(99, 102, 241, 0.5) !important;
-  }
-
-  .menuai-btn {
-    padding: 14px 22px !important;
-    border: 1px solid rgba(255, 255, 255, 0.15) !important;
-    border-radius: 16px !important;
+    gap: 6px !important;
+    width: 100% !important;
+    margin-top: 8px !important;
+    padding: 13px !important;
+    background: linear-gradient(135deg, #e85d3a, #f0784a) !important;
+    border: none !important;
+    border-radius: 14px !important;
+    color: white !important;
+    font-weight: 700 !important;
     font-size: 14px !important;
-    font-weight: 600 !important;
     cursor: pointer !important;
+    transition: all 0.2s !important;
+    box-shadow: 0 4px 14px rgba(232, 93, 58, 0.3) !important;
+    letter-spacing: -0.01em !important;
+  }
+
+  .menuai-submit:hover {
+    transform: translateY(-1px) !important;
+    box-shadow: 0 6px 20px rgba(232, 93, 58, 0.35) !important;
+  }
+
+  .menuai-submit:active {
+    transform: scale(0.98) !important;
+  }
+
+  .menuai-submit:disabled {
+    opacity: 0.4 !important;
+    cursor: not-allowed !important;
+    background: rgba(0, 0, 0, 0.08) !important;
+    box-shadow: none !important;
+    color: rgba(0, 0, 0, 0.25) !important;
+  }
+
+  /* ========================================= */
+  /* TOAST BİLDİRİM                             */
+  /* ========================================= */
+  .menuai-toast {
+    position: fixed !important;
+    bottom: 80px !important;
+    left: 50% !important;
+    transform: translateX(-50%) translateY(10px) !important;
+    padding: 10px 18px !important;
+    background: rgba(0, 0, 0, 0.85) !important;
+    backdrop-filter: blur(12px) !important;
+    border-radius: 12px !important;
+    border: 1px solid rgba(255, 255, 255, 0.06) !important;
+    color: white !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    opacity: 0 !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    pointer-events: none !important;
     display: flex !important;
     align-items: center !important;
     gap: 8px !important;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
     white-space: nowrap !important;
-    backdrop-filter: blur(20px) saturate(180%) !important;
-    -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
-  }
-
-  .menuai-btn:active {
-    transform: scale(0.96) !important;
-  }
-
-  .menuai-btn.primary {
-    flex: 1 !important;
-    background: rgba(34, 197, 94, 0.2) !important;
-    border: 1px solid rgba(34, 197, 94, 0.4) !important;
-    color: #4ade80 !important;
-    justify-content: center !important;
-    box-shadow: 0 0 20px rgba(34, 197, 94, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
-    text-shadow: 0 0 12px rgba(34, 197, 94, 0.5) !important;
-  }
-
-  .menuai-btn.primary:hover {
-    background: rgba(34, 197, 94, 0.35) !important;
-    border-color: rgba(34, 197, 94, 0.6) !important;
-    box-shadow: 0 0 30px rgba(34, 197, 94, 0.3), 0 8px 25px rgba(34, 197, 94, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
-    transform: translateY(-3px) !important;
-  }
-
-  .menuai-btn.primary:disabled {
-    opacity: 0.3 !important;
-    cursor: not-allowed !important;
-    transform: none !important;
-    box-shadow: none !important;
-  }
-
-  .menuai-btn.secondary {
-    background: rgba(245, 158, 11, 0.2) !important;
-    border: 1px solid rgba(245, 158, 11, 0.4) !important;
-    color: #fbbf24 !important;
-    box-shadow: 0 0 20px rgba(245, 158, 11, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
-    text-shadow: 0 0 12px rgba(245, 158, 11, 0.5) !important;
-  }
-
-  .menuai-btn.secondary:hover {
-    background: rgba(245, 158, 11, 0.35) !important;
-    border-color: rgba(245, 158, 11, 0.6) !important;
-    box-shadow: 0 0 30px rgba(245, 158, 11, 0.3), 0 8px 25px rgba(245, 158, 11, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
-    transform: translateY(-3px) !important;
-  }
-
-  /* Loading pulse animation */
-  .menuai-btn.loading {
-    animation: menuai-pulse 1.5s ease-in-out infinite !important;
-    pointer-events: none !important;
-  }
-
-  @keyframes menuai-pulse {
-
-    0%,
-    100% {
-      opacity: 1;
-    }
-
-    50% {
-      opacity: 0.6;
-    }
-  }
-
-  .menuai-toast {
-    position: fixed !important;
-    bottom: 200px !important;
-    left: 50% !important;
-    transform: translateX(-50%) translateY(20px) !important;
-    padding: 14px 24px !important;
-    background: var(--menuai-bg) !important;
-    border: 1px solid var(--menuai-border) !important;
-    border-radius: 14px !important;
-    color: var(--menuai-text) !important;
-    font-size: 14px !important;
-    font-weight: 500 !important;
-    opacity: 0 !important;
-    pointer-events: none !important;
-    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
     z-index: 9999999 !important;
-    backdrop-filter: blur(20px) !important;
   }
 
   .menuai-toast.visible {
@@ -489,82 +935,210 @@
     transform: translateX(-50%) translateY(0) !important;
   }
 
-  .menuai-mode-badge {
+  /* ========================================= */
+  /* ONFİRMASYON DİALOG                         */
+  /* ========================================= */
+  .menuai-confirm {
     position: fixed !important;
-    top: 12px !important;
-    right: 12px !important;
-    padding: 7px 14px !important;
-    background: var(--menuai-bg) !important;
-    border: 1px solid var(--menuai-border) !important;
-    border-radius: 100px !important;
-    color: var(--menuai-accent) !important;
-    font-size: 11px !important;
-    font-weight: 600 !important;
-    text-transform: uppercase !important;
-    letter-spacing: 1px !important;
-    z-index: 999998 !important;
-    backdrop-filter: blur(10px) !important;
+    inset: 0 !important;
+    z-index: 99999999 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: rgba(0, 0, 0, 0.5) !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition: all 0.25s !important;
+    pointer-events: none !important;
   }
 
-  body {
-    padding-bottom: 180px !important;
+  .menuai-confirm.visible {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+  }
+
+  .menuai-confirm-box {
+    background: rgba(20, 20, 24, 0.95) !important;
+    backdrop-filter: blur(30px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 20px !important;
+    padding: 28px 24px !important;
+    text-align: center !important;
+    max-width: 300px !important;
+    width: 90vw !important;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5) !important;
+    transform: scale(0.95) !important;
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  }
+
+  .menuai-confirm.visible .menuai-confirm-box {
+    transform: scale(1) !important;
+  }
+
+  .menuai-confirm-icon {
+    font-size: 36px !important;
+    margin-bottom: 12px !important;
+    display: block !important;
+  }
+
+  .menuai-confirm-title {
+    color: #f0f0f0 !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    margin-bottom: 6px !important;
+  }
+
+  .menuai-confirm-sub {
+    color: rgba(255, 255, 255, 0.4) !important;
+    font-size: 12px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .menuai-confirm-btns {
+    display: flex !important;
+    gap: 10px !important;
+  }
+
+  .menuai-confirm-yes,
+  .menuai-confirm-no {
+    flex: 1 !important;
+    padding: 12px !important;
+    border-radius: 12px !important;
+    border: none !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: all 0.15s !important;
+  }
+
+  .menuai-confirm-no {
+    background: rgba(255, 255, 255, 0.06) !important;
+    color: rgba(255, 255, 255, 0.6) !important;
+  }
+
+  .menuai-confirm-no:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+
+  .menuai-confirm-yes {
+    color: white !important;
+  }
+
+  .menuai-confirm-yes.waiter {
+    background: linear-gradient(135deg, #f59e0b, #d97706) !important;
+  }
+
+  .menuai-confirm-yes.bill {
+    background: linear-gradient(135deg, #818cf8, #6366f1) !important;
+  }
+
+  .menuai-confirm-yes.order {
+    background: linear-gradient(135deg, #22c55e, #16a34a) !important;
   }
 </style>
 
-<div class="menuai-mode-badge" id="menuaiModeBadge">MODE</div>
+<!-- Onay Dialog -->
+<div class="menuai-confirm" id="menuaiConfirm">
+  <div class="menuai-confirm-box">
+    <span class="menuai-confirm-icon" id="menuaiConfirmIcon">🙋</span>
+    <div class="menuai-confirm-title" id="menuaiConfirmTitle">Garson Çağır</div>
+    <div class="menuai-confirm-sub" id="menuaiConfirmSub">Masa 1</div>
+    <div class="menuai-confirm-btns">
+      <button class="menuai-confirm-no" onclick="menuaiConfirmClose()">İptal</button>
+      <button class="menuai-confirm-yes waiter" id="menuaiConfirmBtn" onclick="menuaiConfirmSend()">Gönder</button>
+    </div>
+  </div>
+</div>
+
+<!-- Panel Backdrop -->
+<div class="menuai-panel-backdrop" id="menuaiBackdrop" onclick="menuaiToggle()"></div>
 
 <div class="menuai-overlay">
-  <div class="menuai-container">
-    <div class="menuai-header" onclick="menuaiToggleCart()">
-      <div class="menuai-brand">
-        <div class="menuai-logo">🍽️</div>
-        <div>
-          <div class="menuai-title">Sepetiniz</div>
-          <div class="menuai-subtitle">Siparişinizi hazırlayın</div>
-        </div>
-      </div>
-      <div class="menuai-stats">
-        <div class="menuai-count-pill"><span id="menuaiCartCount">0</span> ürün</div>
-        <div class="menuai-total" id="menuaiCartTotal">0 ₺</div>
-        <svg class="menuai-chevron" id="menuaiChevron" width="22" height="22" viewBox="0 0 24 24" fill="none"
+  <!-- Sipariş Paneli -->
+  <div class="menuai-card" id="menuaiCard">
+    <div class="menuai-card-head">
+      <div class="menuai-card-title">Sipariş Ver</div>
+      <button class="menuai-card-close" onclick="menuaiToggle()">✕</button>
+    </div>
+
+    <!-- Tab sistemi -->
+    <div class="menuai-panel-tabs">
+      <button class="menuai-panel-tab active" id="menuaiTabMenu" onclick="menuaiSwitchTab('menu')">📋 Menü</button>
+      <button class="menuai-panel-tab" id="menuaiTabCart" onclick="menuaiSwitchTab('cart')">🛒 Sepet <span
+          id="menuaiTabBadge"></span></button>
+    </div>
+
+    <!-- Arama Çubuğu -->
+    <div class="menuai-panel-search" id="menuaiSearchWrap">
+      <div class="menuai-panel-search-box">
+        <svg class="menuai-panel-search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"
           stroke="currentColor" stroke-width="2">
-          <polyline points="18 15 12 9 6 15"></polyline>
-        </svg>
-      </div>
-    </div>
-
-    <div class="menuai-items" id="menuaiItems">
-      <div class="menuai-empty" id="menuaiEmpty">
-        <div class="menuai-empty-icon">🛒</div>
-        <div>Sepet boş</div>
-        <div style="margin-top: 4px !important; font-size: 12px !important;">Aşağıdan ürün arayın</div>
-      </div>
-    </div>
-
-    <div class="menuai-actions">
-      <div class="menuai-search-container">
-        <svg class="menuai-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-          stroke-width="2">
           <circle cx="11" cy="11" r="8"></circle>
           <path d="m21 21-4.35-4.35"></path>
         </svg>
-        <div id="menuaiAutocomplete" class="menuai-autocomplete"></div>
-        <input type="text" class="menuai-search" id="menuaiOrderInput" placeholder="Ürün ara..." autocomplete="off">
+        <input type="text" class="menuai-panel-search-input" id="menuaiPanelSearch" placeholder="Ürün ara..."
+          autocomplete="off">
       </div>
-      <button class="menuai-btn primary" id="menuaiOrderBtn" onclick="menuaiSendOrder()" disabled>
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-          <polyline points="22 4 12 14.01 9 11.01"></polyline>
-        </svg>
-        Sipariş Ver
-      </button>
-      <button class="menuai-btn secondary" onclick="menuaiCallWaiter()">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
-          <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
-        </svg>
-      </button>
     </div>
+
+    <!-- Menü Tab -->
+    <div class="menuai-menu-list" id="menuaiMenuList">
+      <div style="text-align:center;padding:30px;color:rgba(255,255,255,0.3);font-size:12px;">Menü yükleniyor...</div>
+    </div>
+
+    <!-- Sepet Tab (gizli başlar) -->
+    <div class="menuai-menu-list" id="menuaiCartTab" style="display:none;">
+      <div class="menuai-cart-summary" id="menuaiCartSummary" style="display:none;">
+        <span class="menuai-cart-summary-label" id="menuaiCartSummaryCount">0 ürün</span>
+        <span class="menuai-cart-summary-total" id="menuaiCartSummaryTotal">0 ₺</span>
+      </div>
+      <div class="menuai-items" id="menuaiItems">
+        <div class="menuai-empty">
+          <div style="font-size:32px;margin-bottom:8px;">🛒</div>
+          <div>Sepetiniz boş</div>
+          <div style="font-size:11px;margin-top:4px;color:rgba(0,0,0,0.25);">Menüden ürün ekleyin</div>
+        </div>
+      </div>
+      <div style="padding:8px 4px;">
+        <button class="menuai-submit" id="menuaiSubmit" onclick="menuaiSendOrder()" disabled>
+          Sipariş Gönder <span id="menuaiTotal"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Alt Bar — 3 buton yatay orta -->
+  <div class="menuai-bar">
+    <button class="menuai-btn menuai-btn-waiter" onclick="menuaiWaiter()" title="Garson Çağır">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+        <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
+        <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
+        <line x1="6" y1="1" x2="6" y2="4" />
+        <line x1="10" y1="1" x2="10" y2="4" />
+        <line x1="14" y1="1" x2="14" y2="4" />
+      </svg>
+    </button>
+
+    <div class="menuai-sep"></div>
+
+    <button class="menuai-btn menuai-btn-cart" onclick="menuaiToggle()" title="Sipariş">
+      <div class="menuai-badge" id="menuaiBadge">0</div>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+        <circle cx="9" cy="21" r="1" />
+        <circle cx="20" cy="21" r="1" />
+        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+      </svg>
+    </button>
+
+    <div class="menuai-sep"></div>
+
+    <button class="menuai-btn menuai-btn-bill" onclick="menuaiBill()" title="Hesap İste">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+        <rect x="2" y="3" width="20" height="18" rx="2" />
+        <path d="M8 7h8M8 11h5M8 15h3" />
+      </svg>
+    </button>
   </div>
 </div>
 
@@ -572,181 +1146,395 @@
 
 <script>
   (function () {
-    var menuItems = [];
+    'use strict';
+
+    // ========================================
+    // STATE
+    // ========================================
     var cart = [];
-    var selectedIndex = -1;
-    var debounceTimer = null;
-    var cartExpanded = false;
+    var menu = [];
+    var cardOpen = false;
+    var pendingAction = null;
 
-    fetch('/api/menu/items')
-      .then(function (r) { return r.json(); })
-      .then(function (data) {
-        menuItems = data.items || [];
-        console.log('[MenüAi] Menu loaded:', menuItems.length, 'items');
+    // URL'den masa ve restoran bilgisini al
+    var urlParts = window.location.pathname.split('/');
+    var tableNumber = 1;
+    var restaurantSlug = null;
+
+    // /r/:slug/masa/:no formatını parse et
+    for (var i = 0; i < urlParts.length; i++) {
+      if (urlParts[i] === 'r' && urlParts[i + 1]) restaurantSlug = urlParts[i + 1];
+      if ((urlParts[i] === 'masa' || urlParts[i] === 'table') && urlParts[i + 1]) tableNumber = parseInt(urlParts[i + 1]) || 1;
+    }
+
+    // Query param fallback
+    var qp = new URLSearchParams(window.location.search);
+    if (qp.get('table')) tableNumber = parseInt(qp.get('table')) || 1;
+    if (qp.get('r')) restaurantSlug = qp.get('r');
+
+    // ========================================
+    // MENÜ VERİSİ YÜKLE
+    // ========================================
+    var menuCategories = [];
+
+    function loadMenu() {
+      if (!restaurantSlug) return;
+      fetch('/api/menu-items/' + restaurantSlug)
+        .then(function (r) { return r.json(); })
+        .then(function (d) {
+          if (d.success && d.categories) {
+            menuCategories = d.categories;
+            // Düz liste de oluştur (arama için)
+            menu = [];
+            d.categories.forEach(function (cat) {
+              cat.items.forEach(function (item) {
+                menu.push(item);
+              });
+            });
+            renderMenuList();
+          }
+        })
+        .catch(function (e) { console.warn('[MenüAi] Menu load error:', e); });
+    }
+    loadMenu();
+
+    // ========================================
+    // MENÜ LİSTESİ RENDER (kategorili + butonlu)
+    // ========================================
+    function renderMenuList(filter) {
+      var el = document.getElementById('menuaiMenuList');
+      if (!menuCategories.length) {
+        el.innerHTML = '<div style="text-align:center;padding:30px;color:rgba(255,255,255,0.3);font-size:12px;">Menü bulunamadı</div>';
+        return;
+      }
+      var q = (filter || '').toLocaleLowerCase('tr').trim();
+      var html = '';
+      var totalHits = 0;
+      menuCategories.forEach(function (cat) {
+        var catItems = cat.items;
+        if (q) {
+          catItems = cat.items.filter(function (item) {
+            return item.name.toLocaleLowerCase('tr').includes(q) || (item.description && item.description.toLocaleLowerCase('tr').includes(q));
+          });
+        }
+        if (catItems.length === 0) return;
+        totalHits += catItems.length;
+        html += '<div class="menuai-menu-cat">' + cat.category + '</div>';
+        catItems.forEach(function (item) {
+          var itemJson = JSON.stringify(item).replace(/'/g, "\\'").replace(/"/g, '&quot;');
+          html += '<div class="menuai-menu-row">' +
+            '<div class="menuai-menu-row-info">' +
+            '<div class="menuai-menu-row-name">' + item.name + '</div>' +
+            (item.description ? '<div class="menuai-menu-row-desc">' + item.description + '</div>' : '') +
+            '</div>' +
+            '<div class="menuai-menu-row-price">' + (item.price || '') + ' ₺</div>' +
+            '<button class="menuai-menu-add-btn" onclick=\'menuaiAdd(' + itemJson + ')\'>+</button>' +
+            '</div>';
+        });
+      });
+      if (q && totalHits === 0) {
+        html = '<div style="text-align:center;padding:30px;color:rgba(255,255,255,0.3);font-size:12px;">🔍 "' + q + '" bulunamadı</div>';
+      }
+      el.innerHTML = html;
+    }
+
+    // ========================================
+    // TAB SİSTEMİ
+    // ========================================
+    var currentTab = 'menu';
+    window.menuaiSwitchTab = function (tab) {
+      currentTab = tab;
+      document.getElementById('menuaiTabMenu').classList.toggle('active', tab === 'menu');
+      document.getElementById('menuaiTabCart').classList.toggle('active', tab === 'cart');
+      document.getElementById('menuaiMenuList').style.display = tab === 'menu' ? 'block' : 'none';
+      document.getElementById('menuaiSearchWrap').style.display = tab === 'menu' ? 'block' : 'none';
+      document.getElementById('menuaiCartTab').style.display = tab === 'cart' ? 'block' : 'none';
+    };
+
+    // ========================================
+    // ARAMA FİLTRESİ
+    // ========================================
+    var searchTimer = null;
+    document.getElementById('menuaiPanelSearch').addEventListener('input', function (e) {
+      clearTimeout(searchTimer);
+      var q = e.target.value;
+      searchTimer = setTimeout(function () {
+        renderMenuList(q);
+      }, 150);
+    });
+
+    // ========================================
+    // TOAST
+    // ========================================
+    window.menuaiToast = function (msg, icon) {
+      var t = document.getElementById('menuaiToast');
+      t.innerHTML = (icon || '') + ' ' + msg;
+      t.classList.add('visible');
+      clearTimeout(t._timer);
+      t._timer = setTimeout(function () { t.classList.remove('visible'); }, 2500);
+    };
+
+    // ========================================
+    // BUTON PULSE ANİMASYONU
+    // ========================================
+    function pulseBtn(btn) {
+      btn.classList.remove('pulse');
+      void btn.offsetWidth; // reflow
+      btn.classList.add('pulse');
+      setTimeout(function () { btn.classList.remove('pulse'); }, 600);
+    }
+
+    // ========================================
+    // ONAY DİALOGU
+    // ========================================
+    function showConfirm(type, icon, title, sub) {
+      pendingAction = type;
+      document.getElementById('menuaiConfirmIcon').textContent = icon;
+      document.getElementById('menuaiConfirmTitle').textContent = title;
+      document.getElementById('menuaiConfirmSub').textContent = sub;
+      var btn = document.getElementById('menuaiConfirmBtn');
+      btn.className = 'menuai-confirm-yes ' + type;
+      document.getElementById('menuaiConfirm').classList.add('visible');
+    }
+
+    window.menuaiConfirmClose = function () {
+      document.getElementById('menuaiConfirm').classList.remove('visible');
+      pendingAction = null;
+    };
+
+    window.menuaiConfirmSend = function () {
+      if (!pendingAction) return;
+      document.getElementById('menuaiConfirm').classList.remove('visible');
+      sendNotification(pendingAction);
+      pendingAction = null;
+    };
+
+    // ========================================
+    // BİLDİRİM GÖNDER (Supabase)
+    // ========================================
+    function sendNotification(type, items) {
+      var body = {
+        type: type,
+        table_number: tableNumber,
+        restaurant_slug: restaurantSlug
+      };
+      if (items) body.items = items;
+
+      var labels = {
+        waiter: { msg: 'Garson çağrıldı! Masa ' + tableNumber, icon: '🙋' },
+        bill: { msg: 'Hesap istendi! Masa ' + tableNumber, icon: '🧾' },
+        order: { msg: 'Sipariş bildirildi!', icon: '✅' }
+      };
+      var label = labels[type] || { msg: 'Bildirim gönderildi', icon: '✓' };
+
+      // UI feedback hemen göster
+      menuaiToast(label.msg, label.icon);
+
+      // Backend'e gönder
+      fetch('/api/notify', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body)
       })
-      .catch(function (e) { console.log('[MenüAi] Menu not loaded:', e.message); });
+        .then(function (r) { return r.json(); })
+        .then(function (d) {
+          if (!d.success) console.warn('[MenüAi] Notification warning:', d.error);
+        })
+        .catch(function (e) {
+          console.warn('[MenüAi] Notification offline, queued:', e.message);
+        });
+    }
 
-    window.menuaiShowToast = function (msg, duration) {
-      duration = duration || 2500;
-      var toast = document.getElementById('menuaiToast');
-      if (toast) {
-        toast.textContent = msg;
-        toast.classList.add('visible');
-        setTimeout(function () { toast.classList.remove('visible'); }, duration);
+    // ========================================
+    // GARSON ÇAĞIR
+    // ========================================
+    window.menuaiWaiter = function () {
+      pulseBtn(document.querySelector('.menuai-btn-waiter'));
+      showConfirm('waiter', '🙋', 'Garson Çağır', 'Masa ' + tableNumber + ' için garson çağrılacak');
+    };
+
+    // ========================================
+    // HESAP İSTE
+    // ========================================
+    window.menuaiBill = function () {
+      pulseBtn(document.querySelector('.menuai-btn-bill'));
+      showConfirm('bill', '🧾', 'Hesap İste', 'Masa ' + tableNumber + ' için hesap isteniyor');
+    };
+
+    // ========================================
+    // SEPET TOGGLE
+    // ========================================
+    window.menuaiToggle = function () {
+      cardOpen = !cardOpen;
+      document.getElementById('menuaiCard').classList.toggle('visible', cardOpen);
+      document.getElementById('menuaiBackdrop').classList.toggle('visible', cardOpen);
+      if (cardOpen) {
+        menuaiSwitchTab('menu');
       }
     };
 
-    function updateCartUI() {
-      var countEl = document.getElementById('menuaiCartCount');
-      var totalEl = document.getElementById('menuaiCartTotal');
-      var itemsEl = document.getElementById('menuaiItems');
-      var emptyEl = document.getElementById('menuaiEmpty');
-      var orderBtn = document.getElementById('menuaiOrderBtn');
+    // ========================================
+    // SEPETE EKLE
+    // ========================================
+    window.menuaiAdd = function (item) {
+      var ex = cart.find(function (c) { return c.name === item.name; });
+      if (ex) ex.qty++;
+      else cart.push({ name: item.name, price: item.price, qty: 1 });
+      render();
+      menuaiToast(item.name + ' eklendi', '✓');
 
-      var count = cart.reduce(function (sum, c) { return sum + c.qty; }, 0);
-      var total = cart.reduce(function (sum, c) { return sum + (c.price * c.qty); }, 0);
+      // Tab badge güncelle
+      var cnt = cart.reduce(function (a, b) { return a + b.qty; }, 0);
+      document.getElementById('menuaiTabBadge').textContent = cnt > 0 ? '(' + cnt + ')' : '';
 
-      if (countEl) countEl.textContent = count;
-      if (totalEl) totalEl.textContent = total + ' ₺';
-      if (orderBtn) orderBtn.disabled = cart.length === 0;
+      // === ANİMASYONLAR ===
 
-      if (cart.length === 0) {
-        if (emptyEl) emptyEl.style.display = 'block';
-      } else {
-        if (emptyEl) emptyEl.style.display = 'none';
-        var html = '';
-        cart.forEach(function (item, index) {
-          html += '<div class="menuai-item">';
-          html += '<div class="menuai-item-info"><div class="menuai-item-name">' + item.name + '</div><div class="menuai-item-price">' + item.price + ' ₺/adet</div></div>';
-          html += '<div class="menuai-item-controls"><button class="menuai-qty-btn minus" onclick="menuaiUpdateQty(' + index + ', -1)">−</button><span class="menuai-qty">' + item.qty + '</span><button class="menuai-qty-btn" onclick="menuaiUpdateQty(' + index + ', 1)">+</button></div>';
-          html += '<div class="menuai-item-subtotal">' + (item.price * item.qty) + ' ₺</div></div>';
-        });
-        if (itemsEl) {
-          var existingEmpty = itemsEl.querySelector('.menuai-empty');
-          itemsEl.innerHTML = html;
-          if (existingEmpty) itemsEl.insertBefore(existingEmpty, itemsEl.firstChild);
+      // 1) Tıklanan "+" butonu → yeşile dön, ✓ göster
+      if (event && event.target) {
+        var btn = event.target.closest('.menuai-menu-add-btn');
+        if (btn) {
+          btn.textContent = '✓';
+          btn.classList.add('added');
+          setTimeout(function () {
+            btn.textContent = '+';
+            btn.classList.remove('added');
+          }, 600);
+        }
+        // 2) Satır flash efekti
+        var row = event.target.closest('.menuai-menu-row');
+        if (row) {
+          row.classList.remove('flash');
+          void row.offsetWidth;
+          row.classList.add('flash');
+          setTimeout(function () { row.classList.remove('flash'); }, 700);
         }
       }
+
+      // 3) Sepet tab'ı pulse atsın
+      var cartTab = document.getElementById('menuaiTabCart');
+      cartTab.classList.remove('tab-pulse');
+      void cartTab.offsetWidth;
+      cartTab.classList.add('tab-pulse');
+      setTimeout(function () { cartTab.classList.remove('tab-pulse'); }, 600);
+
+      // 4) Alt bar badge bounce
+      var badgeEl = document.getElementById('menuaiBadge');
+      badgeEl.classList.remove('bounce');
+      void badgeEl.offsetWidth;
+      badgeEl.classList.add('bounce');
+      setTimeout(function () { badgeEl.classList.remove('bounce'); }, 500);
+    };
+
+    // ========================================
+    // ADET DEĞİŞTİR
+    // ========================================
+    window.menuaiQty = function (i, d) {
+      cart[i].qty += d;
+      if (cart[i].qty <= 0) cart.splice(i, 1);
+      render();
+    };
+
+    // ========================================
+    // RENDER
+    // ========================================
+    function render() {
+      var list = document.getElementById('menuaiItems');
+      var badge = document.getElementById('menuaiBadge');
+      var total = document.getElementById('menuaiTotal');
+      var btn = document.getElementById('menuaiSubmit');
+      var sum = cart.reduce(function (a, b) { return a + (b.price * b.qty); }, 0);
+      var cnt = cart.reduce(function (a, b) { return a + b.qty; }, 0);
+
+      badge.textContent = cnt;
+      badge.classList.toggle('show', cnt > 0);
+      total.textContent = cnt > 0 ? '(' + sum + ' ₺)' : '';
+      btn.disabled = cart.length === 0;
+
+      // Tab badge güncelle
+      document.getElementById('menuaiTabBadge').textContent = cnt > 0 ? '(' + cnt + ')' : '';
+
+      if (cart.length === 0) {
+        list.innerHTML = '<div class="menuai-empty">' +
+          '<div style="font-size:32px;margin-bottom:8px;">🛒</div>' +
+          '<div>Sepetiniz boş</div>' +
+          '<div style="font-size:11px;margin-top:4px;color:rgba(0,0,0,0.25);">Menüden ürün ekleyin</div>' +
+          '</div>';
+        // Toplam özet bar'ını gizle
+        var summaryEl = document.getElementById('menuaiCartSummary');
+        if (summaryEl) summaryEl.style.display = 'none';
+      } else {
+        // Toplam özet barı göster
+        var summaryEl = document.getElementById('menuaiCartSummary');
+        if (summaryEl) {
+          summaryEl.style.display = 'flex';
+          document.getElementById('menuaiCartSummaryCount').textContent = cnt + ' ürün';
+          document.getElementById('menuaiCartSummaryTotal').textContent = sum + ' ₺';
+        }
+        list.innerHTML = cart.map(function (item, i) {
+          return '<div class="menuai-item new-item">' +
+            '<div class="menuai-item-info">' +
+            '<div class="menuai-item-name">' + item.name + '</div>' +
+            '<div class="menuai-item-price">' + item.price + ' ₺ × ' + item.qty + ' = ' + (item.price * item.qty) + ' ₺</div>' +
+            '</div>' +
+            '<div class="menuai-item-qty">' +
+            '<button class="menuai-qty-btn" onclick="menuaiQty(' + i + ', -1)">−</button>' +
+            '<span class="menuai-qty-num">' + item.qty + '</span>' +
+            '<button class="menuai-qty-btn" onclick="menuaiQty(' + i + ', 1)">+</button>' +
+            '</div>' +
+            '</div>';
+        }).join('');
+      }
     }
 
-    window.menuaiToggleCart = function () {
-      cartExpanded = !cartExpanded;
-      var items = document.getElementById('menuaiItems');
-      var chevron = document.getElementById('menuaiChevron');
-      if (items) items.classList.toggle('expanded', cartExpanded);
-      if (chevron) chevron.classList.toggle('expanded', cartExpanded);
-    };
-
-    window.menuaiAddToCart = function (item) {
-      var existing = cart.find(function (c) { return c.name === item.name; });
-      if (existing) existing.qty++;
-      else cart.push({ name: item.name, price: item.price, qty: 1 });
-      updateCartUI();
-      menuaiShowToast('✓ ' + item.name + ' eklendi');
-      hideAutocomplete();
-      var input = document.getElementById('menuaiOrderInput');
-      if (input) input.value = '';
-      if (!cartExpanded) menuaiToggleCart();
-    };
-
-    window.menuaiUpdateQty = function (index, delta) {
-      if (cart[index]) {
-        cart[index].qty += delta;
-        if (cart[index].qty <= 0) cart.splice(index, 1);
-        updateCartUI();
-      }
-    };
-
+    // ========================================
+    // SİPARİŞ BİLDİR
+    // ========================================
     window.menuaiSendOrder = function () {
-      if (cart.length === 0) { menuaiShowToast('⚠️ Sepet boş!'); return; }
-      var total = cart.reduce(function (sum, c) { return sum + (c.price * c.qty); }, 0);
-      console.log('[MenüAi] Order:', { items: cart, total: total });
-      menuaiShowToast('✅ Sipariş gönderildi! ' + total + ' ₺');
+      if (cart.length === 0) return;
+      var items = cart.map(function (c) { return { name: c.name, price: c.price, qty: c.qty }; });
+      sendNotification('order', items);
       cart = [];
-      updateCartUI();
-      if (cartExpanded) menuaiToggleCart();
+      render();
+      if (cardOpen) menuaiToggle();
     };
 
-    window.menuaiCallWaiter = function () {
-      menuaiShowToast('🙋 Garson çağrıldı!');
-      console.log('[MenüAi] Waiter called');
-    };
+    // ========================================
+    // ARAMA + AUTOCOMPLETE
+    // ========================================
+    var searchTimer = null;
+    document.getElementById('menuaiSearch').addEventListener('input', function (e) {
+      clearTimeout(searchTimer);
+      var q = e.target.value.toLowerCase().trim();
+      var ac = document.getElementById('menuaiAc');
+      if (q.length < 2) { ac.classList.remove('active'); return; }
 
-    function hideAutocomplete() {
-      var ac = document.getElementById('menuaiAutocomplete');
-      if (ac) { ac.classList.remove('active'); ac.innerHTML = ''; }
-      selectedIndex = -1;
-    }
+      searchTimer = setTimeout(function () {
+        var hits = menu.filter(function (i) { return i.name.toLowerCase().includes(q); }).slice(0, 5);
+        if (hits.length === 0) { ac.classList.remove('active'); return; }
 
-    function highlightMatch(text, query) {
-      var idx = text.toLowerCase().indexOf(query.toLowerCase());
-      if (idx === -1) return text;
-      return text.substring(0, idx) + '<mark>' + text.substring(idx, idx + query.length) + '</mark>' + text.substring(idx + query.length);
-    }
+        ac.innerHTML = hits.map(function (item) {
+          return '<div class="menuai-ac-row" onclick=\'menuaiAdd(' + JSON.stringify(item).replace(/'/g, "\\'") + ')\'>' +
+            '<span class="menuai-ac-name">' + item.name + '</span>' +
+            '<span class="menuai-ac-price">' + item.price + ' ₺</span>' +
+            '</div>';
+        }).join('');
+        ac.classList.add('active');
+      }, 150);
+    });
 
-    function showAutocomplete(results, query) {
-      var ac = document.getElementById('menuaiAutocomplete');
-      if (!ac || results.length === 0) { hideAutocomplete(); return; }
-      var html = '';
-      results.forEach(function (item, i) {
-        html += '<div class="menuai-ac-item' + (i === selectedIndex ? ' selected' : '') + '" data-index="' + i + '">';
-        html += '<span class="name">' + highlightMatch(item.name, query) + '</span>';
-        html += '<span class="price">' + item.price + ' ₺</span>';
-        html += '<span class="add-btn">+</span></div>';
-      });
-      ac.innerHTML = html;
-      ac.classList.add('active');
-      ac.querySelectorAll('.menuai-ac-item').forEach(function (el) {
-        el.addEventListener('click', function () {
-          var idx = parseInt(el.dataset.index);
-          menuaiAddToCart(results[idx]);
-        });
-      });
-    }
-
-    function searchMenu(query) {
-      if (!query || query.length < 2) { hideAutocomplete(); return; }
-      query = query.toLowerCase();
-      var results = menuItems.filter(function (item) {
-        return item.name.toLowerCase().includes(query);
-      }).slice(0, 6);
-      showAutocomplete(results, query);
-    }
-
-    document.addEventListener('input', function (e) {
-      if (e.target.id === 'menuaiOrderInput') {
-        clearTimeout(debounceTimer);
-        debounceTimer = setTimeout(function () { searchMenu(e.target.value); }, 150);
+    // ========================================
+    // İFRAME'DEN GELEN + BUTON MESAJLARINI DİNLE
+    // ========================================
+    window.addEventListener('message', function (event) {
+      if (event.data && event.data.type === 'menuai-add' && event.data.item) {
+        var item = event.data.item;
+        console.log('[MenüAi] iframe\'den ürün eklendi:', item.name);
+        menuaiAdd(item);
       }
     });
 
-    document.addEventListener('keydown', function (e) {
-      if (e.target.id !== 'menuaiOrderInput') return;
-      var ac = document.getElementById('menuaiAutocomplete');
-      var items = ac ? ac.querySelectorAll('.menuai-ac-item') : [];
-      if (e.key === 'ArrowDown') { e.preventDefault(); selectedIndex = Math.min(selectedIndex + 1, items.length - 1); updateSelection(items); }
-      else if (e.key === 'ArrowUp') { e.preventDefault(); selectedIndex = Math.max(selectedIndex - 1, -1); updateSelection(items); }
-      else if (e.key === 'Enter' && selectedIndex >= 0) {
-        e.preventDefault();
-        var query = e.target.value.toLowerCase();
-        var results = menuItems.filter(function (item) { return item.name.toLowerCase().includes(query); }).slice(0, 6);
-        if (results[selectedIndex]) menuaiAddToCart(results[selectedIndex]);
-      }
-      else if (e.key === 'Escape') hideAutocomplete();
-    });
+    // Dış tıklama artık backdrop ile yönetiliyor (menuaiBackdrop onclick)
 
-    function updateSelection(items) {
-      items.forEach(function (el, i) {
-        if (i === selectedIndex) { el.classList.add('selected'); el.scrollIntoView({ block: 'nearest' }); }
-        else el.classList.remove('selected');
-      });
-    }
-
-    document.addEventListener('click', function (e) {
-      if (!e.target.closest('.menuai-search-container')) hideAutocomplete();
-    });
-
-    console.log('[MenüAi] Smart Overlay v4.1 loaded ✨');
+    console.log('[MenüAi] v6.0 Ultra Ghost 👻 | Masa:', tableNumber, '| Restoran:', restaurantSlug || 'demo');
   })();
 </script>
-<!-- End MenüAi Smart Overlay v4.1 -->

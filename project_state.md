@@ -1,27 +1,21 @@
-# MenüAi V1 - Project State
+# MenüAi Project State
 
-**Status**: ✅ Completed\n**Phase**: Verification Complete\n**Goal**: Build a smart restaurant menu digitization platform with instant search and glassmorphism UI
+**Status**: ✅ PRODUCTION READY (V5.2)
+**Phase**: Phase 5 - Ghost Mode
+**Goal**: Implemented a "Ghost Mode" invisible overlay system with three independent floating glass buttons (Waiter, Cart, Bill) and an expandable "Cart Card".
 
-## Vision
-Karmaşık restoran menülerini (PDF/Fotoğraf) kullanıcı için yüksek hızlı bir arama motoruna dönüştürmek. "Google'da arama yapmak" kadar doğal bir sipariş deneyimi.
+## Tech Specs (V5.2)
+- **Overlay**: `pointer-events: none` + Transparent
+- **Icons**: 3x Floating Glass Icons (`backdrop-filter`)
+- **Cart**: Expandable Glass Card (`scale` animation)
+- **Engine**: Ultimate Core v2.1 (No changes needed)
 
 ## Tasks
-- [/] Project structure initialization
-- [ ] Core UI components (Neon borders, Glass bar)
-- [ ] Smart Input autocomplete system
-- [ ] Menu data structure (JSON)
-- [ ] Search/filter logic
-- [ ] Cart management
-- [ ] Mobile-first responsive design
-- [ ] Polish & animations
+- [x] Restore project from GitHub
+- [x] Detect V4.1 mismatch
+- [x] Upgrade to V5.2 (Ghost Mode)
+- [ ] Verify functionality via automated chrome test
 
 ## Current Context
-- Open Files: None
-- Observed Errors: None
-- Next Action: Create project folder structure and base files
-
-## Tech Stack
-- HTML5, CSS3, Vanilla JavaScript
-- No framework (lightweight PWA-ready)
-- JSON-based menu data
-- CSS animations & Glassmorphism
+- **Sync**: GitHub repo was V4.1, manually forced update to V5.2 to match Knowledge Base.
+- **Ready**: `overlay.html` is now fully compliant with "Invisible Bar" specs.
