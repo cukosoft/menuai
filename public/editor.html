@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MenüAi — Buton Editörü</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #1a1a2e;
+            color: #eee;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .toolbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: #16213e;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, .5);
+        }
+
+        .toolbar h1 {
+            font-size: 16px;
+            color: #e85d3a;
+        }
+
+        .toolbar select,
+        .toolbar button,
+        .toolbar input {
+            padding: 6px 12px;
+            border-radius: 6px;
+            border: 1px solid #444;
+            background: #0f3460;
+            color: #fff;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .toolbar button:hover {
+            background: #e85d3a;
+        }
+
+        .toolbar .save-btn {
+            background: #22c55e;
+            font-weight: bold;
+        }
+
+        .toolbar .save-btn:hover {
+            background: #16a34a;
+        }
+
+        .toolbar .delete-btn {
+            background: #ef4444;
+        }
+
+        .toolbar .info {
+            color: #aaa;
+            font-size: 12px;
+            margin-left: auto;
+        }
+
+        .editor-area {
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .page-container {
+            position: relative;
+            display: inline-block;
+            cursor: crosshair;
+            max-width: 800px;
+        }
+
+        .page-container img {
+            width: 100%;
+            display: block;
+            border: 2px solid #333;
+            border-radius: 4px;
+        }
+
+        /* Editable buttons on the image */
+        .edit-btn {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: rgba(232, 93, 58, 0.9);
+            border: 2px solid #fff;
+            color: #fff;
+            font-size: 12px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: grab;
+            z-index: 10;
+            transform: translate(-50%, -50%);
+            transition: box-shadow .15s;
+            user-select: none;
+        }
+
+        .edit-btn:hover {
+            box-shadow: 0 0 8px rgba(232, 93, 58, .8);
+        }
+
+        .edit-btn.selected {
+            border-color: #facc15;
+            box-shadow: 0 0 12px rgba(250, 204, 21, .8);
+            background: rgba(250, 204, 21, 0.9);
+        }
+
+        .edit-btn.dragging {
+            cursor: grabbing;
+            opacity: 0.7;
+        }
+
+        /* Tooltip on hover */
+        .edit-btn .tooltip {
+            position: absolute;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+            background: rgba(0, 0, 0, .85);
+            color: #fff;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            pointer-events: none;
+            display: none;
+        }
+
+        .edit-btn:hover .tooltip {
+            display: block;
+        }
+
+        /* Side panel for item details */
+        .side-panel {
+            position: fixed;
+            right: 0;
+            top: 60px;
+            bottom: 0;
+            width: 280px;
+            background: #16213e;
+            padding: 16px;
+            overflow-y: auto;
+            border-left: 1px solid #333;
+        }
+
+        .side-panel h3 {
+            color: #e85d3a;
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+
+        .side-panel label {
+            display: block;
+            color: #aaa;
+            font-size: 11px;
+            margin-top: 8px;
+        }
+
+        .side-panel input {
+            width: 100%;
+            padding: 6px 8px;
+            border-radius: 4px;
+            border: 1px solid #444;
+            background: #0f3460;
+            color: #fff;
+            font-size: 13px;
+            margin-top: 2px;
+        }
+
+        .item-list {
+            margin-top: 16px;
+            font-size: 12px;
+        }
+
+        .item-list .item-row {
+            padding: 6px 8px;
+            border-bottom: 1px solid #333;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .item-list .item-row:hover {
+            background: #0f3460;
+        }
+
+        .item-list .item-row.active {
+            background: #e85d3a33;
+            border-left: 3px solid #e85d3a;
+        }
+
+        .item-list .item-row .del {
+            color: #ef4444;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .status-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 280px;
+            background: #0f3460;
+            padding: 6px 16px;
+            font-size: 12px;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="toolbar">
+        <h1>🍽️ MenüAi Editör</h1>
+        <label style="color:#aaa;font-size:12px;">Sayfa:</label>
+        <select id="pageSelect"></select>
+        <button onclick="prevPage()">◀ Önceki</button>
+        <button onclick="nextPage()">Sonraki ▶</button>
+        <button class="save-btn" onclick="saveAll()">💾 Kaydet</button>
+        <button class="delete-btn" onclick="deleteSelected()">🗑️ Seçili Sil</button>
+        <div class="info">Resme tıkla = buton ekle | Butona tıkla = seç | Sürükle = taşı</div>
+    </div>
+
+    <div class="editor-area" id="editorArea">
+        <div class="page-container" id="pageContainer">
+            <img id="pageImage" src="" alt="Menü sayfası">
+        </div>
+    </div>
+
+    <div class="side-panel">
+        <h3>📝 Seçili Ürün</h3>
+        <label>Ürün Adı</label>
+        <input type="text" id="itemName" placeholder="PATATES CİPSİ" oninput="updateSelected()">
+        <label>Fiyat (₺)</label>
+        <input type="number" id="itemPrice" placeholder="175" oninput="updateSelected()">
+        <label>X (piksel ‰)</label>
+        <input type="number" id="itemX" readonly style="opacity:.6">
+        <label>Y (piksel ‰)</label>
+        <input type="number" id="itemY" readonly style="opacity:.6">
+
+        <div class="item-list" id="itemList"></div>
+    </div>
+
+    <div class="status-bar" id="statusBar">Hazır — bir sayfa seçin</div>
+
+    <script>
+        var ocrData = {};
+        var currentPage = null;
+        var selectedIdx = -1;
+        var dragState = null;
+
+        // Load OCR data
+        fetch("/api/ocr-positions/tucco")
+            .then(function (r) { return r.json(); })
+            .then(function (data) {
+                ocrData = data;
+                populatePageSelect();
+                // Start with first page that has image
+                var pages = Object.keys(data).filter(function (k) { return data[k] && data[k].image_url; });
+                if (pages.length > 0) loadPage(pages[0]);
+            });
+
+        function populatePageSelect() {
+            var sel = document.getElementById("pageSelect");
+            sel.innerHTML = "";
+            Object.keys(ocrData).sort(function (a, b) { return parseInt(a) - parseInt(b); }).forEach(function (k) {
+                if (!ocrData[k] || !ocrData[k].image_url) return;
+                var opt = document.createElement("option");
+                opt.value = k;
+                var count = (ocrData[k].items || []).length;
+                opt.textContent = "Sayfa " + k + " (" + count + " ürün)";
+                sel.appendChild(opt);
+            });
+            sel.addEventListener("change", function () { loadPage(this.value); });
+        }
+
+        function loadPage(pageNum) {
+            currentPage = pageNum;
+            selectedIdx = -1;
+            document.getElementById("pageSelect").value = pageNum;
+            var pg = ocrData[pageNum];
+            if (!pg) return;
+
+            document.getElementById("pageImage").src = pg.image_url;
+            document.getElementById("statusBar").textContent = "Sayfa " + pageNum + " yüklendi — " + (pg.items || []).length + " ürün";
+
+            // Wait for image load then render buttons
+            var img = document.getElementById("pageImage");
+            img.onload = function () { renderButtons(); };
+            if (img.complete) renderButtons();
+        }
+
+        function renderButtons() {
+            // Remove old buttons
+            document.querySelectorAll(".edit-btn").forEach(function (b) { b.remove(); });
+
+            var pg = ocrData[currentPage];
+            if (!pg || !pg.items) { updateItemList(); return; }
+
+            var container = document.getElementById("pageContainer");
+            var img = document.getElementById("pageImage");
+            var w = img.clientWidth;
+            var h = img.clientHeight;
+
+            pg.items.forEach(function (item, idx) {
+                var btn = document.createElement("div");
+                btn.className = "edit-btn" + (idx === selectedIdx ? " selected" : "");
+                btn.textContent = "+";
+                btn.setAttribute("data-idx", idx);
+
+                // Position from bbox or percent
+                var leftPx, topPx;
+                if (item.bbox) {
+                    leftPx = (item.bbox[1] / 1000) * w;
+                    topPx = ((item.bbox[0] + item.bbox[2]) / 2 / 1000) * h;
+                } else {
+                    leftPx = ((item.x_percent || 5) / 100) * w;
+                    topPx = ((item.y_percent || 50) / 100) * h;
+                }
+
+                btn.style.left = leftPx + "px";
+                btn.style.top = topPx + "px";
+
+                // Tooltip
+                var tooltip = document.createElement("span");
+                tooltip.className = "tooltip";
+                tooltip.textContent = item.name + (item.price ? " ₺" + item.price : "");
+                btn.appendChild(tooltip);
+
+                // Click to select
+                btn.addEventListener("mousedown", function (e) {
+                    e.stopPropagation();
+                    selectItem(idx);
+                    // Start drag
+                    dragState = {
+                        idx: idx,
+                        startX: e.clientX,
+                        startY: e.clientY,
+                        origLeft: leftPx,
+                        origTop: topPx
+                    };
+                    btn.classList.add("dragging");
+                });
+
+                container.appendChild(btn);
+            });
+
+            updateItemList();
+        }
+
+        // Drag handling
+        document.addEventListener("mousemove", function (e) {
+            if (!dragState) return;
+            var dx = e.clientX - dragState.startX;
+            var dy = e.clientY - dragState.startY;
+            var btn = document.querySelector('.edit-btn[data-idx="' + dragState.idx + '"]');
+            if (btn) {
+                btn.style.left = (dragState.origLeft + dx) + "px";
+                btn.style.top = (dragState.origTop + dy) + "px";
+            }
+        });
+
+        document.addEventListener("mouseup", function (e) {
+            if (!dragState) return;
+            var dx = e.clientX - dragState.startX;
+            var dy = e.clientY - dragState.startY;
+            var img = document.getElementById("pageImage");
+            var w = img.clientWidth, h = img.clientHeight;
+
+            var newLeft = dragState.origLeft + dx;
+            var newTop = dragState.origTop + dy;
+
+            // Update item data
+            var item = ocrData[currentPage].items[dragState.idx];
+            var xNorm = Math.round((newLeft / w) * 1000);
+            var yNorm = Math.round((newTop / h) * 1000);
+
+            // Store as bbox [y_min, x_min, y_max, x_max]
+            // Since we only have center position, estimate a small bbox
+            var halfH = 13; // ~13/1000 = roughly text height
+            item.bbox = [yNorm - halfH, xNorm, yNorm + halfH, xNorm + 100];
+            item.x_percent = Math.round(xNorm / 10 * 10) / 10;
+            item.y_percent = Math.round(yNorm / 10 * 10) / 10;
+
+            document.querySelector('.edit-btn.dragging')?.classList.remove("dragging");
+            dragState = null;
+
+            renderButtons();
+            selectItem(ocrData[currentPage].items.indexOf(item));
+            setStatus("⚡ " + item.name + " taşındı → x:" + xNorm + " y:" + yNorm);
+        });
+
+        // Click on image to add new button
+        document.getElementById("pageContainer").addEventListener("click", function (e) {
+            if (e.target.closest(".edit-btn")) return; // clicked on existing button
+
+            var img = document.getElementById("pageImage");
+            var rect = img.getBoundingClientRect();
+            var x = e.clientX - rect.left;
+            var y = e.clientY - rect.top;
+            var w = img.clientWidth, h = img.clientHeight;
+
+            var xNorm = Math.round((x / w) * 1000);
+            var yNorm = Math.round((y / h) * 1000);
+
+            if (!ocrData[currentPage].items) ocrData[currentPage].items = [];
+
+            var newItem = {
+                name: "YENİ ÜRÜN",
+                price: 0,
+                x_percent: Math.round(xNorm / 10 * 10) / 10,
+                y_percent: Math.round(yNorm / 10 * 10) / 10,
+                bbox: [yNorm - 13, xNorm, yNorm + 13, xNorm + 100]
+            };
+
+            ocrData[currentPage].items.push(newItem);
+            renderButtons();
+            selectItem(ocrData[currentPage].items.length - 1);
+            setStatus("➕ Yeni buton eklendi — isim ve fiyat girin");
+
+            // Focus name input
+            document.getElementById("itemName").focus();
+            document.getElementById("itemName").select();
+        });
+
+        function selectItem(idx) {
+            selectedIdx = idx;
+            var item = ocrData[currentPage]?.items?.[idx];
+            if (!item) return;
+
+            document.getElementById("itemName").value = item.name || "";
+            document.getElementById("itemPrice").value = item.price || "";
+            document.getElementById("itemX").value = item.bbox ? item.bbox[1] : Math.round((item.x_percent || 0) * 10);
+            document.getElementById("itemY").value = item.bbox ? Math.round((item.bbox[0] + item.bbox[2]) / 2) : Math.round((item.y_percent || 0) * 10);
+
+            // Highlight
+            document.querySelectorAll(".edit-btn").forEach(function (b, i) {
+                b.classList.toggle("selected", parseInt(b.getAttribute("data-idx")) === idx);
+            });
+            updateItemList();
+        }
+
+        function updateSelected() {
+            if (selectedIdx < 0 || !ocrData[currentPage]?.items?.[selectedIdx]) return;
+            var item = ocrData[currentPage].items[selectedIdx];
+            item.name = document.getElementById("itemName").value;
+            item.price = parseFloat(document.getElementById("itemPrice").value) || 0;
+
+            // Update tooltip
+            var btn = document.querySelector('.edit-btn[data-idx="' + selectedIdx + '"]');
+            if (btn) {
+                var tooltip = btn.querySelector(".tooltip");
+                if (tooltip) tooltip.textContent = item.name + (item.price ? " ₺" + item.price : "");
+            }
+            updateItemList();
+        }
+
+        function deleteSelected() {
+            if (selectedIdx < 0 || !ocrData[currentPage]?.items) return;
+            var name = ocrData[currentPage].items[selectedIdx].name;
+            ocrData[currentPage].items.splice(selectedIdx, 1);
+            selectedIdx = -1;
+            renderButtons();
+            setStatus("🗑️ " + name + " silindi");
+        }
+
+        function updateItemList() {
+            var list = document.getElementById("itemList");
+            var items = ocrData[currentPage]?.items || [];
+            list.innerHTML = "<h3 style='color:#aaa;font-size:12px;margin-bottom:8px;'>📋 " + items.length + " ürün</h3>";
+            items.forEach(function (item, idx) {
+                var row = document.createElement("div");
+                row.className = "item-row" + (idx === selectedIdx ? " active" : "");
+                row.innerHTML = '<span>' + (idx + 1) + '. ' + (item.name || '?') + '</span>' +
+                    '<span style="color:#e85d3a">₺' + (item.price || 0) + '</span>';
+                row.addEventListener("click", function () { selectItem(idx); });
+                list.appendChild(row);
+            });
+        }
+
+        function saveAll() {
+            setStatus("💾 Kaydediliyor...");
+            fetch("/api/save-ocr/tucco", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(ocrData)
+            }).then(function (r) {
+                if (r.ok) setStatus("✅ Tüm değişiklikler kaydedildi!");
+                else setStatus("❌ Kaydetme hatası: " + r.status);
+            }).catch(function (e) {
+                setStatus("❌ Bağlantı hatası: " + e.message);
+            });
+        }
+
+        function prevPage() {
+            var sel = document.getElementById("pageSelect");
+            if (sel.selectedIndex > 0) { sel.selectedIndex--; loadPage(sel.value); }
+        }
+        function nextPage() {
+            var sel = document.getElementById("pageSelect");
+            if (sel.selectedIndex < sel.options.length - 1) { sel.selectedIndex++; loadPage(sel.value); }
+        }
+
+        function setStatus(msg) {
+            document.getElementById("statusBar").textContent = msg;
+        }
+
+        // Keyboard shortcuts
+        document.addEventListener("keydown", function (e) {
+            if (e.target.tagName === "INPUT") return;
+            if (e.key === "Delete" || e.key === "Backspace") deleteSelected();
+            if (e.key === "s" && e.ctrlKey) { e.preventDefault(); saveAll(); }
+            if (e.key === "ArrowLeft") prevPage();
+            if (e.key === "ArrowRight") nextPage();
+        });
+    </script>
+</body>
+
+</html>

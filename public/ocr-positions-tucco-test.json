@@ -1,0 +1,97 @@
+{
+  "1": {
+    "image_url": "https://tuccogastrocoffee.com/wp-content/uploads/2026/01/12-09-25-Page-6-scaled.webp",
+    "items": [
+      {
+        "name": "GRANOLA",
+        "price": 345,
+        "bbox": [
+          101,
+          110,
+          110,
+          166
+        ]
+      },
+      {
+        "name": "SERPME KAHVALTI (2 kişilik)",
+        "price": 875,
+        "bbox": [
+          146,
+          110,
+          158,
+          216
+        ]
+      },
+      {
+        "name": "PRATİK ve LEZZETLİ",
+        "price": 355,
+        "bbox": [
+          221,
+          111,
+          235,
+          222
+        ]
+      },
+      {
+        "name": "PAZAR KEYFİ",
+        "price": 475,
+        "bbox": [
+          269,
+          111,
+          281,
+          183
+        ]
+      },
+      {
+        "name": "BENEDICT",
+        "price": 325,
+        "bbox": [
+          318,
+          111,
+          328,
+          167
+        ]
+      },
+      {
+        "name": "SICAK KAHVALTI TABAĞI",
+        "price": 495,
+        "bbox": [
+          363,
+          110,
+          374,
+          249
+        ]
+      },
+      {
+        "name": "PİZZAYLA KAHVALTI",
+        "price": 485,
+        "bbox": [
+          409,
+          111,
+          421,
+          222
+        ]
+      },
+      {
+        "name": "CAPRESE TARTINE",
+        "price": 395,
+        "bbox": [
+          473,
+          110,
+          483,
+          213
+        ]
+      },
+      {
+        "name": "HELLİM SOTE",
+        "price": 345,
+        "bbox": [
+          532,
+          111,
+          545,
+          186
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "1": {
+    "image_url": "/original/page_5.webp",
+    "items": [
+      {
+        "name": "GRANOLA",
+        "price": 345,
+        "bbox": [
+          98,
+          110,
+          112,
+          166
+        ]
+      },
+      {
+        "name": "SERPME KAHVALTI",
+        "price": 875,
+        "bbox": [
+          145,
+          110,
+          159,
+          215
+        ]
+      },
+      {
+        "name": "PRATİK ve LEZZETLİ",
+        "price": 355,
+        "bbox": [
+          223,
+          110,
+          237,
+          221
+        ]
+      },
+      {
+        "name": "PAZAR KEYFİ",
+        "price": 475,
+        "bbox": [
+          269,
+          110,
+          283,
+          183
+        ]
+      },
+      {
+        "name": "BENEDICT",
+        "price": 325,
+        "bbox": [
+          315,
+          110,
+          329,
+          168
+        ]
+      },
+      {
+        "name": "SICAK KAHVALTI TABAĞI",
+        "price": 495,
+        "bbox": [
+          361,
+          110,
+          376,
+          251
+        ]
+      },
+      {
+        "name": "PİZZAYLA KAHVALTI",
+        "price": 485,
+        "bbox": [
+          408,
+          110,
+          422,
+          223
+        ]
+      },
+      {
+        "name": "CAPRESE TARTINE",
+        "price": 395,
+        "bbox": [
+          470,
+          110,
+          484,
+          213
+        ]
+      },
+      {
+        "name": "HELLİM SOTE",
+        "price": 345,
+        "bbox": [
+          532,
+          110,
+          546,
+          186
+        ]
+      }
+    ]
+  },
+  "2": {
+    "image_url": "/original/page_6.webp",
+    "items": [
+      {
+        "name": "SAHANDA YUMURTA",
+        "price": 175,
+        "bbox": [
+          102,
+          135,
+          114,
+          261
+        ]
+      },
+      {
+        "name": "PATATESLİ YUMURTA",
+        "price": 185,
+        "bbox": [
+          135,
+          135,
+          147,
+          261
+        ]
+      },
+      {
+        "name": "MENEMEN",
+        "price": 235,
+        "bbox": [
+          168,
+          135,
+          180,
+          207
+        ]
+      },
+      {
+        "name": "PEYNİRLİ OMLET",
+        "price": 235,
+        "bbox": [
+          201,
+          135,
+          213,
+          243
+        ]
+      },
+      {
+        "name": "KIYMALI YUMURTA",
+        "price": 295,
+        "bbox": [
+          234,
+          135,
+          246,
+          253
+        ]
+      },
+      {
+        "name": "EGG BENEDICT",
+        "price": 375,
+        "bbox": [
+          267,
+          135,
+          279,
+          225
+        ]
+      },
+      {
+        "name": "SUCUKLU YUMURTA",
+        "price": 275,
+        "bbox": [
+          333,
+          135,
+          345,
+          261
+        ]
+      },
+      {
+        "name": "TUCCO OMLET",
+        "price": 335,
+        "bbox": [
+          366,
+          135,
+          378,
+          225
+        ]
+      },
+      {
+        "name": "KAVURMALI YUMURTA",
+        "price": 395,
+        "bbox": [
+          415,
+          135,
+          427,
+          269
+        ]
+      },
+      {
+        "name": "TOST",
+        "price": 185,
+        "bbox": [
+          454,
+          608,
+          466,
+          643
+        ]
+      },
+      {
+        "name": "SUCUKLU TOST",
+        "price": 235,
+        "bbox": [
+          503,
+          608,
+          515,
+          692
+        ]
+      },
+      {
+        "name": "PAŞA TOST",
+        "price": 255,
+        "bbox": [
+          552,
+          608,
+          564,
+          671
+        ]
+      },
+      {
+        "name": "KABURGA TİFTİK TOST",
+        "price": 445,
+        "bbox": [
+          617,
+          608,
+          629,
+          741
+        ]
+      }
+    ]
+  },
+  "3": {
+    "image_url": "/original/page_7.webp",
+    "items": [
+      {
+        "name": "ÇITIR RAVIOLI TABAĞI",
+        "price": null,
+        "bbox": [
+          751,
+          513,
+          763,
+          638
+        ]
+      }
+    ]
+  }
+}

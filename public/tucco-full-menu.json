@@ -1,0 +1,1490 @@
+{
+  "6": {
+    "image_url": "/original/page_6.webp",
+    "items": [
+      {
+        "name": "GRANOLA",
+        "price": 345,
+        "bbox": [
+          101,
+          110,
+          110,
+          166
+        ]
+      },
+      {
+        "name": "SERPME KAHVALTI (2 kişilik)",
+        "price": 875,
+        "bbox": [
+          146,
+          110,
+          158,
+          216
+        ]
+      },
+      {
+        "name": "PRATİK ve LEZZETLİ",
+        "price": 355,
+        "bbox": [
+          221,
+          111,
+          235,
+          222
+        ]
+      },
+      {
+        "name": "PAZAR KEYFİ",
+        "price": 475,
+        "bbox": [
+          269,
+          111,
+          281,
+          183
+        ]
+      },
+      {
+        "name": "BENEDICT",
+        "price": 325,
+        "bbox": [
+          318,
+          111,
+          328,
+          167
+        ]
+      },
+      {
+        "name": "SICAK KAHVALTI TABAĞI",
+        "price": 495,
+        "bbox": [
+          363,
+          110,
+          374,
+          249
+        ]
+      },
+      {
+        "name": "PİZZAYLA KAHVALTI",
+        "price": 485,
+        "bbox": [
+          409,
+          111,
+          421,
+          222
+        ]
+      },
+      {
+        "name": "CAPRESE TARTINE",
+        "price": 395,
+        "bbox": [
+          473,
+          110,
+          483,
+          213
+        ]
+      },
+      {
+        "name": "HELLİM SOTE",
+        "price": 345,
+        "bbox": [
+          532,
+          111,
+          545,
+          186
+        ]
+      }
+    ]
+  },
+  "7": {
+    "image_url": "/original/page_7.webp",
+    "items": [
+      {
+        "name": "SAHANDA YUMURTA",
+        "price": 175,
+        "bbox": [
+          104,
+          136,
+          114,
+          254
+        ]
+      },
+      {
+        "name": "PATATESLİ YUMURTA",
+        "price": 185,
+        "bbox": [
+          134,
+          137,
+          147,
+          255
+        ]
+      },
+      {
+        "name": "MENEMEN",
+        "price": 235,
+        "bbox": [
+          169,
+          137,
+          179,
+          193
+        ]
+      },
+      {
+        "name": "PEYNİRLİ OMLET",
+        "price": 235,
+        "bbox": [
+          199,
+          137,
+          212,
+          231
+        ]
+      },
+      {
+        "name": "KIYMALI YUMURTA",
+        "price": 295,
+        "bbox": [
+          234,
+          137,
+          244,
+          246
+        ]
+      },
+      {
+        "name": "EGG BENEDICT",
+        "price": 375,
+        "bbox": [
+          266,
+          137,
+          277,
+          221
+        ]
+      },
+      {
+        "name": "SUCUKLU YUMURTA",
+        "price": 275,
+        "bbox": [
+          332,
+          136,
+          341,
+          254
+        ]
+      },
+      {
+        "name": "TUCCO OMLET",
+        "price": 335,
+        "bbox": [
+          364,
+          136,
+          374,
+          219
+        ]
+      },
+      {
+        "name": "KAVURMALI YUMURTA",
+        "price": 395,
+        "bbox": [
+          414,
+          137,
+          423,
+          257
+        ]
+      },
+      {
+        "name": "TOST",
+        "price": 185,
+        "bbox": [
+          456,
+          608,
+          465,
+          638
+        ]
+      },
+      {
+        "name": "SUCUKLU TOST",
+        "price": 235,
+        "bbox": [
+          504,
+          609,
+          513,
+          692
+        ]
+      },
+      {
+        "name": "PAŞA TOST",
+        "price": 255,
+        "bbox": [
+          551,
+          609,
+          561,
+          669
+        ]
+      },
+      {
+        "name": "KABURGA TİFTİK TOST",
+        "price": 445,
+        "bbox": [
+          613,
+          609,
+          624,
+          730
+        ]
+      }
+    ]
+  },
+  "8": {
+    "image_url": "/original/page_8.webp",
+    "items": [
+      {
+        "name": "EFES MALT",
+        "price": 0,
+        "bbox": [
+          399,
+          352,
+          428,
+          459
+        ]
+      },
+      {
+        "name": "ÇITIR RAVIOLI TABAĞI",
+        "price": 0,
+        "bbox": [
+          752,
+          525,
+          764,
+          635
+        ]
+      }
+    ]
+  },
+  "9": {
+    "image_url": "/original/page_9.webp",
+    "items": [
+      {
+        "name": "PATATES CİPSİ",
+        "price": 175,
+        "bbox": [
+          134,
+          146,
+          146,
+          231
+        ]
+      },
+      {
+        "name": "SİGARA BÖREĞİ",
+        "price": 215,
+        "bbox": [
+          171,
+          146,
+          186,
+          240
+        ]
+      },
+      {
+        "name": "BUFFALO WINGS",
+        "price": 385,
+        "bbox": [
+          214,
+          147,
+          225,
+          246
+        ]
+      },
+      {
+        "name": "ÇITIR KORNİŞON",
+        "price": 235,
+        "bbox": [
+          272,
+          145,
+          286,
+          245
+        ]
+      },
+      {
+        "name": "IZGARA SOSİS (min. 2kişilik)",
+        "price": 545,
+        "bbox": [
+          312,
+          146,
+          326,
+          229
+        ]
+      },
+      {
+        "name": "ÇITIR RAVİOLİ TABAĞI",
+        "price": 395,
+        "bbox": [
+          353,
+          144,
+          366,
+          277
+        ]
+      },
+      {
+        "name": "MAC & CHEESE TOPLARI",
+        "price": 425,
+        "bbox": [
+          395,
+          146,
+          404,
+          290
+        ]
+      },
+      {
+        "name": "ÇITIR SOĞAN TABAĞI",
+        "price": 205,
+        "bbox": [
+          431,
+          145,
+          445,
+          272
+        ]
+      },
+      {
+        "name": "BALLI HARDALLI TAVUK",
+        "price": 335,
+        "bbox": [
+          473,
+          146,
+          483,
+          286
+        ]
+      },
+      {
+        "name": "FALAFEL TOPLARI",
+        "price": 255,
+        "bbox": [
+          513,
+          146,
+          523,
+          248
+        ]
+      },
+      {
+        "name": "ÇITIR CAJUN TAVUK",
+        "price": 395,
+        "bbox": [
+          551,
+          145,
+          564,
+          263
+        ]
+      },
+      {
+        "name": "TUCCO COMBO TABAĞI (tek kişilik)",
+        "price": 365,
+        "bbox": [
+          591,
+          146,
+          604,
+          284
+        ]
+      },
+      {
+        "name": "TUCCO COMBO TABAĞI (2-3 kişilik)",
+        "price": 545,
+        "bbox": [
+          650,
+          145,
+          663,
+          284
+        ]
+      },
+      {
+        "name": "NACHOS TAVUK",
+        "price": 385,
+        "bbox": [
+          711,
+          146,
+          721,
+          240
+        ]
+      },
+      {
+        "name": "MOZZARELLA STİCK",
+        "price": 395,
+        "bbox": [
+          768,
+          146,
+          780,
+          264
+        ]
+      },
+      {
+        "name": "CAJUN BAHARATLI ÇITIR SUCUK",
+        "price": 325,
+        "bbox": [
+          809,
+          145,
+          822,
+          344
+        ]
+      },
+      {
+        "name": "TİFTİK ETLİ CHEDDAR SOSLU PATATES",
+        "price": 645,
+        "bbox": [
+          849,
+          145,
+          863,
+          376
+        ]
+      }
+    ]
+  },
+  "10": {
+    "image_url": "/original/page_10.webp",
+    "items": [
+      {
+        "name": "CAPRESE",
+        "price": 385,
+        "bbox": [
+          759,
+          79,
+          771,
+          142
+        ]
+      }
+    ]
+  },
+  "11": {
+    "image_url": "/original/page_11.webp",
+    "items": [
+      {
+        "name": "GÜNÜN ÇORBASI",
+        "price": 145,
+        "bbox": [
+          124,
+          156,
+          141,
+          258
+        ]
+      },
+      {
+        "name": "BROKOLİ ÇORBASI",
+        "price": 165,
+        "bbox": [
+          169,
+          157,
+          184,
+          267
+        ]
+      },
+      {
+        "name": "ISPANAK ÇORBASI",
+        "price": 165,
+        "bbox": [
+          213,
+          156,
+          227,
+          266
+        ]
+      },
+      {
+        "name": "MANTAR ÇORBASI",
+        "price": 165,
+        "bbox": [
+          256,
+          156,
+          271,
+          264
+        ]
+      },
+      {
+        "name": "MUSHROOM GRATIN",
+        "price": 295,
+        "bbox": [
+          302,
+          157,
+          311,
+          278
+        ]
+      },
+      {
+        "name": "İTHAL PEYNİR TABAĞI",
+        "price": 655,
+        "bbox": [
+          364,
+          156,
+          376,
+          286
+        ]
+      },
+      {
+        "name": "KABURGA TİFTİK ETLİ GRATEN",
+        "price": 555,
+        "bbox": [
+          407,
+          156,
+          420,
+          334
+        ]
+      },
+      {
+        "name": "HELLİM SOTE",
+        "price": 345,
+        "bbox": [
+          474,
+          155,
+          484,
+          233
+        ]
+      },
+      {
+        "name": "FALAFEL DÜRÜM",
+        "price": 325,
+        "bbox": [
+          627,
+          533,
+          638,
+          617
+        ]
+      },
+      {
+        "name": "HOT DOG",
+        "price": 355,
+        "bbox": [
+          659,
+          533,
+          667,
+          581
+        ]
+      },
+      {
+        "name": "KASAP SUCUK EKMEK",
+        "price": 375,
+        "bbox": [
+          688,
+          533,
+          696,
+          647
+        ]
+      },
+      {
+        "name": "KÖFTE EKMEK",
+        "price": 475,
+        "bbox": [
+          715,
+          533,
+          727,
+          604
+        ]
+      },
+      {
+        "name": "TİFTİK DÜRÜM",
+        "price": 555,
+        "bbox": [
+          743,
+          533,
+          755,
+          607
+        ]
+      }
+    ]
+  },
+  "12": {
+    "image_url": "/original/page_12.webp",
+    "items": [
+      {
+        "name": "TUCCO COMBO TABAĞI (2-3 kişilik)",
+        "price": 545,
+        "bbox": [
+          79,
+          300,
+          90,
+          430
+        ]
+      },
+      {
+        "name": "ÇITIR CAJUN TAVUK",
+        "price": 395,
+        "bbox": [
+          394,
+          386,
+          404,
+          489
+        ]
+      },
+      {
+        "name": "BALLI HARDALLI TAVUK",
+        "price": 335,
+        "bbox": [
+          395,
+          604,
+          403,
+          727
+        ]
+      }
+    ]
+  },
+  "13": {
+    "image_url": "/original/page_13.webp",
+    "items": [
+      {
+        "name": "EFES 33cl EFES FIÇI +1",
+        "price": 165,
+        "bbox": [
+          85,
+          140,
+          102,
+          323
+        ]
+      },
+      {
+        "name": "EFES 50cl EFES FIÇI +1",
+        "price": 225,
+        "bbox": [
+          131,
+          140,
+          148,
+          324
+        ]
+      },
+      {
+        "name": "EFES 50cl EFES PİLSEN +1",
+        "price": 245,
+        "bbox": [
+          179,
+          141,
+          193,
+          344
+        ]
+      },
+      {
+        "name": "EFES 50cl EFES MALT",
+        "price": 245,
+        "bbox": [
+          225,
+          140,
+          241,
+          314
+        ]
+      },
+      {
+        "name": "EFES 50cl EFES ÖZEL SERİ",
+        "price": 255,
+        "bbox": [
+          272,
+          140,
+          286,
+          345
+        ]
+      },
+      {
+        "name": "EFES 50cl EFES GLUTENSİZ",
+        "price": 305,
+        "bbox": [
+          320,
+          140,
+          333,
+          349
+        ]
+      },
+      {
+        "name": "33cl BUD",
+        "price": 285,
+        "bbox": [
+          369,
+          217,
+          380,
+          279
+        ]
+      },
+      {
+        "name": "50cl BUD",
+        "price": 315,
+        "bbox": [
+          414,
+          216,
+          429,
+          279
+        ]
+      },
+      {
+        "name": "50cl BOMONTİ FİLTRESİZ",
+        "price": 265,
+        "bbox": [
+          461,
+          216,
+          473,
+          373
+        ]
+      },
+      {
+        "name": "33cl BECK'S",
+        "price": 235,
+        "bbox": [
+          510,
+          217,
+          520,
+          294
+        ]
+      },
+      {
+        "name": "50cl BECK'S",
+        "price": 265,
+        "bbox": [
+          557,
+          216,
+          567,
+          292
+        ]
+      },
+      {
+        "name": "33cl MILLER",
+        "price": 265,
+        "bbox": [
+          527,
+          643,
+          538,
+          670
+        ]
+      },
+      {
+        "name": "50cl BELFAST",
+        "price": 255,
+        "bbox": [
+          505,
+          615,
+          530,
+          670
+        ],
+        "interpolated": true
+      },
+      {
+        "name": "35,5cl CORONA",
+        "price": 375,
+        "bbox": [
+          483,
+          615,
+          508,
+          670
+        ],
+        "interpolated": true
+      },
+      {
+        "name": "33cl ERDINGER",
+        "price": 375,
+        "bbox": [
+          461,
+          615,
+          479,
+          647
+        ]
+      },
+      {
+        "name": "33cl HOEGAARDEN",
+        "price": 375,
+        "bbox": [
+          411,
+          616,
+          431,
+          643
+        ]
+      },
+      {
+        "name": "50cl AMSTERDAM",
+        "price": 395,
+        "bbox": [
+          323,
+          617,
+          336,
+          723
+        ]
+      },
+      {
+        "name": "33cl LEFFE BRUNE",
+        "price": 385,
+        "bbox": [
+          364,
+          617,
+          386,
+          723
+        ]
+      },
+      {
+        "name": "33cl LEFFE BLONDE",
+        "price": 385,
+        "bbox": [
+          297,
+          617,
+          322,
+          723
+        ],
+        "interpolated": true
+      },
+      {
+        "name": "33cl DUVEL",
+        "price": 445,
+        "bbox": [
+          230,
+          618,
+          241,
+          643
+        ]
+      },
+      {
+        "name": "33cl BUDWEISER",
+        "price": 245,
+        "bbox": [
+          276,
+          618,
+          289,
+          645
+        ]
+      },
+      {
+        "name": "33cl HEINEKEN",
+        "price": 265,
+        "bbox": [
+          575,
+          643,
+          585,
+          749
+        ]
+      },
+      {
+        "name": "33cl BLUE MOON",
+        "price": 255,
+        "bbox": [
+          621,
+          643,
+          632,
+          764
+        ]
+      },
+      {
+        "name": "33cl ESTRELLA",
+        "price": 250,
+        "bbox": [
+          668,
+          643,
+          679,
+          751
+        ]
+      },
+      {
+        "name": "33cl PAULANER",
+        "price": 250,
+        "bbox": [
+          714,
+          643,
+          725,
+          747
+        ]
+      }
+    ]
+  },
+  "14": {
+    "image_url": "/original/page_14.webp",
+    "items": [
+      {
+        "name": "GRANOLA",
+        "price": 345,
+        "bbox": [
+          130,
+          93,
+          139,
+          149
+        ]
+      },
+      {
+        "name": "TAVUK KASE (200gr)",
+        "price": 425,
+        "bbox": [
+          173,
+          93,
+          186,
+          164
+        ]
+      },
+      {
+        "name": "SOMON KASE (200gr)",
+        "price": 755,
+        "bbox": [
+          248,
+          92,
+          261,
+          169
+        ]
+      },
+      {
+        "name": "BONFİLE KASE (200gr)",
+        "price": 825,
+        "bbox": [
+          321,
+          94,
+          336,
+          174
+        ]
+      },
+      {
+        "name": "KÖFTE KASE (200gr)",
+        "price": 645,
+        "bbox": [
+          395,
+          93,
+          409,
+          161
+        ]
+      },
+      {
+        "name": "IZGARA TAVUKLU KASE",
+        "price": 455,
+        "bbox": [
+          473,
+          93,
+          483,
+          226
+        ]
+      },
+      {
+        "name": "IZGARA BONFİLELİ KASE",
+        "price": 855,
+        "bbox": [
+          545,
+          93,
+          557,
+          232
+        ]
+      },
+      {
+        "name": "IZGARA SOMONLU KASE",
+        "price": 745,
+        "bbox": [
+          623,
+          93,
+          632,
+          231
+        ]
+      },
+      {
+        "name": "IZGARA KÖFTELİ KASE",
+        "price": 645,
+        "bbox": [
+          695,
+          93,
+          707,
+          218
+        ]
+      },
+      {
+        "name": "VEGAN KASE",
+        "price": 495,
+        "bbox": [
+          771,
+          92,
+          781,
+          165
+        ]
+      },
+      {
+        "name": "HELLİM KASE",
+        "price": 545,
+        "bbox": [
+          829,
+          93,
+          843,
+          168
+        ]
+      }
+    ]
+  },
+  "15": {
+    "image_url": "/original/page_15.webp",
+    "items": [
+      {
+        "name": "TAVUKLA FORMDA KAL",
+        "price": 425,
+        "bbox": [
+          134,
+          373,
+          143,
+          505
+        ]
+      },
+      {
+        "name": "KÖFTEYLE FORMDA KAL",
+        "price": 595,
+        "bbox": [
+          210,
+          374,
+          223,
+          509
+        ]
+      },
+      {
+        "name": "ETLE FORMDA KAL",
+        "price": 755,
+        "bbox": [
+          271,
+          373,
+          280,
+          479
+        ]
+      },
+      {
+        "name": "SOMONLA FORMDA KAL",
+        "price": 645,
+        "bbox": [
+          349,
+          372,
+          359,
+          511
+        ]
+      }
+    ]
+  },
+  "16": {
+    "image_url": "/original/page_16.webp",
+    "items": [
+      {
+        "name": "ÇITIR HELLİM SALATA",
+        "price": 395,
+        "bbox": [
+          706,
+          256,
+          719,
+          386
+        ]
+      }
+    ]
+  },
+  "17": {
+    "image_url": "/original/page_17.webp",
+    "items": [
+      {
+        "name": "AKDENİZ BAHÇE SALATA",
+        "price": 255,
+        "bbox": [
+          127,
+          162,
+          142,
+          302
+        ]
+      },
+      {
+        "name": "KÖYÜMÜN SUMAKLI SALATASI",
+        "price": 295,
+        "bbox": [
+          163,
+          164,
+          177,
+          336
+        ]
+      },
+      {
+        "name": "BUĞDAY SALATA",
+        "price": 295,
+        "bbox": [
+          218,
+          164,
+          232,
+          257
+        ]
+      },
+      {
+        "name": "AVOKADO SALATA",
+        "price": 395,
+        "bbox": [
+          274,
+          162,
+          284,
+          266
+        ]
+      },
+      {
+        "name": "ROKA SALATA",
+        "price": 295,
+        "bbox": [
+          327,
+          163,
+          337,
+          241
+        ]
+      },
+      {
+        "name": "SEZAR SALATA",
+        "price": 375,
+        "bbox": [
+          363,
+          162,
+          372,
+          246
+        ]
+      },
+      {
+        "name": "TUCCO SALATA",
+        "price": 375,
+        "bbox": [
+          398,
+          162,
+          408,
+          250
+        ]
+      },
+      {
+        "name": "IZGARA KÖFTE SALATA",
+        "price": 595,
+        "bbox": [
+          449,
+          164,
+          461,
+          291
+        ]
+      },
+      {
+        "name": "FALAFEL SALATA",
+        "price": 385,
+        "bbox": [
+          924,
+          205,
+          932,
+          278
+        ]
+      },
+      {
+        "name": "TON BALIKLI SALATA",
+        "price": 425,
+        "bbox": [
+          181,
+          572,
+          191,
+          696
+        ]
+      },
+      {
+        "name": "HELLİM SALATA",
+        "price": 495,
+        "bbox": [
+          212,
+          573,
+          225,
+          664
+        ]
+      },
+      {
+        "name": "DAĞ KEKİKLİ IZGARA TAVUK SALATA",
+        "price": 375,
+        "bbox": [
+          263,
+          573,
+          277,
+          788
+        ]
+      },
+      {
+        "name": "TULUM PEYNİRLİ SALATA",
+        "price": 385,
+        "bbox": [
+          314,
+          572,
+          326,
+          722
+        ]
+      },
+      {
+        "name": "KARİDES SALATA",
+        "price": 745,
+        "bbox": [
+          364,
+          572,
+          377,
+          672
+        ]
+      },
+      {
+        "name": "IZGARA BONFİLE SALATA",
+        "price": 675,
+        "bbox": [
+          398,
+          572,
+          410,
+          720
+        ]
+      }
+    ]
+  },
+  "18": {
+    "image_url": "/original/page_18.webp",
+    "items": [
+      {
+        "name": "ISPANAKLI NİYOKKİ",
+        "price": 375,
+        "bbox": [
+          750,
+          243,
+          761,
+          357
+        ]
+      }
+    ]
+  },
+  "19": {
+    "image_url": "/original/page_19.webp",
+    "items": [
+      {
+        "name": "PENNE NAPOLTEN",
+        "price": 285,
+        "bbox": [
+          168,
+          104,
+          177,
+          208
+        ]
+      },
+      {
+        "name": "PENNE ARABIATA",
+        "price": 295,
+        "bbox": [
+          205,
+          104,
+          215,
+          208
+        ]
+      },
+      {
+        "name": "EGE USULÜ MAKARNA",
+        "price": 315,
+        "bbox": [
+          241,
+          105,
+          254,
+          237
+        ]
+      },
+      {
+        "name": "KÖRİ SOSLU PENNE",
+        "price": 345,
+        "bbox": [
+          297,
+          104,
+          311,
+          216
+        ]
+      },
+      {
+        "name": "KÖRİ SOSLU TAVUKLU PENNE",
+        "price": 365,
+        "bbox": [
+          336,
+          104,
+          348,
+          274
+        ]
+      },
+      {
+        "name": "4 PEYNİRLİ PENNE",
+        "price": 365,
+        "bbox": [
+          373,
+          104,
+          387,
+          210
+        ]
+      },
+      {
+        "name": "TİFTİK ETLİ PENNE",
+        "price": 655,
+        "bbox": [
+          430,
+          103,
+          444,
+          209
+        ]
+      },
+      {
+        "name": "BONFİLELİ TAGLIATELLE ALPOLLO",
+        "price": 595,
+        "bbox": [
+          468,
+          105,
+          482,
+          295
+        ]
+      },
+      {
+        "name": "MAKARNA BULLI",
+        "price": 385,
+        "bbox": [
+          509,
+          104,
+          518,
+          200
+        ]
+      },
+      {
+        "name": "TAVUKLU TAGLIATELLE ALPOLLO",
+        "price": 375,
+        "bbox": [
+          168,
+          532,
+          178,
+          717
+        ]
+      },
+      {
+        "name": "PESTO SOSLU PENNE",
+        "price": 395,
+        "bbox": [
+          205,
+          533,
+          214,
+          653
+        ]
+      },
+      {
+        "name": "PENNE BOLOGNESE",
+        "price": 375,
+        "bbox": [
+          241,
+          533,
+          250,
+          643
+        ]
+      },
+      {
+        "name": "SPAGETTI BOLOGNESE",
+        "price": 375,
+        "bbox": [
+          277,
+          532,
+          287,
+          668
+        ]
+      },
+      {
+        "name": "TON BALIKLI PENNE",
+        "price": 375,
+        "bbox": [
+          314,
+          532,
+          323,
+          646
+        ]
+      },
+      {
+        "name": "BEŞ PEYNİRLİ RAVIOLI MAKARNA",
+        "price": 535,
+        "bbox": [
+          348,
+          533,
+          362,
+          725
+        ]
+      },
+      {
+        "name": "BONFİLELİ PENNE",
+        "price": 575,
+        "bbox": [
+          383,
+          533,
+          397,
+          633
+        ]
+      },
+      {
+        "name": "SOMONLU TAGLIATELLE",
+        "price": 675,
+        "bbox": [
+          423,
+          532,
+          432,
+          667
+        ]
+      }
+    ]
+  },
+  "20": {
+    "image_url": "/original/page_20.webp",
+    "items": [
+      {
+        "name": "SEBZELİ NOODLE",
+        "price": 355,
+        "bbox": [
+          134,
+          108,
+          147,
+          206
+        ]
+      },
+      {
+        "name": "TAVUKLU NOODLE",
+        "price": 365,
+        "bbox": [
+          191,
+          108,
+          200,
+          214
+        ]
+      },
+      {
+        "name": "NOODLE & SWEET CHILI SOSLU TAVUK",
+        "price": 445,
+        "bbox": [
+          227,
+          108,
+          237,
+          335
+        ]
+      },
+      {
+        "name": "BONFİLELİ NOODLE",
+        "price": 595,
+        "bbox": [
+          278,
+          108,
+          291,
+          220
+        ]
+      },
+      {
+        "name": "MAC AND CHEESE",
+        "price": 365,
+        "bbox": [
+          227,
+          621,
+          240,
+          725
+        ]
+      },
+      {
+        "name": "TAVUKLU MAC AND CHEESE",
+        "price": 385,
+        "bbox": [
+          181,
+          582,
+          191,
+          742
+        ]
+      },
+      {
+        "name": "TİFTİK MAC AND CHEESE",
+        "price": 645,
+        "bbox": [
+          213,
+          582,
+          239,
+          676
+        ]
+      },
+      {
+        "name": "KÖFTELİ MAC AND CHEESE",
+        "price": 575,
+        "bbox": [
+          272,
+          583,
+          287,
+          735
+        ]
+      },
+      {
+        "name": "STEAK MAC AND CHEESE",
+        "price": 585,
+        "bbox": [
+          322,
+          582,
+          332,
+          725
+        ]
+      }
+    ]
+  }
+}

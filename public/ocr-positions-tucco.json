@@ -1,0 +1,6015 @@
+{
+  "1": {
+    "image_url": "/public/menu_screenshot_1_3.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "Sucuklu Yumurta",
+        "price": 0,
+        "bbox": null
+      },
+      {
+        "name": "Yeşillik Tabağı",
+        "price": 0,
+        "bbox": null
+      },
+      {
+        "name": "Tereyağ",
+        "price": 0,
+        "bbox": null
+      },
+      {
+        "name": "Sigara Böreği",
+        "price": 0,
+        "bbox": null
+      },
+      {
+        "name": "Zeytin",
+        "price": 0,
+        "bbox": null
+      },
+      {
+        "name": "Peynir",
+        "price": 0,
+        "bbox": null
+      },
+      {
+        "name": "Reçel",
+        "price": 0,
+        "bbox": null
+      },
+      {
+        "name": "Salam",
+        "price": 0,
+        "bbox": null
+      },
+      {
+        "name": "Menemen",
+        "price": 0,
+        "bbox": null
+      },
+      {
+        "name": "Bal",
+        "price": 0,
+        "bbox": null
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "2": {
+    "image_url": "/public/menu_screenshot_1_4.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "GRANDLA",
+        "price": 345,
+        "bbox": [
+          468,
+          107,
+          475,
+          163
+        ]
+      },
+      {
+        "name": "SERPME KAHVALTI",
+        "price": 875,
+        "bbox": [
+          446,
+          107,
+          505,
+          205
+        ]
+      },
+      {
+        "name": "PRATIK ve LEZZETLİ",
+        "price": 355,
+        "bbox": [
+          545,
+          109,
+          553,
+          223
+        ]
+      },
+      {
+        "name": "PAZAR KEYFİ",
+        "price": 475,
+        "bbox": [
+          575,
+          109,
+          583,
+          181
+        ]
+      },
+      {
+        "name": "BENEDICT",
+        "price": 325,
+        "bbox": [
+          605,
+          109,
+          613,
+          165
+        ]
+      },
+      {
+        "name": "SICAK KAHVALTI TABAĞI",
+        "price": 495,
+        "bbox": [
+          633,
+          109,
+          641,
+          251
+        ]
+      },
+      {
+        "name": "PIZZAYLA KAHVALTI",
+        "price": 485,
+        "bbox": [
+          633,
+          109,
+          670,
+          205
+        ]
+      },
+      {
+        "name": "CAPRESE TARTINE",
+        "price": 395,
+        "bbox": [
+          702,
+          109,
+          710,
+          214
+        ]
+      },
+      {
+        "name": "HELLIM SOTE",
+        "price": 345,
+        "bbox": [
+          741,
+          109,
+          749,
+          186
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "3": {
+    "image_url": "/public/menu_screenshot_1_5.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "HELLİM SOTE",
+        "price": 345,
+        "bbox": [
+          6,
+          109,
+          14,
+          186
+        ]
+      },
+      {
+        "name": "SAHANDA YUMURTA",
+        "price": 175,
+        "bbox": [
+          356,
+          135,
+          389,
+          367
+        ]
+      },
+      {
+        "name": "PATATESLİ YUMURTA",
+        "price": 185,
+        "bbox": [
+          356,
+          135,
+          410,
+          367
+        ]
+      },
+      {
+        "name": "MENEMEN",
+        "price": 235,
+        "bbox": [
+          424,
+          135,
+          430,
+          191
+        ]
+      },
+      {
+        "name": "PEYNİRLİ OMLET",
+        "price": 235,
+        "bbox": [
+          444,
+          135,
+          451,
+          233
+        ]
+      },
+      {
+        "name": "KIYMALI YUMURTA",
+        "price": 295,
+        "bbox": [
+          413,
+          135,
+          471,
+          230
+        ]
+      },
+      {
+        "name": "EGG BENEDICT",
+        "price": 375,
+        "bbox": [
+          484,
+          135,
+          492,
+          219
+        ]
+      },
+      {
+        "name": "SUCUKLU YUMURTA",
+        "price": 275,
+        "bbox": [
+          475,
+          135,
+          533,
+          221
+        ]
+      },
+      {
+        "name": "TUCCO OMLET",
+        "price": 335,
+        "bbox": [
+          547,
+          135,
+          554,
+          219
+        ]
+      },
+      {
+        "name": "KAVURMALI YUMURTA",
+        "price": 395,
+        "bbox": [
+          527,
+          135,
+          585,
+          251
+        ]
+      },
+      {
+        "name": "TOST",
+        "price": 185,
+        "bbox": [
+          604,
+          607,
+          609,
+          635
+        ]
+      },
+      {
+        "name": "SUCUKLU TOST",
+        "price": 235,
+        "bbox": [
+          604,
+          607,
+          642,
+          660
+        ]
+      },
+      {
+        "name": "PAŞA TOST",
+        "price": 255,
+        "bbox": [
+          634,
+          607,
+          672,
+          691
+        ]
+      },
+      {
+        "name": "KABURGA TIFTİK TOST",
+        "price": 445,
+        "bbox": [
+          663,
+          607,
+          711,
+          695
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "4": {
+    "image_url": "/public/menu_screenshot_1_6.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "SCIKGHAD THAI",
+        "price": 0,
+        "bbox": [
+          18,
+          374,
+          24,
+          384
+        ]
+      },
+      {
+        "name": "cherrydemales",
+        "price": 0,
+        "bbox": [
+          1,
+          607,
+          8,
+          684
+        ]
+      },
+      {
+        "name": "PEJA FOET",
+        "price": 0,
+        "bbox": [
+          353,
+          523,
+          378,
+          684
+        ],
+        "interpolated": true
+      },
+      {
+        "name": "CİTR RAVİOLİ TABAĞI",
+        "price": 0,
+        "bbox": [
+          705,
+          523,
+          710,
+          635
+        ]
+      },
+      {
+        "name": "PATATES CİPSİ",
+        "price": 175,
+        "bbox": [
+          964,
+          144,
+          971,
+          230
+        ]
+      },
+      {
+        "name": "SİGARA BÖREĞİ",
+        "price": 215,
+        "bbox": [
+          988,
+          144,
+          996,
+          240
+        ]
+      },
+      {
+        "name": "IYGAAN SUSS",
+        "price": 0,
+        "bbox": [
+          966,
+          872,
+          971,
+          905
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "5": {
+    "image_url": "/public/menu_screenshot_1_7.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "BUFFALO WINGS",
+        "price": 385,
+        "bbox": [
+          279,
+          144,
+          286,
+          244
+        ]
+      },
+      {
+        "name": "ÇITIR KORNİŞON",
+        "price": 235,
+        "bbox": [
+          315,
+          144,
+          324,
+          244
+        ]
+      },
+      {
+        "name": "IZGARA SOSİS (min. 2kişilik)",
+        "price": 545,
+        "bbox": [
+          328,
+          144,
+          349,
+          493
+        ]
+      },
+      {
+        "name": "ÇITIR RAVIOLİ TABAĞI",
+        "price": 395,
+        "bbox": [
+          365,
+          144,
+          373,
+          277
+        ]
+      },
+      {
+        "name": "MAC & CHEESE TOPLARI",
+        "price": 425,
+        "bbox": [
+          353,
+          144,
+          399,
+          293
+        ]
+      },
+      {
+        "name": "ÇITIR SOĞAN TABAĞI",
+        "price": 205,
+        "bbox": [
+          365,
+          144,
+          424,
+          277
+        ]
+      },
+      {
+        "name": "BALLI HARDALLI TAVUK",
+        "price": 335,
+        "bbox": [
+          441,
+          144,
+          447,
+          286
+        ]
+      },
+      {
+        "name": "FALAFEL TOPLARI",
+        "price": 255,
+        "bbox": [
+          466,
+          144,
+          473,
+          251
+        ]
+      },
+      {
+        "name": "CITIR CAJUN TAVUK",
+        "price": 395,
+        "bbox": [
+          441,
+          144,
+          498,
+          286
+        ]
+      },
+      {
+        "name": "TUCCO COMBO TABAĞI (tek kişilik)",
+        "price": 365,
+        "bbox": [
+          515,
+          144,
+          561,
+          284
+        ]
+      },
+      {
+        "name": "TUCCO COMBO TABAĞI (2-3 kişilik)",
+        "price": 545,
+        "bbox": [
+          479,
+          142,
+          525,
+          235
+        ]
+      },
+      {
+        "name": "NACHOS TAVUK",
+        "price": 385,
+        "bbox": [
+          590,
+          142,
+          597,
+          237
+        ]
+      },
+      {
+        "name": "MOZZARELLA STICK",
+        "price": 395,
+        "bbox": [
+          628,
+          144,
+          635,
+          265
+        ]
+      },
+      {
+        "name": "CAJUN BAHARATLI ÇITIR SUCUK",
+        "price": 325,
+        "bbox": [
+          652,
+          144,
+          662,
+          344
+        ]
+      },
+      {
+        "name": "TİFTİK ETLİ CHEDDAR SOSLU PATATES",
+        "price": 645,
+        "bbox": [
+          666,
+          144,
+          686,
+          395
+        ]
+      },
+      {
+        "name": "CAPRESE",
+        "price": 0,
+        "bbox": [
+          929,
+          774,
+          940,
+          856
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "6": {
+    "image_url": "/public/menu_screenshot_1_8.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "GÜNÜN ÇORBASI",
+        "price": 145,
+        "bbox": [
+          783,
+          153,
+          791,
+          258
+        ]
+      },
+      {
+        "name": "BROKOLI ÇORBASI",
+        "price": 165,
+        "bbox": [
+          783,
+          156,
+          819,
+          258
+        ]
+      },
+      {
+        "name": "ISPANAK ÇORBASI",
+        "price": 165,
+        "bbox": [
+          811,
+          153,
+          847,
+          267
+        ]
+      },
+      {
+        "name": "MANTAR ÇORBASI",
+        "price": 165,
+        "bbox": [
+          839,
+          156,
+          873,
+          265
+        ]
+      },
+      {
+        "name": "MUSHROOM GRATIN",
+        "price": 295,
+        "bbox": [
+          893,
+          156,
+          900,
+          274
+        ]
+      },
+      {
+        "name": "İTHAL PEYNİR TABAĞI",
+        "price": 655,
+        "bbox": [
+          932,
+          153,
+          941,
+          288
+        ]
+      },
+      {
+        "name": "KABURGA TİFTİK ETLİ GRATEN",
+        "price": 555,
+        "bbox": [
+          961,
+          228,
+          984,
+          333
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "7": {
+    "image_url": "/public/menu_screenshot_1_9.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "HELLİM SOTE",
+        "price": 345,
+        "bbox": [
+          266,
+          153,
+          275,
+          235
+        ]
+      },
+      {
+        "name": "FALAFEL DÜRÜM",
+        "price": 325,
+        "bbox": [
+          363,
+          530,
+          370,
+          614
+        ]
+      },
+      {
+        "name": "HOT DOG",
+        "price": 355,
+        "bbox": [
+          383,
+          530,
+          389,
+          584
+        ]
+      },
+      {
+        "name": "KASAP SUCUK ERMEK",
+        "price": 375,
+        "bbox": [
+          400,
+          530,
+          407,
+          647
+        ]
+      },
+      {
+        "name": "KÖFTE EKMEK",
+        "price": 475,
+        "bbox": [
+          400,
+          530,
+          425,
+          647
+        ]
+      },
+      {
+        "name": "TİFTİK DÜRÜM",
+        "price": 555,
+        "bbox": [
+          437,
+          530,
+          443,
+          607
+        ]
+      },
+      {
+        "name": "TUCCO COMBO TABAĞI (2-3 KİŞİLİK)",
+        "price": 545,
+        "bbox": [
+          665,
+          300,
+          674,
+          430
+        ]
+      },
+      {
+        "name": "ÇITIR CAJUN TAVUK",
+        "price": 395,
+        "bbox": [
+          864,
+          228,
+          872,
+          488
+        ]
+      },
+      {
+        "name": "BALLI HARDALLI TAVUK",
+        "price": 335,
+        "bbox": [
+          865,
+          602,
+          871,
+          728
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "8": {
+    "image_url": "/public/menu_screenshot_1_10.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "TUCCO COMBO TABACA (2-3 kişilik)",
+        "price": 545,
+        "bbox": [
+          130,
+          102,
+          137,
+          216
+        ]
+      },
+      {
+        "name": "CITIR CAJUN TAVUK",
+        "price": 395,
+        "bbox": [
+          129,
+          228,
+          137,
+          486
+        ]
+      },
+      {
+        "name": "EFES 33cl EFES FICI +1",
+        "price": 165,
+        "bbox": [
+          583,
+          137,
+          622,
+          323
+        ]
+      },
+      {
+        "name": "EFES 50cl EFES FICI +1",
+        "price": 225,
+        "bbox": [
+          583,
+          137,
+          622,
+          323
+        ]
+      },
+      {
+        "name": "EFES 50cl EFES PILSEN +1",
+        "price": 245,
+        "bbox": [
+          583,
+          251,
+          650,
+          328
+        ]
+      },
+      {
+        "name": "EFES 50cl EFES MALT",
+        "price": 245,
+        "bbox": [
+          612,
+          137,
+          681,
+          316
+        ]
+      },
+      {
+        "name": "EFES 50cl EFES ÖZEL SERİ",
+        "price": 255,
+        "bbox": [
+          642,
+          140,
+          709,
+          347
+        ]
+      },
+      {
+        "name": "EFES 50cl EFES GLUTENSİZ",
+        "price": 305,
+        "bbox": [
+          671,
+          140,
+          740,
+          349
+        ]
+      },
+      {
+        "name": "33cl BUD",
+        "price": 285,
+        "bbox": [
+          861,
+          642,
+          868,
+          756
+        ]
+      },
+      {
+        "name": "50cl BUD",
+        "price": 315,
+        "bbox": [
+          861,
+          209,
+          886,
+          756
+        ]
+      },
+      {
+        "name": "50cl BOMONTİ FİLTRESİZ",
+        "price": 265,
+        "bbox": [
+          856,
+          140,
+          881,
+          756
+        ],
+        "interpolated": true
+      },
+      {
+        "name": "BECK'S 33cl BECK'S",
+        "price": 235,
+        "bbox": [
+          850,
+          140,
+          868,
+          672
+        ]
+      },
+      {
+        "name": "BECK'S 50cl BECK'S",
+        "price": 265,
+        "bbox": [
+          850,
+          247,
+          886,
+          291
+        ]
+      },
+      {
+        "name": "33cl MILLER",
+        "price": 265,
+        "bbox": [
+          920,
+          642,
+          927,
+          670
+        ]
+      },
+      {
+        "name": "50cl BELFAST",
+        "price": 255,
+        "bbox": [
+          880,
+          447,
+          887,
+          456
+        ]
+      },
+      {
+        "name": "35.5cl CORONA",
+        "price": 375,
+        "bbox": [
+          644,
+          616,
+          653,
+          709
+        ]
+      },
+      {
+        "name": "33cl ERDINGER",
+        "price": 375,
+        "bbox": [
+          979,
+          642,
+          986,
+          672
+        ]
+      },
+      {
+        "name": "33cl HOEGAARDEN",
+        "price": 375,
+        "bbox": [
+          950,
+          437,
+          975,
+          672
+        ],
+        "interpolated": true
+      },
+      {
+        "name": "50cl AMSTERDAM",
+        "price": 395,
+        "bbox": [
+          957,
+          437,
+          966,
+          447
+        ]
+      },
+      {
+        "name": "33cl LEFFE BRUNE",
+        "price": 385,
+        "bbox": [
+          950,
+          437,
+          975,
+          447
+        ],
+        "interpolated": true
+      },
+      {
+        "name": "33cl LEFFE BLONDE",
+        "price": 385,
+        "bbox": [
+          950,
+          437,
+          975,
+          447
+        ],
+        "interpolated": true
+      },
+      {
+        "name": "33cl DUVEL",
+        "price": 445,
+        "bbox": [
+          950,
+          437,
+          975,
+          447
+        ],
+        "interpolated": true
+      },
+      {
+        "name": "33cl BUDWEISER",
+        "price": 245,
+        "bbox": [
+          950,
+          437,
+          975,
+          447
+        ],
+        "interpolated": true
+      },
+      {
+        "name": "33cl HEINEKEN",
+        "price": 265,
+        "bbox": [
+          950,
+          437,
+          975,
+          447
+        ],
+        "interpolated": true
+      },
+      {
+        "name": "33cl BLUE MOON",
+        "price": 255,
+        "bbox": [
+          950,
+          437,
+          975,
+          447
+        ],
+        "interpolated": true
+      },
+      {
+        "name": "33cl ESTRELLA",
+        "price": 250,
+        "bbox": [
+          950,
+          437,
+          975,
+          447
+        ],
+        "interpolated": true
+      },
+      {
+        "name": "33cl PAULANER",
+        "price": 250,
+        "bbox": [
+          950,
+          437,
+          975,
+          447
+        ],
+        "interpolated": true
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "9": {
+    "image_url": "/public/menu_screenshot_1_11.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "33cl AMSTERDAM",
+        "price": 395,
+        "bbox": [
+          0,
+          214,
+          33,
+          595
+        ]
+      },
+      {
+        "name": "33cl BECK'S",
+        "price": 235,
+        "bbox": [
+          172,
+          444,
+          197,
+          674
+        ],
+        "interpolated": true
+      },
+      {
+        "name": "50cl BECK'S",
+        "price": 265,
+        "bbox": [
+          145,
+          444,
+          150,
+          453
+        ]
+      },
+      {
+        "name": "GRANOLA",
+        "price": 345,
+        "bbox": [
+          523,
+          91,
+          531,
+          149
+        ]
+      },
+      {
+        "name": "TAVUK KASE (200gr)",
+        "price": 425,
+        "bbox": [
+          552,
+          91,
+          559,
+          163
+        ]
+      },
+      {
+        "name": "SOMON KASE (200gr)",
+        "price": 755,
+        "bbox": [
+          552,
+          91,
+          606,
+          163
+        ]
+      },
+      {
+        "name": "BONFİLE KASE (200gr)",
+        "price": 825,
+        "bbox": [
+          598,
+          91,
+          653,
+          170
+        ]
+      },
+      {
+        "name": "KÖFTE KASE (200gr)",
+        "price": 645,
+        "bbox": [
+          644,
+          91,
+          700,
+          174
+        ]
+      },
+      {
+        "name": "IZGARA TAVUKLU KASE",
+        "price": 455,
+        "bbox": [
+          691,
+          91,
+          747,
+          191
+        ]
+      },
+      {
+        "name": "IZGARA BONFİLELİ KASE",
+        "price": 855,
+        "bbox": [
+          739,
+          91,
+          794,
+          226
+        ]
+      },
+      {
+        "name": "IZGARA SOMONLU KASE",
+        "price": 745,
+        "bbox": [
+          785,
+          91,
+          840,
+          233
+        ]
+      },
+      {
+        "name": "IZGARA KÖFTELİ KASE",
+        "price": 645,
+        "bbox": [
+          834,
+          91,
+          886,
+          233
+        ]
+      },
+      {
+        "name": "VEGAN KASE",
+        "price": 495,
+        "bbox": [
+          879,
+          91,
+          933,
+          219
+        ]
+      },
+      {
+        "name": "HELLİM KASE",
+        "price": 545,
+        "bbox": [
+          927,
+          91,
+          971,
+          163
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "10": {
+    "image_url": "/public/menu_screenshot_1_12.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "TAVUKLA FORMDA KAL",
+        "price": 425,
+        "bbox": [
+          408,
+          372,
+          444,
+          567
+        ]
+      },
+      {
+        "name": "KÖFTEYLE FORMDA KAL",
+        "price": 595,
+        "bbox": [
+          438,
+          372,
+          495,
+          502
+        ]
+      },
+      {
+        "name": "ETLE FORMDA KAL",
+        "price": 755,
+        "bbox": [
+          486,
+          370,
+          531,
+          507
+        ]
+      },
+      {
+        "name": "SOMONLA FORMDA KAL",
+        "price": 645,
+        "bbox": [
+          524,
+          372,
+          580,
+          479
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "11": {
+    "image_url": "/public/menu_screenshot_1_13.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "ÇITIR HELLİM SALATA",
+        "price": 395,
+        "bbox": [
+          711,
+          253,
+          721,
+          386
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "12": {
+    "image_url": "/public/menu_screenshot_1_14.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "AKDENİZ BAHÇE SALATA",
+        "price": 255,
+        "bbox": [
+          250,
+          160,
+          258,
+          302
+        ]
+      },
+      {
+        "name": "KÖYÜMÜN SUMAKLI SALATASI",
+        "price": 295,
+        "bbox": [
+          250,
+          160,
+          280,
+          302
+        ]
+      },
+      {
+        "name": "BUĞDAY SALATA",
+        "price": 295,
+        "bbox": [
+          273,
+          160,
+          314,
+          337
+        ]
+      },
+      {
+        "name": "AVOKADO SALATA",
+        "price": 395,
+        "bbox": [
+          307,
+          160,
+          349,
+          260
+        ]
+      },
+      {
+        "name": "ROKA SALATA",
+        "price": 295,
+        "bbox": [
+          341,
+          160,
+          382,
+          263
+        ]
+      },
+      {
+        "name": "SEZAR SALATA",
+        "price": 375,
+        "bbox": [
+          374,
+          160,
+          405,
+          240
+        ]
+      },
+      {
+        "name": "TUCCO SALATA",
+        "price": 375,
+        "bbox": [
+          374,
+          160,
+          427,
+          240
+        ]
+      },
+      {
+        "name": "IZGARA KÖFTE SALATA",
+        "price": 595,
+        "bbox": [
+          418,
+          160,
+          460,
+          247
+        ]
+      },
+      {
+        "name": "FALAFEL SALATA",
+        "price": 385,
+        "bbox": [
+          750,
+          202,
+          756,
+          260
+        ]
+      },
+      {
+        "name": "TON BALIKLI SALATA",
+        "price": 425,
+        "bbox": [
+          249,
+          570,
+          290,
+          667
+        ]
+      },
+      {
+        "name": "HELLİM SALATA",
+        "price": 495,
+        "bbox": [
+          282,
+          572,
+          311,
+          695
+        ]
+      },
+      {
+        "name": "DAĞ KEKİKLİ IZGARA TAVUK SALATA",
+        "price": 375,
+        "bbox": [
+          282,
+          572,
+          343,
+          740
+        ]
+      },
+      {
+        "name": "TULUM PEYNİRLİ SALATA",
+        "price": 385,
+        "bbox": [
+          335,
+          570,
+          374,
+          791
+        ]
+      },
+      {
+        "name": "KARİDES SALATA",
+        "price": 745,
+        "bbox": [
+          367,
+          570,
+          407,
+          721
+        ]
+      },
+      {
+        "name": "IZGARA BONFILE SALATA",
+        "price": 675,
+        "bbox": [
+          399,
+          570,
+          428,
+          674
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "13": {
+    "image_url": "/public/menu_screenshot_1_15.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "İSPANAKLI NİYOKKİ",
+        "price": 375,
+        "bbox": [
+          555,
+          242,
+          562,
+          356
+        ]
+      },
+      {
+        "name": "PENNE NAPOLTEN",
+        "price": 285,
+        "bbox": [
+          835,
+          102,
+          841,
+          207
+        ]
+      },
+      {
+        "name": "PENNE ARABIATA",
+        "price": 295,
+        "bbox": [
+          858,
+          102,
+          866,
+          207
+        ]
+      },
+      {
+        "name": "EGE USULÜ MAKARNA",
+        "price": 315,
+        "bbox": [
+          882,
+          102,
+          889,
+          237
+        ]
+      },
+      {
+        "name": "KÖRİ SOSLU PENNE",
+        "price": 345,
+        "bbox": [
+          917,
+          102,
+          925,
+          216
+        ]
+      },
+      {
+        "name": "KÖRİ SOSLU TAVUKLU PENNE",
+        "price": 365,
+        "bbox": [
+          917,
+          102,
+          948,
+          230
+        ]
+      },
+      {
+        "name": "4 PEYNİRLİ PENNE",
+        "price": 365,
+        "bbox": [
+          917,
+          102,
+          972,
+          216
+        ]
+      },
+      {
+        "name": "TAVUKLU TAGLIATELLE ALPOLLO",
+        "price": 375,
+        "bbox": [
+          835,
+          530,
+          842,
+          716
+        ]
+      },
+      {
+        "name": "PESTO SOSLU PENNE",
+        "price": 395,
+        "bbox": [
+          857,
+          530,
+          865,
+          651
+        ]
+      },
+      {
+        "name": "PENNE BOLOGNESE",
+        "price": 375,
+        "bbox": [
+          903,
+          235,
+          948,
+          670
+        ]
+      },
+      {
+        "name": "SPAGETTI BOLOGNESE",
+        "price": 375,
+        "bbox": [
+          881,
+          530,
+          911,
+          644
+        ]
+      },
+      {
+        "name": "TON BALIKLI PENNE",
+        "price": 375,
+        "bbox": [
+          881,
+          530,
+          932,
+          600
+        ]
+      },
+      {
+        "name": "BEŞ PEYNİRLİ RAVIOLI MAKARNA",
+        "price": 535,
+        "bbox": [
+          948,
+          530,
+          957,
+          726
+        ]
+      },
+      {
+        "name": "BONFİLELİ PENNE",
+        "price": 575,
+        "bbox": [
+          926,
+          530,
+          980,
+          644
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "14": {
+    "image_url": "/public/menu_screenshot_1_16.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "TİFTİK ETLİ PENNE",
+        "price": 655,
+        "bbox": [
+          230,
+          102,
+          274,
+          209
+        ]
+      },
+      {
+        "name": "BONFİLELİ TAGLIATELLE ALPOLLO",
+        "price": 595,
+        "bbox": [
+          290,
+          102,
+          298,
+          293
+        ]
+      },
+      {
+        "name": "MAKARNA BULLI",
+        "price": 385,
+        "bbox": [
+          314,
+          102,
+          322,
+          202
+        ]
+      },
+      {
+        "name": "SOMONLU TAGLIATELLE",
+        "price": 675,
+        "bbox": [
+          260,
+          530,
+          267,
+          667
+        ]
+      },
+      {
+        "name": "SEBZELİ NOODLE",
+        "price": 355,
+        "bbox": [
+          705,
+          105,
+          736,
+          177
+        ]
+      },
+      {
+        "name": "TAVUKLU NOODLE",
+        "price": 365,
+        "bbox": [
+          727,
+          105,
+          769,
+          207
+        ]
+      },
+      {
+        "name": "NOODLE & SWEET CHILI SOSLU TAVUK",
+        "price": 445,
+        "bbox": [
+          729,
+          165,
+          792,
+          335
+        ]
+      },
+      {
+        "name": "BONFİLELİ NOODLE",
+        "price": 595,
+        "bbox": [
+          785,
+          107,
+          826,
+          170
+        ]
+      },
+      {
+        "name": "MAC AND CHEESE",
+        "price": 365,
+        "bbox": [
+          703,
+          581,
+          734,
+          744
+        ]
+      },
+      {
+        "name": "TAVUKLU MAC AND CHEESE",
+        "price": 385,
+        "bbox": [
+          726,
+          581,
+          764,
+          684
+        ]
+      },
+      {
+        "name": "TİFTİK MAC AND CHEESE",
+        "price": 645,
+        "bbox": [
+          737,
+          579,
+          794,
+          760
+        ]
+      },
+      {
+        "name": "KÖFTELİ MAC AND CHEESE",
+        "price": 575,
+        "bbox": [
+          776,
+          579,
+          823,
+          677
+        ]
+      },
+      {
+        "name": "STEAK MAC AND CHEESE",
+        "price": 585,
+        "bbox": [
+          814,
+          581,
+          852,
+          737
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "15": {
+    "image_url": "/public/menu_screenshot_1_17.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "TIFTIK MAC AND CHEESE",
+        "price": 645,
+        "bbox": [
+          21,
+          581,
+          58,
+          742
+        ]
+      },
+      {
+        "name": "RISOTTO MUSHROOM",
+        "price": 465,
+        "bbox": [
+          636,
+          233,
+          644,
+          358
+        ]
+      },
+      {
+        "name": "RISOTTO IZGARA TAVUK PİRZOLA",
+        "price": 495,
+        "bbox": [
+          658,
+          233,
+          665,
+          428
+        ]
+      },
+      {
+        "name": "RISOTTO KABURGA TIFTIK (220gr)",
+        "price": 895,
+        "bbox": [
+          679,
+          233,
+          687,
+          386
+        ]
+      },
+      {
+        "name": "RISOTTO IZGARA DANA BONFILE (200g)",
+        "price": 875,
+        "bbox": [
+          658,
+          233,
+          709,
+          421
+        ]
+      },
+      {
+        "name": "RISOTTO KUZU PİRZOLA (300gr)",
+        "price": 975,
+        "bbox": [
+          721,
+          233,
+          730,
+          372
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "16": {
+    "image_url": "/public/menu_screenshot_1_18.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "KÖZDE KUZU PİRZOLA",
+        "price": 0,
+        "bbox": [
+          900,
+          426,
+          925,
+          500
+        ],
+        "interpolated": true
+      },
+      {
+        "name": "SCHNITZEL",
+        "price": 375,
+        "bbox": [
+          930,
+          426,
+          938,
+          500
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "17": {
+    "image_url": "/public/menu_screenshot_1_19.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "BEŞAMEL SOSLU FİLİÇ BUT",
+        "price": 375,
+        "bbox": [
+          457,
+          207,
+          466,
+          353
+        ]
+      },
+      {
+        "name": "PİLİÇ BUT KAVURMA",
+        "price": 395,
+        "bbox": [
+          457,
+          205,
+          488,
+          353
+        ]
+      },
+      {
+        "name": "KREMALI MANTARLI TAVUK",
+        "price": 375,
+        "bbox": [
+          490,
+          207,
+          509,
+          570
+        ]
+      },
+      {
+        "name": "SRIRACHA SOSLU TAVUK",
+        "price": 425,
+        "bbox": [
+          501,
+          205,
+          531,
+          353
+        ]
+      },
+      {
+        "name": "CHICKEN MUSHROOM",
+        "price": 465,
+        "bbox": [
+          545,
+          205,
+          553,
+          328
+        ]
+      },
+      {
+        "name": "TUCCO ÇÖKERTME",
+        "price": 435,
+        "bbox": [
+          565,
+          205,
+          575,
+          307
+        ]
+      },
+      {
+        "name": "CAFE DE PARIS",
+        "price": 525,
+        "bbox": [
+          578,
+          205,
+          597,
+          265
+        ]
+      },
+      {
+        "name": "BARBEKÜ SOSLU TAVUK",
+        "price": 435,
+        "bbox": [
+          578,
+          205,
+          618,
+          295
+        ]
+      },
+      {
+        "name": "PATATES PÜRESİ YATAĞINDA IZGARA TAVUK",
+        "price": 425,
+        "bbox": [
+          600,
+          207,
+          641,
+          358
+        ]
+      },
+      {
+        "name": "CHEDDAR SOSLU TAVUK ŞAŞLIK",
+        "price": 425,
+        "bbox": [
+          611,
+          205,
+          662,
+          381
+        ]
+      },
+      {
+        "name": "FISTIK EZMELİ TAVUK ŞAŞLIK",
+        "price": 465,
+        "bbox": [
+          632,
+          207,
+          685,
+          442
+        ]
+      },
+      {
+        "name": "LABNELİ TAVUK BUT",
+        "price": 455,
+        "bbox": [
+          655,
+          205,
+          706,
+          337
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "18": {
+    "image_url": "/public/menu_screenshot_1_20.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "BEŞAMEL SOSLU TAVUK",
+        "price": 0,
+        "bbox": [
+          196,
+          751,
+          208,
+          905
+        ]
+      },
+      {
+        "name": "CHICKEN TEX MEX",
+        "price": 435,
+        "bbox": [
+          746,
+          384,
+          755,
+          514
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "19": {
+    "image_url": "/public/menu_screenshot_1_21.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "SAFRANLI TAVUK",
+        "price": 385,
+        "bbox": [
+          234,
+          177,
+          279,
+          879
+        ]
+      },
+      {
+        "name": "ASYA USULÜ PİLİÇ BUT",
+        "price": 385,
+        "bbox": [
+          293,
+          177,
+          300,
+          316
+        ]
+      },
+      {
+        "name": "TAVUK PİRZOLA",
+        "price": 375,
+        "bbox": [
+          270,
+          221,
+          322,
+          274
+        ]
+      },
+      {
+        "name": "PESTO SOSLU TAVUK",
+        "price": 415,
+        "bbox": [
+          305,
+          177,
+          344,
+          616
+        ]
+      },
+      {
+        "name": "ISPANAK YATAĞINDA TAVUK",
+        "price": 385,
+        "bbox": [
+          314,
+          177,
+          366,
+          298
+        ]
+      },
+      {
+        "name": "AVOKADO YATAĞINDA TAVUK PİRZOLA",
+        "price": 465,
+        "bbox": [
+          337,
+          177,
+          387,
+          400
+        ]
+      },
+      {
+        "name": "FAJITAS TAVUK",
+        "price": 485,
+        "bbox": [
+          358,
+          179,
+          409,
+          340
+        ]
+      },
+      {
+        "name": "KÖRİ SOSLU TAVUK",
+        "price": 425,
+        "bbox": [
+          380,
+          179,
+          430,
+          663
+        ]
+      },
+      {
+        "name": "PATLICAN YATAĞINDA TAVUK",
+        "price": 425,
+        "bbox": [
+          393,
+          179,
+          453,
+          305
+        ]
+      },
+      {
+        "name": "TATLI EKŞİ SOSLU TAVUK",
+        "price": 455,
+        "bbox": [
+          423,
+          179,
+          474,
+          291
+        ]
+      },
+      {
+        "name": "TAVUK MEKSİKA",
+        "price": 430,
+        "bbox": [
+          488,
+          177,
+          496,
+          277
+        ]
+      },
+      {
+        "name": "TULUM PEYNİR SOSLU SCHNITZEL",
+        "price": 475,
+        "bbox": [
+          477,
+          177,
+          529,
+          463
+        ]
+      },
+      {
+        "name": "VEJETERYAN BURGER",
+        "price": 285,
+        "bbox": [
+          901,
+          333,
+          909,
+          458
+        ]
+      },
+      {
+        "name": "HAMBURGER (150g)",
+        "price": 445,
+        "bbox": [
+          931,
+          333,
+          938,
+          409
+        ]
+      },
+      {
+        "name": "TRUF MANTAR SOSLU BURGER (150g)",
+        "price": 485,
+        "bbox": [
+          916,
+          333,
+          967,
+          460
+        ]
+      },
+      {
+        "name": "DOUBLE BURGER (300g)",
+        "price": 595,
+        "bbox": [
+          944,
+          333,
+          995,
+          400
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "20": {
+    "image_url": "/public/menu_screenshot_1_22.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "HAMBURGER (150gr)",
+        "price": 445,
+        "bbox": [
+          194,
+          330,
+          202,
+          412
+        ]
+      },
+      {
+        "name": "TRUF MANTAR SOSLU BURGER (150gr)",
+        "price": 485,
+        "bbox": [
+          180,
+          333,
+          232,
+          463
+        ]
+      },
+      {
+        "name": "DOUBLE BURGER (300gr)",
+        "price": 595,
+        "bbox": [
+          209,
+          333,
+          260,
+          400
+        ]
+      },
+      {
+        "name": "TANDIR BURGER (220gr)",
+        "price": 645,
+        "bbox": [
+          237,
+          333,
+          288,
+          400
+        ]
+      },
+      {
+        "name": "TAVUK DİLİMLİ BURGER (150gr)",
+        "price": 295,
+        "bbox": [
+          793,
+          251,
+          825,
+          877
+        ]
+      },
+      {
+        "name": "CHEESEBURGER (150gr)",
+        "price": 465,
+        "bbox": [
+          847,
+          251,
+          855,
+          344
+        ]
+      },
+      {
+        "name": "TUCCO BURGER (150gr)",
+        "price": 475,
+        "bbox": [
+          874,
+          251,
+          883,
+          347
+        ]
+      },
+      {
+        "name": "FATBOY BURGER (150gr)",
+        "price": 745,
+        "bbox": [
+          874,
+          251,
+          912,
+          347
+        ]
+      },
+      {
+        "name": "KAPALI FIRIN BURGER (150gr)",
+        "price": 775,
+        "bbox": [
+          905,
+          251,
+          954,
+          347
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "21": {
+    "image_url": "/public/menu_screenshot_1_23.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [],
+    "source_type": "web_screenshot"
+  },
+  "22": {
+    "image_url": "/public/menu_screenshot_1_24.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "YOĞURTLU MAKARNA",
+        "price": 235,
+        "bbox": [
+          647,
+          147,
+          655,
+          274
+        ]
+      },
+      {
+        "name": "SPAGETTI BOLONEZ",
+        "price": 225,
+        "bbox": [
+          666,
+          147,
+          674,
+          258
+        ]
+      },
+      {
+        "name": "KÖFTE TABAĞI",
+        "price": 295,
+        "bbox": [
+          686,
+          147,
+          694,
+          233
+        ]
+      },
+      {
+        "name": "SOSIS TABAĞI",
+        "price": 255,
+        "bbox": [
+          686,
+          147,
+          714,
+          233
+        ]
+      },
+      {
+        "name": "MİNİ BURGER (2 ADET)",
+        "price": 265,
+        "bbox": [
+          725,
+          147,
+          734,
+          228
+        ]
+      },
+      {
+        "name": "SUCUK & HELLİM",
+        "price": 275,
+        "bbox": [
+          725,
+          147,
+          762,
+          247
+        ]
+      },
+      {
+        "name": "KARIŞIK PİZZA",
+        "price": 270,
+        "bbox": [
+          774,
+          147,
+          782,
+          230
+        ]
+      },
+      {
+        "name": "MARGARITA PIZZA",
+        "price": 265,
+        "bbox": [
+          774,
+          147,
+          802,
+          230
+        ]
+      },
+      {
+        "name": "SUCUKLU PIZZA",
+        "price": 270,
+        "bbox": [
+          774,
+          147,
+          821,
+          230
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "23": {
+    "image_url": "/public/menu_screenshot_1_25.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [],
+    "source_type": "web_screenshot"
+  },
+  "24": {
+    "image_url": "/public/menu_screenshot_1_26.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "EGE USULÜ WRAP",
+        "price": 355,
+        "bbox": [
+          459,
+          377,
+          468,
+          488
+        ]
+      },
+      {
+        "name": "KÖRİ SOSLU TAVUK WRAP",
+        "price": 435,
+        "bbox": [
+          459,
+          377,
+          487,
+          491
+        ]
+      },
+      {
+        "name": "BBQ SOSLU TAVUK WRAP",
+        "price": 445,
+        "bbox": [
+          459,
+          377,
+          508,
+          491
+        ]
+      },
+      {
+        "name": "TAVUKLU MANTARLI WRAP",
+        "price": 435,
+        "bbox": [
+          480,
+          377,
+          526,
+          530
+        ]
+      },
+      {
+        "name": "TİFTİK WRAP",
+        "price": 695,
+        "bbox": [
+          500,
+          377,
+          545,
+          528
+        ]
+      },
+      {
+        "name": "BONFILE MANTARLI WRAP",
+        "price": 745,
+        "bbox": [
+          518,
+          377,
+          564,
+          533
+        ]
+      },
+      {
+        "name": "ÇEŞME KUMRU WRAP",
+        "price": 435,
+        "bbox": [
+          538,
+          377,
+          585,
+          463
+        ]
+      },
+      {
+        "name": "EGE USULÜ KREP",
+        "price": 385,
+        "bbox": [
+          635,
+          377,
+          645,
+          474
+        ]
+      },
+      {
+        "name": "ÇEŞME KUMRU KREP",
+        "price": 465,
+        "bbox": [
+          635,
+          377,
+          665,
+          474
+        ]
+      },
+      {
+        "name": "ISPANAKLI KREP",
+        "price": 435,
+        "bbox": [
+          635,
+          377,
+          682,
+          474
+        ]
+      },
+      {
+        "name": "KÖRİ SOSLU TAVUK KREP",
+        "price": 425,
+        "bbox": [
+          948,
+          377,
+          957,
+          491
+        ]
+      },
+      {
+        "name": "TAVUKLU MANTARLI KREP",
+        "price": 450,
+        "bbox": [
+          830,
+          377,
+          838,
+          493
+        ]
+      },
+      {
+        "name": "TİFTİK ETLİ BBQ SOSLU KREP",
+        "price": 695,
+        "bbox": [
+          696,
+          377,
+          742,
+          523
+        ]
+      },
+      {
+        "name": "BONFILE MANTARLI KREP",
+        "price": 745,
+        "bbox": [
+          715,
+          377,
+          770,
+          526
+        ]
+      },
+      {
+        "name": "TAVUKLU MANTARLI QUESADILLA",
+        "price": 435,
+        "bbox": [
+          688,
+          377,
+          723,
+          723
+        ]
+      },
+      {
+        "name": "BBQ SOSLU TAVUK QUESADILLA",
+        "price": 435,
+        "bbox": [
+          799,
+          377,
+          858,
+          881
+        ]
+      },
+      {
+        "name": "ÇEŞME KUMRU QUESADILLA",
+        "price": 495,
+        "bbox": [
+          830,
+          377,
+          888,
+          570
+        ]
+      },
+      {
+        "name": "TİFTİK ETLİ QUESADILLA",
+        "price": 685,
+        "bbox": [
+          850,
+          377,
+          907,
+          563
+        ]
+      },
+      {
+        "name": "BONFILE QUESADILLA",
+        "price": 785,
+        "bbox": [
+          929,
+          377,
+          937,
+          505
+        ]
+      },
+      {
+        "name": "KÖRİ SOSLU TAVUK QUESADILLA",
+        "price": 485,
+        "bbox": [
+          929,
+          377,
+          957,
+          505
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "25": {
+    "image_url": "/public/menu_screenshot_1_27.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "TAVUKLU MANTARLI OUESADILLA",
+        "price": 435,
+        "bbox": [
+          54,
+          377,
+          92,
+          879
+        ]
+      },
+      {
+        "name": "BBQ SOSLU TAVUK OUESADILLA",
+        "price": 435,
+        "bbox": [
+          54,
+          377,
+          112,
+          879
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "26": {
+    "image_url": "/public/menu_screenshot_1_28.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "VEJETERYAN PIZZA",
+        "price": 385,
+        "bbox": [
+          247,
+          537,
+          307,
+          877
+        ]
+      },
+      {
+        "name": "TAVUKLU PIZZA",
+        "price": 465,
+        "bbox": [
+          299,
+          537,
+          353,
+          647
+        ]
+      },
+      {
+        "name": "DÖRT PEYNİRLİ PİZZA",
+        "price": 475,
+        "bbox": [
+          345,
+          537,
+          383,
+          628
+        ]
+      },
+      {
+        "name": "TON BALIKLI PIZZA",
+        "price": 495,
+        "bbox": [
+          376,
+          537,
+          414,
+          663
+        ]
+      },
+      {
+        "name": "ROBESPIERRE PIZZA",
+        "price": 785,
+        "bbox": [
+          345,
+          133,
+          396,
+          628
+        ]
+      },
+      {
+        "name": "ŞEF PIZZA",
+        "price": 615,
+        "bbox": [
+          436,
+          535,
+          475,
+          660
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "27": {
+    "image_url": "/public/menu_screenshot_1_29.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "MARGARITA PIZZA",
+        "price": 345,
+        "bbox": [
+          863,
+          616,
+          871,
+          723
+        ]
+      },
+      {
+        "name": "KAVURMALI PIZZA",
+        "price": 595,
+        "bbox": [
+          863,
+          616,
+          897,
+          723
+        ]
+      },
+      {
+        "name": "KARIŞIK PİZZA",
+        "price": 525,
+        "bbox": [
+          863,
+          614,
+          921,
+          723
+        ]
+      },
+      {
+        "name": "KABURGA TİFTİK ETLİ PİZZA",
+        "price": 775,
+        "bbox": [
+          913,
+          616,
+          958,
+          742
+        ]
+      },
+      {
+        "name": "SWEET CHILI PIZZA",
+        "price": 515,
+        "bbox": [
+          951,
+          614,
+          996,
+          781
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "28": {
+    "image_url": "/public/menu_screenshot_1_30.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "KABURGA TİFTİKETLİ PİZZA",
+        "price": 775,
+        "bbox": [
+          178,
+          614,
+          224,
+          714
+        ]
+      },
+      {
+        "name": "PEPPERONI PIZZA",
+        "price": 435,
+        "bbox": [
+          253,
+          616,
+          298,
+          735
+        ]
+      },
+      {
+        "name": "TIFTİKETLİSTROMBOLI",
+        "price": 0,
+        "bbox": [
+          921,
+          163,
+          928,
+          226
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "29": {
+    "image_url": "/public/menu_screenshot_1_31.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "YUMURTALI ISPANAKLI PİDE",
+        "price": 325,
+        "bbox": [
+          670,
+          493,
+          677,
+          658
+        ]
+      },
+      {
+        "name": "TAVUKLU PİDE",
+        "price": 395,
+        "bbox": [
+          670,
+          493,
+          703,
+          658
+        ]
+      },
+      {
+        "name": "KAŞARLI SUCUKLU PİDE",
+        "price": 395,
+        "bbox": [
+          670,
+          493,
+          727,
+          658
+        ]
+      },
+      {
+        "name": "KIYMALI PİDE",
+        "price": 495,
+        "bbox": [
+          694,
+          493,
+          752,
+          577
+        ]
+      },
+      {
+        "name": "ETLİ PİDE",
+        "price": 645,
+        "bbox": [
+          719,
+          493,
+          778,
+          633
+        ]
+      },
+      {
+        "name": "TAVUKLU STROMBOLI",
+        "price": 425,
+        "bbox": [
+          794,
+          495,
+          803,
+          619
+        ]
+      },
+      {
+        "name": "TİFTİK ETLİ STROMBOLI",
+        "price": 695,
+        "bbox": [
+          769,
+          493,
+          826,
+          619
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "30": {
+    "image_url": "/public/menu_screenshot_1_32.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "TAVUKLU STROMBOLU",
+        "price": 425,
+        "bbox": [
+          60,
+          495,
+          67,
+          623
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "31": {
+    "image_url": "/public/menu_screenshot_1_33.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "SARMA",
+        "price": 275,
+        "bbox": [
+          543,
+          360,
+          550,
+          402
+        ]
+      },
+      {
+        "name": "İÇLİ KÖFTE (3 adet)",
+        "price": 435,
+        "bbox": [
+          604,
+          414,
+          659,
+          463
+        ]
+      },
+      {
+        "name": "MANTI",
+        "price": 435,
+        "bbox": [
+          604,
+          363,
+          611,
+          402
+        ]
+      },
+      {
+        "name": "KUZU İNCİK",
+        "price": 945,
+        "bbox": [
+          626,
+          360,
+          634,
+          430
+        ]
+      },
+      {
+        "name": "KÖYLÜM KÖFTE",
+        "price": 645,
+        "bbox": [
+          650,
+          360,
+          659,
+          453
+        ]
+      },
+      {
+        "name": "ALİNAZİK",
+        "price": 695,
+        "bbox": [
+          675,
+          360,
+          682,
+          419
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "32": {
+    "image_url": "/public/menu_screenshot_1_34.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "Ali Nazik",
+        "price": 0,
+        "bbox": [
+          820,
+          549,
+          845,
+          640
+        ],
+        "interpolated": true
+      },
+      {
+        "name": "Köylüm Köfte (200gr)",
+        "price": 0,
+        "bbox": [
+          850,
+          549,
+          857,
+          640
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "33": {
+    "image_url": "/public/menu_screenshot_1_35.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "DANA IZGARA KÖFTE (200 g)",
+        "price": 645,
+        "bbox": [
+          368,
+          230,
+          376,
+          349
+        ]
+      },
+      {
+        "name": "PATATES PÜRESİ YATAĞINDA KÖFTE (200 g)",
+        "price": 665,
+        "bbox": [
+          368,
+          230,
+          401,
+          395
+        ]
+      },
+      {
+        "name": "KÖZLENMİŞ PATLICAN YATAĞINDA KÖFTE (200 gr )",
+        "price": 625,
+        "bbox": [
+          368,
+          230,
+          428,
+          395
+        ]
+      },
+      {
+        "name": "KÖFTE MUSHROOM (200 gr )",
+        "price": 640,
+        "bbox": [
+          445,
+          230,
+          454,
+          340
+        ]
+      },
+      {
+        "name": "KÖYLÜM KÖFTE (200 gr )",
+        "price": 645,
+        "bbox": [
+          115,
+          547,
+          122,
+          640
+        ]
+      },
+      {
+        "name": "KASAP KÖFTE (200 gr )",
+        "price": 695,
+        "bbox": [
+          445,
+          230,
+          506,
+          272
+        ]
+      },
+      {
+        "name": "FILETO DUANTELO (200 g)",
+        "price": 835,
+        "bbox": [
+          944,
+          256,
+          953,
+          363
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "34": {
+    "image_url": "/public/menu_screenshot_1_36.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "TOURNEDO ROSSINI (200 gr.)",
+        "price": 845,
+        "bbox": [
+          460,
+          256,
+          468,
+          377
+        ]
+      },
+      {
+        "name": "YAPRAK DİLİMLİ BONFILE (200 gr)",
+        "price": 695,
+        "bbox": [
+          894,
+          195,
+          902,
+          344
+        ]
+      },
+      {
+        "name": "IZGARA DANA BONFILE (200 gr)",
+        "price": 775,
+        "bbox": [
+          894,
+          195,
+          933,
+          344
+        ]
+      },
+      {
+        "name": "BONFİLE ÇÖKERTME (200 gr)",
+        "price": 855,
+        "bbox": [
+          925,
+          247,
+          966,
+          330
+        ]
+      },
+      {
+        "name": "KÖZLENMİŞ PATLICAN YATAĞINDA TİKE BONFILE (200 gr.)",
+        "price": 775,
+        "bbox": [
+          942,
+          195,
+          997,
+          419
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "35": {
+    "image_url": "/public/menu_screenshot_1_37.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "YAPRAK DİLİMLİ BONFILE (200g)",
+        "price": 695,
+        "bbox": [
+          159,
+          195,
+          167,
+          344
+        ]
+      },
+      {
+        "name": "IZGARA DANA BONFILE (200 g)",
+        "price": 775,
+        "bbox": [
+          159,
+          193,
+          198,
+          344
+        ]
+      },
+      {
+        "name": "BONFILE ÇÖKERTME (200g)",
+        "price": 855,
+        "bbox": [
+          191,
+          247,
+          231,
+          323
+        ]
+      },
+      {
+        "name": "KÖZLENMİŞ PATLICAN YATAĞINDA TİKE BONFİLE (200g)",
+        "price": 775,
+        "bbox": [
+          221,
+          195,
+          262,
+          421
+        ]
+      },
+      {
+        "name": "STEAK MEKSİKA (200 gr.)",
+        "price": 845,
+        "bbox": [
+          284,
+          195,
+          293,
+          291
+        ]
+      },
+      {
+        "name": "STEAK MADALYON (200g)",
+        "price": 795,
+        "bbox": [
+          333,
+          195,
+          340,
+          295
+        ]
+      },
+      {
+        "name": "PEPPERS STEAK (200 g)",
+        "price": 785,
+        "bbox": [
+          333,
+          195,
+          371,
+          249
+        ]
+      },
+      {
+        "name": "FAJITAS BONFILE (200 gr)",
+        "price": 845,
+        "bbox": [
+          380,
+          195,
+          402,
+          265
+        ]
+      },
+      {
+        "name": "CAFE DE PARIS BONFILE (200g)",
+        "price": 925,
+        "bbox": [
+          394,
+          195,
+          450,
+          293
+        ]
+      },
+      {
+        "name": "SRIRACHA SOSLU BONFILE (200g)",
+        "price": 835,
+        "bbox": [
+          441,
+          195,
+          482,
+          402
+        ]
+      },
+      {
+        "name": "PATLICAN YATAĞINDA ANTRIKOT (300g)",
+        "price": 975,
+        "bbox": [
+          775,
+          177,
+          784,
+          370
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "36": {
+    "image_url": "/public/menu_screenshot_1_38.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "AVAKADO YATAĞINDA ANTRIKOT (300g)",
+        "price": 995,
+        "bbox": [
+          279,
+          165,
+          288,
+          363
+        ]
+      },
+      {
+        "name": "KUZU PIRZOLA (300g)",
+        "price": 845,
+        "bbox": [
+          714,
+          226,
+          721,
+          307
+        ]
+      },
+      {
+        "name": "RISOTTO KUZU PİRZDLA (300g)",
+        "price": 575,
+        "bbox": [
+          714,
+          226,
+          748,
+          307
+        ]
+      },
+      {
+        "name": "DANA LOKUM BONFILE IZGARA (300 g)",
+        "price": 995,
+        "bbox": [
+          766,
+          226,
+          775,
+          398
+        ]
+      },
+      {
+        "name": "IZGARA ANTRIKOT (300g)",
+        "price": 915,
+        "bbox": [
+          795,
+          226,
+          803,
+          333
+        ]
+      },
+      {
+        "name": "CAFE DE PARIS ANRIKOT (300g)",
+        "price": 985,
+        "bbox": [
+          795,
+          226,
+          829,
+          333
+        ]
+      },
+      {
+        "name": "KUZU İNCİK",
+        "price": 945,
+        "bbox": [
+          848,
+          226,
+          857,
+          293
+        ]
+      },
+      {
+        "name": "NEW YORK STEAK (300 g)",
+        "price": 1145,
+        "bbox": [
+          877,
+          223,
+          885,
+          326
+        ]
+      },
+      {
+        "name": "ARIANTIN STEAK (500 gr. 2-3 Kiilik)",
+        "price": 1985,
+        "bbox": [
+          877,
+          226,
+          912,
+          326
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "37": {
+    "image_url": "/public/menu_screenshot_1_39.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "RISOTTO KUZU PİRZDLA (300gr)",
+        "price": 575,
+        "bbox": [
+          5,
+          226,
+          13,
+          360
+        ]
+      },
+      {
+        "name": "DANA LOKUM BONFILE IZGARA (300 gr.)",
+        "price": 995,
+        "bbox": [
+          32,
+          226,
+          40,
+          398
+        ]
+      },
+      {
+        "name": "IZGARA ANTRIKOT (300gr)",
+        "price": 915,
+        "bbox": [
+          59,
+          226,
+          68,
+          333
+        ]
+      },
+      {
+        "name": "CAFE DE PARIS ANRIKOT (300gr)",
+        "price": 965,
+        "bbox": [
+          59,
+          226,
+          95,
+          333
+        ]
+      },
+      {
+        "name": "NEW YORK STEAK (300 gr.)",
+        "price": 1145,
+        "bbox": [
+          143,
+          223,
+          151,
+          323
+        ]
+      },
+      {
+        "name": "ARJANTIN STEAK (500 gr. 2-3 Kişilik)",
+        "price": 1965,
+        "bbox": [
+          143,
+          226,
+          177,
+          323
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "38": {
+    "image_url": "/public/menu_screenshot_1_40.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "SUFLE",
+        "price": 285,
+        "bbox": [
+          545,
+          377,
+          553,
+          414
+        ]
+      },
+      {
+        "name": "KARAORMAN PASTA",
+        "price": 275,
+        "bbox": [
+          559,
+          379,
+          567,
+          495
+        ]
+      },
+      {
+        "name": "PASTA LATTE",
+        "price": 285,
+        "bbox": [
+          572,
+          379,
+          579,
+          453
+        ]
+      },
+      {
+        "name": "SAN SEBASTIAN",
+        "price": 275,
+        "bbox": [
+          586,
+          379,
+          592,
+          472
+        ]
+      },
+      {
+        "name": "ÜÇ ÇİKOLATALI BROWNIE",
+        "price": 355,
+        "bbox": [
+          573,
+          379,
+          598,
+          523
+        ],
+        "interpolated": true
+      },
+      {
+        "name": "YABAN MERSİNLİ KREPLİ PASTA",
+        "price": 295,
+        "bbox": [
+          559,
+          379,
+          618,
+          523
+        ]
+      },
+      {
+        "name": "TIRAMISU KARE",
+        "price": 265,
+        "bbox": [
+          624,
+          379,
+          632,
+          472
+        ]
+      },
+      {
+        "name": "NUTELLALI PASTA",
+        "price": 275,
+        "bbox": [
+          611,
+          379,
+          645,
+          563
+        ]
+      },
+      {
+        "name": "LOTUS BİSKÜVİLİ PASTA",
+        "price": 275,
+        "bbox": [
+          611,
+          379,
+          658,
+          563
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "39": {
+    "image_url": "/public/menu_screenshot_1_41.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "ESPRESSO",
+        "price": 110,
+        "bbox": [
+          397,
+          126,
+          414,
+          249
+        ]
+      },
+      {
+        "name": "DOUBLE ESPRESSO",
+        "price": 135,
+        "bbox": [
+          475,
+          156,
+          495,
+          216
+        ]
+      },
+      {
+        "name": "AMERICANO",
+        "price": 140,
+        "bbox": [
+          501,
+          156,
+          508,
+          228
+        ]
+      },
+      {
+        "name": "LATTE",
+        "price": 150,
+        "bbox": [
+          515,
+          156,
+          520,
+          193
+        ]
+      },
+      {
+        "name": "COCONUT LATTE",
+        "price": 160,
+        "bbox": [
+          515,
+          156,
+          534,
+          216
+        ]
+      },
+      {
+        "name": "VANILLA LATTE",
+        "price": 160,
+        "bbox": [
+          515,
+          156,
+          546,
+          205
+        ]
+      },
+      {
+        "name": "CAPPUCCINO",
+        "price": 150,
+        "bbox": [
+          554,
+          156,
+          560,
+          235
+        ]
+      },
+      {
+        "name": "FILTRE KAHVE",
+        "price": 150,
+        "bbox": [
+          567,
+          156,
+          573,
+          237
+        ]
+      },
+      {
+        "name": "TÜRK KAHVESİ",
+        "price": 95,
+        "bbox": [
+          567,
+          156,
+          587,
+          237
+        ]
+      },
+      {
+        "name": "DUBLE TÜRK KAHVESİ",
+        "price": 115,
+        "bbox": [
+          567,
+          156,
+          601,
+          237
+        ]
+      },
+      {
+        "name": "MOCHA",
+        "price": 160,
+        "bbox": [
+          606,
+          156,
+          613,
+          200
+        ]
+      },
+      {
+        "name": "WHITE MOCHA",
+        "price": 160,
+        "bbox": [
+          606,
+          156,
+          626,
+          200
+        ]
+      },
+      {
+        "name": "CARAMEL MACCHIATO",
+        "price": 170,
+        "bbox": [
+          632,
+          156,
+          638,
+          286
+        ]
+      },
+      {
+        "name": "ICED LATTE",
+        "price": 150,
+        "bbox": [
+          709,
+          158,
+          719,
+          223
+        ]
+      },
+      {
+        "name": "ICE PUMPKIN LATTE",
+        "price": 160,
+        "bbox": [
+          709,
+          158,
+          740,
+          235
+        ]
+      },
+      {
+        "name": "ICE AMERICANO",
+        "price": 140,
+        "bbox": [
+          756,
+          158,
+          764,
+          253
+        ]
+      },
+      {
+        "name": "ICED MOCHA",
+        "price": 160,
+        "bbox": [
+          779,
+          158,
+          785,
+          237
+        ]
+      },
+      {
+        "name": "ICED WHITE MOCHA",
+        "price": 160,
+        "bbox": [
+          779,
+          158,
+          808,
+          237
+        ]
+      },
+      {
+        "name": "ICED COCONUT MOCHA",
+        "price": 160,
+        "bbox": [
+          779,
+          158,
+          830,
+          249
+        ]
+      },
+      {
+        "name": "ICED CARAMEL MACCHIATO",
+        "price": 170,
+        "bbox": [
+          847,
+          158,
+          854,
+          319
+        ]
+      },
+      {
+        "name": "DEMLEME ÇAY",
+        "price": 60,
+        "bbox": [
+          630,
+          586,
+          641,
+          728
+        ]
+      },
+      {
+        "name": "KIRMIZI ORMAN MEYVELİ ÇAY",
+        "price": 115,
+        "bbox": [
+          630,
+          586,
+          670,
+          728
+        ]
+      },
+      {
+        "name": "IHLAMUR",
+        "price": 110,
+        "bbox": [
+          673,
+          581,
+          680,
+          635
+        ]
+      },
+      {
+        "name": "YEŞİLÇAY",
+        "price": 110,
+        "bbox": [
+          685,
+          586,
+          692,
+          640
+        ]
+      },
+      {
+        "name": "HIBISCUS",
+        "price": 115,
+        "bbox": [
+          695,
+          584,
+          703,
+          640
+        ]
+      },
+      {
+        "name": "ÇİLEKLİ ÇAY",
+        "price": 115,
+        "bbox": [
+          662,
+          584,
+          715,
+          749
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "40": {
+    "image_url": "/public/menu_screenshot_1_42.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "VIRGIN PINA COLADA",
+        "price": 205,
+        "bbox": [
+          394,
+          586,
+          401,
+          712
+        ]
+      },
+      {
+        "name": "SECRET MANGO",
+        "price": 215,
+        "bbox": [
+          416,
+          586,
+          423,
+          677
+        ]
+      },
+      {
+        "name": "TUCCD SOUR",
+        "price": 205,
+        "bbox": [
+          438,
+          586,
+          446,
+          665
+        ]
+      },
+      {
+        "name": "MOJITO",
+        "price": 215,
+        "bbox": [
+          394,
+          791,
+          400,
+          798
+        ]
+      },
+      {
+        "name": "PEPSİ",
+        "price": 95,
+        "bbox": [
+          588,
+          572,
+          594,
+          609
+        ]
+      },
+      {
+        "name": "PEPSİ MAX",
+        "price": 95,
+        "bbox": [
+          599,
+          574,
+          606,
+          642
+        ]
+      },
+      {
+        "name": "FRUKO",
+        "price": 95,
+        "bbox": [
+          611,
+          574,
+          618,
+          614
+        ]
+      },
+      {
+        "name": "YEDİGÜN",
+        "price": 95,
+        "bbox": [
+          621,
+          574,
+          630,
+          628
+        ]
+      },
+      {
+        "name": "LIPTON ICE TEA",
+        "price": 95,
+        "bbox": [
+          635,
+          574,
+          642,
+          667
+        ]
+      },
+      {
+        "name": "AYRAN",
+        "price": 85,
+        "bbox": [
+          645,
+          574,
+          653,
+          614
+        ]
+      },
+      {
+        "name": "NANELİ AYRAN",
+        "price": 95,
+        "bbox": [
+          645,
+          574,
+          664,
+          619
+        ]
+      },
+      {
+        "name": "FESLEĞENLİ AYRAN",
+        "price": 95,
+        "bbox": [
+          645,
+          574,
+          676,
+          644
+        ]
+      },
+      {
+        "name": "SU",
+        "price": 45,
+        "bbox": [
+          680,
+          574,
+          687,
+          591
+        ]
+      },
+      {
+        "name": "SODA",
+        "price": 65,
+        "bbox": [
+          691,
+          574,
+          698,
+          609
+        ]
+      },
+      {
+        "name": "RED BULL",
+        "price": 150,
+        "bbox": [
+          703,
+          574,
+          709,
+          633
+        ]
+      },
+      {
+        "name": "TONIC WATER",
+        "price": 120,
+        "bbox": [
+          714,
+          574,
+          723,
+          660
+        ]
+      },
+      {
+        "name": "LIMONATA",
+        "price": 110,
+        "bbox": [
+          724,
+          574,
+          733,
+          635
+        ]
+      },
+      {
+        "name": "CHURCHILL",
+        "price": 85,
+        "bbox": [
+          748,
+          574,
+          756,
+          647
+        ]
+      },
+      {
+        "name": "MILKSHAKE",
+        "price": 205,
+        "bbox": [
+          760,
+          574,
+          768,
+          644
+        ]
+      },
+      {
+        "name": "SMOTIHIE",
+        "price": 205,
+        "bbox": [
+          783,
+          574,
+          791,
+          633
+        ]
+      },
+      {
+        "name": "KIRMIZI ORMAN MEYVELİ SOĞUK ÇAY",
+        "price": 150,
+        "bbox": [
+          773,
+          574,
+          814,
+          793
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "41": {
+    "image_url": "/public/menu_screenshot_1_43.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "TUCCO COMBO TABAĞI (2-3 kişilik)",
+        "price": 545,
+        "bbox": [
+          292,
+          105,
+          299,
+          226
+        ]
+      },
+      {
+        "name": "ÇITIR CAJUN TAVUK",
+        "price": 385,
+        "bbox": [
+          291,
+          228,
+          299,
+          488
+        ]
+      },
+      {
+        "name": "BALLI HARDALLI TAVUK",
+        "price": 335,
+        "bbox": [
+          291,
+          602,
+          296,
+          726
+        ]
+      },
+      {
+        "name": "EFES 33cl EFES FIÇI +1",
+        "price": 165,
+        "bbox": [
+          878,
+          140,
+          887,
+          326
+        ]
+      },
+      {
+        "name": "Miller 33cl MILLER",
+        "price": 265,
+        "bbox": [
+          872,
+          526,
+          891,
+          693
+        ]
+      },
+      {
+        "name": "EFES 50cl EFES FIÇI +1",
+        "price": 225,
+        "bbox": [
+          878,
+          140,
+          917,
+          326
+        ]
+      },
+      {
+        "name": "BELFAST 50cl BELFAST",
+        "price": 255,
+        "bbox": [
+          906,
+          519,
+          917,
+          702
+        ]
+      },
+      {
+        "name": "EFES 50cl EFES PILSEN +1",
+        "price": 245,
+        "bbox": [
+          878,
+          251,
+          946,
+          326
+        ]
+      },
+      {
+        "name": "Corona 35.5cl CORONA",
+        "price": 375,
+        "bbox": [
+          939,
+          519,
+          948,
+          714
+        ]
+      },
+      {
+        "name": "EFES 50cl EFES MALT",
+        "price": 245,
+        "bbox": [
+          907,
+          140,
+          976,
+          319
+        ]
+      },
+      {
+        "name": "ERDINGER 33cl ERDINGER",
+        "price": 375,
+        "bbox": [
+          962,
+          519,
+          975,
+          712
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "42": {
+    "image_url": "/public/menu_screenshot_1_44.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "EFES AÇI +1",
+        "price": 165,
+        "bbox": [
+          143,
+          140,
+          152,
+          326
+        ]
+      },
+      {
+        "name": "MILLER",
+        "price": 265,
+        "bbox": [
+          141,
+          651,
+          157,
+          693
+        ]
+      },
+      {
+        "name": "EFES AÇI +1",
+        "price": 225,
+        "bbox": [
+          143,
+          251,
+          152,
+          326
+        ]
+      },
+      {
+        "name": "BELFAST",
+        "price": 255,
+        "bbox": [
+          171,
+          519,
+          182,
+          602
+        ]
+      },
+      {
+        "name": "EFES PILSEN +1",
+        "price": 245,
+        "bbox": [
+          144,
+          137,
+          211,
+          328
+        ]
+      },
+      {
+        "name": "CORONA",
+        "price": 375,
+        "bbox": [
+          203,
+          658,
+          212,
+          709
+        ]
+      },
+      {
+        "name": "EFES MALT",
+        "price": 245,
+        "bbox": [
+          202,
+          140,
+          241,
+          316
+        ]
+      },
+      {
+        "name": "ERDINGER",
+        "price": 375,
+        "bbox": [
+          227,
+          521,
+          236,
+          598
+        ]
+      },
+      {
+        "name": "EFES ÖZEL SERİ",
+        "price": 255,
+        "bbox": [
+          231,
+          140,
+          269,
+          347
+        ]
+      },
+      {
+        "name": "HOEGAARDEN",
+        "price": 375,
+        "bbox": [
+          262,
+          649,
+          270,
+          728
+        ]
+      },
+      {
+        "name": "EFES GLUTENSİZ",
+        "price": 305,
+        "bbox": [
+          260,
+          140,
+          300,
+          344
+        ]
+      },
+      {
+        "name": "AMSTERDAM",
+        "price": 395,
+        "bbox": [
+          293,
+          516,
+          303,
+          595
+        ]
+      },
+      {
+        "name": "BUD",
+        "price": 285,
+        "bbox": [
+          321,
+          251,
+          328,
+          277
+        ]
+      },
+      {
+        "name": "LEFFE BRUNE",
+        "price": 385,
+        "bbox": [
+          319,
+          649,
+          361,
+          730
+        ]
+      },
+      {
+        "name": "BUD",
+        "price": 315,
+        "bbox": [
+          319,
+          516,
+          344,
+          735
+        ],
+        "interpolated": true
+      },
+      {
+        "name": "LEFFE BLONDE",
+        "price": 385,
+        "bbox": [
+          318,
+          516,
+          361,
+          735
+        ]
+      },
+      {
+        "name": "BOMONTİ FİLTRESİZ",
+        "price": 265,
+        "bbox": [
+          379,
+          258,
+          386,
+          372
+        ]
+      },
+      {
+        "name": "DUVEL",
+        "price": 445,
+        "bbox": [
+          378,
+          649,
+          389,
+          693
+        ]
+      },
+      {
+        "name": "BECK'S",
+        "price": 235,
+        "bbox": [
+          411,
+          140,
+          420,
+          193
+        ]
+      },
+      {
+        "name": "BUDWEISER",
+        "price": 245,
+        "bbox": [
+          421,
+          679,
+          427,
+          753
+        ]
+      },
+      {
+        "name": "BECK'S",
+        "price": 265,
+        "bbox": [
+          409,
+          249,
+          416,
+          293
+        ]
+      },
+      {
+        "name": "HEINEKEN",
+        "price": 265,
+        "bbox": [
+          451,
+          686,
+          457,
+          751
+        ]
+      },
+      {
+        "name": "BLUE MOON",
+        "price": 255,
+        "bbox": [
+          480,
+          686,
+          486,
+          763
+        ]
+      },
+      {
+        "name": "ESTRELLA",
+        "price": 250,
+        "bbox": [
+          506,
+          684,
+          515,
+          751
+        ]
+      },
+      {
+        "name": "PAULANER",
+        "price": 250,
+        "bbox": [
+          538,
+          677,
+          545,
+          747
+        ]
+      },
+      {
+        "name": "Old Fashioned",
+        "price": 0,
+        "bbox": [
+          790,
+          86,
+          797,
+          160
+        ]
+      },
+      {
+        "name": "Cin Fizz",
+        "price": 0,
+        "bbox": [
+          786,
+          86,
+          811,
+          447
+        ],
+        "interpolated": true
+      },
+      {
+        "name": "New York Sour",
+        "price": 0,
+        "bbox": [
+          782,
+          386,
+          792,
+          447
+        ]
+      },
+      {
+        "name": "Daiquiri",
+        "price": 0,
+        "bbox": [
+          793,
+          591,
+          800,
+          647
+        ]
+      },
+      {
+        "name": "Caipirinha",
+        "price": 0,
+        "bbox": [
+          814,
+          735,
+          819,
+          800
+        ]
+      },
+      {
+        "name": "Whiskey Sour",
+        "price": 0,
+        "bbox": [
+          831,
+          349,
+          856,
+          800
+        ],
+        "interpolated": true
+      },
+      {
+        "name": "Martini",
+        "price": 0,
+        "bbox": [
+          847,
+          349,
+          851,
+          391
+        ]
+      },
+      {
+        "name": "Negroni",
+        "price": 0,
+        "bbox": [
+          775,
+          805,
+          779,
+          837
+        ]
+      },
+      {
+        "name": "Moscow Mule",
+        "price": 0,
+        "bbox": [
+          903,
+          123,
+          909,
+          216
+        ]
+      },
+      {
+        "name": "Caba Libee",
+        "price": 0,
+        "bbox": [
+          859,
+          577,
+          873,
+          647
+        ]
+      },
+      {
+        "name": "French 75",
+        "price": 0,
+        "bbox": [
+          878,
+          849,
+          883,
+          916
+        ]
+      },
+      {
+        "name": "Aperol Spritz",
+        "price": 0,
+        "bbox": [
+          954,
+          112,
+          960,
+          202
+        ]
+      },
+      {
+        "name": "Mai Tai",
+        "price": 0,
+        "bbox": [
+          917,
+          398,
+          923,
+          447
+        ]
+      },
+      {
+        "name": "Mojito",
+        "price": 0,
+        "bbox": [
+          920,
+          812,
+          925,
+          853
+        ]
+      },
+      {
+        "name": "Pina Colada",
+        "price": 0,
+        "bbox": [
+          995,
+          214,
+          999,
+          279
+        ]
+      },
+      {
+        "name": "Margarita",
+        "price": 0,
+        "bbox": [
+          933,
+          605,
+          939,
+          670
+        ]
+      },
+      {
+        "name": "Espresse Martini",
+        "price": 0,
+        "bbox": [
+          987,
+          881,
+          999,
+          944
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "43": {
+    "image_url": "/public/menu_screenshot_1_45.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "Caba Libre",
+        "price": 495,
+        "bbox": [
+          347,
+          123,
+          372,
+          235
+        ],
+        "interpolated": true
+      },
+      {
+        "name": "Cosmopolitan",
+        "price": 490,
+        "bbox": [
+          267,
+          374,
+          274,
+          465
+        ]
+      },
+      {
+        "name": "Lang Island Iced Tea",
+        "price": 575,
+        "bbox": [
+          266,
+          565,
+          280,
+          642
+        ]
+      },
+      {
+        "name": "Lynchburg Lemonade",
+        "price": 555,
+        "bbox": [
+          264,
+          730,
+          277,
+          802
+        ]
+      },
+      {
+        "name": "Expresse Martini",
+        "price": 555,
+        "bbox": [
+          252,
+          881,
+          267,
+          944
+        ]
+      },
+      {
+        "name": "GREEN GIN SMASH",
+        "price": 595,
+        "bbox": [
+          425,
+          140,
+          431,
+          253
+        ]
+      },
+      {
+        "name": "HIBISCUS SPRITZ",
+        "price": 615,
+        "bbox": [
+          459,
+          140,
+          466,
+          249
+        ]
+      },
+      {
+        "name": "LADIES NIGHT",
+        "price": 585,
+        "bbox": [
+          492,
+          140,
+          499,
+          226
+        ]
+      },
+      {
+        "name": "JALEPONE SOUR",
+        "price": 625,
+        "bbox": [
+          525,
+          140,
+          532,
+          235
+        ]
+      },
+      {
+        "name": "No:3",
+        "price": 595,
+        "bbox": [
+          638,
+          130,
+          663,
+          284
+        ],
+        "interpolated": true
+      },
+      {
+        "name": "ORMAN MEYVELİ BALYOZ",
+        "price": 595,
+        "bbox": [
+          751,
+          130,
+          760,
+          284
+        ]
+      },
+      {
+        "name": "BALLI BALYOZ",
+        "price": 595,
+        "bbox": [
+          751,
+          130,
+          786,
+          284
+        ]
+      },
+      {
+        "name": "OKYANUS",
+        "price": 585,
+        "bbox": [
+          798,
+          130,
+          804,
+          188
+        ]
+      },
+      {
+        "name": "LIBIDO",
+        "price": 495,
+        "bbox": [
+          817,
+          130,
+          842,
+          188
+        ],
+        "interpolated": true
+      },
+      {
+        "name": "SATSUMA",
+        "price": 525,
+        "bbox": [
+          836,
+          130,
+          842,
+          188
+        ]
+      },
+      {
+        "name": "KUZUKULAĞI",
+        "price": 550,
+        "bbox": [
+          862,
+          130,
+          868,
+          212
+        ]
+      },
+      {
+        "name": "COFFEE BAILEYS",
+        "price": 445,
+        "bbox": [
+          752,
+          519,
+          759,
+          616
+        ]
+      },
+      {
+        "name": "IRISH COFFEE",
+        "price": 460,
+        "bbox": [
+          752,
+          519,
+          779,
+          563
+        ]
+      },
+      {
+        "name": "TAHİNLİ ESPRESSO MARTINI",
+        "price": 495,
+        "bbox": [
+          789,
+          519,
+          796,
+          688
+        ]
+      },
+      {
+        "name": "KAFFE KARLSSON",
+        "price": 515,
+        "bbox": [
+          808,
+          519,
+          817,
+          623
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "44": {
+    "image_url": "/public/menu_screenshot_1_46.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "LEMONGRASS COLLINS",
+        "price": 615,
+        "bbox": [
+          387,
+          147,
+          396,
+          274
+        ]
+      },
+      {
+        "name": "JUNGLE",
+        "price": 615,
+        "bbox": [
+          417,
+          147,
+          424,
+          191
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "45": {
+    "image_url": "/public/menu_screenshot_1_47.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "SMIRNOFF",
+        "price": 375,
+        "bbox": [
+          281,
+          153,
+          290,
+          214
+        ]
+      },
+      {
+        "name": "ABSOLUT",
+        "price": 395,
+        "bbox": [
+          296,
+          153,
+          303,
+          207
+        ]
+      },
+      {
+        "name": "KETEL ONE",
+        "price": 545,
+        "bbox": [
+          308,
+          153,
+          315,
+          214
+        ]
+      },
+      {
+        "name": "BELVEDERE",
+        "price": 565,
+        "bbox": [
+          335,
+          156,
+          341,
+          200
+        ]
+      },
+      {
+        "name": "BELUGA",
+        "price": 595,
+        "bbox": [
+          283,
+          307,
+          290,
+          314
+        ]
+      },
+      {
+        "name": "CORDONS DRY",
+        "price": 375,
+        "bbox": [
+          282,
+          412,
+          290,
+          493
+        ]
+      },
+      {
+        "name": "GORDON'S PINK",
+        "price": 380,
+        "bbox": [
+          296,
+          412,
+          303,
+          500
+        ]
+      },
+      {
+        "name": "ROKU GIN",
+        "price": 565,
+        "bbox": [
+          309,
+          412,
+          315,
+          470
+        ]
+      },
+      {
+        "name": "TANQUERAY",
+        "price": 445,
+        "bbox": [
+          322,
+          433,
+          328,
+          449
+        ]
+      },
+      {
+        "name": "TANQUERAY TEN",
+        "price": 485,
+        "bbox": [
+          296,
+          302,
+          341,
+          502
+        ]
+      },
+      {
+        "name": "HENDRICKS",
+        "price": 595,
+        "bbox": [
+          348,
+          412,
+          354,
+          479
+        ]
+      },
+      {
+        "name": "OLMECA SHOT",
+        "price": 235,
+        "bbox": [
+          283,
+          647,
+          290,
+          726
+        ]
+      },
+      {
+        "name": "DON JULIO SHOT",
+        "price": 295,
+        "bbox": [
+          283,
+          647,
+          303,
+          726
+        ]
+      },
+      {
+        "name": "BAILEYS",
+        "price": 255,
+        "bbox": [
+          394,
+          151,
+          399,
+          195
+        ]
+      },
+      {
+        "name": "LIMONCELLD",
+        "price": 255,
+        "bbox": [
+          407,
+          151,
+          413,
+          226
+        ]
+      },
+      {
+        "name": "INGERMEISTER SHOT",
+        "price": 200,
+        "bbox": [
+          420,
+          151,
+          427,
+          263
+        ]
+      },
+      {
+        "name": "REMY MARTIN",
+        "price": 345,
+        "bbox": [
+          396,
+          412,
+          405,
+          486
+        ]
+      },
+      {
+        "name": "HENNESY",
+        "price": 375,
+        "bbox": [
+          410,
+          412,
+          417,
+          465
+        ]
+      },
+      {
+        "name": "RED BULL",
+        "price": 150,
+        "bbox": [
+          675,
+          416,
+          682,
+          467
+        ]
+      },
+      {
+        "name": "KARIŞIK ÇEREZ",
+        "price": 175,
+        "bbox": [
+          676,
+          653,
+          683,
+          740
+        ]
+      },
+      {
+        "name": "WOODFORD RESERVE",
+        "price": 525,
+        "bbox": [
+          930,
+          179,
+          937,
+          302
+        ]
+      },
+      {
+        "name": "BULLEIT BOURBON",
+        "price": 465,
+        "bbox": [
+          912,
+          179,
+          948,
+          263
+        ]
+      },
+      {
+        "name": "JAMESON",
+        "price": 435,
+        "bbox": [
+          929,
+          593,
+          937,
+          644
+        ]
+      },
+      {
+        "name": "JACK DANIELS",
+        "price": 465,
+        "bbox": [
+          972,
+          593,
+          980,
+          674
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "46": {
+    "image_url": "/public/menu_screenshot_1_48.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "CHIVAS REGAL 12 Yo",
+        "price": 465,
+        "bbox": [
+          278,
+          177,
+          299,
+          300
+        ]
+      },
+      {
+        "name": "CHIVAS REGAL 15 Yo",
+        "price": 675,
+        "bbox": [
+          278,
+          177,
+          313,
+          300
+        ]
+      },
+      {
+        "name": "CHIVAS REGAL 18 Yo",
+        "price": 795,
+        "bbox": [
+          278,
+          177,
+          313,
+          300
+        ]
+      },
+      {
+        "name": "JOHNNIE WALKER BLACK LABEL",
+        "price": 475,
+        "bbox": [
+          322,
+          177,
+          329,
+          360
+        ]
+      },
+      {
+        "name": "JOHNNIE WALKER DOUBLE BLACK",
+        "price": 515,
+        "bbox": [
+          322,
+          177,
+          343,
+          330
+        ]
+      },
+      {
+        "name": "MONKEY SHOULDER",
+        "price": 555,
+        "bbox": [
+          350,
+          177,
+          358,
+          295
+        ]
+      },
+      {
+        "name": "GLENFIDDICH 12",
+        "price": 675,
+        "bbox": [
+          289,
+          395,
+          343,
+          688
+        ]
+      },
+      {
+        "name": "TALISKER 10",
+        "price": 645,
+        "bbox": [
+          305,
+          591,
+          312,
+          665
+        ]
+      },
+      {
+        "name": "CAOL ILA 12",
+        "price": 685,
+        "bbox": [
+          289,
+          591,
+          327,
+          688
+        ]
+      },
+      {
+        "name": "LAGAVULIN 8",
+        "price": 735,
+        "bbox": [
+          335,
+          593,
+          341,
+          674
+        ]
+      },
+      {
+        "name": "OBAN 14",
+        "price": 765,
+        "bbox": [
+          349,
+          591,
+          355,
+          647
+        ]
+      },
+      {
+        "name": "MACALLAN 12",
+        "price": 825,
+        "bbox": [
+          321,
+          591,
+          371,
+          665
+        ]
+      },
+      {
+        "name": "TERRA NARINCE",
+        "price": 295,
+        "bbox": [
+          842,
+          174,
+          850,
+          265
+        ]
+      },
+      {
+        "name": "TERRA NARINCE",
+        "price": 1200,
+        "bbox": [
+          842,
+          174,
+          850,
+          265
+        ]
+      },
+      {
+        "name": "KAYRA ALLURE-SAVINGNON BLANC",
+        "price": 1550,
+        "bbox": [
+          858,
+          174,
+          866,
+          377
+        ]
+      },
+      {
+        "name": "KAYRA ALLURE CRISPY",
+        "price": 1600,
+        "bbox": [
+          858,
+          174,
+          881,
+          302
+        ]
+      },
+      {
+        "name": "KAVAKLIDERE ÇANKAYA",
+        "price": 1580,
+        "bbox": [
+          889,
+          174,
+          897,
+          305
+        ]
+      },
+      {
+        "name": "SELECTION NARINCE & EMIR",
+        "price": 2450,
+        "bbox": [
+          858,
+          174,
+          913,
+          330
+        ]
+      },
+      {
+        "name": "SARAFIN FUME BLANC",
+        "price": 3100,
+        "bbox": [
+          922,
+          174,
+          928,
+          298
+        ]
+      },
+      {
+        "name": "LEONA BLUSH",
+        "price": 290,
+        "bbox": [
+          825,
+          584,
+          850,
+          640
+        ]
+      },
+      {
+        "name": "LEONA BLUSH",
+        "price": 1150,
+        "bbox": [
+          825,
+          584,
+          850,
+          640
+        ],
+        "interpolated": true
+      },
+      {
+        "name": "CIELO BLUSH",
+        "price": 1400,
+        "bbox": [
+          825,
+          584,
+          868,
+          640
+        ]
+      },
+      {
+        "name": "GATO NEGRO",
+        "price": 1500,
+        "bbox": [
+          878,
+          584,
+          885,
+          656
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "47": {
+    "image_url": "/public/menu_screenshot_1_49.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "CIELD BLUSH",
+        "price": 1400,
+        "bbox": [
+          90,
+          584,
+          132,
+          640
+        ]
+      },
+      {
+        "name": "POETI PROSEDCO",
+        "price": 3750,
+        "bbox": [
+          535,
+          174,
+          542,
+          277
+        ]
+      },
+      {
+        "name": "GOLD PROSECCO",
+        "price": 4650,
+        "bbox": [
+          535,
+          174,
+          559,
+          277
+        ]
+      },
+      {
+        "name": "TERRA BOĞAZKERE",
+        "price": 295,
+        "bbox": [
+          760,
+          200,
+          782,
+          305
+        ]
+      },
+      {
+        "name": "TERRA BOĞAZKERE",
+        "price": 1200,
+        "bbox": [
+          760,
+          200,
+          797,
+          305
+        ]
+      },
+      {
+        "name": "TERRA OKLUZGOJU-BOĞAZKERE",
+        "price": 1350,
+        "bbox": [
+          804,
+          200,
+          812,
+          235
+        ]
+      },
+      {
+        "name": "TERRA KALECİK KARASI",
+        "price": 1320,
+        "bbox": [
+          790,
+          200,
+          826,
+          330
+        ]
+      },
+      {
+        "name": "TERRA SHIRAZ",
+        "price": 325,
+        "bbox": [
+          804,
+          200,
+          841,
+          279
+        ]
+      },
+      {
+        "name": "TERRA SHIRAZ",
+        "price": 1350,
+        "bbox": [
+          760,
+          200,
+          811,
+          279
+        ]
+      },
+      {
+        "name": "TERRA ÖKÜZDÜZÜ",
+        "price": 295,
+        "bbox": [
+          770,
+          200,
+          795,
+          416
+        ],
+        "interpolated": true
+      },
+      {
+        "name": "TERRA ÖKÜZDÜZÜ",
+        "price": 1200,
+        "bbox": [
+          780,
+          200,
+          805,
+          416
+        ],
+        "interpolated": true
+      },
+      {
+        "name": "TERRA CABERNET SAUVIGNON MERLOT",
+        "price": 1300,
+        "bbox": [
+          790,
+          200,
+          841,
+          416
+        ]
+      },
+      {
+        "name": "KAWAKLIDERE YAKIT",
+        "price": 1420,
+        "bbox": [
+          849,
+          200,
+          855,
+          321
+        ]
+      },
+      {
+        "name": "SARAFIN SHIRAZ",
+        "price": 3150,
+        "bbox": [
+          862,
+          200,
+          870,
+          298
+        ]
+      },
+      {
+        "name": "SICAK ŞARAP",
+        "price": 340,
+        "bbox": [
+          862,
+          200,
+          908,
+          247
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "48": {
+    "image_url": "/public/menu_screenshot_1_50.png",
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "KAWAKLIDERE YAKUT",
+        "price": 1420,
+        "bbox": [
+          112,
+          198,
+          120,
+          319
+        ]
+      }
+    ],
+    "source_type": "web_screenshot"
+  },
+  "49": {
+    "image_url": "https://tuccogastrocoffee.com/wp-content/uploads/2026/01/12-09-25-Page-49-scaled.webp",
+    "items": [
+      {
+        "name": "VIRGIN PINA COLADA",
+        "price": 205,
+        "y_percent": 19
+      },
+      {
+        "name": "SECRET MANGO",
+        "price": 215,
+        "y_percent": 23
+      },
+      {
+        "name": "TUCCO SOUR",
+        "price": 205,
+        "y_percent": 27
+      },
+      {
+        "name": "MOJITO",
+        "price": 215,
+        "y_percent": 31
+      },
+      {
+        "name": "PEPSİ",
+        "price": 95,
+        "y_percent": 49
+      },
+      {
+        "name": "PEPSİ MAX",
+        "price": 95,
+        "y_percent": 52
+      },
+      {
+        "name": "FRUKO",
+        "price": 95,
+        "y_percent": 55
+      },
+      {
+        "name": "YEDİGÜN",
+        "price": 95,
+        "y_percent": 58
+      },
+      {
+        "name": "LIPTON ICE TEA",
+        "price": 95,
+        "y_percent": 61
+      },
+      {
+        "name": "AYRAN",
+        "price": 85,
+        "y_percent": 65
+      },
+      {
+        "name": "NANELİ AYRAN",
+        "price": 95,
+        "y_percent": 68
+      },
+      {
+        "name": "FESLEĞENLİ AYRAN",
+        "price": 95,
+        "y_percent": 71
+      },
+      {
+        "name": "SU",
+        "price": 45,
+        "y_percent": 75
+      },
+      {
+        "name": "SODA",
+        "price": 65,
+        "y_percent": 78
+      },
+      {
+        "name": "RED BULL",
+        "price": 150,
+        "y_percent": 81
+      },
+      {
+        "name": "TONIC WATER",
+        "price": 120,
+        "y_percent": 84
+      },
+      {
+        "name": "LİMONATA",
+        "price": 110,
+        "y_percent": 87
+      },
+      {
+        "name": "CHURCHILL",
+        "price": 85,
+        "y_percent": 91
+      },
+      {
+        "name": "MILKSHAKE",
+        "price": 205,
+        "y_percent": 94
+      },
+      {
+        "name": "SMOTIHIE",
+        "price": 205,
+        "y_percent": 97
+      },
+      {
+        "name": "KIRMIZI ORMAN MEYVELİ SOĞUK ÇAY",
+        "price": 150,
+        "y_percent": 100
+      }
+    ]
+  },
+  "50": {
+    "image_url": "https://tuccogastrocoffee.com/wp-content/uploads/2026/01/12-09-25-Page-50-scaled.webp",
+    "items": [
+      {
+        "name": "TUCCO COMBO TABAĞI",
+        "price": 545,
+        "y_percent": 18
+      },
+      {
+        "name": "ÇITIR CAJUN TAVUK",
+        "price": 395,
+        "y_percent": 18
+      },
+      {
+        "name": "BALLI HARDALLI TAVUK",
+        "price": 335,
+        "y_percent": 18
+      }
+    ]
+  },
+  "51": {
+    "image_url": "https://tuccogastrocoffee.com/wp-content/uploads/2026/01/12-09-25-Page-51-scaled.webp",
+    "items": [
+      {
+        "name": "EFES",
+        "price": 165,
+        "y_percent": 13
+      },
+      {
+        "name": "MILLER",
+        "price": 265,
+        "y_percent": 13
+      },
+      {
+        "name": "EFES",
+        "price": 225,
+        "y_percent": 17
+      },
+      {
+        "name": "BELFAST",
+        "price": 255,
+        "y_percent": 17
+      },
+      {
+        "name": "EFES",
+        "price": 245,
+        "y_percent": 22
+      },
+      {
+        "name": "CORONA",
+        "price": 375,
+        "y_percent": 22
+      },
+      {
+        "name": "EFES",
+        "price": 245,
+        "y_percent": 26
+      },
+      {
+        "name": "ERDINGER",
+        "price": 375,
+        "y_percent": 26
+      },
+      {
+        "name": "EFES",
+        "price": 255,
+        "y_percent": 31
+      },
+      {
+        "name": "HOEGAARDEN",
+        "price": 375,
+        "y_percent": 31
+      },
+      {
+        "name": "EFES",
+        "price": 305,
+        "y_percent": 35
+      },
+      {
+        "name": "AMSTERDAM",
+        "price": 395,
+        "y_percent": 35
+      },
+      {
+        "name": "BUD",
+        "price": 285,
+        "y_percent": 40
+      },
+      {
+        "name": "LEFFE",
+        "price": 385,
+        "y_percent": 40
+      },
+      {
+        "name": "BUD",
+        "price": 315,
+        "y_percent": 44
+      },
+      {
+        "name": "LEFFE",
+        "price": 385,
+        "y_percent": 44
+      },
+      {
+        "name": "BOMONTİ",
+        "price": 265,
+        "y_percent": 49
+      },
+      {
+        "name": "DUVEL",
+        "price": 445,
+        "y_percent": 49
+      },
+      {
+        "name": "BECK'S",
+        "price": 235,
+        "y_percent": 53
+      },
+      {
+        "name": "BUDWEISER",
+        "price": 245,
+        "y_percent": 54
+      },
+      {
+        "name": "BECK'S",
+        "price": 265,
+        "y_percent": 57
+      },
+      {
+        "name": "HEINEKEN",
+        "price": 265,
+        "y_percent": 59
+      },
+      {
+        "name": "BLUE MOON",
+        "price": 255,
+        "y_percent": 64
+      },
+      {
+        "name": "ESTRELLA",
+        "price": 250,
+        "y_percent": 68
+      },
+      {
+        "name": "PAULANER",
+        "price": 250,
+        "y_percent": 72
+      }
+    ]
+  },
+  "54": {
+    "image_url": "https://tuccogastrocoffee.com/wp-content/uploads/2026/01/12-09-25-Page-54-scaled.webp",
+    "items": [
+      {
+        "name": "GREEN GIN SMASH",
+        "price": 595,
+        "y_percent": 13
+      },
+      {
+        "name": "HIBISCUS SPRITZ",
+        "price": 615,
+        "y_percent": 21
+      },
+      {
+        "name": "LADIES NIGHT",
+        "price": 585,
+        "y_percent": 29
+      },
+      {
+        "name": "JALEPONE SOUR",
+        "price": 625,
+        "y_percent": 36
+      },
+      {
+        "name": "No:3",
+        "price": 595,
+        "y_percent": 44
+      },
+      {
+        "name": "ORMAN MEYVELİ BALYOZ",
+        "price": 595,
+        "y_percent": 64
+      },
+      {
+        "name": "BALLI BALYOZ",
+        "price": 595,
+        "y_percent": 69
+      },
+      {
+        "name": "OKYANUS",
+        "price": 585,
+        "y_percent": 74
+      },
+      {
+        "name": "LİBİDO",
+        "price": 495,
+        "y_percent": 79
+      },
+      {
+        "name": "SATSUMA",
+        "price": 525,
+        "y_percent": 84
+      },
+      {
+        "name": "KUZUKULAĞI",
+        "price": 550,
+        "y_percent": 90
+      },
+      {
+        "name": "COFFEE BAILEYS",
+        "price": 445,
+        "y_percent": 64
+      },
+      {
+        "name": "IRISH COFFEE",
+        "price": 460,
+        "y_percent": 69
+      },
+      {
+        "name": "TAHİNLİ ESPRESSO MARTINI",
+        "price": 495,
+        "y_percent": 74
+      },
+      {
+        "name": "KAFFE KARLSSON",
+        "price": 515,
+        "y_percent": 79
+      }
+    ]
+  },
+  "55": {
+    "image_url": "https://tuccogastrocoffee.com/wp-content/uploads/2026/01/12-09-25-Page-55-scaled.webp",
+    "items": [
+      {
+        "name": "LEMONGRASS COLLINS",
+        "price": 615,
+        "y_percent": 21
+      },
+      {
+        "name": "JUNGLE",
+        "price": 615,
+        "y_percent": 29
+      }
+    ]
+  },
+  "56": {
+    "image_url": "https://tuccogastrocoffee.com/wp-content/uploads/2026/01/12-09-25-Page-56-scaled.webp",
+    "items": [
+      {
+        "name": "SMIRNOFF",
+        "price": 375,
+        "y_percent": 17.85
+      },
+      {
+        "name": "ABSOLUT",
+        "price": 395,
+        "y_percent": 20.3
+      },
+      {
+        "name": "KETEL ONE",
+        "price": 545,
+        "y_percent": 22.75
+      },
+      {
+        "name": "BELVEDERE",
+        "price": 565,
+        "y_percent": 25.19
+      },
+      {
+        "name": "BELUGA",
+        "price": 595,
+        "y_percent": 27.64
+      },
+      {
+        "name": "GORDON'S DRY",
+        "price": 375,
+        "y_percent": 17.85
+      },
+      {
+        "name": "GORDON'S PINK",
+        "price": 380,
+        "y_percent": 20.3
+      },
+      {
+        "name": "ROKU GIN",
+        "price": 565,
+        "y_percent": 22.75
+      },
+      {
+        "name": "TANQUERAY",
+        "price": 445,
+        "y_percent": 25.19
+      },
+      {
+        "name": "TANQUERAY TEN",
+        "price": 485,
+        "y_percent": 27.64
+      },
+      {
+        "name": "HENDRICK'S",
+        "price": 595,
+        "y_percent": 30.08
+      },
+      {
+        "name": "OLMECA SHOT",
+        "price": 235,
+        "y_percent": 17.85
+      },
+      {
+        "name": "DON JULIO SHOT",
+        "price": 295,
+        "y_percent": 20.3
+      },
+      {
+        "name": "BAILEYS",
+        "price": 255,
+        "y_percent": 34.65
+      },
+      {
+        "name": "LIMONCELLO",
+        "price": 255,
+        "y_percent": 37.09
+      },
+      {
+        "name": "JAGERMEISTER SHOT",
+        "price": 200,
+        "y_percent": 39.54
+      },
+      {
+        "name": "REMY MARTIN",
+        "price": 345,
+        "y_percent": 34.65
+      },
+      {
+        "name": "HENNESY",
+        "price": 375,
+        "y_percent": 37.09
+      },
+      {
+        "name": "RED BULL",
+        "price": 150,
+        "y_percent": 82.12
+      },
+      {
+        "name": "KARIŞIK ÇEREZ",
+        "price": 175,
+        "y_percent": 82.12
+      }
+    ]
+  },
+  "57": {
+    "image_url": "https://tuccogastrocoffee.com/wp-content/uploads/2026/01/12-09-25-Page-57-scaled.webp",
+    "items": [
+      {
+        "name": "BOURBON",
+        "price": null,
+        "y_percent": 15
+      },
+      {
+        "name": "WOODFORD RESERVE",
+        "price": 525,
+        "y_percent": 19
+      },
+      {
+        "name": "BULLEIT BOURBON",
+        "price": 465,
+        "y_percent": 22
+      },
+      {
+        "name": "IRISH",
+        "price": null,
+        "y_percent": 15
+      },
+      {
+        "name": "JAMESON",
+        "price": 435,
+        "y_percent": 19
+      },
+      {
+        "name": "TENNESSEE",
+        "price": null,
+        "y_percent": 23
+      },
+      {
+        "name": "JACK DANIEL'S",
+        "price": 465,
+        "y_percent": 27
+      },
+      {
+        "name": "BLENDED SCOTCH",
+        "price": null,
+        "y_percent": 28
+      },
+      {
+        "name": "CHIVAS REGAL 12 Yo",
+        "price": 465,
+        "y_percent": 34
+      },
+      {
+        "name": "CHIVAS REGAL 15 Yo",
+        "price": 675,
+        "y_percent": 38
+      },
+      {
+        "name": "CHIVAS REGAL 18 Yo",
+        "price": 795,
+        "y_percent": 42
+      },
+      {
+        "name": "JOHNNIE WALKER BLACK LABEL",
+        "price": 475,
+        "y_percent": 45
+      },
+      {
+        "name": "JOHNNIE WALKER DOUBLE BLACK",
+        "price": 515,
+        "y_percent": 49
+      },
+      {
+        "name": "MONKEY SHOULDER",
+        "price": 555,
+        "y_percent": 53
+      },
+      {
+        "name": "SINGLE MALT SCOTCH",
+        "price": null,
+        "y_percent": 28
+      },
+      {
+        "name": "GLENFIDDICH 12",
+        "price": 675,
+        "y_percent": 34
+      },
+      {
+        "name": "TALISKER 10",
+        "price": 645,
+        "y_percent": 38
+      },
+      {
+        "name": "CAOL ILA 12",
+        "price": 685,
+        "y_percent": 41
+      },
+      {
+        "name": "LAGAVULIN 8",
+        "price": 735,
+        "y_percent": 45
+      },
+      {
+        "name": "OBAN 14",
+        "price": 765,
+        "y_percent": 49
+      },
+      {
+        "name": "MACALLAN 12",
+        "price": 825,
+        "y_percent": 53
+      }
+    ]
+  },
+  "58": {
+    "image_url": "https://tuccogastrocoffee.com/wp-content/uploads/2026/01/12-09-25-Page-58-scaled.webp",
+    "items": [
+      {
+        "name": "TERRA NARİNCE",
+        "price": 295,
+        "y_percent": 17
+      },
+      {
+        "name": "TERRA NARİNCE",
+        "price": 1200,
+        "y_percent": 17
+      },
+      {
+        "name": "KAYRA ALLURE - SAVINGNON BLANC",
+        "price": 550,
+        "y_percent": 21
+      },
+      {
+        "name": "KAYRA ALLURE CRISPY",
+        "price": 600,
+        "y_percent": 24
+      },
+      {
+        "name": "KAVAKLIDERE ÇANKAYA",
+        "price": 580,
+        "y_percent": 27
+      },
+      {
+        "name": "SELECTION NARİNCE & EMİR",
+        "price": 2450,
+        "y_percent": 30
+      },
+      {
+        "name": "SARAFIN FUME BLANC",
+        "price": 3100,
+        "y_percent": 33
+      },
+      {
+        "name": "LEONA BLUSH",
+        "price": 290,
+        "y_percent": 17
+      },
+      {
+        "name": "LEONA BLUSH",
+        "price": 1150,
+        "y_percent": 17
+      },
+      {
+        "name": "CIELO BLUSH",
+        "price": 1400,
+        "y_percent": 21
+      },
+      {
+        "name": "GATO NEGRO",
+        "price": 1500,
+        "y_percent": 24
+      },
+      {
+        "name": "POETI PROSECCO",
+        "price": 3750,
+        "y_percent": 88
+      },
+      {
+        "name": "GOLD PROSECCO",
+        "price": 4650,
+        "y_percent": 91
+      }
+    ]
+  },
+  "59": {
+    "image_url": "https://tuccogastrocoffee.com/wp-content/uploads/2026/01/12-09-25-Page-59-scaled.webp",
+    "items": [
+      {
+        "name": "TERRA BOĞAZKERE",
+        "price": 295,
+        "y_percent": 19
+      },
+      {
+        "name": "TERRA BOĞAZKERE",
+        "price": 1200,
+        "y_percent": 19
+      },
+      {
+        "name": "TERRA ÖKÜZGÖZÜ-BOĞAZKERE",
+        "price": 1350,
+        "y_percent": 23
+      },
+      {
+        "name": "TERRA KALECİK KARASI",
+        "price": 1320,
+        "y_percent": 27
+      },
+      {
+        "name": "TERRA SHIRAZ",
+        "price": 325,
+        "y_percent": 31
+      },
+      {
+        "name": "TERRA SHIRAZ",
+        "price": 1350,
+        "y_percent": 31
+      },
+      {
+        "name": "TERRA ÖKÜZGÖZÜ",
+        "price": 295,
+        "y_percent": 35
+      },
+      {
+        "name": "TERRA ÖKÜZGÖZÜ",
+        "price": 1200,
+        "y_percent": 35
+      },
+      {
+        "name": "TERRA CABERNET SAUVIGNON MERLOT",
+        "price": 1300,
+        "y_percent": 39
+      },
+      {
+        "name": "KAVAKLIDERE YAKUT",
+        "price": 1420,
+        "y_percent": 43
+      },
+      {
+        "name": "SARAFIN SHIRAZ",
+        "price": 3150,
+        "y_percent": 47
+      },
+      {
+        "name": "SICAK ŞARAP",
+        "price": 340,
+        "y_percent": 55
+      }
+    ]
+  }
+}

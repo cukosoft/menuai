@@ -1,0 +1,2718 @@
+{
+  "1": {
+    "image_url": null,
+    "source_url": "https://tuccogastrocoffee.com/qrmenu/",
+    "items": [
+      {
+        "name": "GRANDLA",
+        "price": 345,
+        "category": "Kahvalti",
+        "description": "yulaf | karışık tohumlar | kuruyemişler | bal kabak çekirdeği chia tohumu | yoğurt | bol mevsim meyveleri",
+        "bbox": null
+      },
+      {
+        "name": "YUMURTALI EKMEK",
+        "price": 275,
+        "category": "Kahvalti",
+        "description": "Bal | tereyağı | çilek reçeli | çikolata | salam | zeytin | cherry domates | salatalık közlenmiş biber | hellim peyniri | sigara böreği | patates cips",
+        "bbox": null
+      },
+      {
+        "name": "PRATİK VE LEZZETLİ",
+        "price": 295,
+        "category": "Kahvalti",
+        "description": "zeytin ezmesi | tulum peyniri | reçel | tereyağı | cherry domates salatalık | domates | keçi peyniri",
+        "bbox": null
+      },
+      {
+        "name": "KÖY KAHVALTISI",
+        "price": 495,
+        "category": "Kahvalti",
+        "description": "közlenmiş biber | salam | sucuk | peynir | nutella | reçel | zeytin | sigara böreği | cips sigara böreği | domates | salatalık | közlenmiş biber | bal kaymak",
+        "bbox": null
+      },
+      {
+        "name": "BENEDICT",
+        "price": 325,
+        "category": "Kahvalti",
+        "description": "muffin ekmeği | hollandez sos | füme somon",
+        "bbox": null
+      },
+      {
+        "name": "SICAK KAHVALTI TABAĞI",
+        "price": 445,
+        "category": "Kahvalti",
+        "description": "sigara böreği | közlenmiş biber | sosis | patates tava | cherry domates sigara böreği | közlenmiş biber | sosis | patates tava | cherry domates sigara böreği | közlenmiş biber | sosis | patates tava | cherry domates",
+        "bbox": null
+      },
+      {
+        "name": "TAŞ FIRIN PİZZA",
+        "price": 375,
+        "category": "Kahvalti",
+        "description": "Kavrulmuş tereyağı | kekikli zeytin ezmesi | roka | suda bufalo mozzarella domates | fesleğen | balzamik kremalı sos | karamelize soğan",
+        "bbox": null
+      },
+      {
+        "name": "SÜPER KAHVALTI",
+        "price": 345,
+        "category": "Kahvalti",
+        "description": "Kavrulmuş tereyağı | hellimli peynir | karadut | krema salamura zeytin",
+        "bbox": null
+      },
+      {
+        "name": "SAHANDA YUMURTA",
+        "price": 175,
+        "category": "Organi̇k Yumurtalar",
+        "description": "iki göz yumurta | domates | köy biber | krem çay domates | köy biber",
+        "bbox": null
+      },
+      {
+        "name": "MENEMEN",
+        "price": 225,
+        "category": "Organi̇k Yumurtalar",
+        "description": "domates | sivri biber | salatalık | krem çay domates | sivri biber",
+        "bbox": null
+      },
+      {
+        "name": "YUMURTALI OMLET",
+        "price": 275,
+        "category": "Organi̇k Yumurtalar",
+        "description": "mantar | krema | zeytin | köy biber mantar | krema",
+        "bbox": null
+      },
+      {
+        "name": "KÖYLÜ OMLET",
+        "price": 375,
+        "category": "Organi̇k Yumurtalar",
+        "description": "Kavurma | domates | salatalık | krem çay Kavurma | domates",
+        "bbox": null
+      },
+      {
+        "name": "SUCUKLU YUMURTA",
+        "price": 275,
+        "category": "Organi̇k Yumurtalar",
+        "description": "Tereyağlı sucuk | domates | cafe de paris sos Tereyağlı sucuk",
+        "bbox": null
+      },
+      {
+        "name": "LUCIO OMLET",
+        "price": 335,
+        "category": "Organi̇k Yumurtalar",
+        "description": "mozzarella | mantar | biber | tereyağlı | susam tohumlu | cherry domates mozzarella | mantar",
+        "bbox": null
+      },
+      {
+        "name": "KAVURMALI YUMURTA",
+        "price": 395,
+        "category": "Organi̇k Yumurtalar",
+        "description": "Tereyağlı kavurma | salatalık | yeşillik | krem çay Tereyağlı kavurma",
+        "bbox": null
+      },
+      {
+        "name": "TOST",
+        "price": 185,
+        "category": "Tostlar",
+        "description": "kaşar | domates | turşu kaşar | domates",
+        "bbox": null
+      },
+      {
+        "name": "SUCUKLU TOST",
+        "price": 295,
+        "category": "Tostlar",
+        "description": "sucuk | kaşar peyniri | domates | turşu | kaşar peyniri",
+        "bbox": null
+      },
+      {
+        "name": "PAÇA TOST",
+        "price": 255,
+        "category": "Tostlar",
+        "description": "tereyağı | paça | sarımsak | karabiber tereyağı | paça",
+        "bbox": null
+      },
+      {
+        "name": "Kavurmalı Yumurta",
+        "price": 395,
+        "category": "Menü",
+        "description": "Kavurma | mantar | biber | yeşillik | simit tarak | cherry domates",
+        "bbox": null
+      },
+      {
+        "name": "Tostlar",
+        "price": 0,
+        "category": "Menü",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Pağa Tost",
+        "price": 285,
+        "category": "Menü",
+        "description": "Beyaz peynir, sucuk, kara domates, taze kekik",
+        "bbox": null
+      },
+      {
+        "name": "Karışga Fitik Tost",
+        "price": 445,
+        "category": "Menü",
+        "description": "Kavurma, sucuk, salam, kaşar, domates, taze fes, yandağa sigara suyto, siyah zeytin, salzama",
+        "bbox": null
+      },
+      {
+        "name": "Aperatifler",
+        "price": 0,
+        "category": "Menü",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Nacho's Dipsi",
+        "price": 175,
+        "category": "Menü",
+        "description": "Baleraka sosla",
+        "bbox": null
+      },
+      {
+        "name": "Sigara Böreği",
+        "price": 215,
+        "category": "Menü",
+        "description": "4 adet özel sos | yeşillik | cherry domates",
+        "bbox": null
+      },
+      {
+        "name": "Buffalo Wings",
+        "price": 385,
+        "category": "Menü",
+        "description": "6 adet hot sos | carrot stick | sos seçiniz; acı sos | mayonez",
+        "bbox": null
+      },
+      {
+        "name": "Çıtır Kornişon",
+        "price": 235,
+        "category": "Menü",
+        "description": "6 adet özel sos | parmasan kemiği turşu | sweet chili sos",
+        "bbox": null
+      },
+      {
+        "name": "Izgara Sosis",
+        "price": 545,
+        "category": "Menü",
+        "description": "Sos | patates kızartması | Texas sos",
+        "bbox": null
+      },
+      {
+        "name": "Çıtır Ravioli Tabağı",
+        "price": 395,
+        "category": "Menü",
+        "description": "8 adet özel sos | sweet chili sos | yeşillik",
+        "bbox": null
+      },
+      {
+        "name": "Tucco Cheese Bomb",
+        "price": 425,
+        "category": "Menü",
+        "description": "8 adet moz. & cheddar topları | Texas sos | yeşillik",
+        "bbox": null
+      },
+      {
+        "name": "Çıtır Soğan Halkası",
+        "price": 265,
+        "category": "Menü",
+        "description": "8 adet özel sos | dips | sweet chili sos",
+        "bbox": null
+      },
+      {
+        "name": "Ballı Hardallı Tavuk",
+        "price": 335,
+        "category": "Menü",
+        "description": "4 adet özel sos | ballı hardal",
+        "bbox": null
+      },
+      {
+        "name": "Falafi Topları",
+        "price": 285,
+        "category": "Menü",
+        "description": "4 adet özel sos | taşlama sos",
+        "bbox": null
+      },
+      {
+        "name": "Çıtır Cajun Tavuk",
+        "price": 395,
+        "category": "Menü",
+        "description": "Cajun baharatlı çıtır tavuk | özel sos | sweet chili sos",
+        "bbox": null
+      },
+      {
+        "name": "Tucco Combo Tabaği (2-3 kişilik)",
+        "price": 565,
+        "category": "Menü",
+        "description": "Dana sosis | soğan halkaları | sigara böreği | çıtır tavuk | sweet chili sos | cajun sos",
+        "bbox": null
+      },
+      {
+        "name": "Nachos Tavuklu",
+        "price": 385,
+        "category": "Menü",
+        "description": "Mısır cipsleri | cheddar sos | acı sos | jalapeno biber | mix biber | meksika peyniri | guacamole | salsa | sourcream",
+        "bbox": null
+      },
+      {
+        "name": "Mozzarella Stick",
+        "price": 285,
+        "category": "Menü",
+        "description": "4 adet mozzarella çubuğu | sweet chili sos | yeşillik",
+        "bbox": null
+      },
+      {
+        "name": "Cajun Baharatli Çıtır Sodur",
+        "price": 325,
+        "category": "Menü",
+        "description": "Acı severler için caju baharatlı çıtır sodur | özel sos | cips",
+        "bbox": null
+      },
+      {
+        "name": "Fitik Eti Cheddar Soslu Patates",
+        "price": 545,
+        "category": "Menü",
+        "description": "Fitik eti | cips | jalapeno biber | barbekü sos | cheddar sos",
+        "bbox": null
+      },
+      {
+        "name": "CAPRESE",
+        "price": 385,
+        "category": "Menü",
+        "description": "Mozzarella | domates | pesto sos | zeytinyağı | yeşillik | taze fesleğen",
+        "bbox": null
+      },
+      {
+        "name": "TUCCO COMBO TABAGI (2-3 Kişilik)",
+        "price": 545,
+        "category": "Menü",
+        "description": "Falafel | kızarmış patates | çıtır tavuk | sos çeşitleri | acı sos | özel sos",
+        "bbox": null
+      },
+      {
+        "name": "ÇITIR ÇIKIN TABAGI",
+        "price": 395,
+        "category": "Menü",
+        "description": "Parmesanlı çıtır tavuk | karışık sos",
+        "bbox": null
+      },
+      {
+        "name": "BALLI HARDALLI TAVUK",
+        "price": 335,
+        "category": "Menü",
+        "description": "Ballı hardallı tavuk",
+        "bbox": null
+      },
+      {
+        "name": "Ispanaklı Niyokki",
+        "price": 375,
+        "category": "Menü",
+        "description": "Niyokki makarna | krema | parmesan | taze ıspanak | mantar | domates salata",
+        "bbox": null
+      },
+      {
+        "name": "SCHNITZEL",
+        "price": 375,
+        "category": "Menü",
+        "description": "Kaplanmış çıtır tavuk göğsü / parates salatası / roka salata / tereyağ",
+        "bbox": null
+      },
+      {
+        "name": "BESAMEL SOSLU TAVUK",
+        "price": 0,
+        "category": "Menü",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "CHICKEN TEX MEX",
+        "price": 435,
+        "category": "Menü",
+        "description": "Izgara tavuk parçaları | meksika fasulyesi | jalapeno biber | soğan | mantar | mısır | mix biber | barbekü sos | acı sos | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "VEJETERYAN BURGER",
+        "price": 295,
+        "category": "Menü",
+        "description": "Sebze burger köftesi | burger sos | marul | salatalık turşusu | domates | cips",
+        "bbox": null
+      },
+      {
+        "name": "HAMBURGER (150gr)",
+        "price": 445,
+        "category": "Menü",
+        "description": "Dana burger köftesi (150gr) | burger sos | marul | domates | salatalık turşusu | cips",
+        "bbox": null
+      },
+      {
+        "name": "TRİPLE DANA SOSLU BURGER (150 gr)",
+        "price": 485,
+        "category": "Menü",
+        "description": "Dana burger köfte | hollandez sos | çıtır soğan | cips",
+        "bbox": null
+      },
+      {
+        "name": "DOUBLE BURGER (220 gr)",
+        "price": 595,
+        "category": "Menü",
+        "description": "Dana burger köftesi | cheddar peyniri | burger sos | marul | salatalık turşusu | domates | cips",
+        "bbox": null
+      },
+      {
+        "name": "TANDIR BURGER (220gr)",
+        "price": 645,
+        "category": "Menü",
+        "description": "Kaburga (220gr) | barbekü sos | karamelize soğan | cips",
+        "bbox": null
+      },
+      {
+        "name": "BBQ Soslu Tavuk Quesadilla",
+        "price": 435,
+        "category": "Menü",
+        "description": "Tavuk göğsü | barbekü sos | kırmızı soğan | renkli biber | barbekü sos | mozzarella",
+        "bbox": null
+      },
+      {
+        "name": "Köri Soslu Tavuk Quesadilla",
+        "price": 435,
+        "category": "Menü",
+        "description": "Tavuk göğsü | krema | köri sos | mozzarella",
+        "bbox": null
+      },
+      {
+        "name": "Steakli Quesadilla",
+        "price": 565,
+        "category": "Menü",
+        "description": "Steak dilimleri | karamelize soğan | kırmızı soğan | dip sos | cipos | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "Vejeteryan Quesadilla",
+        "price": 415,
+        "category": "Menü",
+        "description": "Taze baharatlı süzme kabak ezmesi | keçi peyniri | közlenmiş biber | mozzarella",
+        "bbox": null
+      },
+      {
+        "name": "BURRATA KÜRE FOLIA (250gr)",
+        "price": 375,
+        "category": "Menü",
+        "description": "Marin domates - fesleğen - roka - napolitan sos - kavrulmuş antep fıstığı",
+        "bbox": null
+      },
+      {
+        "name": "DANA LOKUM BONFİLE IZGARA (200 gr.)",
+        "price": 995,
+        "category": "Menü",
+        "description": "Püre çeşitleri - ızgara sebzeler - mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "IZGARA ANTRİKOT (250gr)",
+        "price": 915,
+        "category": "Menü",
+        "description": "Patates püresi - ızgara sebzeler - mevsim sosları - mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "CAFÉ DE PARİS ANTRİKOT",
+        "price": 1195,
+        "category": "Menü",
+        "description": "Antrikot (250gr) - Cafe de paris sos - cips - mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "KUZU İNCİK",
+        "price": 995,
+        "category": "Menü",
+        "description": "Kuzu İncik (300gr) - Risotto pilavı - Havuç ezmesi - mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "NEW YORK STEAK (300 gr.)",
+        "price": 1145,
+        "category": "Menü",
+        "description": "Bonfile (Mantar soslu) - patates püresi - mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "RIBBEYE STEAK (400 gr.)",
+        "price": 1145,
+        "category": "Menü",
+        "description": "Bonfile (Mantar soslu) - közlenmiş patates - mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "Kutsulukagi",
+        "price": 550,
+        "category": "Menü",
+        "description": "mandalina bağı içinde katsu̇luk ağacı",
+        "bbox": null
+      },
+      {
+        "name": "Lemongrass Collins",
+        "price": 515,
+        "category": "Menü",
+        "description": "cin, limon otu, elma şekeri",
+        "bbox": null
+      },
+      {
+        "name": "Jungle",
+        "price": 515,
+        "category": "Menü",
+        "description": "tarçın viski, zencefil, zerdeçal",
+        "bbox": null
+      },
+      {
+        "name": "GÜNÜN ÇORBASI",
+        "price": 145,
+        "category": "Başlangiçlar",
+        "description": "Malzemeler bilgi alınız.",
+        "bbox": null
+      },
+      {
+        "name": "BROKOLİ ÇORBASI",
+        "price": 165,
+        "category": "Başlangiçlar",
+        "description": "Servis Süresi Min. 20 Dakikadır.",
+        "bbox": null
+      },
+      {
+        "name": "ISPANAK ÇORBASI",
+        "price": 165,
+        "category": "Başlangiçlar",
+        "description": "Servis Süresi Min. 20 Dakikadır.",
+        "bbox": null
+      },
+      {
+        "name": "MANTAR ÇORBASI",
+        "price": 205,
+        "category": "Başlangiçlar",
+        "description": "Servis Süresi Min. 20 Dakikadır.",
+        "bbox": null
+      },
+      {
+        "name": "MANTAR GRATEN",
+        "price": 285,
+        "category": "Başlangiçlar",
+        "description": "Sote Mantar | krema sos | domates | kurutulmuş mozzarella | tereyağ",
+        "bbox": null
+      },
+      {
+        "name": "FİNAL PEYNİR TABAGI",
+        "price": 655,
+        "category": "Başlangiçlar",
+        "description": "Çeşitli peynirler | füme etler | kraker",
+        "bbox": null
+      },
+      {
+        "name": "KABURGA TİPTİK ETLİ GRATEN",
+        "price": 555,
+        "category": "Başlangiçlar",
+        "description": "Tiftiklenmiş kaburga | mantar | tereyağı | parmesan krema sos",
+        "bbox": null
+      },
+      {
+        "name": "HELLİM SOTE",
+        "price": 345,
+        "category": "Başlangiçlar",
+        "description": "Kremalı yeşil biber | hellim peynir | hardal | krema | kekikler | kurutulmuş fesleğen",
+        "bbox": null
+      },
+      {
+        "name": "FALAFEL DÜRÜM",
+        "price": 395,
+        "category": "Sokak Lezzetleri̇",
+        "description": "Humus | domates | turşu | marul | tahin sos | cips",
+        "bbox": null
+      },
+      {
+        "name": "TUCCO DÜRÜM",
+        "price": 455,
+        "category": "Sokak Lezzetleri̇",
+        "description": "Közlenmiş domatesli harissa sos | marul | turşu | soğan | falafel | mozzarella | fuoco sos | cips",
+        "bbox": null
+      },
+      {
+        "name": "EFES Fıçı",
+        "price": 165,
+        "category": "Bi̇ralar",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "EFES PİLSEN",
+        "price": 245,
+        "category": "Bi̇ralar",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "EFES MALT",
+        "price": 245,
+        "category": "Bi̇ralar",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "EFES ÖZEL SERİ",
+        "price": 255,
+        "category": "Bi̇ralar",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "EFES GLUTENSİZ",
+        "price": 305,
+        "category": "Bi̇ralar",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "BUD",
+        "price": 285,
+        "category": "Bi̇ralar",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "BECK'S",
+        "price": 265,
+        "category": "Bi̇ralar",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "MİLLER",
+        "price": 285,
+        "category": "Bi̇ralar",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "BELFAST",
+        "price": 50,
+        "category": "Bi̇ralar",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "CORONA",
+        "price": 35,
+        "category": "Bi̇ralar",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "ERDINGER",
+        "price": 375,
+        "category": "Bi̇ralar",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "HOEGARDEN",
+        "price": 375,
+        "category": "Bi̇ralar",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "AMSTERDAM",
+        "price": 395,
+        "category": "Bi̇ralar",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "LEFFE BRUNE",
+        "price": 385,
+        "category": "Bi̇ralar",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "LEFFE BLONDE",
+        "price": 385,
+        "category": "Bi̇ralar",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "DUVEL",
+        "price": 445,
+        "category": "Bi̇ralar",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "BUDWEISER",
+        "price": 245,
+        "category": "Bi̇ralar",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "HEINEKEN",
+        "price": 265,
+        "category": "Bi̇ralar",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "BLUE MOON",
+        "price": 255,
+        "category": "Bi̇ralar",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "ESTRELLA",
+        "price": 250,
+        "category": "Bi̇ralar",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "PAULANER",
+        "price": 250,
+        "category": "Bi̇ralar",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Efes",
+        "price": 265,
+        "category": "Bi̇ralar",
+        "description": "33cl Efes Fıçı",
+        "bbox": null
+      },
+      {
+        "name": "Bomonti Filtresiz",
+        "price": 235,
+        "category": "Bi̇ralar",
+        "description": "50cl Bomonti Filtresiz",
+        "bbox": null
+      },
+      {
+        "name": "Miller",
+        "price": 265,
+        "category": "Bi̇ralar",
+        "description": "33cl Miller",
+        "bbox": null
+      },
+      {
+        "name": "Hoegaarden",
+        "price": 375,
+        "category": "Bi̇ralar",
+        "description": "33cl Hoegaarden",
+        "bbox": null
+      },
+      {
+        "name": "Liefle Blonde",
+        "price": 385,
+        "category": "Bi̇ralar",
+        "description": "33cl Liefle Blonde",
+        "bbox": null
+      },
+      {
+        "name": "GRANOLA",
+        "price": 345,
+        "category": "Sağlikli Kaseler",
+        "description": "Yulaf ezmesi, kuru kayısı, kuru incir, taze böğürtlen, kabak çekirdeği, chia tohumu",
+        "bbox": null
+      },
+      {
+        "name": "SOMON FÜME KASE",
+        "price": 415,
+        "category": "Sağlikli Kaseler",
+        "description": "Tazega somon, kinoa, kırmızı lahana, yaban mersini, brokoli, hardallı vinegret sos ile",
+        "bbox": null
+      },
+      {
+        "name": "BONFİLE KASE (220Gr)",
+        "price": 825,
+        "category": "Sağlikli Kaseler",
+        "description": "Bonfile ve yoğurtlu orman meyveli, patates salatası ile",
+        "bbox": null
+      },
+      {
+        "name": "KÖFTE KASE (200Gr)",
+        "price": 645,
+        "category": "Sağlikli Kaseler",
+        "description": "Köfte ve yoğurtlu kremalı pancar",
+        "bbox": null
+      },
+      {
+        "name": "PİLİÇ KASE",
+        "price": 455,
+        "category": "Sağlikli Kaseler",
+        "description": "Kinoa, ızgarada piliç dilimleri, havuç, kabak ve narlı özel sos ile",
+        "bbox": null
+      },
+      {
+        "name": "IZGARA SOMONLU KASE",
+        "price": 545,
+        "category": "Sağlikli Kaseler",
+        "description": "Somon, yeşil elma, havuç, kabak, kırmızı pancar ile",
+        "bbox": null
+      },
+      {
+        "name": "IZGARA KÖFTELİ KASE",
+        "price": 645,
+        "category": "Sağlikli Kaseler",
+        "description": "Mantarlı, köfteli biber, cherry domates, havuç, kabak ile",
+        "bbox": null
+      },
+      {
+        "name": "BONFİLE KASE",
+        "price": 645,
+        "category": "Sağlikli Kaseler",
+        "description": "Fasülye, meksika fasülyesi, salsa sos, kırmızı pancar ile",
+        "bbox": null
+      },
+      {
+        "name": "HELLİM KASE",
+        "price": 545,
+        "category": "Sağlikli Kaseler",
+        "description": "Hellimli, mevsim sebzeleri, fasulyesi, salçası, turşu ile",
+        "bbox": null
+      },
+      {
+        "name": "TAVUKLA FORMDA KAL",
+        "price": 425,
+        "category": "Formda Kal",
+        "description": "Izgara yapılan tavuk göğsü parçaları",
+        "bbox": null
+      },
+      {
+        "name": "KÖFTEYLE FORMDA KAL",
+        "price": 545,
+        "category": "Formda Kal",
+        "description": "Izgara kaburga köfte, yarma buğday, ıspanak",
+        "bbox": null
+      },
+      {
+        "name": "TİTLE FORMDA KAL",
+        "price": 755,
+        "category": "Formda Kal",
+        "description": "Izgara yapılan bonfile parçaları, yarma buğday",
+        "bbox": null
+      },
+      {
+        "name": "SOMONLA FORMDA KAL",
+        "price": 645,
+        "category": "Formda Kal",
+        "description": "Izgara yapılan somon fileto, yarma buğday",
+        "bbox": null
+      },
+      {
+        "name": "ÇITIR HELLİM SALATA",
+        "price": 395,
+        "category": "Salatalar",
+        "description": "Hellim pane | Akdeniz yeşillikleri | Cherry domates | Salatalık | Mısır | Nohut",
+        "bbox": null
+      },
+      {
+        "name": "AKDENİZ BAHÇE SALATA",
+        "price": 255,
+        "category": "Salatalar",
+        "description": "Akdeniz yeşillikleri | Kıtır ekmek | Cherry domates | Mevsim sebzeleri | Tulum peyniri",
+        "bbox": null
+      },
+      {
+        "name": "SOMON SİHİRLİ SALATA",
+        "price": 595,
+        "category": "Salatalar",
+        "description": "Salatalık | Cherry domates | Yeşil biber | Yeşil zeytin | İzmir tulum peyniri | Kapari çiçeği | Dereotu | Tane hardal | Elma sirkesi | Somon",
+        "bbox": null
+      },
+      {
+        "name": "RUŞDAY SALATA",
+        "price": 295,
+        "category": "Salatalar",
+        "description": "Kinoa | Brüksel lahanası | Yeşil elma | Ceviz | Nar | Cherry domates | Sarı üzüm | Maydanoz | Balzamik sirke",
+        "bbox": null
+      },
+      {
+        "name": "AVOKADO SALATA",
+        "price": 375,
+        "category": "Salatalar",
+        "description": "Akdeniz yeşillikleri | Avokado | Tulum peyniri | Mevsim meyveleri",
+        "bbox": null
+      },
+      {
+        "name": "ROKA SALATA",
+        "price": 295,
+        "category": "Salatalar",
+        "description": "Roka | Cherry domates | Kornişon turşu | Ceviz içi | Parmesan peyniri",
+        "bbox": null
+      },
+      {
+        "name": "SEZAR SALATA",
+        "price": 375,
+        "category": "Salatalar",
+        "description": "Göbek marul | Salatalık | Akdeniz yeşillikleri | Parmesan peyniri | Kruton ekmek",
+        "bbox": null
+      },
+      {
+        "name": "BABA SALATA",
+        "price": 395,
+        "category": "Salatalar",
+        "description": "Cajun baharatı ile panelenmiş tavuk parçaları | Akdeniz yeşillikleri",
+        "bbox": null
+      },
+      {
+        "name": "IZGARA KÖFTE SALATA",
+        "price": 585,
+        "category": "Salatalar",
+        "description": "Izgara köfte | Mevsim yeşillikleri | Cherry domates | Közlenmiş biber",
+        "bbox": null
+      },
+      {
+        "name": "FALAFEL SALATA",
+        "price": 395,
+        "category": "Salatalar",
+        "description": "Akdeniz yeşillikleri | Nohut | Yeşil mercimek salatası | Tulum peyniri | Mevsim yeşillikleri",
+        "bbox": null
+      },
+      {
+        "name": "TON BALIKLI SALATA",
+        "price": 425,
+        "category": "Salatalar",
+        "description": "Ton balığı | Mevsim yeşillikleri | Amerikan karışımı | Mısır | Cherry domates",
+        "bbox": null
+      },
+      {
+        "name": "HELLİM SALATA",
+        "price": 495,
+        "category": "Salatalar",
+        "description": "Izgara hellim | Akdeniz yeşillikleri | Közlenmiş biber | Cherry domates | Ceviz içi",
+        "bbox": null
+      },
+      {
+        "name": "IZGARA TAVUKLU SALATA",
+        "price": 375,
+        "category": "Salatalar",
+        "description": "Izgara tavuk dilimleri | Akdeniz yeşillikleri | Kornişon turşu | Cherry domates",
+        "bbox": null
+      },
+      {
+        "name": "TULUM PEYNİRLİ SALATA",
+        "price": 385,
+        "category": "Salatalar",
+        "description": "Akdeniz yeşillikleri | Roka | Göbek marul | Kuru kayısı | Cherry domates | Tulum peyniri | Zeytinyağı | Nar ekşisi",
+        "bbox": null
+      },
+      {
+        "name": "KARİDESLİ SALATA",
+        "price": 495,
+        "category": "Salatalar",
+        "description": "Karides | Akdeniz yeşillikleri | Enginar parçacıkları | Közlenmiş biber | Ankara armudu dilimleri",
+        "bbox": null
+      },
+      {
+        "name": "Penne Napoliten",
+        "price": 285,
+        "category": "Makarnalar",
+        "description": "Domates sos | fesleğen",
+        "bbox": null
+      },
+      {
+        "name": "Penne Arabiata",
+        "price": 295,
+        "category": "Makarnalar",
+        "description": "Acılı domates sos | krema | acı biber | penne",
+        "bbox": null
+      },
+      {
+        "name": "Ege Usulü Makarna",
+        "price": 315,
+        "category": "Makarnalar",
+        "description": "Domates sos | fesleğen | sarımsak | közlenmiş biber | mantar | parmesan | krema",
+        "bbox": null
+      },
+      {
+        "name": "Körili Soslu Penne",
+        "price": 345,
+        "category": "Makarnalar",
+        "description": "Krema | köri | mantar | köri soslu | krema",
+        "bbox": null
+      },
+      {
+        "name": "Körili Soslu Tavuklu Penne",
+        "price": 365,
+        "category": "Makarnalar",
+        "description": "Tavuk | krema | köri | mantar | köri soslu | krema",
+        "bbox": null
+      },
+      {
+        "name": "4 Peynirli Penne",
+        "price": 365,
+        "category": "Makarnalar",
+        "description": "Krema | parmesan | rokfor peyniri | cheddar peyniri | parmesan peyniri | maydonoz",
+        "bbox": null
+      },
+      {
+        "name": "İtalyan Penne",
+        "price": 365,
+        "category": "Makarnalar",
+        "description": "Kurutulmuş et | krema | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "Bonfileli Tagliatelle Alpollo",
+        "price": 555,
+        "category": "Makarnalar",
+        "description": "Bonfile | mantar | krema | parmesan | domates | krema | parmesan",
+        "bbox": null
+      },
+      {
+        "name": "Makarna Bulli",
+        "price": 385,
+        "category": "Makarnalar",
+        "description": "Linguine makarna | napoliten sos | spagetti | karides | kurumane | hellim peyniri | limon | krema",
+        "bbox": null
+      },
+      {
+        "name": "Tavuklu Tagliatelle Alpollo",
+        "price": 375,
+        "category": "Makarnalar",
+        "description": "Tavuk parçaları | mantar | krema | parmesan | közlenmiş biber | parmesan",
+        "bbox": null
+      },
+      {
+        "name": "Pesto Soslu Penne",
+        "price": 395,
+        "category": "Makarnalar",
+        "description": "Pesto sos | mantar | pesto soslu | krema | parmesan",
+        "bbox": null
+      },
+      {
+        "name": "Penne Bolognese",
+        "price": 375,
+        "category": "Makarnalar",
+        "description": "Kıyma | domates sos",
+        "bbox": null
+      },
+      {
+        "name": "Spaghetti Bolognese",
+        "price": 375,
+        "category": "Makarnalar",
+        "description": "Kıyma | domates sos",
+        "bbox": null
+      },
+      {
+        "name": "Ton Balıklı Penne",
+        "price": 375,
+        "category": "Makarnalar",
+        "description": "Ton balığı | domates sos | fesleğen | köz biber",
+        "bbox": null
+      },
+      {
+        "name": "Beş Peynirli Ravioli Makarna",
+        "price": 525,
+        "category": "Makarnalar",
+        "description": "Beş peynir | krema | parmesan | maydanoz",
+        "bbox": null
+      },
+      {
+        "name": "Konfileli Penne",
+        "price": 575,
+        "category": "Makarnalar",
+        "description": "Bonfile parçaları | mantar | krema | domates sos",
+        "bbox": null
+      },
+      {
+        "name": "Somonlu Tagliatelle",
+        "price": 575,
+        "category": "Makarnalar",
+        "description": "Laguna somon | krema | parmesan",
+        "bbox": null
+      },
+      {
+        "name": "Sebzeli Noodle",
+        "price": 359,
+        "category": "Noodle",
+        "description": "Mevsim sebzeleri | soya sosu",
+        "bbox": null
+      },
+      {
+        "name": "Tavuklu Noodle",
+        "price": 365,
+        "category": "Noodle",
+        "description": "Kırmızı biber | mevsim sebzeleri",
+        "bbox": null
+      },
+      {
+        "name": "Özel Soslu Kütletilmiş Tavuk",
+        "price": 445,
+        "category": "Noodle",
+        "description": "Kaplanmış köz tavuk parçaları | kırmızı-yeşil biber",
+        "bbox": null
+      },
+      {
+        "name": "Bonfileli Noodle",
+        "price": 595,
+        "category": "Noodle",
+        "description": "Bonfile | mantar | soya sos",
+        "bbox": null
+      },
+      {
+        "name": "Mac and Cheese",
+        "price": 365,
+        "category": "Mac and Cheese",
+        "description": "Pesto soslu makarna | cheddar | parmesan",
+        "bbox": null
+      },
+      {
+        "name": "Tavuklu Mac and Cheese",
+        "price": 395,
+        "category": "Mac and Cheese",
+        "description": "Kaplanmış tavuk parçaları | makarna | cheddar | krema | cheddar | parmesan",
+        "bbox": null
+      },
+      {
+        "name": "Köfteli Mac and Cheese",
+        "price": 575,
+        "category": "Mac and Cheese",
+        "description": "Izgara köfte | makarna | cheddar | krema | parmesan",
+        "bbox": null
+      },
+      {
+        "name": "Steak Mac and Cheese",
+        "price": 585,
+        "category": "Mac and Cheese",
+        "description": "Izgara bonfile | spagetti makarna | krema | cheddar | parmesan",
+        "bbox": null
+      },
+      {
+        "name": "RISOTTO MUSHROOM",
+        "price": 465,
+        "category": "Risotto",
+        "description": "Kremalı mantarlar / parmesan / mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "RISOTTO IZGARA TAVUK GÖĞSÜ",
+        "price": 485,
+        "category": "Risotto",
+        "description": "Izgara tavuk göğsü / parmesan / mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "RISOTTO KABURGA FITIK (220gr)",
+        "price": 895,
+        "category": "Risotto",
+        "description": "Kuzu kaburga / arpacık soğan / mantar / parmesan / mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "RISOTTO IZGARA DANA BONFİLE (210gr)",
+        "price": 875,
+        "category": "Risotto",
+        "description": "Izgara dana bonfile / arpacık soğan / mantar / parmesan / mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "RISOTTO KUZU PİRZOLA (300gr)",
+        "price": 875,
+        "category": "Risotto",
+        "description": "Kuzu pirzola / arpacık soğan / kekik sos / parmesan / mevsim sebzeleri",
+        "bbox": null
+      },
+      {
+        "name": "BEŞAMEL SOSLU PİLİÇ BUT",
+        "price": 375,
+        "category": "Tavuklar",
+        "description": "Marine edilmiş but / beşamel sos / mevsim sebzeli / cheddar peyniri / mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "PİLİÇ BUT KAVURMA",
+        "price": 395,
+        "category": "Tavuklar",
+        "description": "Marine edilmiş küp doğranmış but / renkli biberler / soya sos / arpacık soğan / sarımsak / mantar / kimyon / cherry domates / mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "KREMALI MANTARLI TAVUK",
+        "price": 375,
+        "category": "Tavuklar",
+        "description": "Küplenmiş tavuk fileto / krema / taze /kurutulmuş mevsimlik sebzeler / mevsim salata / patates püresi",
+        "bbox": null
+      },
+      {
+        "name": "CHICKEN MEXICANA",
+        "price": 425,
+        "category": "Tavuklar",
+        "description": "Izgara tavuk dilimleri / meksika fasulyesi / renkli biberler / jalepeno / acı sos / krema / mevsim sebzeler / mevsim salata / patates püresi",
+        "bbox": null
+      },
+      {
+        "name": "CHICKEN MONTEREY",
+        "price": 425,
+        "category": "Tavuklar",
+        "description": "Izgara tavuk dilimleri / eritilmiş cheddar peyniri / Monterey sos / mevsim sebzeler / mevsim salata / patates püresi",
+        "bbox": null
+      },
+      {
+        "name": "TUCCO CÖKERTME",
+        "price": 425,
+        "category": "Tavuklar",
+        "description": "Küp doğranmış tavuk fileto / cökertme / sarımsaklı sos / süzme yoğurt / domates sos / mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "GARLIC PARMESAN",
+        "price": 525,
+        "category": "Tavuklar",
+        "description": "Izgara tavuk göğsü dilimleri / parmesan peyniri / cherry domates / fesleğen / pesto sos / mevsim sebzeleri / cips",
+        "bbox": null
+      },
+      {
+        "name": "MANTARLI TUCC0 TAVUK",
+        "price": 425,
+        "category": "Tavuklar",
+        "description": "Izgara tavuk göğsü dilimleri / karamelize soğan / taze/kurutulmuş mevsim sebzeleri / mevsim salata / cips",
+        "bbox": null
+      },
+      {
+        "name": "FÜME SOMONLU TUCC0 TAVUK",
+        "price": 525,
+        "category": "Tavuklar",
+        "description": "Izgara tavuk göğsü dilimleri / füme somon / mevsim sebzeler / mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "CHICKEN ESPAÑOL",
+        "price": 425,
+        "category": "Tavuklar",
+        "description": "Izgara tavuk but / meksika pirinci / jalapeno /mexicana sos/ mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "FISTIK EZMELİ TUCC0 TAŞLIK",
+        "price": 465,
+        "category": "Tavuklar",
+        "description": "Küp doğranmış tavuk taşlık / fıstık ezmesi / taze/kurutulmuş mevsim sebzeler / mevsim salata / patates püresi",
+        "bbox": null
+      },
+      {
+        "name": "TAVUKLU TUCC0 TAŞLIK",
+        "price": 465,
+        "category": "Tavuklar",
+        "description": "Küp doğranmış tavuk taşlık / sarımsaklı sos / acı sos / fesleğen / yeşil soğan / mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "SAFRANLI TAVUK",
+        "price": 385,
+        "category": "Tavuklar",
+        "description": "Tavuk göğüs parçaları | kırmızı - yeşil biber | mantar | safran | krema | mevsim salata | cips",
+        "bbox": null
+      },
+      {
+        "name": "MANTARLI TAVUK",
+        "price": 375,
+        "category": "Tavuklar",
+        "description": "Tavuk but | mantar | krema | mevsim salata | cips",
+        "bbox": null
+      },
+      {
+        "name": "TAVUK BURRITO",
+        "price": 395,
+        "category": "Tavuklar",
+        "description": "Tavuk but | barbekü sos | mevsim sebzeleri | mevsim salata | patates püresi",
+        "bbox": null
+      },
+      {
+        "name": "JULIEN TAVUK",
+        "price": 415,
+        "category": "Tavuklar",
+        "description": "Jülyen tavuk | krema | pesto sos | fesleğen | mevsim sebzeleri | mevsim salata | patates püresi",
+        "bbox": null
+      },
+      {
+        "name": "ANDALUZ TAVUK",
+        "price": 465,
+        "category": "Tavuklar",
+        "description": "Izgara tavuk parçaları | ızgara barak peyniri | mevsim salata | avokado püresi | krema | közlenmiş biber sos",
+        "bbox": null
+      },
+      {
+        "name": "FASULYE TAVUK",
+        "price": 465,
+        "category": "Tavuklar",
+        "description": "Tavuk but | dana bacon | kırmızı - yeşil biber | soğan | tortilla ekmeği | özel soslar | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "KREM SOSLU TAVUK",
+        "price": 425,
+        "category": "Tavuklar",
+        "description": "Tavuk but | kırmızı - yeşil biber | mantar | krema | kaju | soya | hoqlanmış mevsim sebzeleri | mevsim salata | patates püresi",
+        "bbox": null
+      },
+      {
+        "name": "PARMESAN YATAĞINDA TAVUK",
+        "price": 455,
+        "category": "Tavuklar",
+        "description": "Tavuk but | parmesan | krema | pesto sos | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "TATLI EKŞİ SOSLU TAVUK",
+        "price": 455,
+        "category": "Tavuklar",
+        "description": "Tavuk göğüs parçaları | havuç | kırmızı - yeşil chili sos | hoqlanmış mevsim sebzeleri | mevsim salata | patates püresi",
+        "bbox": null
+      },
+      {
+        "name": "TAVUK NERSKAYA",
+        "price": 430,
+        "category": "Tavuklar",
+        "description": "Haşlanmış tavuk parçaları | dilimlenmiş cheddar peyniri | biber | jalapeno biber | soğan | mısır | domates | meksika fasulyesi | hoqlanmış mevsim sebzeleri | mevsim salata | patates püresi",
+        "bbox": null
+      },
+      {
+        "name": "KARIŞIK PEYNİRLİ TAVUK SCHNITZEL",
+        "price": 465,
+        "category": "Tavuklar",
+        "description": "Kaplanmış tavuk göğsü | mozzarella | soğan | krema | tulum peyniri | mevsim salata | cips",
+        "bbox": null
+      },
+      {
+        "name": "SİYAH DİLİMLİ BURGER (150gr)",
+        "price": 295,
+        "category": "Burgerler",
+        "description": "Dana burger köfte | burger sos | round domates | salatalık turşu | cips",
+        "bbox": null
+      },
+      {
+        "name": "CHEESEBURGER (150gr)",
+        "price": 465,
+        "category": "Burgerler",
+        "description": "Dana burger köfte | cheddar dilimi | marul | domates | salatalık turşu | cips",
+        "bbox": null
+      },
+      {
+        "name": "TUCCO BURGER (150gr)",
+        "price": 475,
+        "category": "Burgerler",
+        "description": "Dana burger köfte | burger sos | ketçap | salatalık turşu | domates | sote soğan-mantar | cips",
+        "bbox": null
+      },
+      {
+        "name": "FATBOY BURGER (150gr)",
+        "price": 745,
+        "category": "Burgerler",
+        "description": "Dana burger köfte | 170 gr kaburga dilimleri | barbekü sos",
+        "bbox": null
+      },
+      {
+        "name": "KAPALI FIRIN BURGER (150gr)",
+        "price": 775,
+        "category": "Burgerler",
+        "description": "Dana burger köfte | 170 gr kaburga dilimleri | sote soğan mantar | cheddar peynir | cips",
+        "bbox": null
+      },
+      {
+        "name": "YOĞURTLU MAKARNA",
+        "price": 235,
+        "category": "Çocuklar İçi̇n",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "SPAGETTİ BOLONEZ",
+        "price": 275,
+        "category": "Çocuklar İçi̇n",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Spagetti Bolonez",
+        "price": 275,
+        "category": "Çocuklar İçin",
+        "description": "kıyma | domates sos",
+        "bbox": null
+      },
+      {
+        "name": "Köfte Tabağı",
+        "price": 255,
+        "category": "Çocuklar İçin",
+        "description": "salatalık | patates cipsi",
+        "bbox": null
+      },
+      {
+        "name": "Mini Burger (2 Adet)",
+        "price": 265,
+        "category": "Çocuklar İçin",
+        "description": "dana burger | domates | ketçap | mayonez | salatalık turşusu | patates cipsi",
+        "bbox": null
+      },
+      {
+        "name": "Naked Burger Pizza",
+        "price": 295,
+        "category": "Çocuklar İçin",
+        "description": "dana sucuk | hellim peyniri | fesleğen sos",
+        "bbox": null
+      },
+      {
+        "name": "Margarita Pizza",
+        "price": 265,
+        "category": "Çocuklar İçin",
+        "description": "domates sos | mozzarella | fesleğen",
+        "bbox": null
+      },
+      {
+        "name": "Bonfile Pizza",
+        "price": 275,
+        "category": "Çocuklar İçin",
+        "description": "dana bonfile | mozzarella | füme sos",
+        "bbox": null
+      },
+      {
+        "name": "Ege Usulü Wrap",
+        "price": 355,
+        "category": "Wrap",
+        "description": "Mevsim yeşillikleri | Ezine Peyniri | Zeytinyağlı taco sos",
+        "bbox": null
+      },
+      {
+        "name": "Barbeque Soslu Wrap",
+        "price": 445,
+        "category": "Wrap",
+        "description": "tavuk parçacıkları | közlenmiş biber | mozzarella | füme sos | cips",
+        "bbox": null
+      },
+      {
+        "name": "Tavuklu Mantarlı Wrap",
+        "price": 435,
+        "category": "Wrap",
+        "description": "tavuk parçacıkları | mantar | biber | mozzarella | taco sos | cips",
+        "bbox": null
+      },
+      {
+        "name": "Bonfile Mantarlı Wrap",
+        "price": 745,
+        "category": "Wrap",
+        "description": "dana bonfile | mantar | biber | mozzarella | füme sos | cips | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "Çeşme Kumru Wrap",
+        "price": 450,
+        "category": "Wrap",
+        "description": "Dana sucuk | mozzarella | domates | turşu | cips | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "Ege Usulü Krep",
+        "price": 385,
+        "category": "Krep",
+        "description": "mevsim yeşillikleri | Ezine Peyniri | zeytinyağı",
+        "bbox": null
+      },
+      {
+        "name": "Çıtır Kumru Krep",
+        "price": 405,
+        "category": "Krep",
+        "description": "Dana sucuk | hellim peyniri | mozzarella",
+        "bbox": null
+      },
+      {
+        "name": "Ispanaklı Krep",
+        "price": 425,
+        "category": "Krep",
+        "description": "ıspanak | mozzarella | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "Kori Soslu Tavuk Krep",
+        "price": 425,
+        "category": "Krep",
+        "description": "tavuk parçacıkları | mantar | krema | mozzarella | cips | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "Tavuklu Mantarlı Krep",
+        "price": 460,
+        "category": "Krep",
+        "description": "tavuk parçacıkları | mantar | krema | mısır | cips | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "Bonfile Mantarlı Krep",
+        "price": 745,
+        "category": "Krep",
+        "description": "dana bonfile | mantar | krema | mozzarella | cips | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "Tavuklu Mantarlı Quesadilla",
+        "price": 435,
+        "category": "Quesadilla",
+        "description": "tavuk parçacıkları | mantar | közlenmiş biber | yeşil biber | mozzarella | dip sos | cips | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "Barbeque Soslu Quesadilla",
+        "price": 435,
+        "category": "Quesadilla",
+        "description": "dana parçacıkları | közlenmiş biber | yeşil biber | mozzarella | barbeque sos | cips | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "Sebzeli Quesadilla",
+        "price": 495,
+        "category": "Quesadilla",
+        "description": "sote sebzeler | közlenmiş biber | yeşil biber | mozzarella | dip sos | cips | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "Etli Quesadilla",
+        "price": 645,
+        "category": "Quesadilla",
+        "description": "dana bonfile | közlenmiş biber | yeşil biber | mozzarella | mantar | dip sos | cips | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "Bonfile Quesadilla",
+        "price": 745,
+        "category": "Quesadilla",
+        "description": "dana bonfile | közlenmiş biber | yeşil biber | mozzarella | mantar | dip sos | cips | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "Vejeteryan Pizza",
+        "price": 385,
+        "category": "Pizzalar",
+        "description": "Domates sos | mozzarella | kabak | domates | mısır | mevsim sebzeleri | fesleğen | roka",
+        "bbox": null
+      },
+      {
+        "name": "Tavuklu Pizza",
+        "price": 485,
+        "category": "Pizzalar",
+        "description": "Domates sos | mozzarella | ızgara tavuk parçaları | jalapeno | mısır | roka",
+        "bbox": null
+      },
+      {
+        "name": "Dört Peynirli Pizza",
+        "price": 475,
+        "category": "Pizzalar",
+        "description": "Domates sos | mozzarella | cheddar | islime | parmesan | roka",
+        "bbox": null
+      },
+      {
+        "name": "Ton Balıklı Pizza",
+        "price": 495,
+        "category": "Pizzalar",
+        "description": "Domates sos | mozzarella | ton balığı | zeytin | mısır | roka",
+        "bbox": null
+      },
+      {
+        "name": "Röbösper Pizza",
+        "price": 785,
+        "category": "Pizzalar",
+        "description": "Domates sos | mozzarella | közlenmiş bonfile | kurutulmuş domates | sarımsak | ıspanak",
+        "bbox": null
+      },
+      {
+        "name": "Şef Pizza",
+        "price": 615,
+        "category": "Pizzalar",
+        "description": "Tavuk parçaları | Dana Bonfile Parçaları | Domates sos | mozzarella | Közlenmiş biber | mısır | roka",
+        "bbox": null
+      },
+      {
+        "name": "MARGARİTA PİZZA",
+        "price": 345,
+        "category": "Pi̇zzalar",
+        "description": "Domates sos | mozzarella | taze fesleğen | domates | roka",
+        "bbox": null
+      },
+      {
+        "name": "KAVURMALI PİZZA",
+        "price": 595,
+        "category": "Pi̇zzalar",
+        "description": "Domates sos | mozzarella | dana kavurma | roka",
+        "bbox": null
+      },
+      {
+        "name": "KARIŞIK PİZZA",
+        "price": 525,
+        "category": "Pi̇zzalar",
+        "description": "Domates sos | mozzarella | sucuk | salam | sosis | mantar | mısır | zeytin | biber | domates | kekik | roka",
+        "bbox": null
+      },
+      {
+        "name": "BURGER ETLİ PİZZA",
+        "price": 775,
+        "category": "Pi̇zzalar",
+        "description": "Domates sos | mozzarella | hamburger eti | kekik",
+        "bbox": null
+      },
+      {
+        "name": "SWEET CHILI PIZZA",
+        "price": 515,
+        "category": "Pi̇zzalar",
+        "description": "Domates sos | mozzarella | ızgara tavuk parçaları | közlenmiş biber | sweet chili sos | susam | yeşil soğan",
+        "bbox": null
+      },
+      {
+        "name": "PEPPERONİ PİZZA",
+        "price": 435,
+        "category": "Pi̇zzalar",
+        "description": "Domates sos | mozzarella | sucuk | roka",
+        "bbox": null
+      },
+      {
+        "name": "YUUMURTALI ISPANAKLI PİDE",
+        "price": 325,
+        "category": "Pi̇deler",
+        "description": "Ispanak | Yumurta | Yumurta",
+        "bbox": null
+      },
+      {
+        "name": "TAVUKLU PİDE",
+        "price": 395,
+        "category": "Pi̇deler",
+        "description": "Tavuk parçaları | Biberler | Domates | Soğan | Kaşar",
+        "bbox": null
+      },
+      {
+        "name": "KAŞARLI SUCUKLU PİDE",
+        "price": 495,
+        "category": "Pi̇deler",
+        "description": "Kaşar | Sucuk",
+        "bbox": null
+      },
+      {
+        "name": "YUMURTALI ISPANAKLI PIDE",
+        "price": 325,
+        "category": "Pideler",
+        "description": "yumurta | ıspanak",
+        "bbox": null
+      },
+      {
+        "name": "TAVUKLU PIDE",
+        "price": 395,
+        "category": "Pideler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "KAŞARLI SUCUKLU PIDE",
+        "price": 395,
+        "category": "Pideler",
+        "description": "kaşar | sucuk",
+        "bbox": null
+      },
+      {
+        "name": "KIYMALI PIDE",
+        "price": 495,
+        "category": "Pideler",
+        "description": "kıyma | domates | biber | yeşil biber | salçalı domates",
+        "bbox": null
+      },
+      {
+        "name": "ETLI PIDE",
+        "price": 645,
+        "category": "Pideler",
+        "description": "kuşbaşı | domates | kırmızı-yeşil biber | kaşar | şişli domates",
+        "bbox": null
+      },
+      {
+        "name": "TAVUKLU STROMBOLI",
+        "price": 425,
+        "category": "Pideler",
+        "description": "kremalı tavuk | domates sos | mozzarella",
+        "bbox": null
+      },
+      {
+        "name": "ETLI STROMBOLI",
+        "price": 695,
+        "category": "Pideler",
+        "description": "Frenksoğanı kıyma blok etli | mozzarella | jalapeno biber",
+        "bbox": null
+      },
+      {
+        "name": "SARMA",
+        "price": 275,
+        "category": "Ev Lezzetleri",
+        "description": "Çarkı iç pilavlı yaprak sarma | limon",
+        "bbox": null
+      },
+      {
+        "name": "IÇLI KÖFTE (4 adet)",
+        "price": 435,
+        "category": "Ev Lezzetleri",
+        "description": "Haşlama içli köfte | cevizli tereyağ sos | cherry domates",
+        "bbox": null
+      },
+      {
+        "name": "KELLE PAÇA",
+        "price": 435,
+        "category": "Ev Lezzetleri",
+        "description": "Ezogelin soslu | süzme yoğurt | tereyağ sos | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "KLASIK MANTI",
+        "price": 545,
+        "category": "Ev Lezzetleri",
+        "description": "Tereyağlı | cevizli | közde kırmızı biber",
+        "bbox": null
+      },
+      {
+        "name": "KÖYLÜM KÖFTE",
+        "price": 645,
+        "category": "Ev Lezzetleri",
+        "description": "Dana ve kuzu harçlı köfte | közleme yoğurt | tereyağ sos | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "ALINAZIK",
+        "price": 695,
+        "category": "Ev Lezzetleri",
+        "description": "Süzme yoğurt | köz patlıcan | şefin kömürde parçaları | domates sos | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "DANA UZARA KÖFTE",
+        "price": 645,
+        "category": "Köfteler",
+        "description": "ızgara köfte | mevsim sebzeleri | elpe | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "PATATES PÜRESİ YATAĞINDA KÖFTE",
+        "price": 605,
+        "category": "Köfteler",
+        "description": "ızgara köfte | patates püresi | közlenmiş kapya biberi | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "KÖZLENMİŞ PATLICAN YATAĞINDA KÖFTE",
+        "price": 625,
+        "category": "Köfteler",
+        "description": "ızgara köfte | közlenmiş patlıcan | krema | mevsim sebzeleri | elpe | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "KÖFTE SANDVİÇ",
+        "price": 645,
+        "category": "Köfteler",
+        "description": "mantar krema soslu köfte | mevsim sebzeleri | elpe | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "KASAP KÖFTE",
+        "price": 695,
+        "category": "Köfteler",
+        "description": "ızgara dana köfte | beğendi | kırmızı biber | maydanoz | baby küp patates | domates biber | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "FİLETO QUARTETO",
+        "price": 835,
+        "category": "Köfteler",
+        "description": "ızgara bonfile | mantar | kırmızı-yeşil biber | soya filizi | krema | mevsim sebzeleri | patates püresi | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "TOURNEDO ROSSİNİ",
+        "price": 845,
+        "category": "Köfteler",
+        "description": "ızgara bonfile | mantar | soğan | demi-glace sos | mevsim sebzeleri | patates püresi | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "TORUNEDDO ROSSINI",
+        "price": 845,
+        "category": "Bonfi̇le",
+        "description": "Izgara bonfile | mantar | safran | demi-glass sos | mevsim sebzeleri | patates püresi | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "YAPRAK DİLİMLİ BONFİLE",
+        "price": 695,
+        "category": "Bonfi̇le",
+        "description": "Izgara yaprak bonfile | mevsim sebzeleri | patates püresi | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "IZGARA DANA BONFİLE",
+        "price": 775,
+        "category": "Bonfi̇le",
+        "description": "Dana bonfile | mevsim sebzeleri | patates püresi | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "BONFİLE ÇÖKERTME",
+        "price": 855,
+        "category": "Bonfi̇le",
+        "description": "Kübet patates | süzme yoğurt | bonfile parçaları | domates sos | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "KÖZLENMİŞ PATLICAN YATAĞINDA TİKE BONFİLE",
+        "price": 775,
+        "category": "Bonfi̇le",
+        "description": "Izgara bonfile küpleri | közlenmiş patlıcan | domates sos | mevsim sebzeleri | patates püresi | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "STEAK MEDAİON",
+        "price": 845,
+        "category": "Bonfi̇le",
+        "description": "Izgara bonfile | soğan | kırmızı-yeşil biber | cheddar peyniri | mantar | jalapeno | domates | mısır | meksika fasulyesi | mevsim sebzeleri | patates püresi | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "STEAK TRILOGY",
+        "price": 785,
+        "category": "Bonfi̇le",
+        "description": "Mini bonfile parçaları | mantar | safran | demi-glass sos | mevsim sebzeleri | patates püresi | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "PEPPERS STEAK",
+        "price": 785,
+        "category": "Bonfi̇le",
+        "description": "Izgara bonfile | karabiber | soğan | kırmızı-yeşil biber | demi-glass sos | mevsim sebzeleri",
+        "bbox": null
+      },
+      {
+        "name": "FAJITAS BONFİLE",
+        "price": 845,
+        "category": "Bonfi̇le",
+        "description": "Izgara bonfile dilimleri | kırmızı-yeşil biber | soğan | özel soslar | tortilla ekmeği | mevsim salata | parmesan | mevsim sebzeleri",
+        "bbox": null
+      },
+      {
+        "name": "CAFE DE PARIS BONFİLE",
+        "price": 925,
+        "category": "Bonfi̇le",
+        "description": "Bonfile dilimleri | cafe de paris sos | cips | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "KIRBAÇLI RUSY BONFİLE",
+        "price": 835,
+        "category": "Bonfi̇le",
+        "description": "Jülyen bonfile parçaları | mantar | kırmızı-yeşil biber | siracha sos | krema | mevsim sebzeleri | patates püresi",
+        "bbox": null
+      },
+      {
+        "name": "PATLICAN YATAĞINDA ANTİRİKOT",
+        "price": 975,
+        "category": "Steak",
+        "description": "Antrikot | patlıcan közleme | patlıcan püresi | mantar | soğan | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "AVAKADO YAŞACINDA ANTİRİKOT",
+        "price": 995,
+        "category": "Steak",
+        "description": "Antrikot | avokado sos | patates püresi | mantar | soğan | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "KUZU PİRZOLA",
+        "price": 845,
+        "category": "Steak",
+        "description": "Kuzu pirzola | biberiye | mantar | mantar sosu | baby patates | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "MARİNE KUZU PİRZOLA",
+        "price": 875,
+        "category": "Steak",
+        "description": "Marine kuzu | buğday pilavı | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "DANA LOKUM BONFİLE IZGARA",
+        "price": 995,
+        "category": "Steak",
+        "description": "Lokum bonfile parçaları | mantar sosu | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "IZGARA ANTİRİKOT",
+        "price": 915,
+        "category": "Steak",
+        "description": "Marine edilmiş antrikot | mevsim sebzeleri | özel sos | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "CAFE DE PARIS ANTİRİKOT",
+        "price": 995,
+        "category": "Steak",
+        "description": "Antrikot dilimleri | cafe de paris sos | cips | mevsim salata",
+        "bbox": null
+      },
+      {
+        "name": "CHEESEKEK",
+        "price": 295,
+        "category": "Tatli",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "KARAMELİZE PASTA",
+        "price": 275,
+        "category": "Tatli",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "PASTA LATTE",
+        "price": 275,
+        "category": "Tatli",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "SAN SEBASTİAN",
+        "price": 275,
+        "category": "Tatli",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "ÜÇ ÇİKOLATALI BROWNIE",
+        "price": 355,
+        "category": "Tatli",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "YABAN MERSİNLİ KREPLİ PASTA",
+        "price": 295,
+        "category": "Tatli",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "TİRAMİSU PASTA",
+        "price": 265,
+        "category": "Tatli",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "NUTELLALI PASTA",
+        "price": 275,
+        "category": "Tatli",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "LOTUS BİSKÜVİLİ PASTA",
+        "price": 275,
+        "category": "Tatli",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Espresso",
+        "price": 110,
+        "category": "Kahveler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Double Espresso",
+        "price": 135,
+        "category": "Kahveler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Americano",
+        "price": 140,
+        "category": "Kahveler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Latte",
+        "price": 150,
+        "category": "Kahveler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Coconut Latte",
+        "price": 160,
+        "category": "Kahveler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Vanille Latte",
+        "price": 160,
+        "category": "Kahveler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Caramel Latte",
+        "price": 160,
+        "category": "Kahveler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Filtre Kahve",
+        "price": 150,
+        "category": "Kahveler",
+        "description": "French Press",
+        "bbox": null
+      },
+      {
+        "name": "Türk Kahvesi",
+        "price": 95,
+        "category": "Kahveler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Nane Kahvesi",
+        "price": 115,
+        "category": "Kahveler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Mocha",
+        "price": 160,
+        "category": "Kahveler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "White Mocha",
+        "price": 160,
+        "category": "Kahveler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Caramel Macchiato",
+        "price": 170,
+        "category": "Kahveler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Demleme Çay",
+        "price": 90,
+        "category": "Demleme Çaylar",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Earl Grey",
+        "price": 115,
+        "category": "Demleme Çaylar",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Ihlamur",
+        "price": 110,
+        "category": "Demleme Çaylar",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Yeşil Çay",
+        "price": 110,
+        "category": "Demleme Çaylar",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Papatya",
+        "price": 115,
+        "category": "Demleme Çaylar",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Çubuk Çay",
+        "price": 115,
+        "category": "Demleme Çaylar",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Iced Latte",
+        "price": 150,
+        "category": "Soğuk Kahveler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Iced Pumpkin Latte",
+        "price": 160,
+        "category": "Soğuk Kahveler",
+        "description": "Espresso | Süt | Bal",
+        "bbox": null
+      },
+      {
+        "name": "Ice Americano",
+        "price": 140,
+        "category": "Soğuk Kahveler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Iced Barista",
+        "price": 160,
+        "category": "Soğuk Kahveler",
+        "description": "Espresso | Süt | Bar",
+        "bbox": null
+      },
+      {
+        "name": "Iced Mocha",
+        "price": 160,
+        "category": "Soğuk Kahveler",
+        "description": "Espresso | Beyaz Çikolata | Süt | Bar",
+        "bbox": null
+      },
+      {
+        "name": "Iced White Mocha",
+        "price": 160,
+        "category": "Soğuk Kahveler",
+        "description": "Espresso | Bitter Çikolata | Süt | Bar",
+        "bbox": null
+      },
+      {
+        "name": "Iced Coconut Mocha",
+        "price": 160,
+        "category": "Soğuk Kahveler",
+        "description": "Espresso | H. Cevizi | Çikolata | Süt | Bar",
+        "bbox": null
+      },
+      {
+        "name": "Iced Caramel Macchiato",
+        "price": 170,
+        "category": "Soğuk Kahveler",
+        "description": "Espresso | Vanilya | Karamel | Süt | Buz",
+        "bbox": null
+      },
+      {
+        "name": "Virgin Pina Colada",
+        "price": 205,
+        "category": "Alkolsüz Kokteyl",
+        "description": "Ananas | H. Cevizi | Süt",
+        "bbox": null
+      },
+      {
+        "name": "Secret Mango",
+        "price": 205,
+        "category": "Alkolsüz Kokteyl",
+        "description": "Mango Püresi | Lime | Soda",
+        "bbox": null
+      },
+      {
+        "name": "Tucco Sour",
+        "price": 205,
+        "category": "Alkolsüz Kokteyl",
+        "description": "Yeşil Elma | Limon | Soda",
+        "bbox": null
+      },
+      {
+        "name": "Frozen",
+        "price": 215,
+        "category": "Alkolsüz Kokteyl",
+        "description": "Coconut | Strawberry | Mango",
+        "bbox": null
+      },
+      {
+        "name": "Pepsi",
+        "price": 95,
+        "category": "Soğuk İçecekler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Pepsi Max",
+        "price": 95,
+        "category": "Soğuk İçecekler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Yedigün",
+        "price": 95,
+        "category": "Soğuk İçecekler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Lipton Ice Tea",
+        "price": 95,
+        "category": "Soğuk İçecekler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Ayran",
+        "price": 85,
+        "category": "Soğuk İçecekler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Naneli Ayran",
+        "price": 95,
+        "category": "Soğuk İçecekler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Su",
+        "price": 45,
+        "category": "Soğuk İçecekler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Soda",
+        "price": 45,
+        "category": "Soğuk İçecekler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Red Bull",
+        "price": 150,
+        "category": "Soğuk İçecekler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Tonik Water",
+        "price": 110,
+        "category": "Soğuk İçecekler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Limonata",
+        "price": 110,
+        "category": "Soğuk İçecekler",
+        "description": "Limon | Nane | Mandalina, Festegün, Nane",
+        "bbox": null
+      },
+      {
+        "name": "Churchill",
+        "price": 85,
+        "category": "Soğuk İçecekler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Milkshake",
+        "price": 205,
+        "category": "Soğuk İçecekler",
+        "description": "Muz | Çikolata, Karamel, Orman meyveli, Karamel",
+        "bbox": null
+      },
+      {
+        "name": "Smoothie",
+        "price": 150,
+        "category": "Soğuk İçecekler",
+        "description": "Strawberry, Mango",
+        "bbox": null
+      },
+      {
+        "name": "Kırmızı Orman Meyveli Soğuk Çay",
+        "price": 150,
+        "category": "Soğuk İçecekler",
+        "description": "K. Orman Meyveli, Dağların Demleme Çay, Buz",
+        "bbox": null
+      },
+      {
+        "name": "Tucco Combo Tabağı (2-3 Kişilik)",
+        "price": 945,
+        "category": "Yanında İyi Gider",
+        "description": "Özel soslu çıtır tavuk | çıtır soğan halkası | sigara böreği | paçanga böreği | özel yapım sosis | patates kızartması | özel sos",
+        "bbox": null
+      },
+      {
+        "name": "Green Gin Smash",
+        "price": 595,
+        "category": "Tuccu Labs",
+        "description": "Beefeater Gin, Lime Cordial, taze nane, salatalık, soda üzerine dağılmış Angostura Bitters ile servis edilir.",
+        "bbox": null
+      },
+      {
+        "name": "Hibiscus Spritz",
+        "price": 615,
+        "category": "Tuccu Labs",
+        "description": "Bombay Sapphire Gin, St. Germain, Hibiscus, limon suyu, prosecco",
+        "bbox": null
+      },
+      {
+        "name": "Ladies Night",
+        "price": 585,
+        "category": "Tuccu Labs",
+        "description": "Absolut Vanilya, çilek püresi, limon suyu, bal",
+        "bbox": null
+      },
+      {
+        "name": "Jalepeno Sour",
+        "price": 625,
+        "category": "Tuccu Labs",
+        "description": "Jose Cuervo Tequila, Jalepeno Cordial, Agave Şurubu, Limon",
+        "bbox": null
+      },
+      {
+        "name": "Orman Meyveli Balöz",
+        "price": 595,
+        "category": "Popüler Kokteyller",
+        "description": "Cin, taze orman meyveleri, bal şurubu, limon suyu",
+        "bbox": null
+      },
+      {
+        "name": "Ballı Zencefilli",
+        "price": 595,
+        "category": "Popüler Kokteyller",
+        "description": "Viski, bal şurubu, zencefil, limon suyu",
+        "bbox": null
+      },
+      {
+        "name": "Okyanus",
+        "price": 585,
+        "category": "Popüler Kokteyller",
+        "description": "Votka, blue curacao, limon suyu, soda",
+        "bbox": null
+      },
+      {
+        "name": "Limonlu",
+        "price": 595,
+        "category": "Popüler Kokteyller",
+        "description": "Tekila, limon suyu, portakal likörü",
+        "bbox": null
+      },
+      {
+        "name": "Satsuma",
+        "price": 525,
+        "category": "Popüler Kokteyller",
+        "description": "Votka, satsuma püresi, limon suyu",
+        "bbox": null
+      },
+      {
+        "name": "Kavunlu",
+        "price": 550,
+        "category": "Popüler Kokteyller",
+        "description": "Midori likörü, votka, limon suyu",
+        "bbox": null
+      },
+      {
+        "name": "Coffee Baileys",
+        "price": 445,
+        "category": "Kahveli̇ Kokteyller",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Irish Coffee",
+        "price": 460,
+        "category": "Kahveli̇ Kokteyller",
+        "description": "Irish viski, esresso, şeker",
+        "bbox": null
+      },
+      {
+        "name": "Tahinli Espresso Martini",
+        "price": 495,
+        "category": "Kahveli̇ Kokteyller",
+        "description": "Votka, espresso, kahve likörü, tahin",
+        "bbox": null
+      },
+      {
+        "name": "Kaffe Karlsson",
+        "price": 515,
+        "category": "Kahveli̇ Kokteyller",
+        "description": "Kahlua, brendi, sıcak kahve üzerine krema",
+        "bbox": null
+      },
+      {
+        "name": "Smirnoff",
+        "price": 375,
+        "category": "Spirits",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Absolut",
+        "price": 395,
+        "category": "Spirits",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Belvedere",
+        "price": 565,
+        "category": "Spirits",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Beluga",
+        "price": 595,
+        "category": "Spirits",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Gordons Dry",
+        "price": 375,
+        "category": "Spirits",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Gordons Pink",
+        "price": 385,
+        "category": "Spirits",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Tanqueray",
+        "price": 445,
+        "category": "Spirits",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Tanqueray Ten",
+        "price": 465,
+        "category": "Spirits",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Hendricks",
+        "price": 595,
+        "category": "Spirits",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Olmeda Shot",
+        "price": 225,
+        "category": "Spirits",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Don Julio Shot",
+        "price": 295,
+        "category": "Spirits",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Limoncello",
+        "price": 295,
+        "category": "Spirits",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Jagermeister Shot",
+        "price": 200,
+        "category": "Spirits",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Remy Marten",
+        "price": 345,
+        "category": "Spirits",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Hennesy",
+        "price": 375,
+        "category": "Spirits",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Karisik Çerez",
+        "price": 175,
+        "category": "Spirits",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Woodford Reserve",
+        "price": 525,
+        "category": "Viskiler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Bulleit Bourbon",
+        "price": 465,
+        "category": "Viskiler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Jameson",
+        "price": 425,
+        "category": "Viskiler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Jack Daniels",
+        "price": 465,
+        "category": "Viskiler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Chivas Regal 12 Y.o.",
+        "price": 465,
+        "category": "Viskiler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Chivas Regal 15 Y.o.",
+        "price": 675,
+        "category": "Viskiler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Chivas Regal 18 Y.o.",
+        "price": 795,
+        "category": "Viskiler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Johnnie Walker Black Label",
+        "price": 515,
+        "category": "Viskiler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Johnnie Walker Double Black",
+        "price": 515,
+        "category": "Viskiler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Monkey Shoulder",
+        "price": 555,
+        "category": "Viskiler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Glenfiddich 12",
+        "price": 575,
+        "category": "Viskiler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Talisker 10",
+        "price": 585,
+        "category": "Viskiler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Laphroaig 10",
+        "price": 685,
+        "category": "Viskiler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Lagavulin 8",
+        "price": 735,
+        "category": "Viskiler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Oban 14",
+        "price": 765,
+        "category": "Viskiler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Macallan 12",
+        "price": 875,
+        "category": "Viskiler",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Terra Narince",
+        "price": 1200,
+        "category": "Beyaz",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Kayra Allure - Sauvignon Blanc",
+        "price": 1550,
+        "category": "Beyaz",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Kayra Allure Crispy",
+        "price": 1600,
+        "category": "Beyaz",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Kayra Versus Chardonnay",
+        "price": 2550,
+        "category": "Beyaz",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Prodomotur A. Elmir",
+        "price": 2850,
+        "category": "Beyaz",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Sarafin Fume Blanc",
+        "price": 3100,
+        "category": "Beyaz",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Lyona Blush",
+        "price": 1150,
+        "category": "Blush & Rose",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Cielo Blush",
+        "price": 1400,
+        "category": "Blush & Rose",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Gato Negro",
+        "price": 1500,
+        "category": "Blush & Rose",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Poeti Prosecco",
+        "price": 3750,
+        "category": "Şampanya",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Gold Prosecco",
+        "price": 4650,
+        "category": "Şampanya",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Terra Boğazkere",
+        "price": 1200,
+        "category": "Kırmızı",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Terra Kalecik Karası Boğazkere",
+        "price": 1260,
+        "category": "Kırmızı",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Terra Kalecik Karası",
+        "price": 1320,
+        "category": "Kırmızı",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Terra Shiraz",
+        "price": 1350,
+        "category": "Kırmızı",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Terra Öküzgözü",
+        "price": 1200,
+        "category": "Kırmızı",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Terra Cabernet Sauvignon Merlot",
+        "price": 1400,
+        "category": "Kırmızı",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Kavaklıdere Yakut",
+        "price": 1420,
+        "category": "Kırmızı",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Sarafin Shiraz",
+        "price": 3150,
+        "category": "Kırmızı",
+        "description": "",
+        "bbox": null
+      },
+      {
+        "name": "Sıcak Şarap",
+        "price": 340,
+        "category": "Kırmızı",
+        "description": "",
+        "bbox": null
+      }
+    ],
+    "source_type": "web_screenshot"
+  }
+}

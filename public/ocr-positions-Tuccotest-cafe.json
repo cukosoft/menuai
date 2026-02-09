@@ -1,0 +1,177 @@
+{
+  "1": {
+    "image_url": "https://tuccogastrocoffee.com/wp-content/uploads/2026/01/12-09-25-Page-9-scaled.webp",
+    "items": [
+      {
+        "name": "PATATES CİPSİ",
+        "price": 175,
+        "bbox": [
+          134,
+          146,
+          146,
+          231
+        ]
+      },
+      {
+        "name": "SİGARA BÖREĞİ",
+        "price": 215,
+        "bbox": [
+          171,
+          146,
+          186,
+          240
+        ]
+      },
+      {
+        "name": "BUFFALO WINGS",
+        "price": 385,
+        "bbox": [
+          214,
+          147,
+          225,
+          246
+        ]
+      },
+      {
+        "name": "ÇITIR KORNİŞON",
+        "price": 235,
+        "bbox": [
+          272,
+          145,
+          286,
+          245
+        ]
+      },
+      {
+        "name": "IZGARA SOSİS (min. 2kişilik)",
+        "price": 545,
+        "bbox": [
+          312,
+          146,
+          326,
+          229
+        ]
+      },
+      {
+        "name": "ÇITIR RAVİOLİ TABAĞI",
+        "price": 395,
+        "bbox": [
+          353,
+          144,
+          366,
+          277
+        ]
+      },
+      {
+        "name": "MAC & CHEESE TOPLARI",
+        "price": 425,
+        "bbox": [
+          395,
+          146,
+          404,
+          290
+        ]
+      },
+      {
+        "name": "ÇITIR SOĞAN TABAĞI",
+        "price": 205,
+        "bbox": [
+          431,
+          145,
+          445,
+          272
+        ]
+      },
+      {
+        "name": "BALLI HARDALLI TAVUK",
+        "price": 335,
+        "bbox": [
+          473,
+          146,
+          483,
+          286
+        ]
+      },
+      {
+        "name": "FALAFEL TOPLARI",
+        "price": 255,
+        "bbox": [
+          513,
+          146,
+          523,
+          248
+        ]
+      },
+      {
+        "name": "ÇITIR CAJUN TAVUK",
+        "price": 395,
+        "bbox": [
+          551,
+          145,
+          564,
+          263
+        ]
+      },
+      {
+        "name": "TUCCO COMBO TABAĞI (tek kişilik)",
+        "price": 365,
+        "bbox": [
+          591,
+          146,
+          604,
+          284
+        ]
+      },
+      {
+        "name": "TUCCO COMBO TABAĞI (2-3 kişilik)",
+        "price": 545,
+        "bbox": [
+          650,
+          145,
+          663,
+          284
+        ]
+      },
+      {
+        "name": "NACHOS TAVUK",
+        "price": 385,
+        "bbox": [
+          711,
+          146,
+          721,
+          240
+        ]
+      },
+      {
+        "name": "MOZZARELLA STİCK",
+        "price": 395,
+        "bbox": [
+          768,
+          146,
+          780,
+          264
+        ]
+      },
+      {
+        "name": "CAJUN BAHARATLI ÇITIR SUCUK",
+        "price": 325,
+        "bbox": [
+          809,
+          145,
+          822,
+          344
+        ]
+      },
+      {
+        "name": "TİFTİK ETLİ CHEDDAR SOSLU PATATES",
+        "price": 645,
+        "bbox": [
+          849,
+          145,
+          863,
+          376
+        ]
+      }
+    ]
+  }
+}

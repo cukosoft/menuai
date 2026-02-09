@@ -181,6 +181,20 @@
             animation: neonSweepGreen 0.8s ease-out forwards;
         }
 
+        /* ═══ ÇIKARMA MODU — KIRMIZI NEON ═══ */
+        .zone.removing::after {
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent 0%, #ff4444 30%, #ff6b6b 50%, #ff4444 70%, transparent 100%);
+            background-size: 200% 100%;
+            box-shadow:
+                0 0 4px #ff4444,
+                0 0 10px #ff4444,
+                0 0 20px rgba(255, 68, 68, 0.6),
+                0 0 40px rgba(255, 68, 68, 0.3);
+            animation: neonSweepRed 1.5s ease-in-out infinite;
+        }
+
         /* ═══ SWEEP ANİMASYONU ═══ */
         @keyframes neonSweep {
             0% {
@@ -213,6 +227,23 @@
             100% {
                 width: 100%;
                 opacity: 1;
+            }
+        }
+
+        @keyframes neonSweepRed {
+            0% {
+                background-position: -200% center;
+                opacity: 0.5;
+            }
+
+            50% {
+                background-position: 200% center;
+                opacity: 1;
+            }
+
+            100% {
+                background-position: -200% center;
+                opacity: 0.5;
             }
         }
 
@@ -249,14 +280,23 @@
         }
 
         .zone.highlighted .zone-label {
-            opacity: 1;
+            opacity: 0;
             transform: translateX(-50%) translateY(0) scale(1);
         }
 
-        .zone.added .zone-label {
+        /* Restoran sahibi açarsa label görünür */
+        body.show-labels .zone.highlighted .zone-label {
             opacity: 1;
+        }
+
+        .zone.added .zone-label {
+            opacity: 0;
             transform: translateX(-50%) translateY(0) scale(1);
             border-color: rgba(0, 255, 136, 0.4);
+        }
+
+        body.show-labels .zone.added .zone-label {
+            opacity: 1;
         }
 
         .zone.added .zone-label .price {
@@ -273,50 +313,50 @@
            ARTI BUTONU — Ürünlerin SAĞ tarafında
            3 durum: pasif → aktif (turuncu) → eklendi (yeşil)
            ═══════════════════════════════════════════ */
+        /* Varsayılan: gizli — tıklayınca belirir */
         .plus-btn {
             position: absolute;
-            width: 18px;
-            height: 18px;
+            width: 24px;
+            height: 24px;
             border-radius: 50%;
-            /* PASİF DURUM — koyu arka plan ile kontrast */
-            background: rgba(10, 10, 20, 0.7);
-            border: 1px solid rgba(255, 255, 255, 0.35);
-            color: rgba(255, 255, 255, 0.6);
-            font-size: 11px;
-            font-weight: 700;
+            background: none;
+            border: none;
+            color: #e85d3a;
+            font-size: 22px;
+            font-weight: 300;
             cursor: pointer;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
             z-index: 15;
-            pointer-events: auto;
             display: flex;
             align-items: center;
             justify-content: center;
             line-height: 1;
-            backdrop-filter: blur(3px);
+            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5), 0 0 8px rgba(0, 0, 0, 0.3);
+            /* Varsayılan: gizli */
+            opacity: 0;
+            pointer-events: none;
         }
 
-        .plus-btn:hover {
-            background: rgba(10, 10, 20, 0.85);
-            border-color: rgba(255, 255, 255, 0.6);
-            color: #fff;
-        }
-
-        /* AKTİF DURUM — Turuncu (1. dokunuş sonrası) */
+        /* 1. DOKUNUŞ — + beliriyor (sade) */
         .plus-btn.active {
-            background: rgba(232, 93, 58, 0.25);
-            border-color: #e85d3a;
-            color: #e85d3a;
-            box-shadow: 0 0 8px rgba(232, 93, 58, 0.5), 0 0 16px rgba(232, 93, 58, 0.2);
-            transform: scale(1.2);
+            opacity: 0.6;
+            pointer-events: auto;
+            color: #555;
         }
 
-        /* EKLENDİ DURUMU — Yeşil tick (2. dokunuş sonrası) */
+        /* 2. DOKUNUŞ — ✓ onay (soft yeşil) */
         .plus-btn.confirmed {
-            background: rgba(0, 255, 136, 0.25);
-            border-color: #00ff88;
-            color: #00ff88;
-            box-shadow: 0 0 8px rgba(0, 255, 136, 0.5);
-            transform: scale(1.15);
+            opacity: 0.7;
+            pointer-events: none;
+            color: #4caf50;
+        }
+
+        /* 3. DOKUNUŞ (yeşilken) — - çıkarma (soft kırmızı) */
+        .plus-btn.removing {
+            opacity: 0.6;
+            pointer-events: auto;
+            color: #c62828;
+            font-size: 26px;
         }
 
         /* ═══ TOAST NOTIFICATION ═══ */
@@ -559,10 +599,10 @@
                 plusBtn.innerHTML = "+";
                 plusBtn.style.position = "absolute";
                 // Ürünün SOL tarafında — zone'un hemen solunda
-                var plusX = (xMin - pad) - 22;
+                var plusX = (xMin - pad) - 30;
                 // margin-left:32px alanına taşabilir ama daha sola gitmesin
-                if (plusX < -20) plusX = -20;
-                var plusY = (yMin + yMax) / 2 - 9;
+                if (plusX < -24) plusX = -24;
+                var plusY = (yMin + yMax) / 2 - 13;
                 plusBtn.style.left = plusX + "px";
                 plusBtn.style.top = plusY + "px";
 
@@ -578,12 +618,50 @@
         }
 
         // ═══ TEK BİRLEŞİK DOKUNUŞ YÖNETİCİSİ ═══
+        // Akış: pasif → tıkla(+) → tıkla(sepete ekle) → tıkla(-) → tıkla(sepetten çıkar)
         function handleTap(zone, item) {
             document.getElementById("hint").style.opacity = "0";
             var plusBtn = zonePlusMap.get(zone);
 
+            // ═══ DURUM 3: Çıkarma modunda (-) → Sepetten çıkar ═══
+            if (zone.classList.contains("removing")) {
+                zone.classList.remove("removing");
+                zone.classList.remove("added");
+                if (plusBtn) {
+                    plusBtn.innerHTML = "+";
+                    plusBtn.classList.remove("removing");
+                }
+                // Sepetten çıkar
+                var idx = cart.findIndex(function (c) { return c.name === item.name; });
+                if (idx > -1) cart.splice(idx, 1);
+                updateCart();
+                showToast("✗ " + item.name + " sepetten çıkarıldı");
+                highlightedZone = null;
+                return;
+            }
+
+            // ═══ DURUM 2.5: Yeşil neon (added) → Çıkarma moduna geç ═══
+            if (zone.classList.contains("added")) {
+                zone.classList.add("removing");
+                if (plusBtn) {
+                    plusBtn.innerHTML = "−";
+                    plusBtn.classList.add("removing");
+                }
+                highlightedZone = zone;
+                // 4sn sonra iptal
+                highlightTimer = setTimeout(function () {
+                    zone.classList.remove("removing");
+                    if (plusBtn) {
+                        plusBtn.innerHTML = "+";
+                        plusBtn.classList.remove("removing");
+                    }
+                    highlightedZone = null;
+                }, 4000);
+                return;
+            }
+
             if (highlightedZone === zone) {
-                // ═══ İKİNCİ DOKUNUŞ — SEPETE EKLE ═══
+                // ═══ DURUM 2: İKİNCİ DOKUNUŞ — SEPETE EKLE ═══
                 clearTimeout(highlightTimer);
                 zone.classList.remove("highlighted");
                 zone.classList.add("added");
@@ -599,17 +677,17 @@
                 updateCart();
                 showToast("✓ " + item.name + " sepete eklendi!");
 
+                // Tik gider, yeşil neon kalır
                 setTimeout(function () {
-                    zone.classList.remove("added");
                     if (plusBtn) {
                         plusBtn.innerHTML = "+";
                         plusBtn.classList.remove("confirmed");
                     }
-                }, 1800);
+                }, 1500);
 
                 highlightedZone = null;
             } else {
-                // ═══ İLK DOKUNUŞ — MAVİ NEON + TURUNCU ARTI ═══
+                // ═══ DURUM 1: İLK DOKUNUŞ — MAVİ NEON + ARTI ═══
                 if (highlightedZone) {
                     highlightedZone.classList.remove("highlighted");
                     var prevPlus = zonePlusMap.get(highlightedZone);

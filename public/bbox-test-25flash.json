@@ -1,0 +1,242 @@
+{
+  "2": {
+    "image_url": "/menu_screenshot_1_4.png",
+    "items": [
+      {
+        "name": "GRANOLA",
+        "price": 345,
+        "bbox": [
+          464,
+          109,
+          479,
+          180
+        ]
+      },
+      {
+        "name": "SERPME KAHVALTI",
+        "price": 875,
+        "bbox": [
+          508,
+          109,
+          523,
+          270
+        ]
+      },
+      {
+        "name": "PRATİK VE LEZZETLİ",
+        "price": 355,
+        "bbox": [
+          567,
+          109,
+          582,
+          290
+        ]
+      },
+      {
+        "name": "PAZAR KEYFİ",
+        "price": 475,
+        "bbox": [
+          626,
+          109,
+          641,
+          220
+        ]
+      },
+      {
+        "name": "BENEDICT",
+        "price": 325,
+        "bbox": [
+          685,
+          109,
+          700,
+          195
+        ]
+      },
+      {
+        "name": "SICAK KAHVALTI TABAĞI",
+        "price": 495,
+        "bbox": [
+          744,
+          109,
+          759,
+          320
+        ]
+      },
+      {
+        "name": "PİZZAYLA KAHVALTI",
+        "price": 485,
+        "bbox": [
+          803,
+          109,
+          818,
+          300
+        ]
+      },
+      {
+        "name": "CAPRESE TARTİNE",
+        "price": 395,
+        "bbox": [
+          862,
+          109,
+          877,
+          290
+        ]
+      },
+      {
+        "name": "HELLİM SOTE",
+        "price": 345,
+        "bbox": [
+          921,
+          109,
+          936,
+          240
+        ]
+      }
+    ]
+  },
+  "3": {
+    "image_url": "/menu_screenshot_1_5.png",
+    "items": [
+      {
+        "name": "HELLİM SOTE",
+        "price": 345,
+        "bbox": [
+          30,
+          110,
+          48,
+          200
+        ]
+      },
+      {
+        "name": "SAHANDA YUMURTA",
+        "price": 175,
+        "bbox": [
+          395,
+          135,
+          410,
+          250
+        ]
+      },
+      {
+        "name": "PATATESLİ YUMURTA",
+        "price": 185,
+        "bbox": [
+          425,
+          135,
+          440,
+          250
+        ]
+      },
+      {
+        "name": "MENEMEN",
+        "price": 235,
+        "bbox": [
+          455,
+          135,
+          470,
+          190
+        ]
+      },
+      {
+        "name": "PEYNİRLİ OMLET",
+        "price": 235,
+        "bbox": [
+          485,
+          135,
+          500,
+          240
+        ]
+      },
+      {
+        "name": "KIYMALI YUMURTA",
+        "price": 295,
+        "bbox": [
+          515,
+          135,
+          530,
+          250
+        ]
+      },
+      {
+        "name": "EGG BENEDICT",
+        "price": 375,
+        "bbox": [
+          545,
+          135,
+          560,
+          230
+        ]
+      },
+      {
+        "name": "SUCUKLU YUMURTA",
+        "price": 275,
+        "bbox": [
+          605,
+          135,
+          620,
+          250
+        ]
+      },
+      {
+        "name": "TUCCO OMLET",
+        "price": 335,
+        "bbox": [
+          635,
+          135,
+          650,
+          230
+        ]
+      },
+      {
+        "name": "KAVURMALI YUMURTA",
+        "price": 395,
+        "bbox": [
+          665,
+          135,
+          680,
+          260
+        ]
+      },
+      {
+        "name": "TOST",
+        "price": 185,
+        "bbox": [
+          575,
+          605,
+          590,
+          650
+        ]
+      },
+      {
+        "name": "SUCUKLU TOST",
+        "price": 235,
+        "bbox": [
+          620,
+          605,
+          635,
+          720
+        ]
+      },
+      {
+        "name": "PAŞA TOST",
+        "price": 255,
+        "bbox": [
+          665,
+          605,
+          680,
+          700
+        ]
+      },
+      {
+        "name": "KABURGA TİFTİK TOST",
+        "price": 445,
+        "bbox": [
+          725,
+          605,
+          740,
+          780
+        ]
+      }
+    ]
+  }
+}
