@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>MenüAi — Zone Modu Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0a0f;
+            color: #fff;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #0f0f1a, #1a1a2e);
+            width: 100%;
+            padding: 14px 20px;
+            text-align: center;
+            border-bottom: 1px solid #222;
+        }
+
+        .header h1 {
+            font-size: 16px;
+            color: #e85d3a;
+        }
+
+        .header p {
+            font-size: 12px;
+            color: #666;
+            margin-top: 4px;
+        }
+
+        #pagesContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            padding-bottom: 70px;
+        }
+
+        .menu-area {
+            position: relative;
+            max-width: 500px;
+            width: 100%;
+            overflow: visible;
+        }
+
+        .menu-area .page-inner {
+            position: relative;
+            margin-left: 32px;
+        }
+
+        .menu-area .page-inner img {
+            width: 100%;
+            display: block;
+            border-radius: 4px;
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+        }
+
+        /* ═══ ZONE — Görünmez dokunma alanı ═══ */
+        .zone {
+            position: absolute;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            outline: none;
+        }
+
+        /* ═══ DEBUG MODU — Zone'ları görünür yap ═══ */
+        body.debug .zone {
+            background: rgba(255, 255, 0, 0.15);
+            border: 1.5px solid rgba(255, 50, 50, 0.8) !important;
+        }
+
+        body.debug .zone::before {
+            content: attr(data-name);
+            position: absolute;
+            top: -14px;
+            left: 0;
+            font-size: 9px;
+            color: #ff3333;
+            background: rgba(0, 0, 0, 0.75);
+            padding: 1px 4px;
+            border-radius: 3px;
+            white-space: nowrap;
+            pointer-events: none;
+            z-index: 30;
+            display: none;
+            /* Kırmızı yazıları gizle - sadece bbox kutusu görünsün */
+        }
+
+        /* ═══ INTRO PULSE — Açılış dalga animasyonu ═══ */
+        .zone.intro-pulse::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            border-radius: 1px;
+            animation: introSweep 0.8s ease-out forwards;
+        }
+
+        @keyframes introSweep {
+            0% {
+                width: 0%;
+                opacity: 0;
+                background: #00b4ff;
+                box-shadow: 0 0 6px #00b4ff, 0 0 15px rgba(0, 180, 255, 0.5);
+            }
+
+            30% {
+                width: 100%;
+                opacity: 1;
+                background: #00d4ff;
+                box-shadow: 0 0 8px #00d4ff, 0 0 20px rgba(0, 212, 255, 0.6), 0 0 40px rgba(0, 180, 255, 0.3);
+            }
+
+            70% {
+                width: 100%;
+                opacity: 0.6;
+                background: #00b4ff;
+                box-shadow: 0 0 4px #00b4ff, 0 0 10px rgba(0, 180, 255, 0.3);
+            }
+
+            100% {
+                width: 0%;
+                opacity: 0;
+                background: transparent;
+                box-shadow: none;
+            }
+        }
+
+        /* ═══ NEON ÇİZGİ — İnce parlak alt çizgi ═══ */
+        .zone::after {
+            content: '';
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            border-radius: 1px;
+            background: transparent;
+            box-shadow: none;
+        }
+
+        /* ═══ İLK DOKUNUŞ — MAVİ NEON ═══ */
+        .zone.highlighted::after {
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent 0%, #00b4ff 30%, #00d4ff 50%, #00b4ff 70%, transparent 100%);
+            box-shadow:
+                0 0 4px #00b4ff,
+                0 0 10px #00b4ff,
+                0 0 20px rgba(0, 180, 255, 0.6),
+                0 0 40px rgba(0, 180, 255, 0.3);
+            animation: neonSweep 1.5s ease-in-out infinite;
+        }
+
+        /* ═══ İKİNCİ DOKUNUŞ — YEŞİL NEON ═══ */
+        .zone.added::after {
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent 0%, #00ff88 30%, #66ffbb 50%, #00ff88 70%, transparent 100%);
+            box-shadow:
+                0 0 4px #00ff88,
+                0 0 10px #00ff88,
+                0 0 20px rgba(0, 255, 136, 0.6),
+                0 0 40px rgba(0, 255, 136, 0.3);
+            animation: neonSweepGreen 0.8s ease-out forwards;
+        }
+
+        /* ═══ SWEEP ANİMASYONU ═══ */
+        @keyframes neonSweep {
+            0% {
+                background-position: -200% center;
+                opacity: 0.5;
+            }
+
+            50% {
+                background-position: 200% center;
+                opacity: 1;
+            }
+
+            100% {
+                background-position: -200% center;
+                opacity: 0.5;
+            }
+        }
+
+        @keyframes neonSweepGreen {
+            0% {
+                width: 0%;
+                opacity: 0;
+            }
+
+            50% {
+                width: 120%;
+                opacity: 1;
+            }
+
+            100% {
+                width: 100%;
+                opacity: 1;
+            }
+        }
+
+        .zone.highlighted::after {
+            background-size: 200% 100%;
+        }
+
+        /* ═══ ÜRÜN ETİKETİ — Floating label ═══ */
+        .zone-label {
+            position: absolute;
+            left: 50%;
+            bottom: calc(100% + 10px);
+            transform: translateX(-50%) translateY(8px) scale(0.9);
+            background: rgba(0, 10, 30, 0.92);
+            backdrop-filter: blur(8px);
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: 600;
+            white-space: nowrap;
+            pointer-events: none;
+            opacity: 0;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 20;
+            border: 1px solid rgba(0, 180, 255, 0.3);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .zone-label .price {
+            color: #00b4ff;
+            margin-left: 8px;
+            font-weight: 700;
+        }
+
+        .zone.highlighted .zone-label {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0) scale(1);
+        }
+
+        .zone.added .zone-label {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0) scale(1);
+            border-color: rgba(0, 255, 136, 0.4);
+        }
+
+        .zone.added .zone-label .price {
+            color: #00ff88;
+        }
+
+        .zone.added .zone-label::after {
+            content: "  ✓ Eklendi";
+            color: #00ff88;
+            font-size: 11px;
+        }
+
+        /* ═══════════════════════════════════════════
+           ARTI BUTONU — Ürünlerin SAĞ tarafında
+           3 durum: pasif → aktif (turuncu) → eklendi (yeşil)
+           ═══════════════════════════════════════════ */
+        .plus-btn {
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            /* PASİF DURUM — koyu arka plan ile kontrast */
+            background: rgba(10, 10, 20, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 11px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 15;
+            pointer-events: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            backdrop-filter: blur(3px);
+        }
+
+        .plus-btn:hover {
+            background: rgba(10, 10, 20, 0.85);
+            border-color: rgba(255, 255, 255, 0.6);
+            color: #fff;
+        }
+
+        /* AKTİF DURUM — Turuncu (1. dokunuş sonrası) */
+        .plus-btn.active {
+            background: rgba(232, 93, 58, 0.25);
+            border-color: #e85d3a;
+            color: #e85d3a;
+            box-shadow: 0 0 8px rgba(232, 93, 58, 0.5), 0 0 16px rgba(232, 93, 58, 0.2);
+            transform: scale(1.2);
+        }
+
+        /* EKLENDİ DURUMU — Yeşil tick (2. dokunuş sonrası) */
+        .plus-btn.confirmed {
+            background: rgba(0, 255, 136, 0.25);
+            border-color: #00ff88;
+            color: #00ff88;
+            box-shadow: 0 0 8px rgba(0, 255, 136, 0.5);
+            transform: scale(1.15);
+        }
+
+        /* ═══ TOAST NOTIFICATION ═══ */
+        .toast {
+            position: fixed;
+            bottom: 80px;
+            left: 50%;
+            transform: translateX(-50%) translateY(20px);
+            background: rgba(0, 255, 136, 0.95);
+            color: #003320;
+            padding: 10px 24px;
+            border-radius: 14px;
+            font-size: 14px;
+            font-weight: 700;
+            opacity: 0;
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 100;
+            pointer-events: none;
+            box-shadow: 0 4px 20px rgba(0, 255, 136, 0.3);
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        /* ═══ SEPET BAR ═══ */
+        .cart-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, #0f0f1a, #1a1a2e);
+            border-top: 2px solid #00b4ff;
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 50;
+            box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .cart-info {
+            color: #888;
+            font-size: 14px;
+        }
+
+        .cart-count {
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .cart-total {
+            color: #00d4ff;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        /* ═══ İPUCU BALONU ═══ */
+        .hint {
+            position: fixed;
+            top: 72px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #e85d3a;
+            color: #fff;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            z-index: 40;
+            transition: opacity 0.5s;
+            box-shadow: 0 4px 15px rgba(232, 93, 58, 0.3);
+        }
+
+        /* ═══ SPARKLE EFEKTİ ═══ */
+        .spark {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: #00ff88;
+            pointer-events: none;
+            z-index: 200;
+            animation: sparkFly 0.6s ease-out forwards;
+        }
+
+        @keyframes sparkFly {
+            0% {
+                transform: translate(0, 0) scale(1);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translate(var(--dx), var(--dy)) scale(0);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>🍽 Tucco Gastro Coffee — Zone Modu</h1>
+        <p>Ürüne dokun → mavi neon parlar → tekrar dokun → sepete eklenir</p>
+    </div>
+
+    <div id="pagesContainer"></div>
+
+    <div class="toast" id="toast"></div>
+    <div class="hint" id="hint">👆 Menüdeki bir ürüne dokunun</div>
+
+    <div class="cart-bar">
+        <div class="cart-info">
+            🛒 <span class="cart-count" id="cartCount">0</span> Sepet
+        </div>
+        <div class="cart-total" id="cartTotal">₺0</div>
+    </div>
+
+    <script>
+        // ═══ DEBUG MODU — ?debug ile bbox'ları görünür yap ═══
+        if (location.search.includes('debug')) {
+            document.body.classList.add('debug');
+        }
+
+        var highlightedZone = null;
+        var highlightTimer = null;
+        var cart = [];
+        var zonePlusMap = new Map();
+        var loadedPages = 0;
+        var totalPages = 0;
+
+        // ═══ TÜM SAYFALARI YÜKLE ═══
+        var urlParams = new URLSearchParams(window.location.search);
+        var customJson = urlParams.get('json');
+        var slug = urlParams.get('slug') || 'tucco';
+        var jsonUrl = customJson ? ("/" + customJson) : ("/ocr-positions-" + slug + ".json");
+        console.log('Loading JSON:', jsonUrl);
+        fetch(jsonUrl)
+            .then(function (r) { return r.json(); })
+            .then(function (data) {
+                var container = document.getElementById("pagesContainer");
+                var pageKeys = Object.keys(data).sort(function (a, b) {
+                    return parseInt(a) - parseInt(b);
+                });
+
+                // Boş sayfaları filtrele (2'den az ürün)
+                var validPages = pageKeys.filter(function (key) {
+                    return data[key].items && data[key].items.length >= 2;
+                });
+                totalPages = validPages.length;
+
+                validPages.forEach(function (pageKey) {
+                    var page = data[pageKey];
+                    buildPageBlock(container, pageKey, page);
+                });
+            });
+
+        // ═══ HER SAYFA İÇİN BİR BLOK OLUŞTUR ═══
+        function buildPageBlock(container, pageKey, page) {
+            var wrapper = document.createElement("div");
+            wrapper.className = "menu-area";
+            wrapper.id = "menuArea_" + pageKey;
+
+            // İç container: img + zone + plus hepsi bunun içinde
+            var inner = document.createElement("div");
+            inner.className = "page-inner";
+
+            var img = document.createElement("img");
+            img.alt = "Menü Sayfa " + pageKey;
+            inner.appendChild(img);
+            wrapper.appendChild(inner);
+
+            container.appendChild(wrapper);
+
+            img.onload = function () {
+                createZones(page.items, img, inner);
+                loadedPages++;
+            };
+            img.src = page.image_url;
+
+            // Boş alana tıklayınca highlight kaldır
+            wrapper.addEventListener("click", function (e) {
+                if (!e.target.closest(".zone") && !e.target.closest(".plus-btn") && highlightedZone) {
+                    var plusBtn = zonePlusMap.get(highlightedZone);
+                    highlightedZone.classList.remove("highlighted");
+                    if (plusBtn) plusBtn.classList.remove("active");
+                    clearTimeout(highlightTimer);
+                    highlightedZone = null;
+                }
+            });
+        }
+
+        // ═══ ZONE + PLUS BUTONLARI OLUŞTUR ═══
+        function createZones(items, img, area) {
+            var w = img.clientWidth;
+            var h = img.clientHeight;
+
+            items.forEach(function (item, idx) {
+                if (!item.bbox || !item.name || !item.price) return;
+
+                var bbox = item.bbox;
+                var yMin = (bbox[0] / 1000) * h;
+                var xMin = (bbox[1] / 1000) * w;
+                var yMax = (bbox[2] / 1000) * h;
+                var xMax = (bbox[3] / 1000) * w;
+
+                var pad = 3;
+                var zoneW = xMax - xMin + pad * 2;
+                var zoneH = yMax - yMin + pad * 2;
+
+                // ═══ ZONE (görünmez dokunma alanı) ═══
+                var zone = document.createElement("div");
+                zone.className = "zone";
+                zone.style.left = (xMin - pad) + "px";
+                zone.style.top = (yMin - pad) + "px";
+                zone.style.width = zoneW + "px";
+                zone.style.height = zoneH + "px";
+                zone.setAttribute("data-name", item.name);
+                zone.setAttribute("data-price", item.price);
+
+                // Floating label
+                var label = document.createElement("div");
+                label.className = "zone-label";
+                label.innerHTML = item.name + '<span class="price">₺' + item.price + '</span>';
+                zone.appendChild(label);
+
+                // Zone tıklama
+                zone.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    handleTap(zone, item);
+                });
+
+                area.appendChild(zone);
+
+                // ═══ ARTI BUTONU — ürünün SOL bitişiğinde ═══
+                var plusBtn = document.createElement("div");
+                plusBtn.className = "plus-btn";
+                plusBtn.innerHTML = "+";
+                plusBtn.style.position = "absolute";
+                // Ürünün SOL tarafında — zone'un hemen solunda
+                var plusX = (xMin - pad) - 22;
+                // margin-left:32px alanına taşabilir ama daha sola gitmesin
+                if (plusX < -20) plusX = -20;
+                var plusY = (yMin + yMax) / 2 - 9;
+                plusBtn.style.left = plusX + "px";
+                plusBtn.style.top = plusY + "px";
+
+                plusBtn.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    handleTap(zone, item);
+                });
+
+                area.appendChild(plusBtn);
+                zonePlusMap.set(zone, plusBtn);
+            });
+        }
+
+        // ═══ TEK BİRLEŞİK DOKUNUŞ YÖNETİCİSİ ═══
+        function handleTap(zone, item) {
+            document.getElementById("hint").style.opacity = "0";
+            var plusBtn = zonePlusMap.get(zone);
+
+            if (highlightedZone === zone) {
+                // ═══ İKİNCİ DOKUNUŞ — SEPETE EKLE ═══
+                clearTimeout(highlightTimer);
+                zone.classList.remove("highlighted");
+                zone.classList.add("added");
+
+                if (plusBtn) {
+                    plusBtn.innerHTML = "✓";
+                    plusBtn.classList.remove("active");
+                    plusBtn.classList.add("confirmed");
+                }
+
+                spawnSparks(zone);
+                cart.push({ name: item.name, price: item.price });
+                updateCart();
+                showToast("✓ " + item.name + " sepete eklendi!");
+
+                setTimeout(function () {
+                    zone.classList.remove("added");
+                    if (plusBtn) {
+                        plusBtn.innerHTML = "+";
+                        plusBtn.classList.remove("confirmed");
+                    }
+                }, 1800);
+
+                highlightedZone = null;
+            } else {
+                // ═══ İLK DOKUNUŞ — MAVİ NEON + TURUNCU ARTI ═══
+                if (highlightedZone) {
+                    highlightedZone.classList.remove("highlighted");
+                    var prevPlus = zonePlusMap.get(highlightedZone);
+                    if (prevPlus) prevPlus.classList.remove("active");
+                    clearTimeout(highlightTimer);
+                }
+
+                zone.classList.add("highlighted");
+                highlightedZone = zone;
+
+                if (plusBtn) plusBtn.classList.add("active");
+
+                highlightTimer = setTimeout(function () {
+                    zone.classList.remove("highlighted");
+                    if (plusBtn) plusBtn.classList.remove("active");
+                    highlightedZone = null;
+                }, 4000);
+            }
+        }
+
+        // ═══ SPARKLE EFEKTİ ═══
+        function spawnSparks(zone) {
+            var rect = zone.getBoundingClientRect();
+            for (var i = 0; i < 8; i++) {
+                var spark = document.createElement("div");
+                spark.className = "spark";
+                var angle = (Math.PI * 2 / 8) * i;
+                var dist = 30 + Math.random() * 20;
+                spark.style.setProperty("--dx", Math.cos(angle) * dist + "px");
+                spark.style.setProperty("--dy", Math.sin(angle) * dist + "px");
+                spark.style.left = (rect.left + rect.width / 2 - 2 + window.scrollX) + "px";
+                spark.style.top = (rect.top + rect.height - 2 + window.scrollY) + "px";
+                document.body.appendChild(spark);
+                setTimeout(function (s) { s.remove(); }.bind(null, spark), 700);
+            }
+        }
+
+        // ═══ SEPET ═══
+        function updateCart() {
+            var count = cart.length;
+            var total = cart.reduce(function (s, i) { return s + i.price; }, 0);
+            document.getElementById("cartCount").textContent = count;
+            document.getElementById("cartTotal").textContent = "₺" + total;
+        }
+
+        // ═══ TOAST ═══
+        function showToast(msg) {
+            var t = document.getElementById("toast");
+            t.textContent = msg;
+            t.classList.add("show");
+            setTimeout(function () { t.classList.remove("show"); }, 1800);
+        }
+    </script>
+</body>
+
+</html>
