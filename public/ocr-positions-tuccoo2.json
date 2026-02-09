@@ -1,0 +1,572 @@
+{
+  "6": {
+    "image_url": "https://tuccogastrocoffee.com/wp-content/uploads/2026/01/12-09-25-Page-6-scaled.webp",
+    "items": [
+      {
+        "name": "GRANOLA",
+        "price": 345,
+        "bbox": [
+          98,
+          108,
+          113,
+          182
+        ]
+      },
+      {
+        "name": "SERPME KAHVALTI (2 kişilik)",
+        "price": 875,
+        "bbox": [
+          144,
+          108,
+          160,
+          319
+        ]
+      },
+      {
+        "name": "PRATİK ve LEZZETLİ",
+        "price": 355,
+        "bbox": [
+          221,
+          108,
+          237,
+          236
+        ]
+      },
+      {
+        "name": "PAZAR KEYFİ",
+        "price": 475,
+        "bbox": [
+          270,
+          108,
+          285,
+          201
+        ]
+      },
+      {
+        "name": "BENEDICT",
+        "price": 325,
+        "bbox": [
+          317,
+          108,
+          331,
+          184
+        ]
+      },
+      {
+        "name": "SICAK KAHVALTI TABAĞI",
+        "price": 495,
+        "bbox": [
+          363,
+          108,
+          378,
+          288
+        ]
+      },
+      {
+        "name": "PİZZAYLA KAHVALTI",
+        "price": 485,
+        "bbox": [
+          409,
+          110,
+          425,
+          239
+        ]
+      },
+      {
+        "name": "CAPRESE TARTINE",
+        "price": 395,
+        "bbox": [
+          471,
+          108,
+          487,
+          226
+        ]
+      },
+      {
+        "name": "HELLİM SOTE",
+        "price": 345,
+        "bbox": [
+          534,
+          110,
+          549,
+          211
+        ]
+      }
+    ]
+  },
+  "7": {
+    "image_url": "https://tuccogastrocoffee.com/wp-content/uploads/2026/01/12-09-25-Page-7-scaled.webp",
+    "items": [
+      {
+        "name": "SAHANDA YUMURTA",
+        "price": 175,
+        "bbox": [
+          102,
+          136,
+          115,
+          259
+        ]
+      },
+      {
+        "name": "PATATESLİ YUMURTA",
+        "price": 185,
+        "bbox": [
+          135,
+          136,
+          148,
+          260
+        ]
+      },
+      {
+        "name": "MENEMEN",
+        "price": 235,
+        "bbox": [
+          168,
+          136,
+          180,
+          205
+        ]
+      },
+      {
+        "name": "PEYNİRLİ OMLET",
+        "price": 235,
+        "bbox": [
+          200,
+          136,
+          212,
+          231
+        ]
+      },
+      {
+        "name": "KIYMALI YUMURTA",
+        "price": 295,
+        "bbox": [
+          232,
+          136,
+          245,
+          250
+        ]
+      },
+      {
+        "name": "EGG BENEDICT",
+        "price": 375,
+        "bbox": [
+          265,
+          136,
+          278,
+          221
+        ]
+      },
+      {
+        "name": "SUCUKLU YUMURTA",
+        "price": 275,
+        "bbox": [
+          330,
+          136,
+          343,
+          256
+        ]
+      },
+      {
+        "name": "TUCCO OMLET",
+        "price": 335,
+        "bbox": [
+          363,
+          136,
+          376,
+          219
+        ]
+      },
+      {
+        "name": "KAVURMALI YUMURTA",
+        "price": 395,
+        "bbox": [
+          411,
+          136,
+          424,
+          260
+        ]
+      },
+      {
+        "name": "TOST",
+        "price": 185,
+        "bbox": [
+          454,
+          608,
+          467,
+          637
+        ]
+      },
+      {
+        "name": "SUCUKLU TOST",
+        "price": 235,
+        "bbox": [
+          502,
+          608,
+          515,
+          693
+        ]
+      },
+      {
+        "name": "PAŞA TOST",
+        "price": 255,
+        "bbox": [
+          550,
+          608,
+          563,
+          670
+        ]
+      },
+      {
+        "name": "KABURGA TİFTİK TOST",
+        "price": 445,
+        "bbox": [
+          612,
+          608,
+          626,
+          730
+        ]
+      }
+    ]
+  },
+  "8": {
+    "image_url": "https://tuccogastrocoffee.com/wp-content/uploads/2026/01/12-09-25-Page-8-scaled.webp",
+    "items": [
+      {
+        "name": "ÇITIR RAVIOLI TABAĞI",
+        "price": 0,
+        "bbox": [
+          751,
+          524,
+          766,
+          636
+        ]
+      }
+    ]
+  },
+  "9": {
+    "image_url": "https://tuccogastrocoffee.com/wp-content/uploads/2026/01/12-09-25-Page-9-scaled.webp",
+    "items": [
+      {
+        "name": "PATATES CİPSİ",
+        "price": 175,
+        "bbox": [
+          133,
+          145,
+          148,
+          227
+        ]
+      },
+      {
+        "name": "SİGARA BÖREĞİ",
+        "price": 215,
+        "bbox": [
+          170,
+          145,
+          185,
+          248
+        ]
+      },
+      {
+        "name": "BUFFALO WINGS",
+        "price": 385,
+        "bbox": [
+          211,
+          145,
+          226,
+          252
+        ]
+      },
+      {
+        "name": "ÇITIR KORNİŞON",
+        "price": 235,
+        "bbox": [
+          271,
+          145,
+          286,
+          255
+        ]
+      },
+      {
+        "name": "IZGARA SOSİS (min. 2kişilik)",
+        "price": 545,
+        "bbox": [
+          311,
+          145,
+          326,
+          313
+        ]
+      },
+      {
+        "name": "ÇITIR RAVİOLİ TABAĞI",
+        "price": 395,
+        "bbox": [
+          353,
+          145,
+          367,
+          277
+        ]
+      },
+      {
+        "name": "MAC & CHEESE TOPLARI",
+        "price": 425,
+        "bbox": [
+          392,
+          145,
+          407,
+          292
+        ]
+      },
+      {
+        "name": "ÇITIR SOĞAN TABAĞI",
+        "price": 205,
+        "bbox": [
+          432,
+          145,
+          447,
+          273
+        ]
+      },
+      {
+        "name": "BALLI HARDALLI TAVUK",
+        "price": 335,
+        "bbox": [
+          471,
+          145,
+          486,
+          287
+        ]
+      },
+      {
+        "name": "FALAFEL TOPLARI",
+        "price": 255,
+        "bbox": [
+          510,
+          145,
+          526,
+          251
+        ]
+      },
+      {
+        "name": "ÇITIR CAJUN TAVUK",
+        "price": 395,
+        "bbox": [
+          550,
+          145,
+          565,
+          265
+        ]
+      },
+      {
+        "name": "TUCCO COMBO TABAĞI (tek kişilik)",
+        "price": 365,
+        "bbox": [
+          590,
+          145,
+          605,
+          353
+        ]
+      },
+      {
+        "name": "TUCCO COMBO TABAĞI (2-3 kişilik)",
+        "price": 545,
+        "bbox": [
+          648,
+          145,
+          663,
+          355
+        ]
+      },
+      {
+        "name": "NACHOS TAVUK",
+        "price": 385,
+        "bbox": [
+          706,
+          145,
+          722,
+          241
+        ]
+      },
+      {
+        "name": "MOZZARELLA STİCK",
+        "price": 395,
+        "bbox": [
+          766,
+          145,
+          783,
+          265
+        ]
+      },
+      {
+        "name": "CAJUN BAHARATLI ÇITIR SUCUK",
+        "price": 325,
+        "bbox": [
+          807,
+          145,
+          822,
+          345
+        ]
+      },
+      {
+        "name": "TİFTİK ETLİ CHEDDAR SOSLU PATATES",
+        "price": 645,
+        "bbox": [
+          848,
+          145,
+          864,
+          376
+        ]
+      }
+    ]
+  },
+  "10": {
+    "image_url": "https://tuccogastrocoffee.com/wp-content/uploads/2026/01/12-09-25-Page-10-scaled.webp",
+    "items": [
+      {
+        "name": "CAPRESE",
+        "price": 385,
+        "bbox": [
+          758,
+          78,
+          772,
+          140
+        ]
+      }
+    ]
+  },
+  "11": {
+    "image_url": "https://tuccogastrocoffee.com/wp-content/uploads/2026/01/12-09-25-Page-11-scaled.webp",
+    "items": [
+      {
+        "name": "GÜNÜN ÇORBASI",
+        "price": 145,
+        "bbox": [
+          124,
+          155,
+          139,
+          261
+        ]
+      },
+      {
+        "name": "BROKOLİ ÇORBASI",
+        "price": 165,
+        "bbox": [
+          168,
+          155,
+          183,
+          271
+        ]
+      },
+      {
+        "name": "ISPANAK ÇORBASI",
+        "price": 165,
+        "bbox": [
+          212,
+          155,
+          227,
+          273
+        ]
+      },
+      {
+        "name": "MANTAR ÇORBASI",
+        "price": 165,
+        "bbox": [
+          255,
+          155,
+          270,
+          269
+        ]
+      },
+      {
+        "name": "MUSHROOM GRATIN",
+        "price": 295,
+        "bbox": [
+          298,
+          155,
+          313,
+          281
+        ]
+      },
+      {
+        "name": "İTHAL PEYNİR TABAĞI",
+        "price": 655,
+        "bbox": [
+          363,
+          155,
+          378,
+          292
+        ]
+      },
+      {
+        "name": "KABURGA TİFTİK ETLİ GRATEN",
+        "price": 555,
+        "bbox": [
+          407,
+          155,
+          421,
+          337
+        ]
+      },
+      {
+        "name": "HELLİM SOTE",
+        "price": 345,
+        "bbox": [
+          473,
+          155,
+          488,
+          240
+        ]
+      },
+      {
+        "name": "FALAFEL DÜRÜM",
+        "price": 325,
+        "bbox": [
+          627,
+          532,
+          642,
+          626
+        ]
+      },
+      {
+        "name": "HOT DOG",
+        "price": 355,
+        "bbox": [
+          655,
+          532,
+          670,
+          591
+        ]
+      },
+      {
+        "name": "KASAP SUCUK EKMEK",
+        "price": 375,
+        "bbox": [
+          684,
+          532,
+          698,
+          652
+        ]
+      },
+      {
+        "name": "KÖFTE EKMEK",
+        "price": 475,
+        "bbox": [
+          713,
+          532,
+          728,
+          607
+        ]
+      },
+      {
+        "name": "TİFTİK DÜRÜM",
+        "price": 555,
+        "bbox": [
+          742,
+          532,
+          756,
+          615
+        ]
+      }
+    ]
+  }
+}

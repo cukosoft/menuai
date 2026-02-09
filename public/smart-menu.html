@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MenüAi — Akıllı Menü Oluşturucu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0a0f;
+            --surface: #13131a;
+            --surface-2: #1c1c28;
+            --border: #2a2a3d;
+            --accent: #6c5ce7;
+            --accent-glow: rgba(108, 92, 231, 0.3);
+            --accent-2: #a29bfe;
+            --success: #00b894;
+            --success-glow: rgba(0, 184, 148, 0.3);
+            --warn: #fdcb6e;
+            --error: #e17055;
+            --text: #e8e8f0;
+            --text-dim: #8888a0;
+            --text-muted: #55556a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Animated background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 30% 40%, rgba(108, 92, 231, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 70% 60%, rgba(0, 184, 148, 0.06) 0%, transparent 50%);
+            animation: bgShift 20s ease-in-out infinite;
+            z-index: 0;
+        }
+
+        @keyframes bgShift {
+
+            0%,
+            100% {
+                transform: translate(0, 0);
+            }
+
+            50% {
+                transform: translate(-3%, -3%);
+            }
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .logo {
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--accent-2);
+            margin-bottom: 12px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--text), var(--accent-2));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 12px;
+        }
+
+        .header p {
+            color: var(--text-dim);
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Input Section */
+        .input-section {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 24px;
+            transition: border-color 0.3s;
+        }
+
+        .input-section:hover {
+            border-color: var(--accent);
+        }
+
+        .input-section label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--text-dim);
+            margin-bottom: 12px;
+        }
+
+        .url-inputs {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .url-row {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .url-row input {
+            flex: 1;
+            background: var(--surface-2);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            color: var(--text);
+            font-family: 'Inter', monospace;
+            font-size: 14px;
+            padding: 14px 16px;
+            outline: none;
+            transition: all 0.3s;
+        }
+
+        .url-row input:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px var(--accent-glow);
+        }
+
+        .url-row input::placeholder {
+            color: var(--text-muted);
+        }
+
+        .page-label {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-muted);
+            min-width: 24px;
+            text-align: center;
+        }
+
+        .btn-remove {
+            background: none;
+            border: none;
+            color: var(--error);
+            font-size: 18px;
+            cursor: pointer;
+            padding: 4px 8px;
+            border-radius: 6px;
+            opacity: 0.5;
+            transition: opacity 0.2s;
+        }
+
+        .btn-remove:hover {
+            opacity: 1;
+        }
+
+        .input-actions {
+            display: flex;
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .btn-add {
+            background: var(--surface-2);
+            border: 1px dashed var(--border);
+            color: var(--text-dim);
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            padding: 10px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-add:hover {
+            border-color: var(--accent);
+            color: var(--accent-2);
+        }
+
+        /* Restaurant Name */
+        .restaurant-section {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 24px 32px;
+            margin-bottom: 32px;
+        }
+
+        .restaurant-section label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--text-dim);
+            margin-bottom: 8px;
+        }
+
+        .restaurant-section input {
+            width: 100%;
+            background: var(--surface-2);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            padding: 12px 16px;
+            outline: none;
+            transition: all 0.3s;
+        }
+
+        .restaurant-section input:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px var(--accent-glow);
+        }
+
+        /* Start Button */
+        .btn-start {
+            width: 100%;
+            padding: 18px;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: white;
+            background: linear-gradient(135deg, var(--accent), #8b7cf7);
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-start:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px var(--accent-glow);
+        }
+
+        .btn-start:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        /* Progress Section */
+        .progress-section {
+            margin-top: 32px;
+            display: none;
+        }
+
+        .progress-section.active {
+            display: block;
+        }
+
+        .progress-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .spinner {
+            width: 20px;
+            height: 20px;
+            border: 3px solid var(--border);
+            border-top-color: var(--accent);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .progress-header span {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--accent-2);
+        }
+
+        .log-box {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            max-height: 400px;
+            overflow-y: auto;
+            font-family: 'JetBrains Mono', 'Fira Code', monospace;
+            font-size: 12px;
+            line-height: 1.8;
+        }
+
+        .log-box::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .log-box::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .log-box::-webkit-scrollbar-thumb {
+            background: var(--border);
+            border-radius: 3px;
+        }
+
+        .log-line {
+            color: var(--text-dim);
+        }
+
+        .log-line.ok {
+            color: var(--success);
+        }
+
+        .log-line.warn {
+            color: var(--warn);
+        }
+
+        .log-line.err {
+            color: var(--error);
+        }
+
+        .log-line.phase {
+            color: var(--accent-2);
+            font-weight: 600;
+        }
+
+        /* Result Section */
+        .result-section {
+            margin-top: 32px;
+            display: none;
+        }
+
+        .result-section.active {
+            display: block;
+        }
+
+        .result-card {
+            background: linear-gradient(135deg, rgba(0, 184, 148, 0.1), rgba(108, 92, 231, 0.1));
+            border: 1px solid var(--success);
+            border-radius: 16px;
+            padding: 32px;
+            text-align: center;
+        }
+
+        .result-card .icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+
+        .result-card h2 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--success);
+        }
+
+        .result-card p {
+            color: var(--text-dim);
+            margin-bottom: 24px;
+        }
+
+        .result-stats {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            margin-bottom: 24px;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--text);
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: var(--text-dim);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .result-link {
+            display: inline-block;
+            padding: 14px 32px;
+            background: linear-gradient(135deg, var(--success), #00cec9);
+            color: white;
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+
+        .result-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px var(--success-glow);
+        }
+
+        .result-url {
+            display: block;
+            margin-top: 16px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            color: var(--text-muted);
+            word-break: break-all;
+        }
+
+        /* Error */
+        .error-card {
+            background: rgba(225, 112, 85, 0.1);
+            border: 1px solid var(--error);
+            border-radius: 16px;
+            padding: 24px;
+            color: var(--error);
+            display: none;
+            margin-top: 24px;
+        }
+
+        .error-card.active {
+            display: block;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 24px 16px;
+            }
+
+            .header h1 {
+                font-size: 28px;
+            }
+
+            .input-section,
+            .restaurant-section {
+                padding: 20px;
+            }
+
+            .result-stats {
+                gap: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">MenüAi</div>
+            <h1>Akıllı Menü Oluşturucu</h1>
+            <p>Menü görseli veya web sayfası URL'sini gir — AI ürünleri çıkarsın, interaktif menüyü hazırlasın.</p>
+        </div>
+
+        <div class="restaurant-section">
+            <label>Restoran Slug (kısa isim)</label>
+            <input type="text" id="slugInput" placeholder="ornek: tucco, dede-kebap, cafe-istanbul" value="">
+        </div>
+
+        <div class="input-section">
+            <label>Menü Kaynağı (Görsel URL veya Web Sayfası)</label>
+            <div class="url-inputs" id="urlInputs">
+                <div class="url-row">
+                    <span class="page-label">1</span>
+                    <input type="url" placeholder="https://site.com/qrmenu veya görsel URL (.webp, .jpg)"
+                        class="url-input">
+                    <button class="btn-remove" onclick="removeRow(this)" title="Kaldır">×</button>
+                </div>
+            </div>
+            <div class="input-actions">
+                <button class="btn-add" onclick="addRow()">+ Sayfa Ekle</button>
+            </div>
+        </div>
+
+        <button class="btn-start" id="startBtn" onclick="startExtraction()">
+            🚀 Menüyü Akıllandır
+        </button>
+
+        <div class="progress-section" id="progressSection">
+            <div class="progress-header">
+                <div class="spinner" id="spinner"></div>
+                <span id="progressStatus">İşlem başlıyor...</span>
+            </div>
+            <div class="log-box" id="logBox"></div>
+        </div>
+
+        <div class="result-section" id="resultSection">
+            <div class="result-card">
+                <div class="icon">✅</div>
+                <h2>Akıllı Menü Hazır!</h2>
+                <p>Tüm ürünler otomatik çıkarıldı ve interaktif butonlar yerleştirildi.</p>
+                <div class="result-stats">
+                    <div class="stat">
+                        <div class="stat-value" id="statPages">0</div>
+                        <div class="stat-label">Sayfa</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value" id="statProducts">0</div>
+                        <div class="stat-label">Ürün</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value" id="statMatch">0%</div>
+                        <div class="stat-label">Eşleşme</div>
+                    </div>
+                </div>
+                <a class="result-link" id="resultLink" href="#" target="_blank">
+                    📱 Menüyü Görüntüle
+                </a>
+                <span class="result-url" id="resultUrl"></span>
+            </div>
+        </div>
+
+        <div class="error-card" id="errorCard"></div>
+    </div>
+
+    <script>
+        let rowCount = 1;
+
+        function addRow() {
+            rowCount++;
+            const container = document.getElementById('urlInputs');
+            const row = document.createElement('div');
+            row.className = 'url-row';
+            row.innerHTML = `
+                <span class="page-label">${rowCount}</span>
+                <input type="url" placeholder="https://site.com/qrmenu veya görsel URL" class="url-input">
+                <button class="btn-remove" onclick="removeRow(this)" title="Kaldır">×</button>
+            `;
+            container.appendChild(row);
+        }
+
+        function removeRow(btn) {
+            const rows = document.querySelectorAll('.url-row');
+            if (rows.length > 1) {
+                btn.closest('.url-row').remove();
+                renumberRows();
+            }
+        }
+
+        function renumberRows() {
+            document.querySelectorAll('.url-row').forEach((row, i) => {
+                row.querySelector('.page-label').textContent = i + 1;
+            });
+            rowCount = document.querySelectorAll('.url-row').length;
+        }
+
+        function addLog(text, type = '') {
+            const box = document.getElementById('logBox');
+            const line = document.createElement('div');
+            line.className = 'log-line ' + type;
+            line.textContent = text;
+            box.appendChild(line);
+            box.scrollTop = box.scrollHeight;
+        }
+
+        async function startExtraction() {
+            const slug = document.getElementById('slugInput').value.trim();
+            if (!slug) {
+                alert('Restoran slug giriniz!');
+                return;
+            }
+
+            const inputs = document.querySelectorAll('.url-input');
+            const urls = [];
+            inputs.forEach(input => {
+                const v = input.value.trim();
+                if (v) urls.push(v);
+            });
+
+            if (urls.length === 0) {
+                alert('En az bir menü URL\'si girin!');
+                return;
+            }
+
+            // UI state
+            const btn = document.getElementById('startBtn');
+            btn.disabled = true;
+            btn.textContent = '⏳ İşleniyor...';
+
+            document.getElementById('progressSection').classList.add('active');
+            document.getElementById('resultSection').classList.remove('active');
+            document.getElementById('errorCard').classList.remove('active');
+            document.getElementById('logBox').innerHTML = '';
+
+            addLog('🚀 Otonom menü çıkarma başladı', 'phase');
+            addLog('Restoran: ' + slug);
+            addLog('Sayfa sayısı: ' + urls.length);
+            addLog('');
+
+            try {
+                const response = await fetch('/api/extract-menu', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ slug, urls })
+                });
+
+                // Stream response
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder();
+                let buffer = '';
+                let finalResult = null;
+
+                while (true) {
+                    const { done, value } = await reader.read();
+                    if (done) break;
+
+                    buffer += decoder.decode(value, { stream: true });
+                    const lines = buffer.split('\n');
+                    buffer = lines.pop(); // keep incomplete line
+
+                    for (const line of lines) {
+                        if (!line.trim()) continue;
+                        try {
+                            const msg = JSON.parse(line);
+                            if (msg.type === 'log') {
+                                let logType = '';
+                                if (msg.text.includes('OK:')) logType = 'ok';
+                                else if (msg.text.includes('MISS')) logType = 'warn';
+                                else if (msg.text.includes('HATA')) logType = 'err';
+                                else if (msg.text.includes('FAZ') || msg.text.includes('═══')) logType = 'phase';
+                                addLog(msg.text, logType);
+                            } else if (msg.type === 'status') {
+                                document.getElementById('progressStatus').textContent = msg.text;
+                            } else if (msg.type === 'done') {
+                                finalResult = msg;
+                            } else if (msg.type === 'error') {
+                                throw new Error(msg.text);
+                            }
+                        } catch (e) {
+                            if (e.message && !e.message.includes('JSON')) throw e;
+                        }
+                    }
+                }
+
+                // Process remaining buffer
+                if (buffer.trim()) {
+                    try {
+                        const msg = JSON.parse(buffer);
+                        if (msg.type === 'done') finalResult = msg;
+                    } catch (e) { }
+                }
+
+                if (finalResult) {
+                    document.getElementById('spinner').style.display = 'none';
+                    document.getElementById('progressStatus').textContent = 'Tamamlandı!';
+
+                    document.getElementById('statPages').textContent = finalResult.pages;
+                    document.getElementById('statProducts').textContent = finalResult.products;
+                    document.getElementById('statMatch').textContent = finalResult.matchRate + '%';
+
+                    const viewUrl = `/public/zone-demo.html?slug=${slug}`;
+                    document.getElementById('resultLink').href = viewUrl;
+                    document.getElementById('resultUrl').textContent = window.location.origin + viewUrl;
+                    document.getElementById('resultSection').classList.add('active');
+
+                    addLog('');
+                    addLog('✅ Tamamlandı! Menü hazır.', 'ok');
+                } else {
+                    throw new Error('Sunucudan sonuç alınamadı');
+                }
+
+            } catch (err) {
+                document.getElementById('spinner').style.display = 'none';
+                document.getElementById('progressStatus').textContent = 'Hata!';
+                const errCard = document.getElementById('errorCard');
+                errCard.textContent = '❌ ' + err.message;
+                errCard.classList.add('active');
+                addLog('❌ HATA: ' + err.message, 'err');
+            }
+
+            btn.disabled = false;
+            btn.textContent = '🚀 Menüyü Akıllandır';
+        }
+    </script>
+</body>
+
+</html>

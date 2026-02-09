@@ -624,9 +624,157 @@ async function main() {
 }
 
 // ═══════════════════════════════════════════
+// processAuto — Server.js'den çağrılır
+// Akıllı URL algılama:
+//   - Görsel URL (.webp, .jpg, .png) → doğrudan processImage
+//   - Web sayfası URL → HTML'den menü görsellerini bul, hepsini işle
+// ═══════════════════════════════════════════
+async function processAuto(url, pageKey) {
+    log('\n[processAuto] URL: ' + url + ' → pageKey: ' + pageKey);
+
+    // Görsel URL mi kontrol et
+    const imageExts = ['.webp', '.jpg', '.jpeg', '.png', '.gif', '.bmp', '.avif'];
+    const urlLower = url.toLowerCase();
+    const isImage = imageExts.some(ext => urlLower.includes(ext));
+
+    if (isImage) {
+        log('[processAuto] Görsel URL tespit edildi → doğrudan işle');
+        return await processImage(url, pageKey);
+    }
+
+    // Web sayfası — HTML'den menü görsellerini çıkar
+    log('[processAuto] Web sayfası tespit edildi → menü görselleri aranıyor...');
+
+    try {
+        const response = await axios.get(url, {
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            },
+            timeout: 15000
+        });
+
+        const html = response.data;
+
+        // HTML'den büyük menü görsellerini bul
+        // Tucco gibi siteler: wp-content/uploads/ altında Page-X-scaled.webp formatında
+        const imgRegex = /<img[^>]+src=["']([^"']+)["'][^>]*>/gi;
+        const srcsetRegex = /srcset=["']([^"']+)["']/gi;
+        const allUrls = new Set();
+
+        // src attribute'larından
+        let match;
+        while ((match = imgRegex.exec(html)) !== null) {
+            allUrls.add(match[1]);
+        }
+
+        // srcset'lerden en büyük versiyonu al
+        while ((match = srcsetRegex.exec(html)) !== null) {
+            const srcsetParts = match[1].split(',').map(s => s.trim());
+            for (const part of srcsetParts) {
+                const [srcUrl] = part.split(/\s+/);
+                if (srcUrl) allUrls.add(srcUrl);
+            }
+        }
+
+        // Menü görseli olabilecek URL'leri filtrele
+        const menuImages = [...allUrls]
+            .filter(u => {
+                const lower = u.toLowerCase();
+                // Görsel dosyası olmalı
+                if (!imageExts.some(ext => lower.includes(ext))) return false;
+                // Küçük ikonları, logo'ları vs. dışla
+                if (lower.includes('logo') || lower.includes('icon') || lower.includes('favicon')) return false;
+                if (lower.includes('thumbnail')) return false;
+                return true;
+            })
+            .map(u => {
+                // Relative URL'leri absolute yap
+                if (u.startsWith('//')) return 'https:' + u;
+                if (u.startsWith('/')) {
+                    const urlObj = new URL(url);
+                    return urlObj.origin + u;
+                }
+                if (!u.startsWith('http')) {
+                    const urlObj = new URL(url);
+                    return urlObj.origin + '/' + u;
+                }
+                return u;
+            })
+            // Her sayfanın sadece EN BÜYÜK versiyonunu tut
+            .reduce((acc, u) => {
+                // Base key: hem -scaled hem -220x300 gibi suffix'leri kaldır
+                const base = u
+                    .replace(/-scaled/, '')      // Page-7-scaled.webp → Page-7.webp
+                    .replace(/-\d+x\d+/, '');    // Page-7-220x300.webp → Page-7.webp
+
+                const existing = acc.get(base);
+                if (!existing) {
+                    // İlk kez görüyoruz, ekle
+                    acc.set(base, u);
+                } else if (u.includes('scaled') && !existing.includes('scaled')) {
+                    // Büyük versiyon geldi, küçüğün üzerine yaz
+                    acc.set(base, u);
+                }
+                // Küçük versiyon gelirse büyüğün üzerine YAZMA
+                return acc;
+            }, new Map());
+
+        const imageUrls = [...menuImages.values()]
+            .sort((a, b) => {
+                // Page numarasına göre sırala
+                const numA = (a.match(/Page-(\d+)/i) || [, '999'])[1];
+                const numB = (b.match(/Page-(\d+)/i) || [, '999'])[1];
+                return parseInt(numA) - parseInt(numB);
+            });
+
+        log('[processAuto] ' + imageUrls.length + ' menü görseli bulundu');
+
+        if (imageUrls.length === 0) {
+            log('[processAuto] ⚠️ Hiç menü görseli bulunamadı!');
+            log('[processAuto] 💡 İPUCU: Doğrudan görsel URL\'si girin (.webp, .jpg, .png)');
+            return null;
+        }
+
+        // Multi-page result objesi
+        const multiResult = {};
+        let currentKey = parseInt(pageKey) || 1;
+
+        for (let i = 0; i < imageUrls.length; i++) {
+            const imgUrl = imageUrls[i];
+            log('\n[processAuto] Görsel ' + (i + 1) + '/' + imageUrls.length + ': ' + imgUrl);
+
+            // URL'den page numarası çıkar
+            const pageMatch = imgUrl.match(/Page-(\d+)/i);
+            const subKey = pageMatch ? pageMatch[1] : String(currentKey + i);
+
+            const result = await processImage(imgUrl, subKey);
+            if (result && result.items && result.items.length > 0) {
+                multiResult[subKey] = result;
+            }
+
+            // Rate limit
+            if (i < imageUrls.length - 1) {
+                await new Promise(r => setTimeout(r, 2000));
+            }
+        }
+
+        if (Object.keys(multiResult).length === 0) {
+            log('[processAuto] ⚠️ Hiçbir görselden ürün çıkarılamadı');
+            return null;
+        }
+
+        return multiResult;
+
+    } catch (err) {
+        log('[processAuto] ⚠️ Web sayfası işleme hatası: ' + err.message);
+        return null;
+    }
+}
+
+// ═══════════════════════════════════════════
 // MODULE EXPORTS (server.js'den çağrılabilir)
 // ═══════════════════════════════════════════
-module.exports = { processImage, processFromUrl, processAuto, isImageUrl, extractProductsWithGemini, setLogCallback };
+module.exports = { processImage, processAuto, extractProductsWithBbox, setLogCallback };
 
 // CLI modu
 if (require.main === module) {
