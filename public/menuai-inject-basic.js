@@ -776,7 +776,7 @@
             "-webkit-backdrop-filter:blur(12px) saturate(130%);display:flex;align-items:center;justify-content:center;cursor:pointer;" +
             "color:#f4f4f6;font-size:22px;box-shadow:0 10px 20px rgba(0,0,0,.35),0 0 14px rgba(227,187,98,.2);opacity:0;pointer-events:none;z-index:2;" +
             "transform:translateX(0) scale(.88);transition:transform .42s cubic-bezier(.34,1.56,.64,1),opacity .25s;overflow:hidden;animation:wink 3.6s ease-in-out infinite}" +
-            ".menuai-mini-fab img{max-width:74%;max-height:74%;object-fit:contain;filter:drop-shadow(0 2px 6px rgba(0,0,0,.35))}" +
+            ".menuai-mini-fab img{max-width:88%;max-height:88%;object-fit:contain;filter:drop-shadow(0 2px 6px rgba(0,0,0,.35))}" +
             ".menuai-mini-bell{animation-delay:.2s}" +
             ".menuai-mini-bill{animation-delay:1.1s}" +
 
