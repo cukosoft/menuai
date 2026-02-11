@@ -343,6 +343,7 @@
     var activeParent = null; // For hierarchical menus
     var activeTab = 'menu'; // 'menu' or 'cart'
     var fabExpanded = false;
+    var fabExpandedAt = 0;
 
     function toggleMenuPanel() {
         var panel = document.getElementById("menuai-menu-panel");
@@ -594,7 +595,7 @@
     // 5. ALT BAR + UI ENJEKSİYONU
     // ═══════════════════════════════════════════════
     function injectUI() {
-        if (document.getElementById("menuai-bottom-bar")) return;
+        if (document.getElementById("menuai-plate-wrap") || document.getElementById("menuai-menu-panel")) return;
 
         // Overlay (sheet'ler için)
         var ov = document.createElement("div"); ov.id = "menuai-overlay";
@@ -651,6 +652,7 @@
 
     function setFabExpanded(expanded) {
         fabExpanded = !!expanded;
+        if (fabExpanded) fabExpandedAt = Date.now();
         var wrap = document.getElementById("menuai-plate-wrap");
         if (wrap) {
             if (fabExpanded) wrap.classList.add("expanded");
@@ -663,6 +665,7 @@
             setFabExpanded(true);
             return;
         }
+        if (Date.now() - fabExpandedAt < 260) return;
         toggleMenuPanel();
     }
     window.menuaiPrimaryFabTap = primaryFabTap;
@@ -721,24 +724,24 @@
             "#menuai-plate-wrap.expanded #menuai-mini-bell{opacity:1;pointer-events:auto;transform:translateX(-124px) scale(1)}" +
             "#menuai-plate-wrap.expanded #menuai-mini-bill{opacity:1;pointer-events:auto;transform:translateX(-62px) scale(1)}" +
 
-            ".menuai-mini-fab{position:absolute;right:0;bottom:8px;width:48px;height:48px;border-radius:14px;border:1px solid rgba(255,255,255,.2);" +
-            "background:linear-gradient(145deg,rgba(255,255,255,.24),rgba(255,255,255,.07));backdrop-filter:blur(12px) saturate(130%);" +
+            ".menuai-mini-fab{position:absolute;right:0;bottom:8px;width:48px;height:48px;border-radius:14px;border:1px solid rgba(255,255,255,.32);" +
+            "background:linear-gradient(145deg,rgba(88,98,116,.5),rgba(36,42,56,.34));backdrop-filter:blur(12px) saturate(120%);" +
             "-webkit-backdrop-filter:blur(12px) saturate(130%);display:flex;align-items:center;justify-content:center;cursor:pointer;" +
-            "color:#fff;font-size:22px;box-shadow:0 8px 20px rgba(0,0,0,.28),0 0 18px rgba(227,187,98,.16);opacity:0;pointer-events:none;" +
+            "color:#f4f4f6;font-size:22px;box-shadow:0 10px 20px rgba(0,0,0,.35),0 0 14px rgba(227,187,98,.2);opacity:0;pointer-events:none;z-index:2;" +
             "transform:translateX(0) scale(.88);transition:transform .42s cubic-bezier(.34,1.56,.64,1),opacity .25s;overflow:hidden;animation:wink 3.6s ease-in-out infinite}" +
             ".menuai-mini-fab img{max-width:74%;max-height:74%;object-fit:contain;filter:drop-shadow(0 2px 6px rgba(0,0,0,.35))}" +
             ".menuai-mini-bell{animation-delay:.2s}" +
             ".menuai-mini-bill{animation-delay:1.1s}" +
 
             "#menuai-plate{cursor:pointer;position:absolute;right:0;bottom:0;animation:plate-float 4s ease-in-out infinite, fab-spark 2.8s ease-in-out infinite;" +
-            "width:72px;height:72px;border-radius:20px;border:1px solid rgba(255,255,255,.22);" +
-            "background:linear-gradient(145deg,rgba(255,255,255,.22),rgba(255,255,255,.06));" +
+            "width:72px;height:72px;border-radius:20px;border:1px solid rgba(255,255,255,.34);" +
+            "background:linear-gradient(145deg,rgba(84,96,118,.58),rgba(38,46,62,.4));" +
             "backdrop-filter:blur(16px) saturate(135%);-webkit-backdrop-filter:blur(16px) saturate(135%);" +
-            "display:flex;align-items:center;justify-content:center;color:#f8f3da;" +
+            "display:flex;align-items:center;justify-content:center;color:#f6eec8;z-index:3;" +
             "transition:transform .3s cubic-bezier(.175,.885,.32,1.275)}" +
             "#menuai-plate:hover{transform:translateY(-1px) scale(1.03)}" +
             "#menuai-plate:active{animation:none;transform:scale(.96)}" +
-            ".menuai-cutlery-icon{position:relative;z-index:2;filter:drop-shadow(0 0 8px rgba(245,219,138,.34))}" +
+            ".menuai-cutlery-icon{position:relative;z-index:2;filter:drop-shadow(0 0 8px rgba(245,219,138,.34));opacity:.98}" +
             ".menuai-orbit{position:absolute;inset:-6px;border-radius:24px;border:2px solid rgba(237,199,89,.8);box-shadow:0 0 20px rgba(237,199,89,.35)}" +
             ".menuai-orbit::after{content:'';position:absolute;width:9px;height:9px;border-radius:50%;background:#ffe491;" +
             "top:-5px;left:50%;margin-left:-4px;box-shadow:0 0 10px rgba(255,230,142,.9),0 0 18px rgba(255,216,106,.85)}" +
