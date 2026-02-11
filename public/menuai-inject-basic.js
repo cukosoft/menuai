@@ -648,15 +648,37 @@
         // Toast
         var toast = document.createElement("div"); toast.id = "menuai-toast"; toast.className = "menuai-toast";
         document.body.appendChild(toast);
+
+        setFabExpanded(false);
     }
 
     function setFabExpanded(expanded) {
         fabExpanded = !!expanded;
         if (fabExpanded) fabExpandedAt = Date.now();
         var wrap = document.getElementById("menuai-plate-wrap");
+        var bell = document.getElementById("menuai-mini-bell");
+        var bill = document.getElementById("menuai-mini-bill");
         if (wrap) {
             if (fabExpanded) wrap.classList.add("expanded");
             else wrap.classList.remove("expanded");
+        }
+        // JS-driven fallback so first tap always reveals action buttons even if CSS class styles are cached/missed.
+        if (bell && bill) {
+            if (fabExpanded) {
+                bell.style.opacity = "1";
+                bell.style.pointerEvents = "auto";
+                bell.style.transform = "translateX(-124px) scale(1)";
+                bill.style.opacity = "1";
+                bill.style.pointerEvents = "auto";
+                bill.style.transform = "translateX(-62px) scale(1)";
+            } else {
+                bell.style.opacity = "0";
+                bell.style.pointerEvents = "none";
+                bell.style.transform = "translateX(0) scale(.88)";
+                bill.style.opacity = "0";
+                bill.style.pointerEvents = "none";
+                bill.style.transform = "translateX(0) scale(.88)";
+            }
         }
     }
 
