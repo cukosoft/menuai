@@ -87,13 +87,14 @@
         for (var i = 0; i < cart.length; i++) total += cart[i].qty;
         var badge = document.getElementById("menuai-plate-badge");
         if (!badge) return;
-        badge.style.display = "flex";
         if (total > 0) {
+            badge.style.display = "flex";
             badge.textContent = String(total);
             badge.classList.remove("menuai-badge-empty");
             badge.classList.add("menuai-badge-filled");
         } else {
-            badge.textContent = "Sipariş";
+            badge.style.display = "none";
+            badge.textContent = "";
             badge.classList.remove("menuai-badge-filled");
             badge.classList.add("menuai-badge-empty");
         }
@@ -341,6 +342,7 @@
     var activeCat = null;
     var activeParent = null; // For hierarchical menus
     var activeTab = 'menu'; // 'menu' or 'cart'
+    var fabExpanded = false;
 
     function toggleMenuPanel() {
         var panel = document.getElementById("menuai-menu-panel");
@@ -599,12 +601,26 @@
         ov.addEventListener("click", closeAllSheets);
         document.body.appendChild(ov);
 
-        // ── LUXURY MAGIC PLATE FAB ──
+        // ── SMART ACTION FAB ──
         var plateWrap = document.createElement("div"); plateWrap.id = "menuai-plate-wrap";
         plateWrap.innerHTML =
-            '<div id="menuai-plate" class="magic-plate" onclick="menuaiToggleMenu()">' +
+            '<button id="menuai-mini-bell" class="menuai-mini-fab menuai-mini-bell" onclick="event.stopPropagation();menuaiCallWaiter()">' +
+            '<img src="/public/assets/menuai-bell-gold.png" alt="Garson Çağır" loading="lazy" onerror="this.style.display=\'none\';this.parentNode.querySelector(\'span\').style.display=\'inline\';">' +
+            '<span style="display:none">🔔</span>' +
+            '</button>' +
+            '<button id="menuai-mini-bill" class="menuai-mini-fab menuai-mini-bill" onclick="event.stopPropagation();menuaiRequestBill()">' +
+            '<img src="/public/assets/menuai-bill-glass.png" alt="Hesap İste" loading="lazy" onerror="this.style.display=\'none\';this.parentNode.querySelector(\'span\').style.display=\'inline\';">' +
+            '<span style="display:none">🧾</span>' +
+            '</button>' +
+            '<button id="menuai-plate" class="magic-plate" onclick="menuaiPrimaryFabTap()">' +
+            '<span class="menuai-orbit"></span>' +
+            '<span class="menuai-cutlery-icon">' +
+            '<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">' +
+            '<path d="M4 3v7M7 3v7M10 3v7M7 10v11"/><path d="M18 3c0 3-3 3-3 6v12"/>' +
+            '</svg>' +
+            '</span>' +
             '<span id="menuai-plate-badge" style="display:none">0</span>' +
-            '</div>';
+            '</button>';
         document.body.appendChild(plateWrap);
 
         // ── MENÜ + SEPET PANELİ (TEK PANEL, İKİ SEKMELİ) ──
@@ -632,6 +648,24 @@
         var toast = document.createElement("div"); toast.id = "menuai-toast"; toast.className = "menuai-toast";
         document.body.appendChild(toast);
     }
+
+    function setFabExpanded(expanded) {
+        fabExpanded = !!expanded;
+        var wrap = document.getElementById("menuai-plate-wrap");
+        if (wrap) {
+            if (fabExpanded) wrap.classList.add("expanded");
+            else wrap.classList.remove("expanded");
+        }
+    }
+
+    function primaryFabTap() {
+        if (!fabExpanded) {
+            setFabExpanded(true);
+            return;
+        }
+        toggleMenuPanel();
+    }
+    window.menuaiPrimaryFabTap = primaryFabTap;
 
     // ═══════════════════════════════════════════════
     // 6. GARSON ÇAĞIR & HESAP İSTE
@@ -662,6 +696,9 @@
             /* ── LUXURY MAGIC PLATE FAB ── */
             "@keyframes plate-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}" +
             "@keyframes badge-pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.2)}}" +
+            "@keyframes orbit-spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}" +
+            "@keyframes fab-spark{0%,100%{box-shadow:0 10px 24px rgba(0,0,0,.35),0 0 0 1px rgba(255,255,255,.2),0 0 18px rgba(227,187,98,.2)}50%{box-shadow:0 10px 24px rgba(0,0,0,.35),0 0 0 1px rgba(255,255,255,.25),0 0 28px rgba(227,187,98,.45)}}" +
+            "@keyframes wink{0%,75%,100%{opacity:1;transform:translateY(0) scale(1)}82%{opacity:.55;transform:translateY(-1px) scale(.97)}88%{opacity:1;transform:translateY(0) scale(1)}}" +
             ":root{" +
             "--menuai-bg:rgba(11,15,23,.32);" +
             "--menuai-bg-strong:rgba(11,15,23,.44);" +
@@ -680,16 +717,32 @@
             "}" +
             ".menuai-b-sheet,.menuai-b-sheet *,#menuai-plate-badge,.menuai-toast{font-family:'Plus Jakarta Sans',Manrope,sans-serif}" +
 
-            "#menuai-plate-wrap{position:fixed;bottom:35px;right:25px;z-index:99990}" +
+            "#menuai-plate-wrap{position:fixed;bottom:35px;right:25px;z-index:99990;display:flex;align-items:center;justify-content:flex-end;gap:10px;min-width:220px}" +
+            "#menuai-plate-wrap.expanded #menuai-mini-bell{opacity:1;pointer-events:auto;transform:translateX(-124px) scale(1)}" +
+            "#menuai-plate-wrap.expanded #menuai-mini-bill{opacity:1;pointer-events:auto;transform:translateX(-62px) scale(1)}" +
 
-            "#menuai-plate{cursor:pointer;position:relative;animation:plate-float 4s ease-in-out infinite;" +
-            "width:80px;height:80px;border-radius:50%;background:none;border:none;" +
-            "background-image:url('/public/assets/menuai-plate-gold-rim.png');" +
-            "background-size:118%;background-repeat:no-repeat;background-position:center;" +
-            "box-shadow:0 16px 30px rgba(0,0,0,.26),0 3px 8px rgba(0,0,0,.18),inset 0 -2px 4px rgba(0,0,0,.06);" +
+            ".menuai-mini-fab{position:absolute;right:0;bottom:8px;width:48px;height:48px;border-radius:14px;border:1px solid rgba(255,255,255,.2);" +
+            "background:linear-gradient(145deg,rgba(255,255,255,.24),rgba(255,255,255,.07));backdrop-filter:blur(12px) saturate(130%);" +
+            "-webkit-backdrop-filter:blur(12px) saturate(130%);display:flex;align-items:center;justify-content:center;cursor:pointer;" +
+            "color:#fff;font-size:22px;box-shadow:0 8px 20px rgba(0,0,0,.28),0 0 18px rgba(227,187,98,.16);opacity:0;pointer-events:none;" +
+            "transform:translateX(0) scale(.88);transition:transform .42s cubic-bezier(.34,1.56,.64,1),opacity .25s;overflow:hidden;animation:wink 3.6s ease-in-out infinite}" +
+            ".menuai-mini-fab img{max-width:74%;max-height:74%;object-fit:contain;filter:drop-shadow(0 2px 6px rgba(0,0,0,.35))}" +
+            ".menuai-mini-bell{animation-delay:.2s}" +
+            ".menuai-mini-bill{animation-delay:1.1s}" +
+
+            "#menuai-plate{cursor:pointer;position:absolute;right:0;bottom:0;animation:plate-float 4s ease-in-out infinite, fab-spark 2.8s ease-in-out infinite;" +
+            "width:72px;height:72px;border-radius:20px;border:1px solid rgba(255,255,255,.22);" +
+            "background:linear-gradient(145deg,rgba(255,255,255,.22),rgba(255,255,255,.06));" +
+            "backdrop-filter:blur(16px) saturate(135%);-webkit-backdrop-filter:blur(16px) saturate(135%);" +
+            "display:flex;align-items:center;justify-content:center;color:#f8f3da;" +
             "transition:transform .3s cubic-bezier(.175,.885,.32,1.275)}" +
-            "#menuai-plate:hover{transform:translateY(-1px) scale(1.03) rotate(-1.2deg)}" +
-            "#menuai-plate:active{animation:none;transform:scale(.96) rotate(0deg)}" +
+            "#menuai-plate:hover{transform:translateY(-1px) scale(1.03)}" +
+            "#menuai-plate:active{animation:none;transform:scale(.96)}" +
+            ".menuai-cutlery-icon{position:relative;z-index:2;filter:drop-shadow(0 0 8px rgba(245,219,138,.34))}" +
+            ".menuai-orbit{position:absolute;inset:-6px;border-radius:24px;border:2px solid rgba(237,199,89,.8);box-shadow:0 0 20px rgba(237,199,89,.35)}" +
+            ".menuai-orbit::after{content:'';position:absolute;width:9px;height:9px;border-radius:50%;background:#ffe491;" +
+            "top:-5px;left:50%;margin-left:-4px;box-shadow:0 0 10px rgba(255,230,142,.9),0 0 18px rgba(255,216,106,.85)}" +
+            ".menuai-orbit{animation:orbit-spin 4.6s linear infinite}" +
 
 
             "#menuai-plate-badge{position:absolute;top:0px;right:5px;background:#ef4444;color:#fff;" +
