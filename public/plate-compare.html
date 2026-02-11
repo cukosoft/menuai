@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MenuAI Plate Compare</title>
+  <style>
+    :root {
+      --bg: #eef1f5;
+      --text: #0f172a;
+      --muted: #64748b;
+      --red: #e31b23;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: radial-gradient(circle at top, #f7f9fc 0%, var(--bg) 55%, #e6ebf2 100%);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 28px 16px;
+    }
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+    h1 {
+      margin: 0 0 6px;
+      font-size: 24px;
+    }
+    p {
+      margin: 0 0 20px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: rgba(255,255,255,.72);
+      border: 1px solid rgba(15,23,42,.08);
+      border-radius: 16px;
+      padding: 18px;
+      box-shadow: 0 10px 24px rgba(15,23,42,.08);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      min-height: 240px;
+    }
+    .title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .4px;
+      color: #334155;
+    }
+    .stage {
+      width: 100%;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(241,245,249,.7);
+      border-radius: 12px;
+      border: 1px dashed rgba(51,65,85,.2);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .plate-wrap {
+      position: relative;
+      width: 86px;
+      height: 86px;
+    }
+    .plate {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background-image: url('/public/assets/menuai-plate-gold-rim.png');
+      background-size: 118%;
+      background-repeat: no-repeat;
+      background-position: center;
+      box-shadow: 0 16px 30px rgba(0,0,0,.24), 0 3px 8px rgba(0,0,0,.16), inset 0 -2px 4px rgba(0,0,0,.06);
+    }
+    .badge {
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      background: var(--red);
+      border: 2px solid #fff;
+      border-radius: 999px;
+      box-shadow: 0 4px 10px rgba(0,0,0,.2);
+      font-weight: 800;
+      line-height: 1;
+    }
+    .badge-dot {
+      width: 14px;
+      height: 14px;
+      min-width: 14px;
+      font-size: 0;
+      padding: 0;
+    }
+    .badge-count {
+      min-width: 24px;
+      height: 24px;
+      padding: 0 7px;
+      font-size: 12px;
+    }
+    .badge-label {
+      min-width: 44px;
+      height: 24px;
+      padding: 0 9px;
+      font-size: 12px;
+      letter-spacing: .15px;
+    }
+
+    .hint {
+      font-size: 12px;
+      color: #475569;
+      text-align: center;
+    }
+
+    @media (max-width: 760px) {
+      .grid { grid-template-columns: 1fr; }
+      .card { min-height: 210px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>3 Tabak Varyasyonu</h1>
+    <p>Yanyana karþýlaþtýrma: `dot`, `sayý`, `etiket`.</p>
+
+    <section class="grid">
+      <article class="card">
+        <div class="title">A — Dot</div>
+        <div class="stage">
+          <div class="plate-wrap">
+            <div class="plate"></div>
+            <span class="badge badge-dot">.</span>
+          </div>
+        </div>
+        <div class="hint">En sade, premium, düþük gürültü</div>
+      </article>
+
+      <article class="card">
+        <div class="title">B — Sayý</div>
+        <div class="stage">
+          <div class="plate-wrap">
+            <div class="plate"></div>
+            <span class="badge badge-count">3</span>
+          </div>
+        </div>
+        <div class="hint">E-ticaret alýþkanlýðýna en yakýn</div>
+      </article>
+
+      <article class="card">
+        <div class="title">C — Etiket</div>
+        <div class="stage">
+          <div class="plate-wrap">
+            <div class="plate"></div>
+            <span class="badge badge-label">Yeni</span>
+          </div>
+        </div>
+        <div class="hint">CTA daha belirgin ama daha baskýn</div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
