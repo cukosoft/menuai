@@ -667,7 +667,9 @@
             "#menuai-plate:hover{transform:translateY(-1px) scale(1.03) rotate(-1.2deg)}" +
             "#menuai-plate:active{animation:none;transform:scale(.96) rotate(0deg)}" +
             "#menuai-plate::before{content:'';position:absolute;top:-7px;left:-7px;right:-7px;bottom:-7px;border-radius:50%;" +
-            "background:conic-gradient(from 0deg,rgba(86,220,255,0) 0deg,rgba(86,220,255,0) 300deg,rgba(86,220,255,.95) 332deg,rgba(86,220,255,.35) 350deg,rgba(86,220,255,0) 360deg);" +
+            "background:conic-gradient(from 0deg," +
+            "rgba(86,220,255,0) 0deg,rgba(86,220,255,0) 232deg,rgba(86,220,255,.95) 256deg,rgba(86,220,255,.34) 272deg,rgba(86,220,255,0) 292deg," +
+            "rgba(96,255,170,0) 292deg,rgba(96,255,170,.82) 318deg,rgba(96,255,170,.28) 334deg,rgba(96,255,170,0) 360deg);" +
             "-webkit-mask:radial-gradient(circle,transparent 57%,#000 63%,#000 74%,transparent 81%);" +
             "mask:radial-gradient(circle,transparent 57%,#000 63%,#000 74%,transparent 81%);" +
             "filter:blur(3.5px);mix-blend-mode:screen;opacity:.95;animation:plate-orbit 2.8s linear infinite;pointer-events:none;z-index:0}" +
