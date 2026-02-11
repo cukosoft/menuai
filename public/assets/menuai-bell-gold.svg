@@ -1,0 +1,28 @@
+﻿<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="goldCore" cx="38%" cy="28%" r="72%">
+      <stop offset="0%" stop-color="#fff3bf"/>
+      <stop offset="45%" stop-color="#f2c86a"/>
+      <stop offset="78%" stop-color="#c69035"/>
+      <stop offset="100%" stop-color="#8a5c16"/>
+    </radialGradient>
+    <linearGradient id="goldRim" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8dd95"/>
+      <stop offset="55%" stop-color="#c69136"/>
+      <stop offset="100%" stop-color="#7a4d12"/>
+    </linearGradient>
+    <filter id="softShadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#softShadow)">
+    <ellipse cx="128" cy="206" rx="72" ry="20" fill="#201509" opacity="0.22"/>
+    <ellipse cx="128" cy="188" rx="80" ry="24" fill="url(#goldCore)" stroke="url(#goldRim)" stroke-width="5"/>
+    <ellipse cx="128" cy="171" rx="60" ry="16" fill="#3d260a" opacity="0.42"/>
+    <path d="M58 166c0-42 30-74 70-79v-7c0-7 6-13 13-13 7 0 13 6 13 13v7c40 5 70 37 70 79" fill="url(#goldCore)" stroke="url(#goldRim)" stroke-width="5"/>
+    <ellipse cx="128" cy="83" rx="22" ry="10" fill="url(#goldCore)" stroke="url(#goldRim)" stroke-width="4"/>
+    <rect x="116" y="70" width="24" height="18" rx="9" fill="url(#goldCore)" stroke="url(#goldRim)" stroke-width="4"/>
+    <ellipse cx="97" cy="118" rx="26" ry="12" fill="#fff7d2" opacity="0.24"/>
+  </g>
+</svg>

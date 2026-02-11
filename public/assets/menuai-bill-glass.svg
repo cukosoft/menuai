@@ -1,0 +1,22 @@
+﻿<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e9edf1"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dce3ea"/>
+      <stop offset="100%" stop-color="#aeb7c2"/>
+    </linearGradient>
+    <filter id="paperShadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="9" stdDeviation="8" flood-color="#000" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#paperShadow)">
+    <path d="M52 36h126c14 0 26 12 26 26v132c0 14-12 26-26 26H78c-14 0-26-12-26-26V62c0-14 12-26 26-26z" fill="url(#paper)" stroke="url(#edge)" stroke-width="4"/>
+    <path d="M52 86h34c14 0 26-12 26-26V36" fill="#f4f7fa" stroke="url(#edge)" stroke-width="4"/>
+    <path d="M70 102h118M70 130h118M70 158h118" stroke="#8f9aaa" stroke-width="4" stroke-linecap="round" opacity="0.75"/>
+    <text x="74" y="186" font-family="Arial, sans-serif" font-size="20" fill="#2f3a49">₺ 345,50</text>
+  </g>
+</svg>
