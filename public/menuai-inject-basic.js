@@ -86,7 +86,17 @@
         var total = 0;
         for (var i = 0; i < cart.length; i++) total += cart[i].qty;
         var badge = document.getElementById("menuai-plate-badge");
-        if (badge) { badge.textContent = total; badge.style.display = total > 0 ? "flex" : "none"; }
+        if (!badge) return;
+        badge.style.display = "flex";
+        if (total > 0) {
+            badge.textContent = String(total);
+            badge.classList.remove("menuai-badge-empty");
+            badge.classList.add("menuai-badge-filled");
+        } else {
+            badge.textContent = "Yeni";
+            badge.classList.remove("menuai-badge-filled");
+            badge.classList.add("menuai-badge-empty");
+        }
     }
 
     function renderCartContent() {
@@ -593,8 +603,10 @@
         var plateWrap = document.createElement("div"); plateWrap.id = "menuai-plate-wrap";
         plateWrap.innerHTML =
             '<div id="menuai-plate" class="magic-plate" onclick="menuaiToggleMenu()">' +
+            '<span id="menuai-plate-cta"><span class="menuai-plate-cta-icon">+</span><span class="menuai-plate-cta-text">Sipariş</span></span>' +
             '<span id="menuai-plate-badge" style="display:none">0</span>' +
-            '</div>';
+            '</div>' +
+            '<div id="menuai-plate-teaser">Menüyü aç • 2 sn</div>';
         document.body.appendChild(plateWrap);
 
         // ── MENÜ + SEPET PANELİ (TEK PANEL, İKİ SEKMELİ) ──
@@ -621,6 +633,22 @@
         // Toast
         var toast = document.createElement("div"); toast.id = "menuai-toast"; toast.className = "menuai-toast";
         document.body.appendChild(toast);
+    }
+
+    function runPlateIntro() {
+        var plate = document.getElementById("menuai-plate");
+        var teaser = document.getElementById("menuai-plate-teaser");
+        if (!plate) return;
+
+        // One-shot nudge animation to signal interactivity.
+        plate.classList.add("menuai-plate-hint-once");
+        setTimeout(function () { plate.classList.remove("menuai-plate-hint-once"); }, 1400);
+
+        if (!teaser) return;
+        teaser.classList.add("show");
+        var dismiss = function () { teaser.classList.remove("show"); };
+        setTimeout(dismiss, 6000);
+        plate.addEventListener("click", dismiss, { once: true });
     }
 
     // ═══════════════════════════════════════════════
@@ -652,9 +680,11 @@
             /* ── LUXURY MAGIC PLATE FAB ── */
             "@keyframes plate-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}" +
             "@keyframes plate-orbit{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}" +
+            "@keyframes plate-hint-nudge{0%{transform:translateX(0)}22%{transform:translateX(-7px)}48%{transform:translateX(4px)}72%{transform:translateX(-2px)}100%{transform:translateX(0)}}" +
             "@keyframes plate-sheen-drift{0%{transform:translate(-6%,-4%) rotate(-2deg);opacity:.24}" +
             "50%{opacity:.42}100%{transform:translate(6%,4%) rotate(4deg);opacity:.3}}" +
             "@keyframes badge-pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.2)}}" +
+            "@keyframes teaser-pop{0%{opacity:0;transform:translateY(6px) scale(.96)}100%{opacity:1;transform:translateY(0) scale(1)}}" +
 
             "#menuai-plate-wrap{position:fixed;bottom:35px;right:25px;z-index:99990}" +
 
@@ -664,24 +694,43 @@
             "background-size:118%;background-repeat:no-repeat;background-position:center;" +
             "box-shadow:0 16px 30px rgba(0,0,0,.26),0 3px 8px rgba(0,0,0,.18),inset 0 -2px 4px rgba(0,0,0,.06);" +
             "transition:transform .3s cubic-bezier(.175,.885,.32,1.275)}" +
+            "#menuai-plate.menuai-plate-hint-once{animation:plate-float 4s ease-in-out infinite,plate-hint-nudge .9s cubic-bezier(.2,.8,.2,1) 1}" +
             "#menuai-plate:hover{transform:translateY(-1px) scale(1.03) rotate(-1.2deg)}" +
             "#menuai-plate:active{animation:none;transform:scale(.96) rotate(0deg)}" +
             "#menuai-plate::before{content:'';position:absolute;top:-7px;left:-7px;right:-7px;bottom:-7px;border-radius:50%;" +
             "background:conic-gradient(from 0deg," +
-            "rgba(43,221,187,0) 0deg,rgba(43,221,187,0) 208deg,rgba(43,221,187,.92) 232deg,rgba(43,221,187,.34) 246deg,rgba(43,221,187,0) 262deg," +
-            "rgba(78,124,255,0) 262deg,rgba(78,124,255,.9) 286deg,rgba(78,124,255,.35) 302deg,rgba(78,124,255,0) 320deg," +
-            "rgba(238,86,255,0) 320deg,rgba(238,86,255,.88) 342deg,rgba(238,86,255,.32) 354deg,rgba(238,86,255,0) 360deg);" +
+            "rgba(43,221,187,0) 0deg,rgba(43,221,187,0) 208deg,rgba(43,221,187,.76) 232deg,rgba(43,221,187,.24) 246deg,rgba(43,221,187,0) 262deg," +
+            "rgba(78,124,255,0) 262deg,rgba(78,124,255,.72) 286deg,rgba(78,124,255,.22) 302deg,rgba(78,124,255,0) 320deg," +
+            "rgba(238,86,255,0) 320deg,rgba(238,86,255,.7) 342deg,rgba(238,86,255,.2) 354deg,rgba(238,86,255,0) 360deg);" +
             "-webkit-mask:radial-gradient(circle,transparent 57%,#000 63%,#000 74%,transparent 81%);" +
             "mask:radial-gradient(circle,transparent 57%,#000 63%,#000 74%,transparent 81%);" +
-            "filter:blur(3.5px);mix-blend-mode:screen;opacity:.95;animation:plate-orbit 2.8s linear infinite;pointer-events:none;z-index:0}" +
+            "filter:blur(3px);mix-blend-mode:screen;opacity:.82;animation:plate-orbit 2.8s linear infinite;pointer-events:none;z-index:0}" +
             "#menuai-plate::after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;border-radius:50%;" +
             "background:linear-gradient(135deg,rgba(255,255,255,.4) 0%,rgba(255,255,255,0) 50%);" +
             "animation:plate-sheen-drift 7s ease-in-out infinite alternate;pointer-events:none;z-index:1}" +
+
+            "#menuai-plate-cta{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);" +
+            "display:flex;align-items:center;gap:4px;padding:3px 7px;border-radius:999px;" +
+            "background:rgba(255,255,255,.78);backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px);" +
+            "box-shadow:0 2px 8px rgba(0,0,0,.12);pointer-events:none;z-index:2}" +
+            ".menuai-plate-cta-icon{display:inline-flex;align-items:center;justify-content:center;" +
+            "width:14px;height:14px;border-radius:50%;background:#0f172a;color:#fff;font-size:12px;font-weight:700;line-height:1}" +
+            ".menuai-plate-cta-text{font-size:10px;font-weight:700;color:#0f172a;letter-spacing:.2px;text-transform:uppercase}" +
 
             "#menuai-plate-badge{position:absolute;top:0px;right:5px;background:#ef4444;color:#fff;" +
             "font-size:11px;font-weight:700;min-width:20px;height:20px;border-radius:10px;" +
             "display:flex;align-items:center;justify-content:center;padding:0 5px;" +
             "font-family:Inter,sans-serif;border:2px solid #C9B896;animation:badge-pulse 2s ease-in-out infinite;z-index:3}" +
+            "#menuai-plate-badge.menuai-badge-empty{background:#0f172a;border-color:#9fb2d1;font-size:9px;letter-spacing:.2px;min-width:34px;height:18px;animation:none}" +
+            "#menuai-plate-badge.menuai-badge-filled{background:#ef4444;border-color:#C9B896}" +
+
+            "#menuai-plate-teaser{position:absolute;right:90px;bottom:22px;max-width:150px;" +
+            "background:rgba(15,23,42,.92);color:#fff;padding:8px 10px;border-radius:10px;font-size:11px;" +
+            "font-weight:600;line-height:1.2;opacity:0;transform:translateY(6px) scale(.96);pointer-events:none;" +
+            "transition:opacity .25s ease,transform .25s ease;white-space:nowrap}" +
+            "#menuai-plate-teaser::after{content:'';position:absolute;right:-6px;top:50%;transform:translateY(-50%);" +
+            "border-left:6px solid rgba(15,23,42,.92);border-top:6px solid transparent;border-bottom:6px solid transparent}" +
+            "#menuai-plate-teaser.show{opacity:1;transform:translateY(0) scale(1);animation:teaser-pop .26s ease both}" +
 
 
             /* ── OVERLAY ── */
@@ -879,8 +928,11 @@
     function boot() {
         injectStyles();
         injectUI();
+        updateBadge();
+        runPlateIntro();
         fetchMenu();
     }
     if (document.readyState === "loading") { document.addEventListener("DOMContentLoaded", boot); }
     else { boot(); }
 })();
+
