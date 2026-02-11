@@ -662,14 +662,13 @@
             "width:80px;height:80px;border-radius:50%;background:none;border:none;" +
             "background-image:url('/public/assets/menuai-plate-gold-rim.png');" +
             "background-size:118%;background-repeat:no-repeat;background-position:center;" +
-            "box-shadow:0 16px 30px rgba(0,0,0,.26),0 3px 8px rgba(0,0,0,.18),inset 0 -2px 4px rgba(0,0,0,.06)," +
-            "0 0 14px rgba(67,209,255,.45),0 0 30px rgba(67,209,255,.22);" +
+            "box-shadow:0 16px 30px rgba(0,0,0,.26),0 3px 8px rgba(0,0,0,.18),inset 0 -2px 4px rgba(0,0,0,.06);" +
             "transition:transform .3s cubic-bezier(.175,.885,.32,1.275)}" +
             "#menuai-plate:hover{transform:translateY(-1px) scale(1.03) rotate(-1.2deg)}" +
             "#menuai-plate:active{animation:none;transform:scale(.96) rotate(0deg)}" +
-            "#menuai-plate::before{content:'';position:absolute;top:-5px;left:-5px;right:-5px;bottom:-5px;border-radius:50%;" +
-            "background:radial-gradient(circle,rgba(107,226,255,.82) 56%,rgba(107,226,255,.45) 66%,rgba(107,226,255,.14) 75%,rgba(107,226,255,0) 84%);" +
-            "filter:blur(5px);opacity:.72;animation:plate-glow 3.2s ease-in-out infinite;pointer-events:none;z-index:0}" +
+            "#menuai-plate::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border-radius:50%;" +
+            "background:radial-gradient(circle,rgba(0,0,0,0) 58%,rgba(86,220,255,0) 62%,rgba(86,220,255,.88) 67%,rgba(86,220,255,.42) 73%,rgba(86,220,255,.12) 79%,rgba(86,220,255,0) 86%);" +
+            "filter:blur(4px);mix-blend-mode:screen;opacity:.78;animation:plate-glow 3.2s ease-in-out infinite;pointer-events:none;z-index:0}" +
             "#menuai-plate::after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;border-radius:50%;" +
             "background:linear-gradient(135deg,rgba(255,255,255,.4) 0%,rgba(255,255,255,0) 50%);" +
             "animation:plate-sheen-drift 7s ease-in-out infinite alternate;pointer-events:none;z-index:1}" +
