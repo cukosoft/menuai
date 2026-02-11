@@ -651,7 +651,7 @@
 
             /* ── LUXURY MAGIC PLATE FAB ── */
             "@keyframes plate-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}" +
-            "@keyframes plate-glow{0%,100%{opacity:.45;transform:scale(.96)}50%{opacity:.8;transform:scale(1.04)}}" +
+            "@keyframes plate-glow{0%,100%{opacity:.5;transform:scale(.98)}50%{opacity:.9;transform:scale(1.03)}}" +
             "@keyframes plate-sheen-drift{0%{transform:translate(-6%,-4%) rotate(-2deg);opacity:.24}" +
             "50%{opacity:.42}100%{transform:translate(6%,4%) rotate(4deg);opacity:.3}}" +
             "@keyframes badge-pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.2)}}" +
@@ -662,13 +662,14 @@
             "width:80px;height:80px;border-radius:50%;background:none;border:none;" +
             "background-image:url('/public/assets/menuai-plate-gold-rim.png');" +
             "background-size:118%;background-repeat:no-repeat;background-position:center;" +
-            "box-shadow:0 16px 30px rgba(0,0,0,.26),0 3px 8px rgba(0,0,0,.18),inset 0 -2px 4px rgba(0,0,0,.06);" +
+            "box-shadow:0 16px 30px rgba(0,0,0,.26),0 3px 8px rgba(0,0,0,.18),inset 0 -2px 4px rgba(0,0,0,.06)," +
+            "0 0 14px rgba(67,209,255,.45),0 0 30px rgba(67,209,255,.22);" +
             "transition:transform .3s cubic-bezier(.175,.885,.32,1.275)}" +
             "#menuai-plate:hover{transform:translateY(-1px) scale(1.03) rotate(-1.2deg)}" +
             "#menuai-plate:active{animation:none;transform:scale(.96) rotate(0deg)}" +
-            "#menuai-plate::before{content:'';position:absolute;top:-8px;left:-8px;right:-8px;bottom:-8px;border-radius:50%;" +
-            "background:radial-gradient(circle,rgba(211,173,94,.30) 0%,rgba(211,173,94,.12) 35%,rgba(211,173,94,0) 68%);" +
-            "filter:blur(8px);opacity:.55;animation:plate-glow 6s ease-in-out infinite;pointer-events:none;z-index:0}" +
+            "#menuai-plate::before{content:'';position:absolute;top:-5px;left:-5px;right:-5px;bottom:-5px;border-radius:50%;" +
+            "background:radial-gradient(circle,rgba(107,226,255,.82) 56%,rgba(107,226,255,.45) 66%,rgba(107,226,255,.14) 75%,rgba(107,226,255,0) 84%);" +
+            "filter:blur(5px);opacity:.72;animation:plate-glow 3.2s ease-in-out infinite;pointer-events:none;z-index:0}" +
             "#menuai-plate::after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;border-radius:50%;" +
             "background:linear-gradient(135deg,rgba(255,255,255,.4) 0%,rgba(255,255,255,0) 50%);" +
             "animation:plate-sheen-drift 7s ease-in-out infinite alternate;pointer-events:none;z-index:1}" +
