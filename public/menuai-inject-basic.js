@@ -346,6 +346,14 @@
     var fabExpandedAt = 0;
 
     function toggleMenuPanel() {
+        // Backward-compatible guard:
+        // If any older DOM still calls menuaiToggleMenu directly, first tap must only expand actions.
+        if (!fabExpanded) {
+            setFabExpanded(true);
+            return;
+        }
+        if (Date.now() - fabExpandedAt < 260) return;
+
         var panel = document.getElementById("menuai-menu-panel");
         if (!panel) return;
         if (panel.classList.contains("open")) { closeSheet("menuai-menu-panel"); }
@@ -675,18 +683,26 @@
         if (bell && bill) {
             if (fabExpanded) {
                 bell.style.opacity = "1";
+                bell.style.visibility = "visible";
                 bell.style.pointerEvents = "auto";
                 bell.style.transform = "translateX(-124px) scale(1)";
+                bell.style.right = "124px";
                 bill.style.opacity = "1";
+                bill.style.visibility = "visible";
                 bill.style.pointerEvents = "auto";
                 bill.style.transform = "translateX(-62px) scale(1)";
+                bill.style.right = "62px";
             } else {
                 bell.style.opacity = "0";
+                bell.style.visibility = "hidden";
                 bell.style.pointerEvents = "none";
                 bell.style.transform = "translateX(0) scale(.88)";
+                bell.style.right = "0px";
                 bill.style.opacity = "0";
+                bill.style.visibility = "hidden";
                 bill.style.pointerEvents = "none";
                 bill.style.transform = "translateX(0) scale(.88)";
+                bill.style.right = "0px";
             }
         }
     }
