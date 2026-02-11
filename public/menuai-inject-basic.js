@@ -93,7 +93,7 @@
             badge.classList.remove("menuai-badge-empty");
             badge.classList.add("menuai-badge-filled");
         } else {
-            badge.textContent = "Yeni";
+            badge.textContent = "Sipariş";
             badge.classList.remove("menuai-badge-filled");
             badge.classList.add("menuai-badge-empty");
         }
@@ -679,7 +679,7 @@
             "font-size:11px;font-weight:700;min-width:20px;height:20px;border-radius:10px;" +
             "display:flex;align-items:center;justify-content:center;padding:0 5px;" +
             "font-family:Inter,sans-serif;border:2px solid #C9B896;animation:badge-pulse 2s ease-in-out infinite;z-index:3}" +
-            "#menuai-plate-badge.menuai-badge-empty{background:#dc2626;border-color:#7f1d1d;font-size:12px;font-weight:800;letter-spacing:.15px;min-width:42px;height:24px;animation:none}" +
+            "#menuai-plate-badge.menuai-badge-empty{background:#dc2626;border-color:#7f1d1d;font-size:12px;font-weight:800;letter-spacing:.15px;min-width:62px;height:26px;padding:0 10px;animation:none;box-shadow:0 6px 14px rgba(220,38,38,.32)}" +
             "#menuai-plate-badge.menuai-badge-filled{background:#dc2626;border-color:#7f1d1d}" +
 
 
@@ -885,4 +885,3 @@
     if (document.readyState === "loading") { document.addEventListener("DOMContentLoaded", boot); }
     else { boot(); }
 })();
-
