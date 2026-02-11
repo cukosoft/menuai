@@ -657,7 +657,7 @@
 
             "#menuai-plate{cursor:pointer;position:relative;animation:plate-float 4s ease-in-out infinite;" +
             "width:80px;height:80px;border-radius:50%;background:none;border:none;" +
-            "background-image:url('https://pngimg.com/d/plate_PNG50941.png');" +
+            "background-image:url('/public/assets/menuai-plate-gold-rim.png');" +
             "background-size:contain;background-repeat:no-repeat;background-position:center;" +
             "box-shadow:0 15px 35px rgba(0,0,0,.3);" +
             "transition:transform .3s cubic-bezier(.175,.885,.32,1.275)}" +
