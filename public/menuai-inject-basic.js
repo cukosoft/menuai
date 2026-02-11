@@ -668,8 +668,9 @@
             "#menuai-plate:active{animation:none;transform:scale(.96) rotate(0deg)}" +
             "#menuai-plate::before{content:'';position:absolute;top:-7px;left:-7px;right:-7px;bottom:-7px;border-radius:50%;" +
             "background:conic-gradient(from 0deg," +
-            "rgba(86,220,255,0) 0deg,rgba(86,220,255,0) 232deg,rgba(86,220,255,.95) 256deg,rgba(86,220,255,.34) 272deg,rgba(86,220,255,0) 292deg," +
-            "rgba(96,255,170,0) 292deg,rgba(96,255,170,.82) 318deg,rgba(96,255,170,.28) 334deg,rgba(96,255,170,0) 360deg);" +
+            "rgba(43,221,187,0) 0deg,rgba(43,221,187,0) 208deg,rgba(43,221,187,.92) 232deg,rgba(43,221,187,.34) 246deg,rgba(43,221,187,0) 262deg," +
+            "rgba(78,124,255,0) 262deg,rgba(78,124,255,.9) 286deg,rgba(78,124,255,.35) 302deg,rgba(78,124,255,0) 320deg," +
+            "rgba(238,86,255,0) 320deg,rgba(238,86,255,.88) 342deg,rgba(238,86,255,.32) 354deg,rgba(238,86,255,0) 360deg);" +
             "-webkit-mask:radial-gradient(circle,transparent 57%,#000 63%,#000 74%,transparent 81%);" +
             "mask:radial-gradient(circle,transparent 57%,#000 63%,#000 74%,transparent 81%);" +
             "filter:blur(3.5px);mix-blend-mode:screen;opacity:.95;animation:plate-orbit 2.8s linear infinite;pointer-events:none;z-index:0}" +
