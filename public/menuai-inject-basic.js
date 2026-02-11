@@ -1,8 +1,8 @@
-/**
- * MenüAi Basic Tier — Client-Side Injection Script
- * Orijinal menü sitesi aynen gösterilir, üstüne sadece:
- * - Alt bar: Garson Çağır | Hesap İste | Sipariş Ver
- * - Sağ floating buton: Kategorik menü paneli
+﻿/**
+ * MenÃ¼Ai Basic Tier â€” Client-Side Injection Script
+ * Orijinal menÃ¼ sitesi aynen gÃ¶sterilir, Ã¼stÃ¼ne sadece:
+ * - Alt bar: Garson Ã‡aÄŸÄ±r | Hesap Ä°ste | SipariÅŸ Ver
+ * - SaÄŸ floating buton: Kategorik menÃ¼ paneli
  * - Sepet sistemi
  * 
  * Placeholders: __MENUAI_SLUG__, __MENUAI_ORIGIN__
@@ -12,9 +12,9 @@
     var PROXY_PREFIX = "/p/" + SLUG;
     var ORIGIN = "__MENUAI_ORIGIN__";
 
-    // ═══════════════════════════════════════════════
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     // 1. NETWORK INTERCEPTOR (sadece proxy modunda gerekli)
-    // ═══════════════════════════════════════════════
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     var isIframeMode = !!document.getElementById('menuai-iframe-wrap');
     if (!isIframeMode) {
         var oFetch = window.fetch;
@@ -35,9 +35,9 @@
         };
     }
 
-    // ═══════════════════════════════════════════════
-    // 2. SEPET SİSTEMİ
-    // ═══════════════════════════════════════════════
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+    // 2. SEPET SÄ°STEMÄ°
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     var cart = window.__menuaiCart || (window.__menuaiCart = []);
 
     function showToast(msg) {
@@ -170,7 +170,7 @@
         var overlay = document.createElement("div");
         overlay.id = "menuai-cloche-overlay";
         overlay.innerHTML =
-            // ── CLOCHE SVG ──
+            // â”€â”€ CLOCHE SVG â”€â”€
             '<div id="menuai-cloche-wrap">' +
             '<svg id="menuai-cloche-svg" viewBox="0 0 200 140" width="200" height="140" xmlns="http://www.w3.org/2000/svg">' +
             '<defs>' +
@@ -204,7 +204,7 @@
             '<ellipse cx="100" cy="27" rx="6" ry="3" fill="rgba(255,255,255,0.7)"/>' +
             '</svg>' +
             '</div>' +
-            // ── SUCCESS CONTENT ──
+            // â”€â”€ SUCCESS CONTENT â”€â”€
             '<div id="menuai-cloche-success" style="opacity:0;position:absolute;display:flex;flex-direction:column;align-items:center;gap:14px">' +
             '<svg id="menuai-check-svg" viewBox="0 0 80 80" width="80" height="80">' +
             '<circle cx="40" cy="40" r="36" fill="none" stroke="#d4af37" stroke-width="2" opacity="0.3"/>' +
@@ -229,7 +229,7 @@
             '</div>';
         document.body.appendChild(overlay);
 
-        // ── ANIMATION TIMELINE ──
+        // â”€â”€ ANIMATION TIMELINE â”€â”€
         var tl = gsap.timeline({
             onComplete: function () {
                 // Auto-dismiss after 2s
@@ -249,17 +249,17 @@
         var success = document.getElementById("menuai-cloche-success");
         var checkPath = document.getElementById("menuai-check-path");
 
-        // 0.0s — Dim overlay
+        // 0.0s â€” Dim overlay
         tl.fromTo(overlay, { opacity: 0 }, { opacity: 1, duration: 0.3 });
 
-        // 0.2s — Cloche descends
+        // 0.2s â€” Cloche descends
         tl.fromTo(cloche,
             { y: "-150vh", scale: 1 },
             { y: "0", duration: 1.2, ease: "power2.in" },
             0.2
         );
 
-        // 0.8s — Landing impact (squash & stretch)
+        // 0.8s â€” Landing impact (squash & stretch)
         tl.to(cloche, { scaleY: 0.93, scaleX: 1.07, duration: 0.08, ease: "power1.in" });
         tl.to(cloche, { scaleY: 1, scaleX: 1, duration: 0.15, ease: "elastic.out(1.2,0.4)" });
 
@@ -271,7 +271,7 @@
         // Pause (anticipation)
         tl.to({}, { duration: 0.8 });
 
-        // 1.4s — Cloche lifts up & reveals
+        // 1.4s â€” Cloche lifts up & reveals
         tl.to(cloche, { y: "-150vh", duration: 1.2, ease: "power3.out" });
 
         // Play bell sound
@@ -313,9 +313,9 @@
     }
     window.menuaiSubmitOrder = submitOrder;
 
-    // ═══════════════════════════════════════════════
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     // 3. SHEET HELPERS
-    // ═══════════════════════════════════════════════
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     function openSheet(id) {
         var s = document.getElementById(id);
         var ov = document.getElementById("menuai-overlay");
@@ -335,9 +335,9 @@
     window.menuaiOpenCart = function () { activeTab = 'cart'; openSheet("menuai-menu-panel"); };
     window.menuaiCloseAll = closeAllSheets;
 
-    // ═══════════════════════════════════════════════
-    // 4. KATEGORİK MENÜ PANELİ
-    // ═══════════════════════════════════════════════
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+    // 4. KATEGORÄ°K MENÃœ PANELÄ°
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     var menuCategories = [];
     var activeCat = null;
     var activeParent = null; // For hierarchical menus
@@ -381,13 +381,13 @@
         var html = tabBar;
 
         if (activeTab === 'cart') {
-            // ── CART TAB ──
+            // â”€â”€ CART TAB â”€â”€
             html += renderCartContent();
             body.innerHTML = html;
             return;
         }
 
-        // ── MENU TAB ──
+        // â”€â”€ MENU TAB â”€â”€
         if (!menuCategories.length) {
             html += '<div class="menuai-b-empty">Y\u00fckleniyor...</div>';
             body.innerHTML = html;
@@ -404,7 +404,7 @@
         html += search;
 
         if (searchQuery) {
-            // Arama modunda: tüm kategorilerden eşleşen ürünleri göster
+            // Arama modunda: tÃ¼m kategorilerden eÅŸleÅŸen Ã¼rÃ¼nleri gÃ¶ster
             var q = searchQuery.toUpperCase();
             var results = [];
             menuCategories.forEach(function (c) {
@@ -434,7 +434,7 @@
             }
             html += '</div>';
         } else if (activeCat) {
-            // Kategori detay görünümü: geri butonu + ürün listesi
+            // Kategori detay gÃ¶rÃ¼nÃ¼mÃ¼: geri butonu + Ã¼rÃ¼n listesi
             var catItems = [];
             var breadcrumb = activeCat;
 
@@ -466,7 +466,7 @@
             }
             html += '</div>';
         } else if (activeParent) {
-            // Parent seçildi: alt kategorileri göster
+            // Parent seÃ§ildi: alt kategorileri gÃ¶ster
             var parentCat = null;
             menuCategories.forEach(function (c) { if (c.name === activeParent) parentCat = c; });
 
@@ -499,7 +499,7 @@
                 html += '</div>';
             }
         } else {
-            // Ana görünüm: dikey kategori listesi
+            // Ana gÃ¶rÃ¼nÃ¼m: dikey kategori listesi
             html += '<div class="menuai-b-catlist">';
             menuCategories.forEach(function (c, i) {
                 var count = (c.items || []).length;
@@ -591,27 +591,33 @@
     window.menuaiSelectSubCat = selectSubCat;
     window.menuaiSelectCat = selectCat;
 
-    // ═══════════════════════════════════════════════
-    // 5. ALT BAR + UI ENJEKSİYONU
-    // ═══════════════════════════════════════════════
-    function injectUI() {
-        if (document.getElementById("menuai-plate-wrap") || document.getElementById("menuai-menu-panel")) return;
-
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+    // 5. ALT BAR + UI ENJEKSÄ°YONU
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•    function injectUI() {
         // Overlay (sheet'ler için)
-        var ov = document.createElement("div"); ov.id = "menuai-overlay";
-        ov.addEventListener("click", closeAllSheets);
-        document.body.appendChild(ov);
+        var ov = document.getElementById("menuai-overlay");
+        if (!ov) {
+            ov = document.createElement("div"); ov.id = "menuai-overlay";
+            ov.addEventListener("click", closeAllSheets);
+            document.body.appendChild(ov);
+        }
 
-        // ── SMART ACTION FAB ──
-        var plateWrap = document.createElement("div"); plateWrap.id = "menuai-plate-wrap";
+        // Smart Action FAB
+        var plateWrap = document.getElementById("menuai-plate-wrap");
+        if (!plateWrap) {
+            plateWrap = document.createElement("div");
+            plateWrap.id = "menuai-plate-wrap";
+            document.body.appendChild(plateWrap);
+        }
+        // Always refresh to upgrade old DOM from previous deployments
         plateWrap.innerHTML =
             '<button id="menuai-mini-bell" class="menuai-mini-fab menuai-mini-bell" onclick="event.stopPropagation();menuaiCallWaiter()">' +
             '<img src="/public/assets/menuai-bell-gold.png" alt="Garson Çağır" loading="lazy" onerror="this.style.display=\'none\';this.parentNode.querySelector(\'span\').style.display=\'inline\';">' +
-            '<span style="display:none">🔔</span>' +
+            '<span style="display:none">Z</span>' +
             '</button>' +
             '<button id="menuai-mini-bill" class="menuai-mini-fab menuai-mini-bill" onclick="event.stopPropagation();menuaiRequestBill()">' +
             '<img src="/public/assets/menuai-bill-glass.png" alt="Hesap İste" loading="lazy" onerror="this.style.display=\'none\';this.parentNode.querySelector(\'span\').style.display=\'inline\';">' +
-            '<span style="display:none">🧾</span>' +
+            '<span style="display:none">H</span>' +
             '</button>' +
             '<button id="menuai-plate" class="magic-plate" onclick="menuaiPrimaryFabTap()">' +
             '<span class="menuai-orbit"></span>' +
@@ -622,32 +628,35 @@
             '</span>' +
             '<span id="menuai-plate-badge" style="display:none">0</span>' +
             '</button>';
-        document.body.appendChild(plateWrap);
 
-        // ── MENÜ + SEPET PANELİ (TEK PANEL, İKİ SEKMELİ) ──
-        var menuPanel = document.createElement("div"); menuPanel.id = "menuai-menu-panel"; menuPanel.className = "menuai-b-sheet menuai-b-sheet-right";
-        menuPanel.innerHTML =
-            '<div class="menuai-b-sheet-head">' +
-            '<h3>\uD83C\uDF7D Men\u00fcAi</h3>' +
-            '<button class="menuai-b-close" onclick="menuaiCloseAll()">\u2715</button>' +
-            '</div>' +
-            '<div class="menuai-b-sheet-body" id="menuai-menu-body"><div class="menuai-b-empty">Y\u00fckleniyor...</div></div>' +
-            // ── GARSON / HESAP FOOTER ──
-            '<div class="menuai-b-service-footer">' +
-            '<button class="menuai-b-svc-btn menuai-b-svc-waiter" onclick="menuaiCallWaiter()">' +
-            '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>' +
-            '<span>Garson \u00c7a\u011f\u0131r</span>' +
-            '</button>' +
-            '<button class="menuai-b-svc-btn menuai-b-svc-bill" onclick="menuaiRequestBill()">' +
-            '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>' +
-            '<span>Hesap \u0130ste</span>' +
-            '</button>' +
-            '</div>';
-        document.body.appendChild(menuPanel);
+        // Menu + cart panel
+        var menuPanel = document.getElementById("menuai-menu-panel");
+        if (!menuPanel) {
+            menuPanel = document.createElement("div"); menuPanel.id = "menuai-menu-panel"; menuPanel.className = "menuai-b-sheet menuai-b-sheet-right";
+            menuPanel.innerHTML =
+                '<div class="menuai-b-sheet-head">' +
+                '<h3>🍽 MenüAi</h3>' +
+                '<button class="menuai-b-close" onclick="menuaiCloseAll()">✕</button>' +
+                '</div>' +
+                '<div class="menuai-b-sheet-body" id="menuai-menu-body"><div class="menuai-b-empty">Yükleniyor...</div></div>' +
+                '<div class="menuai-b-service-footer">' +
+                '<button class="menuai-b-svc-btn menuai-b-svc-waiter" onclick="menuaiCallWaiter()">' +
+                '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>' +
+                '<span>Garson Çağır</span>' +
+                '</button>' +
+                '<button class="menuai-b-svc-btn menuai-b-svc-bill" onclick="menuaiRequestBill()">' +
+                '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>' +
+                '<span>Hesap İste</span>' +
+                '</button>' +
+                '</div>';
+            document.body.appendChild(menuPanel);
+        }
 
-        // Toast
-        var toast = document.createElement("div"); toast.id = "menuai-toast"; toast.className = "menuai-toast";
-        document.body.appendChild(toast);
+        var toast = document.getElementById("menuai-toast");
+        if (!toast) {
+            toast = document.createElement("div"); toast.id = "menuai-toast"; toast.className = "menuai-toast";
+            document.body.appendChild(toast);
+        }
 
         setFabExpanded(false);
     }
@@ -692,9 +701,9 @@
     }
     window.menuaiPrimaryFabTap = primaryFabTap;
 
-    // ═══════════════════════════════════════════════
-    // 6. GARSON ÇAĞIR & HESAP İSTE
-    // ═══════════════════════════════════════════════
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+    // 6. GARSON Ã‡AÄIR & HESAP Ä°STE
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     function callWaiter() {
         if (confirm("Garson \u00e7a\u011fr\u0131ls\u0131n m\u0131?")) {
             showToast("\uD83D\uDC4B Garson \u00e7a\u011fr\u0131l\u0131yor...");
@@ -708,17 +717,17 @@
     window.menuaiCallWaiter = callWaiter;
     window.menuaiRequestBill = requestBill;
 
-    // ═══════════════════════════════════════════════
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     // 7. CSS
-    // ═══════════════════════════════════════════════
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     function injectStyles() {
         if (document.getElementById("menuai-basic-styles")) return;
         var s = document.createElement("style"); s.id = "menuai-basic-styles";
         s.textContent =
-            /* ── FONT ── */
+            /* â”€â”€ FONT â”€â”€ */
             "@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');" +
 
-            /* ── LUXURY MAGIC PLATE FAB ── */
+            /* â”€â”€ LUXURY MAGIC PLATE FAB â”€â”€ */
             "@keyframes plate-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}" +
             "@keyframes badge-pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.2)}}" +
             "@keyframes orbit-spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}" +
@@ -779,12 +788,12 @@
 
 
 
-            /* ── OVERLAY ── */
+            /* â”€â”€ OVERLAY â”€â”€ */
             "#menuai-overlay{position:fixed;inset:0;background:rgba(5,8,14,.18);z-index:99992;" +
             "opacity:0;pointer-events:none;transition:opacity .3s}" +
             "#menuai-overlay.open{opacity:1;pointer-events:auto}" +
 
-            /* ── SHEET (BOTTOM) ── */
+            /* â”€â”€ SHEET (BOTTOM) â”€â”€ */
             ".menuai-b-sheet{position:fixed;bottom:0;left:0;right:0;" +
             "background:linear-gradient(160deg,rgba(22,28,39,.26),rgba(9,13,21,.34) 62%),var(--menuai-bg);" +
             "backdrop-filter:blur(22px) saturate(145%);-webkit-backdrop-filter:blur(22px) saturate(145%);" +
@@ -799,13 +808,13 @@
             ".menuai-b-sheet>*{position:relative;z-index:1}" +
             ".menuai-b-sheet.open{transform:translateY(0)}" +
 
-            /* ── SHEET (RIGHT / MENÜ) ── */
+            /* â”€â”€ SHEET (RIGHT / MENÃœ) â”€â”€ */
             ".menuai-b-sheet-right{left:auto;right:0;top:0;bottom:0;width:356px;max-width:88vw;" +
             "max-height:none;border-radius:0 0 0 24px;" +
             "transform:translateX(100%)}" +
             ".menuai-b-sheet-right.open{transform:translateX(0)}" +
 
-            /* ── SERVICE FOOTER (Garson / Hesap) ── */
+            /* â”€â”€ SERVICE FOOTER (Garson / Hesap) â”€â”€ */
             ".menuai-b-service-footer{display:flex;gap:8px;padding:12px 16px;border-top:1px dashed var(--menuai-dash);" +
             "background:transparent;flex-shrink:0}" +
             ".menuai-b-svc-btn{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;" +
@@ -828,7 +837,7 @@
 
             ".menuai-b-empty{color:var(--menuai-muted);text-align:center;padding:40px 20px;font-size:15px}" +
 
-            /* ── ARAMA ── */
+            /* â”€â”€ ARAMA â”€â”€ */
             ".menuai-b-search{display:flex;align-items:center;gap:8px;padding:10px 16px;" +
             "border-bottom:1px dashed var(--menuai-dash);position:sticky;top:0;background:rgba(8,12,20,.22);" +
             "backdrop-filter:blur(16px) saturate(140%);-webkit-backdrop-filter:blur(16px) saturate(140%);z-index:1}" +
@@ -841,7 +850,7 @@
             "cursor:pointer;padding:0 4px;line-height:1}" +
             ".menuai-b-result-count{padding:8px 20px;color:var(--menuai-muted);font-size:12px;font-weight:600}" +
 
-            /* ── KATEGORİ LİSTESİ (Dikey) ── */
+            /* â”€â”€ KATEGORÄ° LÄ°STESÄ° (Dikey) â”€â”€ */
             ".menuai-b-catlist{padding:8px 0 12px}" +
             ".menuai-b-catrow{display:flex;align-items:center;justify-content:space-between;" +
             "width:calc(100% - 24px);margin:8px 12px;padding:14px 14px 14px 16px;" +
@@ -855,7 +864,7 @@
             ".menuai-b-catrow-name{color:var(--menuai-text);font-size:15px;font-weight:700}" +
             ".menuai-b-catrow-count{color:var(--menuai-muted);font-size:12px;margin-top:2px}" +
 
-            /* ── GERİ BUTONU ── */
+            /* â”€â”€ GERÄ° BUTONU â”€â”€ */
             ".menuai-b-back{display:flex;align-items:center;gap:6px;padding:12px 16px;" +
             "cursor:pointer;color:var(--menuai-muted);font-size:13px;font-weight:600;border-bottom:1px dashed var(--menuai-dash);" +
             "transition:color .15s;font-family:'Plus Jakarta Sans',Manrope,sans-serif}" +
@@ -863,7 +872,7 @@
             ".menuai-b-cat-title{padding:12px 20px 8px;color:var(--menuai-text);font-size:19px;font-weight:800;" +
             "font-family:'Plus Jakarta Sans',Manrope,sans-serif;border-bottom:1px dashed var(--menuai-dash)}" +
 
-            /* ── ÜRÜN LİSTESİ ── */
+            /* â”€â”€ ÃœRÃœN LÄ°STESÄ° â”€â”€ */
             ".menuai-b-items{padding:8px 0 14px}" +
             ".menuai-b-item{display:flex;align-items:center;justify-content:space-between;" +
             "width:calc(100% - 24px);margin:8px 12px;padding:14px 14px 14px 16px;" +
@@ -882,7 +891,7 @@
             "flex-shrink:0;transition:all .15s;box-shadow:var(--menuai-chip-shadow)}" +
             ".menuai-b-add:active{transform:scale(.85)}" +
 
-            /* ── CART ITEMS ── */
+            /* â”€â”€ CART ITEMS â”€â”€ */
             ".menuai-b-cart-item{display:flex;flex-direction:column;" +
             "width:calc(100% - 24px);margin:8px 12px;padding:14px 14px 12px 16px;" +
             "background:linear-gradient(140deg,rgba(255,255,255,.12),rgba(255,255,255,.03));" +
@@ -907,7 +916,7 @@
             ".menuai-b-ci-note:focus{border-color:var(--menuai-gold);color:#fff}" +
             ".menuai-b-ci-note::placeholder{color:#9ca3af}" +
 
-            /* ── TOTAL & SUBMIT ── */
+            /* â”€â”€ TOTAL & SUBMIT â”€â”€ */
             ".menuai-b-total{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}" +
             ".menuai-b-total span{color:var(--menuai-muted);font-size:16px}" +
             ".menuai-b-total-val{color:#fff;font-size:30px;font-weight:800;letter-spacing:-.5px}" +
@@ -917,7 +926,7 @@
             "box-shadow:var(--menuai-chip-shadow);transition:transform .15s}" +
             ".menuai-b-submit:active{transform:scale(.97)}" +
 
-            /* ── CLOCHE OVERLAY ── */
+            /* â”€â”€ CLOCHE OVERLAY â”€â”€ */
             "#menuai-cloche-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.75);" +
             "backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);" +
             "z-index:200000;display:flex;align-items:center;justify-content:center;" +
@@ -925,7 +934,7 @@
             "#menuai-cloche-wrap{will-change:transform;display:flex;align-items:center;" +
             "justify-content:center}" +
 
-            /* ── TOAST ── */
+            /* â”€â”€ TOAST â”€â”€ */
             ".menuai-toast{position:fixed;top:20px;left:50%;transform:translateX(-50%) translateY(-100px);" +
             "background:rgba(7,10,15,.9);color:#fff;padding:12px 24px;border-radius:14px;font-size:14px;" +
             "font-weight:700;z-index:200000;box-shadow:0 8px 24px rgba(0,0,0,.35);" +
@@ -933,7 +942,7 @@
             "font-family:'Plus Jakarta Sans',Manrope,sans-serif;pointer-events:none;white-space:nowrap}" +
             ".menuai-toast.show{transform:translateX(-50%) translateY(0)}" +
 
-            /* ── TAB BAR ── */
+            /* â”€â”€ TAB BAR â”€â”€ */
             ".menuai-tabs{display:flex;border-bottom:1px dashed var(--menuai-dash);position:sticky;top:0;background:rgba(8,12,20,.24);" +
             "backdrop-filter:blur(16px) saturate(140%);-webkit-backdrop-filter:blur(16px) saturate(140%);z-index:2}" +
             ".menuai-tab{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;" +
@@ -946,7 +955,7 @@
             "min-width:18px;height:18px;border-radius:9px;display:inline-flex;align-items:center;" +
             "justify-content:center;padding:0 5px;margin-left:4px}" +
 
-            /* ── CART EMPTY ── */
+            /* â”€â”€ CART EMPTY â”€â”€ */
             ".menuai-b-cart-empty{display:flex;flex-direction:column;align-items:center;justify-content:center;" +
             "padding:60px 20px;gap:12px;color:var(--menuai-muted);font-size:15px;font-family:'Plus Jakarta Sans',Manrope,sans-serif}" +
             ".menuai-b-cart-empty p{margin:0;color:var(--menuai-muted)}" +
@@ -955,16 +964,16 @@
             "cursor:pointer;font-family:'Plus Jakarta Sans',Manrope,sans-serif;margin-top:8px;transition:transform .15s}" +
             ".menuai-tab-switch-btn:active{transform:scale(.95)}" +
 
-            /* ── CART FOOTER (inside panel body) ── */
+            /* â”€â”€ CART FOOTER (inside panel body) â”€â”€ */
             ".menuai-b-cart-footer{padding:16px 20px;border-top:1px dashed var(--menuai-dash);" +
             "position:sticky;bottom:0;background:var(--menuai-bg-strong)}" +
             ".menuai-b-cart-items{padding:0}";
         document.head.appendChild(s);
     }
 
-    // ═══════════════════════════════════════════════
-    // 8. MENÜ VERİSİ YÜKLE
-    // ═══════════════════════════════════════════════
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+    // 8. MENÃœ VERÄ°SÄ° YÃœKLE
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     function fetchMenu() {
         var x = new XMLHttpRequest();
         x.open("GET", "/api/menu-items/" + SLUG);
@@ -981,15 +990,15 @@
         x.send();
     }
 
-    // ═══════════════════════════════════════════════
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     // HELPERS
-    // ═══════════════════════════════════════════════
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     function esc(s) { var d = document.createElement("div"); d.textContent = s; return d.innerHTML; }
     function escAttr(s) { return s.replace(/'/g, "\\'").replace(/"/g, "&quot;"); }
 
-    // ═══════════════════════════════════════════════
-    // 9. BAŞLAT
-    // ═══════════════════════════════════════════════
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+    // 9. BAÅLAT
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     function boot() {
         injectStyles();
         injectUI();
@@ -999,3 +1008,5 @@
     if (document.readyState === "loading") { document.addEventListener("DOMContentLoaded", boot); }
     else { boot(); }
 })();
+
+
