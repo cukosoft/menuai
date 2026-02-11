@@ -651,6 +651,9 @@
 
             /* ── LUXURY MAGIC PLATE FAB ── */
             "@keyframes plate-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}" +
+            "@keyframes plate-glow{0%,100%{opacity:.45;transform:scale(.96)}50%{opacity:.8;transform:scale(1.04)}}" +
+            "@keyframes plate-sheen-drift{0%{transform:translate(-6%,-4%) rotate(-2deg);opacity:.24}" +
+            "50%{opacity:.42}100%{transform:translate(6%,4%) rotate(4deg);opacity:.3}}" +
             "@keyframes badge-pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.2)}}" +
 
             "#menuai-plate-wrap{position:fixed;bottom:35px;right:25px;z-index:99990}" +
@@ -659,17 +662,21 @@
             "width:80px;height:80px;border-radius:50%;background:none;border:none;" +
             "background-image:url('/public/assets/menuai-plate-gold-rim.png');" +
             "background-size:118%;background-repeat:no-repeat;background-position:center;" +
-            "box-shadow:0 15px 35px rgba(0,0,0,.3);" +
+            "box-shadow:0 16px 30px rgba(0,0,0,.26),0 3px 8px rgba(0,0,0,.18),inset 0 -2px 4px rgba(0,0,0,.06);" +
             "transition:transform .3s cubic-bezier(.175,.885,.32,1.275)}" +
-            "#menuai-plate:active{animation:none;transform:scale(.95)}" +
+            "#menuai-plate:hover{transform:translateY(-1px) scale(1.03) rotate(-1.2deg)}" +
+            "#menuai-plate:active{animation:none;transform:scale(.96) rotate(0deg)}" +
+            "#menuai-plate::before{content:'';position:absolute;top:-8px;left:-8px;right:-8px;bottom:-8px;border-radius:50%;" +
+            "background:radial-gradient(circle,rgba(211,173,94,.30) 0%,rgba(211,173,94,.12) 35%,rgba(211,173,94,0) 68%);" +
+            "filter:blur(8px);opacity:.55;animation:plate-glow 6s ease-in-out infinite;pointer-events:none;z-index:0}" +
             "#menuai-plate::after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;border-radius:50%;" +
             "background:linear-gradient(135deg,rgba(255,255,255,.4) 0%,rgba(255,255,255,0) 50%);" +
-            "pointer-events:none}" +
+            "animation:plate-sheen-drift 7s ease-in-out infinite alternate;pointer-events:none;z-index:1}" +
 
             "#menuai-plate-badge{position:absolute;top:0px;right:5px;background:#ef4444;color:#fff;" +
             "font-size:11px;font-weight:700;min-width:20px;height:20px;border-radius:10px;" +
             "display:flex;align-items:center;justify-content:center;padding:0 5px;" +
-            "font-family:Inter,sans-serif;border:2px solid #C9B896;animation:badge-pulse 2s ease-in-out infinite}" +
+            "font-family:Inter,sans-serif;border:2px solid #C9B896;animation:badge-pulse 2s ease-in-out infinite;z-index:3}" +
 
 
             /* ── OVERLAY ── */
