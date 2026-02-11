@@ -651,7 +651,7 @@
 
             /* ── LUXURY MAGIC PLATE FAB ── */
             "@keyframes plate-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}" +
-            "@keyframes plate-glow{0%,100%{opacity:.5;transform:scale(.98)}50%{opacity:.9;transform:scale(1.03)}}" +
+            "@keyframes plate-orbit{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}" +
             "@keyframes plate-sheen-drift{0%{transform:translate(-6%,-4%) rotate(-2deg);opacity:.24}" +
             "50%{opacity:.42}100%{transform:translate(6%,4%) rotate(4deg);opacity:.3}}" +
             "@keyframes badge-pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.2)}}" +
@@ -666,9 +666,11 @@
             "transition:transform .3s cubic-bezier(.175,.885,.32,1.275)}" +
             "#menuai-plate:hover{transform:translateY(-1px) scale(1.03) rotate(-1.2deg)}" +
             "#menuai-plate:active{animation:none;transform:scale(.96) rotate(0deg)}" +
-            "#menuai-plate::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border-radius:50%;" +
-            "background:radial-gradient(circle,rgba(0,0,0,0) 58%,rgba(86,220,255,0) 62%,rgba(86,220,255,.88) 67%,rgba(86,220,255,.42) 73%,rgba(86,220,255,.12) 79%,rgba(86,220,255,0) 86%);" +
-            "filter:blur(4px);mix-blend-mode:screen;opacity:.78;animation:plate-glow 3.2s ease-in-out infinite;pointer-events:none;z-index:0}" +
+            "#menuai-plate::before{content:'';position:absolute;top:-7px;left:-7px;right:-7px;bottom:-7px;border-radius:50%;" +
+            "background:conic-gradient(from 0deg,rgba(86,220,255,0) 0deg,rgba(86,220,255,0) 300deg,rgba(86,220,255,.95) 332deg,rgba(86,220,255,.35) 350deg,rgba(86,220,255,0) 360deg);" +
+            "-webkit-mask:radial-gradient(circle,transparent 57%,#000 63%,#000 74%,transparent 81%);" +
+            "mask:radial-gradient(circle,transparent 57%,#000 63%,#000 74%,transparent 81%);" +
+            "filter:blur(3.5px);mix-blend-mode:screen;opacity:.95;animation:plate-orbit 2.8s linear infinite;pointer-events:none;z-index:0}" +
             "#menuai-plate::after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;border-radius:50%;" +
             "background:linear-gradient(135deg,rgba(255,255,255,.4) 0%,rgba(255,255,255,0) 50%);" +
             "animation:plate-sheen-drift 7s ease-in-out infinite alternate;pointer-events:none;z-index:1}" +
