@@ -592,43 +592,7 @@
         // ── LUXURY MAGIC PLATE FAB ──
         var plateWrap = document.createElement("div"); plateWrap.id = "menuai-plate-wrap";
         plateWrap.innerHTML =
-            '<div id="menuai-plate" onclick="menuaiToggleMenu()">' +
-            '<svg viewBox="0 0 100 100" width="72" height="72" xmlns="http://www.w3.org/2000/svg">' +
-            '<defs>' +
-            '<radialGradient id="plate-outer" cx="45%" cy="40%" r="55%">' +
-            '<stop offset="0%" stop-color="#FAF7F2"/>' +
-            '<stop offset="50%" stop-color="#EDE6D8"/>' +
-            '<stop offset="85%" stop-color="#D8CEBD"/>' +
-            '<stop offset="100%" stop-color="#C8BBAA"/>' +
-            '</radialGradient>' +
-            '<radialGradient id="plate-inner" cx="42%" cy="38%" r="45%">' +
-            '<stop offset="0%" stop-color="#FDFCFA"/>' +
-            '<stop offset="60%" stop-color="#F0EBE0"/>' +
-            '<stop offset="100%" stop-color="#E0D8CB"/>' +
-            '</radialGradient>' +
-            '<radialGradient id="plate-shine" cx="32%" cy="28%" r="35%">' +
-            '<stop offset="0%" stop-color="rgba(255,255,255,0.9)"/>' +
-            '<stop offset="100%" stop-color="rgba(255,255,255,0)"/>' +
-            '</radialGradient>' +
-            '<filter id="plate-shadow" x="-20%" y="-10%" width="140%" height="140%">' +
-            '<feDropShadow dx="0" dy="4" stdDeviation="3" flood-opacity="0.15"/>' +
-            '</filter>' +
-            '</defs>' +
-            // Outer plate (rim)
-            '<circle cx="50" cy="50" r="48" fill="url(#plate-outer)" filter="url(#plate-shadow)"/>' +
-            // Gold rim band
-            '<circle cx="50" cy="50" r="47.5" fill="none" stroke="#C9AD6E" stroke-width="0.8" opacity="0.6"/>' +
-            '<circle cx="50" cy="50" r="46" fill="none" stroke="#C9AD6E" stroke-width="0.3" opacity="0.3"/>' +
-            // Inner well (depression)
-            '<circle cx="50" cy="50" r="34" fill="url(#plate-inner)"/>' +
-            '<circle cx="50" cy="50" r="34" fill="none" stroke="#D5CBBC" stroke-width="0.6" opacity="0.5"/>' +
-            // Subtle rim ring detail
-            '<circle cx="50" cy="50" r="40" fill="none" stroke="#D8CEBD" stroke-width="0.4" opacity="0.4"/>' +
-            // Specular highlight
-            '<ellipse cx="38" cy="35" rx="18" ry="12" fill="url(#plate-shine)"/>' +
-            // Center subtle dot (like real porcelain)
-            '<circle cx="50" cy="50" r="2" fill="none" stroke="#E0D8CB" stroke-width="0.3" opacity="0.3"/>' +
-            '</svg>' +
+            '<div id="menuai-plate" class="magic-plate" onclick="menuaiToggleMenu()">' +
             '<span id="menuai-plate-badge" style="display:none">0</span>' +
             '</div>';
         document.body.appendChild(plateWrap);
@@ -691,12 +655,18 @@
 
             "#menuai-plate-wrap{position:fixed;bottom:35px;right:25px;z-index:99990}" +
 
-            "#menuai-plate{cursor:pointer;position:relative;" +
-            "animation:plate-float 4s ease-in-out infinite;" +
-            "transition:transform .2s}" +
-            "#menuai-plate:active{animation:none;transform:scale(0.92)}" +
+            "#menuai-plate{cursor:pointer;position:relative;animation:plate-float 4s ease-in-out infinite;" +
+            "width:80px;height:80px;border-radius:50%;background:none;border:none;" +
+            "background-image:url('https://pngimg.com/d/plate_PNG50941.png');" +
+            "background-size:contain;background-repeat:no-repeat;background-position:center;" +
+            "box-shadow:0 15px 35px rgba(0,0,0,.3);" +
+            "transition:transform .3s cubic-bezier(.175,.885,.32,1.275)}" +
+            "#menuai-plate:active{animation:none;transform:scale(.95)}" +
+            "#menuai-plate::after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;border-radius:50%;" +
+            "background:linear-gradient(135deg,rgba(255,255,255,.4) 0%,rgba(255,255,255,0) 50%);" +
+            "pointer-events:none}" +
 
-            "#menuai-plate-badge{position:absolute;top:0px;right:0px;background:#ef4444;color:#fff;" +
+            "#menuai-plate-badge{position:absolute;top:0px;right:5px;background:#ef4444;color:#fff;" +
             "font-size:11px;font-weight:700;min-width:20px;height:20px;border-radius:10px;" +
             "display:flex;align-items:center;justify-content:center;padding:0 5px;" +
             "font-family:Inter,sans-serif;border:2px solid #C9B896;animation:badge-pulse 2s ease-in-out infinite}" +
