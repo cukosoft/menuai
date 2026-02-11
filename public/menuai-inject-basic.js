@@ -357,131 +357,86 @@
     window.menuaiSwitchTab = switchTab;
 
     var searchQuery = '';
-    var MENUAI_QUICK_ICONS = [
-        '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 3v18"/><path d="M8 3v18"/><path d="M16 3c2.2 0 4 1.8 4 4v14"/><path d="M16 3v8"/></svg>',
-        '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 13h16"/><path d="M6 13a6 6 0 0 1 12 0"/><path d="M6 17h12"/></svg>',
-        '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 3h8l-1 9a4 4 0 0 1-6 0z"/><path d="M12 12v7"/><path d="M8 21h8"/></svg>',
-        '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 8h11a4 4 0 1 1 0 8H4z"/><path d="M15 10h2a2 2 0 1 1 0 4h-2"/><path d="M6 20h10"/></svg>',
-        '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3c3 2 5 4.5 5 7.5A5 5 0 0 1 12 16a5 5 0 0 1-5-5.5C7 7.5 9 5 12 3z"/><path d="M9 21h6"/></svg>'
-    ];
-    var MENUAI_CARD_IMAGES = [
-        'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80',
-        'https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=900&q=80',
-        'https://images.unsplash.com/photo-1565299585323-38174c4a6d8f?auto=format&fit=crop&w=900&q=80',
-        'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=900&q=80',
-        'https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=900&q=80',
-        'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80'
-    ];
-
-    function getCardImageByIndex(idx) {
-        return MENUAI_CARD_IMAGES[Math.abs(idx) % MENUAI_CARD_IMAGES.length];
-    }
-
-    function getCardImageForName(name) {
-        var h = 0;
-        for (var i = 0; i < (name || '').length; i++) h = (h * 31 + name.charCodeAt(i)) | 0;
-        return getCardImageByIndex(h);
-    }
-
-    function buildQuickNav() {
-        var top = menuCategories.slice(0, 5);
-        if (!top.length) return '';
-        var html = '<div class="menuai-quick-nav">';
-        for (var i = 0; i < top.length; i++) {
-            var c = top[i];
-            var hasChildren = c.children && c.children.length > 0;
-            var onclick = hasChildren ?
-                'menuaiSelectParent(\'' + escAttr(c.name) + '\')' :
-                'menuaiSelectCat(\'' + escAttr(c.name) + '\')';
-            var active = (activeParent === c.name || activeCat === c.name || (!activeParent && !activeCat && i === 0));
-            var icon = MENUAI_QUICK_ICONS[i % MENUAI_QUICK_ICONS.length];
-            if (i === 0) {
-                html += '<button class="menuai-q-main' + (active ? ' active' : '') + '" onclick="' + onclick + '">' +
-                    '<span class="menuai-q-main-icon">' + icon + '</span>' +
-                    '<span class="menuai-q-main-text">' + esc(c.name) + '</span>' +
-                    '</button>';
-            } else {
-                html += '<button class="menuai-q-icon' + (active ? ' active' : '') + '" onclick="' + onclick + '">' + icon + '</button>';
-            }
-        }
-        html += '</div>';
-        return html;
-    }
-
-    function renderFloatingCTA(cartCount) {
-        var total = 0;
-        for (var i = 0; i < cart.length; i++) total += (cart[i].price * cart[i].qty);
-        return '<button class="menuai-floating-cta" onclick="menuaiSwitchTab(\'cart\')">' +
-            '<span class="menuai-floating-icon">???</span>' +
-            '<span class="menuai-floating-text">' + (cartCount > 0 ? 'Sipari?i G?r?nt?le' : 'Men?y? Ke?fet') + '</span>' +
-            '<span class="menuai-floating-sep"></span>' +
-            '<span class="menuai-floating-price">? ' + (cartCount > 0 ? total.toFixed(0) : '0') + '</span>' +
-            '</button>';
-    }
 
     function renderMenuPanel() {
         var body = document.getElementById("menuai-menu-body");
         if (!body) return;
 
+        // Tab badge count
         var cartCount = 0;
         for (var ci = 0; ci < cart.length; ci++) cartCount += cart[ci].qty;
-
+        // Tab bar
         var tabBar = '<div class="menuai-tabs">' +
             '<button class="menuai-tab' + (activeTab === 'menu' ? ' active' : '') + '" onclick="menuaiSwitchTab(\'menu\')">' +
             '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>' +
-            ' Men?</button>' +
+            ' Men\u00fc</button>' +
             '<button class="menuai-tab' + (activeTab === 'cart' ? ' active' : '') + '" onclick="menuaiSwitchTab(\'cart\')">' +
             '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg>' +
             ' Sepetim (' + cartCount + ')</button>' +
             '</div>';
 
         var html = tabBar;
+
         if (activeTab === 'cart') {
+            // ── CART TAB ──
             html += renderCartContent();
             body.innerHTML = html;
             return;
         }
 
+        // ── MENU TAB ──
         if (!menuCategories.length) {
-            html += '<div class="menuai-b-empty">Y?kleniyor...</div>';
+            html += '<div class="menuai-b-empty">Y\u00fckleniyor...</div>';
             body.innerHTML = html;
             return;
         }
 
-        html += buildQuickNav();
-        html += '<div class="menuai-main-title">Main Menu</div>';
-
+        // Arama kutusu
         var search = '<div class="menuai-b-search">' +
             '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>' +
-            '<input type="text" id="menuai-search" placeholder="?r?n ara..." value="' + esc(searchQuery) + '" oninput="menuaiSearch(this.value)">' +
+            '<input type="text" id="menuai-search" placeholder="\u00dcr\u00fcn ara..." value="' + esc(searchQuery) + '" oninput="menuaiSearch(this.value)">' +
             (searchQuery ? '<button class="menuai-b-search-clear" onclick="menuaiSearch(\'\')">&#215;</button>' : '') +
             '</div>';
+
         html += search;
 
         if (searchQuery) {
+            // Arama modunda: tüm kategorilerden eşleşen ürünleri göster
             var q = searchQuery.toUpperCase();
             var results = [];
             menuCategories.forEach(function (c) {
+                // Flat items
                 (c.items || []).forEach(function (item) {
-                    if (item.name.toUpperCase().indexOf(q) >= 0) results.push({ item: item, cat: c.name });
+                    if (item.name.toUpperCase().indexOf(q) >= 0) {
+                        results.push({ item: item, cat: c.name });
+                    }
                 });
+                // Hierarchical children
                 (c.children || []).forEach(function (child) {
                     (child.items || []).forEach(function (item) {
-                        if (item.name.toUpperCase().indexOf(q) >= 0) results.push({ item: item, cat: c.name + ' > ' + child.name });
+                        if (item.name.toUpperCase().indexOf(q) >= 0) {
+                            results.push({ item: item, cat: c.name + ' > ' + child.name });
+                        }
                     });
                 });
             });
-            html += '<div class="menuai-product-grid">';
+            html += '<div class="menuai-b-items">';
             if (results.length === 0) {
-                html += '<div class="menuai-b-empty">"' + esc(searchQuery) + '" i?in sonu? bulunamad?</div>';
+                html += '<div class="menuai-b-empty">"' + esc(searchQuery) + '" i\u00e7in sonu\u00e7 bulunamad\u0131</div>';
             } else {
-                html += '<div class="menuai-b-result-count">' + results.length + ' ?r?n bulundu</div>';
-                results.forEach(function (r) { html += buildItemHtml(r.item, r.cat); });
+                html += '<div class="menuai-b-result-count">' + results.length + ' \u00fcr\u00fcn bulundu</div>';
+                results.forEach(function (r) {
+                    html += buildItemHtml(r.item, r.cat);
+                });
             }
             html += '</div>';
         } else if (activeCat) {
+            // Kategori detay görünümü: geri butonu + ürün listesi
             var catItems = [];
+            var breadcrumb = activeCat;
+
             if (activeParent) {
+                // Hierarchical: find items in parent's child
                 menuCategories.forEach(function (c) {
                     if (c.name === activeParent) {
                         (c.children || []).forEach(function (child) {
@@ -489,6 +444,7 @@
                         });
                     }
                 });
+                breadcrumb = activeParent + ' > ' + activeCat;
             } else {
                 menuCategories.forEach(function (c) { if (c.name === activeCat) catItems = c.items || []; });
             }
@@ -497,11 +453,17 @@
                 '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>' +
                 '<span>' + (activeParent ? esc(activeParent) : 'Kategoriler') + '</span></div>';
             html += '<div class="menuai-b-cat-title">' + esc(activeCat) + '</div>';
-            html += '<div class="menuai-product-grid">';
-            if (catItems.length === 0) html += '<div class="menuai-b-empty">?r?n bulunamad?</div>';
-            else catItems.forEach(function (item) { html += buildItemHtml(item, null); });
+            html += '<div class="menuai-b-items">';
+            if (catItems.length === 0) {
+                html += '<div class="menuai-b-empty">\u00dcr\u00fcn bulunamad\u0131</div>';
+            } else {
+                catItems.forEach(function (item) {
+                    html += buildItemHtml(item, null);
+                });
+            }
             html += '</div>';
         } else if (activeParent) {
+            // Parent seçildi: alt kategorileri göster
             var parentCat = null;
             menuCategories.forEach(function (c) { if (c.name === activeParent) parentCat = c; });
 
@@ -511,25 +473,36 @@
             html += '<div class="menuai-b-cat-title">' + esc(activeParent) + '</div>';
 
             if (parentCat && parentCat.children && parentCat.children.length > 0) {
-                html += '<div class="menuai-subcat-chips">';
+                html += '<div class="menuai-b-catlist">';
                 parentCat.children.forEach(function (child) {
                     var count = (child.items || []).length;
-                    html += '<button class="menuai-subcat-chip" onclick="menuaiSelectSubCat(\'' + escAttr(activeParent) + '\',\'' + escAttr(child.name) + '\')">' +
-                        esc(child.name) + ' <span>' + count + '</span></button>';
+                    html += '<button class="menuai-b-catrow" onclick="menuaiSelectSubCat(\'' + escAttr(activeParent) + '\',\'' + escAttr(child.name) + '\')">' +
+                        '<div class="menuai-b-catrow-left">' +
+                        '<div class="menuai-b-catrow-info">' +
+                        '<span class="menuai-b-catrow-name">' + esc(child.name) + '</span>' +
+                        '<span class="menuai-b-catrow-count">' + count + ' \u00fcr\u00fcn</span>' +
+                        '</div></div>' +
+                        '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>' +
+                        '</button>';
                 });
                 html += '</div>';
             }
+            // Also show parent's own items if any
             if (parentCat && parentCat.items && parentCat.items.length > 0) {
-                html += '<div class="menuai-product-grid">';
-                parentCat.items.forEach(function (item) { html += buildItemHtml(item, null); });
+                html += '<div class="menuai-b-items">';
+                parentCat.items.forEach(function (item) {
+                    html += buildItemHtml(item, null);
+                });
                 html += '</div>';
             }
         } else {
-            html += '<div class="menuai-cards-grid">';
+            // Ana görünüm: dikey kategori listesi
+            html += '<div class="menuai-b-catlist">';
             menuCategories.forEach(function (c, i) {
                 var count = (c.items || []).length;
                 var hasChildren = c.children && c.children.length > 0;
                 if (hasChildren) {
+                    // Count total items from children
                     count = 0;
                     c.children.forEach(function (child) { count += (child.items || []).length; });
                     count += (c.items || []).length;
@@ -537,17 +510,20 @@
                 var onclick = hasChildren ?
                     'menuaiSelectParent(\'' + escAttr(c.name) + '\')' :
                     'menuaiSelectCat(\'' + escAttr(c.name) + '\')';
-                html += '<button class="menuai-cat-card" style="background-image:url(\'' + getCardImageByIndex(i) + '\')" onclick="' + onclick + '">' +
-                    '<div class="menuai-cat-card-overlay">' +
-                    '<span class="menuai-cat-card-title">' + esc(c.name) + '</span>' +
-                    '<span class="menuai-cat-card-sub">' + count + ' ?r?n</span>' +
-                    '</div></button>';
+                html += '<button class="menuai-b-catrow" onclick="' + onclick + '">' +
+                    '<div class="menuai-b-catrow-left">' +
+                    '<div class="menuai-b-catrow-info">' +
+                    '<span class="menuai-b-catrow-name">' + esc(c.name) + '</span>' +
+                    '<span class="menuai-b-catrow-count">' + count + ' \u00fcr\u00fcn</span>' +
+                    '</div></div>' +
+                    '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>' +
+                    '</button>';
             });
             html += '</div>';
         }
 
-        html += renderFloatingCTA(cartCount);
         body.innerHTML = html;
+        // Arama input'una focus koru
         if (searchQuery) {
             var inp = document.getElementById('menuai-search');
             if (inp) { inp.focus(); inp.setSelectionRange(searchQuery.length, searchQuery.length); }
@@ -556,16 +532,13 @@
 
 
     function buildItemHtml(item, catLabel) {
-        var bg = getCardImageForName(item.name || '');
-        return '<div class="menuai-product-card" style="background-image:url(\'' + bg + '\')">' +
-            '<div class="menuai-product-overlay">' +
+        return '<div class="menuai-b-item">' +
             '<div class="menuai-b-item-info">' +
             '<span class="menuai-b-item-name">' + esc(item.name) + '</span>' +
             (catLabel ? '<span class="menuai-b-item-cat">' + esc(catLabel) + '</span>' : '') +
-            '<span class="menuai-b-item-price">₺ ' + item.price + '</span>' +
+            '<span class="menuai-b-item-price">\u20BA' + item.price + '</span>' +
             '</div>' +
-            '<button class="menuai-product-add" onclick="menuaiAddToCart(\'' + escAttr(item.name) + '\',' + item.price + ')">+</button>' +
-            '</div>' +
+            '<button class="menuai-b-add" onclick="menuaiAddToCart(\'' + escAttr(item.name) + '\',' + item.price + ')">+</button>' +
             '</div>';
     }
 
@@ -708,37 +681,6 @@
             "font-family:Manrope,sans-serif;border:2px solid #C9B896;animation:badge-pulse 2s ease-in-out infinite;z-index:3}" +
             "#menuai-plate-badge.menuai-badge-empty{background:#dc2626;border-color:#7f1d1d;font-size:12px;font-weight:800;letter-spacing:.15px;min-width:62px;height:26px;padding:0 10px;animation:none;box-shadow:0 6px 14px rgba(220,38,38,.32)}" +
             "#menuai-plate-badge.menuai-badge-filled{background:#dc2626;border-color:#7f1d1d}" +
-
-            /* ?? TOP ICON NAV ?? */ +
-            ".menuai-quick-nav{display:flex;align-items:center;gap:10px;padding:10px 16px 6px}" +
-            ".menuai-q-main{display:flex;align-items:center;gap:10px;height:52px;padding:0 18px 0 0;border:none;border-radius:999px;background:rgba(255,255,255,.1);color:#fff;cursor:pointer;position:relative;overflow:hidden}" +
-            ".menuai-q-main-icon{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:2px solid rgba(255,211,107,.6);box-shadow:0 0 16px rgba(255,211,107,.38),inset 0 0 10px rgba(255,211,107,.22)}" +
-            ".menuai-q-main.active .menuai-q-main-icon{border-color:#ffd36b;box-shadow:0 0 20px rgba(255,211,107,.5),inset 0 0 12px rgba(255,211,107,.28)}" +
-            ".menuai-q-main-text{font-size:15px;font-weight:700;color:#f8fafc;white-space:nowrap;max-width:130px;overflow:hidden;text-overflow:ellipsis}" +
-            ".menuai-q-icon{width:52px;height:52px;border:none;border-radius:50%;background:rgba(255,255,255,.1);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer}" +
-            ".menuai-q-icon.active{background:rgba(255,255,255,.18);box-shadow:0 0 14px rgba(255,211,107,.35)}" +
-            ".menuai-main-title{padding:10px 20px 6px;color:#fff;font-size:40px;font-weight:800;line-height:1;letter-spacing:-1px}" +
-
-            /* ?? CARDS GRID ?? */ +
-            ".menuai-cards-grid,.menuai-product-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;padding:10px 16px 90px}" +
-            ".menuai-cat-card,.menuai-product-card{position:relative;min-height:220px;border-radius:22px;border:1px solid rgba(255,255,255,.22);background-size:cover;background-position:center;overflow:hidden;cursor:pointer;box-shadow:0 16px 34px rgba(0,0,0,.38)}" +
-            ".menuai-cat-card-overlay,.menuai-product-overlay{position:absolute;left:0;right:0;bottom:0;padding:14px 14px 12px;background:linear-gradient(180deg,rgba(0,0,0,0) 8%,rgba(0,0,0,.7) 58%,rgba(0,0,0,.84) 100%)}" +
-            ".menuai-cat-card-title{display:block;color:#fff;font-size:28px;font-weight:800;line-height:1.05;letter-spacing:-.5px}" +
-            ".menuai-cat-card-sub{display:block;color:#cbd5e1;font-size:14px;font-weight:600;margin-top:4px}" +
-            ".menuai-product-overlay{display:flex;align-items:flex-end;justify-content:space-between;gap:10px}" +
-            ".menuai-product-add{width:38px;height:38px;border-radius:50%;border:none;background:linear-gradient(180deg,#4a4f57,#2f3339);color:#fff;font-size:22px;font-weight:800;flex-shrink:0;box-shadow:0 8px 16px rgba(0,0,0,.38)}" +
-            ".menuai-subcat-chips{display:flex;gap:8px;padding:8px 16px 2px;overflow-x:auto}" +
-            ".menuai-subcat-chip{border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08);color:#fff;border-radius:999px;padding:8px 12px;font-size:12px;font-weight:700;white-space:nowrap}" +
-            ".menuai-subcat-chip span{opacity:.78}" +
-
-            /* ?? FLOATING CTA ?? */ +
-            ".menuai-floating-cta{position:sticky;bottom:14px;left:16px;right:16px;margin:0 16px 12px;height:64px;border:none;border-radius:999px;background:linear-gradient(180deg,rgba(80,82,88,.94),rgba(46,48,53,.94));color:#fff;display:flex;align-items:center;gap:12px;padding:0 18px;box-shadow:0 14px 34px rgba(0,0,0,.42),inset 0 1px 0 rgba(255,255,255,.12);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}" +
-            ".menuai-floating-icon{font-size:24px;filter:drop-shadow(0 0 8px rgba(255,211,107,.36))}" +
-            ".menuai-floating-text{font-size:15px;font-weight:700;white-space:nowrap}" +
-            ".menuai-floating-sep{width:1px;height:30px;background:rgba(255,255,255,.26);margin-left:auto}" +
-            ".menuai-floating-price{font-size:40px;font-weight:800;line-height:1;letter-spacing:-1px;white-space:nowrap}" +
-            "@media (max-width:370px){.menuai-cards-grid,.menuai-product-grid{grid-template-columns:1fr}.menuai-main-title{font-size:34px}}" +
-
 
 
 
