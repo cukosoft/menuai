@@ -620,12 +620,12 @@
         // Always refresh to upgrade old DOM from previous deployments
         plateWrap.innerHTML =
             '<button id="menuai-mini-bell" class="menuai-mini-fab menuai-mini-bell" onclick="event.stopPropagation();menuaiCallWaiter()">' +
-            '<img src="/public/assets/menuai-bell-gold.png" alt="Garson Çağır" loading="lazy" onerror="this.style.display=\'none\';this.parentNode.querySelector(\'span\').style.display=\'inline\';">' +
-            '<span style="display:none">Z</span>' +
+            '<img src="/public/assets/menuai-bell-gold.png" alt="Garson Çağır" loading="lazy" onerror="this.style.display=\'none\';this.parentNode.querySelector(\'.menuai-fallback-icon\').style.display=\'inline-flex\';">' +
+            '<span class="menuai-fallback-icon" style="display:none"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 17h5l-1.4-1.4A2 2 0 0118 14.2V11a6 6 0 10-12 0v3.2a2 2 0 01-.6 1.4L4 17h5"/><path d="M10 17a2 2 0 004 0"/></svg></span>' +
             '</button>' +
             '<button id="menuai-mini-bill" class="menuai-mini-fab menuai-mini-bill" onclick="event.stopPropagation();menuaiRequestBill()">' +
-            '<img src="/public/assets/menuai-bill-glass.png" alt="Hesap İste" loading="lazy" onerror="this.style.display=\'none\';this.parentNode.querySelector(\'span\').style.display=\'inline\';">' +
-            '<span style="display:none">H</span>' +
+            '<img src="/public/assets/menuai-bill-glass.png" alt="Hesap İste" loading="lazy" onerror="this.style.display=\'none\';this.parentNode.querySelector(\'.menuai-fallback-icon\').style.display=\'inline-flex\';">' +
+            '<span class="menuai-fallback-icon" style="display:none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h10a1 1 0 011 1v16l-2-1-2 1-2-1-2 1-2-1-2 1V4a1 1 0 011-1z"/><path d="M9 8h6M9 12h6M9 16h4"/></svg></span>' +
             '</button>' +
             '<button id="menuai-plate" class="magic-plate" onclick="menuaiPrimaryFabTap()">' +
             '<span class="menuai-orbit"></span>' +
