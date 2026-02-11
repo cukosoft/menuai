@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Supabase client
 const supabase = createClient(
   process.env.SUPABASE_URL || '',
-  process.env.SUPABASE_ANON_KEY || ''
+  process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_ANON_KEY || ''
 );
 
 // Uploads directory
@@ -465,21 +465,52 @@ var slugInfoCache = {};
 
 // Native mode restoranlar (image-based menüler)
 // Supabase'e display_mode kolonu eklenince buradan yönetilebilir
-var NATIVE_MODE_SLUGS = ['tucco']; // Görsel menüler → native-menu.html kullan
+var NATIVE_MODE_SLUGS = []; // Görsel menüler → native-menu.html kullan
 
 async function getRestaurantInfo(slug) {
   if (slugInfoCache[slug]) return slugInfoCache[slug];
-  var result = await supabase.from('restaurants').select('name, menu_url').eq('slug', slug).single();
-  if (result.data && result.data.menu_url) {
-    var parsed = new URL(result.data.menu_url);
-    var info = {
-      origin: parsed.origin,
-      name: result.data.name || slug,
-      isNative: NATIVE_MODE_SLUGS.indexOf(slug) >= 0
-    };
-    slugInfoCache[slug] = info;
-    return info;
+
+  // 1. Supabase'den dene
+  try {
+    var result = await supabase.from('restaurants').select('name, menu_url').eq('slug', slug).single();
+    if (result.data && result.data.menu_url) {
+      var parsed = new URL(result.data.menu_url);
+      var info = {
+        origin: parsed.origin,
+        name: result.data.name || slug,
+        menuUrl: result.data.menu_url,
+        isNative: NATIVE_MODE_SLUGS.indexOf(slug) >= 0
+      };
+      slugInfoCache[slug] = info;
+      return info;
+    }
+  } catch (e) { /* Supabase error, try local fallback */ }
+
+  // 2. Local fallback — extracted_menu_<slug>.json veya extracted_menu.json kontrolü
+  var localFiles = [
+    path.join(__dirname, 'extracted_menu_' + slug + '.json'),
+    path.join(__dirname, 'extracted_menu.json')
+  ];
+  for (var i = 0; i < localFiles.length; i++) {
+    if (fs.existsSync(localFiles[i])) {
+      try {
+        var localData = JSON.parse(fs.readFileSync(localFiles[i], 'utf-8'));
+        if (localData.menu_url) {
+          var parsed2 = new URL(localData.menu_url);
+          var info2 = {
+            origin: parsed2.origin,
+            name: localData.restaurant || slug,
+            isNative: false,
+            isLocal: true
+          };
+          slugInfoCache[slug] = info2;
+          console.log('[Local Fallback] ' + slug + ' → ' + parsed2.origin);
+          return info2;
+        }
+      } catch (e2) { /* skip invalid JSON */ }
+    }
   }
+
   return null;
 }
 
@@ -495,152 +526,39 @@ app.use('/p/:slug', async function (req, res) {
   if (!info) return res.status(404).send('Restoran bulunamadı');
   var origin = info.origin;
 
-  // ═══ NATIVE MODE — Image-based menüler için kendi sayfamızı sun ═══
-  if (info.isNative) {
-    // Sadece ana sayfa isteğinde native page sun (asset istekleri proxy'ye düşsün)
-    var targetPath = req.originalUrl.replace('/p/' + slug, '') || '/';
-    if (targetPath === '/' || targetPath === '' || targetPath.match(/^\/?\??/)) {
-      console.log('[Native Mode] ' + slug + ' → Kendi menü sayfamız');
-      var nativeHtml = fs.readFileSync(path.join(__dirname, 'public', 'native-menu.html'), 'utf8');
-      nativeHtml = nativeHtml
-        .replace(/__RESTAURANT_NAME__/g, info.name)
-        .replace(/__SLUG__/g, slug)
-        .replace(/__ITEM_COUNT__/g, '...')
-        .replace(/__CAT_COUNT__/g, '...');
-      res.set('Content-Type', 'text/html; charset=utf-8');
-      return res.send(nativeHtml);
-    }
-  }
-
-  // Orijinal URL'yi oluştur
+  // ═══ BASIC TIER — iframe + overlay ═══
   var targetPath = req.originalUrl.replace('/p/' + slug, '') || '/';
-  var targetUrl = origin + targetPath;
 
-  try {
-    var axiosConfig = {
-      method: req.method.toLowerCase(),
-      url: targetUrl,
-      responseType: 'arraybuffer',
-      decompress: false, // Önemli: Axios'un otomatik decompress'ini kapat
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1',
-        'Accept': req.headers.accept || '*/*',
-        'Accept-Language': 'tr-TR,tr;q=0.9',
-        'Accept-Encoding': 'identity', // Sıkıştırma isteme - raw HTML al
-        'Referer': origin + '/'
-      },
-      maxRedirects: 5,
-      timeout: 15000,
-      validateStatus: function () { return true; }
-    };
+  if (targetPath === '/' || targetPath === '') {
+    console.log('[Basic Tier] ' + slug + ' → iframe wrapper sayfası');
+    var iframeSrc = info.menuUrl || (origin + '/');
+    var basicJsRaw = fs.readFileSync(path.join(__dirname, 'public', 'menuai-inject-basic.js'), 'utf8');
+    var basicJs = basicJsRaw
+      .replace(/__MENUAI_SLUG__/g, slug)
+      .replace(/__MENUAI_ORIGIN__/g, origin);
 
-    // POST istekleri için body'yi de aktar
-    if (req.method !== 'GET' && req.method !== 'HEAD') {
-      axiosConfig.data = req.body;
-    }
+    var wrapperHtml = '<!DOCTYPE html><html lang="tr"><head>' +
+      '<meta charset="UTF-8">' +
+      '<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">' +
+      '<title>' + (info.name || 'Menü') + ' - MenüAi</title>' +
+      '<style>' +
+      '*{margin:0;padding:0;box-sizing:border-box}' +
+      'html,body{width:100%;height:100%;overflow:hidden}' +
+      '#menuai-iframe-wrap{position:fixed;top:0;left:0;right:0;bottom:64px;z-index:1}' +
+      '#menuai-iframe-wrap iframe{width:100%;height:100%;border:none}' +
+      '</style></head><body>' +
+      '<div id="menuai-iframe-wrap">' +
+      '<iframe src="' + iframeSrc + '" allow="fullscreen" loading="eager"></iframe>' +
+      '</div>' +
+      '<scr' + 'ipt>' + basicJs + '</scr' + 'ipt>' +
+      '</body></html>';
 
-    var response = await axios(axiosConfig);
-    var contentType = response.headers['content-type'] || '';
-    var contentEncoding = response.headers['content-encoding'] || '';
-
-    // HTML ise: iframe engellerini kaldır + enjeksiyon scripti ekle
-    if (contentType.includes('text/html')) {
-      var htmlBuffer = response.data;
-      if (contentEncoding === 'gzip') htmlBuffer = zlib.gunzipSync(response.data);
-      else if (contentEncoding === 'br') htmlBuffer = zlib.brotliDecompressSync(response.data);
-      else if (contentEncoding === 'deflate') htmlBuffer = zlib.inflateSync(response.data);
-
-      var html = htmlBuffer.toString('utf-8');
-
-      // DEBUG: Track img count at each step
-      var _dbg = function (step, h) { var c = (h.match(/<img/g) || []).length; console.log('[DEBUG-IMG] ' + step + ': ' + c + ' img tags, html len=' + h.length); return c; };
-      _dbg('0-raw', html);
-
-      // ═══ LAZY-LOADING FIX (OCR overlay için) ═══
-      // Proxy altında browser native lazy-loading çalışmaz (scroll intersection tetiklenmez)
-      // loading="lazy" kaldır → tüm görseller hemen yüklenir
-      var ocrPositionFile = path.join(__dirname, 'public', 'ocr-positions-' + slug + '.json');
-      var hasOCR = fs.existsSync(ocrPositionFile);
-      if (hasOCR) {
-        // loading="lazy" → kaldır (eager loading yap)
-        html = html.replace(/\s+loading\s*=\s*["']lazy["']/gi, '');
-        // decoding="async" → kaldır (sync render)
-        html = html.replace(/\s+decoding\s*=\s*["']async["']/gi, '');
-        // sizes="auto, ..." → auto prefix'ini kaldır
-        html = html.replace(/sizes\s*=\s*["']auto,\s*/gi, 'sizes="');
-        console.log('[OCR Lazy-Fix] ' + slug + ' için lazy-loading kaldırıldı (eager loading)');
-      }
-      _dbg('1-lazy-fix', html);
-
-      // Enjeksiyon scripti — harici dosyadan oku, placeholder'ları değiştir
-      var injectJsRaw = fs.readFileSync(path.join(__dirname, 'public', 'menuai-inject.js'), 'utf8');
-      var injectJs = injectJsRaw
-        .replace(/__MENUAI_SLUG__/g, slug)
-        .replace(/__MENUAI_ORIGIN__/g, origin);
-      var injectScript = '<scr' + 'ipt>' + injectJs + '</scr' + 'ipt>';
-
-      // OCR Overlay — image-based menüler için
-      if (hasOCR) {
-        console.log('[OCR Overlay] ' + slug + ' için pozisyon verisi bulundu, overlay inject ediliyor');
-        var ocrJsRaw = fs.readFileSync(path.join(__dirname, 'public', 'menuai-ocr-overlay.js'), 'utf8');
-        var ocrJs = ocrJsRaw
-          .replace(/__MENUAI_SLUG__/g, slug)
-          .replace(/__MENUAI_ORIGIN__/g, '');
-        injectScript += '<scr' + 'ipt>' + ocrJs + '</scr' + 'ipt>';
-      }
-
-      _dbg('2-before-path-rewrite', html);
-
-      // HTML içindeki /xxx şeklindeki absolute path URL'leri proxy path'ine çevir
-      // src="/assets/..." → src="/p/mps27/assets/..."
-      // href="/dist/..." → href="/p/mps27/dist/..."
-      var proxyBase = '/p/' + slug;
-      html = html.replace(/(src|href|action)=(["'])\/((?!\/|p\/|api\/menu)[^"']*)\2/gi, function (match, attr, q, path) {
-        return attr + '=' + q + proxyBase + '/' + path + q;
-      });
-      _dbg('3-after-path-rewrite', html);
-
-      // Scripti head'in en başına ekle (SPA bundle'dan önce)
-      html = html.replace(/<head([^>]*)>/i, '<head$1>' + injectScript);
-      _dbg('4-after-inject', html);
-
-      res.set('Content-Type', 'text/html; charset=utf-8');
-      res.removeHeader('X-Frame-Options');
-      res.removeHeader('Content-Security-Policy');
-      return res.send(html);
-    }
-
-    // CSS ise: url() referanslarını proxy path'ine yaz
-    if (contentType.includes('text/css')) {
-      var css = response.data.toString('utf-8');
-      // Tam URL'leri proxy path'ine çevir
-      css = css.replace(/url\(["']?(https?:\/\/[^"')]+)["']?\)/gi, function (match, url) {
-        if (url.startsWith('data:')) return match;
-        try {
-          var u = new URL(url);
-          if (u.origin === origin) {
-            return 'url("/p/' + slug + u.pathname + u.search + '")';
-          }
-        } catch (e) { }
-        return match;
-      });
-      res.set('Content-Type', contentType);
-      res.set('Cache-Control', 'public, max-age=3600');
-      return res.send(css);
-    }
-
-    // Diğer asset'ler (JS, images, fonts vs.) — direkt aktar
-    res.set('Content-Type', contentType);
-    if (contentType.includes('javascript') || contentType.includes('font') || contentType.includes('image')) {
-      res.set('Cache-Control', 'public, max-age=3600');
-    }
-    res.set('Access-Control-Allow-Origin', '*');
-    res.send(response.data);
-
-  } catch (error) {
-    console.error('[Proxy] ' + req.method + ' ' + targetUrl + ' → Error:', error.message);
-    res.status(502).send('Proxy error');
+    res.set('Content-Type', 'text/html; charset=utf-8');
+    return res.send(wrapperHtml);
   }
+
+  // Alt-path istekleri → 404 (iframe modunda gerek yok)
+  res.status(404).send('Not found');
 });
 
 // ==============================================
@@ -649,43 +567,93 @@ app.use('/p/:slug', async function (req, res) {
 app.get('/api/menu-items/:slug', async function (req, res) {
   try {
     var slug = req.params.slug;
+
+    // 1. Supabase'den dene
     var restResult = await supabase
       .from('restaurants')
       .select('id')
       .eq('slug', slug)
       .single();
 
-    if (!restResult.data) return res.json({ success: false, error: 'Restaurant not found' });
-
-    var catResult = await supabase
-      .from('menu_categories')
-      .select('id, name, display_order')
-      .eq('restaurant_id', restResult.data.id)
-      .order('display_order');
-
-    var categories = catResult.data;
-    if (!categories || categories.length === 0) {
-      return res.json({ success: true, categories: [] });
-    }
-
-    var result = [];
-    for (var i = 0; i < categories.length; i++) {
-      var cat = categories[i];
-      var itemsResult = await supabase
-        .from('menu_items')
-        .select('name, price, description')
-        .eq('category_id', cat.id)
+    if (restResult.data) {
+      var catResult = await supabase
+        .from('menu_categories')
+        .select('id, name, display_order, parent_id')
+        .eq('restaurant_id', restResult.data.id)
         .order('display_order');
 
-      result.push({
-        name: cat.name,
-        items: (itemsResult.data || []).map(function (item) {
-          return { name: item.name, price: item.price, description: item.description || '' };
-        })
-      });
+      var categories = catResult.data;
+      if (categories && categories.length > 0) {
+        // Load all items in one batch by category IDs
+        var categoryIds = categories.map(function (c) { return c.id; });
+        var allItemsResult = await supabase
+          .from('menu_items')
+          .select('name, price, description, category_id')
+          .in('category_id', categoryIds)
+          .order('display_order');
+
+        var allItems = allItemsResult.data || [];
+
+        // Build item map by category_id
+        var itemsByCategory = {};
+        allItems.forEach(function (item) {
+          if (!itemsByCategory[item.category_id]) itemsByCategory[item.category_id] = [];
+          itemsByCategory[item.category_id].push({
+            name: item.name, price: item.price, description: item.description || ''
+          });
+        });
+
+        // Separate parents and children
+        var parentCats = categories.filter(function (c) { return !c.parent_id; });
+        var childCats = categories.filter(function (c) { return !!c.parent_id; });
+
+        // Check if we have hierarchy
+        var hasHierarchy = childCats.length > 0;
+
+        var result = [];
+        if (hasHierarchy) {
+          // Hierarchical: parent → children with items
+          parentCats.forEach(function (parent) {
+            var children = childCats.filter(function (c) { return c.parent_id === parent.id; });
+            var parentItems = itemsByCategory[parent.id] || [];
+
+            if (children.length > 0) {
+              // Parent with children
+              var childData = children.map(function (child) {
+                return { name: child.name, items: itemsByCategory[child.id] || [] };
+              });
+              result.push({ name: parent.name, children: childData, items: parentItems });
+            } else {
+              // Parent without children (flat)
+              result.push({ name: parent.name, items: parentItems });
+            }
+          });
+        } else {
+          // Flat: just categories with items
+          parentCats.forEach(function (cat) {
+            result.push({ name: cat.name, items: itemsByCategory[cat.id] || [] });
+          });
+        }
+        return res.json({ success: true, categories: result });
+      }
     }
 
-    res.json({ success: true, categories: result });
+    // 2. Local fallback — extracted_menu.json
+    var localFiles = [
+      path.join(__dirname, 'extracted_menu_' + slug + '.json'),
+      path.join(__dirname, 'extracted_menu.json')
+    ];
+    for (var j = 0; j < localFiles.length; j++) {
+      if (fs.existsSync(localFiles[j])) {
+        var localData = JSON.parse(fs.readFileSync(localFiles[j], 'utf-8'));
+        if (localData.categories) {
+          console.log('[Menu API Local Fallback] ' + slug + ' → ' + localFiles[j]);
+          return res.json({ success: true, categories: localData.categories });
+        }
+      }
+    }
+
+    return res.json({ success: true, categories: [] });
   } catch (error) {
     console.error('[Menu Items API] Error:', error.message);
     res.json({ success: false, error: error.message });
@@ -743,6 +711,111 @@ app.get('/api/menu/items', function (req, res) {
 app.post('/upload', upload.single('pdf'), function (req, res) {
   if (!req.file) return res.status(400).send('Dosya yüklenemedi');
   res.redirect('/view?id=' + req.file.filename);
+});
+
+// ==============================================
+// SPA CHUNK CATCH-ALL — Root'tan gelen SPA asset isteklerini orijinal siteye proxy et
+// Webpack chunk'ları (fnd-*.js), locale dosyaları vs. root / dan yüklenir
+// ==============================================
+app.use(async function (req, res, next) {
+  // Sadece GET istekleri ve bilinen asset uzantıları
+  if (req.method !== 'GET') return next();
+
+  var p = req.path;
+  // SPA asset pattern: .js, .css, .json, .woff, .woff2, .ttf, .png, .jpg, .svg, .ico uzantıları
+  // veya /locales/ dizini, veya fnd-* pattern
+  var isAsset = /\.(js|css|json|woff2?|ttf|eot|png|jpe?g|gif|svg|ico|webp|map)(\?.*)?$/i.test(p);
+  var isSpaChunk = /^\/fnd-/i.test(p) || /^\/locales\//i.test(p) || /^\/static\//i.test(p);
+
+  if (!isAsset && !isSpaChunk) return next();
+
+  // Origin'i bul: önce global cache, sonra Referer header'ından slug çıkar
+  var proxyOrigin = global.__lastProxyOrigin;
+  if (!proxyOrigin) {
+    // Referer header'ından slug çıkar
+    var ref = req.headers.referer || req.headers.referrer || '';
+    var slugMatch = ref.match(/\/p\/([a-z0-9_-]+)/i);
+    if (slugMatch) {
+      var refSlug = slugMatch[1];
+      var info = await getRestaurantInfo(refSlug);
+      if (info) {
+        proxyOrigin = info.origin;
+        global.__lastProxyOrigin = proxyOrigin;
+        global.__lastProxySlug = refSlug;
+      }
+    }
+  }
+
+  if (!proxyOrigin) return next();
+
+  var targetUrl = proxyOrigin + p;
+  console.log('[SPA Catch-All] ' + p + ' → ' + targetUrl);
+
+  try {
+    var response = await axios({
+      method: 'get',
+      url: targetUrl,
+      responseType: 'arraybuffer',
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X)',
+        'Accept': req.headers.accept || '*/*',
+        'Accept-Encoding': 'identity',
+        'Referer': proxyOrigin + '/'
+      },
+      decompress: false, // Manuel decompression yapıyoruz
+      timeout: 10000,
+      validateStatus: function () { return true; }
+    });
+    if (response.status >= 400) return next();
+    var ct = response.headers['content-type'] || 'application/octet-stream';
+    var ce = response.headers['content-encoding'] || '';
+
+    // JS ise: redirect kodlarını etkisizleştir - KAPSAMLI DOMAIN FIX
+    if (ct.includes('javascript') || ct.includes('application/x-javascript') || req.path.endsWith('.js')) {
+      try {
+        var jsBuffer = response.data;
+        if (ce === 'gzip') jsBuffer = zlib.gunzipSync(response.data);
+        else if (ce === 'br') jsBuffer = zlib.brotliDecompressSync(response.data);
+        else if (ce === 'deflate') jsBuffer = zlib.inflateSync(response.data);
+
+        var js = jsBuffer.toString('utf-8');
+
+        // Domain check bypass - tüm olası domain kontrol mekanizmalarını orijinal domain ile değiştir
+        js = js.replace(/window\.location\.hostname/g, '"qr.finedinemenu.com"');
+        js = js.replace(/location\.hostname/g, '"qr.finedinemenu.com"');
+        js = js.replace(/window\.location\.host/g, '"qr.finedinemenu.com"');
+        js = js.replace(/location\.host/g, '"qr.finedinemenu.com"');
+        js = js.replace(/document\.domain/g, '"qr.finedinemenu.com"');
+        js = js.replace(/location\.origin/g, '"https://qr.finedinemenu.com"');
+        js = js.replace(/window\.location\.origin/g, '"https://qr.finedinemenu.com"');
+
+        res.set('Content-Type', 'application/javascript; charset=utf-8');
+        res.removeHeader('Content-Encoding'); // Raw gönderiyoruz
+        res.removeHeader('Content-Length');
+        res.set('Cache-Control', 'public, max-age=3600');
+        res.set('Access-Control-Allow-Origin', '*');
+        res.send(js);
+        return;
+      } catch (e) {
+        console.error('[SPA Catch-All JS Patch Error] ' + e.message);
+        // Fallback: raw gönder
+        res.set('Content-Type', ct);
+        if (ce) res.set('Content-Encoding', ce);
+        res.set('Cache-Control', 'public, max-age=3600');
+        res.set('Access-Control-Allow-Origin', '*');
+        res.send(response.data);
+        return;
+      }
+    }
+
+    res.set('Content-Type', ct);
+    res.set('Cache-Control', 'public, max-age=3600');
+    res.set('Access-Control-Allow-Origin', '*');
+    res.send(response.data);
+  } catch (e) {
+    console.error('[SPA Catch-All] Error:', e.message);
+    next();
+  }
 });
 
 // Start server

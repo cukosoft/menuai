@@ -1,0 +1,1677 @@
+{
+  "restaurant": "Maki Uğur Mumcu",
+  "menu_url": "https://qr.finedinemenu.com/maki-ugur-mumcu",
+  "extracted_at": "2026-02-11T09:56:51.270Z",
+  "categories": [
+    {
+      "name": "MAKİ MAGAZINE - Başlangıçlar",
+      "items": [
+        {
+          "name": "Balzamik Domatesli Mozzarella",
+          "price": 130,
+          "description": "Taze fesleğenler ile servis edilir."
+        },
+        {
+          "name": "Burrata",
+          "price": 150,
+          "description": ""
+        },
+        {
+          "name": "Domates Soslu Mantar",
+          "price": 115,
+          "description": "Sarımsaklı ekmek ile"
+        },
+        {
+          "name": "Tereyağlı Enginar",
+          "price": 145,
+          "description": "Ezmeler ile servis edilir."
+        },
+        {
+          "name": "Deniztarağı Champagne Soslu",
+          "price": 245,
+          "description": "Deniztarağı, champagne sosunda pişirilmiş, maydanoz ve limon ile tatlandırılmış."
+        },
+        {
+          "name": "Yeşil Elmalı Keçi Peyniri",
+          "price": 125,
+          "description": ""
+        },
+        {
+          "name": "Füme Somon Füme",
+          "price": 185,
+          "description": ""
+        },
+        {
+          "name": "Stracciatella Mozzarella",
+          "price": 165,
+          "description": "Enginar ile servis edilir."
+        }
+      ]
+    },
+    {
+      "name": "MAKİ MAGAZINE - Makarnalar",
+      "items": [
+        {
+          "name": "Spagetti Al Pomodoro",
+          "price": 140,
+          "description": "Domates sosu, fesleğen ve parmesan peyniri ile"
+        },
+        {
+          "name": "Penne Arrabbiata",
+          "price": 150,
+          "description": "Acı soslu, domates ve sarımsaklı"
+        },
+        {
+          "name": "Gnocchi with Cream Cheese",
+          "price": 175,
+          "description": "Krem peynirli gnocchi"
+        },
+        {
+          "name": "Ricotta Tortellini Alla Panna",
+          "price": 195,
+          "description": "Ricotta peynirli Tortellini kremalı mantar sosu ile."
+        },
+        {
+          "name": "Somonlu Tagliolini Makarna",
+          "price": 245,
+          "description": "Somon, krema, dereotu, parmesan peyniri."
+        }
+      ]
+    },
+    {
+      "name": "MAKİ MAGAZINE - Salatalar",
+      "items": [
+        {
+          "name": "Yeşillikler Mevsim Salata",
+          "price": 130,
+          "description": "Taze mevsimlik yeşillikler."
+        },
+        {
+          "name": "Akdeniz Salatası",
+          "price": 150,
+          "description": "Akdeniz yeşillikleri, domates, salatalık, biber, soğan, zeytin ve beyaz peynir."
+        },
+        {
+          "name": "Izgara Somonlu Yeşil Salata",
+          "price": 260,
+          "description": "Izgara somon, yeşillikler, domates, salatalık, havuç, mısır ve turp."
+        },
+        {
+          "name": "White Chicken Basil Salad",
+          "price": 230,
+          "description": "Haşlanmış tavuk, fesleğenli mayonez, roka, domates, salatalık ve mısır."
+        },
+        {
+          "name": "Sezar Salata",
+          "price": 145,
+          "description": "Marul, kruton, parmesan peyniri, sezar sosu."
+        },
+        {
+          "name": "Greenland Salatası",
+          "price": 155,
+          "description": "Yeşil salata, domates, salatalık, havuç, mısır, turp ve ceviz."
+        }
+      ]
+    },
+    {
+      "name": "MAKİ MAGAZINE - Ana Yemekler",
+      "items": [
+        {
+          "name": "Kuzu İncik Mantarlı Risotto ile",
+          "price": 395,
+          "description": ""
+        },
+        {
+          "name": "Parmesan Cheese Chicken",
+          "price": 275,
+          "description": ""
+        },
+        {
+          "name": "Dört Peynirli Tavuk",
+          "price": 265,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "MAKİ MAGAZINE - Pizza Çeşitleri",
+      "items": [
+        {
+          "name": "Pizza Margarita",
+          "price": 165,
+          "description": ""
+        },
+        {
+          "name": "Pizza Napoletana",
+          "price": 215,
+          "description": ""
+        },
+        {
+          "name": "Pizza Funghi",
+          "price": 245,
+          "description": ""
+        },
+        {
+          "name": "Pizza Quattro Formaggi",
+          "price": 275,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "MAKİ MAGAZINE - Burgerler",
+      "items": [
+        {
+          "name": "Hamburger",
+          "price": 185,
+          "description": ""
+        },
+        {
+          "name": "Cheeseburger",
+          "price": 195,
+          "description": ""
+        },
+        {
+          "name": "Cowboy Burger",
+          "price": 215,
+          "description": ""
+        },
+        {
+          "name": "Mexican Burger",
+          "price": 225,
+          "description": ""
+        },
+        {
+          "name": "Vazgeçilmez Tatlılar",
+          "price": 0,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "MAKİ MAGAZINE - Tatlılar",
+      "items": [
+        {
+          "name": "Sıcak Çikolatalı Sufle",
+          "price": 125,
+          "description": ""
+        },
+        {
+          "name": "San Sebastian Cheesecake",
+          "price": 135,
+          "description": ""
+        },
+        {
+          "name": "Brownie",
+          "price": 115,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "MAKİ MAGAZINE - Çocuk Menüsü",
+      "items": [
+        {
+          "name": "Çocuk Menüsü",
+          "price": 0,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "SUSHIMAKİ - SICAK BAŞLANGIÇLAR",
+      "items": [
+        {
+          "name": "Shitake Maki",
+          "price": 120,
+          "description": "Taze shitake mantarlı, krem peynirli, teriyaki soslu, tempura çıtırıyla…"
+        },
+        {
+          "name": "Yasai Roll",
+          "price": 110,
+          "description": "Kök sebzeler, kuşkonmaz, dolmalık biberli, avokadolu, wasabilli mayonezli…"
+        },
+        {
+          "name": "Crispy Crab Masago Roll",
+          "price": 135,
+          "description": "Taze yengeçli, masagolu, krem peynirli, acı soslu, tempura çıtırıyla…"
+        },
+        {
+          "name": "Karidesli Mango King Roll",
+          "price": 145,
+          "description": "Karides tempura, mango, krem peyniri, teriyaki soslu, susamlı, acı soslu mayonezli…"
+        },
+        {
+          "name": "Green Spring",
+          "price": 135,
+          "description": "Karides tempura, havuçlu, salatalıklı, avokadolu, teriyaki soslu…"
+        }
+      ]
+    },
+    {
+      "name": "SUSHIMAKİ - BAŞLANGIÇLAR",
+      "items": [
+        {
+          "name": "Edamame",
+          "price": 100,
+          "description": "Deniz tuzu ile"
+        },
+        {
+          "name": "Chicken Spring Roll",
+          "price": 110,
+          "description": "Tavuklu sebzeli özel sosu ile"
+        },
+        {
+          "name": "Crispy Cheese Rolls",
+          "price": 130,
+          "description": "Özel sosu ile"
+        },
+        {
+          "name": "Crispy Prawn Rolls",
+          "price": 145,
+          "description": "Özel sosu ile"
+        },
+        {
+          "name": "Goma Wakame",
+          "price": 110,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "SUSHIMAKİ - SALATALAR",
+      "items": [
+        {
+          "name": "Green House",
+          "price": 150,
+          "description": "Yeşilliklerle hazırlanmış mevsim salatası"
+        },
+        {
+          "name": "Chef Special Salamanca",
+          "price": 170,
+          "description": "Özel sos ile hazırlanmış özel salata. İçerisinde karides, somon, ton balığı"
+        },
+        {
+          "name": "Ramenli Salatası",
+          "price": 160,
+          "description": "Karışık yeşillik ile hazırlanmış salata"
+        },
+        {
+          "name": "Wakame Sulu Marine",
+          "price": 140,
+          "description": "Wakame deniz yosunu, susam"
+        },
+        {
+          "name": "Hummalı Mezeler",
+          "price": 145,
+          "description": "Pancar ve brokoli salatası, california, havuç salatası, özel sosu ile"
+        },
+        {
+          "name": "Matcha Truffle Marine",
+          "price": 160,
+          "description": "Matcha ile marine edilmiş bamya, truffle mantarlı, özel sosu ile"
+        },
+        {
+          "name": "Kavunlu Marine",
+          "price": 140,
+          "description": "Kavunlu, salatalıklı, marine edilmiş, özel sosu ile"
+        },
+        {
+          "name": "Kim chi Wakame",
+          "price": 150,
+          "description": "Kim chi soslu, wakame deniz yosunu"
+        },
+        {
+          "name": "Crispy Çıtır",
+          "price": 150,
+          "description": "Pancar cipsleri, marine edilmiş özel sosu ile"
+        }
+      ]
+    },
+    {
+      "name": "SUSHIMAKİ - SOĞUK BAŞLANGIÇLAR",
+      "items": [
+        {
+          "name": "Sashimi Karpaçyo",
+          "price": 170,
+          "description": "Somon fileto, özel marine edilmiş, zencefilli, özel sosu ile"
+        },
+        {
+          "name": "Ahtapot Karpaçyo",
+          "price": 170,
+          "description": "Ahtapot fileto, zeytinyağı, sarımsak ve özel sosu ile"
+        },
+        {
+          "name": "Somon Tataki",
+          "price": 165,
+          "description": "Somon marine edilmiş, zencefil, susamlı, avokado, özel sosu ile"
+        },
+        {
+          "name": "Ton Tataki",
+          "price": 175,
+          "description": "Ton balığı marine edilmiş, susamlı, zencefilli ve özel sosu ile"
+        },
+        {
+          "name": "Wagyu Karpaçyo",
+          "price": 210,
+          "description": "Özel marine edilmiş, truffle mantarlı"
+        }
+      ]
+    },
+    {
+      "name": "SUSHIMAKİ - NİGRİLER",
+      "items": [
+        {
+          "name": "Tobiko Nigiri",
+          "price": 110,
+          "description": "Tobiko yumurtası"
+        },
+        {
+          "name": "Somon Nigiri",
+          "price": 115,
+          "description": "Somonlu nigiri"
+        },
+        {
+          "name": "Avokado Nigiri",
+          "price": 110,
+          "description": "Avokadolu nigiri"
+        },
+        {
+          "name": "Karides Nigiri",
+          "price": 120,
+          "description": "Karidesli nigiri"
+        },
+        {
+          "name": "Unagi Nigiri",
+          "price": 130,
+          "description": "Yılan balıklı nigiri"
+        }
+      ]
+    },
+    {
+      "name": "SUSHIMAKİ - SASHİMİ",
+      "items": [
+        {
+          "name": "Somon Sashimi",
+          "price": 150,
+          "description": "Somon fileto"
+        },
+        {
+          "name": "Ton Sashimi",
+          "price": 180,
+          "description": "Ton balığı fileto"
+        },
+        {
+          "name": "Ahtapot Sashimi",
+          "price": 210,
+          "description": "Ahtapot fileto"
+        },
+        {
+          "name": "Deniztarağı Sashimi",
+          "price": 250,
+          "description": "Deniztarağı fileto"
+        }
+      ]
+    },
+    {
+      "name": "SUSHIMAKİ - RED EDİTİON",
+      "items": [
+        {
+          "name": "Volcano Roll",
+          "price": 230,
+          "description": "Spice company özel sosu, tobiko, (Yengeçli)"
+        },
+        {
+          "name": "Spicy Strawberry Sushi",
+          "price": 220,
+          "description": "Spice company özel soslu, çilekli, avokadolu, tobikolu, özel sosuyla…"
+        },
+        {
+          "name": "Red Velvet Sushi",
+          "price": 210,
+          "description": "Karides tempura, özel soslu, avokadolu, krem peynirli, susamlı, çıtırıyla…"
+        },
+        {
+          "name": "O’Fish Only Sushi",
+          "price": 220,
+          "description": "Somon, ton balığı, ahtapot, karides tempura, avokadolu, tobiko içerikli…"
+        }
+      ]
+    },
+    {
+      "name": "SUSHIMAKİ - BLACK EDİTİON",
+      "items": [
+        {
+          "name": "Winner Take Roll",
+          "price": 240,
+          "description": "Karidesli, avokadolu, krem peynirli, kaplan karidesli…"
+        },
+        {
+          "name": "Pork & Rolls",
+          "price": 230,
+          "description": "Karides tempura, krem peynirli, domuz pastırmalı, avokadolu, susamlı…"
+        },
+        {
+          "name": "Flamingo The New Black",
+          "price": 230,
+          "description": "Karides tempura, avokadolu, salatalıklı, tobikolu, karidesli, susamlı, krem peynirli…"
+        },
+        {
+          "name": "Rainbow Perfect Rolls",
+          "price": 250,
+          "description": "Ton balıklı, somonlu, karidesli, yılan balıklı, tobikolu, avokadolu, krem peynirli…"
+        }
+      ]
+    },
+    {
+      "name": "SUSHIMAKİ - BAKED EDİTİON",
+      "items": [
+        {
+          "name": "Chicken Up Roll",
+          "price": 220,
+          "description": "Kremalı tavuk, çiftlik mantarlı, karamelize soğanlı, parmesanlı, trüf yağlı…"
+        },
+        {
+          "name": "Salmon Hilfiger Roll",
+          "price": 230,
+          "description": "Karides tempura, krem peynirli, somon, kabak, truffle mantarlı, soğanlı, parmesanlı…"
+        }
+      ]
+    },
+    {
+      "name": "SUSHIMAKİ - HAKİKO EXCLUSİVE EDİTİON",
+      "items": [
+        {
+          "name": "Sea Cloud Style River Style",
+          "price": 240,
+          "description": "Somon füme, avokado, salatalık, krem peynirli, susamlı, deniz yosunu, zencefilli…"
+        },
+        {
+          "name": "Korean Black Sea Roll",
+          "price": 250,
+          "description": "Kore stili acı soslu yılan balığı, kaplan karidesi, avokadolu, çıtırıyla…"
+        },
+        {
+          "name": "Chef Special",
+          "price": 260,
+          "description": "Yengeçli, karides tempura, mango sosu, çıtır yengeç, salatalık, susamlı, zencefilli…"
+        },
+        {
+          "name": "Tennessee Roll",
+          "price": 250,
+          "description": "Kaplan karidesi, avokado, mayonez, özel soslu, pul biberli, mayonez, mango…"
+        }
+      ]
+    },
+    {
+      "name": "SUSHIMAKİ - RAMEN (SUSHI WORLD)",
+      "items": [
+        {
+          "name": "Chicken Tonkotsu Ramen",
+          "price": 250,
+          "description": "Chicken broth with noodles, spinach, mushrooms, scallions, nori and soft boiled egg"
+        },
+        {
+          "name": "California Use",
+          "price": 280,
+          "description": "California Roll With Tuna & Salmon, Cucumber & Avocado with Ginger Scallions"
+        },
+        {
+          "name": "Handmade Mazu",
+          "price": 310,
+          "description": "Tonkotsu Vegan Mazu Ramen for the Best Taste of Vegan Mazu Ramen"
+        },
+        {
+          "name": "Mushroom Mazu",
+          "price": 300,
+          "description": "Fresh Mushroom With a Unique Broth With a Crispy Fried Onion Broth"
+        },
+        {
+          "name": "Hakka Konketsu",
+          "price": 320,
+          "description": "Thick Noodles, Unique Mazu Broth With a Hakka Noodles, Hakka Noodles, Black Garlic"
+        },
+        {
+          "name": "Garden Mazu",
+          "price": 310,
+          "description": "Tofu Seasoned With Unique Broth, Unique Mazu Broth With Hakka Noodles"
+        }
+      ]
+    },
+    {
+      "name": "SUSHIMAKİ - Nigel Mazu",
+      "items": [
+        {
+          "name": "",
+          "price": 300,
+          "description": "Fresh Mazu With Unique Mazu Broth. Taste Nigel With Taste Nigel On Hakka Noodles"
+        }
+      ]
+    },
+    {
+      "name": "SUSHIMAKİ - TATLI & DONDURMA",
+      "items": [
+        {
+          "name": "Chesee Scream",
+          "price": 150,
+          "description": "Frambuaz soslu özel chesee üzerine nar ekşili özel sosu"
+        },
+        {
+          "name": "İcecream Tart",
+          "price": 150,
+          "description": "Çikolata çikolata, fıstıklı, vanilya, muzlu"
+        },
+        {
+          "name": "Tiramisu",
+          "price": 140,
+          "description": "Kahveli ve kakaolu özel krema. İçerisinde bisküvisi, özel sosuyla"
+        },
+        {
+          "name": "Wakamely Dondurma",
+          "price": 130,
+          "description": "Wakamely deniz yosunu"
+        }
+      ]
+    },
+    {
+      "name": "SUSHIMAKİ - İÇECEKLER",
+      "items": [
+        {
+          "name": "Coca Cola",
+          "price": 40,
+          "description": ""
+        },
+        {
+          "name": "Coca Cola Şekersiz",
+          "price": 40,
+          "description": ""
+        },
+        {
+          "name": "Fanta",
+          "price": 40,
+          "description": ""
+        },
+        {
+          "name": "Sprite",
+          "price": 40,
+          "description": ""
+        },
+        {
+          "name": "Fuse Tea Şeftali",
+          "price": 45,
+          "description": ""
+        },
+        {
+          "name": "Fuse Tea Limon",
+          "price": 45,
+          "description": ""
+        },
+        {
+          "name": "Soda",
+          "price": 35,
+          "description": ""
+        },
+        {
+          "name": "Su",
+          "price": 20,
+          "description": ""
+        },
+        {
+          "name": "Perrier Maden Suyu",
+          "price": 65,
+          "description": ""
+        },
+        {
+          "name": "Bluetooth Maden Suyu",
+          "price": 70,
+          "description": "Greyfurt - Mandalina aromalı"
+        }
+      ]
+    },
+    {
+      "name": "COCKTAIL COLLECTION - En çok beğenilen",
+      "items": [
+        {
+          "name": "SNAKE BITE",
+          "price": 755,
+          "description": "Absolut Vanilla, Elma, Şeftali, Kızılcık, Orman Meyveleri"
+        },
+        {
+          "name": "BALLI BALYOZ",
+          "price": 795,
+          "description": "Absolut, Beefeater, Olmeca, Şeftali, Lime, Enerji İçeceği, Bal"
+        },
+        {
+          "name": "BİG LEBOWSKI",
+          "price": 835,
+          "description": "Absolut, Beefeater, Olmeca, Tropik Cordial, Lime, Enerji İçeceği, Maki Absinthe"
+        },
+        {
+          "name": "GEZEGEN ETKİSİ",
+          "price": 835,
+          "description": "Absolut, Beefeater, Olmeca, Şeftali, Lime, Enerji İçeceği, Maki Absinthe, Bal"
+        },
+        {
+          "name": "SATSUMA GEZEGEN",
+          "price": 835,
+          "description": "Absolut Vodka, Beefeater Gin, Şeftali, Lime, Satsuma, Absolut Vodka, Beefeater Gin, Şeftali"
+        },
+        {
+          "name": "GİO",
+          "price": 560,
+          "description": "Ojo de Tigre Mezcal, Olmeca, Absolut Vanilla, Şeftali, Orman"
+        }
+      ]
+    },
+    {
+      "name": "COCKTAIL COLLECTION - İÇİNDE CİN VAR",
+      "items": [
+        {
+          "name": "CRAZY DATE",
+          "price": 795,
+          "description": "Beefeater Gin, Narenciye Suyu, Ekşi Elma, Limon, Kuzu Kulağı"
+        },
+        {
+          "name": "RAKIKAVUN",
+          "price": 795,
+          "description": "Absolut Vodka, Narenciye Suyu, Kavun, Limon, Yıldız Anason"
+        },
+        {
+          "name": "GÖRİL",
+          "price": 795,
+          "description": "Absolut Citron Vodka, Monkey 47 Gin, Lime, Falernum, Limonlu Soda, Nane"
+        },
+        {
+          "name": "LONG ISLAND",
+          "price": 795,
+          "description": "Absolut, Beefeater, Olmeca, Havana 3 Anos, Triple sec, Lime, Kola"
+        },
+        {
+          "name": "BLACK GIN SOUR",
+          "price": 725,
+          "description": "Karadut Ile Donlenmiş Beefeater Gin, Limon Suyu, Portakal Suyu, Boğurtlen"
+        },
+        {
+          "name": "PARFÜM",
+          "price": 725,
+          "description": "Beefeater Gin, Narenciye Suyu, Ekşi Elma, Tütsülenmiş Lavanta, Salatalık"
+        },
+        {
+          "name": "ORSET",
+          "price": 725,
+          "description": "Beefeater Gin, Narenciye Suyu, Falernum, Boğurtlen, Tütsülenmiş Lavanta, Yildiz Anason"
+        },
+        {
+          "name": "NUCLEAR SOUR",
+          "price": 725,
+          "description": "Beefeater, Narenciye, Jabuticaba Üzümü, Limon Rendesi, Angostura"
+        }
+      ]
+    },
+    {
+      "name": "COCKTAIL COLLECTION - İÇİNDE TEKİLA VAR",
+      "items": [
+        {
+          "name": "BABEL",
+          "price": 745,
+          "description": "Doneca Altos, Ojo de Tigre Mezcal, Konuk Suyu, Jalapeno Biberi, Koruk"
+        },
+        {
+          "name": "BABALARIN BABASI",
+          "price": 695,
+          "description": "Doneca Altos, Lime, Kekik, Nane, Smoke Scotch Parfume"
+        },
+        {
+          "name": "CHILI PASSION",
+          "price": 745,
+          "description": "Doneca Altos, Portakal, Çarkıfelek, Acı Sos, Maki Spice Rum"
+        }
+      ]
+    },
+    {
+      "name": "COCKTAIL COLLECTION - İÇİNDE ROM VAR",
+      "items": [
+        {
+          "name": "SCRIER",
+          "price": 765,
+          "description": "Havana 3 Anos, Narenciye, Çarkıfelek, Lime, Esmer Şeker"
+        },
+        {
+          "name": "ROMA",
+          "price": 765,
+          "description": "Havana 7 Anos, Narenciye, Çarkıfelek, Tarçın"
+        }
+      ]
+    },
+    {
+      "name": "COCKTAIL COLLECTION - İÇİNDE VODKA VAR",
+      "items": [
+        {
+          "name": "SATSUMATA",
+          "price": 755,
+          "description": "Absolut, Satsuma, Limon, Portakal"
+        },
+        {
+          "name": "STRAWHAT",
+          "price": 755,
+          "description": "Absolut Vanilla Vodka, Malibu, Çilek Püresi, Narenciye Suyu"
+        },
+        {
+          "name": "SNAKE BITE",
+          "price": 755,
+          "description": "Absolut Vanilla, Elma, Şeftali, Kızılcık, Orman Meyveleri"
+        }
+      ]
+    },
+    {
+      "name": "COCKTAIL COLLECTION - İÇİNDE VİSKİ VAR",
+      "items": [
+        {
+          "name": "OAGIS",
+          "price": 745,
+          "description": "Jameson, Malibu, Şeftali, Narenciye, Çarkıfelek, Nane"
+        },
+        {
+          "name": "MATHADOR",
+          "price": 745,
+          "description": "Jameson Irish Whiskey, Narenciye Suyu, Beyaz Şeftali Yapılicağı, Islı Tuz"
+        },
+        {
+          "name": "JAMESON SMOKEY",
+          "price": 745,
+          "description": "Jameson, Narenciye, Tütsülenmiş Lavanta"
+        },
+        {
+          "name": "SMOKE JOB",
+          "price": 745,
+          "description": "Jameson Black Barrel, Narenciye, Tarçın, Vanilya, Meşe Tütsüsü"
+        }
+      ]
+    },
+    {
+      "name": "COCKTAIL COLLECTION - SHOT",
+      "items": [
+        {
+          "name": "BEYAZ CÜCE",
+          "price": 775,
+          "description": "Beefeater, Narenciye, Ekşi Elma, Karanfil, Ada çayı, Tirtsu"
+        },
+        {
+          "name": "SATSU",
+          "price": 725,
+          "description": "Absolut, Narenciye, Satsuma Jabuticaba"
+        }
+      ]
+    },
+    {
+      "name": "COCKTAIL COLLECTION - KLASİKLER",
+      "items": [
+        {
+          "name": "SANGRIA SÜRAHİ",
+          "price": 2750,
+          "description": "Kırmızı Şarap, Portakal, Karanfil, Tarçın, Elma, Orman Meyveleri"
+        },
+        {
+          "name": "SANGRIA KADEH",
+          "price": 635,
+          "description": "Kırmızı Şarap, Portakal, Karanfil, Tarçın, Elma, Orman Meyveleri"
+        },
+        {
+          "name": "DRY MARTINI",
+          "price": 725,
+          "description": "Absolut, Dry Vermouth, Lime, Zeytin"
+        },
+        {
+          "name": "DIRTY DRY MARTINI",
+          "price": 725,
+          "description": "Absolut, Extra Dry Vermouth, Zeytin Suyu, Lime"
+        },
+        {
+          "name": "APEROL SPRITZ",
+          "price": 655,
+          "description": "Aperol, Blush, Çilekli Soda, Orman meyveleri"
+        },
+        {
+          "name": "ESPRESSO MARTINI",
+          "price": 725,
+          "description": "Absolut, Kahhea, lly Espresso"
+        },
+        {
+          "name": "MOJITO",
+          "price": 725,
+          "description": "Havana 3 Anos, Lime, Nane, Esmer Şeker, Soda"
+        },
+        {
+          "name": "NEGRONI",
+          "price": 725,
+          "description": "Beefeater, Campari, Sweet Vermouth"
+        },
+        {
+          "name": "MARGARITA",
+          "price": 725,
+          "description": "Donaca Altos, Triple sec, Lime"
+        }
+      ]
+    },
+    {
+      "name": "STRAIGHT - CIN",
+      "items": [
+        {
+          "name": "Beefeater",
+          "price": 475,
+          "description": ""
+        },
+        {
+          "name": "Malfy Original",
+          "price": 485,
+          "description": ""
+        },
+        {
+          "name": "Malfy Pink Grapefruit",
+          "price": 485,
+          "description": ""
+        },
+        {
+          "name": "Malfy Con Limone",
+          "price": 485,
+          "description": ""
+        },
+        {
+          "name": "Monkey 47",
+          "price": 635,
+          "description": ""
+        },
+        {
+          "name": "Monkey 47 Sloe",
+          "price": 585,
+          "description": ""
+        },
+        {
+          "name": "KI NO BI",
+          "price": 625,
+          "description": "6 CL"
+        },
+        {
+          "name": "MOSAIK ANATOLIAN",
+          "price": 525,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "STRAIGHT - VOTKA",
+      "items": [
+        {
+          "name": "Absolut",
+          "price": 475,
+          "description": ""
+        },
+        {
+          "name": "Absolut Flavored",
+          "price": 525,
+          "description": ""
+        },
+        {
+          "name": "Absolut Elyx",
+          "price": 615,
+          "description": ""
+        },
+        {
+          "name": "Belvedere",
+          "price": 895,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "STRAIGHT - TEKILA",
+      "items": [
+        {
+          "name": "Olmeca",
+          "price": 200,
+          "description": ""
+        },
+        {
+          "name": "Olmeca Gold",
+          "price": 205,
+          "description": ""
+        },
+        {
+          "name": "Olmeca Altos Plata",
+          "price": 210,
+          "description": ""
+        },
+        {
+          "name": "Olmeca Altos Reposado",
+          "price": 215,
+          "description": ""
+        },
+        {
+          "name": "Olmeca Chocolatte",
+          "price": 205,
+          "description": ""
+        },
+        {
+          "name": "1800 Silver",
+          "price": 325,
+          "description": ""
+        },
+        {
+          "name": "1800 Reposado",
+          "price": 375,
+          "description": ""
+        },
+        {
+          "name": "1800 Anejo",
+          "price": 385,
+          "description": ""
+        },
+        {
+          "name": "Avion Reserva 44",
+          "price": 910,
+          "description": ""
+        },
+        {
+          "name": "Avion Reserva Cristalino",
+          "price": 990,
+          "description": ""
+        },
+        {
+          "name": "Codigo",
+          "price": 270,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "STRAIGHT - ROM",
+      "items": [
+        {
+          "name": "Havana 3 Anejo",
+          "price": 475,
+          "description": ""
+        },
+        {
+          "name": "Havana 7 Anejo",
+          "price": 550,
+          "description": ""
+        },
+        {
+          "name": "Havana Seleccion De Maestros",
+          "price": 725,
+          "description": ""
+        },
+        {
+          "name": "Bumbu",
+          "price": 525,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "STRAIGHT - SPIRITS",
+      "items": [
+        {
+          "name": "Lillet Blanc",
+          "price": 475,
+          "description": ""
+        },
+        {
+          "name": "Lillet Rose",
+          "price": 475,
+          "description": ""
+        },
+        {
+          "name": "Bakers Field",
+          "price": 475,
+          "description": ""
+        },
+        {
+          "name": "Grappa",
+          "price": 850,
+          "description": ""
+        },
+        {
+          "name": "Garrone Vermuts",
+          "price": 475,
+          "description": ""
+        },
+        {
+          "name": "Kahlua",
+          "price": 475,
+          "description": ""
+        },
+        {
+          "name": "Malibu",
+          "price": 475,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "STRAIGHT - COGNAC/BRANDY",
+      "items": [
+        {
+          "name": "Martell VS",
+          "price": 670,
+          "description": ""
+        },
+        {
+          "name": "Martell VSOP",
+          "price": 710,
+          "description": ""
+        },
+        {
+          "name": "Martell XO",
+          "price": 1890,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "STRAIGHT - SHOTS",
+      "items": [
+        {
+          "name": "Absolut",
+          "price": 240,
+          "description": ""
+        },
+        {
+          "name": "Malfy Original",
+          "price": 255,
+          "description": ""
+        },
+        {
+          "name": "Jameson Pickleback",
+          "price": 355,
+          "description": ""
+        },
+        {
+          "name": "Jameson Black Barrel",
+          "price": 315,
+          "description": ""
+        },
+        {
+          "name": "Jagermeister",
+          "price": 350,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "ŞARAPLAR - KIRMIZI ŞARAPLAR",
+      "items": [
+        {
+          "name": "ANCYRA ÖKÜZGÖZÜ",
+          "price": 3550,
+          "description": ""
+        },
+        {
+          "name": "ANCYRA BOĞAZKERE",
+          "price": 3550,
+          "description": ""
+        },
+        {
+          "name": "ANCYRA KALECİK KARASI",
+          "price": 1550,
+          "description": ""
+        },
+        {
+          "name": "SELECTION Ö.B.",
+          "price": 2950,
+          "description": ""
+        },
+        {
+          "name": "EGED SYRAH",
+          "price": 2550,
+          "description": ""
+        },
+        {
+          "name": "EGED CAB SAU",
+          "price": 2950,
+          "description": ""
+        },
+        {
+          "name": "EGED MERLOT",
+          "price": 2850,
+          "description": ""
+        },
+        {
+          "name": "EGED MALBEC",
+          "price": 2950,
+          "description": ""
+        },
+        {
+          "name": "EGED BLEND",
+          "price": 2650,
+          "description": ""
+        },
+        {
+          "name": "PRESTIGE ÖKÜZGÖZÜ",
+          "price": 3200,
+          "description": ""
+        },
+        {
+          "name": "PRESTIGE KALECİK KARASI",
+          "price": 3200,
+          "description": ""
+        },
+        {
+          "name": "KAVAKLIDERE 1929",
+          "price": 6800,
+          "description": ""
+        },
+        {
+          "name": "MAISON KAVAKLIDERE LA CROIX LARTIGUE",
+          "price": 4900,
+          "description": "FRANSA"
+        },
+        {
+          "name": "PENDORE SYRAH",
+          "price": 2950,
+          "description": ""
+        },
+        {
+          "name": "PENDORE HARMONIE",
+          "price": 3200,
+          "description": ""
+        },
+        {
+          "name": "MONTES ALPHA SYRAH",
+          "price": 3600,
+          "description": "ŞİLİ"
+        },
+        {
+          "name": "MONTES ALPHA CABARNET SAU",
+          "price": 3600,
+          "description": "ŞİLİ"
+        },
+        {
+          "name": "COTES D'AVANOS TEMPRANILLO",
+          "price": 2800,
+          "description": ""
+        },
+        {
+          "name": "GATO NEGRO CARMENERE",
+          "price": 1450,
+          "description": "ŞİLİ"
+        },
+        {
+          "name": "MONTES RESERVA CAB.SAU",
+          "price": 2450,
+          "description": ""
+        },
+        {
+          "name": "MONTES RESERVA MERLOT",
+          "price": 2450,
+          "description": ""
+        },
+        {
+          "name": "BARON DE LESTAC - ROGUE",
+          "price": 2350,
+          "description": "FRANSA"
+        },
+        {
+          "name": "MONTES RESERVA MALBEC",
+          "price": 2250,
+          "description": ""
+        },
+        {
+          "name": "CONTE GUICCIARDINI CHIANTI ILE TERRA CHIANTI",
+          "price": 2500,
+          "description": "ITALYA"
+        },
+        {
+          "name": "SARTORİ MERLOT",
+          "price": 1550,
+          "description": "İTALYA"
+        },
+        {
+          "name": "KAIKEN ESTATE MALBEC",
+          "price": 2300,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "ŞARAPLAR - BEYAZ ŞARAPLAR",
+      "items": [
+        {
+          "name": "ANCYRA SAU. BLANC",
+          "price": 3600,
+          "description": ""
+        },
+        {
+          "name": "ANCYRA SULTANİYE EMİR",
+          "price": 3550,
+          "description": ""
+        },
+        {
+          "name": "ANCYRA NARİNCE",
+          "price": 3550,
+          "description": ""
+        },
+        {
+          "name": "KAVAKLIDERE MİSKET",
+          "price": 2150,
+          "description": ""
+        },
+        {
+          "name": "SELECTION NARİNCE-EMİR",
+          "price": 2550,
+          "description": ""
+        },
+        {
+          "name": "EGED CHARDONNAY",
+          "price": 2750,
+          "description": ""
+        },
+        {
+          "name": "EGED SAU BLANC",
+          "price": 2750,
+          "description": ""
+        },
+        {
+          "name": "EGED FUME BLANC",
+          "price": 2750,
+          "description": ""
+        },
+        {
+          "name": "GATO NEGRO SAU BLANC",
+          "price": 3475,
+          "description": "ŞİLİ"
+        },
+        {
+          "name": "MONTES ALPHA CHARDONNAY",
+          "price": 3600,
+          "description": ""
+        },
+        {
+          "name": "MONTES RESERVA SAU BLANC",
+          "price": 2450,
+          "description": ""
+        },
+        {
+          "name": "PRINZ V HESSEN RIESLING",
+          "price": 2600,
+          "description": "ALMANYA"
+        },
+        {
+          "name": "COTES D'AVANOS CHARDONNAY",
+          "price": 2975,
+          "description": ""
+        },
+        {
+          "name": "SARTORİ PINOT GRIGIO",
+          "price": 3550,
+          "description": "ITALYA"
+        },
+        {
+          "name": "PASCAL BOUCHARD CHABLIS (CHARDONNAY)",
+          "price": 4950,
+          "description": "FRANSA"
+        },
+        {
+          "name": "BARON DE LESTAC - BLANC",
+          "price": 2500,
+          "description": ""
+        },
+        {
+          "name": "COTES D'AVANOS SAU. BLANC",
+          "price": 3300,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "ŞARAPLAR - YARI TATLI",
+      "items": [
+        {
+          "name": "SULTANİYE",
+          "price": 3550,
+          "description": ""
+        },
+        {
+          "name": "ROSATO",
+          "price": 3550,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "ŞARAPLAR - ROZE ŞARAPLAR",
+      "items": [
+        {
+          "name": "ANCYRA BLUSH",
+          "price": 3550,
+          "description": ""
+        },
+        {
+          "name": "Moncigale L'eveil",
+          "price": 3300,
+          "description": "FRANSA"
+        },
+        {
+          "name": "SARTORİ PINOT GRIGIO BLUSH",
+          "price": 1600,
+          "description": "ITALYA"
+        },
+        {
+          "name": "EGEO ROZE",
+          "price": 2750,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "ŞARAPLAR - ŞAMPANYA & PROSECCO",
+      "items": [
+        {
+          "name": "MOET ROSE IMPERIAL",
+          "price": 7000,
+          "description": ""
+        },
+        {
+          "name": "MOET BRUT IMPERIAL",
+          "price": 7000,
+          "description": ""
+        },
+        {
+          "name": "COTES D'AVANOS METHODE TRADITIONELLL",
+          "price": 6500,
+          "description": ""
+        },
+        {
+          "name": "LA TORDERA PROSECCO FRIZZANTE TREVİSO",
+          "price": 2500,
+          "description": "İTALYA"
+        },
+        {
+          "name": "MUMM ICE EXTRA",
+          "price": 8500,
+          "description": ""
+        },
+        {
+          "name": "BELAIR LUXE",
+          "price": 5000,
+          "description": ""
+        },
+        {
+          "name": "BELAIR LUXE ROSE",
+          "price": 5000,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "VİSKİ - BLENDED SCOTCH",
+      "items": [
+        {
+          "name": "CHIVAS REGAL 12 Y.O.",
+          "price": 325,
+          "description": ""
+        },
+        {
+          "name": "CHIVAS XV 15 Y.O.",
+          "price": 375,
+          "description": ""
+        },
+        {
+          "name": "CHIVAS 18 Y.O.",
+          "price": 470,
+          "description": ""
+        },
+        {
+          "name": "CHIVAS MIZUNARA",
+          "price": 490,
+          "description": ""
+        },
+        {
+          "name": "CHIVAS ULTIS",
+          "price": 790,
+          "description": ""
+        },
+        {
+          "name": "CHIVAS 25 Y.O.",
+          "price": 1800,
+          "description": ""
+        },
+        {
+          "name": "ROYALE SALUTE 21 Y.O.",
+          "price": 900,
+          "description": ""
+        },
+        {
+          "name": "BALLANTINES FINEST",
+          "price": 300,
+          "description": ""
+        },
+        {
+          "name": "BALLANTINES 10 Y.O.",
+          "price": 325,
+          "description": ""
+        },
+        {
+          "name": "J.W. BLUE LABEL",
+          "price": 1500,
+          "description": ""
+        },
+        {
+          "name": "THE DEACON",
+          "price": 300,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "VİSKİ - SINGLE MALT",
+      "items": [
+        {
+          "name": "GLENLIVET 12 Y.O.",
+          "price": 375,
+          "description": ""
+        },
+        {
+          "name": "GLENLIVET 15 Y.O.",
+          "price": 435,
+          "description": ""
+        },
+        {
+          "name": "GLENLIVET 18 Y.O.",
+          "price": 580,
+          "description": ""
+        },
+        {
+          "name": "GLENLIVET 21 Y.O.",
+          "price": 1900,
+          "description": ""
+        },
+        {
+          "name": "ABERLOUR 12 Y.O.",
+          "price": 345,
+          "description": ""
+        },
+        {
+          "name": "ABERLOUR 14 Y.O.",
+          "price": 480,
+          "description": ""
+        },
+        {
+          "name": "ABERLOUR 18 Y.O.",
+          "price": 940,
+          "description": ""
+        },
+        {
+          "name": "ARDBEG 10 Y.O.",
+          "price": 580,
+          "description": ""
+        },
+        {
+          "name": "ARDBEG UIGEDAIL",
+          "price": 675,
+          "description": ""
+        },
+        {
+          "name": "ARDBEG CORRY WRECKEN",
+          "price": 675,
+          "description": ""
+        },
+        {
+          "name": "GLENFIDDICH 18 Y.O.",
+          "price": 850,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "VİSKİ - IRISH",
+      "items": [
+        {
+          "name": "JAMESON IRISH WHISKEY",
+          "price": 300,
+          "description": ""
+        },
+        {
+          "name": "JAMESON BLACK BARREL",
+          "price": 325,
+          "description": ""
+        },
+        {
+          "name": "JAMESON IPA EDITION",
+          "price": 325,
+          "description": ""
+        },
+        {
+          "name": "JAMESON CASK MATES STOUT",
+          "price": 325,
+          "description": ""
+        },
+        {
+          "name": "JAMESON BREWERY EDITION",
+          "price": 325,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "VİSKİ - BOURBON",
+      "items": [
+        {
+          "name": "WOODFORD RESERVE",
+          "price": 360,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "VİSKİ - CANADIAN",
+      "items": [
+        {
+          "name": "PIKE CREEK",
+          "price": 325,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "BİRA - BİRA",
+      "items": [
+        {
+          "name": "Tuborg 50 cl",
+          "price": 295,
+          "description": "LAGER %5,0"
+        },
+        {
+          "name": "Tuborg 33 cl",
+          "price": 255,
+          "description": "LAGER %5,0"
+        },
+        {
+          "name": "Tuborg Filtresiz",
+          "price": 295,
+          "description": "LAGER %5.0"
+        },
+        {
+          "name": "Tuborg Amber",
+          "price": 295,
+          "description": ""
+        },
+        {
+          "name": "Carlsberg 33 cl",
+          "price": 265,
+          "description": "LAGER %5.0"
+        },
+        {
+          "name": "DESPERADOS",
+          "price": 365,
+          "description": ""
+        },
+        {
+          "name": "Sol 33 cl",
+          "price": 340,
+          "description": "LAGER %4.5"
+        },
+        {
+          "name": "Weihenstephan 33 cl",
+          "price": 320,
+          "description": "HEFFE WEIZEN %5.4"
+        },
+        {
+          "name": "Weihenstephan Vitus 33 cl",
+          "price": 365,
+          "description": "WEIZENBOCK %7,7"
+        },
+        {
+          "name": "Grimbergen Dbl Ambree 33 cl",
+          "price": 375,
+          "description": "ALE %6,5"
+        },
+        {
+          "name": "Grimbergen Blonde 33 cl",
+          "price": 375,
+          "description": "ALE %6,7"
+        },
+        {
+          "name": "Kronenbourg 1664 33 cl",
+          "price": 355,
+          "description": "LAGER %5.0"
+        },
+        {
+          "name": "Guinnes 44 cl",
+          "price": 405,
+          "description": "STOUT %4.2"
+        },
+        {
+          "name": "Frederik Marzen Lager 33 cl",
+          "price": 325,
+          "description": "LAGER %5,7"
+        },
+        {
+          "name": "Frederik India Pale 33 cl",
+          "price": 325,
+          "description": "ALE %5,8"
+        },
+        {
+          "name": "Frederik Brown Ale 33 cl",
+          "price": 325,
+          "description": "ALE %5,8"
+        },
+        {
+          "name": "Frederik Wheat Ipa 33 cl",
+          "price": 325,
+          "description": "IPA %5,4"
+        },
+        {
+          "name": "Frederik Yakima İpa 33 cl",
+          "price": 325,
+          "description": "IPA %6,5"
+        },
+        {
+          "name": "Carlsberg Luna 50 cl",
+          "price": 305,
+          "description": ""
+        }
+      ]
+    }
+  ]
+}

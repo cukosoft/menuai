@@ -1,116 +1,556 @@
 {
   "source": "Gemini Vision AI",
-  "parsed_at": "2026-02-07T06:11:44.094Z",
-  "menu_url": "https://sks.nevsehir.edu.tr/tr/aylik-menu",
-  "restaurant": "sks",
-  "totalItems": 18,
+  "parsed_at": "2026-02-10T18:49:53.058Z",
+  "menu_url": "https://qr.finedinemenu.com/maki-ugur-mumcu",
+  "restaurant": "qr",
+  "totalItems": 107,
   "categories": [
     {
-      "name": "Çorba",
+      "name": "Diğer",
       "items": [
         {
-          "name": "Kremalı Tavuk Çorbası",
-          "price": 0,
+          "name": "Günün Çorbası",
+          "price": 235,
+          "description": "servis ekibinden bilgi alınız."
+        },
+        {
+          "name": "Güveçte İstiridye Mantarı",
+          "price": 395,
+          "description": "taze mantar, kaşar peyniri, tereyağ"
+        },
+        {
+          "name": "Güveçte Keçi Peyniri",
+          "price": 625,
+          "description": "keçi peyniri, közlenmiş çeri domates, kavrulmuş ceviz, kavrulmuş antep biberi, taze baharatlar"
+        },
+        {
+          "name": "Cheddar Dolgulu Patates",
+          "price": 375,
+          "description": "fırınlanmış kabuklu patates, ıspanak, cheddar peyniri, akdeniz yeşillikleri ile"
+        },
+        {
+          "name": "Köz Patlıcan Çorbası",
+          "price": 260,
+          "description": "közlenmiş bostan patlıcan, zeytinyağı, un, bitkisel krema, kavrulmuş kabak çekirdeği"
+        },
+        {
+          "name": "Kıymalı Baklava Böreği",
+          "price": 525,
+          "description": "keçi yoğurdu ile"
+        },
+        {
+          "name": "Domatesli Mozzarella",
+          "price": 595,
+          "description": "taze fesleğen, zeytinyağı, bal, sarımsak"
+        },
+        {
+          "name": "Şarküteri Tabağı",
+          "price": 1350,
+          "description": "füme roastbeef, karabiberli hindi göğüs füme, füme dana antrikot"
+        },
+        {
+          "name": "Fettuccine Alfredo",
+          "price": 625,
+          "description": "fettuccine makarna, jülyen tavuk parçaları, mantar, köy biberi, al biber, karabiber, krema, parmesan peyniri, taze fesleğen"
+        },
+        {
+          "name": "Spaghetti Napoliten",
+          "price": 440,
+          "description": "spaghetti makarna, sarımsak domates sos, maki yapımı acı sos, tereyağ"
+        },
+        {
+          "name": "Ispanaklı Tavuklu Penne",
+          "price": 625,
+          "description": "kuşbaşı tavuk bonfile, karemelize soğan, ıspanak, krema, kaşar peyniri, karabiber, şerit rende havuç"
+        },
+        {
+          "name": "Köri Soslu Tavuklu Penne",
+          "price": 625,
+          "description": "penne makarna, jülyen doğranmış tavuk göğsü, mantar, köri, parmesan peyniri"
+        },
+        {
+          "name": "Noodle",
+          "price": 395,
+          "description": "sebzeli"
+        },
+        {
+          "name": "Sepette Tavuk",
+          "price": 550,
+          "description": "patates kızartması, çıtır tavuk göğsü, kırmızı pancar, yoğurt, mayonez ve sarımsak sosu ile hazırlanan maki yapımı aperatif sos"
+        },
+        {
+          "name": "Çıtır Tavuk Sarma",
+          "price": 620,
+          "description": "dövülmüş tavuk göğsü - kaşar dolgulu kaşı patates cipsi, kırmızı pancar, yoğurt, mayonez ve sarımsak sosu ile hazırlanan maki yapımı aperatif sos"
+        },
+        {
+          "name": "Mozzarellalı Tavuk Topları",
+          "price": 550,
+          "description": "piliç göğüs eti, mozarella peyniri, buğday unu, maki yapımı aperatif sos ve parmak patates ile"
+        },
+        {
+          "name": "Patates Kızartması",
+          "price": 330,
+          "description": "kaşık patates, kırmızı pancar, yoğurt, mayonez ve sarımsak sosu ile hazırlanan maki yapımı aperatif sos"
+        },
+        {
+          "name": "Çıtır Bira Tabağı",
+          "price": 685,
+          "description": "çıtır tavuk, çıtır tavuk sarma, kaşık cips ve sos ile"
+        },
+        {
+          "name": "Sumaklı Hindi Salata",
+          "price": 625,
+          "description": "hindi göğüs, kuşkonmaz, semiz otu, brokoli, şerit kabak, şerit pancar, taze limon suyu"
+        },
+        {
+          "name": "Sumaklı Tavuk Salata",
+          "price": 600,
           "description": ""
         },
         {
-          "name": "Köylüm Çorbası",
-          "price": 0,
-          "description": ""
+          "name": "Lokum Salata",
+          "price": 950,
+          "description": "dövülmüş bonfile dilimleri, pancar yaprağı, semizotu, bezelye filizi, roka, cherry domates iceberg, közlenmiş patlıcan, al biber, kabak, kırmızı pancar, maki yapımı salata sosu"
         },
         {
-          "name": "Brokoli Çorbası",
-          "price": 0,
-          "description": ""
+          "name": "Bahçe Salata",
+          "price": 300,
+          "description": "endivyen, kırmızı pancar yaprağı, kuzu kulağı, hardal otu, akdeniz yeşillikleri, cherry domates, mantar, parmesan peyniri, mısır, havuç, iceberg, çiğ badem, semizotu, nar"
         },
         {
-          "name": "Ezogelin Çorbası",
-          "price": 0,
-          "description": ""
+          "name": "Maki Salata",
+          "price": 445,
+          "description": "nar, avokado, kabak, akdeniz yeşilliği, çiğ badem, brokoli, karnabahar, cherry, semizotu, köz biber, balzamik sos"
         },
         {
-          "name": "Mercimek Çorbası",
-          "price": 0,
-          "description": ""
+          "name": "Chia Tohumlu Enginar Salata",
+          "price": 550,
+          "description": "Roma Usulü Yağda Enginar, Semiz Otu, Akdeniz Yeşillikleri, Çeri Domates, Badem, Nar, Portakal, Chia Tohumu"
+        },
+        {
+          "name": "Dağ Kekikli Tavuklu Salata",
+          "price": 585,
+          "description": "taze kekikli yaprak tavuk dilimleri, enginar sirkesi ile marine eidlmiş taze kabak, kök biber  ve havuç şeritleri, akdeniz yeşillikleri, kuzu kulağı, frenk maydonoz, iceberg, cherry domates, beyaz lahana, brokoli, çiğ badem, nar, semizotu"
+        },
+        {
+          "name": "Dağ Kekikli Hindi Salata",
+          "price": 585,
+          "description": "taze kekikli yaprak hindi dilimleri, enginar sirkesi ile marine eidlmiş taze kabak, kök biber ve havuç şeritleri, akdeniz yeşillikleri, kuzukulağı, frenk maydonoz, iceberg, cherry domates, beyaz lahana, brokoli, çiğ badem, nar, semizotu"
+        },
+        {
+          "name": "Tulum Peynirli Cevizli Salata",
+          "price": 550,
+          "description": "kızarmış tulum peyniri topları, cherry domates, ceviz, endivyen, iceberg, akdeniz yeşillikleri ve semizotu, nar"
+        },
+        {
+          "name": "Izgara Hindi Kase",
+          "price": 595,
+          "description": "brokoli, zeytinyağlı karnabahar, zeytinyağlı siyez bulgur pilavı,edamame, karnabahar, susamlı patates ile"
+        },
+        {
+          "name": "Izgara Somon Kase",
+          "price": 750,
+          "description": "zencefil, susam, soya, karabiber, sarımsak, ak ağaç özütü ile marine edilmiş somon şiş, brokoli, karnabahar, zeytinyağlı siyez bulgur pilavı, edamame, susamlı patates ile"
+        },
+        {
+          "name": "Izgara Tavuk Göğsü Kase",
+          "price": 595,
+          "description": "brokoli, karnabahar, edamame, zeytinyağlı siyez bulgur pilavı, susamlı patates ile"
+        },
+        {
+          "name": "Izgara Kuşkonmaz",
+          "price": 345,
+          "description": "1 tabak 3 seçenek"
+        },
+        {
+          "name": "Beyaz Lahana",
+          "price": 345,
+          "description": "1 tabak 3 seçenek"
+        },
+        {
+          "name": "Kırmızı Pancar",
+          "price": 345,
+          "description": "1 tabak 3 seçenek"
+        },
+        {
+          "name": "Zeytinyağlı Siyez Soğuk Bulgur Pilavı",
+          "price": 345,
+          "description": "1 tabak 3 seçenek"
+        },
+        {
+          "name": "Tahinli Nohutlu Pilaki",
+          "price": 345,
+          "description": "1 tabak 3 seçenek"
+        },
+        {
+          "name": "Cevizli Elma",
+          "price": 345,
+          "description": "1 tabak 3 seçenek"
+        },
+        {
+          "name": "Enginar Sirkeli Sebzeler",
+          "price": 345,
+          "description": "1 tabak 3 seçenek"
+        },
+        {
+          "name": "Maki Nazik",
+          "price": 985,
+          "description": "jülyen bonfile, közlenmiş patlıcan, közlenmiş al biber, közlenmiş köy biberi, yoğurt, sarımsak, pul biber"
+        },
+        {
+          "name": "Tavuk Maki Nazik",
+          "price": 575,
+          "description": "jülyen bonfile, közlenmiş patlıcan, közlenmiş al biber, közlenmiş köy biberi, yoğurt, sarımsak, pul biber"
+        },
+        {
+          "name": "Lokma Kebap",
+          "price": 750,
+          "description": "bonfile kıyma, al biber, maki yapımı acı sos, akdeniz yeşillikleri ile"
+        },
+        {
+          "name": "Tavuk Çökertme",
+          "price": 595,
+          "description": "jülyen tavuk bonfile, köy biberi, al biber, maki yapımı acı sos, domates sos, süzme yoğurt, kibrit patates, kekik"
+        },
+        {
+          "name": "Organik Tavuk Külbastı",
+          "price": 675,
+          "description": "organik tavuk bonfile, tereyağ, maki baharatları, akdeniz yeşillikleri, maki soslu penne ile."
+        },
+        {
+          "name": "Organik Tavuk Izgara",
+          "price": 675,
+          "description": "siyez bulguru, organik tavuk suyu, arpa şehriye, tereyağ, cevizli elma, beyaz lahana, sebze şeritleri"
+        },
+        {
+          "name": "Kabaklı Izgara Levrek",
+          "price": 1150,
+          "description": "deniz levreği fileto, limon suyu, zeytinyağı, karabiber, pul biber, kabak dilimleri, otlu pilav (arpa şehriye, pul biber, tereyağ, kıyılmış roka)"
+        },
+        {
+          "name": "Hardal Soslu Tavuk Sarma",
+          "price": 575,
+          "description": "dövülmüş tavuk bonfile, kaşar dolgulu saman patates, krema, hardal sos, kabak granit ile"
+        },
+        {
+          "name": "İstiridye Mantarlı Izgara Bonfile",
+          "price": 1250,
+          "description": "marine edilmiş bonfile dilimleri, marine edilmiş istiridye mantarı, otlu pilav ve kırmızı pancar ile"
+        },
+        {
+          "name": "Rus Kebabı",
+          "price": 1250,
+          "description": "marine edilmiş süt dana bonfile, zeytinyağı, köri, karabiber, pul biber, ızgara sebzeler ve roka salatası eşliğinde"
+        },
+        {
+          "name": "Dağ Kekikli Yaprak Tavuk",
+          "price": 575,
+          "description": "marine edilmiş yaprak tavuk bonfile, taze kekik, zeytinyağı, karabiber, pul biber,alıç sirkesi ile terbiyelenmiş ızgara sebze yatağı ve roka salatası eşliğinde"
+        },
+        {
+          "name": "Izgara Levrek",
+          "price": 1100,
+          "description": "deniz levreği fileto, limon suyu, zeytinyağı, karabiber, pul biber, otlu pilav"
+        },
+        {
+          "name": "Nar Soslu Bonfile",
+          "price": 1250,
+          "description": "taze kekik ve biberiye ile marine edilmiş dana bonfile, arpacık soğan, mantar, taze nar suyu ve karamelize soğan (12 saat süre ile karamelize edilir) yatağında şerit sebze demeti ve patates ile"
+        },
+        {
+          "name": "Red Hot Chilli Beef",
+          "price": 1250,
+          "description": "(acılı veya acısız seçenekleri için servis personeliden bilgi alınız) az dövülmüş dana bonfile, al biber, yeşil biber, mantar, baby mısır, kaşar peyniri, tereyağ, domates sos, maki yapımı acı sos, soslu spaghetti, şerit sebze demeti ve patates ile"
+        },
+        {
+          "name": "Ispanaklı Tavuk Lokma",
+          "price": 595,
+          "description": "marine edilmiş tavuk göğsü, ıspanak, mozzarella peyniri, domates sos, saman patates yatağında. siyah pirinç pilavı; siyah pirinç, nohut, akdeniz yeşilliği, tereyağ"
+        },
+        {
+          "name": "Izgara Süt Dana Antrikot",
+          "price": 1450,
+          "description": "BADEM, ÜZÜM, CEVİZ, NAR SOSU İLE KAVRULMUŞ ISPANAK, ACI BİBER REÇELİ VE DEMİ GLACE SOS İLE"
+        },
+        {
+          "name": "Cheddar Soslu Bonfile Sarma",
+          "price": 985,
+          "description": "dövülmüş dilim bonfile, kaşar peynir dolgulu saman patates, cheddar peynirli sos ve şerit sebze demeti ile"
+        },
+        {
+          "name": "İstiridye Mantarlı Tavuk Dilimleri",
+          "price": 595,
+          "description": "marine edilmiş tavuk dilimleri, marine edilmiş istiridye mantarı, otlu pilav, şerit sebzeler ve kırmızı pancar ile"
+        },
+        {
+          "name": "Tereyağında Lokum Bonfile",
+          "price": 1350,
+          "description": "süt danası bonfile, kurutulmuş domates, kurutulmuş süs biberi, sarımsak, tereyağ, firik soğan, cevizli elma, kırmızı pancar, enginar sirkeli sebzeler ile"
+        },
+        {
+          "name": "Lokum",
+          "price": 1250,
+          "description": "dövülmüş bonfile yaprakları, zeytinyağı, karabiber, pul biber, köri, ızgara sebze yatağında, roka salatası ile"
+        },
+        {
+          "name": "Sebzeli Tavuk Izgara",
+          "price": 575,
+          "description": "marine edilmiş tavuk göğsü, zeytinyağı, karabiber, pul biber, sarımsak, köy biberi, al biber, kuşkonmaz, ızgara sebze yatağında roka salatası ile"
+        },
+        {
+          "name": "Somon Izgara",
+          "price": 895,
+          "description": "kırmızı soğan, roka, akdeniz yeşillikleri, rendelenmiş mor pancar, cevizli elma ile"
+        },
+        {
+          "name": "Cızbız Köfte",
+          "price": 750,
+          "description": "dana döş, dana antrikot kıyma ve taze baharatlarla harmanlanmış köfteler, tahinli nohut pilaki, fırınlanmış susamlı patates ve roka salatası"
+        },
+        {
+          "name": "Tikka Masala",
+          "price": 575,
+          "description": "jülyen tavuk bonfile, tikka masala sosu, krema, al biber, yeşil biber, mantar, tereyağ"
+        },
+        {
+          "name": "Kıbbehşami",
+          "price": 690,
+          "description": "keçi yoğurdu ile"
+        },
+        {
+          "name": "Tereyağında Tavuk Lokum",
+          "price": 675,
+          "description": "kurutulmuş domates, kurutulmuş süs biberi, sarımsak, tereyağı, firik soğan, cevizli elma, kırmızı pancar, enginar sirkeli sebzeler ile"
+        },
+        {
+          "name": "Schnitzel",
+          "price": 575,
+          "description": "panelenmiş ve dövülmüş tavuk göğsü, akdeniz yeşillikleri, patates kızartması ve cevizli elma ile"
+        },
+        {
+          "name": "Bodrum Kebabı",
+          "price": 985,
+          "description": "jülyen bonfile, al biber, köy biberi, domates sos, kekik, süzme yoğurt, kibrit patates"
+        },
+        {
+          "name": "Çocuk Menüsü",
+          "price": 575,
+          "description": "dana bonfile köfte, soslu makarna, kaşık patates cipsi"
         }
       ]
     },
     {
-      "name": "Ana Yemek",
+      "name": "Kosova Beef",
       "items": [
         {
-          "name": "Etli Bezelye",
-          "price": 0,
+          "name": "Kosova Bonfile 350 gr. (1 kişilik)",
+          "price": 1900,
           "description": ""
         },
         {
-          "name": "Patlıcan Kebabı",
-          "price": 0,
-          "description": ""
+          "name": "Kişnişli Organik Tavuk ve Ev Yapımı Fettuccine",
+          "price": 575,
+          "description": "1/2 porsiyon kişnişli organik tavuk ile"
         },
         {
-          "name": "Rosto Köfte-Patates Püresi",
-          "price": 0,
-          "description": ""
+          "name": "Sebzeli Tavuk Izgara ve Ev Yapımı Fettuccine",
+          "price": 575,
+          "description": "1/2 porsiyon sebzeli tavuk ızgara ile"
         },
         {
-          "name": "Fırın Tavuk",
-          "price": 0,
-          "description": ""
-        },
-        {
-          "name": "Balık",
-          "price": 0,
-          "description": ""
+          "name": "Hardal Soslu Tavuk Sarma ve Ev Yapımı Fettuccine",
+          "price": 575,
+          "description": "2 adet hardal soslu tavuk sarma ile"
         }
       ]
     },
     {
-      "name": "Yardımcı Yemek",
+      "name": "Biraz Daha",
       "items": [
         {
-          "name": "Yeşil Mercimekli Bulgur Pilavı",
-          "price": 0,
+          "name": "Otlu Pİlav",
+          "price": 170,
           "description": ""
         },
         {
-          "name": "Pirinç Pilavı",
-          "price": 0,
+          "name": "Avokado",
+          "price": 175,
           "description": ""
         },
         {
-          "name": "Erişte",
-          "price": 0,
+          "name": "Fırınlanmış Susamlı Patates",
+          "price": 155,
           "description": ""
         },
         {
-          "name": "Barbunya Pilaki",
-          "price": 0,
-          "description": ""
-        }
-      ]
-    },
-    {
-      "name": "Ek Yemek",
-      "items": [
-        {
-          "name": "Yoğurt",
-          "price": 0,
+          "name": "Izgara Sebzeler",
+          "price": 155,
           "description": ""
         },
         {
-          "name": "Cacık",
-          "price": 0,
+          "name": "Set Makarnası ( ev yapımı fettucine)",
+          "price": 190,
           "description": ""
         },
         {
-          "name": "Ayran",
-          "price": 0,
+          "name": "Limonata",
+          "price": 185,
+          "description": "sade veya naneli"
+        },
+        {
+          "name": "Çilekli Limonata",
+          "price": 185,
+          "description": "çilek püresi, nane filizi, maki yapımı limonata"
+        },
+        {
+          "name": "Detoks Limonata",
+          "price": 270,
+          "description": "maki yapımı limonata, fesleğen, salatalık, frenk maydonoz, nane filizi"
+        },
+        {
+          "name": "Orman Meyveli Limonata",
+          "price": 270,
+          "description": "maki yapımı limonata, böğürtlen, ahududu, frenk üzümü, nane filizi"
+        },
+        {
+          "name": "Passion Fruit Limonata",
+          "price": 270,
           "description": ""
         },
         {
-          "name": "Tahin Helva",
-          "price": 0,
+          "name": "Beyaz Şeftali Limonata",
+          "price": 220,
+          "description": ""
+        },
+        {
+          "name": "Kamkat Limonata",
+          "price": 220,
+          "description": ""
+        },
+        {
+          "name": "Tropical",
+          "price": 270,
+          "description": "ananas, kivi, mango, passion fruit"
+        },
+        {
+          "name": "Orman Meyveli Tropical",
+          "price": 270,
+          "description": ""
+        },
+        {
+          "name": "Pancarlı Ayran",
+          "price": 135,
+          "description": "maki yapımı ayran, fermente pancar suyu"
+        },
+        {
+          "name": "Fesleğenli Ayran",
+          "price": 120,
+          "description": "maki yapımı ayran, fesleğen"
+        },
+        {
+          "name": "İtalyan gazozu",
+          "price": 185,
+          "description": "s.pellegrino salatalık, hibiskus, lime, mürver çiçeği şurubu, gül yaprağı"
+        },
+        {
+          "name": "Kvass",
+          "price": 285,
+          "description": "fermente pancar suyu"
+        },
+        {
+          "name": "Coca Cola / zero / light",
+          "price": 145,
+          "description": ""
+        },
+        {
+          "name": "Fanta",
+          "price": 145,
+          "description": ""
+        },
+        {
+          "name": "Sprite",
+          "price": 145,
+          "description": ""
+        },
+        {
+          "name": "Fuse Tea limon & şeftali & mango",
+          "price": 145,
+          "description": ""
+        },
+        {
+          "name": "Red Bull",
+          "price": 190,
+          "description": "Red Bull Energy Drink, Red Bull Sugar Free, Red Bull Whıte Edition, Red Bull Blue Edition, Red Bull Yellow Edition, Red Bull Peach Edition"
+        },
+        {
+          "name": "Su",
+          "price": 83,
+          "description": "330 ml"
+        },
+        {
+          "name": "Alkali Su",
+          "price": 130,
+          "description": "1000 ml - maydanoz sapları, salatalık, lime dilimleri"
+        },
+        {
+          "name": "Uludağ Premium",
+          "price": 125,
+          "description": "250 ml - sade"
+        },
+        {
+          "name": "Dondurmalı Sıcak İrmik",
+          "price": 375,
+          "description": ""
+        },
+        {
+          "name": "Kakaolu Cheesecake",
+          "price": 375,
+          "description": ""
+        },
+        {
+          "name": "Bal Kabaklı Cheesecake",
+          "price": 375,
+          "description": ""
+        },
+        {
+          "name": "Meyve Tabağı",
+          "price": 420,
+          "description": ""
+        },
+        {
+          "name": "Demleme Türk Çayı",
+          "price": 70,
+          "description": ""
+        },
+        {
+          "name": "Yeşil Çay",
+          "price": 175,
+          "description": ""
+        },
+        {
+          "name": "Maki Kış Çayı",
+          "price": 185,
+          "description": "zencefil kabuğu, zerdeçal, karanfil kabuğu, karabiber, havlıcan, kakule, tarçın kabuğu, vanilla"
+        },
+        {
+          "name": "Ice Bubble Tea",
+          "price": 235,
+          "description": "soğuk demleme yaban mersini veya çilek veya mango aromalı"
+        },
+        {
+          "name": "Espresso",
+          "price": 175,
+          "description": ""
+        },
+        {
+          "name": "Americano",
+          "price": 175,
+          "description": ""
+        },
+        {
+          "name": "Tarz- hususi Türk Kahvesi",
+          "price": 110,
           "description": ""
         }
       ]

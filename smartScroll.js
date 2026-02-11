@@ -1,5 +1,5 @@
 /**
- * SmartScroll v2 — Resilient Scroll Engine
+ * SmartScroll v3 — Resilient Scroll Engine (Playwright Edition)
  * 
  * SPA'larda scroll resetlerini kökten çözer.
  * 
@@ -77,21 +77,42 @@ class SmartScroll {
     }
 
     // ═══════════════════════════════════════════════════════════
-    // Scroll Methodları
+    // Scroll Methodları (Playwright API)
     // ═══════════════════════════════════════════════════════════
 
     async scrollViaTouch(page, distance) {
         const centerX = 215;
         const startY = 750;
-        const steps = 8;
+        const endY = startY - distance;
+        const steps = 10;
 
-        await page.touchscreen.touchStart(centerX, startY);
-        for (let i = 1; i <= steps; i++) {
-            const y = startY - (distance * i / steps);
-            await page.touchscreen.touchMove(centerX, Math.max(y, 50));
-            await this.sleep(25);
-        }
-        await page.touchscreen.touchEnd();
+        // Playwright: Manual touch event dispatch via evaluate
+        await page.evaluate(async ({ cx, sy, ey, stepCount }) => {
+            const dispatchTouch = (type, x, y) => {
+                const touch = new Touch({
+                    identifier: 0,
+                    target: document.elementFromPoint(x, y) || document.body,
+                    clientX: x, clientY: y,
+                    pageX: x, pageY: y
+                });
+                const event = new TouchEvent(type, {
+                    bubbles: true, cancelable: true,
+                    touches: type === 'touchend' ? [] : [touch],
+                    changedTouches: [touch],
+                    targetTouches: type === 'touchend' ? [] : [touch]
+                });
+                (document.elementFromPoint(x, y) || document.body).dispatchEvent(event);
+            };
+
+            dispatchTouch('touchstart', cx, sy);
+            for (let i = 1; i <= stepCount; i++) {
+                const y = sy - ((sy - ey) * i / stepCount);
+                await new Promise(r => setTimeout(r, 20));
+                dispatchTouch('touchmove', cx, Math.max(y, 50));
+            }
+            await new Promise(r => setTimeout(r, 20));
+            dispatchTouch('touchend', cx, ey);
+        }, { cx: centerX, sy: startY, ey: Math.max(endY, 50), stepCount: steps });
     }
 
     async scrollViaKeyboard(page) {
@@ -102,10 +123,10 @@ class SmartScroll {
 
     async scrollViaJS(page, distance, containerSelector) {
         if (containerSelector) {
-            await page.evaluate((sel, d) => {
+            await page.evaluate(({ sel, d }) => {
                 const el = document.querySelector(sel);
                 if (el) el.scrollTop += d;
-            }, containerSelector, distance);
+            }, { sel: containerSelector, d: distance });
         } else {
             await page.evaluate((d) => window.scrollBy(0, d), distance);
         }
@@ -263,10 +284,10 @@ class SmartScroll {
 
                 // Geri dönmeyi dene
                 if (containerSelector) {
-                    await page.evaluate((sel, y) => {
+                    await page.evaluate(({ sel, y }) => {
                         const el = document.querySelector(sel);
                         if (el) el.scrollTop = y;
-                    }, containerSelector, prevY);
+                    }, { sel: containerSelector, y: prevY });
                 } else {
                     await page.evaluate((y) => window.scrollTo(0, y), prevY);
                 }

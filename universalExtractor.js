@@ -1,7 +1,9 @@
 /**
- * MenüAi Universal Menu Extraction Engine v6
+ * MenüAi Universal Menu Extraction Engine v7
  * 
  * Tamamen Gemini Vision tabanlı — siteye özel DOM scraping YOK.
+ * Playwright Edition — daha stabil, daha hızlı.
+ * 
  * 3 Fazlı çalışır:
  *   Faz 0: Sayfa aç → "Menüyü Gör" / "Menu" butonunu tıkla
  *   Faz 1: Screenshot → Gemini → Kategori keşfi
@@ -10,9 +12,7 @@
  * HER SİTE İÇİN ÇALIŞIR — HTML yapısına bağımlılık SIFIR.
  */
 
-const puppeteer = require('puppeteer-extra');
-const StealthPlugin = require('puppeteer-extra-plugin-stealth');
-puppeteer.use(StealthPlugin());
+const { chromium } = require('playwright');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 const fs = require('fs');
 const path = require('path');
@@ -25,7 +25,7 @@ class UniversalMenuExtractor {
         if (!this.apiKey) throw new Error('GEMINI_API_KEY gerekli!');
 
         this.genAI = new GoogleGenerativeAI(this.apiKey);
-        this.model = this.genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
+        this.model = this.genAI.getGenerativeModel({ model: 'gemini-3-flash-preview' });
         this.screenshotDir = options.screenshotDir || path.join(__dirname, 'screenshots');
         this.smartScroll = new SmartScroll({ verbose: true, maxScrolls: 50, scrollDelay: 600 });
         this.maxRetries = 3;
@@ -130,39 +130,163 @@ class UniversalMenuExtractor {
     // ─── Popup/Cookie kapatma (menü modallarına DOKUNMA!) ───
     async closeNonMenuPopups(page) {
         // ESC BASMA — modal açıkken modal kapanır!
-        // Sadece cookie/consent overlay'leri kaldır
+
+        // 1. Cookie consent → "Kabul et" / "Accept" butonuna tıkla
         await page.evaluate(() => {
-            ['cookie', 'consent', 'gdpr'].forEach(kw => {
+            const acceptKeywords = ['kabul', 'accept', 'hepsini kabul', 'accept all', 'tamam', 'ok', 'agree', 'consent'];
+            const btns = Array.from(document.querySelectorAll('button, a'));
+            for (const btn of btns) {
+                const text = (btn.textContent || '').toLowerCase().trim();
+                if (acceptKeywords.some(kw => text.includes(kw)) && text.length < 40) {
+                    // Sadece fixed/sticky parent içindeki butonları tıkla
+                    let el = btn;
+                    while (el && el !== document.body) {
+                        const style = window.getComputedStyle(el);
+                        if (style.position === 'fixed' || style.position === 'sticky') {
+                            btn.click();
+                            return;
+                        }
+                        el = el.parentElement;
+                    }
+                }
+            }
+        });
+        await this.sleep(500);
+
+        // 2. Kalan cookie/consent/gdpr overlay'lerini DOM'dan kaldır
+        await page.evaluate(() => {
+            const keywords = ['cookie', 'consent', 'gdpr', 'privacy', 'onetrust', 'cc-banner', 'cc_banner'];
+            keywords.forEach(kw => {
                 document.querySelectorAll(`[class*="${kw}"], [id*="${kw}"]`).forEach(el => {
                     const style = window.getComputedStyle(el);
-                    if (style.position === 'fixed' || style.position === 'absolute') {
+                    if (style.position === 'fixed' || style.position === 'absolute' || style.position === 'sticky') {
                         el.remove();
                     }
                 });
             });
         });
         await this.sleep(200);
+
+        // 3. Google Translate bar — iframe ve toolbar kaldır
+        await page.evaluate(() => {
+            // Google Translate toolbar (genellikle :goog-gt- prefix veya #gtx-trans)
+            document.querySelectorAll(
+                '#gtx-trans, .goog-te-banner-frame, .skiptranslate, [id*="google_translate"], [class*="goog-te"]'
+            ).forEach(el => el.remove());
+
+            // Google Translate iframe (sayfa üstünde yer kaplayan)
+            document.querySelectorAll('iframe').forEach(iframe => {
+                const src = iframe.src || '';
+                if (src.includes('translate.google') || src.includes('translate_') ||
+                    iframe.className.includes('goog') || iframe.id.includes('goog')) {
+                    iframe.remove();
+                }
+            });
+
+            // body'nin margin-top'unu sıfırla (translate bar bazen margin ekler)
+            if (document.body.style.top) {
+                document.body.style.top = '';
+                document.body.style.position = '';
+            }
+            // html margin-top fix
+            const html = document.documentElement;
+            if (html.style.marginTop) html.style.marginTop = '0';
+            if (html.className.includes('translated')) {
+                html.style.marginTop = '0';
+                html.style.top = '0';
+            }
+        });
+        await this.sleep(200);
+
+        // 4. Genel fixed/sticky overlay'ler — ekranın üstünü/altını kaplayan
+        await page.evaluate(() => {
+            const allFixed = document.querySelectorAll('*');
+            allFixed.forEach(el => {
+                const style = window.getComputedStyle(el);
+                if (style.position !== 'fixed' && style.position !== 'sticky') return;
+                const rect = el.getBoundingClientRect();
+                // Menü modali DEĞİLSE kaldır (menü modali genellikle viewport'un büyük kısmını kaplar)
+                const coversScreen = rect.width > window.innerWidth * 0.7 && rect.height > window.innerHeight * 0.6;
+                if (coversScreen) return; // Bu muhtemelen menü modali, dokunma
+
+                // Küçük bar/banner'lar → kaldır (cookie bar, translate bar, notification bar)
+                const isBar = rect.height < 150 && rect.width > window.innerWidth * 0.5;
+                const isAtEdge = rect.top < 60 || rect.bottom > window.innerHeight - 100;
+                if (isBar && isAtEdge) {
+                    el.remove();
+                }
+            });
+        });
+        await this.sleep(200);
+
+        this.log('   🧹 Popup/overlay temizliği yapıldı');
     }
 
     // ─── FAZ 1: Kategori Keşfi (Screenshot → Gemini) ───
     async discoverCategories(page) {
         this.log('\n═══ FAZ 1: KATEGORİ KEŞFİ ═══');
 
-        // Sayfa yüklendikten sonra screenshot al
+        const screenshotPaths = [];
+
+        // İlk screenshot — mevcut ekran
         const ssPath = path.join(this.screenshotDir, 'phase1_main.png');
         await page.screenshot({ path: ssPath, fullPage: false });
+        screenshotPaths.push(ssPath);
 
-        // İkinci screenshot — aşağı scroll
-        await page.evaluate(() => window.scrollBy(0, window.innerHeight * 0.6));
+        // Modal/sheet içinde scroll et — daha aşağıdaki kategorileri göster
+        await page.evaluate(() => {
+            // Modal/sheet/drawer arayüz elementini bul ve scroll et
+            const modals = document.querySelectorAll(
+                '[class*="modal"], [class*="sheet"], [class*="dialog"], [class*="bottom"], [class*="drawer"], [class*="menu-list"], [class*="category"]'
+            );
+            for (const m of modals) {
+                if (m.scrollHeight > m.clientHeight + 50) {
+                    m.scrollTop = m.scrollHeight * 0.4; // %40 aşağı
+                    return;
+                }
+            }
+            // Modal bulunamadıysa window scroll
+            window.scrollBy(0, window.innerHeight * 0.5);
+        });
         await this.sleep(500);
         const ssPath2 = path.join(this.screenshotDir, 'phase1_scroll1.png');
         await page.screenshot({ path: ssPath2, fullPage: false });
+        screenshotPaths.push(ssPath2);
 
-        // Geri dön
-        await page.evaluate(() => window.scrollTo(0, 0));
+        // Daha da aşağı scroll — en alttaki kategoriler için
+        await page.evaluate(() => {
+            const modals = document.querySelectorAll(
+                '[class*="modal"], [class*="sheet"], [class*="dialog"], [class*="bottom"], [class*="drawer"], [class*="menu-list"], [class*="category"]'
+            );
+            for (const m of modals) {
+                if (m.scrollHeight > m.clientHeight + 50) {
+                    m.scrollTop = m.scrollHeight; // En alta
+                    return;
+                }
+            }
+            window.scrollBy(0, window.innerHeight * 0.5);
+        });
+        await this.sleep(500);
+        const ssPath3 = path.join(this.screenshotDir, 'phase1_scroll2.png');
+        await page.screenshot({ path: ssPath3, fullPage: false });
+        screenshotPaths.push(ssPath3);
+
+        // Modal'ı başa geri al — sonra tekrar tıklamak için
+        await page.evaluate(() => {
+            const modals = document.querySelectorAll(
+                '[class*="modal"], [class*="sheet"], [class*="dialog"], [class*="bottom"], [class*="drawer"], [class*="menu-list"], [class*="category"]'
+            );
+            for (const m of modals) {
+                if (m.scrollHeight > m.clientHeight + 50) {
+                    m.scrollTop = 0;
+                    return;
+                }
+            }
+            window.scrollTo(0, 0);
+        });
         await this.sleep(300);
 
-        this.log('📸 2 screenshot alındı, Gemini analiz ediyor...');
+        this.log(`📸 ${screenshotPaths.length} screenshot alındı, Gemini analiz ediyor...`);
 
         const prompt = `Bu bir restoran menü sayfası / menü seçim ekranı. 
 
@@ -187,7 +311,7 @@ JSON FORMAT:
 
 Hiç kategori yoksa: []`;
 
-        const categories = await this.askGemini([ssPath, ssPath2], prompt);
+        const categories = await this.askGemini(screenshotPaths, prompt);
 
         if (!Array.isArray(categories)) {
             this.log('⚠️ Gemini kategori bulamadı');
@@ -281,13 +405,21 @@ Hiç kategori yoksa: []`;
         for (let i = 0; i < screenshots.length; i += 2) {
             const batch = screenshots.slice(i, i + 2);
 
-            const prompt = `Bu ekran görüntü${batch.length > 1 ? 'leri' : 'sü'} bir restoran menüsünden.
+            const prompt = `Bu ekran görüntü${batch.length > 1 ? 'leri' : 'sü'} bir TÜRK restoranının menüsünden.
 Aktif kategori: "${categoryName}"
 
+TÜRKÇE YAZIM KURALLARI (ÇOK ÖNEMLİ!):
+- Türkçe özel karakterleri DOĞRU kullan: ı İ ş Ş ç Ç ğ Ğ ö Ö ü Ü
+- "i" ve "ı" farkına dikkat: "Kahvaltı" (doğru), "Kahvalti" (YANLIŞ)
+- "Başlangıçlar" (doğru), "Başlangiçlar" (YANLIŞ)
+- "İçecekler" (doğru), "Içecekler" (YANLIŞ)
+- "Köfteler" (doğru), "Kofteler" (YANLIŞ)
+- Menüden okuduğun metinleri aynen kopyala, Türkçe karakterleri asla değiştirme
+
 HER ÜRÜN İÇİN ÇIKAR:
-- "name": Ürün adı (Türkçe karakterleri koru)
+- "name": Ürün adı (Türkçe karakterleri AYNEN koru)
 - "price": Fiyat (sadece sayı). Fiyat yoksa 0
-- "category": Kategori adı
+- "category": Kategori adı (Türkçe karakterlerle)
 - "description": Açıklama (varsa, yoksa boş string)
 
 KATEGORİ KURALLARI:
@@ -327,7 +459,7 @@ Hiç ürün yoksa: []`;
 
     // ─── ANA EXTRACT FONKSİYONU ───
     async extract(targetUrl) {
-        this.log(`\n🚀 Universal Menu Extraction v6: ${targetUrl}`);
+        this.log(`\n🚀 Universal Menu Extraction v7 (Playwright): ${targetUrl}`);
 
         if (!fs.existsSync(this.screenshotDir)) {
             fs.mkdirSync(this.screenshotDir, { recursive: true });
@@ -335,20 +467,25 @@ Hiç ürün yoksa: []`;
 
         let browser;
         try {
-            browser = await puppeteer.launch({
+            browser = await chromium.launch({
                 headless: false,
-                executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
-                args: ['--no-sandbox', '--window-size=430,932']
+                channel: 'chrome', // Sistemdeki Chrome'u kullan
+                args: ['--window-size=430,1500']
             });
 
-            const page = await browser.newPage();
-            await page.setViewport({ width: 430, height: 932, isMobile: true });
-            await page.setUserAgent('Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15');
+            const context = await browser.newContext({
+                viewport: { width: 430, height: 1500 },
+                isMobile: true,
+                userAgent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15',
+                hasTouch: true
+            });
+
+            const page = await context.newPage();
 
             // ═══ FAZ 0: SAYFA AÇ ═══
             this.log('🌐 Sayfa açılıyor...');
             try {
-                await page.goto(targetUrl, { waitUntil: 'networkidle2', timeout: 30000 });
+                await page.goto(targetUrl, { waitUntil: 'networkidle', timeout: 30000 });
             } catch (e) {
                 await page.goto(targetUrl, { waitUntil: 'domcontentloaded', timeout: 15000 });
             }
@@ -362,6 +499,8 @@ Hiç ürün yoksa: []`;
                 this.log(`🖱️ "${menuBtn}" tıklandı`);
                 await this.sleep(3000);
                 await this.waitForContentRender(page);
+                // Modal açıldıktan sonra tekrar popup temizle
+                await this.closeNonMenuPopups(page);
             }
 
             // ═══ FAZ 1: KATEGORİ KEŞFİ ═══
@@ -384,6 +523,15 @@ Hiç ürün yoksa: []`;
 
                     try {
                         if (cat.clickable) {
+                            // ─── Modal Yeniden Aç (SPA modal menüler için) ───
+                            // Modal kapanmış olabilir, önce açmayı dene
+                            const reopenedFirst = await this.openMenuSelector(page);
+                            if (reopenedFirst) {
+                                this.log(`   🔄 Modal yeniden açıldı`);
+                                await this.sleep(2000);
+                                await this.waitForContentRender(page);
+                            }
+
                             // ─── Kategori tıkla ───
                             const clickResult = await this.clickCategory(page, cat.name);
                             if (clickResult.found) {
@@ -407,10 +555,14 @@ Hiç ürün yoksa: []`;
                         // ─── GERİ DÖN: Ana menü seçiciye ───
                         if (cat.clickable && ci < categories.length - 1) {
                             // Geri butonuna bas
-                            await page.goBack({ waitUntil: 'networkidle2', timeout: 10000 }).catch(async () => {
+                            try {
+                                await page.goBack({ waitUntil: 'networkidle', timeout: 10000 });
+                            } catch {
                                 // goBack başarısızsa, sayfayı yeniden yükle
-                                await page.goto(startUrl, { waitUntil: 'networkidle2', timeout: 15000 }).catch(() => { });
-                            });
+                                try {
+                                    await page.goto(startUrl, { waitUntil: 'networkidle', timeout: 15000 });
+                                } catch { }
+                            }
                             await this.sleep(2000);
                             await this.waitForContentRender(page);
 
@@ -495,7 +647,7 @@ Hiç ürün yoksa: []`;
         categories.forEach(c => this.log(`   ${c.name}: ${c.items.length} ürün`));
 
         return {
-            source: 'Universal Vision AI v6',
+            source: 'Universal Vision AI v7 (Playwright)',
             parsed_at: new Date().toISOString(),
             menu_url: sourceUrl,
             restaurant: this.extractRestaurantName(sourceUrl),

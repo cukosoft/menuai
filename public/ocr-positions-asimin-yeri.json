@@ -1,0 +1,1284 @@
+[
+  {
+    "page": 1,
+    "image_width": 390,
+    "image_height": 670,
+    "items": [
+      {
+        "name": "Özel günlerde Masa Süsleme (Gül yaprağı, yaşpasta, mum, 2 adet volkan)",
+        "price": 2000,
+        "x_percent": 14.8,
+        "y_percent": 43.1,
+        "bbox": [
+          398,
+          148,
+          463,
+          852
+        ]
+      }
+    ]
+  },
+  {
+    "page": 2,
+    "image_width": 390,
+    "image_height": 670,
+    "items": []
+  },
+  {
+    "page": 3,
+    "image_width": 390,
+    "image_height": 670,
+    "items": [
+      {
+        "name": "Meşrubat",
+        "price": 175,
+        "x_percent": 5,
+        "y_percent": 9.8,
+        "bbox": [
+          89,
+          50,
+          107,
+          126
+        ]
+      },
+      {
+        "name": "Yedigün",
+        "price": 175,
+        "x_percent": 5,
+        "y_percent": 11.8,
+        "bbox": [
+          109,
+          50,
+          127,
+          117
+        ]
+      },
+      {
+        "name": "Cola",
+        "price": 175,
+        "x_percent": 5,
+        "y_percent": 13.8,
+        "bbox": [
+          129,
+          50,
+          147,
+          90
+        ]
+      },
+      {
+        "name": "Şalgam",
+        "price": 150,
+        "x_percent": 5,
+        "y_percent": 15.8,
+        "bbox": [
+          149,
+          50,
+          167,
+          107
+        ]
+      },
+      {
+        "name": "Ayran",
+        "price": 150,
+        "x_percent": 5,
+        "y_percent": 17.8,
+        "bbox": [
+          169,
+          50,
+          187,
+          97
+        ]
+      },
+      {
+        "name": "Redbul",
+        "price": 200,
+        "x_percent": 5,
+        "y_percent": 19.8,
+        "bbox": [
+          189,
+          50,
+          207,
+          107
+        ]
+      },
+      {
+        "name": "1 L. Enerji",
+        "price": 350,
+        "x_percent": 5,
+        "y_percent": 21.8,
+        "bbox": [
+          209,
+          50,
+          227,
+          147
+        ]
+      },
+      {
+        "name": "1 L. Meyve Suyu",
+        "price": 300,
+        "x_percent": 5,
+        "y_percent": 23.8,
+        "bbox": [
+          229,
+          50,
+          247,
+          190
+        ]
+      },
+      {
+        "name": "Limon Suyu (Sıkma)",
+        "price": 175,
+        "x_percent": 5,
+        "y_percent": 25.8,
+        "bbox": [
+          249,
+          50,
+          267,
+          227
+        ]
+      },
+      {
+        "name": "Su 0.5 L.",
+        "price": 60,
+        "x_percent": 5,
+        "y_percent": 27.8,
+        "bbox": [
+          269,
+          50,
+          287,
+          137
+        ]
+      },
+      {
+        "name": "Su 1.5 L.",
+        "price": 100,
+        "x_percent": 5,
+        "y_percent": 29.8,
+        "bbox": [
+          289,
+          50,
+          307,
+          137
+        ]
+      },
+      {
+        "name": "Türk Kahvesi",
+        "price": 75,
+        "x_percent": 5,
+        "y_percent": 31.8,
+        "bbox": [
+          309,
+          50,
+          327,
+          157
+        ]
+      },
+      {
+        "name": "Nescafe",
+        "price": 75,
+        "x_percent": 5,
+        "y_percent": 33.8,
+        "bbox": [
+          329,
+          50,
+          347,
+          117
+        ]
+      },
+      {
+        "name": "Çay",
+        "price": 50,
+        "x_percent": 5,
+        "y_percent": 35.8,
+        "bbox": [
+          349,
+          50,
+          367,
+          87
+        ]
+      },
+      {
+        "name": "Soda",
+        "price": 100,
+        "x_percent": 5,
+        "y_percent": 37.8,
+        "bbox": [
+          369,
+          50,
+          387,
+          97
+        ]
+      },
+      {
+        "name": "Churchill",
+        "price": 200,
+        "x_percent": 5,
+        "y_percent": 39.8,
+        "bbox": [
+          389,
+          50,
+          407,
+          127
+        ]
+      },
+      {
+        "name": "Alkolsüz Kokteyl",
+        "price": 350,
+        "x_percent": 5,
+        "y_percent": 41.8,
+        "bbox": [
+          409,
+          50,
+          427,
+          187
+        ]
+      },
+      {
+        "name": "Rakı 8 cc",
+        "price": 400,
+        "x_percent": 5,
+        "y_percent": 49.8,
+        "bbox": [
+          489,
+          50,
+          507,
+          137
+        ]
+      },
+      {
+        "name": "Rakı 4 cc",
+        "price": 300,
+        "x_percent": 5,
+        "y_percent": 51.8,
+        "bbox": [
+          509,
+          50,
+          527,
+          137
+        ]
+      },
+      {
+        "name": "Tekirdağ 8 cc",
+        "price": 425,
+        "x_percent": 5,
+        "y_percent": 53.8,
+        "bbox": [
+          529,
+          50,
+          547,
+          167
+        ]
+      },
+      {
+        "name": "Tekirdağ 4cc",
+        "price": 325,
+        "x_percent": 5,
+        "y_percent": 55.8,
+        "bbox": [
+          549,
+          50,
+          567,
+          157
+        ]
+      },
+      {
+        "name": "Votka 8 cc (Sek)",
+        "price": 380,
+        "x_percent": 5,
+        "y_percent": 57.8,
+        "bbox": [
+          569,
+          50,
+          587,
+          197
+        ]
+      },
+      {
+        "name": "Votka 4 cc (Sek)",
+        "price": 300,
+        "x_percent": 5,
+        "y_percent": 59.8,
+        "bbox": [
+          589,
+          50,
+          607,
+          197
+        ]
+      },
+      {
+        "name": "Votka Meşrubat 8 cc",
+        "price": 420,
+        "x_percent": 5,
+        "y_percent": 61.8,
+        "bbox": [
+          609,
+          50,
+          627,
+          237
+        ]
+      },
+      {
+        "name": "Votka Bull 8 cc",
+        "price": 450,
+        "x_percent": 5,
+        "y_percent": 63.8,
+        "bbox": [
+          629,
+          50,
+          647,
+          197
+        ]
+      },
+      {
+        "name": "Absolute 8 cc",
+        "price": 450,
+        "x_percent": 5,
+        "y_percent": 65.8,
+        "bbox": [
+          649,
+          50,
+          667,
+          177
+        ]
+      },
+      {
+        "name": "Cin 8 cc",
+        "price": 400,
+        "x_percent": 5,
+        "y_percent": 67.8,
+        "bbox": [
+          669,
+          50,
+          687,
+          127
+        ]
+      },
+      {
+        "name": "Chivas 4 cc",
+        "price": 350,
+        "x_percent": 5,
+        "y_percent": 69.8,
+        "bbox": [
+          689,
+          50,
+          707,
+          147
+        ]
+      },
+      {
+        "name": "Chivas 8 cc",
+        "price": 450,
+        "x_percent": 5,
+        "y_percent": 71.8,
+        "bbox": [
+          709,
+          50,
+          727,
+          147
+        ]
+      },
+      {
+        "name": "Tekila Shot",
+        "price": 300,
+        "x_percent": 5,
+        "y_percent": 73.8,
+        "bbox": [
+          729,
+          50,
+          747,
+          147
+        ]
+      },
+      {
+        "name": "Kokteyl Alkollü",
+        "price": 600,
+        "x_percent": 5,
+        "y_percent": 75.8,
+        "bbox": [
+          749,
+          50,
+          767,
+          187
+        ]
+      },
+      {
+        "name": "Kadeh Şarap",
+        "price": 450,
+        "x_percent": 5,
+        "y_percent": 77.8,
+        "bbox": [
+          769,
+          50,
+          787,
+          157
+        ]
+      },
+      {
+        "name": "Sıcak Şarap",
+        "price": 450,
+        "x_percent": 5,
+        "y_percent": 79.8,
+        "bbox": [
+          789,
+          50,
+          807,
+          157
+        ]
+      },
+      {
+        "name": "Efes Bira 33 cl",
+        "price": 300,
+        "x_percent": 5,
+        "y_percent": 81.8,
+        "bbox": [
+          809,
+          50,
+          827,
+          197
+        ]
+      },
+      {
+        "name": "Bomonti",
+        "price": 350,
+        "x_percent": 5,
+        "y_percent": 83.8,
+        "bbox": [
+          829,
+          50,
+          847,
+          117
+        ]
+      },
+      {
+        "name": "Miller 50 cl",
+        "price": 350,
+        "x_percent": 5,
+        "y_percent": 85.8,
+        "bbox": [
+          849,
+          50,
+          867,
+          157
+        ]
+      }
+    ]
+  },
+  {
+    "page": 4,
+    "image_width": 390,
+    "image_height": 670,
+    "items": [
+      {
+        "name": "Emir",
+        "price": 1800,
+        "x_percent": 4.4,
+        "y_percent": 23.9,
+        "bbox": [
+          230,
+          44,
+          247,
+          80
+        ]
+      },
+      {
+        "name": "Rose",
+        "price": 1750,
+        "x_percent": 4.4,
+        "y_percent": 26.8,
+        "bbox": [
+          259,
+          44,
+          276,
+          80
+        ]
+      },
+      {
+        "name": "Peribacası Kırmızı - Beyaz",
+        "price": 1650,
+        "x_percent": 4.4,
+        "y_percent": 29.8,
+        "bbox": [
+          289,
+          44,
+          306,
+          248
+        ]
+      },
+      {
+        "name": "Muskat - Misket",
+        "price": 1700,
+        "x_percent": 4.4,
+        "y_percent": 32.7,
+        "bbox": [
+          318,
+          44,
+          335,
+          160
+        ]
+      },
+      {
+        "name": "Öküzgözü",
+        "price": 1800,
+        "x_percent": 4.4,
+        "y_percent": 35.6,
+        "bbox": [
+          347,
+          44,
+          364,
+          120
+        ]
+      },
+      {
+        "name": "Ö.Gözü - B.Kere",
+        "price": 1800,
+        "x_percent": 4.4,
+        "y_percent": 38.6,
+        "bbox": [
+          377,
+          44,
+          394,
+          160
+        ]
+      },
+      {
+        "name": "Libra",
+        "price": 1850,
+        "x_percent": 4.4,
+        "y_percent": 41.5,
+        "bbox": [
+          406,
+          44,
+          423,
+          88
+        ]
+      },
+      {
+        "name": "Kalecik Karası",
+        "price": 1850,
+        "x_percent": 4.4,
+        "y_percent": 44.4,
+        "bbox": [
+          436,
+          44,
+          452,
+          160
+        ]
+      },
+      {
+        "name": "Syrah",
+        "price": 1850,
+        "x_percent": 4.4,
+        "y_percent": 47.4,
+        "bbox": [
+          465,
+          44,
+          482,
+          88
+        ]
+      },
+      {
+        "name": "Cabernet",
+        "price": 1850,
+        "x_percent": 4.4,
+        "y_percent": 50.3,
+        "bbox": [
+          494,
+          44,
+          511,
+          120
+        ]
+      },
+      {
+        "name": "Merlot",
+        "price": 1850,
+        "x_percent": 4.4,
+        "y_percent": 53.2,
+        "bbox": [
+          523,
+          44,
+          540,
+          100
+        ]
+      },
+      {
+        "name": "Narince",
+        "price": 1750,
+        "x_percent": 4.4,
+        "y_percent": 56.2,
+        "bbox": [
+          553,
+          44,
+          570,
+          110
+        ]
+      },
+      {
+        "name": "Testi 1 L",
+        "price": 1900,
+        "x_percent": 4.4,
+        "y_percent": 59.1,
+        "bbox": [
+          582,
+          44,
+          599,
+          120
+        ]
+      },
+      {
+        "name": "Testi 0.5 L",
+        "price": 1150,
+        "x_percent": 4.4,
+        "y_percent": 62,
+        "bbox": [
+          611,
+          44,
+          628,
+          130
+        ]
+      },
+      {
+        "name": "C.S.M.S.",
+        "price": 2800,
+        "x_percent": 4.4,
+        "y_percent": 65,
+        "bbox": [
+          641,
+          44,
+          658,
+          110
+        ]
+      },
+      {
+        "name": "Seneler Öküzgözü",
+        "price": 2700,
+        "x_percent": 4.4,
+        "y_percent": 67.9,
+        "bbox": [
+          670,
+          44,
+          687,
+          190
+        ]
+      },
+      {
+        "name": "Seneler Ö.Gözü B.Kere",
+        "price": 2700,
+        "x_percent": 4.4,
+        "y_percent": 70.8,
+        "bbox": [
+          699,
+          44,
+          716,
+          220
+        ]
+      },
+      {
+        "name": "Hayyam Kırmızı",
+        "price": 1600,
+        "x_percent": 4.4,
+        "y_percent": 73.8,
+        "bbox": [
+          729,
+          44,
+          746,
+          160
+        ]
+      },
+      {
+        "name": "Şampanya",
+        "price": 5000,
+        "x_percent": 4.4,
+        "y_percent": 76.7,
+        "bbox": [
+          758,
+          44,
+          775,
+          120
+        ]
+      },
+      {
+        "name": "Sıcak Şarap",
+        "price": 2200,
+        "x_percent": 4.4,
+        "y_percent": 79.7,
+        "bbox": [
+          788,
+          44,
+          805,
+          140
+        ]
+      },
+      {
+        "name": "Meyve Şarapları",
+        "price": 1800,
+        "x_percent": 4.4,
+        "y_percent": 82.6,
+        "bbox": [
+          817,
+          44,
+          834,
+          180
+        ]
+      }
+    ]
+  },
+  {
+    "page": 5,
+    "image_width": 390,
+    "image_height": 670,
+    "items": [
+      {
+        "name": "Yeni Rakı 20 Cl.",
+        "price": 1150,
+        "x_percent": 5.2,
+        "y_percent": 9.6,
+        "bbox": [
+          87,
+          52,
+          104,
+          200
+        ]
+      },
+      {
+        "name": "Yeni Rakı 35 Cl.",
+        "price": 1700,
+        "x_percent": 5.2,
+        "y_percent": 11.6,
+        "bbox": [
+          107,
+          52,
+          124,
+          200
+        ]
+      },
+      {
+        "name": "Yeni Rakı 50 Cl.",
+        "price": 2000,
+        "x_percent": 5.2,
+        "y_percent": 13.6,
+        "bbox": [
+          127,
+          52,
+          144,
+          200
+        ]
+      },
+      {
+        "name": "Yeni Rakı 70 Cl.",
+        "price": 2650,
+        "x_percent": 5.2,
+        "y_percent": 15.6,
+        "bbox": [
+          147,
+          52,
+          164,
+          200
+        ]
+      },
+      {
+        "name": "Yeni Rakı 100 Cl.",
+        "price": 3600,
+        "x_percent": 5.2,
+        "y_percent": 17.6,
+        "bbox": [
+          167,
+          52,
+          184,
+          200
+        ]
+      },
+      {
+        "name": "Tekirdağ Rakı 35 Cl.",
+        "price": 1750,
+        "x_percent": 5.2,
+        "y_percent": 19.6,
+        "bbox": [
+          187,
+          52,
+          204,
+          230
+        ]
+      },
+      {
+        "name": "Tekirdağ Rakı 70 Cl.",
+        "price": 2700,
+        "x_percent": 5.2,
+        "y_percent": 21.6,
+        "bbox": [
+          207,
+          52,
+          224,
+          230
+        ]
+      },
+      {
+        "name": "Altın Seri 20 Cl.",
+        "price": 1250,
+        "x_percent": 5.2,
+        "y_percent": 23.6,
+        "bbox": [
+          227,
+          52,
+          244,
+          190
+        ]
+      },
+      {
+        "name": "Altın Seri 35 Cl.",
+        "price": 1800,
+        "x_percent": 5.2,
+        "y_percent": 25.6,
+        "bbox": [
+          247,
+          52,
+          264,
+          190
+        ]
+      },
+      {
+        "name": "Altın Seri 50 Cl.",
+        "price": 2350,
+        "x_percent": 5.2,
+        "y_percent": 27.6,
+        "bbox": [
+          267,
+          52,
+          284,
+          190
+        ]
+      },
+      {
+        "name": "Altın Seri 70 Cl.",
+        "price": 2800,
+        "x_percent": 5.2,
+        "y_percent": 29.6,
+        "bbox": [
+          287,
+          52,
+          304,
+          190
+        ]
+      },
+      {
+        "name": "Altın Seri 100 Cl.",
+        "price": 3800,
+        "x_percent": 5.2,
+        "y_percent": 31.6,
+        "bbox": [
+          307,
+          52,
+          324,
+          190
+        ]
+      },
+      {
+        "name": "Beylerbeyi Göbek 20 Cl.",
+        "price": 1350,
+        "x_percent": 5.2,
+        "y_percent": 33.6,
+        "bbox": [
+          327,
+          52,
+          344,
+          240
+        ]
+      },
+      {
+        "name": "Beylerbeyi Göbek 35 Cl.",
+        "price": 2000,
+        "x_percent": 5.2,
+        "y_percent": 35.6,
+        "bbox": [
+          347,
+          52,
+          364,
+          240
+        ]
+      },
+      {
+        "name": "Beylerbeyi Göbek 50 Cl.",
+        "price": 2650,
+        "x_percent": 5.2,
+        "y_percent": 37.6,
+        "bbox": [
+          367,
+          52,
+          384,
+          240
+        ]
+      },
+      {
+        "name": "Beylerbeyi Göbek 70 Cl.",
+        "price": 3500,
+        "x_percent": 5.2,
+        "y_percent": 39.6,
+        "bbox": [
+          387,
+          52,
+          404,
+          240
+        ]
+      },
+      {
+        "name": "Beylerbeyi Göbek 100 Cl.",
+        "price": 4500,
+        "x_percent": 5.2,
+        "y_percent": 41.6,
+        "bbox": [
+          407,
+          52,
+          424,
+          240
+        ]
+      },
+      {
+        "name": "Yeni Seri Rakı 35 Cl.",
+        "price": 1750,
+        "x_percent": 5.2,
+        "y_percent": 43.6,
+        "bbox": [
+          427,
+          52,
+          444,
+          220
+        ]
+      },
+      {
+        "name": "Yeni Seri Rakı 70 Cl.",
+        "price": 2700,
+        "x_percent": 5.2,
+        "y_percent": 45.6,
+        "bbox": [
+          447,
+          52,
+          464,
+          220
+        ]
+      },
+      {
+        "name": "Yeşil Efe Rakı 35 Cl.",
+        "price": 1750,
+        "x_percent": 5.2,
+        "y_percent": 47.6,
+        "bbox": [
+          467,
+          52,
+          484,
+          220
+        ]
+      },
+      {
+        "name": "Yeşil Efe Rakı 70 Cl.",
+        "price": 2700,
+        "x_percent": 5.2,
+        "y_percent": 49.6,
+        "bbox": [
+          487,
+          52,
+          504,
+          220
+        ]
+      },
+      {
+        "name": "Efe Gold Rakı 20 Cl.",
+        "price": 1250,
+        "x_percent": 5.2,
+        "y_percent": 51.6,
+        "bbox": [
+          507,
+          52,
+          524,
+          210
+        ]
+      },
+      {
+        "name": "Efe Gold Rakı 35 Cl.",
+        "price": 1800,
+        "x_percent": 5.2,
+        "y_percent": 53.6,
+        "bbox": [
+          527,
+          52,
+          544,
+          210
+        ]
+      },
+      {
+        "name": "Efe Gold Rakı 50 Cl.",
+        "price": 2350,
+        "x_percent": 5.2,
+        "y_percent": 55.6,
+        "bbox": [
+          547,
+          52,
+          564,
+          210
+        ]
+      },
+      {
+        "name": "Efe Gold Rakı 70 Cl.",
+        "price": 2800,
+        "x_percent": 5.2,
+        "y_percent": 57.6,
+        "bbox": [
+          567,
+          52,
+          584,
+          210
+        ]
+      },
+      {
+        "name": "Efe Gold Rakı 100 Cl.",
+        "price": 3800,
+        "x_percent": 5.2,
+        "y_percent": 59.6,
+        "bbox": [
+          587,
+          52,
+          604,
+          210
+        ]
+      },
+      {
+        "name": "Absolute 35 Cl.",
+        "price": 1700,
+        "x_percent": 5.2,
+        "y_percent": 61.6,
+        "bbox": [
+          607,
+          52,
+          624,
+          190
+        ]
+      },
+      {
+        "name": "Absolute 50 Cl.",
+        "price": 2100,
+        "x_percent": 5.2,
+        "y_percent": 63.6,
+        "bbox": [
+          627,
+          52,
+          644,
+          190
+        ]
+      },
+      {
+        "name": "Absolute 70 Cl.",
+        "price": 2700,
+        "x_percent": 5.2,
+        "y_percent": 65.6,
+        "bbox": [
+          647,
+          52,
+          664,
+          190
+        ]
+      },
+      {
+        "name": "Absolute 100 Cl.",
+        "price": 3750,
+        "x_percent": 5.2,
+        "y_percent": 67.6,
+        "bbox": [
+          667,
+          52,
+          684,
+          190
+        ]
+      },
+      {
+        "name": "İstanbulblue 35 Cl.",
+        "price": 1550,
+        "x_percent": 5.2,
+        "y_percent": 69.6,
+        "bbox": [
+          687,
+          52,
+          704,
+          210
+        ]
+      },
+      {
+        "name": "İstanbulblue 50 Cl.",
+        "price": 2000,
+        "x_percent": 5.2,
+        "y_percent": 71.6,
+        "bbox": [
+          707,
+          52,
+          724,
+          210
+        ]
+      },
+      {
+        "name": "İstanbulblue 70 Cl.",
+        "price": 2500,
+        "x_percent": 5.2,
+        "y_percent": 73.6,
+        "bbox": [
+          727,
+          52,
+          744,
+          210
+        ]
+      },
+      {
+        "name": "İstanbulblue 100 Cl.",
+        "price": 3500,
+        "x_percent": 5.2,
+        "y_percent": 75.6,
+        "bbox": [
+          747,
+          52,
+          764,
+          210
+        ]
+      },
+      {
+        "name": "Chivas 35 Cl.",
+        "price": 2200,
+        "x_percent": 5.2,
+        "y_percent": 77.6,
+        "bbox": [
+          767,
+          52,
+          784,
+          170
+        ]
+      },
+      {
+        "name": "Chivas 50 Cl.",
+        "price": 2800,
+        "x_percent": 5.2,
+        "y_percent": 79.6,
+        "bbox": [
+          787,
+          52,
+          804,
+          170
+        ]
+      },
+      {
+        "name": "Chivas 70 Cl.",
+        "price": 3600,
+        "x_percent": 5.2,
+        "y_percent": 81.6,
+        "bbox": [
+          807,
+          52,
+          824,
+          170
+        ]
+      },
+      {
+        "name": "Chivas 100 Cl.",
+        "price": 4850,
+        "x_percent": 5.2,
+        "y_percent": 83.6,
+        "bbox": [
+          827,
+          52,
+          844,
+          170
+        ]
+      },
+      {
+        "name": "Jack Daniels 35 Cl.",
+        "price": 2100,
+        "x_percent": 5.2,
+        "y_percent": 85.6,
+        "bbox": [
+          847,
+          52,
+          864,
+          210
+        ]
+      },
+      {
+        "name": "Jack Daniel's 50 Cl.",
+        "price": 2800,
+        "x_percent": 5.2,
+        "y_percent": 87.6,
+        "bbox": [
+          867,
+          52,
+          884,
+          210
+        ]
+      },
+      {
+        "name": "Jack Daniel's 70 Cl.",
+        "price": 3600,
+        "x_percent": 5.2,
+        "y_percent": 89.6,
+        "bbox": [
+          887,
+          52,
+          904,
+          210
+        ]
+      },
+      {
+        "name": "Tequila 35 Cl.",
+        "price": 2100,
+        "x_percent": 5.2,
+        "y_percent": 91.6,
+        "bbox": [
+          907,
+          52,
+          924,
+          170
+        ]
+      },
+      {
+        "name": "Tequila 50 Cl.",
+        "price": 2500,
+        "x_percent": 5.2,
+        "y_percent": 93.6,
+        "bbox": [
+          927,
+          52,
+          944,
+          170
+        ]
+      },
+      {
+        "name": "Tequila 70 Cl.",
+        "price": 3500,
+        "x_percent": 5.2,
+        "y_percent": 95.6,
+        "bbox": [
+          947,
+          52,
+          964,
+          170
+        ]
+      },
+      {
+        "name": "Ballantine's 35 Cl.",
+        "price": 1750,
+        "x_percent": 5.2,
+        "y_percent": 97.6,
+        "bbox": [
+          967,
+          52,
+          984,
+          200
+        ]
+      },
+      {
+        "name": "Ballantine's 70 Cl.",
+        "price": 3000,
+        "x_percent": 5.2,
+        "y_percent": 99.4,
+        "bbox": [
+          987,
+          52,
+          1000,
+          200
+        ]
+      }
+    ]
+  }
+]

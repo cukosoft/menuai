@@ -1,0 +1,2862 @@
+{
+  "restaurant": "Pote",
+  "menu_url": "https://mps27.mobresposmenu.com.tr/?id=MP422",
+  "extracted_at": "2026-02-11T09:08:17.726Z",
+  "categories": [
+    {
+      "name": "ET YEMEKLERI",
+      "items": [
+        {
+          "name": "ALİNAZİK",
+          "price": 960,
+          "description": "Sarımsaklı Beğendi üzerine, Dana bonfile , Yeşil biber,  Domates ve Soğan"
+        },
+        {
+          "name": "BONFİLE FAJİTA",
+          "price": 1080,
+          "description": "Izgara Dana Bonfile, Karamelize Soğan, Yesil ve Kırmızı Biber yanında üç çeşit özel sos, Tortilla Ekmeği ve Salata ile servis edilir."
+        },
+        {
+          "name": "SRİRACHA SOS BONFİLE",
+          "price": 950,
+          "description": "Izgarada pişmiş julyen Dana Bonfile, Kırmızı ve Yeşil Biber, Krema, Mantar, Özel Sriracha Sos (Acı)  yanında Haşlanmış Sebze ve Patates ile servis edilir"
+        },
+        {
+          "name": "STEAK MEKSİKA",
+          "price": 950,
+          "description": "Izgara Bonfile, Mantar, Jalapeno Biberi, Meksika Fasulyesi, Mısır, Yesil ve Kırmızı Biber, yanında Haşlanmış Sebze, Patates Püresi ve Salata ile servis edilir."
+        },
+        {
+          "name": "BONFİLE COKERTME",
+          "price": 970,
+          "description": "Kibrit Patates yatağında Jülyen Dana Bonfile, Yoğurt, Domates Sosu, Kırmızı-Yeşil Biber yanında salata ile servis edilir."
+        },
+        {
+          "name": "BONFİLE RİZOTTO",
+          "price": 1090,
+          "description": "Dana Bonfile, Beyaz Şaraplı Rizotto, Mantar, Krema, Parmesan Peyniri"
+        },
+        {
+          "name": "ORMAN MEYVELİ BONFİLE",
+          "price": 1080,
+          "description": "Dana Bonfile üzerinde Orman meyvelerinden yapılmış özel sos, Mantar ve Soğan Sote, yanında Patates Püresi ile servis edilir."
+        },
+        {
+          "name": "DANA LOKUM",
+          "price": 1050,
+          "description": "Izgara Dana Bonfile yanında Mantarlı Soğan, Tatlı Ekşi Soslu Elma Dilim Patates ve Salata ile servis edilir."
+        },
+        {
+          "name": "POTE SPECIAL BONFILE",
+          "price": 1080,
+          "description": "Patates Püresi üzerinde Dömi Glas Soslu Izgara Dana Bonfile yanında Haşlanmış Sebze ve Salata ile servis edilir."
+        },
+        {
+          "name": "ÇITIR BONFİLE SARMA",
+          "price": 1080,
+          "description": "Patates Püre üzerinde Mozzarella dolgulu Dana Bonfile, üzerinde kremalı Cheddar yanında Haşlanmış Sebze ve Salata ile servis edilir."
+        },
+        {
+          "name": "LOKUM TER.YAG SARIMSAK",
+          "price": 1090,
+          "description": "Izgara Lokum Bonfile, Sarımsak, Mantarlı Soğan, Tatlı Ekşi Soslu Elma Dilim Patates ve Salata ile servis edilir."
+        },
+        {
+          "name": "BONFILE MORELS",
+          "price": 1050,
+          "description": "Izgara Bonfile, Ev yapımı patates Cips, Ispanak, Kuşkonmaz, Salata ile servis edilir."
+        },
+        {
+          "name": "TERİYAKI SOS BONFILE",
+          "price": 950,
+          "description": "Julyen dogranmış Bonfile, Mantar, Kuru Domates,Sogan,Teriyaki Sos, Mix Sebze, Patetes Püresi ve Salata ile servis edilir."
+        },
+        {
+          "name": "MUSHROOM BONFİLE",
+          "price": 1070,
+          "description": "Dana Bonfile, Krema ve Rokfor Peynirli Mantar yanında Sebze haşlama, Zerdeçallı Pilav eşliğinde"
+        },
+        {
+          "name": "CAFE DE PARIS BONFİLE",
+          "price": 1090,
+          "description": "Julyen doğranmış Izgara Dana Bonfile, Café de Paris Sos yanında Haşlanmış Sebze, Patates ve Salata ile servis edilir."
+        }
+      ]
+    },
+    {
+      "name": "ARA SICAKLAR",
+      "items": [
+        {
+          "name": "PARMESAN TRUF PATATES",
+          "price": 290,
+          "description": "Patates, Truf Sos, Parmesan Peyniri"
+        },
+        {
+          "name": "CHEDDAR PEYNİRLİ PATATES",
+          "price": 290,
+          "description": "Patates, Cheddar Peyniri"
+        },
+        {
+          "name": "ICLI KOFTE",
+          "price": 550,
+          "description": "Dana Kıyma, Soğan ve Baharat"
+        },
+        {
+          "name": "PEYNIR TABAGI",
+          "price": 850,
+          "description": "Yerli ve İthal Peynir Çeşitleri"
+        },
+        {
+          "name": "COMBO TABAGI",
+          "price": 520,
+          "description": "Patates Kızartması, Soğan Halkası, Siğara Börek, Kokteyl Sosis, Kajun Baharatlı Çıtır Tavuk Parçaları, Mini İçli Köfte yanında Chili Sos ve Hardal Sosu ile servis edilir."
+        },
+        {
+          "name": "BHRTLI KZRMIS PATATES",
+          "price": 250,
+          "description": "Baharatlı Kızarmış Patates, Ketçap ve Mayonez ile servis edilir."
+        },
+        {
+          "name": "CHICKEN FINGERS",
+          "price": 495,
+          "description": "Çıtır Kaplamalı Parmak Tavuk, Baharatlı Kızarmış Patates yanında Ballı Hardal Sos ve Sweet Chili sos ile servis edilir"
+        },
+        {
+          "name": "MOZARELLA STICK 8 ADT",
+          "price": 450,
+          "description": "Avokado Sosu ve Chili sos ile servis edilir."
+        },
+        {
+          "name": "HELLIM IZGARA",
+          "price": 450,
+          "description": "Hellim Peynir yanında Salata ile servis edilir."
+        },
+        {
+          "name": "GUVECTE MANTAR",
+          "price": 350,
+          "description": "Kaşar Peyniri ile fırınlanmış Güveçte Mantar"
+        },
+        {
+          "name": "CHEDDARLI ÇITIR TABAĞI",
+          "price": 390,
+          "description": "İçli Köfte, Kajun Baharatlı Çıtır Tavuk, Jalabone Peynirli Biber, Çıtır Toplar ve Cheddar sos ile servis edilir."
+        },
+        {
+          "name": "CEDHARLI DANA FÜME",
+          "price": 470,
+          "description": "Dana Füme, Cheddar Peyniri, Cheddar Sos"
+        },
+        {
+          "name": "SIGARA BOREGI",
+          "price": 250,
+          "description": "Sigara Böreği Homemade"
+        },
+        {
+          "name": "KARIDES GUVEC",
+          "price": 595,
+          "description": "Jumbo Karides, Mantar, Sarımsak, Renkli biber, Domates sosu,"
+        },
+        {
+          "name": "SOGAN HALKASI",
+          "price": 250,
+          "description": ""
+        },
+        {
+          "name": "BÖREK SEPETI",
+          "price": 350,
+          "description": "Pişi, Sigara Böreği, Çi Börek, Mozarella Stick, Sosis"
+        },
+        {
+          "name": "CORN BEANS TEMPURA",
+          "price": 390,
+          "description": "Tempura Mısır"
+        },
+        {
+          "name": "GÜVEÇTE KEÇİ PEYNİR",
+          "price": 490,
+          "description": "Keçi Peyniri, Çeri Domates, Tereyağ, Pulbiber, Kekik"
+        },
+        {
+          "name": "ELMA DILIM PATATES",
+          "price": 270,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "ROLL SUSHİ",
+      "items": [
+        {
+          "name": "DEEP FRİED CALİFORNİA",
+          "price": 580,
+          "description": "Tempura Yengeç, Avokado, Salatalık, Krem Peynir,  dışı kızarmış tempura, Teriyaki Sos, Sweet Chili Sos ve Spicy-Acı Sos"
+        },
+        {
+          "name": "CRUNCHY ROLL",
+          "price": 585,
+          "description": "Yengeç, Salatalık, Somon, Mısır, Avokado, Krem peynir, dışı kızarmış tempura, Teriyaki sos, Spicy Sos ve Sweet Chili Sos"
+        },
+        {
+          "name": "DEEP FRIED SALMON ROLL",
+          "price": 580,
+          "description": "Tempura Somon, Krem peynir, Avokado, dışı kızarmış tempura,Teriyaki Sos, Spicy-Acı Sos ve Sweet Chili Sos"
+        },
+        {
+          "name": "RACHEL ROLL",
+          "price": 580,
+          "description": "Tempura Karides, Avokado, Salatalık, Krem Peynir dışı Çıtır Somon, Teriyaki Sos, Sweet Chili Sos, Spicy-Acı Sos"
+        },
+        {
+          "name": "MINI ROLL",
+          "price": 585,
+          "description": "Tempura Levrek, Krem Peynir, Avokado, Salatalık, Teriyaki Sos ve Sweet Chili Sos"
+        },
+        {
+          "name": "LAVA ROLL",
+          "price": 580,
+          "description": "Tempura Levrek, Krem Peynir, Avokado, Salatalık, Spicy -Acı Sos, Teriyaki Sos"
+        },
+        {
+          "name": "SPIDER ROLL",
+          "price": 580,
+          "description": "Tempura Levrek, Avokado,Salatalık, Krem Peynir dışı Kızarmış Kibrit Patates, Sweet Chili Sos ve mayonez"
+        },
+        {
+          "name": "FRİED VEGGİ ROLL",
+          "price": 510,
+          "description": "Avokado, Mısır, Havuç, Salatalık, Lolorosso, Krem Peynir, Patates, Sweet Chili, Mayonez ve Teriyaki Sos"
+        }
+      ]
+    },
+    {
+      "name": "MAKARNALAR",
+      "items": [
+        {
+          "name": "KÖRİ SOSLU PENNE",
+          "price": 420,
+          "description": "Özel marine edilmiş Tavuk Dilimleri, Mantar,  Körili Krema Sos yanında Salata ile servis edilir."
+        },
+        {
+          "name": "NAPOLİTEN MAKARNA",
+          "price": 420,
+          "description": "Spaghetti, Domates sos,  yanında Salata ile servis edilir."
+        },
+        {
+          "name": "CARBONARA MAKARNA",
+          "price": 420,
+          "description": "Penne Makarna, Salam, Sosis, Krema yanında Salata ile servis edilir."
+        },
+        {
+          "name": "PENNE ARABIATTA",
+          "price": 420,
+          "description": "Acı Biberli Domates Sosu, Siyah Zeytin, Fesleğen"
+        },
+        {
+          "name": "FETTUCCINE TAVUK MANTAR",
+          "price": 490,
+          "description": ""
+        },
+        {
+          "name": "PESTO SOSLU PENNE",
+          "price": 420,
+          "description": "Tavuk Parçaları, Pesto Sos, Mantar, Krema yanında Salata ile servis edilir"
+        },
+        {
+          "name": "SPAGETTI BOLONEZ",
+          "price": 420,
+          "description": "Dana Kıyma, Domates Sos,  yanında Salata ile servis edilir."
+        },
+        {
+          "name": "BEŞ PEYNİRLİ RAVİOLİ",
+          "price": 550,
+          "description": "Ravioli ve Krema, yanında Salata ile servis edilir."
+        },
+        {
+          "name": "KARİDES MAKARNA",
+          "price": 590,
+          "description": "Karides, Krema, Mantar, yanında Salata ile servis edilir."
+        },
+        {
+          "name": "MAC&CHEESE",
+          "price": 425,
+          "description": "Pipette Makarna, Cheddar Peyniri, Mozzarella, Krema yanında Salata ile servis edilir."
+        },
+        {
+          "name": "BONFİLE PENNE",
+          "price": 650,
+          "description": "Bonfile parçaları, Mantar, Mix biber, Domates sos"
+        },
+        {
+          "name": "BOLOGNESE PENNE",
+          "price": 425,
+          "description": "Dana Kiyma ve Domates Soslu"
+        }
+      ]
+    },
+    {
+      "name": "TAVUK YEMEKLERI",
+      "items": [
+        {
+          "name": "HARDAL SOSLU TAVUK",
+          "price": 525,
+          "description": "Tavuk bonfile parçaları, Mantar, Ballı Hardal, Krema yanında salata ile servis edilir."
+        },
+        {
+          "name": "TAVUK MEKSİKA",
+          "price": 525,
+          "description": "Izgara Tavuk Göğsü, Mantar, Biber, Jalapeno, Meksika Fasulyesi, Soğan, Mısır, Domates, Mozzarella yanında Haşlanmış Sebze, Patates ve Salata ile servis edilir."
+        },
+        {
+          "name": "SRİRACHA SOS.TAVUK",
+          "price": 525,
+          "description": "Julyen Tavuk Parçaları, Srıracha Sos (Acı) , Yeşil ve Kırmızı Biber, Mantar yanında Haşlanmış Sebze, Patates  ve Salata ile servis edilir."
+        },
+        {
+          "name": "TATLI-ACI TAVUK",
+          "price": 525,
+          "description": "Julyen Tavuk Parçaları, Kırmızı-Yeşil Biber,Sriracha Sos, Mısır, Sogan yanında Haşlanmış Sebze, Patates ve Salata ile servis edilir."
+        },
+        {
+          "name": "TAVUK SINITZEL",
+          "price": 530,
+          "description": "Marine edilmiş Tavuk Gögsü yanında Haşlanmış Sebze, Zerdeçallı Pilav ve Salata ile servis edilir."
+        },
+        {
+          "name": "ÇITIR TAVUK SARMA",
+          "price": 570,
+          "description": "Patates Püre üzerinde,  Mozzarella Dolgulu Bonfile Tavuk, üzeri Cheddar peynirli yanında Haşlanmış Sebze ve Salata ile servis edilir."
+        },
+        {
+          "name": "CAFEDE PARIS SOS TAVUK",
+          "price": 570,
+          "description": "Julyen doğranmış Izgara Tavuk, Café de Paris Sos yanında Haşlanmış Sebze, Patates ve Salata ile servis edilir."
+        },
+        {
+          "name": "POTE FAJITAH TAVUK",
+          "price": 590,
+          "description": "Julyen Tavuk Parçaları, Yeşil ve Kırmızı Biber, Karamelize Soğan yanında Avokado Sos, Salsa Sos, Yoğurt, Tortilla Ekmeği ve Salata ile servis edilir."
+        },
+        {
+          "name": "KREMALI MANTARLI TAVUK",
+          "price": 525,
+          "description": "Julyen Tavuk Parçaları, Mantar, Mısır, Mozzarella yanında Haşlanmış Sebze, Patates ve Salata ile servis edilir"
+        },
+        {
+          "name": "KÖRİ SOSLU TAVUK",
+          "price": 525,
+          "description": "Julyen Tavuk Parçaları, Mantar, Kırmızı-Yeşil Biber, Köri Soslu Krema, yanında Haşlanmış Sebze, Patates ve Salata ile servis edilir."
+        },
+        {
+          "name": "TAVUK LOKMA",
+          "price": 570,
+          "description": "Kızarmış Tortilla Ekmeği Arasında Izgara Tavuk, Yeşil ve Kırmızı Biber, Kaşar ve Cheddar  Peyniri, Mantar, yanında Kızarmış Patates, Sos ve Salata ile servis edilir."
+        },
+        {
+          "name": "PESTO SOSLU TAVUK",
+          "price": 525,
+          "description": "Bonfile Tavuk Parçaları, Pesto Sos, Krema, Kaşar Peyniri, Mantar yanında Haşlanmış Sebze, Patates ve Salata ile servis edilir."
+        },
+        {
+          "name": "PAT.PURE YAT.TAVUK",
+          "price": 525,
+          "description": "Patates Püresi üstü Izgara Tavuk Parçaları yanında Haşlanmış Sebze ve Salata ile servis edilir."
+        },
+        {
+          "name": "AVO.YAT.TAVUK PİRZOLA",
+          "price": 525,
+          "description": "Avokado Püresi üstü Izgara Tavuk But yanında Haşlanmış Sebze, Patates ve Salata ile servis edilir."
+        },
+        {
+          "name": "BEGENDİ YAT. TAVUK",
+          "price": 525,
+          "description": "Köz Patlıcan üstü Izgara Tavuk Parçaları, Mozarella,  yanında Haşlanmış Sebze, Patates ve Salata ile servis edilir."
+        },
+        {
+          "name": "TAVUK ÇÖKERTME",
+          "price": 525,
+          "description": "Kibrit Patates yatağında Bonfile Tavuk Parçaları, Süzme Yoğurt, Domates Sos, Kırmızı ve Yesil Biber yanında Salata ile servis edilir."
+        },
+        {
+          "name": "TAVUK PİRZOLA",
+          "price": 490,
+          "description": "Izgarada pişirilmiş Tavuk but,  yanında haşlanmış sebze, Zerdeçallı Pilav ve salata ile servis edilir."
+        },
+        {
+          "name": "TAVUK RİZOTTO",
+          "price": 590,
+          "description": "Bonfile Tavuk, Beyaz Şaraplı Rizotto, Mantar, Krema, Parmesan Peyniri"
+        },
+        {
+          "name": "MANTAR PİLİÇ GRATINE",
+          "price": 570,
+          "description": "Tavuk Bonfile, Mantar, Sogan, Krema, Kaşar Peynir, haşlanmış sebze ve patates ile servis edilir."
+        },
+        {
+          "name": "TIKKA MASALA",
+          "price": 525,
+          "description": "Bonfile Tavuk, Soğan, Yeşil-Kırmızı Biber, Yoğurt, Sebze ve Basmati Pilav"
+        },
+        {
+          "name": "PERİ PERİ TAVUK ÇÖPŞİŞ",
+          "price": 525,
+          "description": "Bonfile Tavuk, Peri Peri Sos, Biber, Basmati Pilav , Patates Kızartması ve Salata ile servis edilir."
+        },
+        {
+          "name": "TERİYAKİ SOSLU TAVUK",
+          "price": 525,
+          "description": "Julyen doğranmış Tavuk Parçaları, Kuru Domates, Teriyaki Sos, Susam, Soğan, Mantar, yanında Haşlanmış Sebze, Patates ve Salata ile servis edilir."
+        },
+        {
+          "name": "DAĞ KEKİKLİ KREMALI TAVUK",
+          "price": 525,
+          "description": "Tavuk Bonfile, Kekik, Krema, Zerdeçallı Pilav ve Haşlanmış Sebze yanında salata ile servis edilir."
+        },
+        {
+          "name": "ROKFOR SOSLU TAVUK BUT",
+          "price": 550,
+          "description": "Tavuk But, Mantar, Brokoli, Rokfor, Krema, Patates Püresi"
+        },
+        {
+          "name": "LİMON SOSLU TAVUK",
+          "price": 550,
+          "description": "Tavuk, Krema, Lİmon, Sarımsak,"
+        },
+        {
+          "name": "ZÜMRÜT  SOSLU TAVUK",
+          "price": 550,
+          "description": "Tavuk but, Köri, Krema, Hindistan Sütü, Balık Yağı, Taze Zencefil,  Yanında Basmati Pilav"
+        }
+      ]
+    },
+    {
+      "name": "UZAKDOGU YEMEKLERI",
+      "items": [
+        {
+          "name": "COMBO 1",
+          "price": 675,
+          "description": "5 Prç. Crunchy Roll-Tavuklu Noddle-Çin Böreği"
+        },
+        {
+          "name": "COMBO 2",
+          "price": 690,
+          "description": "5 Prç. Lava Roll-Biftekli Noddle-Edamame"
+        },
+        {
+          "name": "COMBO 3",
+          "price": 675,
+          "description": "Çin Böreği-Ananaslı Tatlı Ekşi Soslu Tavuk-Sebzeli Noddle"
+        },
+        {
+          "name": "COMBO 4",
+          "price": 650,
+          "description": "5 Prç. Freid Vegii Rool-Sebzeli Noddle-Midye Tempura"
+        },
+        {
+          "name": "COMBO 5",
+          "price": 690,
+          "description": "4 Prç. Deep Freid Salmon-Deniz Mahsulu Noddle-Çin Mantısı"
+        },
+        {
+          "name": "EDAMAME",
+          "price": 230,
+          "description": ""
+        },
+        {
+          "name": "NODDLE SEBZELI",
+          "price": 350,
+          "description": "Karışık Sebze, Soya Sos, Soya Filizi, Taze Yeşil Soğan"
+        },
+        {
+          "name": "ÇİN BOREGI",
+          "price": 310,
+          "description": "Karışık Sebze, Zencefil yanında Sweet Chili Sos ile servis edilir."
+        },
+        {
+          "name": "ACILI  CORBA",
+          "price": 310,
+          "description": "Kırmızı ve Yeşil Biber, Havuç, Lahana, Tavuk, Acı Baharat"
+        },
+        {
+          "name": "ANANASLI TATLI-EKSI  TAVUK",
+          "price": 480,
+          "description": "Tempura Tavuk parçaları, Ananas, Sweet Sour Sos, Sogan, Biber, Havuç üstünde susam."
+        },
+        {
+          "name": "RAMEN TAVUKLU",
+          "price": 490,
+          "description": "Noddle, Tavuk,Yumurta, Bayb Mısır, Mantar, Yeşil Soğan, Susam"
+        },
+        {
+          "name": "KARIDES CIPSI",
+          "price": 300,
+          "description": "Sweet Chili Sos ile servis edilir."
+        },
+        {
+          "name": "ATOM KARIDES TEMPURA",
+          "price": 550,
+          "description": "Akdeniz Yeşilliği ve Sweet Chili Sos ile servis edilir."
+        },
+        {
+          "name": "NODDLE TAVUK",
+          "price": 480,
+          "description": "Jülyen Tavuk Dilimleri, Karışık Sebze, Soya Sos, Soya Filizi, Taze Yeşil Soğan"
+        },
+        {
+          "name": "NODDLE BIFTEK",
+          "price": 680,
+          "description": "Jülyen Biftek Dilimleri, Karışık Sebze, Soya Sos, Soya Filizi, Taze Yeşil Soğan"
+        },
+        {
+          "name": "NODDLE DENIZ MAHSULU",
+          "price": 690,
+          "description": "Levrek, Karides, Somon, Soya Sos, Soya Filizi, Taze Soğan"
+        },
+        {
+          "name": "DYNAMIT YENGEÇ TEMPURA",
+          "price": 350,
+          "description": "Yengeç, Swetchili Sos, Sriracha Sos, Teriyaki Sos, Susam, Yeşil Soğan"
+        },
+        {
+          "name": "MİSO ÇORBASI",
+          "price": 310,
+          "description": "Wakame, Tofou Chese, Miso Paste"
+        },
+        {
+          "name": "KARİDESLİ PİLAV",
+          "price": 315,
+          "description": "Karides, Pirinç, Sebze"
+        },
+        {
+          "name": "CHILI EDAMAME",
+          "price": 230,
+          "description": ""
+        },
+        {
+          "name": "KALAMAR 5 PRÇ",
+          "price": 490,
+          "description": "Özel sos ile servis edilir"
+        },
+        {
+          "name": "DINAMIT KARIDES",
+          "price": 585,
+          "description": "Susam, Baharatlı Sos, Teriyaki Sos ve Yeşil Soğan"
+        },
+        {
+          "name": "MİDYE TEMPURA",
+          "price": 370,
+          "description": "Midye Tempura"
+        },
+        {
+          "name": "ÇİN MANTISI",
+          "price": 350,
+          "description": "5 adet, Dana Kıyma"
+        },
+        {
+          "name": "TOM YUM",
+          "price": 315,
+          "description": "Karides, Mantar, Yeşil soğan, Tom Yum ezmesi"
+        },
+        {
+          "name": "ACILI YENGEÇ ÇORBASI",
+          "price": 310,
+          "description": "Et ve balık suyu, mısır, yengeç, chili biber, yeşil soğan"
+        },
+        {
+          "name": "CRISPY SHRIMP SHOTS",
+          "price": 400,
+          "description": "Karides"
+        },
+        {
+          "name": "GOLDEN THAI PINE",
+          "price": 550,
+          "description": "Basmati Pilav, Karides, Ananas, Kaju, Kuş Üzümü"
+        }
+      ]
+    },
+    {
+      "name": "TOST SANDVICH",
+      "items": [
+        {
+          "name": "SOGUK SANDVİÇ",
+          "price": 250,
+          "description": "Kaşar Peyniri, Dana Jambon, Domates,Salatalık, Nane, Mayonez yanında patates kızartması."
+        },
+        {
+          "name": "TAVUK SANDVİÇ",
+          "price": 350,
+          "description": "Tavuk Bonfile, Domates, Iceberg, Turşu yanında patates ile servis edilir."
+        },
+        {
+          "name": "KARISIK TOST",
+          "price": 250,
+          "description": "Tost Ekmeği arasına Sucuk ve Kaşar peyniri yanında Çeri domates, Salatalık, Iceberg ile servis edilir."
+        },
+        {
+          "name": "KASARLI TOST",
+          "price": 210,
+          "description": "Tost Ekmeği arasına Kaşar Peyniri, yanında Çeri domates, Salatalık ve Iceberg ile servis edilir."
+        },
+        {
+          "name": "SUCUKLU BAZLAMA TOST",
+          "price": 250,
+          "description": "Sucuk ve Kaşar yanında Çeri Domates, Salatalık, Iceberg ile servis edilir."
+        },
+        {
+          "name": "LİGHT TOST 3 PEYNİRLİ",
+          "price": 220,
+          "description": "Tam Buğday ekmeğinde Mozarella Peynir, Cheddar  Peynir ve Parmesan Peyniri."
+        },
+        {
+          "name": "YENGEN",
+          "price": 250,
+          "description": "Kaşar, Sucuk, Salam, Domates, Salatalık Turşusu"
+        },
+        {
+          "name": "KAVUR.BAZLAMA TOST",
+          "price": 350,
+          "description": "Kavurma, Kaşar yanında Çeri Domates, Salatalık, Iceberg ile servis edilir."
+        }
+      ]
+    },
+    {
+      "name": "SARAPLAR",
+      "items": [
+        {
+          "name": "KAYRA VİNTAGE SAU BLANC",
+          "price": 1700,
+          "description": "Ferah, meyvemsi ve zarif. Narenciye ve tropikal dokularıyla damakta canlı bir tat bırakır."
+        },
+        {
+          "name": "JP CHENET BLANC 75 CL",
+          "price": 1650,
+          "description": "Hafif ve meyvemsi karakteriyle daha çok hafif yiyeceklere uyum sağlar."
+        },
+        {
+          "name": "KADEH KIRMIZI 20CL",
+          "price": 380,
+          "description": "KADEH KIRMIZI 20CL"
+        },
+        {
+          "name": "KADEH BEYAZ 20CL",
+          "price": 380,
+          "description": ""
+        },
+        {
+          "name": "KADEH ROSE 20CL",
+          "price": 380,
+          "description": ""
+        },
+        {
+          "name": "SELECTION BEYAZ",
+          "price": 3250,
+          "description": "Selection beyaz"
+        },
+        {
+          "name": "SELECTION KIRMIZI",
+          "price": 3250,
+          "description": "Selection Kırmızı"
+        },
+        {
+          "name": "KAYRA VİNTEGA MERLOT",
+          "price": 1700,
+          "description": ""
+        },
+        {
+          "name": "KAYRA ALLURE SAU. BLANC",
+          "price": 1700,
+          "description": "Türkiyede özellikle Denizli ve Trakya yöresi üzümlerinden yapılan, ferah aromatik ve canlı asiditeli bir beyaz şaraptır."
+        },
+        {
+          "name": "SUVLA BOGAZ.ÖKÜZ.KIRMIZI",
+          "price": 1950,
+          "description": ""
+        },
+        {
+          "name": "BARON ROZE",
+          "price": 1700,
+          "description": "Hafif ve meyvemsi olduğu için Uzak Doğu mutfağıyla oldukça uyumlu;"
+        },
+        {
+          "name": "CALVET CHARDONNAY",
+          "price": 2200,
+          "description": "Zarif dengeli ve ferah... Tropikal meyve ve hafif meşe aromasıyla öne çıkar."
+        },
+        {
+          "name": "CASAL FORTE MERLO VENETO",
+          "price": 3250,
+          "description": "İtalyanın Veneto bölgesinden gelen, yumuşak tanenli, meyvemsi, orta gövdeli Merlot üzümlerinden oluşan şarabımız;"
+        },
+        {
+          "name": "BODEGAS LAS DAS MARIAS",
+          "price": 1650,
+          "description": ""
+        },
+        {
+          "name": "VINKARA ATELIER HASANDEDE",
+          "price": 1650,
+          "description": "Anadolu beyaz üzümlerinden üretilmiş ferah ve meyvemsi, dengeli asiditesi ve orta gövdeli olması nedeniyle deniz ürünleri ve hafif tavuk yemekleri ile uyum sağlar."
+        },
+        {
+          "name": "BODEGAS VES. BOBAL KIRMIZI",
+          "price": 1600,
+          "description": ""
+        },
+        {
+          "name": "BODEGAS VES.VERDIO BEYAZ",
+          "price": 1600,
+          "description": ""
+        },
+        {
+          "name": "CİELO ROSE",
+          "price": 1600,
+          "description": ""
+        },
+        {
+          "name": "VINEYARDS MALBEC KIRMIZI",
+          "price": 2600,
+          "description": "Gövdeli ama yumuşak, kırmızı meyve aromaları (böğürtlen, vişne, erik) ve hafif baharat notalarıyla dengeli bir şaraptır."
+        },
+        {
+          "name": "SOBRAN BEYAZI",
+          "price": 1650,
+          "description": "Taze, canlı ve ferahlatıcı.. Meyvemsi (Şeftali, Elma, Hafif Çiçek) Uzak Doğu Lezzetleriyle, Somon Suşiler ile Tavuk yemekleriyle mükemmel uyuludur."
+        },
+        {
+          "name": "NİF PERSEUS BLUSH",
+          "price": 1600,
+          "description": "Ege Bölgesinin Narin üzüm çeşidinden yapılan, meyvemsi (çilek, Nar, Kırmızı Orman Meyvesi) aromasıyla birlikte;"
+        },
+        {
+          "name": "SARAFİN CAB. SAU. 75CL",
+          "price": 3250,
+          "description": ""
+        },
+        {
+          "name": "SARAFİN MERLOT 75CL",
+          "price": 3250,
+          "description": "Orta gövdeli, yumuşak tanenleriyle yemeklerin aromasını zarifçe dengeler."
+        },
+        {
+          "name": "SARAFİN MERLOT CAB. FRANC 75CL",
+          "price": 3250,
+          "description": "Kırmızı meyve, hafif baharat ve odunsu tonlar. Orta Gövdeli, dengeli asiditesiyle yoğun tatlı-sosu olan yemeklerle uyum sağlar."
+        },
+        {
+          "name": "JP CHENET CAB&SAV 75 CL",
+          "price": 1700,
+          "description": "Orta gövdeli, yumuşak tanenli ve meyvemsi aromalara sahip."
+        },
+        {
+          "name": "MUSCAT ROSE 75CL",
+          "price": 1250,
+          "description": "Tatlı- meyvemsi hafif ekşimsi denge ile ferahlatıcı tatlarıyla Uzak Doğu, Beyaz Et ve Deniz Ürünleri ile uyumludur."
+        },
+        {
+          "name": "AMENT BLEND 75CL",
+          "price": 2350,
+          "description": "Farklı yerli ve yabancı üzüm çeşitleri karışımıyla üretilen dengeli ve karakterli bir şarap. Orta-dolgun gövdesi meyvemsi aromasıyla kırmızı et yemekleriyle iyi uyum sağlar."
+        },
+        {
+          "name": "JP CHENET BLUSH MED.SWEET",
+          "price": 1650,
+          "description": "JP CHENET BLUSH 75 CL"
+        },
+        {
+          "name": "JP CHENET CHARDONNAY 75CL",
+          "price": 1650,
+          "description": "Taze meyvemsi beyaz şaraplarımız, Uzakdoğu lezzetlerimizle mükemmel uyum sağlar."
+        },
+        {
+          "name": "PACEM SAUVINGON BLANC 75CL",
+          "price": 1700,
+          "description": "PACEM 70CL"
+        },
+        {
+          "name": "FELICI ROZE 75 CL",
+          "price": 1800,
+          "description": "FELİCİ ROSE 75 CL"
+        },
+        {
+          "name": "KADEH BLUSH 20 CL",
+          "price": 380,
+          "description": ""
+        },
+        {
+          "name": "VİNKARA RESERVE KALECİK",
+          "price": 2600,
+          "description": "VİNKARA KALECİK KARASI 75CL"
+        },
+        {
+          "name": "VİNKARA RESERVE NARİNCE",
+          "price": 2600,
+          "description": "VİNKARA NARİNCE 75CL"
+        }
+      ]
+    },
+    {
+      "name": "KAHVALTILAR",
+      "items": [
+        {
+          "name": "PİŞİ 4 ADET",
+          "price": 195,
+          "description": ""
+        },
+        {
+          "name": "OMLET",
+          "price": 220,
+          "description": "Yumurta, Kaşar peyniri"
+        },
+        {
+          "name": "KARISIK OMLET",
+          "price": 250,
+          "description": "Sucuk, salam,sosis, kaşar"
+        },
+        {
+          "name": "AVOKADO POŞE YUMURTA",
+          "price": 320,
+          "description": ""
+        },
+        {
+          "name": "EGG BENEDİCT",
+          "price": 320,
+          "description": ""
+        },
+        {
+          "name": "KAHVALTI TABAGI",
+          "price": 490,
+          "description": "3 Çeşit peynir, Nutella, Reçel, Haşlanmış Yumurta, Domates, Salatalık, Siyah-Yeşil Zeytin, Bal-Kaymak, Tereyağ 2 adet Çay ile servis edilir."
+        },
+        {
+          "name": "POTE SICAK KAHVALTI TABAĞI",
+          "price": 490,
+          "description": "Sigara Böreği, Pişi, Çi Börek, Patates Kızartması, Hellim Peynir, Sucuk, Sosis, Salam, Yumurta, Köz Biber, Çeri Domates ve   2 adet Çay ile servis edilir.Sigara Böreği, Pişi, Çi Börek, Patates Kızartması, Hellim Peynir, Sucuk, Sosis, Salam, Yumurta, Köz Biber, Çeri Domates ve   2 adet Çay ile servis edilir."
+        },
+        {
+          "name": "YUMURTA SAHANDA",
+          "price": 190,
+          "description": "2 adet Sahanda Yumurta 1 adet Çay ile servis edilir."
+        },
+        {
+          "name": "SUCUKLU YUMURTA",
+          "price": 280,
+          "description": "Sahanda sucuklu yumurta 1 adet çay ile servis edilir."
+        },
+        {
+          "name": "MENEMEN",
+          "price": 270,
+          "description": "Domates, Soğan, Yumurta, Biber 1 adet çay ile servis edilir."
+        },
+        {
+          "name": "KETOJENİK KAHVALTI",
+          "price": 490,
+          "description": "Yumurta Akı, Göz Yumurta, Avokado, Domates, Beyaz  Peyniri, Akdeniz Yeşilliği"
+        },
+        {
+          "name": "SPORCU KAHVALTI TABAGI",
+          "price": 490,
+          "description": "Yumurta akı , Avokado, Domates, Salatalık, Zeytin, Lor Peynir, Maydonoz, Nane, Ceviz"
+        },
+        {
+          "name": "SAHANDA SUCUK",
+          "price": 250,
+          "description": "Sucuk"
+        },
+        {
+          "name": "KUYMAK",
+          "price": 330,
+          "description": "Mısır Unu, Tereyağ, Peynir"
+        },
+        {
+          "name": "SERPME KAHVALTI",
+          "price": 1320,
+          "description": "2 kişiliktir.Beyaz Peynir,Eski Kaşar,Kaşar Peyniri,Yeşil Zeytin,Siyah Zeytin,Nutella,Bal,Kaymak,Tahin,Pekmez,Reçel Çeşitleri,Hatay Acuka,Tereyağ,Lor Peynir,Acılı Süzme Yoğurt,Pancarlı Krem Peynir,Yumurtalı Patates,Patlıcan Kızartması,Domates,Salatalık,Sahanda Göz Yumurta,Sahanda Sucuk,Menemen,Patates Kızartma,Çi Börek,Pişi,Acılı Ekmek,Siğara Böreği"
+        },
+        {
+          "name": "KAVURMALI YUMURTA",
+          "price": 350,
+          "description": "Sahanda kavurmalı yumurta 1 adet çay ile servis edilir."
+        },
+        {
+          "name": "SOSİS SICAK SOSLU",
+          "price": 240,
+          "description": "Dana Sosis ve Domates Soslu"
+        },
+        {
+          "name": "GÖZLEME",
+          "price": 220,
+          "description": "Kaşar Peyniri"
+        },
+        {
+          "name": "CI BÖREK 4 AD",
+          "price": 210,
+          "description": "Dana Kıyma, Kuru Soğan"
+        },
+        {
+          "name": "MİNİ SERPME",
+          "price": 895,
+          "description": "Sahanda Göz Yumurta, Patates Kızartma, Peynir Çeşitleri,  Domates, Salatalık, Pişi, Çi Börek, Siğara Börek, Simit, Acılı Ekmek, Reçel Çeşitleri, Acuka,  Bal-Kaymak, Siyah ve Yeşil Zeytin,  Çikolata, ve 1 demlik çay ile servis edilir."
+        },
+        {
+          "name": "OMLET SEBZELİ",
+          "price": 240,
+          "description": "Mix biber, Mantar, ve Kaşar"
+        }
+      ]
+    },
+    {
+      "name": "KÖFTELER",
+      "items": [
+        {
+          "name": "KÖFTE İSKENDER",
+          "price": 690,
+          "description": "Dana Kıyma , Domates Sos, Pide Ekmek ve Yoğurt"
+        },
+        {
+          "name": "HELLİM PEYNİRLİ KÖFTE",
+          "price": 690,
+          "description": "Tortilla Ekmeği içnde, Dana Izgara Köfte, Hellim Peyniri"
+        },
+        {
+          "name": "DANA IZGARA KÖFTE",
+          "price": 680,
+          "description": "Izgara Dana Köfte, Zerdeçallı Pilav,  Sebze Izgara ve Salata ile servis edilir."
+        },
+        {
+          "name": "BEGENDI YAT.KÖFTE",
+          "price": 680,
+          "description": "Kremalı Köz Patlıcan üzeri Dana Köfte yanında Haşlanmış Sebze, Patates ve Salata ile servis edilir."
+        },
+        {
+          "name": "PAT.PURE YAT.KÖFTE",
+          "price": 680,
+          "description": "Kremalı Patates Püresi üzerinde Dana Köfte yanında Haşlanmış Sebze ve Salata ile servis edilir."
+        }
+      ]
+    },
+    {
+      "name": "SET MENU",
+      "items": [
+        {
+          "name": "NİGİRİ SET",
+          "price": 750,
+          "description": "1 Prç Sake 1 Prç Suzuki 1 Prç Kani 1 Prç Ebi 1 Prç Unagi"
+        },
+        {
+          "name": "POTE TEMPURA MIX SET 28 PRC",
+          "price": 1850,
+          "description": "6 Prç Sake Tempura Maki 6 Prç Suzuki Tempura Maki 8 Prç Crunchy Roll 4 Prç Kaniten Crispy Roll 4 Prç Ebiten Roll"
+        },
+        {
+          "name": "VEGIE SET 28 PRÇ",
+          "price": 1640,
+          "description": "6 prç Kappa Maki-6 prç Carrot Maki-6 prç Avokado Maki-2 prç Avokado Nigiri-8 prç Vegie Roll"
+        },
+        {
+          "name": "CALIFORNIA SET 26 PRÇ",
+          "price": 1900,
+          "description": "4 prç Kyoto, 4 prç California, 2 prç Kani Nigiri, 6 prç Kani maki, 8 prç Deep Fred California, 2 prç Dynamit Yengeç"
+        },
+        {
+          "name": "POTE LOVER BAOT 38 PRÇ",
+          "price": 2590,
+          "description": "4 Prç Philadelphia Roll 4 Prç California Roll 6 Prç Sake Maki 6 Prç Kappa Maki 8 Prç Tokyo Roll 8 Prç Deep Freid Salmon, 2 Prç Sake Nigiri"
+        },
+        {
+          "name": "SPECIAL POTE 28 PRÇ",
+          "price": 1850,
+          "description": "8 Prç Deep Frıed Salmon Roll 10 Prç Mını Roll 10 Prç Lava Roll"
+        },
+        {
+          "name": "MAKİ SET 32 PRÇ",
+          "price": 1840,
+          "description": "6 Sake Maki, 6 Kappa Maki, 6 Avokado Maki, 6 Kani Maki, 8 Sesame California Roll"
+        }
+      ]
+    },
+    {
+      "name": "URA ROLL",
+      "items": [
+        {
+          "name": "GOLDEN DRAGON ROLL",
+          "price": 615,
+          "description": "Avokado, salatalık, krem peynir, dışı yılan balığı, teriyaki sos, tobiko"
+        },
+        {
+          "name": "CALIFORNIA ROLL",
+          "price": 590,
+          "description": "Yengeç, Avokado, Salatalık, dışı Tobiko ve Mayonez"
+        },
+        {
+          "name": "VEGIE ROLL",
+          "price": 515,
+          "description": "Salatalık,  Asparagus (kuşkonmaz), havuç, ıspanak, dışı avokado"
+        },
+        {
+          "name": "SESAME CALIFORNIA ROLL",
+          "price": 585,
+          "description": "Yengeç, Avokado,  Salatalık, Mayonez dışı Susam kaplı."
+        },
+        {
+          "name": "RAINBOW ROLL",
+          "price": 610,
+          "description": "Yengeç, Avokado, Salatalık  dışı Somon, Levrek, Karides ve Avokado kaplama"
+        },
+        {
+          "name": "PHILADELPHIA ROLL",
+          "price": 585,
+          "description": "Yengeç salatası, avokado, salatalık, dışı somon, krem peynir, yeşil soğan"
+        },
+        {
+          "name": "KANITEN CRISPY ROLL",
+          "price": 585,
+          "description": "Tempura Yengeç, Avokado, Salatalık, dışı Tempura Çıtırı, Kibrit Patates ve Spicy -Acı Sos"
+        },
+        {
+          "name": "EBITEN ROLL",
+          "price": 585,
+          "description": "Tempura Karides, Avokado, Salatalık dışı Tempura Çıtırı, Kibrit Patates ve Spicy- Acı Sos ve Mayonez"
+        },
+        {
+          "name": "ASPARAGUS SALMON ROLL",
+          "price": 585,
+          "description": "Somon, kuşkonmaz, tobiko, dışı kızarmış tempura, teriyaki sos"
+        },
+        {
+          "name": "KYOTO ROLL",
+          "price": 585,
+          "description": "Yengeç, Salatalık, Avokado, Mayonez, Yeşil Tobiko"
+        },
+        {
+          "name": "MIDORI ROLL",
+          "price": 580,
+          "description": "Wasabi, Salatalık, dışı Avokado kaplama mayonez, tobikko, yeşil soğan"
+        },
+        {
+          "name": "ALASKA ROLL",
+          "price": 585,
+          "description": "Yengeç salatası, avokado, salatalık, tütsülenmiş somon, spicys sos, yeşilsoğan, susam"
+        },
+        {
+          "name": "ROCK AND ROLL",
+          "price": 600,
+          "description": "Yengeç Salatası, Salatalık, Avokado, Corn fleks, pişmiş Somon, Teriyaki sos"
+        },
+        {
+          "name": "VOLCANO ROLL",
+          "price": 600,
+          "description": "Tempura yengeç , tempura somon, avokado ,salatalık, krem peynir susam, çörek otu, çıtır patates, teriyaki-spicys sos"
+        },
+        {
+          "name": "SHİRO ROLL",
+          "price": 600,
+          "description": "Pirinç, Yeşilsoğan ve susam kaplama, tempura karides, Sweetchili-teriyaki-spicys sos"
+        },
+        {
+          "name": "GOLDEN SALMON ROLL",
+          "price": 600,
+          "description": "Somon, beyaz peynir, dışı kızarmış tempura, sriracha sos, yeşil soğan, susam"
+        },
+        {
+          "name": "DYNAMIT EBİ ROLL",
+          "price": 600,
+          "description": "Tempura karides, krem peynir, avokado, salatalık, dışı yengeç salatası, Sriracha sos"
+        },
+        {
+          "name": "FANTASY ROLL",
+          "price": 610,
+          "description": "Yılan balığı, salatalık, krem peynir, dışı avokado, teriyaki sos, mayonez"
+        },
+        {
+          "name": "RED TİGER ROLL",
+          "price": 600,
+          "description": "Yengeç salatası, avokado, salatalık, dışı ebi, sweetchili sos, tobiko"
+        }
+      ]
+    },
+    {
+      "name": "MAKİ SUSHİ",
+      "items": [
+        {
+          "name": "UNAGİ MAKİ",
+          "price": 420,
+          "description": ""
+        },
+        {
+          "name": "SAKE TEMPURA MAKI",
+          "price": 410,
+          "description": "Tempura Somon, Teriyaki Sos, Spicy Sos ve Susam"
+        },
+        {
+          "name": "SAKE MAKI 6 PRÇ",
+          "price": 400,
+          "description": "Sake (Somon)"
+        },
+        {
+          "name": "KAPPA MAKI 6 PRÇ",
+          "price": 290,
+          "description": ""
+        },
+        {
+          "name": "KANI  MAKI 6 PRÇ",
+          "price": 385,
+          "description": "Kanı (Yengeç)"
+        },
+        {
+          "name": "SUZUKI TEMPURA MAKI",
+          "price": 385,
+          "description": "Tempura Levrek, Teriyaki Sos, Spicy Sos ve Susam"
+        },
+        {
+          "name": "EBİ TEMPURA MAKI",
+          "price": 410,
+          "description": "Tempura karides"
+        },
+        {
+          "name": "AVOKADO MAKI 6 PRÇ",
+          "price": 365,
+          "description": ""
+        },
+        {
+          "name": "SAKE AVOKADO MAKI 6PRÇ",
+          "price": 410,
+          "description": ""
+        },
+        {
+          "name": "CARROT MAKİ",
+          "price": 290,
+          "description": "Havuç"
+        },
+        {
+          "name": "SUZUTEN MAKİ ROLL",
+          "price": 580,
+          "description": "Tempura levrek, teze zencefil, yeşil soğan dışı kızarmış tempura, sweetchili sos"
+        },
+        {
+          "name": "KANİ TEMPURA MAKİ",
+          "price": 370,
+          "description": "Tempura yengeç, teriyaki sos, susam"
+        }
+      ]
+    },
+    {
+      "name": "TATLILAR",
+      "items": [
+        {
+          "name": "SUFLE",
+          "price": 350,
+          "description": ""
+        },
+        {
+          "name": "KIZARMIS DONDURMA",
+          "price": 340,
+          "description": ""
+        },
+        {
+          "name": "WAFFLEE",
+          "price": 320,
+          "description": "Mevsim Meyveleri ile servis edilir"
+        },
+        {
+          "name": "BROWNİ",
+          "price": 300,
+          "description": "ÇİKOLATALI BROWNİ"
+        },
+        {
+          "name": "LİMONLU CHEESECAKE",
+          "price": 350,
+          "description": ""
+        },
+        {
+          "name": "SAN SABASTIAN",
+          "price": 300,
+          "description": ""
+        },
+        {
+          "name": "KARISIK MEVSIM MEYVELERI",
+          "price": 600,
+          "description": ""
+        },
+        {
+          "name": "PAIN PERDU",
+          "price": 300,
+          "description": ""
+        },
+        {
+          "name": "SWEET ROLL",
+          "price": 320,
+          "description": ""
+        },
+        {
+          "name": "ORMANMEYVELİ CHEESECAKE",
+          "price": 350,
+          "description": ""
+        },
+        {
+          "name": "BALKABAGI CHEESECAKE",
+          "price": 350,
+          "description": ""
+        },
+        {
+          "name": "SADE DONDURMA",
+          "price": 150,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "SALATALAR",
+      "items": [
+        {
+          "name": "SUSAMLI  TAVUK SALATA",
+          "price": 495,
+          "description": "Susamlı Çıtır Tavuk Parçaları, Akdeniz Yeşilliği, Çeri Domates, Salatalık, Mısır, Havuç ve Salata sosu"
+        },
+        {
+          "name": "AKDENİZ SALATA",
+          "price": 395,
+          "description": "Akdeniz Yeşilliği, domates, salatalık, beyaz peynir, siyah zeytin"
+        },
+        {
+          "name": "SEZAR SALATA",
+          "price": 495,
+          "description": "Izgara Tavuk Parçaları, Iceberg, Parmesan Peyniri, Kızarmış Ekmek Parçaları(Kruton), Salatalık, Domates, Özel Sezar Sos"
+        },
+        {
+          "name": "KINOA TAVUK SALATA",
+          "price": 495,
+          "description": "Izgara Tavuk, Akdeniz Yeşilliği, Yeşil Zeytin, Mısır, Çeri Domates, Salatalık ve Salata sos"
+        },
+        {
+          "name": "TON BALIK SALATA",
+          "price": 495,
+          "description": "Ton Balığı, Akdeniz Yeşilliği, Çeri Domates, Salatalık, Mısır, Kapya Biber, Kırmızı Soğan ve Salata Sos"
+        },
+        {
+          "name": "TULUM PEYNIR SALATA",
+          "price": 395,
+          "description": "Akdeniz Yeşilliği, Domates, Ceviz, Tulum Peyniri, Yeşil Elma, ve özel sos"
+        },
+        {
+          "name": "HELLİM SALATA",
+          "price": 495,
+          "description": "Izgara Hellim, Akdeniz Yeşilliği, Domates, Salatalık, Yeşil Zeytin ve Mısır, Salata sosu ile"
+        },
+        {
+          "name": "MEXICA SALATA",
+          "price": 495,
+          "description": "Izgara Tavuk Parçaları, Akdeniz Yeşilliği, Meksika Fasulyesi, Jalapone Biberi, Çeri Domates, Mısır, Salatalık ve Salata Sos"
+        },
+        {
+          "name": "CAJUN TAVUK SALATA",
+          "price": 495,
+          "description": "Tavuk Bonfile Parçaları, Akdeniz Yeşilliği, Domates, Havuç, Mısır ve Salata Sosu ile"
+        },
+        {
+          "name": "SOMON SALATA",
+          "price": 790,
+          "description": "Izgara Somon, Akdeniz Yeşilliği, Çeri Domates, Salatalık, Mısır, Kaya Koruğu ve Salata Sos"
+        },
+        {
+          "name": "KARIDES SALATA",
+          "price": 550,
+          "description": "Karides, Akdeniz yeşilliği, Kırmızı Biber, Domates, Salatalık ve özel salata sosu"
+        },
+        {
+          "name": "TAVUKLU BUGDAY SALATA",
+          "price": 495,
+          "description": "Bonfile Tavuk Parçaları, Nohut, Buğday, Kırmızı Biber, Domates, Salatalık ve Salata Sosu ile"
+        },
+        {
+          "name": "CAJU-ROKA SALATA",
+          "price": 495,
+          "description": "Parmesan Peyniri, Roka, Çeri domates, Kaju, Yeşil Elma ve Özel sos"
+        },
+        {
+          "name": "ENGİNARLI KARİDES SALATA",
+          "price": 580,
+          "description": "Iceberg, Roka, Nane, Domates, Enginar Bayb , Karides,"
+        },
+        {
+          "name": "AVOKADO BİFTEK SALATA",
+          "price": 650,
+          "description": "Akdeniz Yeşilliği, Çeri Domates, Kök Biber, Avokado, Bonfile,"
+        },
+        {
+          "name": "KIZARMIŞ TAVUK SALATA",
+          "price": 495,
+          "description": "Akdeniz Yeşilliği, Domates, Salatalık, Mısır, Kök biber, Kızarmış Tavuk Parçaları, Özel ballı hardal sos"
+        },
+        {
+          "name": "KEÇİ PEYNİRLİ SALATA",
+          "price": 495,
+          "description": "Akdeniz Yeşilliği, Çeri Domates, Salatalık, Mısır, Kök biber, Keçi Peyniri"
+        },
+        {
+          "name": "LEVREK SALATA",
+          "price": 690,
+          "description": "Levrek , Akdeniz yeşilliği, Mısır, Çeri Domates, Kırmızı Pancar, Kaya Koruğu ve Salata Sos"
+        },
+        {
+          "name": "IZGARA TAVUK SALATA",
+          "price": 495,
+          "description": "Izgara Tavuk parçaları, Akdeniz Yeşilliği, Çeri Domates, Salatalık, Mısır, Yeşil Zeytin ve  Salata sos"
+        }
+      ]
+    },
+    {
+      "name": "TAZE ESINTI",
+      "items": [
+        {
+          "name": "PORTAKAL SUYU",
+          "price": 220,
+          "description": ""
+        },
+        {
+          "name": "LIMONATA",
+          "price": 170,
+          "description": ""
+        },
+        {
+          "name": "FROZEN ÇİLEK",
+          "price": 170,
+          "description": "Kavun-Karpuz Elma-Limon Kavun-Şeftali Orman Meyveli Çilek"
+        },
+        {
+          "name": "SMOOTHIES",
+          "price": 230,
+          "description": "Kavun/Vanilya/Çilek/Karamel/Chia Tohumu"
+        },
+        {
+          "name": "COOL LİME",
+          "price": 210,
+          "description": "Yeşil Çay, Lime Limon, Nane, Limonata"
+        },
+        {
+          "name": "RED BLOOM",
+          "price": 210,
+          "description": "Hibiskus, Orman Meyvesi, Limonata"
+        },
+        {
+          "name": "FROZEN ELMA-LİMONATA",
+          "price": 220,
+          "description": "Kavun-Karpuz Elma-Limon Kavun-Şeftali Orman Meyveli Çilek"
+        },
+        {
+          "name": "NUTELLA MİLKSHAKE",
+          "price": 230,
+          "description": "Çilekli, Çikolatalı, Oreolu, Milkshake çeşitleri"
+        },
+        {
+          "name": "ÇİLEK LİMONATA",
+          "price": 180,
+          "description": ""
+        },
+        {
+          "name": "MELON COOLER",
+          "price": 240,
+          "description": ""
+        },
+        {
+          "name": "LYCHEE HİBİSKUS COOLER",
+          "price": 220,
+          "description": ""
+        },
+        {
+          "name": "MACHA STRAWBERRY",
+          "price": 250,
+          "description": ""
+        },
+        {
+          "name": "MACHA MANGO COCONUT",
+          "price": 250,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "EVDEN LEZZETLER",
+      "items": [
+        {
+          "name": "MANTI YOGURTLU",
+          "price": 490,
+          "description": "Dana Kıyma, Haşlanmış Mantı, Sarımsaklı Süzme Yoğurt Homemade"
+        },
+        {
+          "name": "MAKARNA YOGURTLU",
+          "price": 490,
+          "description": "Midye Makarna, Dana Kıyma, Sarımsaklı Süzme Yoğurt"
+        },
+        {
+          "name": "CITIR MANTI",
+          "price": 490,
+          "description": "Dana Kıyma, Fırında Kızarmış Mantı, Sarımsaklı Süzme Yoğurt Homemade"
+        }
+      ]
+    },
+    {
+      "name": "NİGİRİ",
+      "items": [
+        {
+          "name": "UNAGİ NİGİRİ 2 PRÇ",
+          "price": 370,
+          "description": "Yılan Balığı"
+        },
+        {
+          "name": "SAKE-SOMON NİGİRİ 2 PRÇ",
+          "price": 290,
+          "description": ""
+        },
+        {
+          "name": "SUZUKI-LEVREK NİGİRİ 2 PRÇ",
+          "price": 290,
+          "description": ""
+        },
+        {
+          "name": "KANI-YENGEC 2 PRÇ NİGİRİ",
+          "price": 295,
+          "description": ""
+        },
+        {
+          "name": "AVOKADO-AVOK. 2 PRÇ NIGIRI",
+          "price": 280,
+          "description": ""
+        },
+        {
+          "name": "EBI-EBI NIGIRI 2 PRÇ",
+          "price": 320,
+          "description": "Ebi karides"
+        }
+      ]
+    },
+    {
+      "name": "SOFT ICECEKLER",
+      "items": [
+        {
+          "name": "FUSE TEA KARPUZ",
+          "price": 125,
+          "description": ""
+        },
+        {
+          "name": "ZERO",
+          "price": 125,
+          "description": ""
+        },
+        {
+          "name": "FUSE TEA LİMON",
+          "price": 125,
+          "description": ""
+        },
+        {
+          "name": "SODA",
+          "price": 95,
+          "description": ""
+        },
+        {
+          "name": "SANPELLEGRİNO",
+          "price": 370,
+          "description": ""
+        },
+        {
+          "name": "TONIC",
+          "price": 150,
+          "description": "Tonic"
+        },
+        {
+          "name": "TONIC MANDALİNA",
+          "price": 150,
+          "description": ""
+        },
+        {
+          "name": "TONIC BITTER LEMON",
+          "price": 150,
+          "description": ""
+        },
+        {
+          "name": "REDBULL",
+          "price": 170,
+          "description": ""
+        },
+        {
+          "name": "AYRAN",
+          "price": 95,
+          "description": "Ayran"
+        },
+        {
+          "name": "SU KÜÇÜK",
+          "price": 70,
+          "description": ""
+        },
+        {
+          "name": "COLA",
+          "price": 125,
+          "description": ""
+        },
+        {
+          "name": "SPRITE",
+          "price": 125,
+          "description": ""
+        },
+        {
+          "name": "FANTA",
+          "price": 125,
+          "description": ""
+        },
+        {
+          "name": "BURN",
+          "price": 135,
+          "description": "BURN"
+        },
+        {
+          "name": "CHURCHİLL",
+          "price": 110,
+          "description": "LİMON SUYU, TUZ, SODA"
+        },
+        {
+          "name": "CAPPY ŞEFTALİ",
+          "price": 125,
+          "description": ""
+        },
+        {
+          "name": "CAPPY KAYISI",
+          "price": 125,
+          "description": ""
+        },
+        {
+          "name": "CAPPY VİŞNE",
+          "price": 125,
+          "description": ""
+        },
+        {
+          "name": "FUSE TEA ŞEFTALİ",
+          "price": 125,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "TEQUILA",
+      "items": [
+        {
+          "name": "OLMECA SILVER 4CL",
+          "price": 220,
+          "description": "OLMECA SILVER 4CL"
+        },
+        {
+          "name": "OLMECA GOLD 4CL",
+          "price": 235,
+          "description": "OLMECA GOLD 4CL"
+        }
+      ]
+    },
+    {
+      "name": "VERMUT",
+      "items": [
+        {
+          "name": "MARTINI EXTRA DRY 8CL",
+          "price": 300,
+          "description": ""
+        },
+        {
+          "name": "MARTINI BIANCO 8CL",
+          "price": 300,
+          "description": "7 CL"
+        },
+        {
+          "name": "MARTINI ROSSO 8CL",
+          "price": 300,
+          "description": "7 CL"
+        }
+      ]
+    },
+    {
+      "name": "ESPRESSO BAZLI",
+      "items": [
+        {
+          "name": "ESPRESSO",
+          "price": 155,
+          "description": ""
+        },
+        {
+          "name": "DOUBLE ESPRESSO",
+          "price": 170,
+          "description": ""
+        },
+        {
+          "name": "AMERICANO",
+          "price": 170,
+          "description": ""
+        },
+        {
+          "name": "LATTE",
+          "price": 200,
+          "description": ""
+        },
+        {
+          "name": "FLAT WHITE",
+          "price": 180,
+          "description": ""
+        },
+        {
+          "name": "CAPPUCCINO",
+          "price": 185,
+          "description": ""
+        },
+        {
+          "name": "CORTADO",
+          "price": 185,
+          "description": ""
+        },
+        {
+          "name": "MOCHA",
+          "price": 220,
+          "description": ""
+        },
+        {
+          "name": "WHITE MOCHA",
+          "price": 220,
+          "description": ""
+        },
+        {
+          "name": "CAREMEL MACCIATO",
+          "price": 220,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "CEREZLER",
+      "items": [
+        {
+          "name": "YER FISTIĞI",
+          "price": 120,
+          "description": ""
+        },
+        {
+          "name": "ANTEP FISTIĞI",
+          "price": 260,
+          "description": ""
+        },
+        {
+          "name": "KARIŞIK ÇEREZ",
+          "price": 240,
+          "description": ""
+        },
+        {
+          "name": "FINDIK",
+          "price": 210,
+          "description": ""
+        },
+        {
+          "name": "BADEM",
+          "price": 210,
+          "description": ""
+        },
+        {
+          "name": "JELIBON",
+          "price": 110,
+          "description": ""
+        },
+        {
+          "name": "CIKOLATA",
+          "price": 150,
+          "description": ""
+        },
+        {
+          "name": "KAJU",
+          "price": 190,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "ALKOLLU COCKTAILS",
+      "items": [
+        {
+          "name": "SANGRIA KARAF",
+          "price": 1550,
+          "description": "Votka, Rum, Portakal Likörü, Portakal Suyu ve Sprıte , Portakal Dilimleri ve Yeşil Elma (2-3 KİŞİLİK)"
+        },
+        {
+          "name": "SANGRIA BLUSH KARAF",
+          "price": 1550,
+          "description": "Votka, Portakal Likörü, Sprıte, Çilek ve Donuk Meyve (2 -3 Kişilik)"
+        },
+        {
+          "name": "MOJITO CLASSIC",
+          "price": 685,
+          "description": "ROM, SODA, LIME SEÇENEKLER MANGO-ÇİLEK-AHUDUDU-NAR"
+        },
+        {
+          "name": "MARGARITA CLASSIC",
+          "price": 685,
+          "description": "TEKILA, PORTAKAL LIKÖRÜ, LIMON SUYU"
+        },
+        {
+          "name": "LYNCHBURG LEMONADE",
+          "price": 730,
+          "description": "Jack Danıels, Portakal Likörü, Limon Suyu, Sprıte, Lime ve Sweet Sour"
+        },
+        {
+          "name": "COSMOPOLITAN",
+          "price": 675,
+          "description": "VODKA, PORTAKAL LIKÖRÜ, KIZILCIK SUYU, LIME"
+        },
+        {
+          "name": "LONG ISLAND ICE TEA",
+          "price": 770,
+          "description": "Cin, Rum, Portakal Likörü, Votka, Tekila, Limon Suyu, Cola, Sweet Sour"
+        },
+        {
+          "name": "APEROL SPRITZ",
+          "price": 655,
+          "description": "APEROL, PROSECCO, SAN PELLEGRINO"
+        },
+        {
+          "name": "WHITE RUSSIAN",
+          "price": 655,
+          "description": "VODKA, BAILYES, SÜT"
+        },
+        {
+          "name": "WHISKY SOURS",
+          "price": 720,
+          "description": "JACK DANIELS,PORTAKAL LIKÖRÜ, SWEET &SOUR SOS"
+        },
+        {
+          "name": "ESPRESSO MARTINI",
+          "price": 725,
+          "description": "DOUBLE ESPRESSO, VODKA, KAHLUA , ŞEKER ŞURUBU"
+        },
+        {
+          "name": "HIGHSINBURG",
+          "price": 750,
+          "description": "Votka, Gin, Portakal Likörü, Lime Şurub, Kırmızı Burn"
+        },
+        {
+          "name": "BALLI BALYOZ",
+          "price": 750,
+          "description": "GIN, VODKA,TEKILA,ROM, PORTAKAL LİKÖRÜ,BAL, REDBULL"
+        },
+        {
+          "name": "NETFLIX",
+          "price": 750,
+          "description": "Cin, Votka, Rum, Portakal Likörü, Nar Şurubu, Lime, Redbull"
+        },
+        {
+          "name": "POTE SPECİAL",
+          "price": 690,
+          "description": "Gin, Portakal Likörü, Lime, Bubbglegum, Martını Extra Dry"
+        },
+        {
+          "name": "ORM. MEYVELİ BALYOZ",
+          "price": 790,
+          "description": "GIN, VODKA,TEKILA,ROM, PORTAKAL LİKÖRÜ, REDBULL, ORMAN MEYVELERİ"
+        },
+        {
+          "name": "GIN FİZZ",
+          "price": 690,
+          "description": "GIN,LIMON,SODA"
+        },
+        {
+          "name": "MANHATTAN",
+          "price": 725,
+          "description": "Jack Daniels, Martını Rosso, Angustra Bitter, (Sweet)"
+        },
+        {
+          "name": "NEGRONİ",
+          "price": 695,
+          "description": "GIN,MARTINI ROSSO,CAMPARI"
+        },
+        {
+          "name": "PINK LAYD",
+          "price": 520,
+          "description": "Gin, Portakal Likörü, Frambuaz ve Lİme"
+        },
+        {
+          "name": "PORNSTAR MARTINI",
+          "price": 470,
+          "description": "Absolut Vanilya, Çarkıfelek Meyvesi ve Likörü"
+        },
+        {
+          "name": "PURPLE WOMAN",
+          "price": 610,
+          "description": "Gin, Portakal Likörü, Rum, Orman Meyvesi Şurubu, Lime ve Sweet Sour"
+        },
+        {
+          "name": "GARGANTUA",
+          "price": 770,
+          "description": "Cin, Rum, Portakal Likörü, Viski, Jagermaster, Sweet Sour, Çilek Püresi, Orman Meyvesi Şurubu"
+        },
+        {
+          "name": "APPLE BİTE",
+          "price": 755,
+          "description": "CİN, PORTAKAL LİKÖRÜ, LIME, VOTKA, APPLE MİX"
+        },
+        {
+          "name": "BALYOZ",
+          "price": 700,
+          "description": "GIN, VODKA,TEKILA,ROM, PORTAKAL LİKÖRÜ,"
+        },
+        {
+          "name": "OLD FASHİONED",
+          "price": 675,
+          "description": "Jack Daniels, Angustra Bitter (Sweet)"
+        },
+        {
+          "name": "KUZUCUK",
+          "price": 720,
+          "description": "Kuzukulağı, Gin, Portakal Likötü, Lime"
+        },
+        {
+          "name": "MEXİCAN PORNSTAR MARTINI",
+          "price": 470,
+          "description": "Olmega Tekila, Çarkıfelek Meyvesi ve Likörü,"
+        },
+        {
+          "name": "PUMPKİN SPİCE",
+          "price": 550,
+          "description": "Votka, Kahluha, Baharatlı Balkabağı, Krem Şanti, Süt"
+        },
+        {
+          "name": "PEACH COSMOPOLİTAN",
+          "price": 700,
+          "description": "Votka, Ş,eftali Likörü, Lime"
+        },
+        {
+          "name": "BLUE HAWAİ",
+          "price": 470,
+          "description": "Rum , Hindistan Cevizi, Turunç Likörü, Ananas"
+        },
+        {
+          "name": "COCONUT DAİGUN",
+          "price": 470,
+          "description": "Rum, Malibu, Hindistan Cevizi"
+        }
+      ]
+    },
+    {
+      "name": "NACHOS",
+      "items": [
+        {
+          "name": "NACHOS TAVUKLU",
+          "price": 390,
+          "description": "Tortilla Cipsi, Tavuk, Karışık Fajita Sebzesi, Sweet Chili Sos, Salsa Sos ve Avokado Sos ile servis edilir."
+        },
+        {
+          "name": "NACHOS PEYNIRLI",
+          "price": 350,
+          "description": "Tortilla Cipsi, Karışık Fajita Sebzesi, Kaşar Peyniri, Mısır, Meksika Fasulyesi , Sweet Chili Sos, Salsa Sos ve Avokado Sos ile servis edilir."
+        }
+      ]
+    },
+    {
+      "name": "GIN",
+      "items": [
+        {
+          "name": "ROKU 4CL",
+          "price": 360,
+          "description": ""
+        },
+        {
+          "name": "ROKU 8CL",
+          "price": 680,
+          "description": ""
+        },
+        {
+          "name": "GORDONS 4CL",
+          "price": 280,
+          "description": "GORDONS 4CL"
+        },
+        {
+          "name": "GORDONS 8CL",
+          "price": 540,
+          "description": "GORDONS 8CL"
+        },
+        {
+          "name": "HENRIKS 4CL",
+          "price": 420,
+          "description": "HENDRIKS 4CL"
+        },
+        {
+          "name": "HENRIKS 8CL",
+          "price": 820,
+          "description": "HENDRIKS 8CL"
+        }
+      ]
+    },
+    {
+      "name": "SICAK ICECEKLER",
+      "items": [
+        {
+          "name": "TURK KAHVESI",
+          "price": 120,
+          "description": ""
+        },
+        {
+          "name": "GAR KAHVESI",
+          "price": 130,
+          "description": ""
+        },
+        {
+          "name": "FILTRE KAHVE",
+          "price": 140,
+          "description": ""
+        },
+        {
+          "name": "SICAK CIKOLATA",
+          "price": 170,
+          "description": ""
+        },
+        {
+          "name": "CAY",
+          "price": 70,
+          "description": ""
+        },
+        {
+          "name": "BITKI CAYLARI",
+          "price": 150,
+          "description": "Ihlamur Çayı-Kuşburnu Çayı-Adaçayı-Elma Tarçın Çayı-Kış Çayı-Yeşil Çay-Yaseminli Yeşil Çay-Melisa Çayı"
+        },
+        {
+          "name": "SAHLEP",
+          "price": 170,
+          "description": ""
+        },
+        {
+          "name": "ÇAY FİNCAN",
+          "price": 70,
+          "description": ""
+        },
+        {
+          "name": "TARZ-I HUSUSİ",
+          "price": 130,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "SOGUK KAHVELER",
+      "items": [
+        {
+          "name": "SOGUK FILTRE KAHVE",
+          "price": 170,
+          "description": ""
+        },
+        {
+          "name": "ICE AMERICANO",
+          "price": 170,
+          "description": ""
+        },
+        {
+          "name": "ICE LATTE",
+          "price": 185,
+          "description": ""
+        },
+        {
+          "name": "ICE MOCHA",
+          "price": 190,
+          "description": ""
+        },
+        {
+          "name": "ICE WHITE MOCHA",
+          "price": 190,
+          "description": ""
+        },
+        {
+          "name": "FRAPPELER",
+          "price": 210,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "ALKOLSUZ COCTAILS",
+      "items": [
+        {
+          "name": "NANELI FESLEGENLI AYRAN",
+          "price": 100,
+          "description": ""
+        },
+        {
+          "name": "ALKOLSUZ MOJITO",
+          "price": 185,
+          "description": "Sprite lime"
+        },
+        {
+          "name": "CHARLİES MONKEY",
+          "price": 210,
+          "description": "Ananas, Hindistan Cevizi, Limon"
+        },
+        {
+          "name": "STRAWBERRY GARDEN",
+          "price": 210,
+          "description": "Çilek, Lime, Limon ve Ananas"
+        },
+        {
+          "name": "PİNA COLADO",
+          "price": 220,
+          "description": ""
+        },
+        {
+          "name": "VİRGİN PİNA PASSİON",
+          "price": 250,
+          "description": "Ananas, Limon"
+        },
+        {
+          "name": "STRAWBERRY BLİSS",
+          "price": 250,
+          "description": "Çilek, Limon"
+        },
+        {
+          "name": "COCONUT PEACH FİZZ",
+          "price": 250,
+          "description": "Hindistan Cevizi, Şeftali"
+        },
+        {
+          "name": "RASBERRY VANİLLA FLOAT",
+          "price": 290,
+          "description": "Böğürtlen, Süt, Krema"
+        },
+        {
+          "name": "JAMAIKA",
+          "price": 185,
+          "description": "Grenadine Curacao, Ananas Suyu, Turunç"
+        }
+      ]
+    },
+    {
+      "name": "LIQUOR",
+      "items": [
+        {
+          "name": "BAILEYS 8CL",
+          "price": 260,
+          "description": "BAILEYS 8CL"
+        },
+        {
+          "name": "MALIBU 8CL",
+          "price": 350,
+          "description": "MALIBU 8CL"
+        },
+        {
+          "name": "JEGER MAISTER 4CL",
+          "price": 190,
+          "description": "JEGER MAISTER 4CL"
+        },
+        {
+          "name": "JEGER MAISTER 8CL",
+          "price": 290,
+          "description": "JEGER MAISTER 8CL"
+        }
+      ]
+    },
+    {
+      "name": "VODKA",
+      "items": [
+        {
+          "name": "ABSOLUT 4CL",
+          "price": 300,
+          "description": "ABSOLUT 4CL"
+        },
+        {
+          "name": "ABSOLUT 8CL",
+          "price": 580,
+          "description": "ABSOLUT 8CL"
+        },
+        {
+          "name": "SMIRNOFF 4 CL",
+          "price": 300,
+          "description": "SMIRNOFF 4 CL"
+        },
+        {
+          "name": "SMIRNOFF 8 CL",
+          "price": 580,
+          "description": "SMIRNOFF 8 CL"
+        },
+        {
+          "name": "KETEL ONE 4 CL",
+          "price": 330,
+          "description": ""
+        },
+        {
+          "name": "KETEL ONE 48 CL",
+          "price": 640,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "WHISKEYS SCOTCHT",
+      "items": [
+        {
+          "name": "J.W. BLACK 4CL",
+          "price": 340,
+          "description": "J.W. BLACK 4CL"
+        },
+        {
+          "name": "J.W. BLACK 8CL",
+          "price": 600,
+          "description": "J.W. BLACK 8CL"
+        },
+        {
+          "name": "CHIVAS 12 YEAR 4CL",
+          "price": 390,
+          "description": "CHIVAS 12 YEAR 4CL"
+        },
+        {
+          "name": "CHIVAS 12 YEAR 8CL",
+          "price": 760,
+          "description": "CHIVAS 12 YEAR 8CL"
+        },
+        {
+          "name": "CHIVAS 18 YEAR 4CL",
+          "price": 550,
+          "description": "CHIVAS 18 YEAR 4CL"
+        },
+        {
+          "name": "CHIVAS 18 YEAR 8CL",
+          "price": 1080,
+          "description": "CHIVAS 18 YEAR 8CL"
+        },
+        {
+          "name": "BALLANTINES 12 YEARS 4 CL",
+          "price": 340,
+          "description": ""
+        },
+        {
+          "name": "BALANTINES 12 YEARS 8 CL",
+          "price": 650,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "WHISKEYS MALT",
+      "items": [
+        {
+          "name": "TALISKER 4CL",
+          "price": 600,
+          "description": "TALISKER 4CL"
+        },
+        {
+          "name": "TALISKER 8CL",
+          "price": 1180,
+          "description": "TALISKER 8CL"
+        },
+        {
+          "name": "WOODFORD RESERVE 4CL",
+          "price": 460,
+          "description": "WOODFORD RESERVE 4 CL"
+        },
+        {
+          "name": "WOODFORD RESERVE 8 CL",
+          "price": 900,
+          "description": "WOODFORD RESERVE S 8 CL"
+        },
+        {
+          "name": "GLENLİVET FOUNDERS4 CL",
+          "price": 420,
+          "description": "GLENLİVET 4 CL"
+        },
+        {
+          "name": "GLENLİVET FOUNDERS 8 CL",
+          "price": 820,
+          "description": "GLENLİVET 8CL"
+        }
+      ]
+    },
+    {
+      "name": "WHISKEYS TENNESSEE",
+      "items": [
+        {
+          "name": "JACK DANIELS 4CL",
+          "price": 360,
+          "description": "JACK DANIELS 4CL"
+        },
+        {
+          "name": "JACK DANIELS 8CL",
+          "price": 700,
+          "description": "JACK DANIELS 8CL"
+        },
+        {
+          "name": "GENTELMAN JACK 4CL",
+          "price": 370,
+          "description": "GENTLEMAN JACK 4CL"
+        },
+        {
+          "name": "GENTELMAN JACK 8CL",
+          "price": 710,
+          "description": "GENTLEMAN JACK 8CL"
+        }
+      ]
+    },
+    {
+      "name": "BURGERLER",
+      "items": [
+        {
+          "name": "POTE BURGER",
+          "price": 590,
+          "description": "140 gr Dana Kıyma, Dana Füme Et, Cheddar ve Kaşar  Peyniri, Mantar-Sogan sote yanında kızarmış Patates ile servis edilir"
+        },
+        {
+          "name": "BBQ SOSLU BURGER",
+          "price": 580,
+          "description": "140 gr Dana Kıyma, Kornişon Turşu, Karamelize Soğan, Dana Füme Et,Cheddar peyniri BBQ Sos yanında Kızarmış Patates ile servis edilir"
+        },
+        {
+          "name": "TRUF SOSLU BURGER",
+          "price": 570,
+          "description": "140 gr Dana Kıyma,Cheddar Peyniri, Kornişon turşu, Karamelize4 Soğan, Truf Mayonez yanında patates kızartması ile servis edilir"
+        },
+        {
+          "name": "ROKFOR SOSLU BURGER",
+          "price": 570,
+          "description": "140 ge Dana Kıyma, Kornişon Turşu, Kremalı Mantar sote, Rokfor, Cheddar ve Kaşar peyniri,yanında Kızarmış Patates ile servis edilir"
+        },
+        {
+          "name": "ÇITIR TAVUK BURGER",
+          "price": 450,
+          "description": "Çıtır Tavuk, Kornişon Turşu, Marul, Ballı Hardal, Cheddar Peyniri yanında patates kızartması ile servis edilir"
+        },
+        {
+          "name": "MİNİ HAMBURGER 3 LÜ",
+          "price": 690,
+          "description": "Dana Köfte, Domates, Iceberg, Turşu yanında Baharatlı Kızarmış Patates ile servis edilir."
+        },
+        {
+          "name": "TATLI-ACI BURGER",
+          "price": 550,
+          "description": "140 gr Dana Kıyma, Biber Reçeli, Karamelize Soğan, Cheddar ve Kaşar Peyniri yanında patates kızartması ile servis edilir"
+        },
+        {
+          "name": "CLASSIC BURGER",
+          "price": 520,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "WRAPLAR",
+      "items": [
+        {
+          "name": "BONFİLE WRAP",
+          "price": 890,
+          "description": "Tortilla Ekmeği Arasında Dana Bonfile Dilimleri, Yeşil ve Kırmızı Biber, Taze Mantar, Karamelize Soğan, Kaşar Peyniri yanında Kızarmış Patates ve Salata ile servis edilir."
+        },
+        {
+          "name": "TAVUKLU WRAP",
+          "price": 490,
+          "description": "Tortilla Ekmeği Arasında Izgara Tavuk, Yeşil ve Kırmızı Biber, Kaşar Peyniri, Mantar, yanında Kızarmış Patates ve Salata ile servis edilir."
+        },
+        {
+          "name": "SEBZELI WRAP",
+          "price": 450,
+          "description": "Tortilla Ekmeği arasında Julyen Doğranmış Sebze(Biber-Mantar-Havuç-Kabak) Kaşar Peyniri yanında Kızarmış Patates ve Salata ile servis edilir."
+        },
+        {
+          "name": "ADANA WRAP",
+          "price": 650,
+          "description": "Tortilla Ekmeği arasında Dana Eti, Tablacı Salatası, yanında salata ile servis edilir."
+        },
+        {
+          "name": "KÖRİ SOSLU WRAP",
+          "price": 490,
+          "description": "Tortilla Ekmeği arasında Izgara Tavuk, Yeşil ve Kırmızı Biber, Kaşar Peyniri, Mantar, Köri Sos yanında Kızarmış Patates ve Salata ile servis edilir"
+        }
+      ]
+    },
+    {
+      "name": "QESADILLA",
+      "items": [
+        {
+          "name": "BONFİLE QESADILLA",
+          "price": 980,
+          "description": "Dana Bonfile Dilimleri, Yeşil ve Kırmızı Biber, Taze Mantar, Jalapeno Biberi, Mozzarella yanında Kızarmış Patates ve Salata ile servis edilir."
+        },
+        {
+          "name": "TAVUKLU QESADILLA",
+          "price": 490,
+          "description": "Sote Tavuk Parçaları, Mantar, Yeşil ve Kırmızı Biber, Mozzarella yanında Kızarmış Patates ve Salata ile servis edilir."
+        },
+        {
+          "name": "VEJETERYAN QESADILLA",
+          "price": 450,
+          "description": "Julyen Doğranmış Kabak, Havuç, Yeşil ve Kırmızı Biber, Mantar yanında Kızarmış Patates ve Salata ile servis edilir."
+        },
+        {
+          "name": "KORI SOSLU QUSADILLA",
+          "price": 490,
+          "description": "Sote Tavuk Parçaları, Köri, Mantar, Yeşil ve Kırmızı Biber, Mozzarella yanında Kızarmış Patates ve Salata ile servis edilir."
+        }
+      ]
+    },
+    {
+      "name": "PIZZALAR",
+      "items": [
+        {
+          "name": "POTE PIZZA",
+          "price": 550,
+          "description": "Dana Sosis, Dana Sucuk, Dana Salam, Mozzarella peyniri, Domates Sos,Mantar, Kırmızı-Yeşil Biber, Mısır, Siyah Zeytin,"
+        },
+        {
+          "name": "MARGARITA PIZZA",
+          "price": 510,
+          "description": "Mozzarella, Domates, Özel Domates Sos"
+        },
+        {
+          "name": "4 PEYNIRLI PIZZA",
+          "price": 580,
+          "description": "Mozzarella, Cheddar Peyniri, Parmesan, Krem Peynir, Özel Domates Sos"
+        },
+        {
+          "name": "CALIFORNIA PIZZA",
+          "price": 560,
+          "description": "Dana Sucuk, Dana Salam, Mozarella Peyniri ve  Özel Domates Sos"
+        },
+        {
+          "name": "TON BALIKLI PIZZA",
+          "price": 650,
+          "description": "Ton Balığı, Siyah Zeytin, Mısır, Soğan"
+        },
+        {
+          "name": "DANA ROBESPİERRA PİZZA",
+          "price": 840,
+          "description": "Dana Bonfile, Mozarella, Sarımsak, Parmesan, Roka"
+        },
+        {
+          "name": "TAVUKLU PIZZA",
+          "price": 550,
+          "description": "Bonfile Tavuk Parçaları, Kırmızı-Yeşil Biber, Mısır, Mantar"
+        },
+        {
+          "name": "VEJETERYAN PIZZA",
+          "price": 480,
+          "description": "Mısır, Mantar, Kırmızı- Yeşil Biber, Mozzarella peyniri, Karnabahar, Brokoli, Havuç, Mısır"
+        },
+        {
+          "name": "ŞEFS PIZZA",
+          "price": 820,
+          "description": "Dana bonfile-Tavuk parçaları,Biber,Mısır, Mozarella peyniri, Özel domates sos"
+        },
+        {
+          "name": "BONFİLE PİZZA",
+          "price": 830,
+          "description": "Dana Bonfile Parçaları, Mısır, Yeşil-Kırmızı Biber, Domates"
+        },
+        {
+          "name": "FUNGHİ PİZZA",
+          "price": 510,
+          "description": "Mozarella Peynir, Mantar, Siyah Zeytin"
+        },
+        {
+          "name": "AKDENİZ PİZZA",
+          "price": 510,
+          "description": "Mozarella, Beyaz Peynir, Siyah Zeytin, Domates, yanında salata ile servis edilir."
+        },
+        {
+          "name": "KAVURMALI PİZZA",
+          "price": 840,
+          "description": "Kavurma, Mozarella peyniri"
+        }
+      ]
+    },
+    {
+      "name": "PIDE",
+      "items": [
+        {
+          "name": "KASARLI  PIDE",
+          "price": 510,
+          "description": "Mozarella Peyniri, Özel Tereyağı"
+        },
+        {
+          "name": "KAVURMALI  PIDE",
+          "price": 840,
+          "description": "Dana Kavurma, Mozarella Peyniri, Özel Tereyağı"
+        },
+        {
+          "name": "SUCUKLU PIDE",
+          "price": 560,
+          "description": "Dana Sucuk, Mozarella Peyniri, Özel Tereyağı"
+        },
+        {
+          "name": "ETLİ PİDE",
+          "price": 830,
+          "description": "Bonfile, Biber, Domates, Baharat"
+        },
+        {
+          "name": "KIYMALI PİDE",
+          "price": 730,
+          "description": "Dana Kıyma, Biber, Domates, Baharat"
+        }
+      ]
+    },
+    {
+      "name": "SUSHİ SALATA",
+      "items": [
+        {
+          "name": "MAYONEZLİ YENGEÇ SALATA",
+          "price": 490,
+          "description": "Mayonez, Yengeç, Salatalık, Havuç, Susam ve Tempura Çıtırı"
+        },
+        {
+          "name": "WAKEME",
+          "price": 470,
+          "description": "Yosun, Susam, Marul, Havuç, Edamame, Susam Yağı, Akdeniz Yeşilliği"
+        }
+      ]
+    },
+    {
+      "name": "WHISKEY IRISH",
+      "items": [
+        {
+          "name": "JAMESSON 4CL",
+          "price": 400,
+          "description": "JAMESSON 4CL"
+        },
+        {
+          "name": "JAMESSON 8 CL",
+          "price": 780,
+          "description": "JAMESSON 8CL"
+        },
+        {
+          "name": "JAMESSON BLACK BAREL 4 CL",
+          "price": 420,
+          "description": ""
+        },
+        {
+          "name": "JAMESSON BLACK BAREL 8 CL",
+          "price": 820,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "BALIKLAR",
+      "items": [
+        {
+          "name": "SOMON IZGARA",
+          "price": 890,
+          "description": "Izgarada,  Norveç Somon Dilimi, Izgara Patates yanında Roka salatası ile servis edilir."
+        },
+        {
+          "name": "LEVREK IZGARA",
+          "price": 750,
+          "description": "Levrek Izgara yanında Akdeniz Yeşilliği ve Elma Dilim Patates ile servis edilir."
+        },
+        {
+          "name": "SOMON AVOKADO YATAGINDA",
+          "price": 895,
+          "description": "Avokado sos yatağında Somon Izgara, Patates ve Roka ile servis edilir."
+        }
+      ]
+    },
+    {
+      "name": "SPECIAL ROLLS",
+      "items": [
+        {
+          "name": "SALMON TERİYAKİ ROLL",
+          "price": 585,
+          "description": "Tempura Somon, Avokado, Salatalık dışı Çörek Otu ve Teriyaki Sos"
+        },
+        {
+          "name": "POTE ROLL",
+          "price": 585,
+          "description": "Tempura Karides, Tempura Yengeç, Mısır dışı tütsülenmiş acılı Mayonez, Yeşil Soğan ve Susam"
+        },
+        {
+          "name": "TOKYO ROLL",
+          "price": 585,
+          "description": "Karides ve Yengeç Tempura, Avokado, Salatalık, Krem Peynir üzeri Corn Flakes ve Teriyaki Sos"
+        },
+        {
+          "name": "JURASSIC ROLL",
+          "price": 585,
+          "description": "Karides Tempura,Yengec, Avokado dışı Unagi, üzeri Teriyaki ve Acı Sos"
+        },
+        {
+          "name": "STRAWBERRY ROLL",
+          "price": 575,
+          "description": "Crazy Yengeç, Avokado, Çilek, Krem Peynir dışı Çilek kaplama, üzeri Çilek sos"
+        },
+        {
+          "name": "ISTANBUL ROLL",
+          "price": 585,
+          "description": "Karides Tempura, Avokado, Salatalık, Krem Peynir dışı tütsülenmiş Somon, üzeri Teriyaki ve Acı sos"
+        },
+        {
+          "name": "NEWYORK ROLL",
+          "price": 585,
+          "description": "Somon Tempura, Avokado, Salatalık, Krem Peynir dışı Kırmızı Tobiko ve Spicy Sos"
+        },
+        {
+          "name": "VEGAS ROLL",
+          "price": 585,
+          "description": "Tempura Karides, Krem peynir, avokado, salatalık, dışı pişmiş somon, corn fleks, teriyaki sos"
+        },
+        {
+          "name": "DRAGON ROLL",
+          "price": 630,
+          "description": "Salatalık, Avokado, Tempura Karides dışı Yılan Balığı, Susam ve Teriyaki Sos"
+        },
+        {
+          "name": "SESAME SALMON ROLL",
+          "price": 620,
+          "description": "Somon, Avokado, Krem Peynir, Salatalık, Susam"
+        },
+        {
+          "name": "SALMON AVOKADO ROLL",
+          "price": 620,
+          "description": "Somon, Salatalık, Krem Peynir, Avokado, Spicy, Yeşil Tobiko"
+        },
+        {
+          "name": "TOBİKO SALMON ROLL",
+          "price": 620,
+          "description": "Somon, Salatalık, Avokado, Krem Peynir, Tobiko, Spicy Sos"
+        },
+        {
+          "name": "MANGO SALMON ROLL",
+          "price": 610,
+          "description": "Somon, Salatalık, Avokado, Krem Peynir, Mango, Spicy Sos, Yeşil Tobiko"
+        }
+      ]
+    },
+    {
+      "name": "SASHİMİ",
+      "items": [
+        {
+          "name": "SUZUKI-LEVREK SASHİMİ 5 PRÇ",
+          "price": 495,
+          "description": "LEVREK"
+        },
+        {
+          "name": "SAKE-SOMON SASHİMİ 5 PRÇ",
+          "price": 495,
+          "description": "SOMON"
+        }
+      ]
+    },
+    {
+      "name": "KREPLER",
+      "items": [
+        {
+          "name": "SEBZELİ KREP",
+          "price": 500,
+          "description": "Mevsim sebzeleri, Krema, Mozarella yanında Patates ve Salata ile servis edilir."
+        },
+        {
+          "name": "TAVUKLU MANTARLI KREP",
+          "price": 590,
+          "description": "Tavuk parçaları, Mantar, Krema, Mozarella yanında Patates ve Salata ile servis edilir."
+        },
+        {
+          "name": "KÖRİ SOSLU KREP",
+          "price": 590,
+          "description": "Tavuk parçaları, Mantar, Krema, Mozarella, Köri Sosu yanında Patates ve Salata ile servis edilir."
+        },
+        {
+          "name": "BONFİLE KREP",
+          "price": 990,
+          "description": "Dana bonfile parçaları, Mantar, Mozarella, Kaşar yanında Patates ve Salata ile servis edilir."
+        }
+      ]
+    },
+    {
+      "name": "CORBALAR",
+      "items": [
+        {
+          "name": "KREMALI MANTAR ÇORBASI",
+          "price": 250,
+          "description": "Krema ve Mantar"
+        },
+        {
+          "name": "DOMATES ÇORBASI",
+          "price": 250,
+          "description": "Domates sosu ve mozzarella ile servis edilir."
+        },
+        {
+          "name": "BROKOLI ÇORBASI",
+          "price": 250,
+          "description": "Krema ve Brokoli"
+        },
+        {
+          "name": "KREMALI TAVUK ÇORBASI",
+          "price": 250,
+          "description": "Krema ve Tavuk"
+        },
+        {
+          "name": "KÖZ PATLICAN ÇORBASI",
+          "price": 250,
+          "description": "Köz Patlıcan, Krema ve Baharat"
+        }
+      ]
+    },
+    {
+      "name": "ANTRIKOT",
+      "items": [
+        {
+          "name": "IZGARA ANTRIKOT (250 GR)",
+          "price": 850,
+          "description": "Izgara Bütün Antrikot yanında Mantarlı Soğan, Tatlı Ekşi Soslu Elma Dilim Patates ve Salata ile servis edilir."
+        },
+        {
+          "name": "KECI PEYNIRLI ANTR.(250 GR)",
+          "price": 890,
+          "description": "Izgara Bütün Antrikot, üzerine Keçi Peyniri yanında Mantarlı Soğan, Tatlı Ekşi Soslu Elma Dilim Patates ve Salata ile servis edilir."
+        },
+        {
+          "name": "BEGENDI YATA. ANTR.(250GR)",
+          "price": 890,
+          "description": "Kremalı Közlenmiş Patlıcan yatağında Izgara Antrikot yanında Mantarlı Soğan, Tatlı Ekşi Soslu Elma Dilim Patates ve Salata ile servis edilir."
+        },
+        {
+          "name": "BALSAMIK SOSLU ANTR. (250GR)",
+          "price": 890,
+          "description": "Izgara Antrikot, Kıska Soğan, Domates, Mantar, Balzamik Sirke yanında Tatlı Ekşi Soslu Elma Dilim Patates ve Salata ile servis edilir."
+        },
+        {
+          "name": "AVOKADO SOSLU ANTr. (250GR)",
+          "price": 890,
+          "description": "Kremalı Avokado Püresi üzerinde Izgara Antrikot yanında Mantarlı Soğan, Tatlı Ekşi Soslu Elma Dilim Patates ve Salata ile servis edilir."
+        }
+      ]
+    },
+    {
+      "name": "BOWL",
+      "items": [
+        {
+          "name": "TAVUKLU BOWL",
+          "price": 490,
+          "description": "Izgara Tavuk,  Brokoli, Siyez Bulguru, Çeri Domates, Salatalık, Mor Lahana, Süzme Yoğurt, Mısır"
+        },
+        {
+          "name": "KÖFTE BOWL",
+          "price": 680,
+          "description": "Dana Kıyma, Kapya Biber, Haşlanmış Patates, Brokoli, Siyez Bulguru,  Lahana Haydari"
+        },
+        {
+          "name": "BONFİLE BOWL",
+          "price": 980,
+          "description": "Dana Bonfile, Kapya Biber, Haşlanmış Patates-Bezelye, Yoğurtlu Havuç, Basmati Pilav"
+        },
+        {
+          "name": "LEVREK BOWL",
+          "price": 750,
+          "description": ""
+        },
+        {
+          "name": "SOMON BOWL",
+          "price": 850,
+          "description": "Susamlı Somon, Avokado, Edamame, Taze Ananas, Salatalık, Çeri Domates"
+        },
+        {
+          "name": "FALAFEL BOWL",
+          "price": 390,
+          "description": "Falafel, Çeri Domates, Kırmızı Lahana, Brokoli, Avokadao, Süzme Yoğurt, Soğuk Salata (Meksika Fasulyesi, Jalebone Biber, Mısır, Salatalık)"
+        },
+        {
+          "name": "KARİDES BOWL",
+          "price": 650,
+          "description": "SweetCili Soslu Karides , Taze Ananas, Edamame, Çery Domates, Salatalık, Mor Lahana Turşusu, Sebzeli Siyez"
+        },
+        {
+          "name": "KÖRİ SOSLU BOWL",
+          "price": 490,
+          "description": "Köri Soslu Tavuk, Mor Lahana, Bezelye, Basmati Pilav, Yoğurtlu Havuç, Yoğurtlu Mor Lahana,Domates,Salatalık"
+        }
+      ]
+    },
+    {
+      "name": "ZEYTİN-ZEYTİNYAGI",
+      "items": [
+        {
+          "name": "ZEYTİN 1000 GR",
+          "price": 300,
+          "description": ""
+        },
+        {
+          "name": "ZEYTİN 500 GR",
+          "price": 200,
+          "description": ""
+        },
+        {
+          "name": "ZEYTİN 250GR",
+          "price": 150,
+          "description": ""
+        },
+        {
+          "name": "ZEYTİNYAĞI TENEKE 5 LT",
+          "price": 2500,
+          "description": ""
+        },
+        {
+          "name": "ZEYTİNYAĞI TENEKE 1 LT",
+          "price": 600,
+          "description": ""
+        },
+        {
+          "name": "ZEYTİNYAĞI CAM ŞİŞE",
+          "price": 400,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "BIRALAR",
+      "items": [
+        {
+          "name": "BECKS 33CL",
+          "price": 245,
+          "description": "BECKS 33CL"
+        },
+        {
+          "name": "EFES PİLSEN 50CL",
+          "price": 265,
+          "description": "EFES PİLSEN 50CL"
+        },
+        {
+          "name": "EFES MALT",
+          "price": 265,
+          "description": "EFES MALT 50CL"
+        },
+        {
+          "name": "BUD 33CL",
+          "price": 270,
+          "description": "BUD 33CL"
+        },
+        {
+          "name": "MILLER 33CL",
+          "price": 285,
+          "description": "MILLER 33CL"
+        },
+        {
+          "name": "EFES OZEL SERİ",
+          "price": 295,
+          "description": "EFES ÖZEL SERİ 50 CL"
+        },
+        {
+          "name": "BOMONTI FİLTRESİZ",
+          "price": 295,
+          "description": "BOMONTİ FİLTRESİZ"
+        },
+        {
+          "name": "BECKS 50 CL",
+          "price": 295,
+          "description": "BECKS 50CL"
+        },
+        {
+          "name": "BELFAST EFES",
+          "price": 295,
+          "description": ""
+        },
+        {
+          "name": "MILLER LİME 33 CL",
+          "price": 295,
+          "description": ""
+        },
+        {
+          "name": "MEXİCO FİLTRESİZ",
+          "price": 300,
+          "description": ""
+        },
+        {
+          "name": "MEXİCO ÖZEL SERİ",
+          "price": 300,
+          "description": ""
+        },
+        {
+          "name": "MEXİCO BUD",
+          "price": 300,
+          "description": ""
+        },
+        {
+          "name": "MEXİCO BECKS 50",
+          "price": 300,
+          "description": ""
+        },
+        {
+          "name": "MEXİCO MALT",
+          "price": 300,
+          "description": ""
+        },
+        {
+          "name": "CORONA 33CL",
+          "price": 310,
+          "description": "CORONA 33CL"
+        },
+        {
+          "name": "STELLA ARTOIS 44CL",
+          "price": 310,
+          "description": "STELLA ARTOIS 44CL"
+        },
+        {
+          "name": "HEINEKEN 33CL",
+          "price": 315,
+          "description": "HEINEKEN 33CL"
+        },
+        {
+          "name": "ERDINGER 33CL",
+          "price": 315,
+          "description": "ERDINGER 33CL"
+        },
+        {
+          "name": "HOOGARDEN 33CL",
+          "price": 315,
+          "description": "HOOGARDEN 33CL"
+        },
+        {
+          "name": "EFES GLUTENSİZ",
+          "price": 320,
+          "description": "EFES GLUTENSIZ 50CL"
+        },
+        {
+          "name": "BUD 50CL",
+          "price": 330,
+          "description": "BUD 50 CL"
+        },
+        {
+          "name": "AMSTERDAM",
+          "price": 385,
+          "description": "AMSTERDAM 45 CL"
+        }
+      ]
+    },
+    {
+      "name": "DETOX",
+      "items": [
+        {
+          "name": "ORANGE BOOST",
+          "price": 210,
+          "description": "Portakal ve havuç içerikli."
+        },
+        {
+          "name": "COOL PİNE ELİXİR",
+          "price": 210,
+          "description": "Taze sıkılmış salatalık , elma ve ananas"
+        },
+        {
+          "name": "GREEN GLOW",
+          "price": 220,
+          "description": "Yeşil Çay- Taze sıkılmış elma ve salatalık"
+        },
+        {
+          "name": "TAZE MEYVE SUYU",
+          "price": 210,
+          "description": "Havuç"
+        }
+      ]
+    },
+    {
+      "name": "SHOTS",
+      "items": [
+        {
+          "name": "ANTİFRİDGE",
+          "price": 690,
+          "description": "Turunçlu"
+        },
+        {
+          "name": "RED VELVET",
+          "price": 690,
+          "description": "Çilekli"
+        }
+      ]
+    }
+  ]
+}

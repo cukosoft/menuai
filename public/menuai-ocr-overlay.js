@@ -29,18 +29,25 @@
             return r.json();
         })
         .then(function (data) {
-            // İlk 6 sayfa ile filtrele
-            var filtered = {};
-            var allPages = Object.keys(data).sort(function (a, b) { return parseInt(a) - parseInt(b); });
+            // Support both array [{page:1, items:[]}] and object {"5":{items:[]}} formats
+            var normalized = {};
+            if (Array.isArray(data)) {
+                data.forEach(function (pg) {
+                    var pNum = pg.page || pg.pageNum || (Object.keys(normalized).length + 1);
+                    normalized[String(pNum)] = pg;
+                });
+            } else {
+                var allPages = Object.keys(data).sort(function (a, b) { return parseInt(a) - parseInt(b); });
+                allPages.forEach(function (p) {
+                    if (parseInt(p) <= MAX_PAGE) {
+                        normalized[p] = data[p];
+                    }
+                });
+            }
+            ocrData = normalized;
             var count = 0;
-            allPages.forEach(function (p) {
-                if (parseInt(p) <= MAX_PAGE) {
-                    filtered[p] = data[p];
-                    count += data[p].items.length;
-                }
-            });
-            ocrData = filtered;
-            var pages = Object.keys(filtered);
+            Object.keys(normalized).forEach(function (p) { count += (normalized[p].items || []).length; });
+            var pages = Object.keys(normalized);
             console.log("[MenüAi OCR v2] ✅ " + count + " ürün pozisyonu yüklendi (" + pages.length + " sayfa)", pages);
             startOverlay();
         })
@@ -138,16 +145,21 @@
     }
 
     // ═══ SCAN & APPLY ═══
+    var menuImageIndex = 0; // For sequential matching of inline/base64 images
     function scanAndApply() {
         if (!ocrData) return;
         var images = document.querySelectorAll("img");
         var matched = 0;
+        var ocrPages = Object.keys(ocrData).sort(function (a, b) { return parseInt(a) - parseInt(b); });
 
         images.forEach(function (img) {
             // Zaten işlenmiş mi?
             if (img.dataset.menuaiOcrDone) return;
             // Çok küçük görselleri atla
             if (img.naturalWidth > 0 && img.naturalWidth < 200) return;
+            // Rendered boyut da kontrol (display:none olabilir)
+            var rect = img.getBoundingClientRect();
+            if (rect.width < 200 && rect.height < 200 && img.naturalWidth < 200) return;
 
             // src, srcset, data-src hepsini kontrol et
             var allSrc = [
@@ -158,16 +170,30 @@
                 img.currentSrc || ""
             ].join(" ");
 
-            // Sayfa numarasını URL'den çıkar
+            var pageNum = null;
+
+            // Yöntem 1: URL'den Page-N pattern'i bul (WordPress/Tucco style)
             var pageMatch = allSrc.match(/Page[_-](\d+)/i);
-            if (!pageMatch) return;
-            var pageNum = pageMatch[1];
+            if (pageMatch) {
+                pageNum = pageMatch[1];
+            }
+            // Yöntem 2: base64/inline image → boyut bazlı sıralı eşleştirme 
+            else if (allSrc.indexOf('data:image') >= 0 || img.naturalWidth >= 300) {
+                // Büyük inline/base64 görseller — sırayla eşleştir
+                if (menuImageIndex < ocrPages.length) {
+                    pageNum = ocrPages[menuImageIndex];
+                    menuImageIndex++;
+                    console.log("[MenüAi OCR v2] Base64 image → page " + pageNum + " (sequential match " + menuImageIndex + "/" + ocrPages.length + ")");
+                }
+            }
+
+            if (!pageNum) return;
 
             // Bu sayfa OCR verimizde var mı?
             if (!ocrData[pageNum]) return;
 
-            // Bu görseli daha önce işledik mi? (src bazlı)
-            var imgId = img.src || allSrc.substring(0, 100);
+            // Bu görseli daha önce işledik mi?
+            var imgId = pageNum + "_" + (img.src ? img.src.substring(0, 50) : 'inline_' + menuImageIndex);
             if (processedImages[imgId]) return;
 
             img.dataset.menuaiOcrDone = "1";

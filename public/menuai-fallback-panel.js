@@ -27,8 +27,8 @@
             '#menuai-ppanel{position:fixed;bottom:0;left:0;right:0;top:60px;',
             'background:#111;border-radius:20px 20px 0 0;z-index:100001;',
             'transform:translateY(100%);transition:transform .35s cubic-bezier(.32,.72,0,1);',
-            'display:flex;flex-direction:column;font-family:Inter,system-ui,sans-serif;overflow:hidden}',
-            '#menuai-ppanel.open{transform:translateY(0)}',
+            'display:flex;flex-direction:column;font-family:Inter,system-ui,sans-serif;overflow:hidden;pointer-events:none}',
+            '#menuai-ppanel.open{transform:translateY(0);pointer-events:auto}',
 
             '.menuai-pp-header{padding:14px 20px 10px;display:flex;align-items:center;justify-content:space-between;',
             'border-bottom:1px solid #222;flex-shrink:0}',

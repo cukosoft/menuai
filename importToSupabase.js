@@ -9,14 +9,19 @@ const fs = require('fs');
 
 const supabase = createClient(
     process.env.SUPABASE_URL,
-    process.env.SUPABASE_ANON_KEY
+    process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_ANON_KEY
 );
 
-async function importMenu(jsonFile, slug, restaurantName, menuUrl) {
+async function importMenu(jsonFileOrData, slug, restaurantName, menuUrl) {
     console.log(`\n🚀 Importing menu for "${restaurantName}" (slug: ${slug})`);
 
-    // 1. Read JSON
-    const data = JSON.parse(fs.readFileSync(jsonFile, 'utf-8'));
+    // 1. Read JSON — accept file path or direct data object
+    let data;
+    if (typeof jsonFileOrData === 'string') {
+        data = JSON.parse(fs.readFileSync(jsonFileOrData, 'utf-8'));
+    } else {
+        data = jsonFileOrData;
+    }
     console.log(`📂 ${data.categories.length} categories, ${data.categories.reduce((a, c) => a + c.items.length, 0)} items`);
 
     // 2. Create or update restaurant
@@ -31,7 +36,7 @@ async function importMenu(jsonFile, slug, restaurantName, menuUrl) {
         restaurantId = existing.id;
         await supabase
             .from('restaurants')
-            .update({ name: restaurantName, menu_url: menuUrl })
+            .update({ name: restaurantName, menu_url: menuUrl, is_active: true })
             .eq('id', restaurantId);
         console.log(`✏️  Restaurant updated: ${restaurantId}`);
 
@@ -39,7 +44,7 @@ async function importMenu(jsonFile, slug, restaurantName, menuUrl) {
         console.log('🗑️  Cleaning old data...');
         // First get category IDs
         const { data: oldCats } = await supabase
-            .from('categories')
+            .from('menu_categories')
             .select('id')
             .eq('restaurant_id', restaurantId);
 
@@ -52,14 +57,14 @@ async function importMenu(jsonFile, slug, restaurantName, menuUrl) {
                 .in('category_id', catIds);
             // Delete categories
             await supabase
-                .from('categories')
+                .from('menu_categories')
                 .delete()
                 .eq('restaurant_id', restaurantId);
         }
         console.log('✅ Old data cleaned');
     } else {
         // Generate restaurant key
-        const key = 'TUCCO-2026-' + Math.random().toString(36).substr(2, 4).toUpperCase();
+        const key = 'MAKI-2026-' + Math.random().toString(36).substr(2, 4).toUpperCase();
         const { data: newRest, error } = await supabase
             .from('restaurants')
             .insert({
@@ -102,18 +107,53 @@ async function importMenu(jsonFile, slug, restaurantName, menuUrl) {
     const mergedCategories = Object.values(normalizedCategories);
     console.log(`📊 Merged to ${mergedCategories.length} unique categories (from ${data.categories.length})`);
 
-    // 4. Insert categories and items
+    // 4. Build parent menu map (for hierarchical menus like FineDine)
+    const parentMenuIds = {};
+    for (const cat of data.categories) {
+        if (cat.parentMenu && !parentMenuIds[cat.parentMenu]) {
+            parentMenuIds[cat.parentMenu] = null; // will be filled after insert
+        }
+    }
+
+    // Create parent categories if any
+    let parentOrder = 0;
+    for (const parentName of Object.keys(parentMenuIds)) {
+        parentOrder++;
+        const { data: parentCat, error: parentErr } = await supabase
+            .from('menu_categories')
+            .insert({
+                restaurant_id: restaurantId,
+                name: parentName,
+                display_order: parentOrder,
+                is_active: true,
+                parent_id: null
+            })
+            .select()
+            .single();
+
+        if (!parentErr && parentCat) {
+            parentMenuIds[parentName] = parentCat.id;
+            console.log(`  📁 Üst kategori: ${parentName}`);
+        }
+    }
+
+    const hasParents = Object.keys(parentMenuIds).length > 0;
+
+    // 5. Insert categories and items
     let totalItems = 0;
-    let sortOrder = 0;
+    let sortOrder = parentOrder;
 
     for (const cat of mergedCategories) {
         sortOrder++;
+        const parentId = cat.parentMenu ? parentMenuIds[cat.parentMenu] : null;
         const { data: newCat, error: catErr } = await supabase
-            .from('categories')
+            .from('menu_categories')
             .insert({
                 restaurant_id: restaurantId,
                 name: cat.name,
-                sort_order: sortOrder
+                display_order: sortOrder,
+                is_active: true,
+                parent_id: parentId
             })
             .select()
             .single();
@@ -138,11 +178,13 @@ async function importMenu(jsonFile, slug, restaurantName, menuUrl) {
         const batchSize = 50;
         for (let i = 0; i < uniqueItems.length; i += batchSize) {
             const batch = uniqueItems.slice(i, i + batchSize).map((item, idx) => ({
+                restaurant_id: restaurantId,
                 category_id: newCat.id,
                 name: item.name || 'İsimsiz',
                 price: parseFloat(item.price) || 0,
                 description: item.description || '',
-                sort_order: i + idx + 1
+                is_available: true,
+                display_order: i + idx + 1
             }));
 
             const { error: itemErr } = await supabase
@@ -165,15 +207,20 @@ async function importMenu(jsonFile, slug, restaurantName, menuUrl) {
     console.log(`   Menu URL: ${menuUrl}`);
 }
 
-// CLI
-const args = process.argv.slice(2);
-if (args.length < 4) {
-    console.log('Usage: node importToSupabase.js <json_file> <slug> <restaurant_name> <menu_url>');
-    console.log('Example: node importToSupabase.js extracted_menu.json tucco "Tucco Gastro Coffee" "https://tuccogastrocoffee.com/qrmenu/"');
-    process.exit(1);
-}
+// Export for programmatic use
+module.exports = { importMenu };
 
-importMenu(args[0], args[1], args[2], args[3]).catch(err => {
-    console.error('❌ Fatal:', err.message);
-    process.exit(1);
-});
+// CLI
+if (require.main === module) {
+    const args = process.argv.slice(2);
+    if (args.length < 4) {
+        console.log('Usage: node importToSupabase.js <json_file> <slug> <restaurant_name> <menu_url>');
+        console.log('Example: node importToSupabase.js extracted_menu.json tucco "Tucco Gastro Coffee" "https://tuccogastrocoffee.com/qrmenu/"');
+        process.exit(1);
+    }
+
+    importMenu(args[0], args[1], args[2], args[3]).catch(err => {
+        console.error('❌ Fatal:', err.message);
+        process.exit(1);
+    });
+}
