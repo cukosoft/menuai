@@ -1,0 +1,1717 @@
+{
+  "source": "Gemini Orchestrator Agent v2.0 — Self-Improving Pipeline",
+  "parsed_at": "2026-02-12T16:44:44.987Z",
+  "menu_url": "https://www.happygroup.com.tr/menu/happy-moons-cafe",
+  "restaurant": "Happygroup",
+  "totalItems": 260,
+  "categories": [
+    {
+      "name": "Kahvaltılıklar",
+      "items": [
+        {
+          "name": "Menemen",
+          "price": 0,
+          "description": "",
+          "category": "Kahvaltılıklar"
+        },
+        {
+          "name": "Serpme Kahvaltı (2 Kişilik)",
+          "price": 0,
+          "description": "",
+          "category": "Kahvaltılıklar"
+        },
+        {
+          "name": "Panini Tost",
+          "price": 0,
+          "description": "",
+          "category": "Kahvaltılıklar"
+        },
+        {
+          "name": "Sahanda Sucuk",
+          "price": 0,
+          "description": "",
+          "category": "Kahvaltılıklar"
+        },
+        {
+          "name": "Kahvaltı Tabağı",
+          "price": 0,
+          "description": "",
+          "category": "Kahvaltılıklar"
+        },
+        {
+          "name": "Meyveli Pankek",
+          "price": 0,
+          "description": "",
+          "category": "Kahvaltılıklar"
+        },
+        {
+          "name": "Sahanda Yumurta",
+          "price": 0,
+          "description": "",
+          "category": "Kahvaltılıklar"
+        },
+        {
+          "name": "Mini Kahvaltı",
+          "price": 0,
+          "description": "",
+          "category": "Kahvaltılıklar"
+        },
+        {
+          "name": "Kaşarlı Tost",
+          "price": 0,
+          "description": "",
+          "category": "Kahvaltılıklar"
+        },
+        {
+          "name": "Sucuklu Kaşarlı Tost",
+          "price": 0,
+          "description": "",
+          "category": "Kahvaltılıklar"
+        },
+        {
+          "name": "Yengen Tost",
+          "price": 0,
+          "description": "",
+          "category": "Kahvaltılıklar"
+        },
+        {
+          "name": "Sahanda Sosis",
+          "price": 0,
+          "description": "",
+          "category": "Kahvaltılıklar"
+        },
+        {
+          "name": "Omlet",
+          "price": 0,
+          "description": "",
+          "category": "Kahvaltılıklar"
+        },
+        {
+          "name": "Sporcu Omlet",
+          "price": 0,
+          "description": "",
+          "category": "Kahvaltılıklar"
+        },
+        {
+          "name": "Sosisli Omlet",
+          "price": 0,
+          "description": "",
+          "category": "Kahvaltılıklar"
+        },
+        {
+          "name": "Mantarlı Omlet",
+          "price": 0,
+          "description": "",
+          "category": "Kahvaltılıklar"
+        },
+        {
+          "name": "Jambonlu Omlet",
+          "price": 0,
+          "description": "",
+          "category": "Kahvaltılıklar"
+        },
+        {
+          "name": "Peynirli Omlet",
+          "price": 0,
+          "description": "",
+          "category": "Kahvaltılıklar"
+        },
+        {
+          "name": "Karışık Omlet",
+          "price": 0,
+          "description": "",
+          "category": "Kahvaltılıklar"
+        },
+        {
+          "name": "Sosisli Yumurta",
+          "price": 0,
+          "description": "",
+          "category": "Kahvaltılıklar"
+        },
+        {
+          "name": "Sucuklu Yumurta",
+          "price": 0,
+          "description": "",
+          "category": "Kahvaltılıklar"
+        },
+        {
+          "name": "Bal & Kaymak",
+          "price": 0,
+          "description": "",
+          "category": "Kahvaltılıklar"
+        },
+        {
+          "name": "Yumurtalı Ekmek / 4 Adet",
+          "price": 0,
+          "description": "",
+          "category": "Kahvaltılıklar"
+        }
+      ]
+    },
+    {
+      "name": "Başlangıçlar",
+      "items": [
+        {
+          "name": "Maxi Combo Mix (3-4 kişilik)",
+          "price": 0,
+          "description": "",
+          "category": "Başlangıçlar"
+        },
+        {
+          "name": "Chicken London",
+          "price": 0,
+          "description": "",
+          "category": "Başlangıçlar"
+        },
+        {
+          "name": "Mac and Cheese",
+          "price": 0,
+          "description": "",
+          "category": "Başlangıçlar"
+        },
+        {
+          "name": "Nachos Tavuklu",
+          "price": 0,
+          "description": "",
+          "category": "Başlangıçlar"
+        },
+        {
+          "name": "Falafel",
+          "price": 0,
+          "description": "",
+          "category": "Başlangıçlar"
+        },
+        {
+          "name": "Taquitos",
+          "price": 0,
+          "description": "",
+          "category": "Başlangıçlar"
+        },
+        {
+          "name": "Sezar Tavuklu Salata",
+          "price": 0,
+          "description": "",
+          "category": "Başlangıçlar"
+        },
+        {
+          "name": "Big Combo Mix (2 kişilik)",
+          "price": 0,
+          "description": "",
+          "category": "Başlangıçlar"
+        },
+        {
+          "name": "Mini Quesadilla",
+          "price": 0,
+          "description": "",
+          "category": "Başlangıçlar"
+        },
+        {
+          "name": "Soğan Halkası",
+          "price": 0,
+          "description": "",
+          "category": "Başlangıçlar"
+        },
+        {
+          "name": "Çorba",
+          "price": 0,
+          "description": "",
+          "category": "Başlangıçlar"
+        },
+        {
+          "name": "Parmak Patates",
+          "price": 0,
+          "description": "",
+          "category": "Başlangıçlar"
+        },
+        {
+          "name": "Nachos Peynirli",
+          "price": 0,
+          "description": "",
+          "category": "Başlangıçlar"
+        },
+        {
+          "name": "Peynir Tabağı",
+          "price": 0,
+          "description": "",
+          "category": "Başlangıçlar"
+        }
+      ]
+    },
+    {
+      "name": "Salatalar",
+      "items": [
+        {
+          "name": "Falafel Salata",
+          "price": 0,
+          "description": "",
+          "category": "Salatalar"
+        },
+        {
+          "name": "Kinoa Tavuklu Salata",
+          "price": 0,
+          "description": "",
+          "category": "Salatalar"
+        },
+        {
+          "name": "Şişte Köfte Salata",
+          "price": 0,
+          "description": "",
+          "category": "Salatalar"
+        },
+        {
+          "name": "Tahıllı Salata",
+          "price": 0,
+          "description": "",
+          "category": "Salatalar"
+        },
+        {
+          "name": "Mexican Fiesta Salata",
+          "price": 0,
+          "description": "",
+          "category": "Salatalar"
+        },
+        {
+          "name": "Cajun Chicken Salata",
+          "price": 0,
+          "description": "",
+          "category": "Salatalar"
+        },
+        {
+          "name": "Akdeniz Salata",
+          "price": 0,
+          "description": "",
+          "category": "Salatalar"
+        },
+        {
+          "name": "Tavuk Salatası",
+          "price": 0,
+          "description": "",
+          "category": "Salatalar"
+        },
+        {
+          "name": "Ton Balıklı Salata",
+          "price": 0,
+          "description": "",
+          "category": "Salatalar"
+        }
+      ]
+    },
+    {
+      "name": "Burgerler",
+      "items": [
+        {
+          "name": "Happy Moon’s Burger",
+          "price": 0,
+          "description": "",
+          "category": "Burgerler"
+        },
+        {
+          "name": "BBQ Burger",
+          "price": 0,
+          "description": "",
+          "category": "Burgerler"
+        },
+        {
+          "name": "Colorado Burger",
+          "price": 0,
+          "description": "",
+          "category": "Burgerler"
+        },
+        {
+          "name": "Mexican Burger",
+          "price": 0,
+          "description": "",
+          "category": "Burgerler"
+        },
+        {
+          "name": "Vegan Burger",
+          "price": 0,
+          "description": "",
+          "category": "Burgerler"
+        },
+        {
+          "name": "Crispy Chicken Burger",
+          "price": 0,
+          "description": "",
+          "category": "Burgerler"
+        },
+        {
+          "name": "Hamburger",
+          "price": 0,
+          "description": "",
+          "category": "Burgerler"
+        },
+        {
+          "name": "Cheese Burger",
+          "price": 0,
+          "description": "",
+          "category": "Burgerler"
+        }
+      ]
+    },
+    {
+      "name": "Meksika Yemekleri",
+      "items": [
+        {
+          "name": "Chimichanga",
+          "price": 0,
+          "description": "",
+          "category": "Meksika Yemekleri"
+        },
+        {
+          "name": "Enchilada Beef Asada",
+          "price": 0,
+          "description": "",
+          "category": "Meksika Yemekleri"
+        },
+        {
+          "name": "Burritos Tavuklu",
+          "price": 0,
+          "description": "",
+          "category": "Meksika Yemekleri"
+        },
+        {
+          "name": "Fajitas Combo",
+          "price": 0,
+          "description": "",
+          "category": "Meksika Yemekleri"
+        },
+        {
+          "name": "Quesadilla Etli",
+          "price": 0,
+          "description": "",
+          "category": "Meksika Yemekleri"
+        },
+        {
+          "name": "Fajitas Biftekli",
+          "price": 0,
+          "description": "",
+          "category": "Meksika Yemekleri"
+        },
+        {
+          "name": "Grill Roll Taco",
+          "price": 0,
+          "description": "",
+          "category": "Meksika Yemekleri"
+        },
+        {
+          "name": "Burritos Biftekli",
+          "price": 0,
+          "description": "",
+          "category": "Meksika Yemekleri"
+        },
+        {
+          "name": "Burritos Sebzeli",
+          "price": 0,
+          "description": "",
+          "category": "Meksika Yemekleri"
+        },
+        {
+          "name": "Fajitas Tavuklu",
+          "price": 0,
+          "description": "",
+          "category": "Meksika Yemekleri"
+        },
+        {
+          "name": "Quesadilla Peynirli",
+          "price": 0,
+          "description": "",
+          "category": "Meksika Yemekleri"
+        },
+        {
+          "name": "Quesadilla Tavuklu",
+          "price": 0,
+          "description": "",
+          "category": "Meksika Yemekleri"
+        },
+        {
+          "name": "Quesadilla Combo",
+          "price": 0,
+          "description": "",
+          "category": "Meksika Yemekleri"
+        }
+      ]
+    },
+    {
+      "name": "Dürümler & Krepler",
+      "items": [
+        {
+          "name": "Tavuk Dürüm",
+          "price": 0,
+          "description": "",
+          "category": "Dürümler & Krepler"
+        },
+        {
+          "name": "Cheddarlı Tavuk Dürüm",
+          "price": 0,
+          "description": "",
+          "category": "Dürümler & Krepler"
+        },
+        {
+          "name": "Etli Dürüm",
+          "price": 0,
+          "description": "",
+          "category": "Dürümler & Krepler"
+        },
+        {
+          "name": "Tavuklu Mantarlı Krep",
+          "price": 0,
+          "description": "",
+          "category": "Dürümler & Krepler"
+        },
+        {
+          "name": "Cheddarlı Etli Dürüm",
+          "price": 0,
+          "description": "",
+          "category": "Dürümler & Krepler"
+        }
+      ]
+    },
+    {
+      "name": "Makarnalar",
+      "items": [
+        {
+          "name": "Penne Arrabbiata",
+          "price": 0,
+          "description": "",
+          "category": "Makarnalar"
+        },
+        {
+          "name": "Spaghetti Bolognese",
+          "price": 0,
+          "description": "",
+          "category": "Makarnalar"
+        },
+        {
+          "name": "Domates Soslu Chicken Fettuccine",
+          "price": 0,
+          "description": "",
+          "category": "Makarnalar"
+        },
+        {
+          "name": "Üç Peynirli Tortellini",
+          "price": 0,
+          "description": "",
+          "category": "Makarnalar"
+        },
+        {
+          "name": "Fettuccine Alfredo",
+          "price": 0,
+          "description": "",
+          "category": "Makarnalar"
+        },
+        {
+          "name": "Noodle Tavuklu",
+          "price": 0,
+          "description": "",
+          "category": "Makarnalar"
+        },
+        {
+          "name": "Canelloni Bolognese",
+          "price": 0,
+          "description": "",
+          "category": "Makarnalar"
+        },
+        {
+          "name": "Sinop Mantısı",
+          "price": 0,
+          "description": "",
+          "category": "Makarnalar"
+        }
+      ]
+    },
+    {
+      "name": "Ana Yemekler",
+      "items": [
+        {
+          "name": "Mexico Schnitzel",
+          "price": 0,
+          "description": "",
+          "category": "Ana Yemekler"
+        },
+        {
+          "name": "Tikka Masala Tavuk",
+          "price": 0,
+          "description": "",
+          "category": "Ana Yemekler"
+        },
+        {
+          "name": "Hardal Soslu Tavuk",
+          "price": 0,
+          "description": "",
+          "category": "Ana Yemekler"
+        },
+        {
+          "name": "Kremalı Mantarlı Tavuk",
+          "price": 0,
+          "description": "",
+          "category": "Ana Yemekler"
+        },
+        {
+          "name": "Chicken Schnitzel",
+          "price": 0,
+          "description": "",
+          "category": "Ana Yemekler"
+        },
+        {
+          "name": "Cajun Soslu Tavuk",
+          "price": 0,
+          "description": "",
+          "category": "Ana Yemekler"
+        },
+        {
+          "name": "Tavuk Külbastı",
+          "price": 0,
+          "description": "",
+          "category": "Ana Yemekler"
+        },
+        {
+          "name": "Cajun Finger",
+          "price": 0,
+          "description": "",
+          "category": "Ana Yemekler"
+        },
+        {
+          "name": "Arizona Chicken",
+          "price": 0,
+          "description": "",
+          "category": "Ana Yemekler"
+        },
+        {
+          "name": "Köri Soslu Tavuk",
+          "price": 0,
+          "description": "",
+          "category": "Ana Yemekler"
+        },
+        {
+          "name": "Cafe De Paris Soslu Tavuk",
+          "price": 0,
+          "description": "",
+          "category": "Ana Yemekler"
+        },
+        {
+          "name": "Bacon and Cheese Tavuk",
+          "price": 0,
+          "description": "",
+          "category": "Ana Yemekler"
+        },
+        {
+          "name": "Mushroom Chicken",
+          "price": 0,
+          "description": "",
+          "category": "Ana Yemekler"
+        },
+        {
+          "name": "Fish & Chips",
+          "price": 0,
+          "description": "",
+          "category": "Ana Yemekler"
+        },
+        {
+          "name": "Somon Izgara",
+          "price": 0,
+          "description": "",
+          "category": "Ana Yemekler"
+        },
+        {
+          "name": "Pideli Köfte",
+          "price": 0,
+          "description": "",
+          "category": "Ana Yemekler"
+        },
+        {
+          "name": "Cafe de Paris Soslu Bonfile",
+          "price": 0,
+          "description": "",
+          "category": "Ana Yemekler"
+        },
+        {
+          "name": "Happy Moon’s Kebap",
+          "price": 0,
+          "description": "",
+          "category": "Ana Yemekler"
+        },
+        {
+          "name": "Lokum Bonfile",
+          "price": 0,
+          "description": "",
+          "category": "Ana Yemekler"
+        },
+        {
+          "name": "Beğendili Köfte",
+          "price": 0,
+          "description": "",
+          "category": "Ana Yemekler"
+        }
+      ]
+    },
+    {
+      "name": "Pizzalar",
+      "items": [
+        {
+          "name": "Beğendili Pizza",
+          "price": 0,
+          "description": "",
+          "category": "Pizzalar"
+        },
+        {
+          "name": "Karışık Pizza",
+          "price": 0,
+          "description": "",
+          "category": "Pizzalar"
+        },
+        {
+          "name": "Akdeniz Pizza",
+          "price": 0,
+          "description": "",
+          "category": "Pizzalar"
+        },
+        {
+          "name": "BBQ Beef Asada Pizza",
+          "price": 0,
+          "description": "",
+          "category": "Pizzalar"
+        },
+        {
+          "name": "Mexican Pizza",
+          "price": 0,
+          "description": "",
+          "category": "Pizzalar"
+        },
+        {
+          "name": "Margarita Pizza",
+          "price": 0,
+          "description": "",
+          "category": "Pizzalar"
+        },
+        {
+          "name": "Sebzeli Pizza",
+          "price": 0,
+          "description": "",
+          "category": "Pizzalar"
+        },
+        {
+          "name": "Mantarlı Pizza",
+          "price": 0,
+          "description": "",
+          "category": "Pizzalar"
+        },
+        {
+          "name": "Jambonlu Pizza",
+          "price": 0,
+          "description": "",
+          "category": "Pizzalar"
+        },
+        {
+          "name": "Napolitan Pizza",
+          "price": 0,
+          "description": "",
+          "category": "Pizzalar"
+        },
+        {
+          "name": "Dört Peynirli Pizza",
+          "price": 0,
+          "description": "",
+          "category": "Pizzalar"
+        }
+      ]
+    },
+    {
+      "name": "Tatlılar",
+      "items": [
+        {
+          "name": "Dondurmalı Cookie (1-2 Kişilik)",
+          "price": 0,
+          "description": "",
+          "category": "Tatlılar"
+        },
+        {
+          "name": "KITKAT ® ile Çikolatalı Çıtır Cheesecake",
+          "price": 0,
+          "description": "",
+          "category": "Tatlılar"
+        },
+        {
+          "name": "Karamelize Elmalı Pie",
+          "price": 0,
+          "description": "",
+          "category": "Tatlılar"
+        },
+        {
+          "name": "Kızarmış Dondurma",
+          "price": 0,
+          "description": "",
+          "category": "Tatlılar"
+        },
+        {
+          "name": "Paris Brest",
+          "price": 0,
+          "description": "",
+          "category": "Tatlılar"
+        },
+        {
+          "name": "Everest",
+          "price": 0,
+          "description": "",
+          "category": "Tatlılar"
+        },
+        {
+          "name": "Banana Split",
+          "price": 0,
+          "description": "",
+          "category": "Tatlılar"
+        },
+        {
+          "name": "Çilekli Pasta",
+          "price": 0,
+          "description": "",
+          "category": "Tatlılar"
+        },
+        {
+          "name": "Waffle Cup",
+          "price": 0,
+          "description": "",
+          "category": "Tatlılar"
+        },
+        {
+          "name": "Dondurmalı Brownie",
+          "price": 0,
+          "description": "",
+          "category": "Tatlılar"
+        },
+        {
+          "name": "Lotus Cup",
+          "price": 0,
+          "description": "",
+          "category": "Tatlılar"
+        },
+        {
+          "name": "Dolce Vita",
+          "price": 0,
+          "description": "",
+          "category": "Tatlılar"
+        },
+        {
+          "name": "Cup Denmark",
+          "price": 0,
+          "description": "",
+          "category": "Tatlılar"
+        },
+        {
+          "name": "Tiramisu",
+          "price": 0,
+          "description": "",
+          "category": "Tatlılar"
+        },
+        {
+          "name": "Limonlu Cheesecake",
+          "price": 0,
+          "description": "",
+          "category": "Tatlılar"
+        },
+        {
+          "name": "Hot Chocolate Cake",
+          "price": 0,
+          "description": "",
+          "category": "Tatlılar"
+        },
+        {
+          "name": "Tahinli Sufle",
+          "price": 0,
+          "description": "",
+          "category": "Tatlılar"
+        },
+        {
+          "name": "Chocolate Tower",
+          "price": 0,
+          "description": "",
+          "category": "Tatlılar"
+        },
+        {
+          "name": "San Sebastian",
+          "price": 0,
+          "description": "",
+          "category": "Tatlılar"
+        },
+        {
+          "name": "Churros",
+          "price": 0,
+          "description": "",
+          "category": "Tatlılar"
+        },
+        {
+          "name": "Kahveli Pasta",
+          "price": 0,
+          "description": "",
+          "category": "Tatlılar"
+        },
+        {
+          "name": "Meyve Tabağı",
+          "price": 0,
+          "description": "",
+          "category": "Tatlılar"
+        }
+      ]
+    },
+    {
+      "name": "Çocuklara Özel",
+      "items": [
+        {
+          "name": "Little Chicken",
+          "price": 0,
+          "description": "",
+          "category": "Çocuklara Özel"
+        },
+        {
+          "name": "Pinokyo’nun Favorisi",
+          "price": 0,
+          "description": "",
+          "category": "Çocuklara Özel"
+        },
+        {
+          "name": "Alaaddin’in Sihirli Lambası",
+          "price": 0,
+          "description": "",
+          "category": "Çocuklara Özel"
+        },
+        {
+          "name": "Hansel Gratel Pizza",
+          "price": 0,
+          "description": "",
+          "category": "Çocuklara Özel"
+        },
+        {
+          "name": "Kırmızı Başlıklı Kız’ın Favorisi",
+          "price": 0,
+          "description": "",
+          "category": "Çocuklara Özel"
+        },
+        {
+          "name": "Sponge Bob’un Favorisi",
+          "price": 0,
+          "description": "",
+          "category": "Çocuklara Özel"
+        },
+        {
+          "name": "Örümcek Adam’ın Favorisi",
+          "price": 0,
+          "description": "",
+          "category": "Çocuklara Özel"
+        },
+        {
+          "name": "Kid Portakal Suyu",
+          "price": 0,
+          "description": "",
+          "category": "Çocuklara Özel"
+        }
+      ]
+    },
+    {
+      "name": "Hafif Lezzetler",
+      "items": [
+        {
+          "name": "FIT Mongolian Beef",
+          "price": 0,
+          "description": "",
+          "category": "Hafif Lezzetler"
+        },
+        {
+          "name": "FIT Maş Fasulyeli Tavuk Şiş",
+          "price": 0,
+          "description": "",
+          "category": "Hafif Lezzetler"
+        },
+        {
+          "name": "FİT Brokolili Tavuk",
+          "price": 0,
+          "description": "",
+          "category": "Hafif Lezzetler"
+        },
+        {
+          "name": "FIT Somon Izgara",
+          "price": 0,
+          "description": "",
+          "category": "Hafif Lezzetler"
+        }
+      ]
+    },
+    {
+      "name": "Soğuk İçecekler",
+      "items": [
+        {
+          "name": "Bubble Tea",
+          "price": 0,
+          "description": "",
+          "category": "Soğuk İçecekler"
+        },
+        {
+          "name": "Mürver & Çilek Limonata",
+          "price": 0,
+          "description": "",
+          "category": "Soğuk İçecekler"
+        },
+        {
+          "name": "Taze Meyve Suyu",
+          "price": 0,
+          "description": "",
+          "category": "Soğuk İçecekler"
+        },
+        {
+          "name": "Homemade Ice Tea",
+          "price": 0,
+          "description": "",
+          "category": "Soğuk İçecekler"
+        },
+        {
+          "name": "Meyveli Soda",
+          "price": 0,
+          "description": "",
+          "category": "Soğuk İçecekler"
+        },
+        {
+          "name": "Redbull",
+          "price": 0,
+          "description": "",
+          "category": "Soğuk İçecekler"
+        },
+        {
+          "name": "Schweppes",
+          "price": 0,
+          "description": "",
+          "category": "Soğuk İçecekler"
+        },
+        {
+          "name": "Damla",
+          "price": 0,
+          "description": "",
+          "category": "Soğuk İçecekler"
+        },
+        {
+          "name": "Coca Cola",
+          "price": 0,
+          "description": "",
+          "category": "Soğuk İçecekler"
+        },
+        {
+          "name": "Fanta",
+          "price": 0,
+          "description": "",
+          "category": "Soğuk İçecekler"
+        },
+        {
+          "name": "Sprite",
+          "price": 0,
+          "description": "",
+          "category": "Soğuk İçecekler"
+        },
+        {
+          "name": "Cappy",
+          "price": 0,
+          "description": "",
+          "category": "Soğuk İçecekler"
+        },
+        {
+          "name": "Fuse Tea",
+          "price": 0,
+          "description": "",
+          "category": "Soğuk İçecekler"
+        },
+        {
+          "name": "Ayran",
+          "price": 0,
+          "description": "",
+          "category": "Soğuk İçecekler"
+        },
+        {
+          "name": "Fesleğenli Ayran",
+          "price": 0,
+          "description": "",
+          "category": "Soğuk İçecekler"
+        },
+        {
+          "name": "Vişne & Soda",
+          "price": 0,
+          "description": "",
+          "category": "Soğuk İçecekler"
+        },
+        {
+          "name": "Limonata",
+          "price": 0,
+          "description": "",
+          "category": "Soğuk İçecekler"
+        },
+        {
+          "name": "Meyveli Limonata",
+          "price": 0,
+          "description": "",
+          "category": "Soğuk İçecekler"
+        },
+        {
+          "name": "Passion Limonata",
+          "price": 0,
+          "description": "",
+          "category": "Soğuk İçecekler"
+        },
+        {
+          "name": "Mango Peach Limonata",
+          "price": 0,
+          "description": "",
+          "category": "Soğuk İçecekler"
+        },
+        {
+          "name": "Ice Mocha",
+          "price": 0,
+          "description": "",
+          "category": "Soğuk İçecekler"
+        },
+        {
+          "name": "Ice Latte",
+          "price": 0,
+          "description": "",
+          "category": "Soğuk İçecekler"
+        },
+        {
+          "name": "Frappe",
+          "price": 0,
+          "description": "",
+          "category": "Soğuk İçecekler"
+        },
+        {
+          "name": "Vanillino",
+          "price": 0,
+          "description": "",
+          "category": "Soğuk İçecekler"
+        },
+        {
+          "name": "Cremino",
+          "price": 0,
+          "description": "",
+          "category": "Soğuk İçecekler"
+        },
+        {
+          "name": "Mentino",
+          "price": 0,
+          "description": "",
+          "category": "Soğuk İçecekler"
+        },
+        {
+          "name": "Frozen Chocolate",
+          "price": 0,
+          "description": "",
+          "category": "Soğuk İçecekler"
+        },
+        {
+          "name": "Milkshake",
+          "price": 0,
+          "description": "",
+          "category": "Soğuk İçecekler"
+        }
+      ]
+    },
+    {
+      "name": "Alkolsüz Kokteyller",
+      "items": [
+        {
+          "name": "Kirazi",
+          "price": 0,
+          "description": "",
+          "category": "Alkolsüz Kokteyller"
+        },
+        {
+          "name": "Champion",
+          "price": 0,
+          "description": "",
+          "category": "Alkolsüz Kokteyller"
+        },
+        {
+          "name": "Tropical",
+          "price": 0,
+          "description": "",
+          "category": "Alkolsüz Kokteyller"
+        },
+        {
+          "name": "Tropical Runner",
+          "price": 0,
+          "description": "",
+          "category": "Alkolsüz Kokteyller"
+        },
+        {
+          "name": "Summer Breeze",
+          "price": 0,
+          "description": "",
+          "category": "Alkolsüz Kokteyller"
+        },
+        {
+          "name": "Tarzan Cooler",
+          "price": 0,
+          "description": "",
+          "category": "Alkolsüz Kokteyller"
+        },
+        {
+          "name": "Red Bull Twist",
+          "price": 0,
+          "description": "",
+          "category": "Alkolsüz Kokteyller"
+        },
+        {
+          "name": "Yuki Mojito",
+          "price": 0,
+          "description": "",
+          "category": "Alkolsüz Kokteyller"
+        },
+        {
+          "name": "Apple Fresh",
+          "price": 0,
+          "description": "",
+          "category": "Alkolsüz Kokteyller"
+        },
+        {
+          "name": "Perfect Dreams",
+          "price": 0,
+          "description": "",
+          "category": "Alkolsüz Kokteyller"
+        },
+        {
+          "name": "Cinderella",
+          "price": 0,
+          "description": "",
+          "category": "Alkolsüz Kokteyller"
+        },
+        {
+          "name": "Angel",
+          "price": 0,
+          "description": "",
+          "category": "Alkolsüz Kokteyller"
+        }
+      ]
+    },
+    {
+      "name": "Kokteyller",
+      "items": [
+        {
+          "name": "Cosmopolitan",
+          "price": 0,
+          "description": "",
+          "category": "Kokteyller"
+        },
+        {
+          "name": "Margarita",
+          "price": 0,
+          "description": "",
+          "category": "Kokteyller"
+        },
+        {
+          "name": "Aperol Spritz",
+          "price": 0,
+          "description": "",
+          "category": "Kokteyller"
+        },
+        {
+          "name": "Sex On The Beach",
+          "price": 0,
+          "description": "",
+          "category": "Kokteyller"
+        },
+        {
+          "name": "Welcome To The Jungle",
+          "price": 0,
+          "description": "",
+          "category": "Kokteyller"
+        },
+        {
+          "name": "Gin Bull",
+          "price": 0,
+          "description": "",
+          "category": "Kokteyller"
+        },
+        {
+          "name": "Frozen Margarita",
+          "price": 0,
+          "description": "",
+          "category": "Kokteyller"
+        },
+        {
+          "name": "Lynchburg Lemonade",
+          "price": 0,
+          "description": "",
+          "category": "Kokteyller"
+        },
+        {
+          "name": "Mojito",
+          "price": 0,
+          "description": "",
+          "category": "Kokteyller"
+        },
+        {
+          "name": "Long Island Ice Tea",
+          "price": 0,
+          "description": "",
+          "category": "Kokteyller"
+        },
+        {
+          "name": "Moscow Mule",
+          "price": 0,
+          "description": "",
+          "category": "Kokteyller"
+        }
+      ]
+    },
+    {
+      "name": "Trendler",
+      "items": [
+        {
+          "name": "Bitter Passion Sour",
+          "price": 0,
+          "description": "",
+          "category": "Trendler"
+        },
+        {
+          "name": "Yako's Lime Tonic",
+          "price": 0,
+          "description": "",
+          "category": "Trendler"
+        },
+        {
+          "name": "Best Vanilla",
+          "price": 0,
+          "description": "",
+          "category": "Trendler"
+        },
+        {
+          "name": "Spice Passion",
+          "price": 0,
+          "description": "",
+          "category": "Trendler"
+        },
+        {
+          "name": "Red Berries Mojito",
+          "price": 0,
+          "description": "",
+          "category": "Trendler"
+        }
+      ]
+    },
+    {
+      "name": "Biralar",
+      "items": [
+        {
+          "name": "Beck's",
+          "price": 0,
+          "description": "",
+          "category": "Biralar"
+        },
+        {
+          "name": "Miller",
+          "price": 0,
+          "description": "",
+          "category": "Biralar"
+        },
+        {
+          "name": "Bud",
+          "price": 0,
+          "description": "",
+          "category": "Biralar"
+        },
+        {
+          "name": "Corona",
+          "price": 0,
+          "description": "",
+          "category": "Biralar"
+        },
+        {
+          "name": "Guinness",
+          "price": 0,
+          "description": "",
+          "category": "Biralar"
+        },
+        {
+          "name": "Heineken",
+          "price": 0,
+          "description": "",
+          "category": "Biralar"
+        },
+        {
+          "name": "Efes Özel Seri",
+          "price": 0,
+          "description": "",
+          "category": "Biralar"
+        },
+        {
+          "name": "Bomonti",
+          "price": 0,
+          "description": "",
+          "category": "Biralar"
+        },
+        {
+          "name": "Bomonti Filtresiz",
+          "price": 0,
+          "description": "",
+          "category": "Biralar"
+        },
+        {
+          "name": "Efes Pilsen Fıçı",
+          "price": 0,
+          "description": "",
+          "category": "Biralar"
+        },
+        {
+          "name": "Efes Pilsen",
+          "price": 0,
+          "description": "",
+          "category": "Biralar"
+        },
+        {
+          "name": "Efes Malt",
+          "price": 0,
+          "description": "",
+          "category": "Biralar"
+        }
+      ]
+    },
+    {
+      "name": "Beyaz Şaraplar",
+      "items": [
+        {
+          "name": "Angora",
+          "price": 0,
+          "description": "",
+          "category": "Beyaz Şaraplar"
+        },
+        {
+          "name": "Çankaya",
+          "price": 0,
+          "description": "",
+          "category": "Beyaz Şaraplar"
+        },
+        {
+          "name": "Ancyra Narince",
+          "price": 0,
+          "description": "",
+          "category": "Beyaz Şaraplar"
+        },
+        {
+          "name": "Ancyra Sauvignon Blanc",
+          "price": 0,
+          "description": "",
+          "category": "Beyaz Şaraplar"
+        },
+        {
+          "name": "Sultaniye (Yarı Tatlı)",
+          "price": 0,
+          "description": "",
+          "category": "Beyaz Şaraplar"
+        },
+        {
+          "name": "Gato Negro Chardonnay",
+          "price": 0,
+          "description": "",
+          "category": "Beyaz Şaraplar"
+        },
+        {
+          "name": "Sartori Pinot Grigio",
+          "price": 0,
+          "description": "",
+          "category": "Beyaz Şaraplar"
+        },
+        {
+          "name": "Selection Narince-Emir",
+          "price": 0,
+          "description": "",
+          "category": "Beyaz Şaraplar"
+        }
+      ]
+    },
+    {
+      "name": "Kırmızı Şaraplar",
+      "items": [
+        {
+          "name": "Yakut",
+          "price": 0,
+          "description": "",
+          "category": "Kırmızı Şaraplar"
+        },
+        {
+          "name": "Ancyra Öküzgözü",
+          "price": 0,
+          "description": "",
+          "category": "Kırmızı Şaraplar"
+        },
+        {
+          "name": "Ancyra Boğazkere",
+          "price": 0,
+          "description": "",
+          "category": "Kırmızı Şaraplar"
+        },
+        {
+          "name": "Ancyra Kalecik Karası",
+          "price": 0,
+          "description": "",
+          "category": "Kırmızı Şaraplar"
+        },
+        {
+          "name": "Ancyra Merlot",
+          "price": 0,
+          "description": "",
+          "category": "Kırmızı Şaraplar"
+        },
+        {
+          "name": "Gato Negro",
+          "price": 0,
+          "description": "",
+          "category": "Kırmızı Şaraplar"
+        },
+        {
+          "name": "Selection",
+          "price": 0,
+          "description": "",
+          "category": "Kırmızı Şaraplar"
+        },
+        {
+          "name": "Egeo Blend",
+          "price": 0,
+          "description": "",
+          "category": "Kırmızı Şaraplar"
+        },
+        {
+          "name": "Bordeaux Baron De Lestac",
+          "price": 0,
+          "description": "",
+          "category": "Kırmızı Şaraplar"
+        },
+        {
+          "name": "Montes Merlot",
+          "price": 0,
+          "description": "",
+          "category": "Kırmızı Şaraplar"
+        },
+        {
+          "name": "Montes Malbec",
+          "price": 0,
+          "description": "",
+          "category": "Kırmızı Şaraplar"
+        },
+        {
+          "name": "Ancyra Cabernet Sauvignon Syrah",
+          "price": 0,
+          "description": "",
+          "category": "Kırmızı Şaraplar"
+        }
+      ]
+    },
+    {
+      "name": "Rose Şaraplar",
+      "items": [
+        {
+          "name": "Lal",
+          "price": 0,
+          "description": "",
+          "category": "Rose Şaraplar"
+        },
+        {
+          "name": "Rosato (Yarı Tatlı)",
+          "price": 0,
+          "description": "",
+          "category": "Rose Şaraplar"
+        },
+        {
+          "name": "Ancyra Blush",
+          "price": 0,
+          "description": "",
+          "category": "Rose Şaraplar"
+        },
+        {
+          "name": "Gato Negro Rose",
+          "price": 0,
+          "description": "",
+          "category": "Rose Şaraplar"
+        },
+        {
+          "name": "Blush By Moncigale",
+          "price": 0,
+          "description": "",
+          "category": "Rose Şaraplar"
+        }
+      ]
+    },
+    {
+      "name": "Kadeh Şaraplar",
+      "items": [
+        {
+          "name": "Çankaya Beyaz",
+          "price": 0,
+          "description": "",
+          "category": "Kadeh Şaraplar"
+        },
+        {
+          "name": "Yakut Kırmızı",
+          "price": 0,
+          "description": "",
+          "category": "Kadeh Şaraplar"
+        },
+        {
+          "name": "Ancyra Merlot Kırmızı",
+          "price": 0,
+          "description": "",
+          "category": "Kadeh Şaraplar"
+        }
+      ]
+    },
+    {
+      "name": "Bourbon Scotch",
+      "items": [
+        {
+          "name": "J&B / Johnnie Walker Red Label",
+          "price": 0,
+          "description": "",
+          "category": "Bourbon Scotch"
+        },
+        {
+          "name": "Ballantine’s",
+          "price": 0,
+          "description": "",
+          "category": "Bourbon Scotch"
+        },
+        {
+          "name": "Jim Beam",
+          "price": 0,
+          "description": "",
+          "category": "Bourbon Scotch"
+        },
+        {
+          "name": "Johnnie Walker Black Label",
+          "price": 0,
+          "description": "",
+          "category": "Bourbon Scotch"
+        },
+        {
+          "name": "Jack Daniel's",
+          "price": 0,
+          "description": "",
+          "category": "Bourbon Scotch"
+        },
+        {
+          "name": "Chivas Regal",
+          "price": 0,
+          "description": "",
+          "category": "Bourbon Scotch"
+        }
+      ]
+    },
+    {
+      "name": "Votka & Cin",
+      "items": [
+        {
+          "name": "Absolut / Citron / Mandrin / Peach",
+          "price": 0,
+          "description": "",
+          "category": "Votka & Cin"
+        },
+        {
+          "name": "Smirnoff",
+          "price": 0,
+          "description": "",
+          "category": "Votka & Cin"
+        },
+        {
+          "name": "Beefeater",
+          "price": 0,
+          "description": "",
+          "category": "Votka & Cin"
+        },
+        {
+          "name": "Gordon",
+          "price": 0,
+          "description": "",
+          "category": "Votka & Cin"
+        }
+      ]
+    },
+    {
+      "name": "Beers",
+      "items": [
+        {
+          "name": "Efes Special Series",
+          "price": 0,
+          "description": "",
+          "category": "Beers"
+        },
+        {
+          "name": "Bomonti Unfiltered",
+          "price": 0,
+          "description": "",
+          "category": "Beers"
+        }
+      ]
+    },
+    {
+      "name": "White Wines",
+      "items": [
+        {
+          "name": "Cankaya",
+          "price": 0,
+          "description": "",
+          "category": "White Wines"
+        },
+        {
+          "name": "Sultaniye (Semi-Sweet)",
+          "price": 0,
+          "description": "",
+          "category": "White Wines"
+        }
+      ]
+    },
+    {
+      "name": "Red Wines",
+      "items": [
+        {
+          "name": "Ruby",
+          "price": 0,
+          "description": "",
+          "category": "Red Wines"
+        }
+      ]
+    },
+    {
+      "name": "Rose Wines",
+      "items": [
+        {
+          "name": "Rosato (Semi-Sweet)",
+          "price": 0,
+          "description": "",
+          "category": "Rose Wines"
+        }
+      ]
+    },
+    {
+      "name": "Glass of Wine",
+      "items": [
+        {
+          "name": "Çankaya White",
+          "price": 0,
+          "description": "",
+          "category": "Glass of Wine"
+        },
+        {
+          "name": "Ruby Red",
+          "price": 0,
+          "description": "",
+          "category": "Glass of Wine"
+        },
+        {
+          "name": "Ancyra Merlot Red",
+          "price": 0,
+          "description": "",
+          "category": "Glass of Wine"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "brainInterventions": 0,
+    "rulesApplied": 0,
+    "pipelineRulesTotal": 9,
+    "categoriesMerged": 0
+  },
+  "publishedUrl": "https://menuai.tr/p/happygroup-turkiye",
+  "slug": "happygroup-turkiye"
+}

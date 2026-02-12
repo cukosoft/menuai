@@ -1,0 +1,205 @@
+{
+  "source": "Gemini Orchestrator Agent v2.0 — Self-Improving Pipeline",
+  "parsed_at": "2026-02-12T14:40:53.430Z",
+  "menu_url": "https://coffeelab.com.tr/menu2/",
+  "restaurant": "Coffeelab",
+  "totalItems": 28,
+  "categories": [
+    {
+      "name": "Kahve Demleme Yöntemleri",
+      "items": [
+        {
+          "name": "Chemex",
+          "price": 0,
+          "description": "1940’lı yıllarda Dr. Peter Schlumbohm tarafından icat edilmiştir.",
+          "category": "Kahve Demleme Yöntemleri"
+        },
+        {
+          "name": "Aeropress",
+          "price": 0,
+          "description": "Kahvenin basınçla demlenme yöntemidir.",
+          "category": "Kahve Demleme Yöntemleri"
+        },
+        {
+          "name": "V60",
+          "price": 0,
+          "description": "En hızlı ve pratik kahve demleme yöntemlerinden biridir.",
+          "category": "Kahve Demleme Yöntemleri"
+        },
+        {
+          "name": "Syphon",
+          "price": 0,
+          "description": "Buhar basıncının ısınmış suyu bir hazneden, kahvenin bulunduğu diğer hazneye itmesiyle kahve demlenir.",
+          "category": "Kahve Demleme Yöntemleri"
+        },
+        {
+          "name": "Filtre Kahve Makinesi",
+          "price": 0,
+          "description": "Elektrikle ısınan su, damlama yöntemiyle kahvenin üzerine akar.",
+          "category": "Kahve Demleme Yöntemleri"
+        },
+        {
+          "name": "Cold Brew",
+          "price": 0,
+          "description": "Filtre kahve kıvamında öğütülen kahve çekirdekleri kullanılarak hazırlanan kahve, sürecin sonunda hafif tatlı ve yoğun bir kıvam alır.",
+          "category": "Kahve Demleme Yöntemleri"
+        }
+      ]
+    },
+    {
+      "name": "Icecekler",
+      "items": [
+        {
+          "name": "Sıcak İçecekler (34)",
+          "price": 0,
+          "description": "",
+          "category": "Icecekler"
+        },
+        {
+          "name": "Soğuk İçecekler (30)",
+          "price": 0,
+          "description": "",
+          "category": "Icecekler"
+        }
+      ]
+    },
+    {
+      "name": "Yoresel Kahveler",
+      "items": [
+        {
+          "name": "Yöresel Kahveler",
+          "price": 0,
+          "description": "",
+          "category": "Yoresel Kahveler"
+        },
+        {
+          "name": "Coffee Lab",
+          "price": 0,
+          "description": "",
+          "category": "Yoresel Kahveler"
+        },
+        {
+          "name": "Sosyal Medyada LAB",
+          "price": 0,
+          "description": "",
+          "category": "Yoresel Kahveler"
+        }
+      ]
+    },
+    {
+      "name": "Lezzetler",
+      "items": [
+        {
+          "name": "Altı Tahıllı Sweetchilli Sandviç",
+          "price": 0,
+          "description": "",
+          "category": "Lezzetler"
+        },
+        {
+          "name": "Çavdarlı Peynirli Sandviç",
+          "price": 0,
+          "description": "",
+          "category": "Lezzetler"
+        },
+        {
+          "name": "Çekirdekli Grissini",
+          "price": 0,
+          "description": "",
+          "category": "Lezzetler"
+        },
+        {
+          "name": "Dereotlu Poğaça",
+          "price": 0,
+          "description": "",
+          "category": "Lezzetler"
+        },
+        {
+          "name": "Dört Peynirli Sandviç",
+          "price": 0,
+          "description": "",
+          "category": "Lezzetler"
+        },
+        {
+          "name": "Ev Tipi Poğaça",
+          "price": 0,
+          "description": "",
+          "category": "Lezzetler"
+        },
+        {
+          "name": "Glutensiz Fındıklı Balmix Topu",
+          "price": 0,
+          "description": "",
+          "category": "Lezzetler"
+        },
+        {
+          "name": "Glutensiz Kakaolu Balmix Topu",
+          "price": 0,
+          "description": "",
+          "category": "Lezzetler"
+        },
+        {
+          "name": "Hindi Füme Sandviç",
+          "price": 0,
+          "description": "",
+          "category": "Lezzetler"
+        },
+        {
+          "name": "Karışık Pizza",
+          "price": 0,
+          "description": "",
+          "category": "Lezzetler"
+        },
+        {
+          "name": "Margarita Pizza",
+          "price": 0,
+          "description": "",
+          "category": "Lezzetler"
+        },
+        {
+          "name": "Peynirli Kuru Domates Sandviç",
+          "price": 0,
+          "description": "",
+          "category": "Lezzetler"
+        },
+        {
+          "name": "Tavuklu Sandviç",
+          "price": 0,
+          "description": "",
+          "category": "Lezzetler"
+        },
+        {
+          "name": "Yulaf Cookie",
+          "price": 0,
+          "description": "",
+          "category": "Lezzetler"
+        },
+        {
+          "name": "Zeytinli Peynirli Sandviç",
+          "price": 0,
+          "description": "",
+          "category": "Lezzetler"
+        },
+        {
+          "name": "4 Peynirli Sandviç",
+          "price": 0,
+          "description": "",
+          "category": "Lezzetler"
+        },
+        {
+          "name": "Hindi Fümeli Sandviç",
+          "price": 0,
+          "description": "",
+          "category": "Lezzetler"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "brainInterventions": 0,
+    "rulesApplied": 0,
+    "pipelineRulesTotal": 7,
+    "categoriesMerged": 0
+  },
+  "publishedUrl": "https://menuai.tr/p/coffeelab-turkiye",
+  "slug": "coffeelab-turkiye"
+}

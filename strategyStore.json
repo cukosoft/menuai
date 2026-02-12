@@ -444,6 +444,355 @@
       "lastItemCount": 116,
       "lastUsed": "2026-02-12T10:23:33.703Z",
       "successRate": 1
+    },
+    {
+      "domain": "cafeharutr.com",
+      "urlPattern": "/menus",
+      "strategy": {
+        "mode": "single-page",
+        "subPageCount": 0,
+        "primaryMethod": "dom-text",
+        "fallback": "screenshot",
+        "extractionLog": []
+      },
+      "lastItemCount": 39,
+      "lastUsed": "2026-02-12T12:40:55.281Z",
+      "successRate": 1
+    },
+    {
+      "domain": "cafedescafes.com",
+      "urlPattern": "/menu/",
+      "strategy": {
+        "mode": "multi-page",
+        "subPageCount": 1,
+        "primaryMethod": "dom-text",
+        "fallback": "screenshot",
+        "extractionLog": [
+          {
+            "page": "Tunalı Hilmi Menü\t\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\tMenü",
+            "url": "https://cafedescafes.com/tunali-hilmi-menu/",
+            "itemCount": 99,
+            "method": "text"
+          }
+        ]
+      },
+      "lastItemCount": 99,
+      "lastUsed": "2026-02-12T13:31:59.783Z",
+      "successRate": 1
+    },
+    {
+      "domain": "coffeelab.com.tr",
+      "urlPattern": "/menu2/",
+      "strategy": {
+        "mode": "multi-page",
+        "subPageCount": 7,
+        "primaryMethod": "dom-text",
+        "fallback": "screenshot",
+        "extractionLog": [
+          {
+            "page": "",
+            "url": "https://coffeelab.com.tr/",
+            "itemCount": 6,
+            "method": "text"
+          },
+          {
+            "page": "İnsan Kaynakları",
+            "url": "https://coffeelab.com.tr/insan-kaynaklari/",
+            "itemCount": 0,
+            "method": "screenshot"
+          },
+          {
+            "page": "Icecekler",
+            "url": "https://coffeelab.com.tr/icecekler/",
+            "itemCount": 4,
+            "method": "text"
+          },
+          {
+            "page": "Yoresel Kahveler",
+            "url": "https://coffeelab.com.tr/product-category/yoresel-kahveler/",
+            "itemCount": 6,
+            "method": "text"
+          },
+          {
+            "page": "Lezzetler",
+            "url": "https://coffeelab.com.tr/product-category/lezzetler/",
+            "itemCount": 12,
+            "method": "text"
+          },
+          {
+            "page": "Lezzetler",
+            "url": "https://coffeelab.com.tr/product-category/lezzetler/page/2/",
+            "itemCount": 7,
+            "method": "text"
+          },
+          {
+            "page": "Lezzetler",
+            "url": "https://coffeelab.com.tr/product-category/lezzetler/page/1/",
+            "itemCount": 12,
+            "method": "text"
+          }
+        ]
+      },
+      "lastItemCount": 28,
+      "lastUsed": "2026-02-12T14:40:53.345Z",
+      "successRate": 1
+    },
+    {
+      "domain": "antik.cafe",
+      "urlPattern": "/menu",
+      "strategy": {
+        "mode": "single-page",
+        "subPageCount": 2,
+        "primaryMethod": "dom-text",
+        "fallback": "screenshot",
+        "extractionLog": []
+      },
+      "lastItemCount": 183,
+      "lastUsed": "2026-02-12T15:38:54.535Z",
+      "successRate": 1
+    },
+    {
+      "domain": "happygroup.com.tr",
+      "urlPattern": "/menu/happy-moons-cafe",
+      "strategy": {
+        "mode": "multi-page",
+        "subPageCount": 40,
+        "primaryMethod": "dom-text",
+        "fallback": "screenshot",
+        "extractionLog": [
+          {
+            "page": "Kahvaltılıklar",
+            "url": "https://www.happygroup.com.tr/menu/happy-moons-cafe/kahvaltiliklar",
+            "itemCount": 23,
+            "method": "text"
+          },
+          {
+            "page": "Başlangıçlar",
+            "url": "https://www.happygroup.com.tr/menu/happy-moons-cafe/baslangiclar",
+            "itemCount": 14,
+            "method": "text"
+          },
+          {
+            "page": "Salatalar",
+            "url": "https://www.happygroup.com.tr/menu/happy-moons-cafe/salatalar",
+            "itemCount": 9,
+            "method": "text"
+          },
+          {
+            "page": "Burgerler",
+            "url": "https://www.happygroup.com.tr/menu/happy-moons-cafe/burgerler",
+            "itemCount": 8,
+            "method": "text"
+          },
+          {
+            "page": "Meksika Yemekleri",
+            "url": "https://www.happygroup.com.tr/menu/happy-moons-cafe/meksika-yemekleri",
+            "itemCount": 14,
+            "method": "text"
+          },
+          {
+            "page": "Dürümler & Krepler",
+            "url": "https://www.happygroup.com.tr/menu/happy-moons-cafe/durumler-krepler",
+            "itemCount": 5,
+            "method": "text"
+          },
+          {
+            "page": "Makarnalar",
+            "url": "https://www.happygroup.com.tr/menu/happy-moons-cafe/makarnalar",
+            "itemCount": 8,
+            "method": "text"
+          },
+          {
+            "page": "Ana Yemekler",
+            "url": "https://www.happygroup.com.tr/menu/happy-moons-cafe/ana-yemekler",
+            "itemCount": 20,
+            "method": "text"
+          },
+          {
+            "page": "Pizzalar",
+            "url": "https://www.happygroup.com.tr/menu/happy-moons-cafe/pizzalar",
+            "itemCount": 11,
+            "method": "text"
+          },
+          {
+            "page": "Tatlılar",
+            "url": "https://www.happygroup.com.tr/menu/happy-moons-cafe/tatlilar",
+            "itemCount": 22,
+            "method": "text"
+          },
+          {
+            "page": "Çocuklara Özel",
+            "url": "https://www.happygroup.com.tr/menu/happy-moons-cafe/cocuklara-ozel",
+            "itemCount": 8,
+            "method": "text"
+          },
+          {
+            "page": "Hafif Lezzetler",
+            "url": "https://www.happygroup.com.tr/menu/happy-moons-cafe/hafif-lezzetler",
+            "itemCount": 4,
+            "method": "text"
+          },
+          {
+            "page": "Soğuk İçecekler",
+            "url": "https://www.happygroup.com.tr/menu/happy-moons-cafe/soguk-icecekler",
+            "itemCount": 28,
+            "method": "text"
+          },
+          {
+            "page": "Alkolsüz Kokteyller",
+            "url": "https://www.happygroup.com.tr/menu/happy-moons-cafe/alkolsuz-kokteyller",
+            "itemCount": 12,
+            "method": "text"
+          },
+          {
+            "page": "Alkollü İçecekler",
+            "url": "https://www.happygroup.com.tr/menu/happy-moons-cafe/alkollu-icecekler",
+            "itemCount": 0,
+            "method": "screenshot"
+          },
+          {
+            "page": "English",
+            "url": "https://www.happygroup.com.tr/en/menu/happy-moon-s-cafe/alcoholic-drinks",
+            "itemCount": 0,
+            "method": "screenshot"
+          },
+          {
+            "page": "İletişim",
+            "url": "https://www.happygroup.com.tr/iletisim",
+            "itemCount": 0,
+            "method": "screenshot"
+          },
+          {
+            "page": "Kokteyller",
+            "url": "https://www.happygroup.com.tr/menu/happy-moons-cafe/alkollu-icecekler/kokteyller",
+            "itemCount": 11,
+            "method": "text"
+          },
+          {
+            "page": "Trendler",
+            "url": "https://www.happygroup.com.tr/menu/happy-moons-cafe/alkollu-icecekler/trendler",
+            "itemCount": 5,
+            "method": "text"
+          },
+          {
+            "page": "Biralar",
+            "url": "https://www.happygroup.com.tr/menu/happy-moons-cafe/alkollu-icecekler/biralar",
+            "itemCount": 12,
+            "method": "text"
+          },
+          {
+            "page": "Beyaz Şaraplar",
+            "url": "https://www.happygroup.com.tr/menu/happy-moons-cafe/alkollu-icecekler/beyaz-saraplar",
+            "itemCount": 8,
+            "method": "text"
+          },
+          {
+            "page": "Kırmızı Şaraplar",
+            "url": "https://www.happygroup.com.tr/menu/happy-moons-cafe/alkollu-icecekler/kirmizi-saraplar",
+            "itemCount": 13,
+            "method": "text"
+          },
+          {
+            "page": "Rose Şaraplar",
+            "url": "https://www.happygroup.com.tr/menu/happy-moons-cafe/alkollu-icecekler/rose-saraplar",
+            "itemCount": 5,
+            "method": "text"
+          },
+          {
+            "page": "Kadeh Şaraplar",
+            "url": "https://www.happygroup.com.tr/menu/happy-moons-cafe/alkollu-icecekler/kadeh-saraplar",
+            "itemCount": 7,
+            "method": "text"
+          },
+          {
+            "page": "Bourbon Scotch",
+            "url": "https://www.happygroup.com.tr/menu/happy-moons-cafe/alkollu-icecekler/bourbon-scotch",
+            "itemCount": 6,
+            "method": "text"
+          },
+          {
+            "page": "Votka & Cin",
+            "url": "https://www.happygroup.com.tr/menu/happy-moons-cafe/alkollu-icecekler/votka-cin",
+            "itemCount": 4,
+            "method": "text"
+          },
+          {
+            "page": "Sıcak İçecekler",
+            "url": "https://www.happygroup.com.tr/menu/happy-moons-cafe/alkollu-icecekler/sicak-icecekler",
+            "itemCount": 0,
+            "method": "screenshot"
+          },
+          {
+            "page": "Açık rıza metnini",
+            "url": "https://www.happygroup.com.tr/yasal-bilgilendirmeler/kisisel-verilerin-korunmasi-ve-islenmesi-genel-aydinlatma-metni",
+            "itemCount": 0,
+            "method": "screenshot"
+          },
+          {
+            "page": "Cocktails",
+            "url": "https://www.happygroup.com.tr/en/menu/happy-moon-s-cafe/alcoholic-drinks/cocktails",
+            "itemCount": 11,
+            "method": "text"
+          },
+          {
+            "page": "Trends",
+            "url": "https://www.happygroup.com.tr/en/menu/happy-moon-s-cafe/alcoholic-drinks/trends",
+            "itemCount": 5,
+            "method": "text"
+          },
+          {
+            "page": "Beers",
+            "url": "https://www.happygroup.com.tr/en/menu/happy-moon-s-cafe/alcoholic-drinks/beers",
+            "itemCount": 12,
+            "method": "text"
+          },
+          {
+            "page": "White Wines",
+            "url": "https://www.happygroup.com.tr/en/menu/happy-moon-s-cafe/alcoholic-drinks/white-wines",
+            "itemCount": 8,
+            "method": "text"
+          },
+          {
+            "page": "Red Wines",
+            "url": "https://www.happygroup.com.tr/en/menu/happy-moon-s-cafe/alcoholic-drinks/red-wines",
+            "itemCount": 13,
+            "method": "text"
+          },
+          {
+            "page": "Rose Wines",
+            "url": "https://www.happygroup.com.tr/en/menu/happy-moon-s-cafe/alcoholic-drinks/rose-wines",
+            "itemCount": 5,
+            "method": "text"
+          },
+          {
+            "page": "Glass of Wine",
+            "url": "https://www.happygroup.com.tr/en/menu/happy-moon-s-cafe/alcoholic-drinks/glass-of-wine",
+            "itemCount": 7,
+            "method": "text"
+          },
+          {
+            "page": "Bourbon Scotch",
+            "url": "https://www.happygroup.com.tr/en/menu/happy-moon-s-cafe/alcoholic-drinks/bourbon-scotch",
+            "itemCount": 6,
+            "method": "text"
+          },
+          {
+            "page": "Vodka & Gin",
+            "url": "https://www.happygroup.com.tr/en/menu/happy-moon-s-cafe/alcoholic-drinks/vodka-gin",
+            "itemCount": 4,
+            "method": "text"
+          },
+          {
+            "page": "Hot Drinks",
+            "url": "https://www.happygroup.com.tr/en/menu/happy-moon-s-cafe/alcoholic-drinks/hot-drinks",
+            "itemCount": 0,
+            "method": "screenshot"
+          }
+        ]
+      },
+      "lastItemCount": 260,
+      "lastUsed": "2026-02-12T16:44:44.923Z",
+      "successRate": 1
     }
   ],
   "version": 1

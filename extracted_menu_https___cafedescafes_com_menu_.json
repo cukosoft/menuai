@@ -1,0 +1,681 @@
+{
+  "source": "Gemini Orchestrator Agent v2.0 — Self-Improving Pipeline",
+  "parsed_at": "2026-02-12T13:31:59.852Z",
+  "menu_url": "https://cafedescafes.com/menu/",
+  "restaurant": "Cafedescafes",
+  "totalItems": 99,
+  "categories": [
+    {
+      "name": "Tunalı Hilmi Menü Menü",
+      "items": [
+        {
+          "name": "CAPPUCCINO",
+          "price": 240,
+          "description": "",
+          "category": "Tunalı Hilmi Menü Menü"
+        },
+        {
+          "name": "DOPPIO",
+          "price": 240,
+          "description": "",
+          "category": "Tunalı Hilmi Menü Menü"
+        },
+        {
+          "name": "AMERICANO",
+          "price": 230,
+          "description": "",
+          "category": "Tunalı Hilmi Menü Menü"
+        },
+        {
+          "name": "PUMPKIN SPICE LATTE",
+          "price": 250,
+          "description": "",
+          "category": "Tunalı Hilmi Menü Menü"
+        },
+        {
+          "name": "WHITE CHOCOLATE MOCHA",
+          "price": 250,
+          "description": "",
+          "category": "Tunalı Hilmi Menü Menü"
+        },
+        {
+          "name": "AROMALI KAHVELER",
+          "price": 250,
+          "description": "French vanilla, amaretto, hazelnut veya çikolata böğürtlen",
+          "category": "Tunalı Hilmi Menü Menü"
+        },
+        {
+          "name": "BÖLGESEL KAHVELER",
+          "price": 240,
+          "description": "Colombian supreme, sumatran",
+          "category": "Tunalı Hilmi Menü Menü"
+        },
+        {
+          "name": "NESCAFE",
+          "price": 190,
+          "description": "",
+          "category": "Tunalı Hilmi Menü Menü"
+        },
+        {
+          "name": "SICAK ÇİKOLATA",
+          "price": 240,
+          "description": "",
+          "category": "Tunalı Hilmi Menü Menü"
+        },
+        {
+          "name": "SAHLEP",
+          "price": 240,
+          "description": "",
+          "category": "Tunalı Hilmi Menü Menü"
+        },
+        {
+          "name": "ESPRESSOLU SAHLEP",
+          "price": 250,
+          "description": "",
+          "category": "Tunalı Hilmi Menü Menü"
+        },
+        {
+          "name": "BEYAZ PEYNİRLİ OTLU OMLET",
+          "price": 340,
+          "description": "",
+          "category": "Tunalı Hilmi Menü Menü"
+        },
+        {
+          "name": "MANTARLI OMLET",
+          "price": 360,
+          "description": "",
+          "category": "Tunalı Hilmi Menü Menü"
+        },
+        {
+          "name": "KARIŞIK OMLET",
+          "price": 420,
+          "description": "Mantar, jambon, kaşar peyniri",
+          "category": "Tunalı Hilmi Menü Menü"
+        },
+        {
+          "name": "MENEMEN",
+          "price": 375,
+          "description": "Domates, soğan, yeşil biber, toz karabiber",
+          "category": "Tunalı Hilmi Menü Menü"
+        },
+        {
+          "name": "CROISSANT",
+          "price": 165,
+          "description": "",
+          "category": "Tunalı Hilmi Menü Menü"
+        },
+        {
+          "name": "PEYNİR TABAĞI",
+          "price": 550,
+          "description": "4 çeşit peynir, incir ve ceviz",
+          "category": "Tunalı Hilmi Menü Menü"
+        },
+        {
+          "name": "PAN CAKE",
+          "price": 350,
+          "description": "Meyve ve Nutella",
+          "category": "Tunalı Hilmi Menü Menü"
+        },
+        {
+          "name": "KUKİ TABAĞI",
+          "price": 165,
+          "description": "Tatlı ve tuzlu kurabiyeler",
+          "category": "Tunalı Hilmi Menü Menü"
+        },
+        {
+          "name": "DANA ETLİ WRAP",
+          "price": 550,
+          "description": "Meksika tortilla ekmeği arasında, dana eti 150 gr., kuru soğan, domates, renkli biberler ve peynir, patates tava ile",
+          "category": "Tunalı Hilmi Menü Menü"
+        },
+        {
+          "name": "KÖFTELİ WRAP",
+          "price": 550,
+          "description": "Meksika tortilla ekmeği arasında köfte 150 gr., kurusoğan, domates, renkli biberler ve peynir, patates tava ile",
+          "category": "Tunalı Hilmi Menü Menü"
+        },
+        {
+          "name": "VEGAN BURGER",
+          "price": 450,
+          "description": "Bulgur, mercimek, turşu, kıvırcık, domates, roka, mevsim sebzeleri, özel sos ile (ekmeksiz servis edilir)",
+          "category": "Tunalı Hilmi Menü Menü"
+        }
+      ]
+    },
+    {
+      "name": "CHAI & ICED TEA",
+      "items": [
+        {
+          "name": "ROOIBOS VANILLA",
+          "price": 280,
+          "description": "",
+          "category": "CHAI & ICED TEA"
+        },
+        {
+          "name": "BERRY PUNCH",
+          "price": 280,
+          "description": "",
+          "category": "CHAI & ICED TEA"
+        },
+        {
+          "name": "MATCHA ICE LATTE",
+          "price": 280,
+          "description": "",
+          "category": "CHAI & ICED TEA"
+        }
+      ]
+    },
+    {
+      "name": "Annemizden",
+      "items": [
+        {
+          "name": "TOSYA'NIN TARHANA ÇORBASI",
+          "price": 280,
+          "description": "",
+          "category": "Annemizden"
+        },
+        {
+          "name": "EL AÇMASI MANTI",
+          "price": 450,
+          "description": "",
+          "category": "Annemizden"
+        },
+        {
+          "name": "EKŞİLİ MARAŞ KÖFTE",
+          "price": 430,
+          "description": "",
+          "category": "Annemizden"
+        },
+        {
+          "name": "ETLİ YAPRAK SARMA",
+          "price": 460,
+          "description": "",
+          "category": "Annemizden"
+        }
+      ]
+    },
+    {
+      "name": "Başlangıçlar",
+      "items": [
+        {
+          "name": "GÜNÜN ÇORBASI",
+          "price": 210,
+          "description": "",
+          "category": "Başlangıçlar"
+        },
+        {
+          "name": "SİGARA BÖREĞİ",
+          "price": 220,
+          "description": "",
+          "category": "Başlangıçlar"
+        },
+        {
+          "name": "IZGARA SEBZE TABAĞI",
+          "price": 295,
+          "description": "Taze mevsim sebzeleri, mantar, fesleğen sos ile",
+          "category": "Başlangıçlar"
+        },
+        {
+          "name": "CROISSANT",
+          "price": 250,
+          "description": "Yumurtalı, chedarlı, çikolatalı",
+          "category": "Başlangıçlar"
+        },
+        {
+          "name": "ESKİŞEHİR USULÜ Çİ BÖREK",
+          "price": 330,
+          "description": "",
+          "category": "Başlangıçlar"
+        },
+        {
+          "name": "BAHARATLI PANE TAVUK PARÇALARI",
+          "price": 460,
+          "description": "Cajun baharatlı ile pane edilmiş tavuk göğsü parçaları, kızarmış patates ve tartar sos ile",
+          "category": "Başlangıçlar"
+        }
+      ]
+    },
+    {
+      "name": "Sandviç & Tostlar",
+      "items": [
+        {
+          "name": "KLÜP TOST",
+          "price": 450,
+          "description": "Sade veya kepekli tost ekmeği, tavuk 80 gr, peynir, dana jambon, kızarmış patates ile",
+          "category": "Sandviç & Tostlar"
+        },
+        {
+          "name": "CAJUN BAHARATLI CHEDARLI TAVUKLU SANDVİÇ",
+          "price": 455,
+          "description": "Baget ekmeği içerisinde, Cajun Baharatlı tavuk dilimleri 100 gr, sotelenmiş soğan, cheddar peyniri ve patates kızartması ile",
+          "category": "Sandviç & Tostlar"
+        },
+        {
+          "name": "BALIK KOKOREÇ SANDVİÇ",
+          "price": 540,
+          "description": "Baget ekmeği içerisinde, levrek parçaları 150 gr, kuru soğan, domates, özel baharatları ile",
+          "category": "Sandviç & Tostlar"
+        },
+        {
+          "name": "CHEESE STEAK SANDVİÇ",
+          "price": 575,
+          "description": "Baget ekmeği içerisinde antrikot dilimleri 100 gr, karamelize soğan, eritilmiş kaşar ve patates kızartması ile",
+          "category": "Sandviç & Tostlar"
+        },
+        {
+          "name": "TAZE KAŞARLI TOST",
+          "price": 295,
+          "description": "",
+          "category": "Sandviç & Tostlar"
+        },
+        {
+          "name": "SUCUKLU TOST",
+          "price": 340,
+          "description": "",
+          "category": "Sandviç & Tostlar"
+        },
+        {
+          "name": "KARIŞIK TOST",
+          "price": 400,
+          "description": "",
+          "category": "Sandviç & Tostlar"
+        },
+        {
+          "name": "ATOM TOST",
+          "price": 450,
+          "description": "Kaşar peyniri, sucuk, dil peyniri, yumurta özel soslar ve söğüş domates ile",
+          "category": "Sandviç & Tostlar"
+        },
+        {
+          "name": "TAZE OTLU TOST",
+          "price": 365,
+          "description": "Kepekli tost ekmeğine beyaz peynir, domates, kıyılmış maydanoz, dereotu, fesleğen yaprağı özel baharatlar ile",
+          "category": "Sandviç & Tostlar"
+        }
+      ]
+    },
+    {
+      "name": "Burgerler",
+      "items": [
+        {
+          "name": "HAMBURGER",
+          "price": 490,
+          "description": "Ev yapımı dana burger 150 gr, domates, turşu",
+          "category": "Burgerler"
+        },
+        {
+          "name": "SPOR BURGER",
+          "price": 560,
+          "description": "Iceberg yatağı üzerinde ev yapımı hamburger",
+          "category": "Burgerler"
+        }
+      ]
+    },
+    {
+      "name": "Makarnalar",
+      "items": [
+        {
+          "name": "TORTELLINI ALFREDO CHICKEN",
+          "price": 550,
+          "description": "",
+          "category": "Makarnalar"
+        }
+      ]
+    },
+    {
+      "name": "Salatalar",
+      "items": [
+        {
+          "name": "KİNOALI MAŞ FASULYELİ BUĞDAY SALATASI",
+          "price": 400,
+          "description": "Kinoa, buğday, nohut, ceviz, maydanoz, Akdeniz yeşillikleri, mevsim meyvesi ve özel sos ile",
+          "category": "Salatalar"
+        },
+        {
+          "name": "IZGARA HELLİM SALATASI",
+          "price": 440,
+          "description": "Izgara hellim peyniri, karışık yeşillikler, ızgara kabak, patlıcan, kırmızı közlenmiş biber, domates, fıstık, zeytinyağı nar ekşisi ve fesleğen sos ile",
+          "category": "Salatalar"
+        },
+        {
+          "name": "IZGARA TAVUK SALATASI",
+          "price": 460,
+          "description": "Iceberg üzerinde, marine edilmiş tavuk parçaları 100 gr., fesleğen, domates, portakal ve greyfurt dilimleri hardal sos ile",
+          "category": "Salatalar"
+        },
+        {
+          "name": "IZGARA BONFİLE SALATASI",
+          "price": 610,
+          "description": "Akdeniz yeşillikleri, bonfile dilimleri 100 gr., nane, zahter, maydanoz, mantar, yeşil soğan, balzamik sos ile",
+          "category": "Salatalar"
+        },
+        {
+          "name": "IZGARA LEVREK SALATASI",
+          "price": 610,
+          "description": "Roka ve marul yaprakları, domates, levrek 160 gr, salatalık, kapari, zeytinyağı ve limon sos ile",
+          "category": "Salatalar"
+        },
+        {
+          "name": "IZGARA SOMON SALATASI",
+          "price": 610,
+          "description": "Roka ve marul yaprakları, domates, susam, zahter, salatalık üzerinde somon balığı 100 gr, cevizli limonlu zeytinyağı sos ile",
+          "category": "Salatalar"
+        },
+        {
+          "name": "CEVİZLİ ROKA SALATASI",
+          "price": 400,
+          "description": "Ceviz, kurutulmuş domates, parmesan, balzamik sos ile",
+          "category": "Salatalar"
+        },
+        {
+          "name": "CEVİZLİ YEŞİL BAHÇE",
+          "price": 410,
+          "description": "Dereotu, maydanoz, fesleğen, elma, ceviz, beyaz peynir, taze soğan, taze nane, roka, brokoli, marul, peynir, zeytinyağı, nar ekşili sos ile",
+          "category": "Salatalar"
+        },
+        {
+          "name": "AVOKADOLU ENGİNARLI SALATA",
+          "price": 510,
+          "description": "Avokado, enginar parçaları, salatalık, portakal dilimleri, karışık yeşillikler, yer fıstığı, nane, fesleğen, roka, mısır, zeytinyağı, kırmızı pancar, nar ekşisi hardal sos ile",
+          "category": "Salatalar"
+        },
+        {
+          "name": "PANCARLI KIZARMIŞ TULUM PEYNİRİ SALATASI",
+          "price": 475,
+          "description": "Pancar, tulum peyniri, Akdeniz yeşillikleri, roka, kuruton, dereotu, maydanoz, zahter, ceviz, peynir sosu ile",
+          "category": "Salatalar"
+        }
+      ]
+    },
+    {
+      "name": "Ana Yemekler",
+      "items": [
+        {
+          "name": "KÖRİ SOSLU TAVUK",
+          "price": 535,
+          "description": "Pita ekmeği, tavuk göğsü, mantar 150 gr, kuru üzüm, fıstık, kuru soğan, kapya biber, köri ve özel baharatları ile",
+          "category": "Ana Yemekler"
+        },
+        {
+          "name": "OTLU SARIMSAKLI PİLİÇ IZGARA",
+          "price": 535,
+          "description": "Kekik, hardal, biberiye ile marine edilmiş piliç butları 200 gr., sarımsakla lezzetlendirilmiş domates sos ile",
+          "category": "Ana Yemekler"
+        },
+        {
+          "name": "CAFE DES CAFES KEBAP",
+          "price": 640,
+          "description": "İnce kesilmiş antrikot parçaları 200 gr, patates kızartması, yeşil biber, domates roka ve yoğurt ile",
+          "category": "Ana Yemekler"
+        },
+        {
+          "name": "DANA KÜLBASTI",
+          "price": 670,
+          "description": "Özel sos ile marine edilmiş antrikot 200 gr., sebze, fırında patates ile",
+          "category": "Ana Yemekler"
+        },
+        {
+          "name": "MANTAR SOSLU BONFİLE",
+          "price": 1150,
+          "description": "Bonfile 200 gr, kuru soğan, mantar, tane karabiber, demi glace sos, fırında patates ile",
+          "category": "Ana Yemekler"
+        },
+        {
+          "name": "MANİSA USULÜ IZGARA KÖFTE",
+          "price": 550,
+          "description": "Köfte 200 gr, bazlama, domates, biber, yoğurt, özel salça sos ile",
+          "category": "Ana Yemekler"
+        },
+        {
+          "name": "KEKİKLE TATLANDIRILMIŞ IZGARA KÖFTE",
+          "price": 550,
+          "description": "Köfte 200 gr, akdeniz yeşilliği ve fırında patates ile",
+          "category": "Ana Yemekler"
+        },
+        {
+          "name": "BEĞENDİLİ KÖFTE",
+          "price": 585,
+          "description": "Kekikli ızgara köfte 200 gr, beğendi sos, Akdeniz yeşillikleri, fırında patates ile",
+          "category": "Ana Yemekler"
+        },
+        {
+          "name": "GEMİCİ KÖFTE",
+          "price": 600,
+          "description": "Kızarmış pita parçaları üzerine köfte parçaları 160 gr, patates kızartması, roka, domates ve yoğurt ile",
+          "category": "Ana Yemekler"
+        },
+        {
+          "name": "BEŞ PEYNİR SOSLU TAVUK GÖĞSÜ",
+          "price": 535,
+          "description": "200 gr, biberiyeli fırında patates ile",
+          "category": "Ana Yemekler"
+        },
+        {
+          "name": "ENGİNARLI TAVUK",
+          "price": 535,
+          "description": "Tavuk göğüs parçaları 180 gr, enginar közlenmiş biber, taze fesleğen, bezelye, avokado, krema, parmesan sos ile",
+          "category": "Ana Yemekler"
+        },
+        {
+          "name": "BEĞENDİLİ TAVUK IZGARA",
+          "price": 550,
+          "description": "Barbekü sosla marine edilmiş ızgara tavuk göğsü 200 gr, beğendili sos ile",
+          "category": "Ana Yemekler"
+        },
+        {
+          "name": "PESTO SOSLU MANTARLI TAVUK",
+          "price": 550,
+          "description": "Piliç parçaları 180 gr, julyen sebzeler, mantar, capari ve pesto sos ile",
+          "category": "Ana Yemekler"
+        },
+        {
+          "name": "FIRINDA ZAHTERLİ LEVREK FİLETO",
+          "price": 650,
+          "description": "Levrek fileto 160 gr, patates, sarımsak, taze zahter, krema ve özel baharatları ile",
+          "category": "Ana Yemekler"
+        },
+        {
+          "name": "SOMON IZGARA",
+          "price": 950,
+          "description": "Somon 200 gr. roka, sebze, patates salatası, cevizli zeytinyağı limonlu sos ile",
+          "category": "Ana Yemekler"
+        }
+      ]
+    },
+    {
+      "name": "Tatlılar",
+      "items": [
+        {
+          "name": "SAN SEBASTIAN",
+          "price": 310,
+          "description": "",
+          "category": "Tatlılar"
+        },
+        {
+          "name": "CHEESECAKE",
+          "price": 295,
+          "description": "Limonlu, çikolatalı, Frambuazlı veya bal kabaklı sos ile",
+          "category": "Tatlılar"
+        },
+        {
+          "name": "BROWNIE",
+          "price": 280,
+          "description": "",
+          "category": "Tatlılar"
+        },
+        {
+          "name": "TİRAMİSU",
+          "price": 340,
+          "description": "",
+          "category": "Tatlılar"
+        },
+        {
+          "name": "MEYVELİ TART",
+          "price": 295,
+          "description": "Taze mevsim meyveleri ile",
+          "category": "Tatlılar"
+        },
+        {
+          "name": "MOZAİK PASTA",
+          "price": 290,
+          "description": "",
+          "category": "Tatlılar"
+        }
+      ]
+    },
+    {
+      "name": "Coffee Bar",
+      "items": [
+        {
+          "name": "TÜRK KAHVESİ",
+          "price": 130,
+          "description": "40 yılı hatırı olan tek kahve",
+          "category": "Coffee Bar"
+        },
+        {
+          "name": "TÜRK KAHVESİ DAMLA SAKIZLI",
+          "price": 135,
+          "description": "",
+          "category": "Coffee Bar"
+        },
+        {
+          "name": "MENENGİÇ KAHVESİ",
+          "price": 150,
+          "description": "",
+          "category": "Coffee Bar"
+        },
+        {
+          "name": "ESPRESSO",
+          "price": 140,
+          "description": "Tek shot espresso",
+          "category": "Coffee Bar"
+        },
+        {
+          "name": "FİLTRE KAHVE",
+          "price": 170,
+          "description": "Demleme kahve sevenlere",
+          "category": "Coffee Bar"
+        },
+        {
+          "name": "CORTADO",
+          "price": 230,
+          "description": "",
+          "category": "Coffee Bar"
+        }
+      ]
+    },
+    {
+      "name": "Kokteyl Bar",
+      "items": [
+        {
+          "name": "MIAMI",
+          "price": 300,
+          "description": "Grenadine, limon suyu, ananas suyu, vişne suyu ve portakal suyu",
+          "category": "Kokteyl Bar"
+        },
+        {
+          "name": "MARACAS",
+          "price": 300,
+          "description": "Mango şurubu, portakal suyu, ananas suyu ve greyfurt suyu",
+          "category": "Kokteyl Bar"
+        },
+        {
+          "name": "FUZIY LEMON FIZZ",
+          "price": 300,
+          "description": "Vişne suyu, muz şurubu ve limon suyu",
+          "category": "Kokteyl Bar"
+        },
+        {
+          "name": "MALAYAN COCKTAIL",
+          "price": 300,
+          "description": "Greyfurt suyu, ananas suyu, limon suyu ve blue curacao şurubu",
+          "category": "Kokteyl Bar"
+        },
+        {
+          "name": "FLORIDA",
+          "price": 300,
+          "description": "Kivi püresi, ananas suyu ve portakal suyu",
+          "category": "Kokteyl Bar"
+        },
+        {
+          "name": "AFRODIT",
+          "price": 300,
+          "description": "Portakal suyu, ananas suyu ve orman meyveleri püresi",
+          "category": "Kokteyl Bar"
+        },
+        {
+          "name": "ACAPULCO",
+          "price": 300,
+          "description": "Ananas suyu, süt, çiğ krema, greyfurt suyu ve Hindistan cevizi şurubu",
+          "category": "Kokteyl Bar"
+        }
+      ]
+    },
+    {
+      "name": "Milk Shake Bar",
+      "items": [
+        {
+          "name": "VANİLYA",
+          "price": 300,
+          "description": "",
+          "category": "Milk Shake Bar"
+        },
+        {
+          "name": "ÇİLEK",
+          "price": 300,
+          "description": "",
+          "category": "Milk Shake Bar"
+        },
+        {
+          "name": "MUZ",
+          "price": 300,
+          "description": "",
+          "category": "Milk Shake Bar"
+        },
+        {
+          "name": "ÇİKOLATA",
+          "price": 300,
+          "description": "",
+          "category": "Milk Shake Bar"
+        }
+      ]
+    },
+    {
+      "name": "Frozen Bar",
+      "items": [
+        {
+          "name": "ŞEFTALİ",
+          "price": 300,
+          "description": "",
+          "category": "Frozen Bar"
+        },
+        {
+          "name": "ORMAN MEYVELİ",
+          "price": 300,
+          "description": "",
+          "category": "Frozen Bar"
+        },
+        {
+          "name": "KİVİ",
+          "price": 300,
+          "description": "",
+          "category": "Frozen Bar"
+        },
+        {
+          "name": "KAVUN",
+          "price": 300,
+          "description": "",
+          "category": "Frozen Bar"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "brainInterventions": 0,
+    "rulesApplied": 0,
+    "pipelineRulesTotal": 7,
+    "categoriesMerged": 0
+  },
+  "publishedUrl": "https://menuai.tr/p/cafedescafes",
+  "slug": "cafedescafes"
+}

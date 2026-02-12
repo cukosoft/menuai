@@ -61,8 +61,8 @@
       "id": "rule_1770879586698",
       "active": true,
       "createdAt": "2026-02-12T06:59:46.698Z",
-      "appliedCount": 6,
-      "successCount": 6
+      "appliedCount": 17,
+      "successCount": 17
     },
     {
       "name": "Tek Sayfa Menü Yoğunluk Kontrolü",
@@ -123,13 +123,138 @@
       "id": "rule_1770891482576",
       "active": true,
       "createdAt": "2026-02-12T10:18:02.576Z",
+      "appliedCount": 2,
+      "successCount": 2
+    },
+    {
+      "name": "Fiyatsız Kategori Sayfası Tespiti",
+      "description": "Sayfada belirgin ürün elementleri bulunmasına rağmen hiç fiyat tespit edilemiyorsa, bu sayfa bir genel liste/kategori sayfasıdır. Fiyatları çekmek için ürün detaylarına (alt sayfalara) gidilmelidir.",
+      "condition": {
+        "type": "and",
+        "conditions": [
+          {
+            "type": "priceCount",
+            "operator": "===",
+            "value": 0
+          },
+          {
+            "type": "productElementCount",
+            "operator": ">",
+            "value": 10
+          },
+          {
+            "type": "textLength",
+            "operator": ">",
+            "value": 1000
+          }
+        ]
+      },
+      "action": "USE_SUBPAGES",
+      "priority": 1,
+      "id": "rule_1770900075110",
+      "active": true,
+      "createdAt": "2026-02-12T12:41:15.110Z",
+      "appliedCount": 2,
+      "successCount": 2
+    },
+    {
+      "name": "www.cafeharutr.com proxy uyumsuz — standalone kullan",
+      "description": "Brain tespiti: VERIFY_FAILED — page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://menuai.tr/p/cafeharutr\", waiting until \"networkidle\"\u001b[22m\n",
+      "condition": {
+        "type": "url_contains",
+        "value": "www.cafeharutr.com"
+      },
+      "action": "USE_STANDALONE",
+      "priority": 8,
+      "source": "brain_auto_verify",
+      "id": "rule_1770900169175",
+      "active": true,
+      "createdAt": "2026-02-12T12:42:49.175Z",
       "appliedCount": 0,
       "successCount": 0
+    },
+    {
+      "name": "Fiyatsız Liste Navigasyonu",
+      "description": "Sayfada çok sayıda ürün elementi (DOM yapısı) bulunmasına rağmen hiç fiyat tespit edilemediyse, bu sayfa sadece ürün görsellerinin olduğu bir kategori sayfasıdır. Fiyatları almak için ürün detay sayfalarına (alt sayfalara) gidilmelidir.",
+      "condition": {
+        "type": "and",
+        "conditions": [
+          {
+            "type": "priceCount",
+            "operator": "===",
+            "value": 0
+          },
+          {
+            "type": "productElementCount",
+            "operator": ">",
+            "value": 5
+          }
+        ]
+      },
+      "action": "USE_SUBPAGES",
+      "priority": 1,
+      "id": "rule_1770900571976",
+      "active": true,
+      "createdAt": "2026-02-12T12:49:31.976Z",
+      "appliedCount": 14,
+      "successCount": 14
+    },
+    {
+      "name": "Yüksek Fiyat Yoğunluğunda Liste Doğrulama",
+      "description": "Sayfada belirgin sayıda fiyat (15+) tespit edildiğinde, sayfanın geçerli bir ürün listesi olduğu kesinleşir. Bu durumda Brain analizine gerek kalmadan, olası lazy-load içerikleri yakalamak için scroll işlemi uygulanır.",
+      "condition": {
+        "type": "and",
+        "conditions": [
+          {
+            "type": "priceCount",
+            "operator": ">",
+            "value": 15
+          },
+          {
+            "type": "textLength",
+            "operator": ">",
+            "value": 2000
+          }
+        ]
+      },
+      "action": "SCROLL_MORE",
+      "priority": 1,
+      "id": "rule_1770910792141",
+      "active": true,
+      "createdAt": "2026-02-12T15:39:52.141Z",
+      "appliedCount": 0,
+      "successCount": 0
+    },
+    {
+      "name": "Düşük Fiyat Yoğunluğunda Alt Sayfa Taraması",
+      "description": "Ana sayfada tespit edilen fiyat sayısı çok düşükse (kategori veya landing page olma ihtimali) ve gidilebilecek alt sayfalar mevcutsa, ürün toplamak için alt sayfalara yönel.",
+      "condition": {
+        "type": "and",
+        "conditions": [
+          {
+            "type": "priceCount",
+            "operator": "<",
+            "value": 5
+          },
+          {
+            "type": "subPageCount",
+            "operator": ">",
+            "value": 0
+          }
+        ]
+      },
+      "action": "USE_SUBPAGES",
+      "priority": 1,
+      "id": "rule_1770912527441",
+      "active": true,
+      "createdAt": "2026-02-12T16:08:47.441Z",
+      "appliedCount": 1,
+      "successCount": 1
     }
   ],
   "metadata": {
     "createdAt": "2026-02-12T09:36:00Z",
-    "totalRulesGenerated": 4,
-    "totalRulesApplied": 15
+    "totalRulesGenerated": 9,
+    "totalRulesApplied": 45
   }
 }

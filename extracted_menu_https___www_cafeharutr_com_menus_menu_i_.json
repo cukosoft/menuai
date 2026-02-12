@@ -1,0 +1,296 @@
+{
+  "source": "Gemini Orchestrator Agent v2.0 — Self-Improving Pipeline",
+  "parsed_at": "2026-02-12T12:41:15.183Z",
+  "menu_url": "https://www.cafeharutr.com/menus?menu=i%25CC%2587yecek",
+  "restaurant": "Cafeharutr",
+  "totalItems": 39,
+  "categories": [
+    {
+      "name": "Set menü",
+      "items": [
+        {
+          "name": "Tteokbokki + Haru kimbap menüsü",
+          "price": 390,
+          "description": "Karar veremeyenler için ikisi de menüde",
+          "category": "Set menü"
+        },
+        {
+          "name": "Tteokbokki + Ton balıklı kimbap menüsü",
+          "price": 410,
+          "description": "Karar veremeyenler için ikisi de menüde",
+          "category": "Set menü"
+        },
+        {
+          "name": "Ramen + Haru kimbap menüsü",
+          "price": 530,
+          "description": "Karar veremeyenler için ikisi de menüde",
+          "category": "Set menü"
+        },
+        {
+          "name": "Ramen + Ton balıklı kimbap menüsü",
+          "price": 550,
+          "description": "Karar veremeyenler için ikisi de menüde",
+          "category": "Set menü"
+        }
+      ]
+    },
+    {
+      "name": "Tteokbokki",
+      "items": [
+        {
+          "name": "Tteokbokki",
+          "price": 360,
+          "description": "매운맛 (Acı)",
+          "category": "Tteokbokki"
+        },
+        {
+          "name": "Rose Tteokbokki",
+          "price": 390,
+          "description": "순한맛 (Yumuşak içim/Az acı)",
+          "category": "Tteokbokki"
+        },
+        {
+          "name": "Rabokki",
+          "price": 370,
+          "description": "매운맛 (Acı)",
+          "category": "Tteokbokki"
+        },
+        {
+          "name": "Rose Rabokki",
+          "price": 400,
+          "description": "순한맛 (Yumuşak içim/Az acı)",
+          "category": "Tteokbokki"
+        },
+        {
+          "name": "Gungjung Tteokbokki",
+          "price": 410,
+          "description": "Acı yiyemeyenler için (Soya sosu, Dana eti, Yeşil soğan, Havuç, Susam)",
+          "category": "Tteokbokki"
+        },
+        {
+          "name": "Gungjung Rabokki",
+          "price": 420,
+          "description": "Acı yiyemeyenler için (Soya sosu, Dana eti, Yeşil soğan, Havuç, Susam, Ramen)",
+          "category": "Tteokbokki"
+        },
+        {
+          "name": "Carbonara Tteokbokki",
+          "price": 420,
+          "description": "Peynirli Tteokbokki, Acı yiyemeyenler için (Tereyağ, Süt, Kaşar peynir, Cheddar peynir)",
+          "category": "Tteokbokki"
+        },
+        {
+          "name": "Carbonara Rabokki",
+          "price": 430,
+          "description": "(Tereyağ, Süt, Kaşar peynir, Cheddar peynir, Ramen)",
+          "category": "Tteokbokki"
+        }
+      ]
+    },
+    {
+      "name": "Tteokbokki Ekstra",
+      "items": [
+        {
+          "name": "Ekstra Sosis",
+          "price": 20,
+          "description": "",
+          "category": "Tteokbokki Ekstra"
+        },
+        {
+          "name": "Ekstra Peynir",
+          "price": 30,
+          "description": "",
+          "category": "Tteokbokki Ekstra"
+        },
+        {
+          "name": "Ekstra Corn-cheese",
+          "price": 40,
+          "description": "",
+          "category": "Tteokbokki Ekstra"
+        },
+        {
+          "name": "Ekstra Cheddar Peynir",
+          "price": 50,
+          "description": "",
+          "category": "Tteokbokki Ekstra"
+        }
+      ]
+    },
+    {
+      "name": "Tteokbokki Set",
+      "items": [
+        {
+          "name": "Tteokbokki Set",
+          "price": 400,
+          "description": "İçinde salatalık, havuç, sosis olan mini boy kimbap + Tteokbokki (매운맛)",
+          "category": "Tteokbokki Set"
+        },
+        {
+          "name": "Rose Tteokbokki Set",
+          "price": 430,
+          "description": "İçinde salatalık, havuç, sosis olan mini boy kimbap + Rose Tteokbokki (순한맛)",
+          "category": "Tteokbokki Set"
+        },
+        {
+          "name": "Rabokki Set",
+          "price": 410,
+          "description": "İçinde salatalık, havuç, sosis olan mini boy kimbap + Rabokki (매운맛)",
+          "category": "Tteokbokki Set"
+        },
+        {
+          "name": "Rose Rabokki Set",
+          "price": 440,
+          "description": "İçinde salatalık, havuç, sosis olan mini boy kimbap + Rabokki (순한맛)",
+          "category": "Tteokbokki Set"
+        }
+      ]
+    },
+    {
+      "name": "Kimbap",
+      "items": [
+        {
+          "name": "Haru Kimbap",
+          "price": 320,
+          "description": "Havuç, yumurta, salatalık, sosis, danmuci, bambu, pilav",
+          "category": "Kimbap"
+        },
+        {
+          "name": "Vegan Kimbap",
+          "price": 330,
+          "description": "Havuç, salatalık, mor lahana, danmuci, tofu, bambu, pilav",
+          "category": "Kimbap"
+        },
+        {
+          "name": "Ton Balıklı Kimbap",
+          "price": 350,
+          "description": "Havuç, salatalık, danmuci, marul, mayonezli tonbalığı, bambu, pilav",
+          "category": "Kimbap"
+        },
+        {
+          "name": "Dakgalbi Kimbap",
+          "price": 350,
+          "description": "Acı soslu tavuk, salatalık, marul, havuç, pilav",
+          "category": "Kimbap"
+        },
+        {
+          "name": "Bulgogi Kimbap",
+          "price": 360,
+          "description": "Soya soslu dana eti, salatalık, marul, havuç, pilav",
+          "category": "Kimbap"
+        },
+        {
+          "name": "Peynir Kimbap",
+          "price": 360,
+          "description": "Havuç, salatalık, cheddar peynir, kırmızı lahana, danmuci, bambu, pilav",
+          "category": "Kimbap"
+        },
+        {
+          "name": "Ekstra Kimchi",
+          "price": 130,
+          "description": "",
+          "category": "Kimbap"
+        }
+      ]
+    },
+    {
+      "name": "Kore usulü Pilav",
+      "items": [
+        {
+          "name": "Dakgalbi Bap",
+          "price": 420,
+          "description": "Tavuk, sebzeler ve baharatlı sos ile yapılan bir yemeğin pirinç üzerine konulmuş hali.",
+          "category": "Kore usulü Pilav"
+        },
+        {
+          "name": "Bulgogi Bap",
+          "price": 440,
+          "description": "Soya soslu dana eti, sebzeler ve baharatlı sos ile yapılan bir yemeğin pirinç üzerine konulmuş hali.",
+          "category": "Kore usulü Pilav"
+        },
+        {
+          "name": "Bibimbap",
+          "price": 420,
+          "description": "Havuç, kırmızı biber, kabak, mantar, ıspanak, soğan, (yumurta), pilav",
+          "category": "Kore usulü Pilav"
+        },
+        {
+          "name": "Bulgogi bibimbap",
+          "price": 440,
+          "description": "Soya soslu dana eti, havuç, kırmızı biber, kabak, mantar, ıspanak, soğan, (yumurta), pilav",
+          "category": "Kore usulü Pilav"
+        }
+      ]
+    },
+    {
+      "name": "Üçgen Kimbap",
+      "items": [
+        {
+          "name": "Ton Balıklı Üçgen Kimbap",
+          "price": 260,
+          "description": "Mayonezli ton balığı, pilav",
+          "category": "Üçgen Kimbap"
+        },
+        {
+          "name": "Dakgalbi Üçgen Kimbap",
+          "price": 260,
+          "description": "Kore usulü acı soslu tavuk, pilav",
+          "category": "Üçgen Kimbap"
+        },
+        {
+          "name": "Bulgogi Üçgen Kimbap",
+          "price": 270,
+          "description": "Soya soslu dana eti, pilav",
+          "category": "Üçgen Kimbap"
+        },
+        {
+          "name": "Kimchili Ton Balıklı Üçgen Kimbap",
+          "price": 280,
+          "description": "Kimchi, mayonezli ton balığı, pilav",
+          "category": "Üçgen Kimbap"
+        }
+      ]
+    },
+    {
+      "name": "Ramen",
+      "items": [
+        {
+          "name": "Haru Ramen",
+          "price": 350,
+          "description": "Klasik Ramen. İçerisinde havuç, kabak, mantar bulundurmaktadır.",
+          "category": "Ramen"
+        },
+        {
+          "name": "Rose Ramen",
+          "price": 360,
+          "description": "Krema ve peynir ile yapılmaktadır.",
+          "category": "Ramen"
+        }
+      ]
+    },
+    {
+      "name": "Tteokkochi",
+      "items": [
+        {
+          "name": "Sade Tteokkochi",
+          "price": 210,
+          "description": "순한맛 (Yumuşak içim/Az acı)",
+          "category": "Tteokkochi"
+        },
+        {
+          "name": "Sosisli Tteokkochi",
+          "price": 210,
+          "description": "순한맛 (Yumuşak içim/Az acı)",
+          "category": "Tteokkochi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "brainInterventions": 1,
+    "rulesApplied": 0,
+    "pipelineRulesTotal": 5,
+    "categoriesMerged": 0
+  },
+  "publishedUrl": "https://menuai.tr/m/cafeharutr",
+  "slug": "cafeharutr"
+}
