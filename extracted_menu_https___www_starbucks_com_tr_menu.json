@@ -1,0 +1,1552 @@
+{
+  "source": "Gemini Orchestrator Agent v2.0 — Self-Improving Pipeline",
+  "parsed_at": "2026-02-12T07:28:20.280Z",
+  "menu_url": "https://www.starbucks.com.tr/menu",
+  "restaurant": "Starbucks",
+  "totalItems": 233,
+  "categories": [
+    {
+      "name": "Kısa Süreliğine Seninle",
+      "items": [
+        {
+          "name": "Pistachio Latte",
+          "price": 0,
+          "description": "",
+          "category": "Kısa Süreliğine Seninle"
+        },
+        {
+          "name": "Iced Pistachio Latte",
+          "price": 0,
+          "description": "",
+          "category": "Kısa Süreliğine Seninle"
+        },
+        {
+          "name": "Fudge Brownie Iced Chocolate",
+          "price": 0,
+          "description": "",
+          "category": "Kısa Süreliğine Seninle"
+        },
+        {
+          "name": "Fudge Brownie Hot Chocolate",
+          "price": 0,
+          "description": "",
+          "category": "Kısa Süreliğine Seninle"
+        },
+        {
+          "name": "Iced Pistachio Macchiato",
+          "price": 0,
+          "description": "",
+          "category": "Kısa Süreliğine Seninle"
+        },
+        {
+          "name": "Iced Spanish Cream Matcha Latte",
+          "price": 0,
+          "description": "",
+          "category": "Kısa Süreliğine Seninle"
+        },
+        {
+          "name": "Cinnamon Dolce Latte",
+          "price": 0,
+          "description": "",
+          "category": "Kısa Süreliğine Seninle"
+        },
+        {
+          "name": "Pistachio Matcha Latte",
+          "price": 0,
+          "description": "",
+          "category": "Kısa Süreliğine Seninle"
+        },
+        {
+          "name": "Iced Cinnamon Dolce Latte",
+          "price": 0,
+          "description": "",
+          "category": "Kısa Süreliğine Seninle"
+        },
+        {
+          "name": "Iced Pistachio Matcha Latte",
+          "price": 0,
+          "description": "",
+          "category": "Kısa Süreliğine Seninle"
+        },
+        {
+          "name": "Pistachio Macchiato",
+          "price": 0,
+          "description": "",
+          "category": "Kısa Süreliğine Seninle"
+        },
+        {
+          "name": "Bademli Kruvasan",
+          "price": 0,
+          "description": "",
+          "category": "Kısa Süreliğine Seninle"
+        },
+        {
+          "name": "Starbucks Velvet",
+          "price": 0,
+          "description": "",
+          "category": "Kısa Süreliğine Seninle"
+        },
+        {
+          "name": "Tarçınlı Rulo",
+          "price": 0,
+          "description": "",
+          "category": "Kısa Süreliğine Seninle"
+        },
+        {
+          "name": "Pikan Cevizli Tarçınlı Cookie",
+          "price": 0,
+          "description": "",
+          "category": "Kısa Süreliğine Seninle"
+        },
+        {
+          "name": "Antep Fıstıklı Çikolatalı Cookie",
+          "price": 0,
+          "description": "",
+          "category": "Kısa Süreliğine Seninle"
+        }
+      ]
+    },
+    {
+      "name": "Espresso Bazlı İçecekler",
+      "items": [
+        {
+          "name": "Caffè Latte",
+          "price": 0,
+          "description": "",
+          "category": "Espresso Bazlı İçecekler"
+        },
+        {
+          "name": "Buzlu Caffè Latte",
+          "price": 0,
+          "description": "",
+          "category": "Espresso Bazlı İçecekler"
+        },
+        {
+          "name": "Ristretto Bianco",
+          "price": 0,
+          "description": "",
+          "category": "Espresso Bazlı İçecekler"
+        },
+        {
+          "name": "Cortado",
+          "price": 0,
+          "description": "",
+          "category": "Espresso Bazlı İçecekler"
+        },
+        {
+          "name": "Flat White",
+          "price": 0,
+          "description": "",
+          "category": "Espresso Bazlı İçecekler"
+        },
+        {
+          "name": "Iced Spanish Latte",
+          "price": 0,
+          "description": "",
+          "category": "Espresso Bazlı İçecekler"
+        },
+        {
+          "name": "Spanish Latte",
+          "price": 0,
+          "description": "",
+          "category": "Espresso Bazlı İçecekler"
+        },
+        {
+          "name": "Caffé Americano",
+          "price": 0,
+          "description": "",
+          "category": "Espresso Bazlı İçecekler"
+        },
+        {
+          "name": "Buzlu Caffé Americano",
+          "price": 0,
+          "description": "",
+          "category": "Espresso Bazlı İçecekler"
+        },
+        {
+          "name": "Espresso Con Panna",
+          "price": 0,
+          "description": "",
+          "category": "Espresso Bazlı İçecekler"
+        },
+        {
+          "name": "Espresso",
+          "price": 0,
+          "description": "",
+          "category": "Espresso Bazlı İçecekler"
+        },
+        {
+          "name": "Espresso Macchiato",
+          "price": 0,
+          "description": "",
+          "category": "Espresso Bazlı İçecekler"
+        },
+        {
+          "name": "Caramel Macchiato",
+          "price": 0,
+          "description": "",
+          "category": "Espresso Bazlı İçecekler"
+        },
+        {
+          "name": "Latte Macchiato",
+          "price": 0,
+          "description": "",
+          "category": "Espresso Bazlı İçecekler"
+        },
+        {
+          "name": "Buzlu Caramel Macchiato",
+          "price": 0,
+          "description": "",
+          "category": "Espresso Bazlı İçecekler"
+        },
+        {
+          "name": "White Chocolate Mocha",
+          "price": 0,
+          "description": "",
+          "category": "Espresso Bazlı İçecekler"
+        },
+        {
+          "name": "Buzlu Caffé Mocha",
+          "price": 0,
+          "description": "",
+          "category": "Espresso Bazlı İçecekler"
+        },
+        {
+          "name": "Buzlu White Chocolate Mocha",
+          "price": 0,
+          "description": "",
+          "category": "Espresso Bazlı İçecekler"
+        },
+        {
+          "name": "Caffé Mocha",
+          "price": 0,
+          "description": "",
+          "category": "Espresso Bazlı İçecekler"
+        },
+        {
+          "name": "Peppermint Mocha",
+          "price": 0,
+          "description": "",
+          "category": "Espresso Bazlı İçecekler"
+        },
+        {
+          "name": "Cappuccino",
+          "price": 0,
+          "description": "",
+          "category": "Espresso Bazlı İçecekler"
+        },
+        {
+          "name": "Buzlu Cappuccino",
+          "price": 0,
+          "description": "",
+          "category": "Espresso Bazlı İçecekler"
+        },
+        {
+          "name": "Starbucks Doubleshot™ Iced Shaken",
+          "price": 0,
+          "description": "",
+          "category": "Espresso Bazlı İçecekler"
+        },
+        {
+          "name": "Iced Brown Sugar Oat Shaken Espresso",
+          "price": 0,
+          "description": "",
+          "category": "Espresso Bazlı İçecekler"
+        }
+      ]
+    },
+    {
+      "name": "Filtre Kahveler",
+      "items": [
+        {
+          "name": "Filtre Kahve",
+          "price": 0,
+          "description": "",
+          "category": "Filtre Kahveler"
+        },
+        {
+          "name": "Cold Brew",
+          "price": 0,
+          "description": "",
+          "category": "Filtre Kahveler"
+        },
+        {
+          "name": "Cold Brew Latte",
+          "price": 0,
+          "description": "",
+          "category": "Filtre Kahveler"
+        },
+        {
+          "name": "Caffé Misto",
+          "price": 0,
+          "description": "",
+          "category": "Filtre Kahveler"
+        }
+      ]
+    },
+    {
+      "name": "Protein İçecekler",
+      "items": [
+        {
+          "name": "Iced Matcha Protein Latte",
+          "price": 0,
+          "description": "",
+          "category": "Protein İçecekler"
+        },
+        {
+          "name": "Matcha Protein Latte",
+          "price": 0,
+          "description": "",
+          "category": "Protein İçecekler"
+        },
+        {
+          "name": "Protein Latte",
+          "price": 0,
+          "description": "",
+          "category": "Protein İçecekler"
+        },
+        {
+          "name": "Iced Protein Latte",
+          "price": 0,
+          "description": "",
+          "category": "Protein İçecekler"
+        }
+      ]
+    },
+    {
+      "name": "Starbucks Refresha® Drinks",
+      "items": [
+        {
+          "name": "Berry Hibiscus Starbucks Refresha® Drink",
+          "price": 0,
+          "description": "",
+          "category": "Starbucks Refresha® Drinks"
+        },
+        {
+          "name": "Orange Mango Starbucks Refresha® Drink",
+          "price": 0,
+          "description": "",
+          "category": "Starbucks Refresha® Drinks"
+        },
+        {
+          "name": "Frozen Mango Dragon Refresha®",
+          "price": 0,
+          "description": "",
+          "category": "Starbucks Refresha® Drinks"
+        },
+        {
+          "name": "Cool Lime Starbucks Refresha® Drink",
+          "price": 0,
+          "description": "",
+          "category": "Starbucks Refresha® Drinks"
+        },
+        {
+          "name": "Mango Dragonfruit Refresha®",
+          "price": 0,
+          "description": "",
+          "category": "Starbucks Refresha® Drinks"
+        },
+        {
+          "name": "Frozen Berry Hibiscus Refresha®",
+          "price": 0,
+          "description": "",
+          "category": "Starbucks Refresha® Drinks"
+        },
+        {
+          "name": "Frozen Orange Mango Refresha®",
+          "price": 0,
+          "description": "",
+          "category": "Starbucks Refresha® Drinks"
+        },
+        {
+          "name": "Frozen Cool Lime Refresha®",
+          "price": 0,
+          "description": "",
+          "category": "Starbucks Refresha® Drinks"
+        },
+        {
+          "name": "Melon Pearls Refresha®",
+          "price": 0,
+          "description": "",
+          "category": "Starbucks Refresha® Drinks"
+        }
+      ]
+    },
+    {
+      "name": "Frappuccino® Karışım İçecekler",
+      "items": [
+        {
+          "name": "Strawberries & Cream Frappuccino®",
+          "price": 0,
+          "description": "",
+          "category": "Frappuccino® Karışım İçecekler"
+        },
+        {
+          "name": "Caramel Cream Frappuccino®",
+          "price": 0,
+          "description": "",
+          "category": "Frappuccino® Karışım İçecekler"
+        },
+        {
+          "name": "Chai Cream Frappuccino®",
+          "price": 0,
+          "description": "",
+          "category": "Frappuccino® Karışım İçecekler"
+        },
+        {
+          "name": "Vanilla Cream Frappuccino®",
+          "price": 0,
+          "description": "",
+          "category": "Frappuccino® Karışım İçecekler"
+        },
+        {
+          "name": "Java Chip Chocolate Cream Frappuccino®",
+          "price": 0,
+          "description": "",
+          "category": "Frappuccino® Karışım İçecekler"
+        },
+        {
+          "name": "Chocolate Cream Frappuccino®",
+          "price": 0,
+          "description": "",
+          "category": "Frappuccino® Karışım İçecekler"
+        },
+        {
+          "name": "Coffee Frappuccino®",
+          "price": 0,
+          "description": "",
+          "category": "Frappuccino® Karışım İçecekler"
+        },
+        {
+          "name": "Espresso Frappuccino®",
+          "price": 0,
+          "description": "",
+          "category": "Frappuccino® Karışım İçecekler"
+        },
+        {
+          "name": "White Chocolate Mocha Frappuccino®",
+          "price": 0,
+          "description": "",
+          "category": "Frappuccino® Karışım İçecekler"
+        },
+        {
+          "name": "Java Chip Frappuccino®",
+          "price": 0,
+          "description": "",
+          "category": "Frappuccino® Karışım İçecekler"
+        },
+        {
+          "name": "Caramel Frappuccino®",
+          "price": 0,
+          "description": "",
+          "category": "Frappuccino® Karışım İçecekler"
+        },
+        {
+          "name": "Mocha Frappuccino®",
+          "price": 0,
+          "description": "",
+          "category": "Frappuccino® Karışım İçecekler"
+        }
+      ]
+    },
+    {
+      "name": "Matcha ve Tea Latte",
+      "items": [
+        {
+          "name": "Matcha Latte",
+          "price": 0,
+          "description": "",
+          "category": "Matcha ve Tea Latte"
+        },
+        {
+          "name": "Iced Strawberry Matcha Latte",
+          "price": 0,
+          "description": "",
+          "category": "Matcha ve Tea Latte"
+        },
+        {
+          "name": "Iced Matcha Latte",
+          "price": 0,
+          "description": "",
+          "category": "Matcha ve Tea Latte"
+        },
+        {
+          "name": "Chai Tea Latte",
+          "price": 0,
+          "description": "",
+          "category": "Matcha ve Tea Latte"
+        },
+        {
+          "name": "Buzlu Chai Tea Latte",
+          "price": 0,
+          "description": "",
+          "category": "Matcha ve Tea Latte"
+        }
+      ]
+    },
+    {
+      "name": "Starbucks® Çay Çeşitleri",
+      "items": [
+        {
+          "name": "Türk Çayı",
+          "price": 0,
+          "description": "",
+          "category": "Starbucks® Çay Çeşitleri"
+        }
+      ]
+    },
+    {
+      "name": "Türk Kahvesi",
+      "items": [
+        {
+          "name": "Türk Kahvesi",
+          "price": 0,
+          "description": "",
+          "category": "Türk Kahvesi"
+        },
+        {
+          "name": "Duble Türk Kahvesi",
+          "price": 0,
+          "description": "",
+          "category": "Türk Kahvesi"
+        }
+      ]
+    },
+    {
+      "name": "Sıcak Çikolata",
+      "items": [
+        {
+          "name": "Signature Hazelnut Hot Chocolate",
+          "price": 0,
+          "description": "",
+          "category": "Sıcak Çikolata"
+        },
+        {
+          "name": "Signature Caramel Hot Chocolate",
+          "price": 0,
+          "description": "",
+          "category": "Sıcak Çikolata"
+        },
+        {
+          "name": "Signature Hot Chocolate",
+          "price": 0,
+          "description": "",
+          "category": "Sıcak Çikolata"
+        },
+        {
+          "name": "Classic Hot Chocolate",
+          "price": 0,
+          "description": "",
+          "category": "Sıcak Çikolata"
+        },
+        {
+          "name": "White Hot Chocolate",
+          "price": 0,
+          "description": "",
+          "category": "Sıcak Çikolata"
+        }
+      ]
+    },
+    {
+      "name": "Dondurmalı İçecekler",
+      "items": [
+        {
+          "name": "Affogato",
+          "price": 0,
+          "description": "",
+          "category": "Dondurmalı İçecekler"
+        },
+        {
+          "name": "Cold Brew Float",
+          "price": 0,
+          "description": "",
+          "category": "Dondurmalı İçecekler"
+        }
+      ]
+    },
+    {
+      "name": "Portakal Suyu",
+      "items": [
+        {
+          "name": "Portakal Suyu",
+          "price": 0,
+          "description": "",
+          "category": "Portakal Suyu"
+        }
+      ]
+    },
+    {
+      "name": "Şişelenmiş İçecekler",
+      "items": [
+        {
+          "name": "Feel More Karışık Meyve Suyu",
+          "price": 0,
+          "description": "",
+          "category": "Şişelenmiş İçecekler"
+        },
+        {
+          "name": "Akmina Mineralli Su",
+          "price": 0,
+          "description": "",
+          "category": "Şişelenmiş İçecekler"
+        },
+        {
+          "name": "Beyoğlu Turuncu",
+          "price": 0,
+          "description": "",
+          "category": "Şişelenmiş İçecekler"
+        },
+        {
+          "name": "San Pellegrino",
+          "price": 0,
+          "description": "",
+          "category": "Şişelenmiş İçecekler"
+        },
+        {
+          "name": "Feel More Nar Suyu",
+          "price": 0,
+          "description": "",
+          "category": "Şişelenmiş İçecekler"
+        },
+        {
+          "name": "Su",
+          "price": 0,
+          "description": "",
+          "category": "Şişelenmiş İçecekler"
+        },
+        {
+          "name": "Beyoğlu Limon",
+          "price": 0,
+          "description": "",
+          "category": "Şişelenmiş İçecekler"
+        },
+        {
+          "name": "Feel More Limonata",
+          "price": 0,
+          "description": "",
+          "category": "Şişelenmiş İçecekler"
+        },
+        {
+          "name": "Feel More Karpuzlu Limonata",
+          "price": 0,
+          "description": "",
+          "category": "Şişelenmiş İçecekler"
+        }
+      ]
+    },
+    {
+      "name": "Cheesecakeler",
+      "items": [
+        {
+          "name": "Limonlu Cheesecake",
+          "price": 0,
+          "description": "",
+          "category": "Cheesecakeler"
+        },
+        {
+          "name": "Brownie Cheesecake",
+          "price": 0,
+          "description": "",
+          "category": "Cheesecakeler"
+        },
+        {
+          "name": "Ahududulu Cheesecake",
+          "price": 0,
+          "description": "",
+          "category": "Cheesecakeler"
+        }
+      ]
+    },
+    {
+      "name": "Pasta ve Kekler",
+      "items": [
+        {
+          "name": "Kahveli Pasta",
+          "price": 0,
+          "description": "",
+          "category": "Pasta ve Kekler"
+        },
+        {
+          "name": "Belçika Çikolatalı Pasta",
+          "price": 0,
+          "description": "",
+          "category": "Pasta ve Kekler"
+        },
+        {
+          "name": "Kremalı Havuçlu Kek",
+          "price": 0,
+          "description": "",
+          "category": "Pasta ve Kekler"
+        },
+        {
+          "name": "Starbucks Brownie",
+          "price": 0,
+          "description": "",
+          "category": "Pasta ve Kekler"
+        },
+        {
+          "name": "Limonlu Kek",
+          "price": 0,
+          "description": "",
+          "category": "Pasta ve Kekler"
+        },
+        {
+          "name": "Mozaik Kek",
+          "price": 0,
+          "description": "",
+          "category": "Pasta ve Kekler"
+        },
+        {
+          "name": "Tiramisu",
+          "price": 0,
+          "description": "",
+          "category": "Pasta ve Kekler"
+        },
+        {
+          "name": "Havuçlu Cevizli Kek",
+          "price": 0,
+          "description": "",
+          "category": "Pasta ve Kekler"
+        }
+      ]
+    },
+    {
+      "name": "Muffin & Cookie",
+      "items": [
+        {
+          "name": "Belçika Çikolatalı Muffin",
+          "price": 0,
+          "description": "",
+          "category": "Muffin & Cookie"
+        },
+        {
+          "name": "Very Berry Muffin",
+          "price": 0,
+          "description": "",
+          "category": "Muffin & Cookie"
+        },
+        {
+          "name": "Triple Chocolate Cookie",
+          "price": 0,
+          "description": "",
+          "category": "Muffin & Cookie"
+        },
+        {
+          "name": "Misto Cookie",
+          "price": 0,
+          "description": "",
+          "category": "Muffin & Cookie"
+        },
+        {
+          "name": "Dopdolu Fit Cookie",
+          "price": 0,
+          "description": "",
+          "category": "Muffin & Cookie"
+        },
+        {
+          "name": "Dolgulu Üçgen Kurabiye",
+          "price": 0,
+          "description": "",
+          "category": "Muffin & Cookie"
+        }
+      ]
+    },
+    {
+      "name": "Kahvaltılık Ürünler",
+      "items": [
+        {
+          "name": "Zeytinli Açma",
+          "price": 0,
+          "description": "",
+          "category": "Kahvaltılık Ürünler"
+        },
+        {
+          "name": "Tahıllı Peynirli Poğaça",
+          "price": 0,
+          "description": "",
+          "category": "Kahvaltılık Ürünler"
+        },
+        {
+          "name": "Çikolatalı Kruvasan",
+          "price": 0,
+          "description": "",
+          "category": "Kahvaltılık Ürünler"
+        },
+        {
+          "name": "Peynirli Simit",
+          "price": 0,
+          "description": "",
+          "category": "Kahvaltılık Ürünler"
+        },
+        {
+          "name": "Peynirli Kruvasan",
+          "price": 0,
+          "description": "",
+          "category": "Kahvaltılık Ürünler"
+        }
+      ]
+    },
+    {
+      "name": "Sandviçler",
+      "items": [
+        {
+          "name": "Füme Etli Jambonlu Açma Sandviç",
+          "price": 0,
+          "description": "",
+          "category": "Sandviçler"
+        },
+        {
+          "name": "Haşhaşlı Üç Peynirli",
+          "price": 0,
+          "description": "",
+          "category": "Sandviçler"
+        },
+        {
+          "name": "Tavuklu Wrap",
+          "price": 0,
+          "description": "",
+          "category": "Sandviçler"
+        },
+        {
+          "name": "3 Lezzetli Focaccia",
+          "price": 0,
+          "description": "",
+          "category": "Sandviçler"
+        },
+        {
+          "name": "Peynirli Mücver Sandviç",
+          "price": 0,
+          "description": "",
+          "category": "Sandviçler"
+        },
+        {
+          "name": "Mozzarella Sandviç",
+          "price": 0,
+          "description": "",
+          "category": "Sandviçler"
+        },
+        {
+          "name": "Hindi Fümeli Baget Sandviç",
+          "price": 0,
+          "description": "",
+          "category": "Sandviçler"
+        },
+        {
+          "name": "Ezine Peynirli Sandviç",
+          "price": 0,
+          "description": "",
+          "category": "Sandviçler"
+        },
+        {
+          "name": "Hindi Füme Jambonlu",
+          "price": 0,
+          "description": "",
+          "category": "Sandviçler"
+        },
+        {
+          "name": "Çıtır Pane Ciabatta",
+          "price": 0,
+          "description": "",
+          "category": "Sandviçler"
+        },
+        {
+          "name": "Dört Peynirli Tostie",
+          "price": 0,
+          "description": "",
+          "category": "Sandviçler"
+        },
+        {
+          "name": "Dana Jambonlu Tostie",
+          "price": 0,
+          "description": "",
+          "category": "Sandviçler"
+        },
+        {
+          "name": "Tavuklu ve Mantarlı Sandviç",
+          "price": 0,
+          "description": "",
+          "category": "Sandviçler"
+        }
+      ]
+    },
+    {
+      "name": "Salata ve Parfeler",
+      "items": [
+        {
+          "name": "Izgara Tavuklu Salata",
+          "price": 0,
+          "description": "",
+          "category": "Salata ve Parfeler"
+        },
+        {
+          "name": "Meyveli Yulaf Lapası",
+          "price": 0,
+          "description": "Vegan tüketimine uygun",
+          "category": "Salata ve Parfeler"
+        },
+        {
+          "name": "Meyveli ve Yoğurtlu Parfe",
+          "price": 0,
+          "description": "",
+          "category": "Salata ve Parfeler"
+        },
+        {
+          "name": "Kuru Meyveli Granola",
+          "price": 0,
+          "description": "Laktozsuz",
+          "category": "Salata ve Parfeler"
+        },
+        {
+          "name": "Chia Tohumlu Parfe",
+          "price": 0,
+          "description": "",
+          "category": "Salata ve Parfeler"
+        }
+      ]
+    },
+    {
+      "name": "Atıştırmalıklar",
+      "items": [
+        {
+          "name": "Pol's Kurutulmuş Çilek",
+          "price": 0,
+          "description": "",
+          "category": "Atıştırmalıklar"
+        },
+        {
+          "name": "Starbucks® Caramel Waffle",
+          "price": 0,
+          "description": "",
+          "category": "Atıştırmalıklar"
+        },
+        {
+          "name": "Starbucks® Bitter Çikolata",
+          "price": 0,
+          "description": "",
+          "category": "Atıştırmalıklar"
+        },
+        {
+          "name": "Starbucks® Çikolatalı Glutensiz Kurabiye",
+          "price": 0,
+          "description": "",
+          "category": "Atıştırmalıklar"
+        },
+        {
+          "name": "Starbucks® Glutensiz Chia Tohumlu Grissini",
+          "price": 0,
+          "description": "",
+          "category": "Atıştırmalıklar"
+        },
+        {
+          "name": "ZBARZ Limonlu Hindistan Cevizli Protein Bar",
+          "price": 0,
+          "description": "",
+          "category": "Atıştırmalıklar"
+        },
+        {
+          "name": "Glutensiz Bitter Çikolatalı Brownie",
+          "price": 0,
+          "description": "",
+          "category": "Atıştırmalıklar"
+        },
+        {
+          "name": "ZBARZ Yer Fıstıklı Protein Bar",
+          "price": 0,
+          "description": "",
+          "category": "Atıştırmalıklar"
+        },
+        {
+          "name": "Eti Wafe'up Gofret",
+          "price": 0,
+          "description": "",
+          "category": "Atıştırmalıklar"
+        },
+        {
+          "name": "Starbucks® Mini Triple Chocolate Cookies",
+          "price": 0,
+          "description": "",
+          "category": "Atıştırmalıklar"
+        },
+        {
+          "name": "Starbucks® Mini Brownies",
+          "price": 0,
+          "description": "",
+          "category": "Atıştırmalıklar"
+        },
+        {
+          "name": "Starbucks® Sütlü Çikolata",
+          "price": 0,
+          "description": "",
+          "category": "Atıştırmalıklar"
+        },
+        {
+          "name": "Krem Peynirli Wasa",
+          "price": 0,
+          "description": "",
+          "category": "Atıştırmalıklar"
+        },
+        {
+          "name": "Starbucks® Sakız",
+          "price": 0,
+          "description": "",
+          "category": "Atıştırmalıklar"
+        },
+        {
+          "name": "Starbucks® Sütlü Para Çikolata",
+          "price": 0,
+          "description": "",
+          "category": "Atıştırmalıklar"
+        },
+        {
+          "name": "Starbucks® Mini Cookies",
+          "price": 0,
+          "description": "",
+          "category": "Atıştırmalıklar"
+        },
+        {
+          "name": "Starbucks® Karışık Kuruyemiş ve Kuru Meyve",
+          "price": 0,
+          "description": "",
+          "category": "Atıştırmalıklar"
+        },
+        {
+          "name": "Starbucks® Tereyağlı Kurabiye",
+          "price": 0,
+          "description": "",
+          "category": "Atıştırmalıklar"
+        },
+        {
+          "name": "Starbucks® Makaron",
+          "price": 0,
+          "description": "",
+          "category": "Atıştırmalıklar"
+        },
+        {
+          "name": "Granola Bar",
+          "price": 0,
+          "description": "",
+          "category": "Atıştırmalıklar"
+        },
+        {
+          "name": "Tuzlu Mini Kruvasan",
+          "price": 0,
+          "description": "",
+          "category": "Atıştırmalıklar"
+        },
+        {
+          "name": "Cevizli Glutensiz Kurabiye",
+          "price": 0,
+          "description": "",
+          "category": "Atıştırmalıklar"
+        },
+        {
+          "name": "Kayısılı, Çikolatalı Kuru Meyve Diski",
+          "price": 0,
+          "description": "",
+          "category": "Atıştırmalıklar"
+        },
+        {
+          "name": "Fındıklı, Hurmalı Kuru Meyve Diski",
+          "price": 0,
+          "description": "",
+          "category": "Atıştırmalıklar"
+        },
+        {
+          "name": "İncirli, Cevizli Kuru Meyve Diski",
+          "price": 0,
+          "description": "",
+          "category": "Atıştırmalıklar"
+        }
+      ]
+    },
+    {
+      "name": "Fırın Lezzetleri",
+      "items": [
+        {
+          "name": "Tereyağlı Kruvasan",
+          "price": 0,
+          "description": "",
+          "category": "Fırın Lezzetleri"
+        },
+        {
+          "name": "Zeytin Ezmeli ve Kuru Domatesli Açma",
+          "price": 0,
+          "description": "",
+          "category": "Fırın Lezzetleri"
+        },
+        {
+          "name": "Kaşarlı Susamlı Poğaça",
+          "price": 0,
+          "description": "",
+          "category": "Fırın Lezzetleri"
+        },
+        {
+          "name": "Tereyağlı Çikolatalı Kruvasan",
+          "price": 0,
+          "description": "",
+          "category": "Fırın Lezzetleri"
+        },
+        {
+          "name": "Dereotlu Scone Poğaça",
+          "price": 0,
+          "description": "",
+          "category": "Fırın Lezzetleri"
+        },
+        {
+          "name": "Portakallı Çörek",
+          "price": 0,
+          "description": "",
+          "category": "Fırın Lezzetleri"
+        }
+      ]
+    },
+    {
+      "name": "Çekirdek Kahveler",
+      "items": [
+        {
+          "name": "Veranda Blend®",
+          "price": 0,
+          "description": "",
+          "category": "Çekirdek Kahveler"
+        },
+        {
+          "name": "Starbucks Blonde® Espresso Roast",
+          "price": 0,
+          "description": "",
+          "category": "Çekirdek Kahveler"
+        },
+        {
+          "name": "Colombia Nariño",
+          "price": 0,
+          "description": "",
+          "category": "Çekirdek Kahveler"
+        },
+        {
+          "name": "House Blend",
+          "price": 0,
+          "description": "",
+          "category": "Çekirdek Kahveler"
+        },
+        {
+          "name": "Guatemala Antigua",
+          "price": 0,
+          "description": "",
+          "category": "Çekirdek Kahveler"
+        },
+        {
+          "name": "Kenya",
+          "price": 0,
+          "description": "",
+          "category": "Çekirdek Kahveler"
+        },
+        {
+          "name": "Ethiopia",
+          "price": 0,
+          "description": "",
+          "category": "Çekirdek Kahveler"
+        },
+        {
+          "name": "Pike Place® Roast",
+          "price": 0,
+          "description": "",
+          "category": "Çekirdek Kahveler"
+        },
+        {
+          "name": "Sumatra",
+          "price": 0,
+          "description": "",
+          "category": "Çekirdek Kahveler"
+        },
+        {
+          "name": "Starbucks® Decaf Espresso Roast",
+          "price": 0,
+          "description": "",
+          "category": "Çekirdek Kahveler"
+        },
+        {
+          "name": "Caffé Verona",
+          "price": 0,
+          "description": "",
+          "category": "Çekirdek Kahveler"
+        },
+        {
+          "name": "Starbucks® Espresso Roast",
+          "price": 0,
+          "description": "",
+          "category": "Çekirdek Kahveler"
+        }
+      ]
+    },
+    {
+      "name": "VIA",
+      "items": [
+        {
+          "name": "VIA® Colombia",
+          "price": 0,
+          "description": "",
+          "category": "VIA"
+        },
+        {
+          "name": "VIA® Italian Roast",
+          "price": 0,
+          "description": "",
+          "category": "VIA"
+        }
+      ]
+    },
+    {
+      "name": "Kapsül Kahveler",
+      "items": [
+        {
+          "name": "Starbucks® Kapsül Decaf Espresso",
+          "price": 0,
+          "description": "",
+          "category": "Kapsül Kahveler"
+        },
+        {
+          "name": "Starbucks® Kapsül Sumatra",
+          "price": 0,
+          "description": "",
+          "category": "Kapsül Kahveler"
+        },
+        {
+          "name": "Starbucks® Kapsül Espresso Roast",
+          "price": 0,
+          "description": "",
+          "category": "Kapsül Kahveler"
+        },
+        {
+          "name": "Starbucks® Kapsül Colombia",
+          "price": 0,
+          "description": "",
+          "category": "Kapsül Kahveler"
+        },
+        {
+          "name": "Starbucks® Kapsül Pike Place",
+          "price": 0,
+          "description": "",
+          "category": "Kapsül Kahveler"
+        },
+        {
+          "name": "Starbucks® Kapsül House Blend",
+          "price": 0,
+          "description": "",
+          "category": "Kapsül Kahveler"
+        },
+        {
+          "name": "Starbucks® Kapsül Caffè Verona",
+          "price": 0,
+          "description": "",
+          "category": "Kapsül Kahveler"
+        },
+        {
+          "name": "Starbucks® Kapsül Blonde Espresso Roast",
+          "price": 0,
+          "description": "",
+          "category": "Kapsül Kahveler"
+        },
+        {
+          "name": "Starbucks® Kapsül Smooth Caramel",
+          "price": 0,
+          "description": "",
+          "category": "Kapsül Kahveler"
+        },
+        {
+          "name": "Starbucks® Kapsül Creamy Vanilla",
+          "price": 0,
+          "description": "",
+          "category": "Kapsül Kahveler"
+        }
+      ]
+    },
+    {
+      "name": "Her Zaman Seninle",
+      "items": [
+        {
+          "name": "Starbucks® Yaprak Desenli Termos",
+          "price": 0,
+          "description": "",
+          "category": "Her Zaman Seninle"
+        },
+        {
+          "name": "Starbucks® Klasik Seri Termos - Mat Siyah Renkli 473ml",
+          "price": 0,
+          "description": "",
+          "category": "Her Zaman Seninle"
+        },
+        {
+          "name": "Starbucks® Klasik Seri Termos - Yeşil Renkli 444ml",
+          "price": 0,
+          "description": "",
+          "category": "Her Zaman Seninle"
+        },
+        {
+          "name": "Starbucks® Dalga Desenli Termos",
+          "price": 0,
+          "description": "",
+          "category": "Her Zaman Seninle"
+        },
+        {
+          "name": "Starbucks® Yeşil Benekli Su Şişesi",
+          "price": 0,
+          "description": "",
+          "category": "Her Zaman Seninle"
+        },
+        {
+          "name": "Starbucks® Klasik Seri Termos - Mat Yeşil - Siyah Renkli 355ml",
+          "price": 0,
+          "description": "",
+          "category": "Her Zaman Seninle"
+        },
+        {
+          "name": "Starbucks® Klasik Seri Termos - Yarı saydam Yeşil Renkli 355ml",
+          "price": 0,
+          "description": "",
+          "category": "Her Zaman Seninle"
+        },
+        {
+          "name": "Starbucks® Paslanmaz Çelik Damalı Yeşil Termos",
+          "price": 0,
+          "description": "",
+          "category": "Her Zaman Seninle"
+        },
+        {
+          "name": "Starbucks® Yeşil Ombre Termos",
+          "price": 0,
+          "description": "",
+          "category": "Her Zaman Seninle"
+        },
+        {
+          "name": "Starbucks® Plastik Damalı Termos",
+          "price": 0,
+          "description": "",
+          "category": "Her Zaman Seninle"
+        },
+        {
+          "name": "Starbucks® Klasik Seri Termos - Gri-Yeşil Renkli 473ml",
+          "price": 0,
+          "description": "",
+          "category": "Her Zaman Seninle"
+        },
+        {
+          "name": "Starbucks® Klasik Seri Kupa - Gri 355ml",
+          "price": 0,
+          "description": "",
+          "category": "Her Zaman Seninle"
+        },
+        {
+          "name": "Starbucks® Siyah Blok Kupa 325 ml",
+          "price": 0,
+          "description": "",
+          "category": "Her Zaman Seninle"
+        },
+        {
+          "name": "Starbucks® Yeşil Kenarlı Kupa",
+          "price": 0,
+          "description": "",
+          "category": "Her Zaman Seninle"
+        },
+        {
+          "name": "Starbucks® Klasik Seri Kupa - Gri 89ml",
+          "price": 0,
+          "description": "",
+          "category": "Her Zaman Seninle"
+        },
+        {
+          "name": "Starbucks® Mermer Görünümlü Seramik Kupa",
+          "price": 0,
+          "description": "",
+          "category": "Her Zaman Seninle"
+        },
+        {
+          "name": "Starbucks® Çift Kapaklı Soğuk İçecek Bardağı",
+          "price": 0,
+          "description": "",
+          "category": "Her Zaman Seninle"
+        },
+        {
+          "name": "Starbucks® Harfli Siyah Soğuk İçecek Bardağı",
+          "price": 0,
+          "description": "",
+          "category": "Her Zaman Seninle"
+        },
+        {
+          "name": "Starbucks® Puslu Yeşil Soğuk İçecek Bardağı",
+          "price": 0,
+          "description": "",
+          "category": "Her Zaman Seninle"
+        },
+        {
+          "name": "Starbucks® Klasik Seri Soğuk İçecek Bardağı - Mermer Efektli - 473ml",
+          "price": 0,
+          "description": "",
+          "category": "Her Zaman Seninle"
+        },
+        {
+          "name": "Starbucks® Klasik Seri Soğuk İçecek Bardağı-Şeffaf 710 ml",
+          "price": 0,
+          "description": "",
+          "category": "Her Zaman Seninle"
+        },
+        {
+          "name": "Starbucks® Alacalı Soğuk İçecek Bardağı",
+          "price": 0,
+          "description": "",
+          "category": "Her Zaman Seninle"
+        },
+        {
+          "name": "Starbucks® Klasik Seri Soğuk İçecek Bardağı-Metalik Yeşil 473ml",
+          "price": 0,
+          "description": "",
+          "category": "Her Zaman Seninle"
+        },
+        {
+          "name": "Starbucks® 2'li Türk Kahvesi Sunum Seti",
+          "price": 0,
+          "description": "",
+          "category": "Her Zaman Seninle"
+        },
+        {
+          "name": "Starbucks® Türk Çayı Sunum Seti",
+          "price": 0,
+          "description": "",
+          "category": "Her Zaman Seninle"
+        },
+        {
+          "name": "Starbucks® Sıcak İçecek Bardağı Şekilli Anahtarlık",
+          "price": 0,
+          "description": "",
+          "category": "Her Zaman Seninle"
+        },
+        {
+          "name": "Starbucks® Soğuk İçecek Bardağı Şekilli Anahtarlık",
+          "price": 0,
+          "description": "",
+          "category": "Her Zaman Seninle"
+        },
+        {
+          "name": "Starbucks® Reusable Cup",
+          "price": 0,
+          "description": "",
+          "category": "Her Zaman Seninle"
+        }
+      ]
+    },
+    {
+      "name": "Demleme Ekipmanları",
+      "items": [
+        {
+          "name": "Chemex",
+          "price": 0,
+          "description": "",
+          "category": "Demleme Ekipmanları"
+        },
+        {
+          "name": "Coffee Press",
+          "price": 0,
+          "description": "",
+          "category": "Demleme Ekipmanları"
+        },
+        {
+          "name": "Pour Over",
+          "price": 0,
+          "description": "",
+          "category": "Demleme Ekipmanları"
+        }
+      ]
+    },
+    {
+      "name": "Şehir Temalı Kupalar",
+      "items": [
+        {
+          "name": "Starbucks® İstanbul Konseptli Termos",
+          "price": 0,
+          "description": "",
+          "category": "Şehir Temalı Kupalar"
+        },
+        {
+          "name": "Starbucks® Şehir Temalı Kupa Serisi – Türkiye",
+          "price": 0,
+          "description": "",
+          "category": "Şehir Temalı Kupalar"
+        },
+        {
+          "name": "Starbucks® Şehir Temalı Termos – Türkiye",
+          "price": 0,
+          "description": "",
+          "category": "Şehir Temalı Kupalar"
+        },
+        {
+          "name": "Starbucks® Şehir Temalı Kupa Serisi – Bodrum",
+          "price": 0,
+          "description": "",
+          "category": "Şehir Temalı Kupalar"
+        },
+        {
+          "name": "Starbucks® Şehir Temalı Kupa Serisi – Ankara",
+          "price": 0,
+          "description": "",
+          "category": "Şehir Temalı Kupalar"
+        },
+        {
+          "name": "Starbucks® Şehir Temalı Kupa Serisi – İstanbul",
+          "price": 0,
+          "description": "",
+          "category": "Şehir Temalı Kupalar"
+        },
+        {
+          "name": "Starbucks® Şehir Temalı Kupa Serisi – Antalya",
+          "price": 0,
+          "description": "",
+          "category": "Şehir Temalı Kupalar"
+        },
+        {
+          "name": "Starbucks® Şehir Temalı Kupa Serisi – İzmir",
+          "price": 0,
+          "description": "",
+          "category": "Şehir Temalı Kupalar"
+        },
+        {
+          "name": "Starbucks® Şehir Temalı Kupa Serisi – Adana",
+          "price": 0,
+          "description": "",
+          "category": "Şehir Temalı Kupalar"
+        },
+        {
+          "name": "Starbucks® Şehir Temalı Kupa Serisi – Bursa",
+          "price": 0,
+          "description": "",
+          "category": "Şehir Temalı Kupalar"
+        },
+        {
+          "name": "Starbucks® Şehir Temalı Kupa Serisi – Kapadokya",
+          "price": 0,
+          "description": "",
+          "category": "Şehir Temalı Kupalar"
+        }
+      ]
+    },
+    {
+      "name": "Demleme Yöntemleri",
+      "items": [
+        {
+          "name": "Syphon",
+          "price": 0,
+          "description": "",
+          "category": "Demleme Yöntemleri"
+        },
+        {
+          "name": "Clover",
+          "price": 0,
+          "description": "",
+          "category": "Demleme Yöntemleri"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "brainInterventions": 0,
+    "rulesApplied": 0,
+    "pipelineRulesTotal": 2
+  }
+}

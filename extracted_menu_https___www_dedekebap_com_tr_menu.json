@@ -1,0 +1,894 @@
+{
+  "source": "Gemini Orchestrator Agent v2.0 — Self-Improving Pipeline",
+  "parsed_at": "2026-02-12T08:53:37.086Z",
+  "menu_url": "https://www.dedekebap.com.tr/menu",
+  "restaurant": "Dedekebap",
+  "totalItems": 138,
+  "categories": [
+    {
+      "name": "Kebaplar",
+      "items": [
+        {
+          "name": "Adana Kebap",
+          "price": 690,
+          "description": "170 gr Satır El Kıyması, 1 Maşa Makarna, Fındık Lahmacun, Mevsim Salata, Yeşillik Tabağı, Ezme, İstanbul Salatası, Humus, Süzme Yoğurt, Aşk Acısı, Çiğ Soğan Salatası, Pişmiş Soğan",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "Yağlı Kara",
+          "price": 850,
+          "description": "220 GR Kuzu Buttan Çıkan Özel Bir Spesiyal,makarna,mantar,fındık lahmacun,mevsim salata,yeşillik tabağı,ezme salata,çiğ soğan salatası,pişmiş soğan,istanbul salatası,aşk acısı,süzme yoğur,humus",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "2'li Karışık Izgara",
+          "price": 2400,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "Sebzeli Kebap",
+          "price": 950,
+          "description": "260 gr (200 gr etten harici kapya kırmızı biber,soğan,sarımsaktan oluşur) makarna, mantar, fındık lahmacun,mevsim salata, yeşillik tabağı,ezme salata,çiğ soğan salatası, pişmiş soğan, istanbul salatası,aşk acısı, süzme yoğurt, humus.",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "Patlıcan Kebabı",
+          "price": 950,
+          "description": "250 gr etten oluşan esar miktarda beyaz soğan, patlıcan eşliğinde. Makarna, mantar, fındık lahmacun,mevsim salata, yeşillik tabağı, ezme salata, çiğ soğan salatası, pişmiş soğan, istanbul salatası,aşk acısı, süzme yoğurt,humus.",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "Cevizli Ve Hellimli Kebap",
+          "price": 980,
+          "description": "250 gr satır el kıyması, harici ceviz, hellim peyniri, sarımsak,kapya biber ve soğandan oluşmakta. Makarna, mantar, fındık lahmacun, mevsim salata, yeşillik tabağı, ezme salata, çiğ soğan salatası, pişmiş soğan, istanbul salatası, aşk acısı, süzme yoğurt, humus.",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "Nefes Alan Kebap",
+          "price": 1200,
+          "description": "300 gr satır el kıymasından oluşmaktadır.Makarna, mantar, fındık lahmacun, mevsim salata, yeşillik tabağı, ezme salata, çiğ soğan salatası, pişmiş soğan, istanbul salatası, aşk acısı, süzme yoğurt, humus.",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "Kemikli Tavuk",
+          "price": 690,
+          "description": "350 gr tavuk buttan oluşmakta.Makarna, mantar, fındık lahmacun, mevsim salata,yeşillik tabağı, ezme salata, çiğ soğan salatası, pişmiş soğan,istanbul salatası, aşk acısı,süzme yoğurt,humus.",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "Kemiksiz Tavuk",
+          "price": 690,
+          "description": "300 gr tavuk gögsünden oluşmakda.Makarna, mantar, fındık lahmcun, mevsim salata,yeşillik tabağı, ezme salata, çiğ soğan salatası, pişmiş soğan, istanbul salatası, aşk acısı, süzme yoğurt,humus.",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "Tavuk Pirzola",
+          "price": 690,
+          "description": "300 gr Tavuk butundan oluşmakda.Makarna, mantar, fındık lahmacun, mevsim salata, yeşillik tabağı ezme salata,çiğ soğan salatası, pişmilş soğan, istanbul salatası, aşk acısı, süzme yoğurt, humus.",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "Kanat",
+          "price": 690,
+          "description": "300 GR Tavuk kanattan oluşmaktadır.Makarna, mantar, fındık lahmacun, mevsim salata, yeşillik tabağı, ezme salata, çiğ sogan salatası, pişmiş soğan, istanbul salatası, aşk acısı, süzme yoğurt, humus.",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "Çöp Şiş",
+          "price": 690,
+          "description": "170 gr et, Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "Kuşbaşı",
+          "price": 690,
+          "description": "180 gr et, Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "Ciğer",
+          "price": 690,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "Beyti",
+          "price": 950,
+          "description": "220 gr et, Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "Kuzu Kaburga",
+          "price": 690,
+          "description": "180 gr et. Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "Kuzu Kaburga Kemikli",
+          "price": 850,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "Dallas Steak",
+          "price": 1450,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "T-Bone Steak",
+          "price": 1450,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "Newyork Steak",
+          "price": 1450,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "Antrikot",
+          "price": 1450,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "Dana Lokum",
+          "price": 1000,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "Porter House",
+          "price": 1950,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "Şaşlık",
+          "price": 950,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "Kasap Köfte",
+          "price": 650,
+          "description": "Makarna, Mantar, Patates Cipsi, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "Dedem Sarma",
+          "price": 650,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "Tereyağlı Lokum",
+          "price": 1450,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "Kaşarlı Köfte",
+          "price": 650,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "Kuzu Pirzola",
+          "price": 950,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "Kuzu Sırt",
+          "price": 900,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "Perde Yağlı Bonfile",
+          "price": 950,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "Yaprak Steak",
+          "price": 950,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "Et Spagetti",
+          "price": 950,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "Kuzu Kafes",
+          "price": 3800,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "Kuzu Küşleme",
+          "price": 1000,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "Sucuk",
+          "price": 595,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "Makarna Menü",
+          "price": 580,
+          "description": "",
+          "category": "Görüntüle"
+        },
+        {
+          "name": "Mantar Menü",
+          "price": 580,
+          "description": "",
+          "category": "Görüntüle"
+        }
+      ]
+    },
+    {
+      "name": "Burger",
+      "items": [
+        {
+          "name": "Steak Burger",
+          "price": 550,
+          "description": "Makarna, Mantar, Patates Cipsi, Köz Patlıcanlı Süzme Yoğurt, Yeşillik Tabağı, Sos tabağı",
+          "category": "Burger"
+        },
+        {
+          "name": "Ottoman Burger",
+          "price": 900,
+          "description": "Makarna, Mantar, Patates Cipsi, Köz Patlıcanlı Süzme Yoğurt, Yeşillik Tabağı, Sos tabağı",
+          "category": "Burger"
+        },
+        {
+          "name": "Lokum Burger",
+          "price": 900,
+          "description": "Makarna, Mantar, Patates Cipsi, Köz Patlıcanlı Süzme Yoğurt, Yeşillik Tabağı, Sos tabağı",
+          "category": "Burger"
+        },
+        {
+          "name": "Mushroom Burger",
+          "price": 650,
+          "description": "",
+          "category": "Burger"
+        },
+        {
+          "name": "Dede Burger",
+          "price": 550,
+          "description": "",
+          "category": "Burger"
+        }
+      ]
+    },
+    {
+      "name": "Taş Fırın",
+      "items": [
+        {
+          "name": "Büryan",
+          "price": 850,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Taş Fırın"
+        },
+        {
+          "name": "Lahmacun Antep",
+          "price": 550,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Taş Fırın"
+        },
+        {
+          "name": "Lahmacun Adana",
+          "price": 490,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Taş Fırın"
+        },
+        {
+          "name": "Kaşarlı Pide",
+          "price": 490,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Taş Fırın"
+        },
+        {
+          "name": "Kuşbaşılı Pide",
+          "price": 700,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Taş Fırın"
+        },
+        {
+          "name": "Kıymalı Pide",
+          "price": 500,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Taş Fırın"
+        },
+        {
+          "name": "Kaşarlı Kuşbaşılı Pide",
+          "price": 800,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Taş Fırın"
+        },
+        {
+          "name": "Sebzeli Kaşarlı Pide",
+          "price": 500,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Taş Fırın"
+        },
+        {
+          "name": "Fındık Lahmacun",
+          "price": 490,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Taş Fırın"
+        },
+        {
+          "name": "Dana Asado",
+          "price": 1450,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Taş Fırın"
+        },
+        {
+          "name": "Kuzu İncik",
+          "price": 900,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Taş Fırın"
+        },
+        {
+          "name": "Kuzu Kol",
+          "price": 900,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Taş Fırın"
+        },
+        {
+          "name": "Kuzu Gerdan",
+          "price": 900,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Taş Fırın"
+        },
+        {
+          "name": "Tek Adana Lahmacun",
+          "price": 150,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Taş Fırın"
+        },
+        {
+          "name": "Tek Antep Lahmacun",
+          "price": 250,
+          "description": "Makarna, Mantar, Ezme Salata, Soğan Salata, Köz Patlıcanlı Süzme Yoğurt, Pişmiş Soğan, Yeşillik Tabağı",
+          "category": "Taş Fırın"
+        }
+      ]
+    },
+    {
+      "name": "Dürümler",
+      "items": [
+        {
+          "name": "Adana Klasik Dürüm",
+          "price": 600,
+          "description": "",
+          "category": "Dürümler"
+        },
+        {
+          "name": "Kuşbaşı Klasik Dürüm",
+          "price": 600,
+          "description": "",
+          "category": "Dürümler"
+        },
+        {
+          "name": "Çöp Şiş Klasik Dürüm",
+          "price": 600,
+          "description": "",
+          "category": "Dürümler"
+        },
+        {
+          "name": "Ciğer Klasik Dürüm",
+          "price": 600,
+          "description": "",
+          "category": "Dürümler"
+        },
+        {
+          "name": "Tavuk Klasik Dürüm",
+          "price": 600,
+          "description": "",
+          "category": "Dürümler"
+        },
+        {
+          "name": "Adana Menü Dürüm",
+          "price": 600,
+          "description": "",
+          "category": "Dürümler"
+        },
+        {
+          "name": "Kuşbaşı Menü Dürüm",
+          "price": 600,
+          "description": "",
+          "category": "Dürümler"
+        },
+        {
+          "name": "Ciğer Menü Dürüm",
+          "price": 600,
+          "description": "",
+          "category": "Dürümler"
+        },
+        {
+          "name": "Çöp Şiş Menü Dürüm",
+          "price": 600,
+          "description": "",
+          "category": "Dürümler"
+        },
+        {
+          "name": "Tavuk Menü Dürüm",
+          "price": 600,
+          "description": "",
+          "category": "Dürümler"
+        },
+        {
+          "name": "Deli Dürüm",
+          "price": 750,
+          "description": "",
+          "category": "Dürümler"
+        }
+      ]
+    },
+    {
+      "name": "Tatlı",
+      "items": [
+        {
+          "name": "Dondurmalı Fıstıklı Kadayıf",
+          "price": 480,
+          "description": "Manda Tereyağı, Antep Boz Fıstık, El Açması Yufka, Manda Kaymağı, Manda Dondurması",
+          "category": "Tatlı"
+        },
+        {
+          "name": "Fıstık Sarma",
+          "price": 480,
+          "description": "Manda Tereyağı, Antep Boz Fıstık, El Açması Yufka",
+          "category": "Tatlı"
+        },
+        {
+          "name": "Fıstıkzade",
+          "price": 480,
+          "description": "Manda Tereyağı, Antep Boz Fıstık",
+          "category": "Tatlı"
+        },
+        {
+          "name": "Şöbiyet",
+          "price": 480,
+          "description": "Manda Tereyağı, Antep Boz Fıstık, El Açması Yufka",
+          "category": "Tatlı"
+        },
+        {
+          "name": "Baklava",
+          "price": 480,
+          "description": "Manda Tereyağı, Antep Boz Fıstık, El Açması Yufka, Manda Kaymağı",
+          "category": "Tatlı"
+        },
+        {
+          "name": "Közde Kaymaklı Kadayıf",
+          "price": 480,
+          "description": "Manda Tereyağı, Antep Boz Fıstık, El Açması Yufka, Manda Kaymağı",
+          "category": "Tatlı"
+        },
+        {
+          "name": "Havuç Dilim Baklava",
+          "price": 480,
+          "description": "Manda Tereyağı, Antep Boz Fıstık, El Açması Yufka, Manda Kaymağı",
+          "category": "Tatlı"
+        },
+        {
+          "name": "Midye Baklava",
+          "price": 480,
+          "description": "Manda Tereyağı, Antep Boz Fıstık, El Açması Yufka",
+          "category": "Tatlı"
+        },
+        {
+          "name": "Fıstıklı Kadayıf",
+          "price": 480,
+          "description": "Manda Tereyağı, Antep Boz Fıstık",
+          "category": "Tatlı"
+        },
+        {
+          "name": "Çikolatalı Katmer",
+          "price": 480,
+          "description": "Manda Tereyağı, Antep Boz Fıstık, El Açması Yufka",
+          "category": "Tatlı"
+        },
+        {
+          "name": "Manda Aşkı",
+          "price": 480,
+          "description": "Manda Tereyağı, Antep Boz Fıstık, El Açması Yufka",
+          "category": "Tatlı"
+        }
+      ]
+    },
+    {
+      "name": "İçecekler",
+      "items": [
+        {
+          "name": "Manda Ayranı",
+          "price": 100,
+          "description": "ADANADA BİR İLK YÜZDE YÜZ MANDA AŞKI",
+          "category": "İçecekler"
+        },
+        {
+          "name": "S.Pellegrino Soda 250 Ml",
+          "price": 150,
+          "description": "",
+          "category": "İçecekler"
+        },
+        {
+          "name": "S.Pellegrino Soda 1 Lt.",
+          "price": 250,
+          "description": "",
+          "category": "İçecekler"
+        },
+        {
+          "name": "Pepsi",
+          "price": 100,
+          "description": "",
+          "category": "İçecekler"
+        },
+        {
+          "name": "Pepsi Max",
+          "price": 100,
+          "description": "",
+          "category": "İçecekler"
+        },
+        {
+          "name": "Yedigün",
+          "price": 100,
+          "description": "",
+          "category": "İçecekler"
+        },
+        {
+          "name": "7up",
+          "price": 100,
+          "description": "",
+          "category": "İçecekler"
+        },
+        {
+          "name": "Şalgam",
+          "price": 100,
+          "description": "",
+          "category": "İçecekler"
+        },
+        {
+          "name": "Türk Kahvesi",
+          "price": 150,
+          "description": "",
+          "category": "İçecekler"
+        },
+        {
+          "name": "Cam Şişe Fıçı Şalgam 1 Lt.",
+          "price": 350,
+          "description": "",
+          "category": "İçecekler"
+        },
+        {
+          "name": "Su",
+          "price": 45,
+          "description": "",
+          "category": "İçecekler"
+        },
+        {
+          "name": "Soda",
+          "price": 70,
+          "description": "",
+          "category": "İçecekler"
+        },
+        {
+          "name": "Ice Tea",
+          "price": 100,
+          "description": "",
+          "category": "İçecekler"
+        },
+        {
+          "name": "Cam Şişe Su",
+          "price": 45,
+          "description": "",
+          "category": "İçecekler"
+        },
+        {
+          "name": "Bardak Çay",
+          "price": 30,
+          "description": "",
+          "category": "İçecekler"
+        },
+        {
+          "name": "Ev Yapımı Şalgam 1 Lt.",
+          "price": 300,
+          "description": "",
+          "category": "İçecekler"
+        }
+      ]
+    },
+    {
+      "name": "Salatalar",
+      "items": [
+        {
+          "name": "Set Menü Salata",
+          "price": 450,
+          "description": "",
+          "category": "Salatalar"
+        },
+        {
+          "name": "Izgara Biftek Salata",
+          "price": 950,
+          "description": "",
+          "category": "Salatalar"
+        },
+        {
+          "name": "Izgara Hellim Salata",
+          "price": 580,
+          "description": "",
+          "category": "Salatalar"
+        },
+        {
+          "name": "Avokadolu Tavuk Salata",
+          "price": 800,
+          "description": "",
+          "category": "Salatalar"
+        },
+        {
+          "name": "Tulum Peynirli Cevizli Salata",
+          "price": 550,
+          "description": "",
+          "category": "Salatalar"
+        },
+        {
+          "name": "Gavurdağı Salatası",
+          "price": 200,
+          "description": "",
+          "category": "Salatalar"
+        },
+        {
+          "name": "Tablacı Salata",
+          "price": 250,
+          "description": "",
+          "category": "Salatalar"
+        },
+        {
+          "name": "Çoban Salata",
+          "price": 250,
+          "description": "",
+          "category": "Salatalar"
+        },
+        {
+          "name": "Ananas (4 Dilim)",
+          "price": 330,
+          "description": "",
+          "category": "Salatalar"
+        }
+      ]
+    },
+    {
+      "name": "İkramlar",
+      "items": [
+        {
+          "name": "Soğan Salatası",
+          "price": 0,
+          "description": "",
+          "category": "İkramlar"
+        },
+        {
+          "name": "Ezme",
+          "price": 0,
+          "description": "",
+          "category": "İkramlar"
+        },
+        {
+          "name": "Pişmiş Soğan Salatası",
+          "price": 0,
+          "description": "",
+          "category": "İkramlar"
+        },
+        {
+          "name": "Yeşillik Tabağı",
+          "price": 0,
+          "description": "",
+          "category": "İkramlar"
+        },
+        {
+          "name": "Aşk Acısı",
+          "price": 0,
+          "description": "Pancar, kurutulmuş acı biber, zeytinyağı ve yoğurdun buluştuğu özel bir meze. Ferahlatıcı yoğurt tadını, hafif pancar aroması ve acı biberin eşsiz dokunuşuyla sunar. Kebap ve et yemeklerinin yanında iştah açıcı bir başlangıç.",
+          "category": "İkramlar"
+        },
+        {
+          "name": "Yoğurtlu Semizotu",
+          "price": 0,
+          "description": "",
+          "category": "İkramlar"
+        },
+        {
+          "name": "Süzme Yoğurt",
+          "price": 0,
+          "description": "",
+          "category": "İkramlar"
+        }
+      ]
+    },
+    {
+      "name": "Başlangıç",
+      "items": [
+        {
+          "name": "Etli Çiğköfte",
+          "price": 480,
+          "description": "",
+          "category": "Başlangıç"
+        },
+        {
+          "name": "Çiğ Köfte",
+          "price": 220,
+          "description": "",
+          "category": "Başlangıç"
+        },
+        {
+          "name": "Patates Cipsi",
+          "price": 200,
+          "description": "",
+          "category": "Başlangıç"
+        },
+        {
+          "name": "Köpoğlu",
+          "price": 0,
+          "description": "",
+          "category": "Başlangıç"
+        },
+        {
+          "name": "Kabak Tarator",
+          "price": 0,
+          "description": "",
+          "category": "Başlangıç"
+        },
+        {
+          "name": "Haydari",
+          "price": 0,
+          "description": "",
+          "category": "Başlangıç"
+        },
+        {
+          "name": "Humus",
+          "price": 0,
+          "description": "",
+          "category": "Başlangıç"
+        },
+        {
+          "name": "Atom",
+          "price": 0,
+          "description": "",
+          "category": "Başlangıç"
+        },
+        {
+          "name": "Kaya Koruğu",
+          "price": 0,
+          "description": "",
+          "category": "Başlangıç"
+        },
+        {
+          "name": "Zeytinyağlı Soğuk Humus",
+          "price": 0,
+          "description": "",
+          "category": "Başlangıç"
+        },
+        {
+          "name": "Zeytin",
+          "price": 0,
+          "description": "",
+          "category": "Başlangıç"
+        },
+        {
+          "name": "Sıcak Humus",
+          "price": 0,
+          "description": "",
+          "category": "Başlangıç"
+        },
+        {
+          "name": "Havuç Tarator",
+          "price": 0,
+          "description": "",
+          "category": "Başlangıç"
+        },
+        {
+          "name": "Pembe Sultan",
+          "price": 0,
+          "description": "",
+          "category": "Başlangıç"
+        },
+        {
+          "name": "Muttebel",
+          "price": 200,
+          "description": "",
+          "category": "Başlangıç"
+        },
+        {
+          "name": "Şakşuka",
+          "price": 0,
+          "description": "",
+          "category": "Başlangıç"
+        },
+        {
+          "name": "Cilveli",
+          "price": 0,
+          "description": "",
+          "category": "Başlangıç"
+        },
+        {
+          "name": "Kahvaltı Tabağı",
+          "price": 950,
+          "description": "",
+          "category": "Başlangıç"
+        },
+        {
+          "name": "Mevsim Salata Özel Sos Eşliğinde",
+          "price": 300,
+          "description": "",
+          "category": "Başlangıç"
+        },
+        {
+          "name": "Soğan Söğüş",
+          "price": 150,
+          "description": "",
+          "category": "Başlangıç"
+        },
+        {
+          "name": "Ezme",
+          "price": 150,
+          "description": "",
+          "category": "Başlangıç"
+        },
+        {
+          "name": "Pişmiş Soğan",
+          "price": 150,
+          "description": "",
+          "category": "Başlangıç"
+        },
+        {
+          "name": "Soslu Mantar",
+          "price": 150,
+          "description": "",
+          "category": "Başlangıç"
+        },
+        {
+          "name": "Ekşi Mayalı Ekmek",
+          "price": 90,
+          "description": "",
+          "category": "Başlangıç"
+        }
+      ]
+    },
+    {
+      "name": "Dede Özel",
+      "items": [
+        {
+          "name": "İçli Köfte Porsiyon",
+          "price": 650,
+          "description": "",
+          "category": "Dede Özel"
+        },
+        {
+          "name": "İçli Köfte (1 Adet)",
+          "price": 150,
+          "description": "",
+          "category": "Dede Özel"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "brainInterventions": 0,
+    "rulesApplied": 0,
+    "pipelineRulesTotal": 2
+  },
+  "publishedUrl": "https://menuai.tr/m/dedekebap-turkiye",
+  "slug": "dedekebap-turkiye"
+}

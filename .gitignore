@@ -30,3 +30,5 @@ debug_*.png
 debug_*.json
 debug_*.html
 extract_log.txt
+
+menuai-sa-key.json

@@ -1,0 +1,135 @@
+{
+  "version": 1,
+  "description": "Brain tarafından otomatik üretilen pipeline kuralları. Her kural, Brain'in bir sorunla karşılaştığında ürettiği kalıcı çözümdür.",
+  "rules": [
+    {
+      "name": "Ürünsüz Kategori Sayfası Navigasyonu",
+      "description": "Sayfada fiyat veya ürün elementi bulunmadığında, ancak alt sayfalar tespit edildiğinde, ürünlerin alt kategorilerde olduğu varsayılarak alt sayfalara gidilir.",
+      "condition": {
+        "type": "and",
+        "conditions": [
+          {
+            "type": "priceCount",
+            "operator": "===",
+            "value": 0
+          },
+          {
+            "type": "productElementCount",
+            "operator": "===",
+            "value": 0
+          },
+          {
+            "type": "subPageCount",
+            "operator": ">",
+            "value": 0
+          }
+        ]
+      },
+      "action": "USE_SUBPAGES",
+      "priority": 1,
+      "id": "rule_1770878769929",
+      "active": true,
+      "createdAt": "2026-02-12T06:46:09.929Z",
+      "appliedCount": 1,
+      "successCount": 1
+    },
+    {
+      "name": "Fiyatsız Kategori Dağılımı",
+      "description": "Sayfada ürün fiyatı tespit edilemediyse ancak alt sayfalar (kategoriler) mevcutsa, ana sayfada vakit kaybetmeden alt sayfalara yönel.",
+      "condition": {
+        "type": "and",
+        "conditions": [
+          {
+            "type": "priceCount",
+            "operator": "<",
+            "value": 1
+          },
+          {
+            "type": "subPageCount",
+            "operator": ">",
+            "value": 0
+          },
+          {
+            "type": "itemCount",
+            "operator": "===",
+            "value": 0
+          }
+        ]
+      },
+      "action": "USE_SUBPAGES",
+      "priority": 10,
+      "id": "rule_1770879586698",
+      "active": true,
+      "createdAt": "2026-02-12T06:59:46.698Z",
+      "appliedCount": 6,
+      "successCount": 6
+    },
+    {
+      "name": "Tek Sayfa Menü Yoğunluk Kontrolü",
+      "description": "Alt sayfa bulunmadığında ve sayfada belirgin sayıda ürün elementi (DOM) tespit edildiğinde, tek sayfalık menü stratejisi uygulanır. Tüm içeriğin yüklendiğinden emin olmak için scroll işlemi tetiklenir.",
+      "condition": {
+        "type": "and",
+        "conditions": [
+          {
+            "type": "subPageCount",
+            "operator": "===",
+            "value": 0
+          },
+          {
+            "type": "productElementCount",
+            "operator": ">",
+            "value": 50
+          },
+          {
+            "type": "priceCount",
+            "operator": ">",
+            "value": 5
+          }
+        ]
+      },
+      "action": "SCROLL_MORE",
+      "priority": 1,
+      "id": "rule_1770887463775",
+      "active": true,
+      "createdAt": "2026-02-12T09:11:03.775Z",
+      "appliedCount": 8,
+      "successCount": 8
+    },
+    {
+      "name": "Fiyatsız Kategori Listesi Tespiti",
+      "description": "Sayfada yoğun içerik ve DOM elementi bulunmasına rağmen hiç fiyat algılanmadıysa, bu sayfa muhtemelen bir kategori veya navigasyon sayfasıdır. Ürünleri bulmak için alt linkler taranmalıdır.",
+      "condition": {
+        "type": "and",
+        "conditions": [
+          {
+            "type": "priceCount",
+            "operator": "===",
+            "value": 0
+          },
+          {
+            "type": "productElementCount",
+            "operator": ">",
+            "value": 50
+          },
+          {
+            "type": "textLength",
+            "operator": ">",
+            "value": 1000
+          }
+        ]
+      },
+      "action": "USE_SUBPAGES",
+      "priority": 10,
+      "id": "rule_1770891482576",
+      "active": true,
+      "createdAt": "2026-02-12T10:18:02.576Z",
+      "appliedCount": 0,
+      "successCount": 0
+    }
+  ],
+  "metadata": {
+    "createdAt": "2026-02-12T09:36:00Z",
+    "totalRulesGenerated": 4,
+    "totalRulesApplied": 15
+  }
+}

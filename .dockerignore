@@ -4,3 +4,5 @@ node_modules
 screenshots
 *.md
 extracted_menu*.json
+
+menuai-sa-key.json

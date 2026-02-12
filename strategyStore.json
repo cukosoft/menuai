@@ -1,0 +1,450 @@
+{
+  "patterns": [
+    {
+      "domain": "cafeblanca.com.tr",
+      "urlPattern": "/menu/",
+      "strategy": {
+        "mode": "multi-page",
+        "subPageCount": 21,
+        "primaryMethod": "dom-text",
+        "fallback": "screenshot",
+        "extractionLog": [
+          {
+            "page": "Çok Satanlar",
+            "url": "https://cafeblanca.com.tr/menu/cok-satanlar",
+            "itemCount": 4,
+            "method": "text"
+          },
+          {
+            "page": "Yeni Eklenenler",
+            "url": "https://cafeblanca.com.tr/menu/yeni-eklenenler",
+            "itemCount": 7,
+            "method": "text"
+          },
+          {
+            "page": "Kahvaltı",
+            "url": "https://cafeblanca.com.tr/menu/kahvalti",
+            "itemCount": 16,
+            "method": "text"
+          },
+          {
+            "page": "Tostlar",
+            "url": "https://cafeblanca.com.tr/menu/tostlar",
+            "itemCount": 5,
+            "method": "text"
+          },
+          {
+            "page": "Pizza",
+            "url": "https://cafeblanca.com.tr/menu/pizza",
+            "itemCount": 9,
+            "method": "text"
+          },
+          {
+            "page": "Hamburgerler",
+            "url": "https://cafeblanca.com.tr/menu/hamburgerler",
+            "itemCount": 8,
+            "method": "text"
+          },
+          {
+            "page": "Soğuk İçecekler",
+            "url": "https://cafeblanca.com.tr/menu/soguk-icecekler",
+            "itemCount": 74,
+            "method": "text"
+          },
+          {
+            "page": "Aperatifler",
+            "url": "https://cafeblanca.com.tr/menu/aperatifler",
+            "itemCount": 11,
+            "method": "text"
+          },
+          {
+            "page": "Salatalar",
+            "url": "https://cafeblanca.com.tr/menu/salatalar",
+            "itemCount": 8,
+            "method": "text"
+          },
+          {
+            "page": "Fajita's",
+            "url": "https://cafeblanca.com.tr/menu/fajita-s",
+            "itemCount": 3,
+            "method": "text"
+          },
+          {
+            "page": "Mexican's",
+            "url": "https://cafeblanca.com.tr/menu/mexican-s",
+            "itemCount": 4,
+            "method": "text"
+          },
+          {
+            "page": "Makarna & Mantı",
+            "url": "https://cafeblanca.com.tr/menu/makarna-manti",
+            "itemCount": 9,
+            "method": "text"
+          },
+          {
+            "page": "Beyaz Etler",
+            "url": "https://cafeblanca.com.tr/menu/beyaz-etler",
+            "itemCount": 14,
+            "method": "text"
+          },
+          {
+            "page": "Kırmızı Et",
+            "url": "https://cafeblanca.com.tr/menu/kirmizi-et",
+            "itemCount": 12,
+            "method": "text"
+          },
+          {
+            "page": "Sıcak İçecekler",
+            "url": "https://cafeblanca.com.tr/menu/sicak-icecekler",
+            "itemCount": 24,
+            "method": "text"
+          },
+          {
+            "page": "Pasta & Tatlılar",
+            "url": "https://cafeblanca.com.tr/menu/pasta-tatlilar",
+            "itemCount": 29,
+            "method": "text"
+          },
+          {
+            "page": "Dondurma",
+            "url": "https://cafeblanca.com.tr/menu/dondurma",
+            "itemCount": 5,
+            "method": "text"
+          },
+          {
+            "page": "Nargile",
+            "url": "https://cafeblanca.com.tr/menu/nargile",
+            "itemCount": 8,
+            "method": "text"
+          },
+          {
+            "page": "Waffle",
+            "url": "https://cafeblanca.com.tr/menu/waffle",
+            "itemCount": 9,
+            "method": "text"
+          },
+          {
+            "page": "Noodle",
+            "url": "https://cafeblanca.com.tr/menu/noodle",
+            "itemCount": 3,
+            "method": "text"
+          },
+          {
+            "page": "Bowl",
+            "url": "https://cafeblanca.com.tr/menu/bowl",
+            "itemCount": 3,
+            "method": "text"
+          }
+        ]
+      },
+      "lastItemCount": 263,
+      "lastUsed": "2026-02-12T10:09:20.505Z",
+      "successRate": 1
+    },
+    {
+      "domain": "starbucks.com.tr",
+      "urlPattern": "/menu",
+      "strategy": {
+        "mode": "multi-page",
+        "subPageCount": 29,
+        "primaryMethod": "dom-text",
+        "fallback": "screenshot",
+        "extractionLog": [
+          {
+            "page": "Kısa Süreliğine Seninle",
+            "url": "https://www.starbucks.com.tr/menu/icecekler/kisa-sureligine-seninle",
+            "itemCount": 11,
+            "method": "text"
+          },
+          {
+            "page": "Espresso Bazlı İçecekler",
+            "url": "https://www.starbucks.com.tr/menu/icecekler/espresso-bazli-icecekler",
+            "itemCount": 24,
+            "method": "text"
+          },
+          {
+            "page": "Filtre Kahveler",
+            "url": "https://www.starbucks.com.tr/menu/icecekler/filtre-kahveler",
+            "itemCount": 4,
+            "method": "text"
+          },
+          {
+            "page": "Protein İçecekler",
+            "url": "https://www.starbucks.com.tr/menu/icecekler/protein-icecekler",
+            "itemCount": 4,
+            "method": "text"
+          },
+          {
+            "page": "Starbucks Refresha® Drinks",
+            "url": "https://www.starbucks.com.tr/menu/icecekler/starbucks-refresha-drinks",
+            "itemCount": 9,
+            "method": "text"
+          },
+          {
+            "page": "Frappuccino® Karışım İçecekler",
+            "url": "https://www.starbucks.com.tr/menu/icecekler/frappuccino-karisim-icecekler",
+            "itemCount": 12,
+            "method": "text"
+          },
+          {
+            "page": "Matcha ve Tea Latte",
+            "url": "https://www.starbucks.com.tr/menu/icecekler/matcha-ve-tea-latte",
+            "itemCount": 5,
+            "method": "text"
+          },
+          {
+            "page": "Starbucks® Çay Çeşitleri",
+            "url": "https://www.starbucks.com.tr/menu/icecekler/starbucks-cay-cesitleri",
+            "itemCount": 1,
+            "method": "text"
+          },
+          {
+            "page": "Türk Kahvesi",
+            "url": "https://www.starbucks.com.tr/menu/icecekler/turk-kahvesi",
+            "itemCount": 2,
+            "method": "text"
+          },
+          {
+            "page": "Sıcak Çikolata",
+            "url": "https://www.starbucks.com.tr/menu/icecekler/sicak-cikolata",
+            "itemCount": 5,
+            "method": "text"
+          },
+          {
+            "page": "Dondurmalı İçecekler",
+            "url": "https://www.starbucks.com.tr/menu/icecekler/dondurmali-icecekler",
+            "itemCount": 2,
+            "method": "text"
+          },
+          {
+            "page": "Portakal Suyu",
+            "url": "https://www.starbucks.com.tr/menu/icecekler/portakal-suyu",
+            "itemCount": 1,
+            "method": "text"
+          },
+          {
+            "page": "Şişelenmiş İçecekler",
+            "url": "https://www.starbucks.com.tr/menu/icecekler/siselenmis-icecekler",
+            "itemCount": 9,
+            "method": "text"
+          },
+          {
+            "page": "Kısa Süreliğine Seninle",
+            "url": "https://www.starbucks.com.tr/menu/yiyecekler/kisa-sureligine-seninle",
+            "itemCount": 5,
+            "method": "text"
+          },
+          {
+            "page": "Cheesecakeler",
+            "url": "https://www.starbucks.com.tr/menu/yiyecekler/cheesecakeler",
+            "itemCount": 3,
+            "method": "text"
+          },
+          {
+            "page": "Pasta ve Kekler",
+            "url": "https://www.starbucks.com.tr/menu/yiyecekler/pasta-ve-kekler",
+            "itemCount": 8,
+            "method": "text"
+          },
+          {
+            "page": "Muffin & Cookie",
+            "url": "https://www.starbucks.com.tr/menu/yiyecekler/muffin-cookie",
+            "itemCount": 6,
+            "method": "text"
+          },
+          {
+            "page": "Kahvaltılık Ürünler",
+            "url": "https://www.starbucks.com.tr/menu/yiyecekler/kahvaltilik-urunler",
+            "itemCount": 5,
+            "method": "text"
+          },
+          {
+            "page": "Sandviçler",
+            "url": "https://www.starbucks.com.tr/menu/yiyecekler/sandvicler",
+            "itemCount": 13,
+            "method": "text"
+          },
+          {
+            "page": "Salata ve Parfeler",
+            "url": "https://www.starbucks.com.tr/menu/yiyecekler/salata-ve-parfeler",
+            "itemCount": 5,
+            "method": "text"
+          },
+          {
+            "page": "Atıştırmalıklar",
+            "url": "https://www.starbucks.com.tr/menu/yiyecekler/atistirmaliklar",
+            "itemCount": 25,
+            "method": "text"
+          },
+          {
+            "page": "Fırın Lezzetleri",
+            "url": "https://www.starbucks.com.tr/menu/yiyecekler/firin-lezzetleri",
+            "itemCount": 6,
+            "method": "text"
+          },
+          {
+            "page": "Çekirdek Kahveler",
+            "url": "https://www.starbucks.com.tr/menu/evde-kahve-keyfi/cekirdek-kahveler",
+            "itemCount": 12,
+            "method": "text"
+          },
+          {
+            "page": "VIA",
+            "url": "https://www.starbucks.com.tr/menu/evde-kahve-keyfi/via",
+            "itemCount": 2,
+            "method": "text"
+          },
+          {
+            "page": "Kapsül Kahveler",
+            "url": "https://www.starbucks.com.tr/menu/evde-kahve-keyfi/kapsul-kahveler",
+            "itemCount": 10,
+            "method": "text"
+          },
+          {
+            "page": "Her Zaman Seninle",
+            "url": "https://www.starbucks.com.tr/menu/kahve-ekipmanlari/her-zaman-seninle",
+            "itemCount": 28,
+            "method": "text"
+          },
+          {
+            "page": "Demleme Ekipmanları",
+            "url": "https://www.starbucks.com.tr/menu/kahve-ekipmanlari/demleme-ekipmanlari",
+            "itemCount": 3,
+            "method": "text"
+          },
+          {
+            "page": "Şehir Temalı Kupalar",
+            "url": "https://www.starbucks.com.tr/menu/kahve-ekipmanlari/sehir-temali-kupalar",
+            "itemCount": 11,
+            "method": "text"
+          },
+          {
+            "page": "Demleme Yöntemleri",
+            "url": "https://www.starbucks.com.tr/menu/kahve-ekipmanlari/demleme-yontemleri",
+            "itemCount": 5,
+            "method": "text"
+          }
+        ]
+      },
+      "lastItemCount": 233,
+      "lastUsed": "2026-02-12T07:28:20.221Z",
+      "successRate": 1
+    },
+    {
+      "domain": "dedekebap.com.tr",
+      "urlPattern": "/menu",
+      "strategy": {
+        "mode": "multi-page",
+        "subPageCount": 12,
+        "primaryMethod": "dom-text",
+        "fallback": "screenshot",
+        "extractionLog": [
+          {
+            "page": "Görüntüle",
+            "url": "https://www.dedekebap.com.tr/menu/kebap",
+            "itemCount": 17,
+            "method": "text"
+          },
+          {
+            "page": "Görüntüle",
+            "url": "https://www.dedekebap.com.tr/menu/steak",
+            "itemCount": 19,
+            "method": "text"
+          },
+          {
+            "page": "Görüntüle",
+            "url": "https://www.dedekebap.com.tr/menu/burger",
+            "itemCount": 5,
+            "method": "text"
+          },
+          {
+            "page": "Görüntüle",
+            "url": "https://www.dedekebap.com.tr/menu/tas-firin",
+            "itemCount": 15,
+            "method": "text"
+          },
+          {
+            "page": "Görüntüle",
+            "url": "https://www.dedekebap.com.tr/menu/durumler",
+            "itemCount": 11,
+            "method": "text"
+          },
+          {
+            "page": "Görüntüle",
+            "url": "https://www.dedekebap.com.tr/menu/dede-den-tescilli",
+            "itemCount": 2,
+            "method": "text"
+          },
+          {
+            "page": "Görüntüle",
+            "url": "https://www.dedekebap.com.tr/menu/tatli",
+            "itemCount": 11,
+            "method": "text"
+          },
+          {
+            "page": "Görüntüle",
+            "url": "https://www.dedekebap.com.tr/menu/icecekler",
+            "itemCount": 16,
+            "method": "text"
+          },
+          {
+            "page": "Görüntüle",
+            "url": "https://www.dedekebap.com.tr/menu/salatalar",
+            "itemCount": 9,
+            "method": "text"
+          },
+          {
+            "page": "Görüntüle",
+            "url": "https://www.dedekebap.com.tr/menu/ikramlar",
+            "itemCount": 7,
+            "method": "text"
+          },
+          {
+            "page": "Görüntüle",
+            "url": "https://www.dedekebap.com.tr/menu/baslangic",
+            "itemCount": 24,
+            "method": "text"
+          },
+          {
+            "page": "Görüntüle",
+            "url": "https://www.dedekebap.com.tr/menu/dede-ozel",
+            "itemCount": 2,
+            "method": "text"
+          }
+        ]
+      },
+      "lastItemCount": 138,
+      "lastUsed": "2026-02-12T08:53:37.024Z",
+      "successRate": 1
+    },
+    {
+      "domain": "kahverengicafe.com.tr",
+      "urlPattern": "/menu/",
+      "strategy": {
+        "mode": "single-page",
+        "subPageCount": 0,
+        "primaryMethod": "dom-text",
+        "fallback": "screenshot",
+        "extractionLog": []
+      },
+      "lastItemCount": 224,
+      "lastUsed": "2026-02-12T09:59:51.794Z",
+      "successRate": 1
+    },
+    {
+      "domain": "phokaiacafeshop.com",
+      "urlPattern": "/menu/",
+      "strategy": {
+        "mode": "single-page",
+        "subPageCount": 0,
+        "primaryMethod": "dom-text",
+        "fallback": "screenshot",
+        "extractionLog": []
+      },
+      "lastItemCount": 116,
+      "lastUsed": "2026-02-12T10:23:33.703Z",
+      "successRate": 1
+    }
+  ],
+  "version": 1
+}

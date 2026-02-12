@@ -655,6 +655,22 @@ async function getOriginForSlug(slug) {
   return info ? info.origin : null;
 }
 
+// ==============================================
+// MENU ROUTE — /m/:slug standalone menü sayfası
+// ==============================================
+app.get('/m/:slug', async function (req, res) {
+  var slug = req.params.slug;
+
+  // Restoran bilgisini al
+  var info = await getRestaurantInfo(slug);
+  var restaurantName = info ? info.name : slug;
+
+  console.log('[Menu Page] ' + slug + ' → standalone menü sayfası');
+
+  res.set('Content-Type', 'text/html; charset=utf-8');
+  res.send(buildStandaloneMenuPage(slug, restaurantName));
+});
+
 app.use('/p/:slug', async function (req, res) {
   var slug = req.params.slug;
   var info = await getRestaurantInfo(slug);
@@ -748,13 +764,12 @@ app.use('/p/:slug', async function (req, res) {
         $('meta[http-equiv="X-Frame-Options"]').remove();
         $('meta[http-equiv="Content-Security-Policy"]').remove();
 
-        // Base URL ekle (relative path'ler çalışsın)
+        // Base URL → proxy path'e yönlendir (asset'ler bizden geçsin)
         var parsedOrigin = new URL(iframeSrc);
-        if (!$('base').length) {
-          $('head').prepend('<base href="' + parsedOrigin.origin + '/">');
-        }
+        $('base').remove();
+        $('head').prepend('<base href="/p/' + slug + '/">');
 
-        // Global proxy origin ayarla (SPA catch-all için)
+        // Global proxy origin ayarla (sub-path proxy için)
         global.__lastProxyOrigin = parsedOrigin.origin;
         global.__lastProxySlug = slug;
 
@@ -785,8 +800,47 @@ app.use('/p/:slug', async function (req, res) {
     return res.send(standalonePage);
   }
 
-  // Alt-path istekleri → 404
-  res.status(404).send('Not found');
+  // ═══ SUB-PATH PROXY — SPA asset'lerini orijinal siteye yönlendir ═══
+  var targetPath = req.originalUrl.replace('/p/' + slug, '') || '/';
+  var assetUrl = origin + targetPath;
+
+  console.log('[Asset Proxy] ' + slug + ' → ' + targetPath.substring(0, 80));
+  try {
+    var assetResp = await axios.get(assetUrl, {
+      responseType: 'arraybuffer',
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15',
+        'Accept': req.headers.accept || '*/*',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'Referer': origin + '/'
+      },
+      maxRedirects: 5,
+      timeout: 10000,
+      validateStatus: function () { return true; }
+    });
+
+    // Content-Type ve cache headerlarını aktar
+    var ct = assetResp.headers['content-type'];
+    if (ct) res.set('Content-Type', ct);
+    var cc = assetResp.headers['cache-control'];
+    if (cc) res.set('Cache-Control', cc);
+
+    // Compressed response'u decompress et
+    var assetCe = assetResp.headers['content-encoding'] || '';
+    var assetBuf = assetResp.data;
+    try {
+      if (assetCe === 'gzip') assetBuf = zlib.gunzipSync(assetResp.data);
+      else if (assetCe === 'br') assetBuf = zlib.brotliDecompressSync(assetResp.data);
+      else if (assetCe === 'deflate') assetBuf = zlib.inflateSync(assetResp.data);
+    } catch (decErr) {
+      assetBuf = assetResp.data; // Decompress başarısız olursa raw gönder
+    }
+
+    res.status(assetResp.status).send(Buffer.from(assetBuf));
+  } catch (assetErr) {
+    console.log('[Asset Proxy] ❌ ' + assetUrl.substring(0, 80) + ' → ' + assetErr.message);
+    res.status(502).send('Asset proxy failed');
+  }
 });
 
 // ==============================================
