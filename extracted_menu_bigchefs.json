@@ -1,0 +1,2461 @@
+{
+  "restaurant": "Big Chefs",
+  "menu_url": "https://bigchefs.com.tr/menu/",
+  "categories": [
+    {
+      "name": "Kahvaltılar",
+      "items": [
+        {
+          "name": "Serpme Kahvaltı",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ev Kahvaltısı",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ezine beyaz peynir, Kars eski kaşar, Gemlik siyah zeytin,\nAntakya kırma yeşil zeytin, sabah salatası, acuka, simit,\nayva reçeli, sınırsız demleme çay",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Sacda Sıcak Kahvaltı",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Sote patates, çırpılmış yumurta, ızgara istiridye mantarı,\ndana sosis, füme dana eti, tereyağlı ekşi mayalı ekmek",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Pancake",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Bal ve meyve parçaları ile",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Granola",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Muz, kivi, çilek, frambuaz, böğürtlen, çay üzümü, kabak\nçekirdeği içi ve chia tohumu (yoğurt, süt ya da vegan süt ile)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Acai Bowl",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Yoğurt, muz, orman meyveleri, Acai tozu, granola, chia\ntohumu ve kabak çekirdeği\n*Saf Nutrition ürünleriyle yapılmıştır.",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Kahvaltı Salatası",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Vişne domates, simit kruton, salatalık, Ezine beyaz peynir,\nyeşil biber, taze baharatlar ve Sümerik vinegret",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ekşi Maya, Mozeralla ve Domates",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ekşi mayalı ekmek üzerinde eritilmiş mozzarella,\nAntakya kırma zeytin ve siyah zeytin domates,\nroka yaprakları ve fesleğenli pesto sos",
+          "price": 0,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Diğer",
+      "items": [
+        {
+          "name": "Bazlama Tost",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Bazlama ekmeğinde kaşar peyniri, sucuk, sosis,\nkuru domates pestosu",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Çok Peynirli Tost",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Bazlama ekmeği, kaşar peyniri, cheddar peyniri, domates,\npesto sos",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Füme Dana Etli Kruvasan Tost",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Füme dana eti, eritilmiş mozzarella, kuru domates, roka\nyaprakları ve zeytin tapenade",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Marine Somonlu Kruvasan Tost",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Marine somon, roka, göz yumurta, avokado sos ve ekşi krema",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Füme Etli ve  Yumurtalı Tost",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ekşi mayalı köy ekmeğinde füme dana et, kaşar peyniri,\ndomates, sade omlet",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Omlet",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Sade / mantarlı / beyaz peynirli / kaşar peynirli / sosisli",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Sahanda Yumurta",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Sucuklu Yumurta / Sosisli / Beyaz Peynirli",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Yumurtalı Lezzetler",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Menemen / Kaşar Peynirli - Beyaz Peynirli / Sucuklu",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Avokado Poşe Yumurta",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Kızarmış ekşi mayalı köy ekmeği üzerinde\navokado sos ve yumurta, çeri domates, chia tohumu,\nroka, baby ıspanak",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Köy Ekmeği, Marineli Somon ve Haşlanmış Yumurta",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ekşi mayalı ekmek üzerinde, ekşi krema, avokado,\nkayısı yumurta, marine somon, marine salatalık dilimleri ve\ntaze baharatlar",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Croque Madame",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Brioche Ekmeğinde; peynir sos, dana jambon, eritilmiş\npeynir ve göz yumurta",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Croque Monsier",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Brioche Ekmeğinde; peynir sos, dana jambon, eritilmiş peynir",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Pesto Soslu Fırınlanmış Domates Çorbası",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Az Pesto Soslu Fırınlanmış Domates Çorbası",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Pazılı Mercimek Çorbası",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Az Pazılı Mercimek Çorbası",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Peynir Tabağı",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Kars Gravyer Peyniri, Isli Çerkez Peyniri, Rokfor Peyniri, Parmesan Peyniri, Gouda Peyniri, Kızarmış Baget, Kıtır Tortilla, Acı Biber Reçeli, Ceviz, Siyah Üzüm, Kuru Yaban Mersini.",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Meksika Usulü Nachos",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Kavrulmuş Kıyma, Jalapeno Biberi, Meksika Fasulyesi, Cheddar Peyniri Sosu, Acı Sos, Avokado Sos Ve Ekşi Krema ile.",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ortaya Çıtır Çıtır",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ekşi Mayalı Üç Peynirli Burschetta",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ekşi maya ekmek, taze fesleğen, isli çerkez peyniri, eski kaşar,\nmozzarella, roka yaprakları ve balzamikli domates",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Çıtır Balık Parçaları",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Patates tava, Akdeniz yeşillikleri ve tartar sos",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Patates Tava",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Sade / Peynirli Patetes Tava / Parmesan & Trüflü Mayonez",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Etli Yaprak Sarma",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Süzme yoğurt ile",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Kızarmış Piliç Parçaları (140 gr)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Patates tava, Akdeniz yeşillikleri ve sweet chilli sos",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Çıtır Mantı",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Naneli yoğurt ile",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Gyoza",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Baharatlı ve sebzeli tavuk harç dolgulu Japon mantısı,\nkıtır sebzeler ve thai sos",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Makarna Cips",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Naneli yoğurt sos, peri peri sos",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Çiftlik Salata",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Kızarmış Keçi Peyniri Salatası",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Roka, iceberg, Akdeniz yeşillikleri, salatalık, çilek dilimleri,\nceviz içi, kuru yaban mersini, kızarmış keçi peyniri ve çilek\nsirkesi ile",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Beluga Mercimekli Başbaşı Bulgur Salatası",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Başbaşı bulgur, nohut, iceberg, roka, taze nane, dereotu, salatalık,\ntaze soğan, közlenmiş biber, çeri domates, beluga mercimek,\npesto sos ve sumak ekşili sos",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Kıtır Mercimekli Kızarmış Somon Salatası (110gr)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Teriyaki soslu somon parçaları, roka, iceberg, dereotu, jülyen\nsebzeler, soya filizi, filizlendirilmiş kıtır mercimek,\nelma sirkesi sosu",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Cheese Steak Salata",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Siyez bulgur tabulle, yeşillikler, ince dilimlenmiş\ndana biftek, karamelize soğan, mantar, krema,\ndemi glace sos ve ılık peynir sos",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Kinoa Tabule Salatası",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Marul, roka, domates, taze nane, ceviz, taze soğan,\nvişne domates ve sümerik sos \nTavuklu / Izgara somonlu",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Greta Sezar Salatası",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Taze marul yaprakları, zeytinli kekikli greta ,parmesan peyniri,\nsezar sos \nTavuklu",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Izgara Levrek Salatası",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Izgara levrek filetosu, mevsim yeşillikleri, çeri domates,\nkuru domates, beluga mercimek, kıtır sebzeler,kırmızı soğan,\nzeytin tepenade ve sumak ekşisi",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Thai Soslu Tavuklu",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Thai Sosla Sotelenmiş Tavuk Parçaları, Yeşillikler, Soya Filizi, Avokado, Baby Ispanak, Susam, Edamame, Közlenmiş Kırmızı Biber, Haşlanmış Yeşil Mercimek Ve Zeytinyağı-Limon Sos.",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Falafel",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Mantar Dolgulu Falafel, Yeşillikler, Soya Filizi, Avokado, Baby Ispanak, Edamame, Közlenmiş Kırmızı Biber, Haşlanmış Yeşil Mercimek Ve Zeytinyağı-Limon Sos.",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Köfteli",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Bizim köfte, yeşillikler, çeri domates, zahter salatası,\nsiyez bulguru, fırın patates, süzme yoğurt, abagannuş, bazlama\nekmeği, sumak, zeytinyağı ve balzamik sos",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Köfte Bun (120 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Bun Ekmeği Arasında Bizim Köfte, Soğan, Domates ve Roka, Baharatlı Patates Kızartması ve Chipotle Sos ile.",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Tavuk Mangal Bun (200 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Bun Ekmeği Arasında Barbekü Soslu Izgara Tavuk, Kırmızı Soğan ve Maydonoz, Baharalı Patates Kızartması ve Chipotle Sos.",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Cheese Steak Bun (120 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Bun ekmeği arasında karamelize soğan ve mantarlı\ndana biftek, demi glace sos, krema ve ılık peynir sos,\nbaharatlı patates kızartması, chipotle sos",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Big Big Burger (160 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Burger Köfte, Sote Mantarlar, Karamelize Soğan, Parmesanlı Coleslaw, Burger Sos ve Baharatlı Patates Kızartması.",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "BBQ & Cheddar Burger (160 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Burger Köfte, Cheddar Peynir Sos, Acılı Domates Salsa, Burger Sos, BBQ ve Baharatlı Patates Kızartması.",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Bun Burger (160 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Bun ekmeği, burger köftesi, füme dana et, karamelize soğan,\ntrüflü mayonez, domates, kornişon turşu, burger sos ve\nbaharatlı patates kızartması",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Çıtır Tavuk Bun Burger (130 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Bun burger ekmeği, çıtır tavuk, roka yaprakları, parmesanlı\ncoleslaw, burger sos ve baharatlı patates kızartması",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Peynir Soslu Cızırdayan Burger (160 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Burger köfte, çıtır soğan, trüflü mayonez, kornişon turşu,\nsıcak peynir sos ve baharatlı patates kızartması",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Dana Bonfile Confit Burger (110 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Confit usulü pişirilmiş dana bonfile, köz patlıcan beğendi,\ndomates, ızgara biber, kornişon turşu, burger sos ve baharatlı\npatates kızartması",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ispanak ve Lor Peynirli",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Sotelenmiş Ispanak, Lor Peyniri, Mozeralla Peyniri, Domates Sos.",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Mantarlı",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Kar Mantarı, Mozeralla Peyniri, Domates Sos ve Roka Yaprakları.",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Tavuk Mangal",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "BBQ soslu ızgara tavuk but, kırmızı soğan, maydanoz,\nmozzarella peyniri, domates sos",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Soslu Alaturka",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Dana sucuk, dana jambon, dana sosis, kremalı peynir sos,\nzeytin, tane mısır, mozarella peyniri, domates sos",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Bezirgani",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Bezirgani, sucuk, maydanoz, mozarella peyniri, domates sos",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Margarita",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Mozzarella peyniri, domates sos, roka yaprakları",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Dört Peynirli",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Parmesan, mozzarella, rokfor, cheddar peyniri, krema sos,\nroka yaprakları",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Carpaccio Pizza",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Taze baharat soslu dana carpaccio, mozzarella peyniri,\ndomates sos, roka, parmesan peyniri",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Fettuccine Alfredo (80 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Peynir Soslu Etli Spaghetti (90 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Kremalı peynir sos, dana kontrafile, parmesan peyniri,\ntaze soğan",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Penne Arrabbiata",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Acılı domates sos",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Casarecce Pesto Rosso (80 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Kuru domates pesto sos, tavuk ve krema",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Somonlu ve Kuşkonmazlı Fettuccine (100 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Somon parçaları, kremalı kuşkonmaz sos",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Glutensiz Makarna",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Taze domates sos ile (Kişiye özel hazırlandığı için\n15-20 dakikalık pişirme süresi vardır.)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Dört Peynirli Tortellini",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Kremalı mantar sos, kurutulmuş domates, ıspanak yaprakları,\nparmesan peyniri, yeşil yağ",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Sinop Mantısı",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Yoğurt, Ceviz, Kırmızı Yağ.",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Carpaccio Di Manzo (100 Gr) Yeni​",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "İnce dana bonfile dilimleri, roka yaprakları, parmesan peyniri,\nhardal sos, taze baharat sos",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Mozzarella Di Mandorle",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Badem ile kaplı suda mozzarella peyniri, roka yaprakları,\nbalsamikli domates salatası, yeşil yağ",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Bruschetta Pizzette",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Çanakkale sardalya, roka yaprakları, kurutulmuş domates,\nparmesan peyniri",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ossobuco Con Orzo (280 Gr)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ağır ateşte pişmiş osso buco, pesto soslu orzotto,\nfırınlanmış sarımsak ve demi glace sos",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Bistecca Alla Grillia (200 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Izgara dana bonfile, trüf aromalı patates püresi, roka yaprakları,\nbalsamikli domates​",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Lasagne",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Bolanez soslu lazanya",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Meksika Soslu Tavuk (220 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Izgara Tavuk Göğsü Üzerinde Meksika Sos ve Eritilmiş Cheddar Peynniri, Roka Yaprakları, Balzamikli Domates, Nachos Chips, Ekşi Krema.",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Mozarellalı Izgara Tavuk Göğsü",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Eritilmiş Mozarellalı Tavuk Göğsü, Kremalı Ispanak, Biberiyeli Patates.",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Izgara Tavuk But (220 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Patlıcan ve mozzarellalı melanzane,\npatates püresi, roka yaprakları",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Tavuk Schnitzel (200 Gr)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Roka, domates\nPatates tava veya patates salatası seçeneğiyle",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Tavuk Milanese (200 Gr)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Panelenmiş tavuk, mozzarella, isli çerkez peyniri, eski kaşar,\nparmesan, kurutulmuş domates, közlenmiş biber ve ince\ndoğranmış roka yaprakları",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Beğendili Tavuk Schnitzel (200 Gr)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Patlıcan beğendi, roka, domates sos ve yoğurt",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Mantar Soslu Schnitzel (200 Gr)​",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Patates tava, roka, mantarlı kremalı demi glace sos",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Köri Soslu Enginarli Tavuk Kase (220 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Cheese Steak Kase (120 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Izgara Köfteli Kase (120 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "BBQ & Cheddar Soslu Tavuk Kase (220 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ballı Teriyaki Soslu Tavuk Kase (220 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Tavuk Schnitzel (220 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Roka, domates patates tava veya patates salatası seçeneğiyle.",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Beğendili Tavuk Schnitzel (220 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Patlıcan Beğendi, Roka, Domates Sos ve Yoğurt.",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Panelenmiş Tavuk, Mozarella, İsli Çerkez Peyniri, Eski Kaşar, Parmesan, Kurutulmuş Domates, Közlenmiş Biber ve İnce Doğranmış Roka Yaprakları.",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Mantar Soslu Schnitzel (200 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Patates Tava, Roka, Mantarlı Kremalı Demi Glace Sos.",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Kebabi",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Izgara Dana Külbastı, Tavuk Göğsü, Izgara Köfteler, Tereyağlı Bazlama, Beğendi, Yoğurt ve Domates Sos.",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Cızırdayan Bonfile (400 GR. 2 Kişilik)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Karamelize Soğanlı Patates Püresi, Tereyağı, Bazlama, Taze Biberiye ve Maş Piyazlı Yeşil Salata.",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ağır Ateşte Pişirilmiş Dana Bonfile (150 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Confit Usülü Pişirilmiş Dana Bonfile, Enginarlı Siyez Bulguru Keşkek.",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Izgara Antirikot (270 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Fırınlanmış sebzeler, taze baharatlı patates püreli volovan,\nmantarlı demi glace sos, maş piyazlı yeşil salata",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "BIG Şiş Kebap (200 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Kuzu etli kebap, tereyağlı siyez bulgur, soğanlı roka salatası,\nközlenmiş biber ve lavaş, tahinli yoğurt",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Izgara Bonfile Dilimleri (200 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Patates tava, roka yaprakları, parmesan peyniri,\nbalzamikli domates",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Bizim Köfte (180 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Izgara bizim köfte, tereyağlı bazlama ekmeği, kırmızı soğanlı\nroka salatası, süzme yoğurt, domates ve biber",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Tex-Mex Steak (150 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Acılı Meksika sos ile sotelenmiş bonfile parçaları, cheddar sos\nve nachos cips ile",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Beğendili Köfte (180 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Izgara köfteler, patlıcan beğendi, lavaş ekmeği ve\nmaş piyazlı yeşil salata",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Bonfile Fajita (200 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Tüm fajita çeşitlerimiz, sotelenmiş soğan, kırmızı biber, yeşil biber ve yanında ekşi krema, salsa dip, rende kaşar peyniri, avokado sos ve tortilla ile servis edilmektedir.",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Tavuklu Fajita (220 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Combo Fajita (210 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Izgara Levrek Melanzane (300 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Fırında Enginarlı Kuşkonmazlı Karides (150 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ispanaklı Sote, Kuşkonmaz, Enginar, Kurutulmuş Domatesle Fırınlanmış Karides Graten ve Soğanlı Roka Salatası.",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Portakallı Izgara Somon (220 GR)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Sebzeli ılık siyez bulguru, roka yaprakları ve balzamikli domates,\nportakal tozu",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Mantar Dolgulu Falafel",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Mantar dolgulu falafel, yeşillik, balzamik domates ve\ntahin sos ile",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Vegan Schnitzel",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Biberiyeli patates ve domatesli roka salatası",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Vegan Lazanya",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Sebzeli ve Yeşil mercimekli vegan lazanya, domates sos",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Vegan Burger",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Vegan köfte, domates, roka yaprakları, kornişon,\navakado sos, patates kızartması ile",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Vegan Kremalı Makarna",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Vegan krema, kuşkonmaz, enginar, edamame fasulyesi,\nıspanak yaprakları",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Çikolatalı Sufle",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Vanilyalı dondurma ile",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "San Sebastian Cheesecake",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ekşi krema ve krem peynirle hazırlanmış San Sebastian\nCheesecake, çikolata sos veya yaban mersini sos ile",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "\"Kitkat\" İle Çikolatalı Çıtır Napolyon",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Çıtır Kitkat kreması ile baklava katları, karamelize muz\nve vanilyalı dondurma ile",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Damak Baklava İle Çıtır Sufle",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Çıtır baklava hamurunda Damak beyaz çikolatası,\nAntep fıstıkları ve vanilyalı dondurma",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ayva Ve Elmalı Kek Tatin",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Karamelize ayva ve elmalı kek, vanilyalı dondurma,\nHindistan cevizi sos ile",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Biscolata Mood Crumble",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Mood parçaları, badem kreması, orman meyveleri, vanilyalı\ndondurma ile",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Magnum Split",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Magnum Mini Classic, karamelize muz, vanilyalı dondurma,\nkrokan, krema, çikolata sos",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Balkabaklı Cheesecake",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Bal kabağı püresi ile",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Çok Çikolatalı Pasta",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Beyaz çikolatalı sos ile",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Glüten Free Brownie",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Mevsim meyveleri, şekersiz glütensiz çikolata sos ile",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Dondurma Çeşitleri (1 Top)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Vanilya / Limonlu / Çilekli / Çikolata",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Çikolatalı Ve Bademli Ekler",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Portakallı Ve Çıtır Kadayıflı Ekler",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Tiramisu Ekler",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Sakızlı Muhallebi Ve Vişne Soslu Ekler",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Sessizlik ve Sakinlik Çayı",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Papatya Çiçeği, Kuşburnu, Portakal Kabukları, Ebegümeci, Portakal Çiçekleri, Limon Otu ve Nane.",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Şifa Çayı",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Bamya çiçeği, tarçın, kuşburnu, elma, zencefil, karanfil,\nportakal meyve kabuğu, aynı safa çiçeği,\npeygamber çiçeği",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Zencefilli Ihlamur Çayı​",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ihlamur Çiçekleri, Zencefil, Tarçın ve Kuşburnu Karışımı.",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Zencefilli Hayat Çayı",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Taze zencefil, yeşil çay, kuru portakal kabukları,\ntaze limon ve taze nane yaprakları",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Hibiscus (Hatmi Çiçeği) Çayı",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ebegümeci, amber çiçeği ve hibiscus çiçeği karışımı",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Yaseminli Yeşil Çay",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Okaliptus Çayı",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Zencefil, zerdeçal, papatya çayı, tarçın, kekik, safran, nane,\nada çayı, nar çayı, keçiboynuzu, havlıcan ve okaliptus",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "İnce Belli Bardakta Demleme Çay",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Kupa Bardakta Demleme Çay",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Blueberry Ice Matcha Latte",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "*Saf Nutrition ürünleriyle yapılmıştır.\nTüm matcha ürünlerimizde vegan içecek seçeneklerinde\nfiyat farkı alınmamaktadır.",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ice Matcha Latte​",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Matcha Latte​​",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Sıkılmış Meyve Suyu",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Portakal, elma, havuç, nar\nKarışık (portakal, elma, havuç, nar)",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ginger G.",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Elma, salatalık, zencefil, limon, maydanoz ve nane",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Energizer",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Çilek, muz ve portakal",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Maximizer",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Kivi, elma ve ananas",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Fıstık Ezmeli Protein Shake",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Fıstık ezmesi, muz, badem sütü,\nkakao tozu, çikolatalı protein tozu",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Kahveli Protein Shake​",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Espresso, badem sütü, muz, çikolatalı protein tozu",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Çilekli Protein Shake",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Çilek, böğürtlen, badem sütü, katla balla, çilekli protein tozu",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ejder Meyveli Smoothie",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ejder meyve püresi, böğürtlen, muz, ananas suyu ve süt",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Şeftali Smoothie",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Şeftali püresi, muz, çilek ve süt",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Yer Fıstıklı Smoothie",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Yer fıstığı ezmesi, kakao tozu, muz ve süt",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Acai Smoothie",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Acai tozu, badem sütü, muz, taze çilek",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Matcha Smoothie",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Matcha tozu, badem sütü ve muz",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Citrus Whisper",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Avoya Blend (Misket Limonlu & Zencefil) Şeftali Püresi, Sweet\nand Sour ve Portakal Suyu",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Tea Tang",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Avoya Blend (Bahçe Nanesi Limon Portakal ve Greyfurt) Sweet\nand Sour, Yeşil Çay ve Greyfurt Püresi",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Hibiscus Sun",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Avoya Blend (Mürver Çiçeği Elma Salatalık Hibiscus)\nEjder Meyve Püresi, Sweet and Sour, Hibiscus Çayı",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Çikolatalı",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Vanilyalı dondurma, süt, çikolata sos ve krema",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Çilek",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Vanilyalı dondurma, taze çilek, süt ve krema",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Kitkat",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Vanilyalı dondurma, çıtır Kitkat kreması, süt ve krema",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Sade",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Nane",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Sade limonata ve taze nane",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Elma",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Sade limonata ve taze yeşil elma suyu",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Red Dragon",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Sade limonata, ejder meyve püresi ve böğürtlen",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Sade limonata ve taze çilek",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Hibiscus",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Sade limonata ve hibiscus çayı",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Lavanta",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Sade limonata, blue butterfly çayı ve lavanta şurubu",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Matcha",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Sade limonata, matcha",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Be Happy",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Çilek bubble tea, limonata, çilek ve coconut şurubu",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Bubble Tea Peach Frozen",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Çilek bubble tea, limonata ve şeftali püresi",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Bubble Tea Hibiscus",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Çilek bubble tea, hibiscus, çilek şurubu ve narenciye karışımı",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ejder Hibiscus",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Hibiscus çayı, ejder meyve püresi ve çilek bubble tea",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Bubble Tea Strawberry Mango",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Mango bubble tea, limonata, çilek ve çilek şurubu",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Bubble Tea Galaxy",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ananas, portakal, mango",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Hawaii",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Mango bubble tea, ananas suyu, elma suyu ve muz",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ananas Portakal Mango",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ananas suyu, portakal suyu ve mango bubble tea",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Coca-Cola Orijinal Tat 30 Cl",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Coca-Cola Zero Sugar 30 Cl",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Fanta 30 Cl",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Sprite 30 Cl",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Schweppes 25 Cl",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Mandarin / Bitter Lemon / Lime & Mint",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Fuse Tea 25 Cl",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Şeftali / Limon",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Burn 25 Cl",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Damla Su Cam Şişe 33 Cl",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Damla Mineral Maden Suyu 33 Cl",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Damla Mineral Maden Suyu 75 Cl",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Fiuggi 75 Cl",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Avoya Blend Misket Limonlu & Zencefil",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Avoya Blend Bahçe Nanesi, Limon, Portakal, Greyfurt",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Avoya Blend Mürver Çiçeği, Elma, Salatalık, Hibiscus",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ayran",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Fesleğenli Ayran",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Böğürtlen & Hibiscus",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Hibiscus çayı, frambuaz şurubu ve vanilya şurubu",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Şeftali",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Siyah çay, narenciye karışımı ve şeftali püresi",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Çilek & Şeftali",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Siyah çay, şeftali püresi ve çilek şurubu",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Drako Hibiscus",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Hibiscus çayı, ejder meyve püresi ve narenciye karışımı",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Iced Caramel Macchiato",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Süt, espresso, karamel şurubu ve vanilya şurubu",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Kitkat'lı Badem Sütlü Frozen",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "KitKat kreması, kitkat parçaları, badem sütü, espresso",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Iced Chocolate Mocha",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Süt, espresso, çikolata şurubu ve vanilya şurubu",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Bademli Iced Latte",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Iced Americano",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Iced Latte",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Virgin Mojito",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Lime, şeker, nane ve sprite",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Virgin Strawberry Lemonade Frozen",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Limonata ve taze çilek",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Peach Frozen",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Limonata ve şeftali püresi",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Cool Lime",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Limon ve nane",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Quince",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ayva, bergamot, adaçayı, misket limon ve yeşil çay",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Mr. Q.",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Elma, armut, kavun ve passion fruit",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Virgin Petit Beurre",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Bisküvi, acıbadem, vanilya,\nlimon ve greyfurt",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Mojito",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Captain Morgan rum, taze nane, lime, soda ve beyaz şeker",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Margarita Lime On The Rocks",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Casamigos tequila, portakal likörü ve narenciye karışımı",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Strawberry Frozen",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Casamigos tequila, portakal likörü, narenciye karışımı,\nçilek şurubu ve taze çilek",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Lynchburg Lemonade",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Bulleit Bourbon, portakal likörü, Sprite ve narenciye karışımı",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Negroni",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Garrone bitter, garrone rosso ve Gordon’s Dry Gin",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Long Island Ice Tea",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Smirnoff vodka, Gordon’s Dry Gin, portakal likörü, Captain Morgan\nrum, Casamigos tequila, narenciye karışımı ve Coca-Cola",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Aperol Spritz",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Aperol, beyaz şarap, soda, taze çilek ve portakal",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Whiskey Sour",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Bulleit Bourbon ve narenciye karışımı",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Cucumber Gin Tonic",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Gordon’s Dry gin, tonic, salatalık dilimi ve lime",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Red Sangria",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Cool Lime White Sangria",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Pink Hibiscus Sangria",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Nar Margarita",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Petit Beurre",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Safari Sunset",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Golden Eclipse",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Jagermeister, Gordon’s Dry gin, portakal suyu, narenciye\nkarışımı ve vanilya şurubu",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Citrus Bloom",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Smirnoff vodka, çarkıfelek meyvesi, tarçın ve turunç karışımı",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ginger Bloom",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Avoya Blend (Misket Limonlu & Zencefil) Şeftali Püresi,\nSweet and Sour, Portakal Suyu ve Smirnoff Vodka",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Paloma",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Avoya Blend (Bahçe Nanesi Limon Portakal ve\nGreyfurt) Sweet and Sour, Yeşil Çay, Greyfurt\nPüresi ve Casamigos tequila",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Dragon Kiss",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Avoya Blend (Mürver Çiçeği Elma Salatalık Hibiscus)\nEjder Meyve Püresi, Sweet and Sour, Hibiscus Çayı\nve Gordon’s Dry Gin",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Tuborg Gold / 33 CL",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Tuborg Gold / 50 CL",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Tuborg Filtresiz / 50 CL",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Tuborg Amber / 50 CL",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Carlsberg / 33 CL",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Carlsberg Luna / 50 CL",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Frederik India Pale Ale / 35 CL",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Frederik Yakima Ipa / 35 CL",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Frederik Wheat Ipa / 35 CL",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Sol / 33 CL",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Desperados / 33 CL",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Weihenstephan Hefeweissbier / 33 CL",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Weihenstephan Vitus / 33 CL",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Kronenbourg 1664 Blanc / 33 CL",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Michelada",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Guinness Kutu / 44 CL",
+          "price": 0,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Yanında",
+      "items": [
+        {
+          "name": "Tereyağlı kuskus\nKaramelize soğanlı patates püresi\nTaze baharatlı patates püresi\nFırın sebze\nBaharatlı patates tava\nPatates püresi\nPatlıcan beğendi\nMelanzane\nIlık siyez bulgur",
+          "price": 0,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Kahveler",
+      "items": [
+        {
+          "name": "Filtre Kahve",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Taze demlenmektedir.",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Espresso",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Double Espresso",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Amerikano",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Cappuccino",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Caffe Latte",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Macchiato",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Chocolate Mocha Latte",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Caramel Macchiato Latte",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Kafeinsiz Kahve",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Türk Kahvesi",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Double Türk Kahvesi",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Selamlaque Damla Sakızlı",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Sıcak Çikolata",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Cortado",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Salep",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Cevizli Affogato",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Espresso, Süt, Ceviz ve Vanilyalı Dondurma",
+          "price": 0,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Cin",
+      "items": [
+        {
+          "name": "Cin",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Gordon’s London Dry Gin",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Gordon’s Pink London Dry Gin",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Tanqueray London Dry Gin",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Vodka",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Smirnoff Red",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ketel One",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Smirnoff Apple / Vanilla",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "ROM",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Captain Morgan White",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Casamigos",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Vermut",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Garrone Bianco",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Garrone Dry",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Garrone Rosso",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Garrone Bitter",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Viski",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Johnnie Walker Red Label",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Jameson Irish",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Johnnie Walker Black Label",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Bulleit Bourbon",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "KONYAK & GRAPPA",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Martell VS",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Martell VS OP",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Grappa",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Rakı",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Yeni Rakı “Yeni Seri” Tek / Duble",
+          "price": 0,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "KÖPÜKLÜ ŞARAP",
+      "items": [
+        {
+          "name": "KÖPÜKLÜ ŞARAP",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Altın Köpük / Kavaklıdere",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "KIRMIZI ŞARAP\nTÜRKİYE",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Big Kiss Öküzgözü, Boğazkere / BigChefs",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ancyra Cabernet Sauvignon, Syrah / Kavaklıdere",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ancyra Kalecik Karası / Kavaklıdere",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ancyra Öküzgözü / Kavaklıdere",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Selection Öküzgözü, Boğazkere / Kavaklıdere",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Egeo Cabernet Sauvignon / Kavaklıdere",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Kocabağ Leo’s",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "ROSE ŞARAP\nTÜRKİYE",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Big Love Çalkarası / BigChefs",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ancyra Blush Kalecik Karası / Kavaklıdere",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Egeo Roze Syrah, Grenache, Çalkarası / Kavaklıdere",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "BEYAZ ŞARAP\nTÜRKİYE",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Big Touch Narince / BigChefs",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ancyra Sultaniye Emir / Kavaklıdere",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Ancyra Sauvignon Blanc / Kavaklıdere",
+          "price": 0,
+          "description": ""
+        },
+        {
+          "name": "Egeo Chardonnay / Kavaklıdere",
+          "price": 0,
+          "description": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,62 +1,1482 @@
 {
-  "source": "Universal Vision AI v7 (Playwright)",
-  "parsed_at": "2026-02-11T08:48:26.610Z",
-  "menu_url": "https://mps27.mobresposmenu.com.tr/?id=MP422",
-  "restaurant": "mps27",
-  "totalItems": 10,
+  "source": "Universal Vision AI v8 (DOM-First + Fallback)",
+  "parsed_at": "2026-02-12T06:24:20.972Z",
+  "menu_url": "https://cafeblanca.com.tr/menu/",
+  "restaurant": "cafeblanca",
+  "totalItems": 275,
   "categories": [
     {
-      "name": "Alkollu Cocktails",
+      "name": "Kahvaltı",
       "items": [
         {
-          "name": "GOLDFISH",
-          "price": 380,
-          "description": "Cin, St. Germain, Lime Suyu, Elma Suyu, Şeftali"
+          "name": "Serpme Kahvaltı",
+          "price": 1140,
+          "description": "Çilek reçeli, bal, çikolata, tereyağı, yeşil, ızgara, siyah zeytin, domates, salatalık, 4 çeşit peynir, kaymak, mevsimine göre meyve, patates cips, gözleme, sosis tava, sahanda yumurta, sebze kızartma, rulo börek (Kahvaltımız 2 kişiliktir, 1 termos çay, yoğunluğa göre gecikme olabilir.)(Ürünler mevsimlere göre değişiklik gösterebilir.)"
         },
         {
-          "name": "HİMALAYAN SALT MARGARİTA",
-          "price": 380,
-          "description": "Tekila, Portakal Likörü, Lime Suyu, Agave, Himalayan Salt"
+          "name": "Kruvasan",
+          "price": 330,
+          "description": ""
         },
         {
-          "name": "LUNA",
-          "price": 380,
-          "description": "Votka, Çilek Püresi, Hindistan Cevizi Şurubu, Elma Suyu, Lime Suyu"
+          "name": "Roll Kruvasan",
+          "price": 345,
+          "description": ""
         },
         {
-          "name": "MARGARITA",
-          "price": 380,
-          "description": "Tekila, Portakal Likörü, Lime Suyu"
+          "name": "ALL IN ONE",
+          "price": 1120,
+          "description": ""
         },
         {
-          "name": "MİSTİQUE",
-          "price": 380,
-          "description": "Cin, Orman Meyveleri, Lime Suyu"
+          "name": "Kişiye Özel Kahvaltı",
+          "price": 540,
+          "description": "Çilek reçeli, bal, kaymak, çikolata, 2 çeşit zeytin, 4 çeşit peynir, domates, salatalık, salam ve omlet, İlk 1 çay ikramımızdır."
         },
         {
-          "name": "MOJITO",
-          "price": 380,
-          "description": "Rom, Lime Suyu, Nane Yaprağı, Esmer Şeker"
+          "name": "Kral Kahvaltı",
+          "price": 1500,
+          "description": "Çilek reçeli, bal,çikolata, süt reçeli, tereyağı, yeşil, ızgara, siyah zeytin, domates, salatalık, 4 çeşit peynir, kaymak, mevsimine göre 3 çeşit meyve, patates cips, gözleme, sahanda yumurta, sebze kızartma, rulo börek, paçanga böreği, soğan halkası, nugget, sahanda sucuk, sosis tava, menemen, dana jambon, hindi jambon, portakal suyu. (Kahvaltımız 3 kişiliktir, 1 termos çay, yoğunluğa göre gecikme olabilir.)(Ürünler mevsimlere göre değişiklik gösterebilir.)"
         },
         {
-          "name": "MOSCOW MULE",
-          "price": 380,
-          "description": "Votka, Lime Suyu, Zencefil"
+          "name": "Pancake Kahvaltı",
+          "price": 300,
+          "description": "10 adet pancake yanında çikolata ve reçel ile birlikte servis edilir."
         },
         {
-          "name": "NEGRONI",
-          "price": 380,
-          "description": "Cin, Campari, Martini Rosso"
+          "name": "Sade Menemen",
+          "price": 270,
+          "description": "Mevsim yeşillikleri ve cips ile servis."
         },
         {
-          "name": "OLD FASHIONED",
-          "price": 380,
-          "description": "Viski, Angostura Bitter, Esmer Şeker"
+          "name": "Blanca Menemen",
+          "price": 330,
+          "description": "Pastırma, sucuk ve kaşar. Yeşil salata ve cips ile servis edilir."
         },
         {
-          "name": "PASSION MARGARİTA",
+          "name": "Kavurmalı Menemen",
+          "price": 360,
+          "description": "80 gr kavurma ile yapılır. Yeşil salata ve cips ile servis edilir."
+        },
+        {
+          "name": "Kaşarlı Omlet",
+          "price": 240,
+          "description": "domates, salatalık ve zeytin ile servis edilir. parmak cips ekstra ücrete tabidir."
+        },
+        {
+          "name": "Sucuklu Omlet",
+          "price": 300,
+          "description": "Sucuk parçalarıyla hazırlanıp domates,salatalık ve zeytin ile servis edilir. parmak cips ekstra ücrete tabidir."
+        },
+        {
+          "name": "Kavurmalı Omlet",
+          "price": 330,
+          "description": "Et parçalarıyla hazırlanıp domates, salatalık ve zeytin ile servis edilir. parmak cips ekstra ücrete tabidir."
+        },
+        {
+          "name": "Sade Omlet",
+          "price": 220,
+          "description": "domates, salatalık ve zeytin ile servis edilir. parmak cips ekstra ücrete tabidir."
+        },
+        {
+          "name": "Blanca Omlet",
+          "price": 310,
+          "description": "Sucuk, pastırma ve kaşar ile pişirilir. Domates, salatalık ve zeytin ile servis edilir. parmak cips ekstra ücrete tabidir."
+        },
+        {
+          "name": "Sucuklu Yumurta",
+          "price": 300,
+          "description": "Mevsim yeşillikleri ve cips ile servis edilir."
+        },
+        {
+          "name": "Kaşarlı Menemen",
+          "price": 300,
+          "description": "Mevsim yeşillikleri ve cips ile servis edilir."
+        },
+        {
+          "name": "Sahanda Sucuk",
+          "price": 260,
+          "description": "Özel baharatı ile kendi yağında pişirilmiş %100 dana sucuk!"
+        },
+        {
+          "name": "Günün Çorbası",
+          "price": 170,
+          "description": ""
+        },
+        {
+          "name": "Pişi Kahvaltı Tabağı",
+          "price": 300,
+          "description": "10 adet pişi ve domates salatalık eşliğinde"
+        }
+      ]
+    },
+    {
+      "name": "Genel",
+      "items": [
+        {
+          "name": "ORANGEPRESSO",
+          "price": 210,
+          "description": "Taze Sıkılmış Portakal Suyu ve Espresso'nun Mühteşem Uyumu"
+        },
+        {
+          "name": "WHITE BERRY",
+          "price": 330,
+          "description": "WHITE REDBULL ŞEFTALİ VE ÇİLEĞİN EŞSİZ BULUŞMASI"
+        },
+        {
+          "name": "ROL",
+          "price": 300,
+          "description": "YANINDA ÇİKOLATASIYLA TATLI APERATİFİ"
+        },
+        {
+          "name": "Bonjour Kruvasan",
+          "price": 490,
+          "description": "Günün zarif dokunuşu. Avokado beyza peynir, kaşar peynir, roka (isteğe göre pastırma) ve kuruyemiş deposu ile servis edilir"
+        },
+        {
+          "name": "Ton Balıklı Kruvasan",
+          "price": 500,
+          "description": "köz biber ve ton balığı karışımı mayonez kornişon turşu mısır ve acuka sosun buluşması"
+        },
+        {
+          "name": "Blanca Kruvasan",
+          "price": 450,
+          "description": "krema ile çırpılmış yumurta domates sosu ve çiftlikten gelen tulum peyniri"
+        },
+        {
+          "name": "Redbull Atom",
+          "price": 280,
+          "description": ""
+        },
+        {
+          "name": "Şişe Sprite",
+          "price": 130,
+          "description": ""
+        },
+        {
+          "name": "FuseTea",
+          "price": 130,
+          "description": ""
+        },
+        {
+          "name": "Redbull Şekersiz",
+          "price": 210,
+          "description": ""
+        },
+        {
+          "name": "Redbull",
+          "price": 210,
+          "description": ""
+        },
+        {
+          "name": "Kola Zero",
+          "price": 130,
+          "description": ""
+        },
+        {
+          "name": "Cappy",
+          "price": 130,
+          "description": ""
+        },
+        {
+          "name": "Ayran",
+          "price": 70,
+          "description": ""
+        },
+        {
+          "name": "Meyveli Soda",
+          "price": 110,
+          "description": ""
+        },
+        {
+          "name": "Niğde Gazozu",
+          "price": 100,
+          "description": ""
+        },
+        {
+          "name": "Şişe Coca-Cola",
+          "price": 105,
+          "description": ""
+        },
+        {
+          "name": "Şişe Fanta",
+          "price": 130,
+          "description": ""
+        },
+        {
+          "name": "Uludağ Premium Su",
+          "price": 60,
+          "description": ""
+        },
+        {
+          "name": "Redbull Mojito",
+          "price": 330,
+          "description": ""
+        },
+        {
+          "name": "Green Garden",
+          "price": 330,
+          "description": "REDBULL VE ANANASIN LİMON İLE MAVİ PORTAKALIN EŞSİZ UYUMU"
+        },
+        {
+          "name": "Red Island Redbull",
+          "price": 330,
+          "description": "REDBULL TAZE CILEK VE PORTAKAL SUYUNUN YAZ GUNLERINDE FERAHLATAN LEZZETI"
+        },
+        {
+          "name": "Mango Passion Redbull",
+          "price": 330,
+          "description": "REDBULL EŞSİZ BİR LEZZET OLAN EJDER MEYVESİ, MANGOLU LİMONATANIN KARIŞIMIYLA HAYALLERİNİZİ SÜSLEYEN BİR İÇECEK"
+        },
+        {
+          "name": "Blanca Special Redbull",
+          "price": 330,
+          "description": "REDBULL TAZE ÇİLEK PORTAKAL SUYU VE ANANASLI LİMONATANIN YAZ GÜNLERİNDE VERMİŞ OLDUĞU FERAHLATAN LEZZETI"
+        },
+        {
+          "name": "İtalyan Sodası",
+          "price": 280,
+          "description": "TAZE MEVSİM MEYVELERİNİN MAVİ PORTAKAL İLE TAZE SODANIN LİMON İLE KARIŞIMINDAN OLUŞAN MUHTEŞEM UYUMU"
+        },
+        {
+          "name": "Meysu Cola",
+          "price": 80,
+          "description": ""
+        },
+        {
+          "name": "Mangolu Milkshake",
+          "price": 260,
+          "description": ""
+        },
+        {
+          "name": "Muzlu Milkshake",
+          "price": 260,
+          "description": ""
+        },
+        {
+          "name": "Orman Meyveli Milkshake",
+          "price": 260,
+          "description": ""
+        },
+        {
+          "name": "Orman Meyveli Smoothie",
+          "price": 220,
+          "description": ""
+        },
+        {
+          "name": "Muzlu Smoothie",
+          "price": 220,
+          "description": ""
+        },
+        {
+          "name": "Mangolu Smoothie",
+          "price": 220,
+          "description": ""
+        },
+        {
+          "name": "Çikolatalı Milkshake",
+          "price": 260,
+          "description": ""
+        },
+        {
+          "name": "Çilekli Ice Latte",
+          "price": 230,
+          "description": ""
+        },
+        {
+          "name": "Caramel Ice Latte",
+          "price": 230,
+          "description": ""
+        },
+        {
+          "name": "Maltana",
+          "price": 110,
+          "description": ""
+        },
+        {
+          "name": "Bubble Tea",
+          "price": 350,
+          "description": ""
+        },
+        {
+          "name": "Mango Flower",
+          "price": 350,
+          "description": "MÜRVER ÇİÇEĞİ VE MANGO BUBBLE"
+        },
+        {
+          "name": "Purple Bubble Lemonade",
+          "price": 360,
+          "description": "MAVİ KELEBEK ÇAYI, LİMONATA VE ÇİLEK BUBBLE KARIŞIMI"
+        },
+        {
+          "name": "Ice Cream Coffee",
+          "price": 310,
+          "description": "ESPRESSO'NUN VE DONDURMA'NIN EŞSİZ UYUMU"
+        },
+        {
+          "name": "Ice Filter Coffee",
+          "price": 220,
+          "description": ""
+        },
+        {
+          "name": "Ali Baba",
+          "price": 310,
+          "description": ""
+        },
+        {
+          "name": "Cool Lime",
+          "price": 280,
+          "description": "YAZ AYLARININ EŞSİZ FERAHLIĞI"
+        },
+        {
+          "name": "Çilekli Milkshake",
+          "price": 260,
+          "description": ""
+        },
+        {
+          "name": "İtalyan Caramel Milkshake",
+          "price": 260,
+          "description": ""
+        },
+        {
+          "name": "Mavi Çilekli Milkshake",
+          "price": 260,
+          "description": ""
+        },
+        {
+          "name": "Premium Soda",
+          "price": 110,
+          "description": ""
+        },
+        {
+          "name": "Coffee Crown",
+          "price": 310,
+          "description": ""
+        },
+        {
+          "name": "LİMMORESSO",
+          "price": 210,
+          "description": "LİMONATA VE ESPRESSO"
+        },
+        {
+          "name": "ICE LİNDEN",
+          "price": 210,
+          "description": "IHLAMUR BAL VE LİMONUN SERİNLETEN YAZ LEZZETİ"
+        },
+        {
+          "name": "Universe Time",
+          "price": 210,
+          "description": "Ananasın serinleten lezzeti"
+        },
+        {
+          "name": "ICE MELON",
+          "price": 210,
+          "description": ""
+        },
+        {
+          "name": "ICE MASTIC",
+          "price": 210,
+          "description": ""
+        },
+        {
+          "name": "ICE PEACH",
+          "price": 210,
+          "description": ""
+        },
+        {
+          "name": "Sade Soda",
+          "price": 100,
+          "description": ""
+        },
+        {
+          "name": "MATCHA LATTE",
+          "price": 420,
+          "description": "Geleneksel Japon seremonilerinden ilham alan Matcha Latte,ince öğütülmüş yüksek kaliteli matcha tozunun sütle buluştuğu benzersiz bir deneyim sunar."
+        }
+      ]
+    },
+    {
+      "name": "Tostlar",
+      "items": [
+        {
+          "name": "Kaşarlı Tost",
+          "price": 300,
+          "description": "Domates, salatalık ve zeytin ile servis edilir. parmak cips ekstra ücrete tabidir."
+        },
+        {
+          "name": "Karışık Tost",
+          "price": 350,
+          "description": "Çift kaşar arasına sucuk ve domates, salatalık ve zeytin ile servis edilir. parmak cips ekstra ücrete tabidir."
+        },
+        {
+          "name": "Sebzeli Tost",
+          "price": 310,
+          "description": "Çift kaşar, domates, biber ve yanında domates, salatalık ve zeytin ile servis edilir. parmak cips ekstra ücrete tabidir."
+        },
+        {
+          "name": "Kavurmalı Tost",
+          "price": 360,
+          "description": "Çift kaşar arasına kavurma ve yanında domates, salatalık ve zeytin ile servis edilir. parmak cips ekstra ücrete tabidir."
+        },
+        {
+          "name": "Beyaz Peynirli Tost",
+          "price": 290,
+          "description": "Domates, salatalık ve zeytin ile servis edilir. parmak cips ekstra ücrete tabidir."
+        }
+      ]
+    },
+    {
+      "name": "Pizza",
+      "items": [
+        {
+          "name": "Schnitzel Tavuklu Pizza",
+          "price": 550,
+          "description": "Schnitzel tavuk, yeşil biber, mantar ve özenle hazırlanmış pizza sosu."
+        },
+        {
+          "name": "Diavola Pizza",
+          "price": 550,
+          "description": "Sucuk, salam, mozarella peyniri."
+        },
+        {
+          "name": "Margarita Pizza",
+          "price": 490,
+          "description": "Mozarella peyniri."
+        },
+        {
+          "name": "Polo Pizza",
+          "price": 560,
+          "description": "Yeşil biber, kırmızı biber, mısır, mantar, tavuk dilimleri, mozarella peyniri, napoli domateslerinden özenle hazırlanmış pizza sosu."
+        },
+        {
+          "name": "Kavurmalı Pizza",
+          "price": 600,
+          "description": "Mısır, mantar, yeşil biber, kavurma, mozarella ve napoli domatesten özenle hazırlanmış pizza sosu."
+        },
+        {
+          "name": "Blanca Pizza",
+          "price": 620,
+          "description": "Pastırma, sucuk, mozarella, mantar, mısır, yeşil ve kırmızı biber, napoli domateslerinden özenle hazırlanmış pizza sosu."
+        },
+        {
+          "name": "Ton Balıklı Pizza",
+          "price": 550,
+          "description": "Yeşil biber, mısır, ton balığı ve özenle hazırlanmış pizza sosu."
+        },
+        {
+          "name": "Vejetaryen Pizza",
+          "price": 540,
+          "description": ""
+        },
+        {
+          "name": "Karışık Sosisli Pizza",
+          "price": 580,
+          "description": "YEŞİL BİBER KIRMIZI BİBER MANTAR MISIR MOZARELLA PEYNİR SUCUK SOSİS"
+        }
+      ]
+    },
+    {
+      "name": "Hamburgerler",
+      "items": [
+        {
+          "name": "Crispy Chicken Burger",
+          "price": 540,
+          "description": "Iceberg, domates, kornişon turşu, özel harçla panelenmiş tavuk."
+        },
+        {
+          "name": "Schnitzel Burger",
+          "price": 520,
+          "description": "Iceberg, rendelenmiş havuç, knoflog sos, ev yapımı panelenmiş tavuk göğsü."
+        },
+        {
+          "name": "Blanca Burger",
+          "price": 590,
+          "description": "Pastırma, cheddar peynir, 2 adet 80 gr burger köftesi, domates, turşu, iceberg."
+        },
+        {
+          "name": "Mix Burger",
+          "price": 550,
+          "description": "Iceberg, domates, turşu, 110 gr burger köftesi, çıtır tavuk, cheddar peynir."
+        },
+        {
+          "name": "Meksikan Burger",
+          "price": 540,
+          "description": "Iceberg, domates, turşu, jalepeno, mısır, meksikan sos, 110 gr burger köftesi."
+        },
+        {
+          "name": "CheeseBurger",
+          "price": 540,
+          "description": "110 gr burger köftesi, ıceberg, domates, turşu, cheddar peynir."
+        },
+        {
+          "name": "Klasik Burger",
+          "price": 520,
+          "description": "110 gr burger köftesi, ıceberg, domates, turşu."
+        },
+        {
+          "name": "New Smash Burger",
+          "price": 540,
+          "description": "IZGARA SOĞAN, CHEDDAR PEYNİRİ ÖZEL HAMBURGER SOSU VE ÇİFT KÖFTE (240 GR)"
+        }
+      ]
+    },
+    {
+      "name": "Soğuk İçecekler",
+      "items": [
+        {
+          "name": "Camsil",
+          "price": 260,
+          "description": "mavi çilek ve sprite ile muhteşem ferahlık hissi"
+        },
+        {
+          "name": "X-Mir Special",
+          "price": 350,
+          "description": ""
+        },
+        {
+          "name": "BLUE STRAWBERRY REDBULL",
+          "price": 330,
+          "description": "REDBULL MAVİ CİLEK VE LİMONATANIN SICAK YAZ GÜNLERİNDE VERMİŞ OLDUGU SERİNLETEN EŞSİZ BİR LEZZET"
+        },
+        {
+          "name": "Moon Piece",
+          "price": 320,
+          "description": "Ananaslı maltananın şeftali ile ferahlatıcı uyumu"
+        },
+        {
+          "name": "Blanca Limonata",
+          "price": 250,
+          "description": "Taze naneli. El yapımıdır."
+        },
+        {
+          "name": "King Of Cold",
+          "price": 360,
+          "description": ""
+        },
+        {
+          "name": "Kola",
+          "price": 130,
+          "description": ""
+        },
+        {
+          "name": "Ice Americano",
+          "price": 260,
+          "description": "100% Arabica kahvesi"
+        },
+        {
+          "name": "Mojito",
+          "price": 260,
+          "description": "Taze nane ve limonun şeker ve soda ile buluşup gerçek mojito keyfinizi alkolsüz özel sunumumuzla deneyin."
+        },
+        {
+          "name": "On The Beach",
+          "price": 260,
+          "description": "Sizi serinletip, içinizi ferahlatacak tatlı bir kokteyl."
+        },
+        {
+          "name": "Gün Batımı",
+          "price": 330,
+          "description": "Taze sıkılmış portakal ve vişne suyunun, Redbull ile birleşerek sıcak yaz günlerinde enerjisi serinleterek korumaya bire bir lezzet."
+        },
+        {
+          "name": "Summer Love",
+          "price": 260,
+          "description": "Baristalarımızın elleriyle özel olarak seçilen taze çileklerle, el yapımı limonatamızın birbiri ile uyumlu eşsiz lezzeti ile serinleyin."
+        },
+        {
+          "name": "Jamaika",
+          "price": 260,
+          "description": "Tatlı ve ekşiyi bir arada hissettiren kokteyl"
+        },
+        {
+          "name": "Ice Tea Boom",
+          "price": 260,
+          "description": "Baristalarımızın ellerinden hazırlanmış özel kavun, hindistan cevizi ve mangonun soğuk çayla buluşarak yazın sıcak günlerinde fantastik bir lezzet ile serinleyin."
+        },
+        {
+          "name": "Rainbow",
+          "price": 260,
+          "description": "Yaz günlerinde yağan yağmurun bıraktığı gökkuşağı havasını rainbow lezzeti ile yakalayın."
+        },
+        {
+          "name": "Ice Latte",
+          "price": 260,
+          "description": ""
+        },
+        {
+          "name": "Ice Mocha",
+          "price": 280,
+          "description": ""
+        },
+        {
+          "name": "Ice White Mocha",
+          "price": 280,
+          "description": ""
+        },
+        {
+          "name": "Frozen",
+          "price": 260,
+          "description": "Sıcak yaz günlerinde damak tadınıza göre serinleyerek keyfinizi yaşayın."
+        },
+        {
+          "name": "Smoothie",
+          "price": 280,
+          "description": "Süt ve dondurmanın meyve ve buz ile buluşması."
+        },
+        {
+          "name": "Elmalı Limonata",
+          "price": 250,
+          "description": ""
+        },
+        {
+          "name": "Limonata",
+          "price": 180,
+          "description": ""
+        },
+        {
+          "name": "Portakal Suyu",
+          "price": 160,
+          "description": ""
+        },
+        {
+          "name": "Limon Pleasure",
+          "price": 280,
+          "description": ""
+        },
+        {
+          "name": "Blanca Special",
+          "price": 360,
+          "description": "BAL, MUZ, ÇİLEK, KİVİ ŞÖLENİ. İSTEĞE GÖRE EKŞİ SUNUM."
+        },
+        {
+          "name": "Blue Laguna",
+          "price": 280,
+          "description": ""
+        },
+        {
+          "name": "Churchill",
+          "price": 170,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Aperatifler",
+      "items": [
+        {
+          "name": "Sigara Böreği",
+          "price": 330,
+          "description": "Ev yapımı tadında rulo börekler ve yanında cips ile servis edilir."
+        },
+        {
+          "name": "Paçanga Böreği",
+          "price": 370,
+          "description": "4 adet paçanga böreği ve yanında cips ile servis edilir."
+        },
+        {
+          "name": "Nugget",
+          "price": 350,
+          "description": "8 adet nugget ve yanında cips ile servis edilir."
+        },
+        {
+          "name": "Soğan Halkası",
+          "price": 350,
+          "description": "8 adet soğan halkası ve yanında cips ile servis edilir."
+        },
+        {
+          "name": "Parmak Cips",
+          "price": 280,
+          "description": "Özel baharatlarla lezzetlendirilmiş patates cipsi."
+        },
+        {
+          "name": "Elma Dilim Patates",
+          "price": 280,
+          "description": "Özel baharatlarla lezzetlendirilmiş elma dilim cips."
+        },
+        {
+          "name": "Ortaya Karışık",
+          "price": 440,
+          "description": "3 adet nugget, 3 adet soğan halkası, 2 adet sigara böreği, 1 adet paçanga böreği, panelenmiş tavuk ve cips ile servis edilir."
+        },
+        {
+          "name": "Peynirli Gözleme",
+          "price": 300,
+          "description": "Domates, salatalık ve zeytin ile servis edilir. parmak cips ekstra ücrete tabidir."
+        },
+        {
+          "name": "Kavurmalı Gözleme",
+          "price": 350,
+          "description": "Domates, salatalık ve zeytin ile servis edilir. parmak cips ekstra ücrete tabidir."
+        },
+        {
+          "name": "Kaşarlı Gözleme",
+          "price": 300,
+          "description": "Domates, salatalık ve zeytin ile servis edilir. parmak cips ekstra ücrete tabidir."
+        },
+        {
+          "name": "Sucuklu Gözleme",
+          "price": 350,
+          "description": "Domates, salatalık ve zeytin ile servis edilir. parmak cips ekstra ücrete tabidir."
+        }
+      ]
+    },
+    {
+      "name": "Salatalar",
+      "items": [
+        {
+          "name": "Mevsim Salata",
+          "price": 350,
+          "description": "Mevsime göre taze ürünlerden harmanlanmış ve yanında kendine özgü sos ile servis edilir."
+        },
+        {
+          "name": "Pesto Soslu Tavuk Salata",
           "price": 380,
-          "description": "Tekila, Portakal Likörü, Passion Fruit, Lime Suyu"
+          "description": "Iceberg, taze nane, süt mısır, kapya biber, julyen doğranmış tavuk dilimleri ve yanında kendine özgü sos ile servis edilir."
+        },
+        {
+          "name": "Ton Balıklı Salata",
+          "price": 370,
+          "description": "Iceberg, süt mısır, mevsim yeşillikleri, ton balık."
+        },
+        {
+          "name": "Sezar Salata",
+          "price": 410,
+          "description": "Iceberg, süt mısır, taze mevsim yeşillikleri, krotan ekmek, julyen tavuk dilimleri ve sezar sos ile servis edilir."
+        },
+        {
+          "name": "Şefin Çoban",
+          "price": 320,
+          "description": "Domates, salatalık, yeşil biber, soğan, maydanoz."
+        },
+        {
+          "name": "Akdeniz Salatası",
+          "price": 320,
+          "description": "Taze mevsim yeşillikleri üzerine dilimlenmiş peynir parçacıkları."
+        },
+        {
+          "name": "Cajun Salata",
+          "price": 400,
+          "description": "Iceberg, süt mısır, taze mevsim yeşillikleri, julyen doğranmış kajun pane harçlı tavuk parçaları."
+        },
+        {
+          "name": "Tulum Peynirli Cevizli Salata",
+          "price": 400,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Fajita's",
+      "items": [
+        {
+          "name": "Et Fajita",
+          "price": 900,
+          "description": "Soğan, kırmızı ve yeşil biber, özel fajita sosu, dilimlenmiş dana bonfile ve salata, ile servis edilir. parmak cips ekstra ücrete tabidir."
+        },
+        {
+          "name": "Combo Fajita",
+          "price": 830,
+          "description": "Soğan, kırmızı ve yeşil biber, özel fajita sosu, dilimlenmiş tavuk parçaları, dana bonfile ve salata ile servis edilir. parmak cips ekstra ücrete tabidir."
+        },
+        {
+          "name": "Tavuk Fajita",
+          "price": 690,
+          "description": "Soğan, kırmızı ve yeşil biber, özel fajita sosu, dilimlenmiş tavuk parçaları ve salata ile servis edilir. parmak cips ekstra ücrete tabidir."
+        }
+      ]
+    },
+    {
+      "name": "Mexican's",
+      "items": [
+        {
+          "name": "Et Wrap",
+          "price": 650,
+          "description": "Soğan, yeşil ve kırmızı biber, bonfile et, wrap sos, kaşar peynir ve yanında cips, salata ile servis edilir."
+        },
+        {
+          "name": "Tavuk Wrap",
+          "price": 550,
+          "description": "Soğan, yeşil ve kırmızı biber, tavuk, wrap sos, kaşar peynir ve yanında cips, salata ile servis edilir."
+        },
+        {
+          "name": "Quesadilla Tavuk",
+          "price": 580,
+          "description": "julyen kapya biber , julyen çarliston biber, julyen soğan, julyen tavuk ,rende kaşar ve rende cheddar peynirinin eşsiz uyumu"
+        },
+        {
+          "name": "Quesadilla Et",
+          "price": 660,
+          "description": "julyen kapya biber , julyen çarliston biber, julyen soğan, ET ,rende kaşar ve rende cheddar peynirinin eşsiz uyumu"
+        }
+      ]
+    },
+    {
+      "name": "Makarna & Mantı",
+      "items": [
+        {
+          "name": "Napoliten Penne",
+          "price": 410,
+          "description": "Napoliten soslu penne makarna."
+        },
+        {
+          "name": "Penne Alla Mutu",
+          "price": 460,
+          "description": "Mantar, krema, köri sos ve julyen tavuk dilimleri."
+        },
+        {
+          "name": "Bonfile Mantar Soslu Penne",
+          "price": 560,
+          "description": "Mantar, bonfile, krema, penne makarna."
+        },
+        {
+          "name": "Spagetti Napoliten",
+          "price": 510,
+          "description": "Napoliten soslu spagetti."
+        },
+        {
+          "name": "Spagetti Bolonez",
+          "price": 490,
+          "description": "Bolonez sos, spagetti."
+        },
+        {
+          "name": "Fettucini Alferdo",
+          "price": 510,
+          "description": "Mantar, krema, tavuk ve fettucini makarna."
+        },
+        {
+          "name": "Kayseri Mantı",
+          "price": 405,
+          "description": "Ev yapımı kayseri mantı, tereyağ, yoğurt ve özel sos."
+        },
+        {
+          "name": "Pesto Tavuk Penne",
+          "price": 560,
+          "description": "Fesleğen sos, krema, penne ve tavuk."
+        },
+        {
+          "name": "SPAGETTİ  FETTUCCINE",
+          "price": 550,
+          "description": "TAVUK SCHNITZEL MANTAR KREMA ÇEŞNE PARMAK ÇİPS"
+        }
+      ]
+    },
+    {
+      "name": "Beyaz Etler",
+      "items": [
+        {
+          "name": "Tabakta Schnitzel",
+          "price": 550,
+          "description": "Panelenmiş Hollanda usulü tavuk göğsü. El yapımıdır."
+        },
+        {
+          "name": "Mantar Soslu Tavuk",
+          "price": 510,
+          "description": "Mantar, krema, tavuk ve yanında mevsim salata, cips ile servis edilir."
+        },
+        {
+          "name": "Köri Soslu Tavuk",
+          "price": 510,
+          "description": "Mantar, tavuk, köri sos, krema ve yanında mevsim salata, cips ile servis edilir."
+        },
+        {
+          "name": "BBQ Soslu Tavuk",
+          "price": 510,
+          "description": "Mantar, BBQ sos ve yanında mevsim salata, cips ile servis edilir."
+        },
+        {
+          "name": "Fesleğen Soslu Tavuk",
+          "price": 510,
+          "description": "Pesto sos, krema, mantar ve yanında mevsim salata, cips ile servis edilir."
+        },
+        {
+          "name": "Cafe de Paris Soslu Tavuk",
+          "price": 510,
+          "description": "Mantar, paris sos ve yanında mevsim salata, cips ile servis edilir."
+        },
+        {
+          "name": "Çin Usulü Tavuk",
+          "price": 510,
+          "description": "Soğan, biber, soya sos, özel çin sos, havuç ve yanında mevsim salata, cips ile servis edilir."
+        },
+        {
+          "name": "Tavuk Kapsalon",
+          "price": 560,
+          "description": ""
+        },
+        {
+          "name": "Tavuk Çökertme",
+          "price": 560,
+          "description": ""
+        },
+        {
+          "name": "Tavuk Saç Tava",
+          "price": 680,
+          "description": "Parmak cips ekstra ücrete tabidir."
+        },
+        {
+          "name": "Tavuk Izgara",
+          "price": 680,
+          "description": ""
+        },
+        {
+          "name": "Acılı Tavuk",
+          "price": 510,
+          "description": "Yeşil biber, kırmızı biber, acı sos ve yanında mevsim salata, cips ile servis edilir."
+        },
+        {
+          "name": "yakitori füzyon",
+          "price": 550,
+          "description": "Japon mutfağından bir tür tavuk kebabını sizlere sunuyoruz. Bambudan yapılma şişe dizilerek ızgara edilen bu yemek, mezesi ve pilavı ile sizlerle buluşuyor"
+        },
+        {
+          "name": "tatlı acı kore tavuk&waffle",
+          "price": 510,
+          "description": "Tatlı acı sosuyla çıtır tavukların waffle hamuru üzerinde buluştuğu kore lezzeti"
+        }
+      ]
+    },
+    {
+      "name": "Kırmızı Et",
+      "items": [
+        {
+          "name": "Bonfile Kapsalon",
+          "price": 1260,
+          "description": "Hollanda’ya özgü lezzetimizi deneyin ! Patates, julyen doğranmış bonfile, mozarella peynir, sweetchili ve sarımsak sos eşliğinde servis edilir."
+        },
+        {
+          "name": "Blanca Atom Kavurma",
+          "price": 1030,
+          "description": "230 gr dana bonfile parçaları, acı kuru biber, sivri biber, pişmiş sarımsak, tortilla ekmeği, mini salata, cips ve dip sos."
+        },
+        {
+          "name": "Çökertme",
+          "price": 1030,
+          "description": "Kibrit patates, yoğurt, özel marine edilmiş bonfile eti ve çökertme sosu."
+        },
+        {
+          "name": "Ali Nazik",
+          "price": 1030,
+          "description": "Özel marine edilmiş bonfile eti, sarımsak, yoğurt, köz patlıcan."
+        },
+        {
+          "name": "Karışık Izgara",
+          "price": 1380,
+          "description": "2 kuzu kalem pirzola, 2 köfte, ızgara bonfile, ızgara tavuk ve yanında cips, salata ile servis edilir."
+        },
+        {
+          "name": "Izgara Dana Bonfile",
+          "price": 1260,
+          "description": "Özel soslarla marine edilmiş bonfile eti ve yanında cips, salata ile servis edilir."
+        },
+        {
+          "name": "Meksika Usulü Bonfile",
+          "price": 1260,
+          "description": "Özel marine edilmiş bonfile et, acılı meksikan sos ve yanında cips, salata ile servis edilir."
+        },
+        {
+          "name": "Sebzeli Bonfile",
+          "price": 1260,
+          "description": "Sebzeler ve özel sosla marine edilmiş bonfile eti ve yanında cips, salata ile servis edilir."
+        },
+        {
+          "name": "Mantar Soslu Bonfile",
+          "price": 1260,
+          "description": "Özel soslarla marine edilmiş dana bonfile, mantar sosu ve yanında cips, salata ile servis edilir."
+        },
+        {
+          "name": "Blanca Köfte",
+          "price": 1100,
+          "description": "Özenle hazırlanmış köfteler ve yanında cips, salata ile servis edilir."
+        },
+        {
+          "name": "Sac Kavurma",
+          "price": 1030,
+          "description": "180 gr dana eti ve yanında cacık veya salata, lavaş ile servis edilir. parmak cips ekstra ücrete tabidir."
+        },
+        {
+          "name": "Lokum",
+          "price": 1260,
+          "description": "Közde sebze eşliğinde löp et"
+        }
+      ]
+    },
+    {
+      "name": "Sıcak İçecekler",
+      "items": [
+        {
+          "name": "Çay",
+          "price": 70,
+          "description": "Lotus Bisküvi İkramlı Rize Çayı"
+        },
+        {
+          "name": "Fincan Çay",
+          "price": 90,
+          "description": "Lotus Bisküvi İkramlı Rize Çayı"
+        },
+        {
+          "name": "Blanca Şifa",
+          "price": 350,
+          "description": ""
+        },
+        {
+          "name": "Bitki Çayları",
+          "price": 250,
+          "description": ""
+        },
+        {
+          "name": "Türk Kahvesi",
+          "price": 170,
+          "description": ""
+        },
+        {
+          "name": "Damla Sakızlı Türk Kahvesi",
+          "price": 190,
+          "description": "Damla Sakızlı Türk Kahvesi"
+        },
+        {
+          "name": "Menengiç Kahvesi",
+          "price": 180,
+          "description": ""
+        },
+        {
+          "name": "Dibek Kahvesi",
+          "price": 180,
+          "description": ""
+        },
+        {
+          "name": "Kervansaray Kahvesi",
+          "price": 180,
+          "description": ""
+        },
+        {
+          "name": "Sütlü Türk Kahvesi",
+          "price": 190,
+          "description": ""
+        },
+        {
+          "name": "Süvari Kahvesi",
+          "price": 180,
+          "description": ""
+        },
+        {
+          "name": "Coffee Latte",
+          "price": 260,
+          "description": ""
+        },
+        {
+          "name": "Aromalı Coffee Latte",
+          "price": 225,
+          "description": ""
+        },
+        {
+          "name": "Coffee Mocha",
+          "price": 270,
+          "description": ""
+        },
+        {
+          "name": "Cappuccino",
+          "price": 250,
+          "description": ""
+        },
+        {
+          "name": "Cappuci",
+          "price": 250,
+          "description": ""
+        },
+        {
+          "name": "Espresso",
+          "price": 180,
+          "description": ""
+        },
+        {
+          "name": "Double Espresso",
+          "price": 210,
+          "description": ""
+        },
+        {
+          "name": "Americano",
+          "price": 210,
+          "description": ""
+        },
+        {
+          "name": "Filtre Kahve",
+          "price": 190,
+          "description": ""
+        },
+        {
+          "name": "Kahlep",
+          "price": 220,
+          "description": ""
+        },
+        {
+          "name": "Sıcak Çikolata",
+          "price": 250,
+          "description": ""
+        },
+        {
+          "name": "Beyaz Sıcak Çikolata",
+          "price": 250,
+          "description": ""
+        },
+        {
+          "name": "Nescafe",
+          "price": 170,
+          "description": ""
+        },
+        {
+          "name": "İngiliz Çayı",
+          "price": 130,
+          "description": ""
+        },
+        {
+          "name": "Cappuccino Strawberry",
+          "price": 270,
+          "description": ""
+        },
+        {
+          "name": "Aromalı Filtre Kahveler",
+          "price": 185,
+          "description": ""
+        },
+        {
+          "name": "Con Panna",
+          "price": 180,
+          "description": ""
+        },
+        {
+          "name": "Blanca Affogato",
+          "price": 250,
+          "description": ""
+        },
+        {
+          "name": "Sahlep",
+          "price": 210,
+          "description": ""
+        },
+        {
+          "name": "Aromalı Sahlep",
+          "price": 195,
+          "description": ""
+        },
+        {
+          "name": "Cortado",
+          "price": 190,
+          "description": ""
+        },
+        {
+          "name": "Espresso Macchiato",
+          "price": 190,
+          "description": ""
+        },
+        {
+          "name": "Sıcak Süt",
+          "price": 140,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Pasta & Tatlılar",
+      "items": [
+        {
+          "name": "Limonlu Cheescake",
+          "price": 280,
+          "description": ""
+        },
+        {
+          "name": "Tramisu",
+          "price": 230,
+          "description": ""
+        },
+        {
+          "name": "Frambuazlı Cheesecake",
+          "price": 300,
+          "description": ""
+        },
+        {
+          "name": "Çerezler",
+          "price": 380,
+          "description": ""
+        },
+        {
+          "name": "Profiterol",
+          "price": 240,
+          "description": ""
+        },
+        {
+          "name": "Trileçe",
+          "price": 200,
+          "description": ""
+        },
+        {
+          "name": "Lotus Cheescake",
+          "price": 350,
+          "description": ""
+        },
+        {
+          "name": "Supangle",
+          "price": 240,
+          "description": ""
+        },
+        {
+          "name": "San Sebastian Cheesecake",
+          "price": 350,
+          "description": ""
+        },
+        {
+          "name": "Magnolia",
+          "price": 230,
+          "description": ""
+        },
+        {
+          "name": "All In One (2-4 Kişilik)",
+          "price": 620,
+          "description": ""
+        },
+        {
+          "name": "All In One (4-6 Kişilik)",
+          "price": 1340,
+          "description": ""
+        },
+        {
+          "name": "Lotus Cup",
+          "price": 215,
+          "description": ""
+        },
+        {
+          "name": "meyveli cocostar",
+          "price": 225,
+          "description": ""
+        },
+        {
+          "name": "Çikolatalı Rulo",
+          "price": 225,
+          "description": ""
+        },
+        {
+          "name": "Tiramisu Cup",
+          "price": 280,
+          "description": ""
+        },
+        {
+          "name": "Fıstıklı Cup",
+          "price": 215,
+          "description": ""
+        },
+        {
+          "name": "Çikolatalı Cup",
+          "price": 215,
+          "description": ""
+        },
+        {
+          "name": "Çikolata Kaplamalı Fıstıklı",
+          "price": 235,
+          "description": ""
+        },
+        {
+          "name": "devil's cake",
+          "price": 235,
+          "description": ""
+        },
+        {
+          "name": "Fıstık Rüyası",
+          "price": 225,
+          "description": ""
+        },
+        {
+          "name": "Kalpli Mono",
+          "price": 245,
+          "description": ""
+        },
+        {
+          "name": "Çilekli Bulut",
+          "price": 225,
+          "description": "Taptaze çileklerle hazırlanan hafif ve ipeksi muhallebi keyfi"
+        },
+        {
+          "name": "Chef'in muhallebisi",
+          "price": 225,
+          "description": "Chef'in özel tarifi ile hazırlanan portakal kabuğu aromalı rafine lezzet"
+        },
+        {
+          "name": "Fıstık Şöleni",
+          "price": 225,
+          "description": "İpeksi muhallebi bol fıstık ve çikolata lezzeti ile zenginleşiyor"
+        },
+        {
+          "name": "spoonful",
+          "price": 225,
+          "description": "Yumuşak pandispanya hafif muhallebi ve sosun buluştuğu klasik spoonful lezzeti"
+        },
+        {
+          "name": "Tatlı Mola",
+          "price": 225,
+          "description": "Çocukların vazgeçilmezi büyüklerin gizli favorisi"
+        },
+        {
+          "name": "Güveçte Sufle",
+          "price": 350,
+          "description": ""
+        },
+        {
+          "name": "Meyve Tabağı",
+          "price": 380,
+          "description": ""
+        },
+        {
+          "name": "Blanca Fondü",
+          "price": 300,
+          "description": ""
+        },
+        {
+          "name": "Krep Meyveli Sarma",
+          "price": 400,
+          "description": "ÇİKOLATA , FINDIK, TOZ FISTIK, PUDRA ŞEKERİ"
+        },
+        {
+          "name": "Karpuz",
+          "price": 110,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Dondurma",
+      "items": [
+        {
+          "name": "Ice Cream Dark Special",
+          "price": 350,
+          "description": ""
+        },
+        {
+          "name": "Ice Cream Red Special",
+          "price": 350,
+          "description": ""
+        },
+        {
+          "name": "Ice Cream Honey Special",
+          "price": 350,
+          "description": ""
+        },
+        {
+          "name": "Ice Cream Fruit Special",
+          "price": 290,
+          "description": ""
+        },
+        {
+          "name": "Ice Cream Banana Split",
+          "price": 350,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Nargile",
+      "items": [
+        {
+          "name": "Adalya",
+          "price": 550,
+          "description": ""
+        },
+        {
+          "name": "Kral Nargile",
+          "price": 1100,
+          "description": "ÖZEL SPECİAL ŞEF KARIŞIMI MEYVE YAPIMI"
+        },
+        {
+          "name": "Jibiar",
+          "price": 600,
+          "description": ""
+        },
+        {
+          "name": "Nakla",
+          "price": 590,
+          "description": ""
+        },
+        {
+          "name": "Manterra Dark",
+          "price": 790,
+          "description": ""
+        },
+        {
+          "name": "Buta Tobacca",
+          "price": 620,
+          "description": ""
+        },
+        {
+          "name": "Special Nargile",
+          "price": 590,
+          "description": ""
+        },
+        {
+          "name": "DUBAI",
+          "price": 660,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Waffle",
+      "items": [
+        {
+          "name": "Blanca Waffle",
+          "price": 350,
+          "description": "Krema görsel amaçlıdır. Çikolatası nutelladır."
+        },
+        {
+          "name": "Oreo Waffle",
+          "price": 480,
+          "description": "Krema görsel amaçlıdır.Çikolatası nutelladır."
+        },
+        {
+          "name": "Insulin Waffle",
+          "price": 440,
+          "description": "Halley metro meyve ve Çikolatası nutelladır."
+        },
+        {
+          "name": "Lotus Waffle",
+          "price": 510,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Noodle",
+      "items": [
+        {
+          "name": "Etli Noodle",
+          "price": 490,
+          "description": "Marine edilmiş et dilimleri, taze sebzeler ve Asya usulü özel sosla harmanlanmış doyurucu noodle tabağı."
+        },
+        {
+          "name": "Tavuklu Noodle",
+          "price": 410,
+          "description": "Izgara tavuk dilimleri, taze sebzeler ve özel Asya soslarıyla harmanlanmış lezzetli noodle tabağı."
+        },
+        {
+          "name": "Sebzeli Noodle",
+          "price": 380,
+          "description": "Doğal, hafif ve doyurucu bir öğün arıyorsan, Sebzeli Noodle tam sana göre! Taze sebzeler ve özel Asya soslarıyla harmanlanmış, hafif ve doyurucu noodle tabağı. Vegan seçeneğe uygundur."
+        }
+      ]
+    },
+    {
+      "name": "Bowl",
+      "items": [
+        {
+          "name": "Tavuklu Bowl",
+          "price": 490,
+          "description": "Protein deposu ızgara tavuk, taptaze sebzeler, besleyici tahıllar ve özel sosumuzla bir araya gelerek bu lezzetli bowl’u oluşturuyor. Hem doyurucu hem hafif olan bu öğün, günün her saatinde enerji verir ve sizi uzun süre tok tutar."
+        },
+        {
+          "name": "Etli Bowl",
+          "price": 520,
+          "description": "Gün boyu süren enerji, zengin besin değeri ve nefis tatlar bir arada! Etli Bowl; protein, lif ve vitamin açısından zengin içeriğiyle hem bedenine hem ruhuna iyi gelir. Dengeli bir yaşamın vazgeçilmez öğünü olan bu bowl, her lokmada enerjini tazeler."
+        },
+        {
+          "name": "Vejetaryen Bowl",
+          "price": 450,
+          "description": "Doğanın en taze armağanlarıyla hazırlanan Vejetaryen Bowl, lezzet ve sağlığı bir araya getiriyor. Özenle seçilmiş sebzeler, bitkisel protein kaynakları ve besleyici tahıllarla hem gözünü hem karnını doyurur. Hafif ama doyurucu bir öğün arayanlar için mükemmel bir seçenek!"
         }
       ]
     }

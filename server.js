@@ -98,6 +98,141 @@ async function analyzeTarget(targetUrl) {
 }
 
 // ==============================================
+// STANDALONE MENU PAGE — iframe engelli siteler için
+// ==============================================
+function buildStandaloneMenuPage(slug, restaurantName) {
+  return '<!DOCTYPE html>' +
+    '<html lang="tr"><head>' +
+    '<meta charset="UTF-8">' +
+    '<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">' +
+    '<title>' + restaurantName + ' - MenüAi</title>' +
+    '<link rel="preconnect" href="https://fonts.googleapis.com">' +
+    '<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">' +
+    '<style>' +
+    ':root{--bg:#0a0a0f;--surface:#14141f;--card:#1a1a2e;--border:#2a2a3e;' +
+    '--text:#e8e8f0;--text2:#9898b0;--accent:#c8a97e;--accent2:#a88a5e;--gold:linear-gradient(135deg,#c8a97e,#e8c89e)}' +
+    '*{margin:0;padding:0;box-sizing:border-box}' +
+    'html,body{height:100%;font-family:"Inter",-apple-system,sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden}' +
+    '.sa-header{position:sticky;top:0;z-index:100;background:rgba(10,10,15,0.95);backdrop-filter:blur(20px);' +
+    'border-bottom:1px solid var(--border);padding:16px 20px;text-align:center}' +
+    '.sa-header h1{font-size:22px;font-weight:700;background:var(--gold);-webkit-background-clip:text;' +
+    '-webkit-text-fill-color:transparent;letter-spacing:0.5px}' +
+    '.sa-header .sa-brand{font-size:11px;color:var(--text2);margin-top:4px;letter-spacing:1px;text-transform:uppercase}' +
+    '.sa-search{padding:12px 20px}' +
+    '.sa-search input{width:100%;padding:12px 16px 12px 40px;background:var(--card);border:1px solid var(--border);' +
+    'border-radius:12px;color:var(--text);font-size:14px;outline:none;transition:border-color .3s}' +
+    '.sa-search input:focus{border-color:var(--accent)}' +
+    '.sa-search{position:relative}' +
+    '.sa-search::before{content:"🔍";position:absolute;left:32px;top:50%;transform:translateY(-50%);font-size:14px;pointer-events:none}' +
+    '.sa-tabs{display:flex;gap:8px;padding:8px 20px 12px;overflow-x:auto;-webkit-overflow-scrolling:touch}' +
+    '.sa-tabs::-webkit-scrollbar{display:none}' +
+    '.sa-tab{flex-shrink:0;padding:8px 16px;border-radius:20px;font-size:12px;font-weight:600;cursor:pointer;' +
+    'background:var(--card);border:1px solid var(--border);color:var(--text2);transition:all .3s;white-space:nowrap}' +
+    '.sa-tab.active{background:var(--accent);color:#0a0a0f;border-color:var(--accent)}' +
+    '.sa-content{padding:0 16px 120px}' +
+    '.sa-cat{margin-bottom:24px}' +
+    '.sa-cat-title{font-size:16px;font-weight:700;color:var(--accent);padding:12px 4px 8px;' +
+    'border-bottom:1px solid var(--border);margin-bottom:8px;display:flex;justify-content:space-between;align-items:center}' +
+    '.sa-cat-count{font-size:11px;color:var(--text2);font-weight:400}' +
+    '.sa-item{display:flex;justify-content:space-between;align-items:center;padding:12px;' +
+    'background:var(--card);border-radius:12px;margin-bottom:6px;border:1px solid transparent;' +
+    'transition:all .3s;cursor:pointer}' +
+    '.sa-item:hover,.sa-item:active{border-color:var(--accent);transform:scale(1.01)}' +
+    '.sa-item-info{flex:1;min-width:0}' +
+    '.sa-item-name{font-size:14px;font-weight:600;color:var(--text);margin-bottom:2px}' +
+    '.sa-item-desc{font-size:11px;color:var(--text2);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}' +
+    '.sa-item-price{font-size:14px;font-weight:700;color:var(--accent);margin-left:12px;white-space:nowrap}' +
+    '.sa-item-add{width:32px;height:32px;border-radius:50%;background:var(--accent);color:#0a0a0f;border:none;' +
+    'font-size:18px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;' +
+    'margin-left:8px;transition:transform .2s;flex-shrink:0}' +
+    '.sa-item-add:active{transform:scale(0.9)}' +
+    '.sa-loading{text-align:center;padding:60px 20px;color:var(--text2)}' +
+    '.sa-loading .spinner{width:40px;height:40px;border:3px solid var(--border);border-top-color:var(--accent);' +
+    'border-radius:50%;animation:spin 1s linear infinite;margin:0 auto 16px}' +
+    '@keyframes spin{to{transform:rotate(360deg)}}' +
+    '.sa-footer{position:fixed;bottom:0;left:0;right:0;background:rgba(10,10,15,0.95);backdrop-filter:blur(20px);' +
+    'border-top:1px solid var(--border);padding:12px 20px;display:flex;gap:12px;z-index:100}' +
+    '.sa-footer button{flex:1;padding:12px;border-radius:12px;font-size:13px;font-weight:600;cursor:pointer;' +
+    'border:1px solid var(--border);transition:all .3s;display:flex;align-items:center;justify-content:center;gap:6px}' +
+    '.sa-btn-garson{background:var(--card);color:var(--text)}' +
+    '.sa-btn-hesap{background:var(--accent);color:#0a0a0f;border-color:var(--accent)}' +
+    '.sa-empty{text-align:center;padding:40px;color:var(--text2);font-size:14px}' +
+    '</style></head><body>' +
+    '<div class="sa-header">' +
+    '<h1>' + restaurantName + '</h1>' +
+    '<div class="sa-brand">🍽️ MenüAi</div>' +
+    '</div>' +
+    '<div class="sa-search"><input type="text" id="sa-search" placeholder="Ürün ara..."></div>' +
+    '<div class="sa-tabs" id="sa-tabs"></div>' +
+    '<div class="sa-content" id="sa-content">' +
+    '<div class="sa-loading"><div class="spinner"></div>Menü yükleniyor...</div>' +
+    '</div>' +
+    '<div class="sa-footer">' +
+    '<button class="sa-btn-garson" onclick="alert(\'Garson çağrıldı! 🔔\')">🍽️ Garson Çağır</button>' +
+    '<button class="sa-btn-hesap" onclick="alert(\'Hesap istendi! 📋\')">📋 Hesap İste</button>' +
+    '</div>' +
+    '<scr' + 'ipt>' +
+    '(function(){' +
+    'var slug="' + slug + '";' +
+    'var allCats=[];' +
+    'var activeCat=null;' +
+    'fetch("/api/menu-items/"+slug).then(function(r){return r.json()}).then(function(d){' +
+    'if(!d.success||!d.categories||!d.categories.length){' +
+    'document.getElementById("sa-content").innerHTML=' +
+    '"<div class=\\"sa-empty\\">Menü verisi bulunamadı.</div>";return;}' +
+    'allCats=d.categories;renderTabs();renderAll();' +
+    '}).catch(function(e){' +
+    'document.getElementById("sa-content").innerHTML=' +
+    '"<div class=\\"sa-empty\\">Menü yüklenemedi: "+e.message+"</div>";});' +
+    'function renderTabs(){' +
+    'var t=document.getElementById("sa-tabs");' +
+    'var h="<div class=\\"sa-tab active\\" data-i=\\"-1\\">Tümü</div>";' +
+    'allCats.forEach(function(c,i){' +
+    'h+="<div class=\\"sa-tab\\" data-i=\\""+i+"\\">"+c.name+" ("+c.items.length+")</div>";});' +
+    't.innerHTML=h;' +
+    't.querySelectorAll(".sa-tab").forEach(function(tab){' +
+    'tab.onclick=function(){' +
+    't.querySelectorAll(".sa-tab").forEach(function(x){x.classList.remove("active")});' +
+    'tab.classList.add("active");' +
+    'var idx=parseInt(tab.getAttribute("data-i"));' +
+    'activeCat=idx===-1?null:idx;' +
+    'if(idx===-1)renderAll();else renderCategory(idx);' +
+    'tab.scrollIntoView({behavior:"smooth",inline:"center",block:"nearest"});};});}' +
+    'function renderAll(){' +
+    'var c=document.getElementById("sa-content");var h="";' +
+    'allCats.forEach(function(cat,i){h+=catHtml(cat);});c.innerHTML=h||"<div class=\\"sa-empty\\">Ürün yok</div>";}' +
+    'function renderCategory(idx){' +
+    'var c=document.getElementById("sa-content");c.innerHTML=catHtml(allCats[idx]);}' +
+    'function catHtml(cat){' +
+    'var h="<div class=\\"sa-cat\\"><div class=\\"sa-cat-title\\">"+cat.name+' +
+    '"<span class=\\"sa-cat-count\\">"+cat.items.length+" ürün</span></div>";' +
+    'cat.items.forEach(function(it){' +
+    'var price=it.price&&it.price>0?"₺"+it.price.toFixed(2):"";' +
+    'var desc=it.description||"";' +
+    'h+="<div class=\\"sa-item\\">"' +
+    '+"<div class=\\"sa-item-info\\">"' +
+    '+"<div class=\\"sa-item-name\\">"+it.name+"</div>"' +
+    '+(desc?"<div class=\\"sa-item-desc\\">"+desc+"</div>":"")' +
+    '+"</div>"' +
+    '+(price?"<div class=\\"sa-item-price\\">"+price+"</div>":"")' +
+    '+"<button class=\\"sa-item-add\\" title=\\"Sepete ekle\\">+</button>"' +
+    '+"</div>";});' +
+    'h+="</div>";return h;}' +
+    'document.getElementById("sa-search").addEventListener("input",function(e){' +
+    'var q=e.target.value.toLowerCase().trim();' +
+    'if(!q){if(activeCat===null)renderAll();else renderCategory(activeCat);return;}' +
+    'var c=document.getElementById("sa-content");var h="";' +
+    'allCats.forEach(function(cat){' +
+    'var filtered=cat.items.filter(function(it){' +
+    'return it.name.toLowerCase().indexOf(q)>=0||(it.description||"").toLowerCase().indexOf(q)>=0;});' +
+    'if(filtered.length){h+=catHtml({name:cat.name,items:filtered});}});' +
+    'c.innerHTML=h||"<div class=\\"sa-empty\\">Sonuç bulunamadı</div>";});' +
+    '})();' +
+    '</scr' + 'ipt>' +
+    '</body></html>';
+}
+
+// ==============================================
 // CUSTOMER PAGE — iframe + overlay panel
 // ==============================================
 function renderCustomerPage(targetUrl, slug, tableNo, res) {
@@ -530,34 +665,127 @@ app.use('/p/:slug', async function (req, res) {
   var targetPath = req.originalUrl.replace('/p/' + slug, '') || '/';
 
   if (targetPath === '/' || targetPath === '') {
-    console.log('[Basic Tier] ' + slug + ' → iframe wrapper sayfası');
     var iframeSrc = info.menuUrl || (origin + '/');
-    var basicJsRaw = fs.readFileSync(path.join(__dirname, 'public', 'menuai-inject-basic.js'), 'utf8');
-    var basicJs = basicJsRaw
-      .replace(/__MENUAI_SLUG__/g, slug)
-      .replace(/__MENUAI_ORIGIN__/g, origin);
 
-    var wrapperHtml = '<!DOCTYPE html><html lang="tr"><head>' +
-      '<meta charset="UTF-8">' +
-      '<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">' +
-      '<title>' + (info.name || 'Menü') + ' - MenüAi</title>' +
-      '<style>' +
-      '*{margin:0;padding:0;box-sizing:border-box}' +
-      'html,body{width:100%;height:100%;overflow:hidden}' +
-      '#menuai-iframe-wrap{position:fixed;top:0;left:0;right:0;bottom:64px;z-index:1}' +
-      '#menuai-iframe-wrap iframe{width:100%;height:100%;border:none}' +
-      '</style></head><body>' +
-      '<div id="menuai-iframe-wrap">' +
-      '<iframe src="' + iframeSrc + '" allow="fullscreen" loading="eager"></iframe>' +
-      '</div>' +
-      '<scr' + 'ipt>' + basicJs + '</scr' + 'ipt>' +
-      '</body></html>';
+    // ═══ IFRAME ENGELİ KONTROLÜ ═══
+    var iframeBlocked = false;
+    try {
+      var headResp = await axios.head(iframeSrc, {
+        timeout: 5000,
+        validateStatus: function () { return true; },
+        headers: { 'User-Agent': 'Mozilla/5.0 (compatible; MenuAi/1.0)' }
+      });
+      var xfo = (headResp.headers['x-frame-options'] || '').toLowerCase();
+      var csp = (headResp.headers['content-security-policy'] || '').toLowerCase();
+      if (xfo === 'deny' || xfo === 'sameorigin' || csp.includes('frame-ancestors')) {
+        iframeBlocked = true;
+        console.log('[Basic Tier] ' + slug + ' → iframe BLOCKED (' + (xfo || 'CSP') + ')');
+      }
+    } catch (e) {
+      // Bağlantı hatası — iframe zaten çalışmaz
+      iframeBlocked = true;
+      console.log('[Basic Tier] ' + slug + ' → iframe BLOCKED (connection error: ' + e.message + ')');
+    }
 
+    if (!iframeBlocked) {
+      // ═══ NORMAL MOD — iframe + overlay ═══
+      console.log('[Basic Tier] ' + slug + ' → iframe wrapper sayfası');
+      var basicJsRaw = fs.readFileSync(path.join(__dirname, 'public', 'menuai-inject-basic.js'), 'utf8');
+      var basicJs = basicJsRaw
+        .replace(/__MENUAI_SLUG__/g, slug)
+        .replace(/__MENUAI_ORIGIN__/g, origin);
+
+      var wrapperHtml = '<!DOCTYPE html><html lang="tr"><head>' +
+        '<meta charset="UTF-8">' +
+        '<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">' +
+        '<title>' + (info.name || 'Menü') + ' - MenüAi</title>' +
+        '<style>' +
+        '*{margin:0;padding:0;box-sizing:border-box}' +
+        'html,body{width:100%;height:100%;overflow:hidden}' +
+        '#menuai-iframe-wrap{position:fixed;top:0;left:0;right:0;bottom:0;z-index:1}' +
+        '#menuai-iframe-wrap iframe{width:100%;height:100%;border:none}' +
+        '</style></head><body>' +
+        '<div id="menuai-iframe-wrap">' +
+        '<iframe src="' + iframeSrc + '" allow="fullscreen" loading="eager"></iframe>' +
+        '</div>' +
+        '<scr' + 'ipt src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></scr' + 'ipt>' +
+        '<scr' + 'ipt>' + basicJs + '</scr' + 'ipt>' +
+        '</body></html>';
+
+      res.set('Content-Type', 'text/html; charset=utf-8');
+      return res.send(wrapperHtml);
+    }
+
+    // ═══ TIER 2: PROXY MOD — iframe engellendi, orijinal siteyi proxy'le ═══
+    console.log('[Proxy Tier] ' + slug + ' → iframe engelli, proxy deneniyor...');
+    try {
+      var proxyResp = await axios.get(iframeSrc, {
+        responseType: 'arraybuffer',
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1',
+          'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+          'Accept-Language': 'tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7',
+          'Accept-Encoding': 'gzip, deflate, br'
+        },
+        maxRedirects: 5,
+        timeout: 8000,
+        validateStatus: function () { return true; }
+      });
+
+      var proxyCt = proxyResp.headers['content-type'] || '';
+      if (proxyResp.status < 400 && proxyCt.includes('text/html')) {
+        // HTML alındı — işle
+        var proxyCe = proxyResp.headers['content-encoding'] || '';
+        var proxyBuf = proxyResp.data;
+        if (proxyCe === 'gzip') proxyBuf = zlib.gunzipSync(proxyResp.data);
+        else if (proxyCe === 'br') proxyBuf = zlib.brotliDecompressSync(proxyResp.data);
+        else if (proxyCe === 'deflate') proxyBuf = zlib.inflateSync(proxyResp.data);
+
+        var proxyHtml = proxyBuf.toString('utf-8');
+        var $ = cheerio.load(proxyHtml);
+
+        // Güvenlik headerlarını temizle
+        $('meta[http-equiv="X-Frame-Options"]').remove();
+        $('meta[http-equiv="Content-Security-Policy"]').remove();
+
+        // Base URL ekle (relative path'ler çalışsın)
+        var parsedOrigin = new URL(iframeSrc);
+        if (!$('base').length) {
+          $('head').prepend('<base href="' + parsedOrigin.origin + '/">');
+        }
+
+        // Global proxy origin ayarla (SPA catch-all için)
+        global.__lastProxyOrigin = parsedOrigin.origin;
+        global.__lastProxySlug = slug;
+
+        // Sihirli butonlarımızı enjekte et
+        var proxyBasicJsRaw = fs.readFileSync(path.join(__dirname, 'public', 'menuai-inject-basic.js'), 'utf8');
+        var proxyBasicJs = proxyBasicJsRaw
+          .replace(/__MENUAI_SLUG__/g, slug)
+          .replace(/__MENUAI_ORIGIN__/g, parsedOrigin.origin);
+
+        $('body').append('<scr' + 'ipt src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></scr' + 'ipt>');
+        $('body').append('<scr' + 'ipt>' + proxyBasicJs + '</scr' + 'ipt>');
+
+        console.log('[Proxy Tier] ✅ ' + slug + ' → proxy + sihirli butonlar başarılı!');
+        res.set('Content-Type', 'text/html; charset=utf-8');
+        return res.send($.html());
+      }
+
+      // HTML değil veya hata kodu → standalone'a düş
+      console.log('[Proxy Tier] ⚠️ ' + slug + ' → proxy response not HTML (status: ' + proxyResp.status + '), standalone\'a düşülüyor');
+    } catch (proxyErr) {
+      console.log('[Proxy Tier] ❌ ' + slug + ' → proxy başarısız (' + proxyErr.message + '), standalone\'a düşülüyor');
+    }
+
+    // ═══ TIER 3: STANDALONE MOD — son çare, kendi premium menümüz ═══
+    console.log('[Standalone] ' + slug + ' → iframe+proxy başarısız, MenüAi kendi menüsü');
+    var standalonePage = buildStandaloneMenuPage(slug, info.name || slug);
     res.set('Content-Type', 'text/html; charset=utf-8');
-    return res.send(wrapperHtml);
+    return res.send(standalonePage);
   }
 
-  // Alt-path istekleri → 404 (iframe modunda gerek yok)
+  // Alt-path istekleri → 404
   res.status(404).send('Not found');
 });
 

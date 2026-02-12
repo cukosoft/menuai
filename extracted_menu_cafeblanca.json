@@ -1,0 +1,654 @@
+{
+  "source": "Universal Vision AI v8 (DOM-First + Fallback)",
+  "parsed_at": "2026-02-11T22:02:14.652Z",
+  "menu_url": "https://www.phokaiacafeshop.com/menu/",
+  "restaurant": "www",
+  "totalItems": 115,
+  "categories": [
+    {
+      "name": "Kruvasanlar",
+      "items": [
+        {
+          "name": "Sade Kruvasan",
+          "price": 210,
+          "description": "Fransız tarzı- tereyağlı"
+        },
+        {
+          "name": "Fransız Usulü Kruvasan",
+          "price": 285,
+          "description": "Sade Kruvasan, Bal ve Tereyağı eşliğinde"
+        },
+        {
+          "name": "Peynirli Kruvasan",
+          "price": 240,
+          "description": "Peynirli"
+        },
+        {
+          "name": "Bademli Kruvasan",
+          "price": 340,
+          "description": "İçi badem dolgulu, dışı file badem kaplı"
+        },
+        {
+          "name": "Nutellalı Meyveli Kruvasan",
+          "price": 340,
+          "description": "Nutella, Mevsim Meyveleri"
+        },
+        {
+          "name": "Créme Patisserie & Meyveli Kruvasan",
+          "price": 340,
+          "description": "Beyaz Çikolatalı Fransız Kreması, Mevsim Meyveleri"
+        },
+        {
+          "name": "Antep Fıstıklı Créme Patisserie Kruvasan",
+          "price": 460,
+          "description": "Beyaz çikolatalı- Antep fıstıklı Fransız kreması"
+        },
+        {
+          "name": "Lotus Kremalı Kruvasan",
+          "price": 385,
+          "description": ""
+        },
+        {
+          "name": "Waffle Kruvasan",
+          "price": 390,
+          "description": "Beyaz Çikolatalı Fransız Kreması, Nutella, Mevsim Meyveleri, File Badem ve Toz Antep Fıstığı"
+        },
+        {
+          "name": "Oreolu Kruvasan",
+          "price": 335,
+          "description": "Diplomat kreması ve Oreo bisküvi parçacıkları..."
+        },
+        {
+          "name": "Cici Bebe Kruvasan",
+          "price": 335,
+          "description": "Diplomat kreması ve Cici Bebe bisküvi parçacıkları..."
+        },
+        {
+          "name": "Sandviç Kruvasan",
+          "price": 345,
+          "description": "Hindi füme, kaşar peyniri ve mevsim yeşillikleri"
+        },
+        {
+          "name": "Pain Au Chocolate",
+          "price": 240,
+          "description": "Stick çikolatalı"
+        },
+        {
+          "name": "Hot Dog Kruvasan",
+          "price": 360,
+          "description": ""
+        },
+        {
+          "name": "Füme Antikrot Kruvasan",
+          "price": 500,
+          "description": "Labne, Avokado, Et Füme, Göz Yumurta ya da Çırpılmış Yumurta seçeneği ile Çörek Otu ve Mevsim Yeşillikleri Eşliğinde"
+        },
+        {
+          "name": "Kru-Kahvaltı",
+          "price": 510,
+          "description": "Kruvasan üzeri avokado, yumurta, eritilmiş cheddar, kaşar peyniri, antrkot füme eşlikçileri ise; domates, salatalık, zeytin"
+        },
+        {
+          "name": "Füme Somon Kruvasan",
+          "price": 500,
+          "description": "Soslu Püre Avakado, Çırpılmış Yumurta ya da Göz Yumurta seçeneği ile Kabak Çekirdeği İçi ve Fümelenmiş Somon"
+        }
+      ]
+    },
+    {
+      "name": "Tatlılar",
+      "items": [
+        {
+          "name": "Rustik Şeftali & Dondurma (yeni)",
+          "price": 420,
+          "description": "Vanilyalı dondurma üzeri; tarçın ve özel sosuyla karamelize edilmiş ılık şeftali ve ceviz. Yaz mevsiminde servis edilir."
+        },
+        {
+          "name": "Meyveli Cheesecake",
+          "price": 335,
+          "description": ""
+        },
+        {
+          "name": "Orman Meyveli Cheesecake",
+          "price": 335,
+          "description": ""
+        },
+        {
+          "name": "San Sebastian Cheesecake",
+          "price": 360,
+          "description": "+70 TL ile üzerine çikolata sos ile servis edilebilir."
+        },
+        {
+          "name": "Lotus Cheesecake",
+          "price": 370,
+          "description": ""
+        },
+        {
+          "name": "Rulo Pasta",
+          "price": 350,
+          "description": ""
+        },
+        {
+          "name": "Çikolatalı Artisan Pasta",
+          "price": 370,
+          "description": ""
+        },
+        {
+          "name": "Brownie",
+          "price": 280,
+          "description": ""
+        },
+        {
+          "name": "Çilekli Brownie Bar",
+          "price": 340,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Pate A Choux",
+      "items": [
+        {
+          "name": "Paris Brest",
+          "price": 450,
+          "description": ""
+        },
+        {
+          "name": "Cream Puff",
+          "price": 450,
+          "description": ""
+        },
+        {
+          "name": "Profiterol",
+          "price": 500,
+          "description": ""
+        },
+        {
+          "name": "Ekler",
+          "price": 265,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Tartlar",
+      "items": [
+        {
+          "name": "Meyveli Tart",
+          "price": 320,
+          "description": ""
+        },
+        {
+          "name": "Çikolata ve Vişneli Tart",
+          "price": 320,
+          "description": ""
+        },
+        {
+          "name": "Coco Tart",
+          "price": 395,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Hamur İşi",
+      "items": [
+        {
+          "name": "Glütensiz Phokaia Ekmeği (yeni)",
+          "price": 340,
+          "description": "Glütensiz içeriklerle, maksimum glüten sterilizasyonu yapılarak hazırlanmıştır."
+        },
+        {
+          "name": "Artizan Siyez Ekmeği",
+          "price": 210,
+          "description": "Ekşi maya, taş değirmende çekilmiş ata tohumu siyez unu"
+        },
+        {
+          "name": "Artizan Çavdarlı Tam Buğday Ekmeği",
+          "price": 210,
+          "description": "Tam buğday unu, çavdar unu, kavrulmuş keten tohumu, ay çekirdeği ve kabak çekirdeği"
+        }
+      ]
+    },
+    {
+      "name": "Tostlar & Sandviçler",
+      "items": [
+        {
+          "name": "Glütensiz Phokaia Sandviç (yeni)",
+          "price": 410,
+          "description": "Glütensiz Phokaia Ekmeği arası hindi füme, sürülebilir peynir ve kaşar peynir, roka ve balzamikli hardal sos"
+        },
+        {
+          "name": "Phokaia Special Tost",
+          "price": 505,
+          "description": "Ekşi maya tam buğdaylı Phokaia ekmeği arası Phokaia'ya özel pesto ve kuru domates sosları, antrikot füme,eski kaşar,cheddar peyniri, taze fesleğen, taze domates ve mevsim yeşillikleri eşliğinde"
+        },
+        {
+          "name": "Yaban Mersinli Phokaia French Tost ( yeni )",
+          "price": 550,
+          "description": "Phokaia Brioche ekmeği ile hazırlanmaktadır. Eşlikçileri ise; tane yaban mersini marmelatı, İtalyan Kreması, pudra şekeri ve taze çilek"
+        },
+        {
+          "name": "Fransız Tost",
+          "price": 510,
+          "description": "Phokaia Brioche ekmeği ile hazırlanmaktadır. Eşlikçileri ise; kırmızı meyveler, muz, bal, pudra şekeri ve Fransız Kreması"
+        },
+        {
+          "name": "Ekşi Mayalı Siyez Tost",
+          "price": 325,
+          "description": "Ezine peynir, kaşar peynir ve mevsim yeşillikleri eşliğinde"
+        },
+        {
+          "name": "Ekşi Mayalı Tam Buğday Tost",
+          "price": 420,
+          "description": "Ezine peynir, kaşar peynir ve mevsim yeşillikleri eşliğinde"
+        },
+        {
+          "name": "Brioche Tost",
+          "price": 490,
+          "description": "Kaşar peyniri ve mevsim yeşillikleri eşliğinde"
+        }
+      ]
+    },
+    {
+      "name": "Tartineler",
+      "items": [
+        {
+          "name": "Avocado Egg Tartine",
+          "price": 420,
+          "description": "Kare dilimlenmiş siyez ekmeği üzerine sürülebilir peynir, soslanmış avocado, yumurta,kabak çekirdeği ve çörek otu"
+        },
+        {
+          "name": "Parmesanlı Dana Bacon Tartine",
+          "price": 500,
+          "description": "Kızartılmış Phokaia tam buğday ekşi maya ekmeği üzerinde labne , dana füme bacon, roka, parmesan peyniri, sotelenmiş cherry domates ve acı yağ ile tatlandırılmıştır."
+        },
+        {
+          "name": "Somon Tartine",
+          "price": 470,
+          "description": "Kızartılmış ekşi maya ekmeği üzerinde labne , somon füme, kapari, dereotu ve zeytinyağı"
+        },
+        {
+          "name": "Scrambled Egg Tartine",
+          "price": 430,
+          "description": "Kızartılmış ekşi maya üzerinde labne, soslu avokado ve çırpılmış yumurta"
+        },
+        {
+          "name": "Göz Yumurta Egg Tartine",
+          "price": 430,
+          "description": "Kızartılmış ekşi maya üzerinde labne, soslu avokado ve göz yumurta"
+        },
+        {
+          "name": "Brioche Egg Benedit",
+          "price": 490,
+          "description": "Brioche ekmeği üzerinde labne, avokado, göz yumurta ve Chili Biberi"
+        }
+      ]
+    },
+    {
+      "name": "Omletler",
+      "items": [
+        {
+          "name": "Lor Peynirli Fit Omlet",
+          "price": 390,
+          "description": "Zeytinyağlı ile pişirilmiş lorlu omlet, mevsim yeşillikleri ve Phokaia ekşi mayalı kızarmış tam buğday ekmeği"
+        }
+      ]
+    },
+    {
+      "name": "Genel",
+      "items": [
+        {
+          "name": "Yulaflı Omlet",
+          "price": 400,
+          "description": "Zeytinyağında pişirilmiş yulaflı omlet, kuru domatesli ve zahterli zeytin salatası, çörek otlu ve kabak çekirdekli labne"
+        },
+        {
+          "name": "Mantarlı Omlet",
+          "price": 410,
+          "description": "Zeytinyağında pişirilmiş mantarlı omlet, kuru domatesli ve zahterli zeytin salatası, çörek otlu ve kabak çekirdekli labne"
+        }
+      ]
+    },
+    {
+      "name": "Bowl",
+      "items": [
+        {
+          "name": "Balance Bowl",
+          "price": 510,
+          "description": "Vinaigrette soslu yeşil salata, avokado, Ezine peyniri, domates, salatalık, haşlanmış yumurta, yeşil zeytin, ceviz, kabak çekirdeği, keten tohumu eşliğinde Siyez ekmeği"
+        },
+        {
+          "name": "Phokaia Çılbır",
+          "price": 450,
+          "description": "Lezzetlendirilmiş sarımsaklı yoğurt, poşe yumurta, Phokaia ekşi mayalı kızartılmış siyez ekmeği ve cevizli acı yağ sos"
+        },
+        {
+          "name": "Fırınlanmış Patates Bowl",
+          "price": 460,
+          "description": "Lezzetlendirilmiş sarımsaklı yoğurt tabanında hardal, zeytinyağı ve aromatik taze yeşilliklerle tatlandırılarak fırınlanmış baby patates ve acı yağ sos"
+        },
+        {
+          "name": "Füme Etli Phokaia Salata",
+          "price": 460,
+          "description": "Füme antrikot, yeşil elma, kuru üzüm, kuru kayısı, ceviz, mevsim yeşillikleri ve Phokaia ekşi mayalı grissini"
+        },
+        {
+          "name": "Acai Bowl",
+          "price": 510,
+          "description": "Dondurulmuş orman meyveleri, dondurulmuş muz, badem sütü, acai tozu ve üzeri; Phokaia granola, Hindistan cevizi meyvesi ve mevsim meyveleri"
+        },
+        {
+          "name": "Bitter Çikolatalı Bowl",
+          "price": 410,
+          "description": "Yulaf lapası, bitter çikolata, muz ve badem"
+        },
+        {
+          "name": "Çilekli Smoothie Granola",
+          "price": 435,
+          "description": "Çilekli smoothie üzeri mevsim meyveleri ve Phokaia gronala"
+        },
+        {
+          "name": "Green Bowl",
+          "price": 445,
+          "description": "Matcha, avokado, muz, kivi, çilek, yulaf, ceviz, kabak çekirdeği"
+        },
+        {
+          "name": "Mini Kahvaltı (yeni)",
+          "price": 450,
+          "description": "Ekşi mayalı siyez ekmeği, avokado, Ezine peyniri, yeşil ve siyah zeytin, domates, salatalık, mevsim yeşilliği, çörek otu, kabak çekirdeği, tercihen göz/çırpılmış/haşlanmış yumurta ve bir bardak çay"
+        },
+        {
+          "name": "Bir Tabak Phokaia",
+          "price": 590,
+          "description": "Ekşi maya ekmeği, İzmir Tulum peyniri, isli sepet peyniri, eski kaşar, çeşnilendirilmiş kuru domates ezmesi, Ezine peynirli pesto, zeytinyağında Ege zeytinleri, reçel, göz yumurta ve 1 bardak çay"
+        }
+      ]
+    },
+    {
+      "name": "Smoothie (yeni)",
+      "items": [
+        {
+          "name": "Ancient Greens / Green Mix Smoothie",
+          "price": 385,
+          "description": "Taze Maydanoz, Yeşil Elma, Salatalık; Limon ve Ancient Greens Mix Powder"
+        },
+        {
+          "name": "Antioksidan Smoothie",
+          "price": 380,
+          "description": "Kırmızı orman meyveleri, chia tohumu, badem sütü ve bal"
+        },
+        {
+          "name": "Kefir Smoothie",
+          "price": 350,
+          "description": "Muz, keten tohumu, ceviz ve kefir"
+        },
+        {
+          "name": "Retinol/Immunity Smoothie",
+          "price": 390,
+          "description": "Havuç, portakal, elma, limon, zencefil ve zerdeçal"
+        },
+        {
+          "name": "Avocado Smoothie",
+          "price": 390,
+          "description": "Avokado, muz, yulaf ezmesi, ceviz ve yulaf sütü"
+        },
+        {
+          "name": "Yulaf Smoothie",
+          "price": 350,
+          "description": "Muz, keten tohumu, yulaf ezmesi, tarçın ve yulaf sütü"
+        }
+      ]
+    },
+    {
+      "name": "Sıcak İçecekler",
+      "items": [
+        {
+          "name": "Espresso Single",
+          "price": 165,
+          "description": ""
+        },
+        {
+          "name": "Espresso Double",
+          "price": 190,
+          "description": ""
+        },
+        {
+          "name": "Americano",
+          "price": 190,
+          "description": ""
+        },
+        {
+          "name": "Cappuccino",
+          "price": 220,
+          "description": ""
+        },
+        {
+          "name": "Latte",
+          "price": 220,
+          "description": ""
+        },
+        {
+          "name": "Masala Chai Latte",
+          "price": 240,
+          "description": "Melez Spice Tea, süt kreması ve tarçın"
+        },
+        {
+          "name": "Phokaia Cookie Latte",
+          "price": 270,
+          "description": ""
+        },
+        {
+          "name": "Softino Latte (yeni)",
+          "price": 300,
+          "description": ""
+        },
+        {
+          "name": "Flat White",
+          "price": 240,
+          "description": ""
+        },
+        {
+          "name": "Cortado",
+          "price": 230,
+          "description": ""
+        },
+        {
+          "name": "Filtre Kahve",
+          "price": 180,
+          "description": ""
+        },
+        {
+          "name": "Red Eye",
+          "price": 240,
+          "description": "Demlenmiş filtre kahve içerisine tek shot espresso"
+        },
+        {
+          "name": "Black Eye",
+          "price": 270,
+          "description": "Demlenmiş filtre kahve içerisine double shot espresso"
+        },
+        {
+          "name": "Salep",
+          "price": 230,
+          "description": ""
+        },
+        {
+          "name": "Sıcak Çikolata",
+          "price": 230,
+          "description": ""
+        },
+        {
+          "name": "Türk Kahvesi",
+          "price": 135,
+          "description": ""
+        },
+        {
+          "name": "Çay",
+          "price": 70,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Soğuk İçecekler",
+      "items": [
+        {
+          "name": "Ice Americano",
+          "price": 190,
+          "description": ""
+        },
+        {
+          "name": "Ice Filtre",
+          "price": 180,
+          "description": ""
+        },
+        {
+          "name": "Ice Latte",
+          "price": 250,
+          "description": ""
+        },
+        {
+          "name": "Ice Softino Latte (yeni)",
+          "price": 300,
+          "description": ""
+        },
+        {
+          "name": "Ice Matcha Latte",
+          "price": 300,
+          "description": "Melez Matcha, süt ve vanilya aroması"
+        },
+        {
+          "name": "Mint Coffee",
+          "price": 240,
+          "description": "Taze nane ile aromandırılmış Americano"
+        },
+        {
+          "name": "Taze Sıkılmış Portakal Suyu",
+          "price": 290,
+          "description": ""
+        },
+        {
+          "name": "Forest Fruit Ice Matcha Latte",
+          "price": 325,
+          "description": "Orman meyvesi püresi, matcha ve süt"
+        },
+        {
+          "name": "Strawberry Blossom Fizz",
+          "price": 240,
+          "description": "Çilek çiçeği özü, limon suyu, hibiskus ve sprite"
+        },
+        {
+          "name": "Bergamot Peach Ice Tea (yeni)",
+          "price": 255,
+          "description": ""
+        },
+        {
+          "name": "Fresh Lime Tea",
+          "price": 240,
+          "description": "Yeşil çay ile demlenmiş limonata"
+        },
+        {
+          "name": "Melez Ice Tea",
+          "price": 240,
+          "description": "Taze çilek, bal, limon suyu, nane ve demlenmiş melez bitki çayı"
+        },
+        {
+          "name": "Oriental Summer Tea",
+          "price": 240,
+          "description": "Dağ Kekiği esintili soğuk çay"
+        },
+        {
+          "name": "Pomegranate Hibiscus Mint Tea",
+          "price": 240,
+          "description": "Nar ve nane ile aromalandırılmış hibiskus çayı"
+        },
+        {
+          "name": "Purple Lemonade",
+          "price": 240,
+          "description": "Mavi kelebek çayı ile demlenmiş limonata"
+        },
+        {
+          "name": "Chili Passion Lemonade",
+          "price": 240,
+          "description": "Taze acılı Chili Biberi ile yapılmış limonata"
+        },
+        {
+          "name": "Tropical Passion",
+          "price": 240,
+          "description": "Tropical aromaları, San Pellegrino ve mavi kelebek çayı"
+        },
+        {
+          "name": "San Pellegrino",
+          "price": 170,
+          "description": ""
+        },
+        {
+          "name": "İtalyan Soda",
+          "price": 170,
+          "description": "Seçenekler; nane, frambuaz, nar, tropikal, greyfurt, limon"
+        },
+        {
+          "name": "Phokaia'lı Dukan Birası",
+          "price": 240,
+          "description": "Demlenmiş soğuk yeşil çay, taze limon suyu ve soda"
+        },
+        {
+          "name": "Churchill",
+          "price": 150,
+          "description": "Soda, limon ve tuz"
+        },
+        {
+          "name": "Su",
+          "price": 70,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Melez Tea",
+      "items": [
+        {
+          "name": "Beauty Tea – Çiçeksi Beyaz Çay",
+          "price": 290,
+          "description": "Beyaz çay, gül yaprakları, yasemin doğal aroma ve vanilya"
+        },
+        {
+          "name": "Relax Tea- Lavantalı Rooibos",
+          "price": 290,
+          "description": "rooibos, papatya, lavanta, nergis çiçeği, aroma, hindistan cevizi, elma ve vanilya"
+        },
+        {
+          "name": "Boast Tea – C Vitaminli Meyve Çayı",
+          "price": 300,
+          "description": "zencefil, kuşburnu, ekinezya, elma, mürver, kurt üzümü, hibiskus, doğal aroma, C vitamini (%1),yeşil limon yağı ve hatmi çiçeği"
+        },
+        {
+          "name": "Joyeux Tea - Bademli Kış Rooibos Çayı ( yeni )",
+          "price": 315,
+          "description": "siyah çay, rooibos, tarçın, vanilya, nergis çiçeği ve doğal aroma"
+        },
+        {
+          "name": "Xocolatl Tea - Çikolatalı Rooibos Çayı",
+          "price": 290,
+          "description": "siyah çay, rooibos, kakao, tarçın, aroma, hindistan cevizi, keçiboynuzu"
+        },
+        {
+          "name": "Spice Tea",
+          "price": 290,
+          "description": "siyah çay, tarçın, kakule, rooibos, yıldız anason, karanfil, vanilya"
+        },
+        {
+          "name": "Winter Tea - Meyveli Rooibos Çayı",
+          "price": 300,
+          "description": "rooibos çayı, elma, hibiskus, çilek, tarçın, karanfil, kuşburnu, aroma, nergis çiçeği, vanilya"
+        },
+        {
+          "name": "Golden Milk – Zerdaçallı Baharat Harmanı",
+          "price": 290,
+          "description": "zerdeçal, vanilya çubuğu, zencefil, karabiber ve tarçın"
+        }
+      ]
+    }
+  ]
+}
